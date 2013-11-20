@@ -1,19 +1,132 @@
-%%This is a very basic article template.
-%%There is just one section and two subsections.
-\documentclass{article}
+\documentclass[10pt]{article}
+%%%packages%%%
+%\usepackage[latin1]{inputenc}
+%\usepackage{newcent}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{listings}%R Code
+\usepackage{color}%R code
+% \usepackage{tkz-graph}
+% \usepackage{tkz-berge}
+% \usepackage{tkz-euclide}
+\usepackage{hyperref}
+%\usepackage[left=1in, right=1in, top=.9in, bottom=.9in]{geometry}
+\usepackage{setspace}
+%\usepackage{hyperref}
+\usepackage{pdflscape}
+%%%theoerms, etc%%%%
+\theoremstyle{plain}% default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{pf}{Proof}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\theoremstyle{remark}
+\newtheorem{rmk}{Remark}[section]
+\newtheorem{case}{Case}
+\newtheorem{prob}{Problem}[section]
+%%%% R Code%%%%
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=R,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true
+  tabsize=3
+}
+%%%%%%%%custom commands
+\newcommand{\bbH}{{\mathbb{H}}}
+\newcommand{\bbR}{{\mathbb{R}}}
+\newcommand{\bbP}{{\mathbb{P}}}
+\newcommand{\bbZ}{{\mathbb{Z}}}
+\newcommand{\bbC}{{\mathbb{C}}}
+\newcommand{\bbQ}{{\mathbb{Q}}}
+\newcommand{\bbA}{{\mathbb{A}}}
+\newcommand{\bbF}{{\mathbb{F}}}
+\newcommand{\bbh}{{\mathbb{H}}}
+\newcommand{\bbr}{{\mathbb{R}}}
+\newcommand{\bbp}{{\mathbb{P}}}
+\newcommand{\bbz}{{\mathbb{Z}}}
+\newcommand{\bbc}{{\mathbb{C}}}
+\newcommand{\bbq}{{\mathbb{Q}}}
+\newcommand{\bba}{{\mathbb{A}}}
+\newcommand{\bbf}{{\mathbb{F}}}
+\newcommand{\bbn}{{\mathbb{N}}}
+\newcommand{\bbN}{{\mathbb{N}}}
+\newcommand{\disteq}{{\overset{D}{=}}}
+\newcommand{\cross}{{\times}}
+\newcommand{\CBeta}{{  \left( \begin{array}{c}\hat{\beta}_{1,1} - \hat{\beta}_{2,1} \\ \hat{\beta}_{1,2} -
+\hat{\beta}_{2,2} \\ \vdots \\ \hat{\beta}_{1,p} - \hat{\beta}_{2,p}    \end{array} \right) }}
+\newcommand{\COVW}{{\left[ \begin{array}{cc}\sigma_1^2 \left( X_1 ' X_1\right)^{-1}\\ \sigma_2^2 \left( X_2 '
+X_2\right)^{-1} 
+\end{array} \right]}}
+\newcommand{\MSRES}{{\sigma_1^2 n_1 + \sigma_2^2 n_2 - p \left( \sigma_1^2 + \sigma_2^2 \right) }}
+\newcommand{\XX}{{\left(X ' X\right)^{-1} }} 
+\newcommand{\xx}{{\left(X ' X\right)^{-1} }} 
+\newcommand{\ssres}{{\text{SS}_\text{RES}}}
+\newcommand{\inv}[1]{{#1^{-1}}}
+% \newcommand{\iff}{{\Leftrightarrow}}
+\newcommand{\comp}[2]{{\left( #1 \circ #2\right) }}
+\newcommand{\set}[2]{{\left\lbrace \left.  #1 \left\vert #2  \right.\right.\right\rbrace  }}
+\newcommand{\topo}{{\mathcal{T}}}
+\newcommand{\powset}[1]{{\mathcal{P}\left( #1 \right) }}
+%\newcommand{\vec}[1]{{\overrightarrow{#1} }}
+%%%%Spacing commands %%%%%
+\newcommand{\tab}{\hspace{.4cm}}
+\newcommand{\quadtab}{\hspace{.4cm}}
+\newcommand{\matab}{\hspace{1.01600mm}}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\RNum}[1]{\lowercase\expandafter{\romannumeral #1\relax}}
+\newcommand{\rn}[1]{\lowercase\expandafter{(\romannumeral #1\relax)}}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\combo}[2]{\left(\begin{array}{c}#1\\#2\end{array}\right)}
+%\renewcommand{\baselinestretch}{1.0}
+% 1.0 is for one line space, 2.0 is for double-line space, etc
+%%%%Spacing commands %%%%%
 
+%%%%Margins%%%%%% - Clinton Bowen
+%%Please refer to http://en.wikibooks.org/wiki/LaTeX/Page_Layout
+%%The parameters below are described pictorally on this webpage.  Tinker with the settins as needed.
+\setlength{\evensidemargin}{0cm}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\topmargin}{.5in}
+\setlength{\hoffset}{0in}
+\setlength{\voffset}{0in}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0in}%should be 1 inch from header titles
+\setlength{\textheight}{21cm}
+\setlength{\textwidth}{15.5cm}
+\setlength{\marginparsep}{0pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\footskip}{0pt}
+%%%%Margins%%%%%% - Clinton Bowen
+\author{Clinton Bowen}
+\title{Thesis Draft}
+\date{November 30, 2013}
+\makeindex
 \begin{document}
-
-
-\section{Title}
-
-\subsection{Subtitle}
-
-Plain text.
-
-\subsection{Another subtitle}
-
-More plain text. and stuff
-
-
+\maketitle
+\input{introduction}
+\input{background}
+\input{problem}
+\input{solution}
+\input{conclusion}
+\input{references}
 \end{document}
