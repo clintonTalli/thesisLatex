@@ -143,6 +143,21 @@ To prove that it is a locked configuration:
 \end{center}
 \end{figure}
 \paragraph{Junctions}
+We define junctions to be the point three hexagons meet in a hexagonal lattice,
+e.g. Figure \ref{fig:lattice}.
+\begin{figure}[h]
+\begin{center}
+\begin{tikzpicture}
+  \foreach \i in {0,...,2} 
+  \foreach \j in {0,...,2} {
+  \foreach \a in {0,120,-120} \draw (3*\i,2*sin{60}*\j) -- +(\a:1);
+  \foreach \a in {0,120,-120} \draw (3*\i+3*cos{60},2*sin{60}*\j+sin{60}) -- +(\a:1);}
+\end{tikzpicture}
+\caption{A portion of a hexagonal lattice.}
+\label{fig:lattice}
+\end{center}
+\end{figure}
+
 \paragraph{Junctions in Conjunctive Normal Form}
 Explain the configurations we're interested in.
 \subsubsection{Configurations and Locked Configurations}
