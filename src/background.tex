@@ -85,13 +85,14 @@ An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together 
  A closed walk with no repetitions of vertices or edges allowed, other than the repetition of the starting and ending vertex
 \end{definition} 
 \begin{definition}[Configuration]\label{def:linkages-6}
-A specification of the location of all the link endpoints, link orientations and joint angles.
+A specification of the location of all the link endpoints, link orientations and
+joint angles.\cite{demaine2008geometric}
 \end{definition} 
 \subsection{Dissections}
 \begin{prob}[Polygonal Dissection]\label{def:dissection}
 Given two polygons of equal area, $P_1$ and $P_2$, partition $P_1$ into smaller
 pieces,$\left\lbrace P_{1,i}\right\rbrace_{i=1}^n $, rearrange the pieces to
-form $P_2$
+form $P_2$. /cite{frederickson1997dissections}
 \end{prob}
 \begin{figure}[h]
 \begin{center}
@@ -125,8 +126,9 @@ circumscribing the vertices of the regular hexagon.
 \end{center}
 \end{figure}
 \subsubsection{Hinged Polygons}
-Consider the locked configuration of figure \ref{figure:7hexLocked}.  We can configure
-the hexagons to be locked by placing hing points as follows:
+Hinged polygons have been researched for decades and related to linkage problems
+\cite{Biedl99lockedand,canny1988complexity} Consider the locked configuration of
+figure \ref{figure:7hexLocked}.  We can configure the hexagons to be locked by placing hing points as follows:
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=.33]{graphics/7hexLocked.pdf}
