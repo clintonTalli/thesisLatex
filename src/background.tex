@@ -131,7 +131,8 @@ A polygonal chain $P = \left( v_0, v_1, \dots, v_{n-1}\right) $ is a sequence of
 consecutively joined segments (or edges) $e_i = v_i v_{i+1}$ of fixed lengths
 $l_i = \left\vert e_i\right\vert $, in a plane. \cite{Biedl99lockedand}
 \end{definition}
-Hinged polygons have been researched for decades and related to linkage problems
+A chain is said to be closed if $v_{n-1} = v_1$, otherwise it is said to be
+open. Hinged polygons have been researched for decades and related to linkage problems
 \cite{Biedl99lockedand,canny1988complexity}.
 
  Consider the locked configuration of figure \ref{figure:7hexLocked}.  We can
@@ -173,19 +174,23 @@ a hinge point at one vertex where the locking shape and boundary meet.
 \begin{center}
 \includegraphics{graphics/shapeInChannel.pdf}
 \end{center} 
-\caption{A locking shape in the lattice boundary's channel}
+\caption{A locking shape in the lattice boundary's channel.}
 \label{fig:lockingShapeInChannel}
 \end{figure}
 \paragraph{Junctions}
 We define junctions to be the point three hexagons meet in a hexagonal lattice,
 e.g. Figure \ref{fig:lattice}.
-\begin{figure}[h]
+%Radius of regular polygons 
+\newdimen\R
+\R=5cm
+\begin{figure}[h] 
 \begin{center}
 \begin{tikzpicture}
-  \foreach \i in {0,...,2} 
-  \foreach \j in {0,...,2} {
-  \foreach \a in {0,120,-120} \draw (3*\i,2*sin{60}*\j) -- +(\a:1);
-  \foreach \a in {0,120,-120} \draw (3*\i+3*cos{60},2*sin{60}*\j+sin{60}) -- +(\a:1);}
+\begin{scope}
+\filldraw[pattern=hexagons]  (0:\R) \foreach \x in {60,120,...,359} {
+                -- (\x:\R)
+            }-- cycle (90:\R);
+\end{scope}
 \end{tikzpicture}
 \caption{A portion of a hexagonal lattice.}
 \label{fig:lattice}
