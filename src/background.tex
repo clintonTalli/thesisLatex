@@ -1,61 +1,62 @@
 \section{Background}
-\subsection{NP and Computational Intractibility}
-The objective is explore a space of computationally hard problems.  By comparing the relative difficulty of one
-problem versus another problem we can establish statements such as ``Problem X is atleat as hard as Problem Y''.
-\begin{definition}[Reduction]\label{def:ncpi-1}
-To show that a problem, $X$,  is at least as hard as some other problem, $Y$.
-\end{definition} 
-\begin{prob}[Reduction Problem]\label{prob:ncpi-1}%Problem/Question
-Suppose that problem $X$ can be solved in polynomial time.  Can arbitrary instances of problem $Y$ be solved using
-a polynomial number of standard computational steps, plus a polynomial number of calls to a black box that solves
-problem X?
-\end{prob}
-We write $Y \leq_p X$ or state ``$Y$ is polynomial time reducible to $X$'', if the answer to (\ref{prob:ncpi-1}) is
-true.
-\begin{thm}\label{thm:ncpi-1}
-Suppose $Y \leq_p X$.  If $X$ can be solved in polynomial time, then $Y$ can be solved in polynomial time.
-\end{thm} 
-\subsection{The Independent Set Problem}
-\begin{definition}[Independent Set]\label{def:ncpi-2}
-Given a graph $G = (V,E)$, we say a set of nodes $S \subset V$ is \textit{independent} if no two nodes in $S$ are
-joined by an edge.
-\end{definition} 
-\begin{definition}[Vertex Cover]\label{def:ncpi-3}
-Given a graph $G = (V,E)$, we say a set of nodes $S \subset V$ is a \textit{vertex cover}, if every edge $e \in E$
-has at least one end in $S$
-\end{definition} 
-\begin{prob}[Independent Set Problem]\label{prob:ncpi-2}%Problem/Question
-Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
-\end{prob} 
-\begin{prob}[The Vertex Cover Problem]\label{prob:ncpi-5}%Problem/Question
-Given a graph $G$ and a number $k$, does $G$ contain cover of size at most $k$?
-\end{prob} 
-\subsubsection{Version of the Independent Set Problem}
-\begin{prob}[Independent Set Optimization Problem]\label{prob:ncpi-3}%Problem/Question
-Find the maximum size of an independent set.
-\end{prob} 
-\begin{prob}[Independent Set Decision Problem]\label{prob:ncpi-4}%Problem/Question
-Decide, yes or no, whether $G$ has an independent set of size at least a given $k$.
-\end{prob} 
-\begin{thm}\label{thm:ncpi-2}
-Let $G=(V,E)$ be a graph.  Then $S$ is an independent set if and only if its complement is a vertex cover.
-\end{thm} 
-\begin{itemize}
-\item[\rn{1}]Suppose $S$ is an independent set of $G = (V,E)$. 
-\item[\rn{2}]If $e = (u,v) \in E$, then $u$ and $v$ cannot both be in $S$. 
-\item[\rn{3}]Either $u$ or $v$ must be in $V-S$.  Suppose $u \in V-S$.
-\end{itemize}  
-\begin{itemize}
-\item[\rn{1}]Suppose $V-S$ is a vertex cover.
-\item[\rn{2}]If $(u,v) = e \in E$ such that $u,v \in S$,  then we have a contradiction with (\rn{1}).
-\item[\rn{3}]Thus for any $u,v \in S$, there is no $e = (u,v) \in E$ and thus $S$ must be an independent set.
-\end{itemize}  
-\begin{thm}[Independent Set is Polynomial-Time Reducible to Vertex Cover]\label{thm}
-Independent Set $\leq_p$ Vertex Cover
-\end{thm} 
+% \subsection{NP and Computational Intractibility}
+% The objective is explore a space of computationally hard problems.  By comparing the relative difficulty of one
+% problem versus another problem we can establish statements such as ``Problem X is atleat as hard as Problem Y''.
+% \begin{definition}[Reduction]\label{def:ncpi-1}
+% To show that a problem, $X$,  is at least as hard as some other problem, $Y$.
+% \end{definition} 
+% \begin{prob}[Reduction Problem]\label{prob:ncpi-1}%Problem/Question
+% Suppose that problem $X$ can be solved in polynomial time.  Can arbitrary instances of problem $Y$ be solved using
+% a polynomial number of standard computational steps, plus a polynomial number of calls to a black box that solves
+% problem X?
+% \end{prob}
+% We write $Y \leq_p X$ or state ``$Y$ is polynomial time reducible to $X$'', if the answer to (\ref{prob:ncpi-1}) is
+% true.
+% \begin{thm}\label{thm:ncpi-1}
+% Suppose $Y \leq_p X$.  If $X$ can be solved in polynomial time, then $Y$ can be solved in polynomial time.
+% \end{thm} 
+% \subsection{The Independent Set Problem}
+% \begin{definition}[Independent Set]\label{def:ncpi-2}
+% Given a graph $G = (V,E)$, we say a set of nodes $S \subset V$ is \textit{independent} if no two nodes in $S$ are
+% joined by an edge.
+% \end{definition} 
+% \begin{definition}[Vertex Cover]\label{def:ncpi-3}
+% Given a graph $G = (V,E)$, we say a set of nodes $S \subset V$ is a \textit{vertex cover}, if every edge $e \in E$
+% has at least one end in $S$
+% \end{definition} 
+% \begin{prob}[Independent Set Problem]\label{prob:ncpi-2}%Problem/Question
+% Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
+% \end{prob} 
+% \begin{prob}[The Vertex Cover Problem]\label{prob:ncpi-5}%Problem/Question
+% Given a graph $G$ and a number $k$, does $G$ contain cover of size at most $k$?
+% \end{prob} 
+% \subsubsection{Version of the Independent Set Problem}
+% \begin{prob}[Independent Set Optimization Problem]\label{prob:ncpi-3}%Problem/Question
+% Find the maximum size of an independent set.
+% \end{prob} 
+% \begin{prob}[Independent Set Decision Problem]\label{prob:ncpi-4}%Problem/Question
+% Decide, yes or no, whether $G$ has an independent set of size at least a given $k$.
+% \end{prob} 
+% \begin{thm}\label{thm:ncpi-2}
+% Let $G=(V,E)$ be a graph.  Then $S$ is an independent set if and only if its complement is a vertex cover.
+% \end{thm} 
+% \begin{itemize}
+% \item[\rn{1}]Suppose $S$ is an independent set of $G = (V,E)$. 
+% \item[\rn{2}]If $e = (u,v) \in E$, then $u$ and $v$ cannot both be in $S$. 
+% \item[\rn{3}]Either $u$ or $v$ must be in $V-S$.  Suppose $u \in V-S$.
+% \end{itemize}  
+% \begin{itemize}
+% \item[\rn{1}]Suppose $V-S$ is a vertex cover.
+% \item[\rn{2}]If $(u,v) = e \in E$ such that $u,v \in S$,  then we have a contradiction with (\rn{1}).
+% \item[\rn{3}]Thus for any $u,v \in S$, there is no $e = (u,v) \in E$ and thus $S$ must be an independent set.
+% \end{itemize}  
+% \begin{thm}[Independent Set is Polynomial-Time Reducible to Vertex Cover]\label{thm}
+% Independent Set $\leq_p$ Vertex Cover
+% \end{thm} 
+Here we review some of the necessary mathematics behind the problem.
+%\subsubsection{SAT to 3-SAT Gadget}
+\subsection{SAT Problems}
 
-\subsubsection{SAT to 3-SAT Gadget}
-\paragraph{SAT Problems}
 \begin{prob}[Satisfiability Problem]\label{prob:ncpi-6}%Problem/Question
 Let $\left\lbrace x_i \right\rbrace_{i=1}^{n} $ be boolean variables, and $t_i \in \left\lbrace x_i\right\rbrace_{i=1}^{n}  \cup \left\lbrace \bar{x}_i\right\rbrace_{i=1}^{n}   $.  A \textit{clause} is is said to be a disjuction of distinct terms:
 $$
@@ -66,19 +67,14 @@ $$ \wedge_{i=1}^m C_i$$
 \end{prob} 
 \paragraph{3-SAT Problems}
 A 3-SAT problem is a SAT problem with all clauses having only three boolean variables. 
-\paragraph{Converting SAT to 3-SAT}
-\begin{itemize}
-\item[\rn{1}] Given a clause, $t_1 \vee t_2 \vee t_3 \vee \cdots \vee t_n$.
-\item[\rn{2}] Transform the clause given in (\rn{1}) to a conjuction of clauses as the following:
-$$\left( t_1 \vee t_2 \vee x_2 \right)\wedge\left( \bar{x}_2 \vee t_3 \vee x_3 \right)\wedge\left( \bar{x}_3 \vee t_4 \vee x_4 \right)\wedge \cdots \wedge \left( \bar{x}_{n-2} \vee t_{n-1} \vee t_n \right)$$
-\item[\rn{3}] Clauses with less than three boolean variables and be rewritten as $$\left( t_1 \vee x \vee \bar{x} \right) $$ or $$\left( t_1 \vee t_2 \vee x \right)\wedge \left( \bar{x}  \vee y \vee \bar{y} \right)$$
-\end{itemize}  
-\subsubsection{3-SAT $\leq_p $ Independent Set}
-
-
-\subsection{Satifiability Problems}
-\subsubsection{3-SAT Problems}
-\subsubsection{SAT Reducibility to 3-SAT}
+% \paragraph{Converting SAT to 3-SAT}
+% \begin{itemize}
+% \item[\rn{1}] Given a clause, $t_1 \vee t_2 \vee t_3 \vee \cdots \vee t_n$.
+% \item[\rn{2}] Transform the clause given in (\rn{1}) to a conjuction of clauses as the following:
+% $$\left( t_1 \vee t_2 \vee x_2 \right)\wedge\left( \bar{x}_2 \vee t_3 \vee x_3 \right)\wedge\left( \bar{x}_3 \vee t_4 \vee x_4 \right)\wedge \cdots \wedge \left( \bar{x}_{n-2} \vee t_{n-1} \vee t_n \right)$$
+% \item[\rn{3}] Clauses with less than three boolean variables and be rewritten as $$\left( t_1 \vee x \vee \bar{x} \right) $$ or $$\left( t_1 \vee t_2 \vee x \right)\wedge \left( \bar{x}  \vee y \vee \bar{y} \right)$$
+% \end{itemize}  
+\subsection{Circle Packings and Polygonal Linkages}
 \subsection{Hinged Polygons}
 \subsubsection{Hinged Hexagons}
 \paragraph{Central Scaling}
