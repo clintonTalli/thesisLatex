@@ -74,7 +74,7 @@ A 3-SAT problem is a SAT problem with all clauses having only three boolean vari
 % $$\left( t_1 \vee t_2 \vee x_2 \right)\wedge\left( \bar{x}_2 \vee t_3 \vee x_3 \right)\wedge\left( \bar{x}_3 \vee t_4 \vee x_4 \right)\wedge \cdots \wedge \left( \bar{x}_{n-2} \vee t_{n-1} \vee t_n \right)$$
 % \item[\rn{3}] Clauses with less than three boolean variables and be rewritten as $$\left( t_1 \vee x \vee \bar{x} \right) $$ or $$\left( t_1 \vee t_2 \vee x \right)\wedge \left( \bar{x}  \vee y \vee \bar{y} \right)$$
 % \end{itemize}  
-\section{Linkages}
+\subsection{Linkages}
 \begin{definition}[Linkage]\label{def:linkages-1}
 A collection of fixed-length 1D segments joined at their endpoints to form a graph.
 \end{definition} 
@@ -87,7 +87,7 @@ An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together 
 \begin{definition}[Configuration]\label{def:linkages-6}
 A specification of the location of all the link endpoints, link orientations and joint angles.
 \end{definition} 
-\section{Circle Packing}
+\subsection{Circle Packing}
 \begin{definition}[Intersection Graph]\label{def2-1}
 Given a family of sets $\left\lbrace S_i \right\rbrace_{i =1}^n $, the intersection graph $G=(V,E)$ such that:
 \begin{equation}\label{eqn2-1}
@@ -101,11 +101,49 @@ E &=& \set{l_{i,j} \subset \bbr^2}{ \text{if }S_i \cap S_j \neq \emptyset\text{,
 \begin{thm}[Circle Packing Theorem]\label{thm2-1}
 For every connected simple planar graph $G$ there is a circle packing in the plane whose intersection graph is (isomorphic to) $G$.
 \end{thm}
-\subsection{Circle Packings and Polygonal Linkages}
-\subsection{Hinged Polygons}
+\subsubsection{Circle Packings and Polygonal Linkages}
+Given a circle of radius $r$, we establish the isomorphism to a hexagon by
+circumscribing the vertices of the regular hexagon.
+\begin{figure}[h]
+\begin{center}
+\includegraphics{graphics/circumscribedHexagon.pdf}
+\caption{A circumbscribed hexagon}
+\end{center}
+\end{figure}
+\subsubsection{Hinged Polygons}
+Consider the locked configuration of figure \ref{figure:7hexLocked}.  We can configure
+the hexagons to be locked by placing hing points as follows:
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.33]{graphics/7hexLocked.pdf}
+\caption{A locked 7 hexagonal configuration.  (needs to modify picture by
+placing red points for hing points.)}
+\label{figure:7hexLocked}
+\end{center} 
+\end{figure}
+To prove that it is a locked configuration:
+\begin{itemize}
+ \item[\rn{1}]
+ \item[\rn{2}]
+ \item[\rn{3}]
+ \item[\rn{4}]
+ \item[\rn{5}]
+ \item[\rn{6}]
+ \item[\rn{7}]
+ \item[\rn{8}]
+ \item[\rn{9}]
+ \item[\rn{10}]
+ \end{itemize}
 \subsubsection{Hinged Hexagons}
 \paragraph{Central Scaling}
 \paragraph{The Shapes}
+\begin{figure}[h]
+\begin{center}
+\includegraphics{graphics/lockingShape.pdf}
+\caption{This is the shapte that resides in boundary of the lattice.}
+\label{fig:lockingShape}
+\end{center}
+\end{figure}
 \paragraph{Junctions}
 \paragraph{Junctions in Conjunctive Normal Form}
 Explain the configurations we're interested in.
