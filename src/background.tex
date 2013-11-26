@@ -64,7 +64,7 @@ t_1 \vee \cdots \vee t_{j_k} = C_k
 $$
 Then the \textit{satisfiability problem} is the decidability of a conjuction of a set of clauses, i.e.:
 $$ \wedge_{i=1}^m C_i$$
-\end{prob} 
+\end{prob} \cite{skiena2009algorithm}
 \subsubsection{3-SAT Problems}
 A 3-SAT problem is a SAT problem with all clauses having only three boolean variables. 
 % \paragraph{Converting SAT to 3-SAT}
@@ -87,6 +87,20 @@ An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together 
 \begin{definition}[Configuration]\label{def:linkages-6}
 A specification of the location of all the link endpoints, link orientations and joint angles.
 \end{definition} 
+\subsection{Dissections}
+\begin{prob}[Polygonal Dissection]\label{def:dissection}
+Given two polygons of equal area, $P_1$ and $P_2$, partition $P_1$ into smaller
+pieces,$\left\lbrace P_{1,i}\right\rbrace_{i=1}^n $, rearrange the pieces to
+form $P_2$
+\end{prob}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=1]{graphics/polygonaldissection.png}
+\caption{An axample of two polygons of equal area that can be rearranged into
+the other by the given partition.\cite{davidEppstienJunkyard}}
+\label{fig:polygonaldissection}
+\end{center}
+\end{figure}
 \subsection{Circle Packing}
 \begin{definition}[Circle Packing]\label{def:circlePacking}
 $P$ of a planar graph $G$ is a set of of circles with disjoint
@@ -97,7 +111,9 @@ circles are tangent if and only if the corresponding vertices form an edge.
 
 
 \begin{thm}[Circle Packing Theorem]\label{thm2-1}
-For every connected simple planar graph $G$ there is a circle packing in the plane whose intersection graph is (isomorphic to) $G$.
+For every connected simple planar graph $G$ there is a circle packing in the
+plane whose intersection graph is (isomorphic to) $G$.
+\cite{stephenson2005introduction}
 \end{thm}
 \subsubsection{Circle Packings and Polygonal Linkages}
 Given a circle of radius $r$, we establish the isomorphism to a hexagon by
