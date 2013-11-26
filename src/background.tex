@@ -88,15 +88,13 @@ An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together 
 A specification of the location of all the link endpoints, link orientations and joint angles.
 \end{definition} 
 \subsection{Circle Packing}
-\begin{definition}[Intersection Graph]\label{def2-1}
-Given a family of sets $\left\lbrace S_i \right\rbrace_{i =1}^n $, the intersection graph $G=(V,E)$ such that:
-\begin{equation}\label{eqn2-1}
-\begin{array}{rcl}
-V &=& \set{v_i \in \bbr^2}{v_i \text{ corresponds to }S_i}\\
-E &=& \set{l_{i,j} \subset \bbr^2}{ \text{if }S_i \cap S_j \neq \emptyset\text{, then } l_{i,j} \text{ is an edge from } v_i \text{ to } v_j}
-\end{array} 
-\end{equation} 
+\begin{definition}[Circle Packing]\label{def:circlePacking}
+$P$ of a planar graph $G$ is a set of of circles with disjoint
+interiors $\left\lbrace C_v \right\rbrace_{v \in G} $ such that two
+circles are tangent if and only if the corresponding vertices form an edge.
+\cite{arXiv13113363v1}
 \end{definition} 
+
 
 \begin{thm}[Circle Packing Theorem]\label{thm2-1}
 For every connected simple planar graph $G$ there is a circle packing in the plane whose intersection graph is (isomorphic to) $G$.
