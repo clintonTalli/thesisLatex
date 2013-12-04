@@ -1,59 +1,7 @@
 \section{Background}
-% \subsection{NP and Computational Intractibility}
-% The objective is explore a space of computationally hard problems.  By comparing the relative difficulty of one
-% problem versus another problem we can establish statements such as ``Problem X is atleat as hard as Problem Y''.
-% \begin{definition}[Reduction]\label{def:ncpi-1}
-% To show that a problem, $X$,  is at least as hard as some other problem, $Y$.
-% \end{definition} 
-% \begin{prob}[Reduction Problem]\label{prob:ncpi-1}%Problem/Question
-% Suppose that problem $X$ can be solved in polynomial time.  Can arbitrary instances of problem $Y$ be solved using
-% a polynomial number of standard computational steps, plus a polynomial number of calls to a black box that solves
-% problem X?
-% \end{prob}
-% We write $Y \leq_p X$ or state ``$Y$ is polynomial time reducible to $X$'', if the answer to (\ref{prob:ncpi-1}) is
-% true.
-% \begin{thm}\label{thm:ncpi-1}
-% Suppose $Y \leq_p X$.  If $X$ can be solved in polynomial time, then $Y$ can be solved in polynomial time.
-% \end{thm} 
-% \subsection{The Independent Set Problem}
-% \begin{definition}[Independent Set]\label{def:ncpi-2}
-% Given a graph $G = (V,E)$, we say a set of nodes $S \subset V$ is \textit{independent} if no two nodes in $S$ are
-% joined by an edge.
-% \end{definition} 
-% \begin{definition}[Vertex Cover]\label{def:ncpi-3}
-% Given a graph $G = (V,E)$, we say a set of nodes $S \subset V$ is a \textit{vertex cover}, if every edge $e \in E$
-% has at least one end in $S$
-% \end{definition} 
-% \begin{prob}[Independent Set Problem]\label{prob:ncpi-2}%Problem/Question
-% Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
-% \end{prob} 
-% \begin{prob}[The Vertex Cover Problem]\label{prob:ncpi-5}%Problem/Question
-% Given a graph $G$ and a number $k$, does $G$ contain cover of size at most $k$?
-% \end{prob} 
-% \subsubsection{Version of the Independent Set Problem}
-% \begin{prob}[Independent Set Optimization Problem]\label{prob:ncpi-3}%Problem/Question
-% Find the maximum size of an independent set.
-% \end{prob} 
-% \begin{prob}[Independent Set Decision Problem]\label{prob:ncpi-4}%Problem/Question
-% Decide, yes or no, whether $G$ has an independent set of size at least a given $k$.
-% \end{prob} 
-% \begin{thm}\label{thm:ncpi-2}
-% Let $G=(V,E)$ be a graph.  Then $S$ is an independent set if and only if its complement is a vertex cover.
-% \end{thm} 
-% \begin{itemize}
-% \item[\rn{1}]Suppose $S$ is an independent set of $G = (V,E)$. 
-% \item[\rn{2}]If $e = (u,v) \in E$, then $u$ and $v$ cannot both be in $S$. 
-% \item[\rn{3}]Either $u$ or $v$ must be in $V-S$.  Suppose $u \in V-S$.
-% \end{itemize}  
-% \begin{itemize}
-% \item[\rn{1}]Suppose $V-S$ is a vertex cover.
-% \item[\rn{2}]If $(u,v) = e \in E$ such that $u,v \in S$,  then we have a contradiction with (\rn{1}).
-% \item[\rn{3}]Thus for any $u,v \in S$, there is no $e = (u,v) \in E$ and thus $S$ must be an independent set.
-% \end{itemize}  
-% \begin{thm}[Independent Set is Polynomial-Time Reducible to Vertex Cover]\label{thm}
-% Independent Set $\leq_p$ Vertex Cover
-% \end{thm} 
-Here we review some of the necessary mathematics behind the problem.
+Here we review some of the necessary mathematics behind the problem.  The
+definitions found in this chapter are those found in 
+\cite{kleinberg2006algorithm,demaine2008geometric,stephenson2005introduction,frederickson1997dissections}.
 %\subsubsection{SAT to 3-SAT Gadget}
 \subsection{SAT Problems}
 
@@ -159,6 +107,10 @@ To prove that it is a locked configuration:
  \item[\rn{10}]
  \end{itemize}
 \subsubsection{Hinged Hexagons}
+\begin{thm}[]\label{thm}
+Any finite collection of polygons of equal area has a common hinged dissection.
+\cite{abbott2012hinged}
+\end{thm}
 \paragraph{The Shapes}
 Figure \ref{fig:lockingShape} is a locking shape:
 \begin{figure}[h]
