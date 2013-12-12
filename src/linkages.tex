@@ -1,10 +1,11 @@
 \subsection{Linkages}
-\begin{definition}[Linkage]\label{def:linkages-1}
-A collection of fixed-length 1D segments joined at their endpoints to form a graph.
-\end{definition} 
 \begin{definition}[Graph]\label{def:linkages-2}
 An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together with a set $E$ of edges or lines
 \end{definition} 
+\begin{definition}[Linkage]\label{def:linkages-1}
+A collection of fixed-length 1D segments joined at their endpoints to form a graph.
+\end{definition} 
+A linkage can be thought of as a type of path-connected graph, i.e. the segments of a linkage are the edges of a graph, and the endpoints of the segments are the vertices.
 \begin{definition}[Cycle]\label{def:linkages-3}
  A closed walk with no repetitions of vertices or edges allowed, other than the repetition of the starting and ending vertex
 \end{definition} 
@@ -22,3 +23,17 @@ A vertex of a graph (or linkage) that is fixed to a position in a plane.
 \begin{definition}[Free Joint]\label{def:linkages-8}
 A vertex of a graph (or linkage) that is not fixed to a position in a plane.
 \end{definition} 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=.5]{graphics/randomLinkage.pdf}
+\end{center} 
+\caption{A linkage with joints.}
+\end{figure} 
+\begin{figure}[h]
+\begin{center}
+\includegraphics{graphics/freeJointPinnedJoint.pdf}
+\end{center} 
+\caption{The cross represents a free joint; the pinned joints are denoted as disks.  The range of motion shown by the arc describes the continous configuration space of the linkage.}
+\end{figure} 
+
+For illustrations in the remainder of this paper, free joints will be represented as crosses and pinned joints will be represented as disks.
