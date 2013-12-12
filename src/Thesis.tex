@@ -1,7 +1,8 @@
 \documentclass[10pt]{article}
 %%%packages%%%
-%\usepackage[latin1]{inputenc}
+\usepackage[latin1]{inputenc}
 %\usepackage{newcent}
+\usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -14,11 +15,65 @@
 % \usepackage{tkz-graph}
 % \usepackage{tkz-berge}
 % \usepackage{tkz-euclide}
-\usepackage{hyperref}
+% \usepackage{hyperref}
 %\usepackage[left=1in, right=1in, top=.9in, bottom=.9in]{geometry}
 \usepackage{setspace}
 %\usepackage{hyperref}
 \usepackage{pdflscape}
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{multirow}
+\usepackage{mathptmx}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+\usepackage{titletoc}
+\usepackage[toc,page]{appendix}
+\usepackage{appendix}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{subfigure}
+
+
+%%%CSUN Stuff%%%
+\titlecontents{chapter}
+  [0em]
+   {\bfseries \addvspace{\baselineskip}}
+  {\linebreak \rmfamily \chaptername\hspace{.1em} \thecontentslabel\quad \newline  }
+  {\rmfamily}
+  {\titlerule*[1pc]{.}\contentspage}
+
+\titlecontents{section}
+[1em]
+   {}
+  {\thecontentslabel \hspace{1em}}
+   {}
+    {\titlerule*[1pc]{.}\contentspage}
+
+\titlecontents{subsection}
+[3.3em]
+   {}
+  {\thecontentslabel \hspace{1.3em}}
+   {}
+    {\titlerule*[1pc]{.}\contentspage}
+
+% for bibliography, abstract etc
+
+\titlecontents{part}
+  [0em]
+   {\rmfamily \addvspace{\baselineskip}}
+  {\linebreak \rmfamily \chaptername\hspace{.1em} \thecontentslabel\quad \newline  }
+  {\rmfamily}
+  {\titlerule*[1pc]{.}\contentspage}
+
+
+\titlecontents{subsubsection}
+[0em]
+   {{\rmfamily \addvspace{\baselineskip}}}
+  {\thecontentslabel \hspace{1em}}
+   {}
+    {\titlerule*[1pc]{}}
+%%%END OF CSUN STUFF%%%
 %%%theoerms, etc%%%%
 \theoremstyle{plain}% default
 \newtheorem{thm}{Theorem}[section]
@@ -52,6 +107,7 @@
   breakatwhitespace=true
   tabsize=3
 }
+
 %%%%%%%%TikZ Commands
 
 \def\hexagonsize{0.866025cm}
@@ -127,20 +183,25 @@ X_2\right)^{-1}
 %%%%Spacing commands %%%%%
 
 %%%%Margins%%%%%% - Clinton Bowen
+\setlength{\topmargin}{-.5in} 
+\setlength{\textheight}{9.0in}
+\setlength{\oddsidemargin}{0.5in} 
+\setlength{\evensidemargin}{0.0in}
+\setlength{\textwidth}{6.0in}
 %%Please refer to http://en.wikibooks.org/wiki/LaTeX/Page_Layout
 %%The parameters below are described pictorally on this webpage.  Tinker with the settins as needed.
-\setlength{\evensidemargin}{0cm}
-\setlength{\oddsidemargin}{0pt}
-\setlength{\topmargin}{.5in}
-\setlength{\hoffset}{0in}
-\setlength{\voffset}{0in}
-\setlength{\headheight}{0pt}
-\setlength{\headsep}{0in}%should be 1 inch from header titles
-\setlength{\textheight}{21cm}
-\setlength{\textwidth}{15.5cm}
-\setlength{\marginparsep}{0pt}
-\setlength{\marginparwidth}{0pt}
-\setlength{\footskip}{0pt}
+%\setlength{\evensidemargin}{0cm}
+%\setlength{\oddsidemargin}{0pt}
+%\setlength{\topmargin}{.5in}
+% \setlength{\hoffset}{0in}
+% \setlength{\voffset}{0in}
+% \setlength{\headheight}{0pt}
+% \setlength{\headsep}{0in}%should be 1 inch from header titles
+%\setlength{\textheight}{21cm}
+%\setlength{\textwidth}{15.5cm}
+% \setlength{\marginparsep}{0pt}
+% \setlength{\marginparwidth}{0pt}
+% \setlength{\footskip}{0pt}
 %%%%Margins%%%%%% - Clinton Bowen
 \author{Clinton Bowen}
 \title{Protein Folding: Planar Configuration Spaces of Disc Arrangements and
@@ -148,8 +209,8 @@ Hinged Polygons: \textit{Protein Folding in Flatland}}
 \date{April 1, 2014}
 \makeindex
 \begin{document}
-
-\maketitle
+\input{preface}
+\input{abstract}
 \input{introduction}
 \input{background}
 \input{problem}
