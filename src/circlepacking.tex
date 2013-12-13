@@ -1,5 +1,3 @@
-
-
 \subsection{Circle Packing}
 \begin{definition}[Circle Packing]\label{def:circlePacking}
 $P$ of a planar graph $G$ is a set of of circles with disjoint
@@ -7,21 +5,20 @@ interiors $\left\lbrace C_v \right\rbrace_{v \in G} $ such that two
 circles are tangent if and only if the corresponding vertices form an edge.
 \cite{arXiv13113363v1}
 \end{definition} 
-
-
 \begin{thm}[Circle Packing Theorem]\label{thm2-1}
 For every connected simple planar graph $G$ there is a circle packing in the
 plane whose intersection graph is (isomorphic to) $G$.
 \end{thm}
-\begin{figure}[h]
+\begin{figure}[!ht]
 \begin{center}
 \includegraphics[scale=.5]{graphics/circlePackingTheoremExample.pdf}
 \end{center} 
 \caption{This figure is an example of a circle packing for the given simple planar graph.}
 \end{figure} 
-\textbf{Are all linkages simple planar graphs?}  A proof of Theorem \ref{thm2-1} is found in \cite{stephenson2005introduction}.
+A proof of Theorem \ref{thm2-1} is found in \cite{stephenson2005introduction}.
+
 \subsubsection{Circle Packings and Polygonal Linkages}
-Given a circle of radius $r$, we establish the isomorphism to a hexagon by
+Given a circle of radius $r$ and its center point, $(x,y)$, we establish the isomorphism  to a hexagon by
 circumscribing the vertices of the regular hexagon.
 \begin{figure}[h]
 \begin{center}
@@ -41,7 +38,7 @@ open. Hinged polygons have been researched for decades and related to linkage pr
 
 Consider the locked configuration of figure \ref{figure:7hexLocked}.  We can
  configure the hexagons to be locked by placing hinged points as follows:
-\begin{figure}[h]
+\begin{figure}[!ht]
 \begin{center}
 \includegraphics[scale=.33]{graphics/7hexLocked.pdf}
 \caption{A locked 7 hexagonal configuration.  (needs to modify picture by
@@ -49,19 +46,7 @@ placing red points for hing points.)}
 \label{figure:7hexLocked}
 \end{center} 
 \end{figure}
-To prove that it is a locked configuration:
-\begin{itemize}
- \item[\rn{1}]
- \item[\rn{2}]
- \item[\rn{3}]
- \item[\rn{4}]
- \item[\rn{5}]
- \item[\rn{6}]
- \item[\rn{7}]
- \item[\rn{8}]
- \item[\rn{9}]
- \item[\rn{10}]
- \end{itemize}
+
 \subsubsection{Hinged Hexagons}
 \begin{thm}[]\label{thm}
 Any finite collection of polygons of equal area has a common hinged dissection.

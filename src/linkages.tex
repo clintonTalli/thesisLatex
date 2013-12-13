@@ -5,7 +5,12 @@ An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together 
 \begin{definition}[Linkage]\label{def:linkages-1}
 A collection of fixed-length 1D segments joined at their endpoints to form a graph.
 \end{definition} 
-A linkage can be thought of as a type of path-connected graph, i.e. the segments of a linkage are the edges of a graph, and the endpoints of the segments are the vertices.
+A linkage can be thought of as a type of path-connected graph, i.e. the segments of a linkage are the edges of a graph, and the endpoints of the segments are the vertices. For this paper, we restrict our self to linkages that are simple planar graphs, i.e. a linkage that:
+\begin{itemize}
+\item[\rn{1}] does not have multiple edges between any pair of vertices,
+\item[\rn{2}] does not have edges that cross, or
+\item[\rn{3}] have loops (i.e. $(v,v) \in E$).
+\end{itemize}  
 \begin{definition}[Cycle]\label{def:linkages-3}
  A closed walk with no repetitions of vertices or edges allowed, other than the repetition of the starting and ending vertex
 \end{definition} 
@@ -37,3 +42,10 @@ A vertex of a graph (or linkage) that is not fixed to a position in a plane.
 \end{figure} 
 
 For illustrations in the remainder of this paper, free joints will be represented as crosses and pinned joints will be represented as disks.
+\subsubsection{Polygonal Linkages}
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics{graphics/PolygonalLinkageWithConfigurationSpace.pdf}
+\end{center} 
+\caption{\textbf{Not sure how to describe this graph with free joints, pinned joints.  Do I need to define another joint(i.e. axis of rotation joint)?}}
+\end{figure} 
