@@ -1,45 +1,78 @@
 \subsection{Linkages}
-\begin{definition}[Graph]\label{def:linkages-2}
-An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together with a set $E$ of edges or lines
-\end{definition} 
-\begin{definition}[Linkage]\label{def:linkages-1}
-A collection of fixed-length 1D segments joined at their endpoints to form a graph.
-\end{definition} 
-A linkage can be thought of as a type of path-connected graph, i.e. the segments of a linkage are the edges of a graph, and the endpoints of the segments are the vertices. For this paper, we restrict our self to linkages that are simple planar graphs, i.e. a linkage that:
+Given a \it{graph}, an ordered pair $G = (V,E)$, comprising of a set $V$ of vertices or nodes together with a set $E$ of edges or lines, then a linkage of $G$ is the realization (or embedding) of $G$ in $\bbr^2$. For this paper, we focus on linkages that are simple planar  graphs, i.e.:
 \begin{itemize}
 \item[\rn{1}] does not have multiple edges between any pair of vertices,
 \item[\rn{2}] does not have edges that cross, or
 \item[\rn{3}] have loops (i.e. $(v,v) \in E$).
+\end{itemize}
+\subsubsection{Configuration Spaces of Linkages}
+To describe the types of motion that we are interested in linkages we must define the graph isomorphism.  Two graphs $G=(V_1,E_1)$ and $\Gamma = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
+\begin{figure}[!htbp]
+\begin{center}
+$$\begin{array}{}
+\text{Graph}&\text{Vertices}&\text{Edges}\\
+G&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace \\
+\gamma&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace \\
+\end{array} $$
+\caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) = 3$, $f(d)=4$, $f(e)=5$.}
+\end{center} 
+\end{figure} 
+Next we add restrictions to our graph isomorphisms to narrow our focus:
+\begin{itemize}
+\item[\rn{1}] We focus on isomorphisms for simple planar graphs, and
+\item[\rn{2}] the isomorphism preserves edge lengths, e.g. $d(u,v) = d(f(u),f(v))$.
 \end{itemize}  
-\begin{definition}[Cycle]\label{def:linkages-3}
- A closed walk with no repetitions of vertices or edges allowed, other than the repetition of the starting and ending vertex
-\end{definition} 
-\begin{definition}[Configuration]\label{def:linkages-6}
-A specification of the location of all the link endpoints, link orientations and
-joint angles.\cite{demaine2008geometric}
-\end{definition}
-\begin{definition}[Configuration Space]\label{def:linkages-7}
-The space of all configurations of a linkage.
-\end{definition} 
-A configurations space is said to be continuous if for any two configurations, $\mathcal{A}$ and $\mathcal{B}$ of a linkage $L$, $\mathcal{A}$ can be continuously reconfigured to $\mathcal{B}$ such that, the reconfigurations reside in the configuration domain, $L$ remains rigid throughout reconfiguration (i.e. all links' lengths are preserved), and no violations of linkage intersection conditions. 
-\begin{definition}[Pinned Joint]\label{def:linkages-8}
-A vertex of a graph (or linkage) that is fixed to a position in a plane.
-\end{definition} 
-\begin{definition}[Free Joint]\label{def:linkages-8}
-A vertex of a graph (or linkage) that is not fixed to a position in a plane.
-\end{definition} 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=.5]{graphics/randomLinkage.pdf}
-\end{center} 
-\caption{A linkage with joints.}
-\end{figure} 
-\begin{figure}[h]
-\begin{center}
-\includegraphics{graphics/freeJointPinnedJoint.pdf}
-\end{center} 
-\caption{The cross represents a free joint; the pinned joints are denoted as disks.  The range of motion shown by the arc describes the continous configuration space of the linkage.}
-\end{figure} 
-
-For illustrations in the remainder of this paper, free joints will be represented as crosses and pinned joints will be represented as disks.
- 
+With these restrictions of our isomorphisms, we can begin to describe a range of motion to transform a linkage.  That range of motion is said to be the configuration space of that linkage.  To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set of points in which $v$ can be realized in the plane would be the configuration space for that vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n \right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion product of the configuration space of vertices:
+\begin{equation}\label{eqn:linkages-1}
+C(L) = C_{v_1} \cross C_{v_2} \cross \cdots \cross C_{v_n}
+\end{equation} 
+Some food for thought on configuration spaces and motions on linkages:
+\begin{itemize}
+\item[\rn{1}] A configuration space is said to be \it{connected} if there is a continuous mapping for any two planar realizations (linkages) of a graph in the plane.  Otherwise it is said to be \it{disconnected}.
+\item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex is said to be \it{pinned}. Otherwise it is said to be \it{free}.
+\item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are translations.
+\end{itemize}  
+% \begin{definition}[Graph]\label{def:linkages-2}
+% An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together with a set $E$ of edges or lines
+% \end{definition} 
+% \begin{definition}[Linkage]\label{def:linkages-1}
+% A collection of fixed-length 1D segments joined at their endpoints to form a graph.
+% \end{definition} 
+% A linkage can be thought of as a type of path-connected graph, i.e. the segments of a linkage are the edges of a graph, and the endpoints of the segments are the vertices. For this paper, we restrict our self to linkages that are simple planar graphs, i.e. a linkage that:
+% \begin{itemize}
+% \item[\rn{1}] does not have multiple edges between any pair of vertices,
+% \item[\rn{2}] does not have edges that cross, or
+% \item[\rn{3}] have loops (i.e. $(v,v) \in E$).
+% \end{itemize}  
+% \begin{definition}[Cycle]\label{def:linkages-3}
+%  A closed walk with no repetitions of vertices or edges allowed, other than the repetition of the starting and ending vertex
+% \end{definition} 
+% \begin{definition}[Configuration]\label{def:linkages-6}
+% A specification of the location of all the link endpoints, link orientations and
+% joint angles.\cite{demaine2008geometric}
+% \end{definition}
+% \begin{definition}[Configuration Space]\label{def:linkages-7}
+% The space of all configurations of a linkage.
+% \end{definition} 
+% A configurations space is said to be continuous if for any two configurations, $\mathcal{A}$ and $\mathcal{B}$ of a linkage $L$, $\mathcal{A}$ can be continuously reconfigured to $\mathcal{B}$ such that, the reconfigurations reside in the configuration domain, $L$ remains rigid throughout reconfiguration (i.e. all links' lengths are preserved), and no violations of linkage intersection conditions. 
+% \begin{definition}[Pinned Joint]\label{def:linkages-8}
+% A vertex of a graph (or linkage) that is fixed to a position in a plane.
+% \end{definition} 
+% \begin{definition}[Free Joint]\label{def:linkages-8}
+% A vertex of a graph (or linkage) that is not fixed to a position in a plane.
+% \end{definition} 
+% \begin{figure}[h]
+% \begin{center}
+% \includegraphics[scale=.5]{graphics/randomLinkage.pdf}
+% \end{center} 
+% \caption{A linkage with joints.}
+% \end{figure} 
+% \begin{figure}[h]
+% \begin{center}
+% \includegraphics{graphics/freeJointPinnedJoint.pdf}
+% \end{center} 
+% \caption{The cross represents a free joint; the pinned joints are denoted as disks.  The range of motion shown by the arc describes the continous configuration space of the linkage.}
+% \end{figure} 
+% 
+% For illustrations in the remainder of this paper, free joints will be represented as crosses and pinned joints will be represented as disks.
+%  
