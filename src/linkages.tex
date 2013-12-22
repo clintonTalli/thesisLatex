@@ -7,16 +7,17 @@ Given a \it{graph}, an ordered pair $G = (V,E)$, comprising of a set $V$ of vert
 \end{itemize}
 \subsubsection{Configuration Spaces of Linkages}
 To describe the types of motion that we are interested in linkages we must define the graph isomorphism.  Two graphs $G=(V_1,E_1)$ and $\Gamma = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
-\begin{figure}[!htbp]
+\begin{table}[!ht]
 \begin{center}
-$$\begin{array}{}
-\text{Graph}&\text{Vertices}&\text{Edges}\\
-G&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace \\
-\gamma&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace \\
+$$\begin{array}{|c|c|c|}\hline
+\text{Graph}&\text{Vertices}&\text{Edges}\\\hline
+G&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace \\\hline
+\Gamma&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace \\\hline
 \end{array} $$
 \caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) = 3$, $f(d)=4$, $f(e)=5$.}
 \end{center} 
-\end{figure} 
+\end{table} 
+
 Next we add restrictions to our graph isomorphisms to narrow our focus:
 \begin{itemize}
 \item[\rn{1}] We focus on isomorphisms for simple planar graphs, and
@@ -31,7 +32,9 @@ Some food for thought on configuration spaces and motions on linkages:
 \item[\rn{1}] A configuration space is said to be \it{connected} if there is a continuous mapping for any two planar realizations (linkages) of a graph in the plane.  Otherwise it is said to be \it{disconnected}.
 \item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex is said to be \it{pinned}. Otherwise it is said to be \it{free}.
 \item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are translations.
-\end{itemize}  
+\end{itemize} 
+\subsubsection{Realizability of Linkages}
+Suppose we had to configurations of a linkage, $\mathcal{A}$ and $\mathcal{B}$.  Can we reconfigure $\mathcal{A}$ to $\mathcal{B}$ continuously while respecting simple planar graph conditions?  This is the type of problem that we face in this paper.  We will continue to explore this in a different manner, with circle packings.
 % \begin{definition}[Graph]\label{def:linkages-2}
 % An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together with a set $E$ of edges or lines
 % \end{definition} 
