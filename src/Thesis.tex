@@ -33,10 +33,11 @@
 \usepackage{appendix}
 \usepackage{enumerate}
 \usepackage{enumitem}
-\usepackage{subfigure}
+%\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{subcaption}
 
-
-%%%CSUN Stuff%%%
+%%CSUN Stuff%%%
 \titlecontents{chapter}
   [0em]
    {\bfseries \addvspace{\baselineskip}}
@@ -111,7 +112,7 @@
 
 %%%%%%%%TikZ Commands
 
-\def\hexagonsize{0.866025cm}
+\def\hexagonsize{1cm}
 \pgfdeclarepatternformonly
   {hexagons}% name
   {\pgfpointorigin}% lower left
