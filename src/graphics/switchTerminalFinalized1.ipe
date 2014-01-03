@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.1">
-<info created="D:20131230190425" modified="D:20131230190942"/>
+<info created="D:20140102180928" modified="D:20140102185140"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -233,23 +233,46 @@ h
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 <path layer="alpha" stroke="black">
-128 704 m
-320 704 l
-320 704 l
+228.951 640 m
+192 704 l
+155.05 704 l
+136.574 672 l
+155.05 640 l
+228.951 640 l
 </path>
-<path stroke="black">
-128 640 m
-320 640 l
-</path>
-<path matrix="1.31541 0 0 1.0328 -63.1213 -22.0386" stroke="black">
-259.777 672 m
-241.889 702.984 l
-206.111 702.984 l
-188.223 672 l
-206.111 641.016 l
-241.889 641.016 l
+<path matrix="1 0 0 1 55.4262 32" stroke="black" dash="dashed">
+210.475 672 m
+192 704 l
+155.05 704 l
+136.574 672 l
+155.05 640 l
+192 640 l
 h
 </path>
-<use name="mark/circle(sx)" pos="208 640" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 55.4258 -32.0003" stroke="black" dash="dashed">
+210.475 672 m
+192 704 l
+155.05 704 l
+136.574 672 l
+155.05 640 l
+192 640 l
+h
+</path>
+<use name="mark/circle(sx)" pos="155.05 640" size="normal" stroke="black"/>
+<path stroke="black">
+256 814.851 m
+192 704 l
+64 704 l
+</path>
+<path stroke="black">
+311.426 561.149 m
+247.426 672 l
+311.426 782.852 l
+</path>
+<path stroke="black">
+64 640 m
+192 640 l
+256 529.148 l
+</path>
 </page>
 </ipe>

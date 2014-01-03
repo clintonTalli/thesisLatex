@@ -1,11 +1,10 @@
 \subsection{Linkages}
 Given a \it{graph}, an ordered pair $G = (V,E)$, comprising of a set $V$ of vertices or nodes together with a set $E$ of edges or lines, then a linkage of $G$ is the realization (or embedding) of $G$ in $\bbr^2$. For this paper, we focus on linkages that are simple planar  graphs, i.e.:
 \begin{itemize}
-\item[\rn{1}] does not have edges that cross,
-\item[\rn{2}] have loops (i.e. $(v,v) \in E$), or
-\item[\rn{3}] does not have multiple edges between any pair of vertices,.
+\item[\rn{1}] does not have multiple edges between any pair of vertices,
+\item[\rn{2}] does not have edges that cross, or
+\item[\rn{3}] have loops (i.e. $(v,v) \in E$).
 \end{itemize}
-We may visit special cases in which we look at planar graphs that satisfy the last two conditions but not the first.
 \subsubsection{Configuration Spaces of Linkages}
 To describe the types of motion that we are interested in linkages we must define the graph isomorphism.  Two graphs $G=(V_1,E_1)$ and $\Gamma = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
 \begin{table}[!ht]
@@ -17,7 +16,6 @@ G&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e
 \end{array} $$
 \caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) = 3$, $f(d)=4$, $f(e)=5$.}
 \end{center} 
-\label{table:linkage-1}
 \end{table} 
 
 Next we add restrictions to our graph isomorphisms to narrow our focus:
@@ -35,26 +33,6 @@ Some food for thought on configuration spaces and motions on linkages:
 \item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex is said to be \it{pinned}. Otherwise it is said to be \it{free}.
 \item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are translations.
 \end{itemize} 
-\subsubsection{Confining Linkages to a Restricted Space Within a Configuration Space}
-So we've covered the idea of linkages within a plane; now let's constrain the plane to a strip and have a linkage that is a \textit{polygon}, i.e. a linkage that forms a closed chain (e.g. Table \ref{table:linkage-1}), hugging the boundaries of the strip:
-\begin{figure}[!ht]
-\begin{center}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-    %(or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.49\textwidth}
-	  \includegraphics[width=\textwidth]{graphics/hexagonInChannelWithPinnedJointRight.pdf}
-	  \caption{A bounded hexagon that resides in a channel with a pinned vertex}
-	  \label{fig:linkage-1-1}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-	  \includegraphics[width=\textwidth]{graphics/hexagonInChannelWithPinnedJointLeft.pdf}
-	  \caption{The second realization of the hexagon residing in a channel with a pinned vertex.}
-	  \label{fig:linkage-1-2}
-  \end{subfigure}
-\end{center} 
-\caption{Due to the strip in the plane that the hexagon is bounded within the configuration space is limited to just two realizations.}\label{fig:linkage-1}
-\end{figure}
-So here we have a linkage whose conifguration space is limited to just two realizations.  With just two realizations, we can assign a binary value to them and have the linkage act as a boolean variable.  We will revisit this concept when we cover satisfiability problems later on in the paper.
 \subsubsection{Realizability of Linkages}
 Suppose we had two configurations of a linkage, $\mathcal{A}$ and $\mathcal{B}$.  A question that can be posed is can we reconfigure $\mathcal{A}$ to $\mathcal{B}$ continuously while respecting simple planar graph conditions?  The answer to this question is a yes or no.  It has been shown that this problem can be posed as a planar satisfiability problem \cite{Breu19983,mulzer2008minimum} (Later on in this paper we'll cover satisfiability problems).  This is the type of problem that we face in this paper.  We will continue to explore this in a different manner, with circle packings.
 % \begin{definition}[Graph]\label{def:linkages-2}
