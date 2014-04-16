@@ -1,11 +1,11 @@
-\subsection{Linkages}
-Given a \it{graph}, an ordered pair $G = (V,E)$, comprising of a set $V$ of vertices or nodes together with a set $E$ of edges or lines, then a linkage of $G$ is the realization (or embedding) of $G$ in $\bbr^2$. For this paper, we focus on linkages that are simple planar  graphs, i.e.:
+\subsection{Linkages and Polygonal Linkages}
+Given a \it{graph}, an ordered pair $G = (V,E)$, comprising of a set $V$ of vertices or nodes together with a set $E$ of edges or lines, then a \it{linkage} of $G$ is the realization (or embedding) of $G$ in $\bbr^2$. A \it{polygonal linkage} is an ordered pair, $L = (H,P)$,  comprises of a set of polygons, $P$, and a set of hinge points $H$ where each hinge $h \in H$ corresponds to two points on the boundary of two distinct polygons in $P$. Without loss of generality, for this paper, we focus on linkages and polygonal linkages that are simple planar  graphs, i.e.:
 \begin{itemize}
-\item[\rn{1}] does not have edges that cross,
+\item[\rn{1}] does not have edges (polygons) that cross (intersect),
 \item[\rn{2}] have loops (i.e. $(v,v) \in E$), or
-\item[\rn{3}] does not have multiple edges between any pair of vertices,.
+\item[\rn{3}] does not have multiple edges between any pair of vertices.
 \end{itemize}
-We may visit special cases in which we look at planar graphs that satisfy the last two conditions but not the first.
+We may visit special cases in which we look at planar graphs that satisfy the last two conditions but not the first.  
 \subsubsection{Configuration Spaces of Linkages}
 To describe the types of motion that we are interested in linkages we must define the graph isomorphism.  Two graphs $G=(V_1,E_1)$ and $\Gamma = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
 \begin{table}[!ht]
@@ -22,8 +22,8 @@ G&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e
 
 Next we add restrictions to our graph isomorphisms to narrow our focus:
 \begin{itemize}
-\item[\rn{1}] We focus on isomorphisms for planar graphs, simple planar graphs, and
-\item[\rn{2}] the isomorphism preserves edge lengths, e.g. $d(u,v) = d(f(u),f(v))$.
+\item[\rn{1}] We focus on isomorphisms for planar graphs and or polygonal linkages, simple planar graphs, and
+\item[\rn{2}] the isomorphism preserves edge lengths (polygonal area), e.g. $d(u,v) = d(f(u),f(v))$.
 \end{itemize}  
 With these restrictions of our isomorphisms, we can begin to describe a range of motion to transform a linkage.  That range of motion is said to be the configuration space of that linkage.  To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set of points in which $v$ can be realized in the plane would be the configuration space for that vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n \right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion product of the configuration space of vertices:
 \begin{equation}\label{eqn:linkages-1}
@@ -35,104 +35,4 @@ Some food for thought on configuration spaces and motions on linkages:
 \item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex is said to be \it{pinned}. Otherwise it is said to be \it{free}.
 \item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are translations.
 \end{itemize}\newpage 
-\subsubsection{Confining Linkages to a Restricted Space Within a Configuration Space}
-So we've covered the idea of linkages within a plane; now let's constrain the plane to a strip and have a linkage that is a \textit{polygon}, i.e. a linkage that forms a closed chain (e.g. Table \ref{table:linkage-1}), hugging the boundaries of the strip:
-\begin{figure}[h]
-\begin{center}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-    %(or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.49\textwidth}
-	  \includegraphics[width=\textwidth]{graphics/hexagonInChannelWithPinnedJointRight.pdf}
-	  \caption{A bounded hexagon that resides in a channel with a pinned vertex}
-	  \label{fig:linkage-1-1}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-	  \includegraphics[width=\textwidth]{graphics/hexagonInChannelWithPinnedJointLeft.pdf}
-	  \caption{The second realization of the hexagon residing in a channel with a pinned vertex.}
-	  \label{fig:linkage-1-2}
-  \end{subfigure}
-\end{center} 
-\caption{Due to the strip in the plane that the hexagon is bounded within the configuration space is limited to just two realizations.}\label{fig:linkage-1}
-\end{figure}
-So here we have a linkage whose conifguration space is limited to just two realizations.  With just two realizations, we can assign a binary value to them and have the linkage act as a boolean variable.  We will revisit this concept when we cover satisfiability problems later on in the paper.
-\begin{figure}[h]
-\begin{center}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-    %(or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.49\textwidth}
-	  \includegraphics[width=\textwidth]{graphics/switchTerminalFinalized2.pdf}
-	  \caption{A pentagon that is pinned in a channel junction that is formed by the sides of 3 large regular hexagons. It has two possible configurations, much like that of \ref{fig:linkage-1}}
-	  \label{fig:linkage-2-1}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-	  \includegraphics[width=\textwidth]{graphics/switchTerminalFinalized3.pdf}
-	  \caption{A pinned pentagon residing in a channel junction that is formed by the sides of 3 large regular hexagons with 2 dashed pentagons intersecting it.}
-	  \label{fig:linkage-2-2}
-  \end{subfigure}
-\caption{Suppose the channel formed is a junction of three regular hexagons.  The polygon partially residing in the junction is a regular hexagon with an equalateral triangle appended at an edge.  This polygon would prevent other polygons (i.e. the dashed polygons) of the same shape residing in the center of the channel without intersection. This demonstrates that a the configuration space within a multichannel environment can have concurrency issues, i.e. some configurations cannot be realizable.}
-\end{center} \label{fig:linkage-2}
-\end{figure}\newpage
-Expanding upon the ideo of \ref{fig:linkage-1}, forming channels with junctions as shown in Figure \ref{fig:linkage-2} can be formed as such by evenly spacing the edges of a hexagonal lattice.  Visually, it is shown that only one of three possible pentagons can reside in the channel at one time.  By asserting certain conditions on the lattice, and extending the problem to a greater region of a hexagonal lattice, we will be able to pose a realizability problem of whether a configuration $\mathcal{A}$ can be reconfigured to $\mathcal{B}$ by switching pentagons without violating overlapped polygon conditions.
-%Radius of regular polygons 
-\newdimen\R
-\R=3cm
-\begin{figure}[h] 
-\begin{center}
-\begin{tikzpicture}
-\begin{scope}
-\filldraw[pattern=hexagons]  (0:\R) \foreach \x in {60,120,...,359} {
-                -- (\x:\R)
-            }-- cycle (90:\R);
-\end{scope}
-\end{tikzpicture}
-\caption{A hexagonal lattice contained in a hexagon.}
-\label{fig:lattice}
-\end{center}
-\end{figure}
-\newpage
-\subsubsection{Realizability of Linkages}
-Suppose we had two configurations of a linkage, $\mathcal{A}$ and $\mathcal{B}$.  A question that can be posed is can we reconfigure $\mathcal{A}$ to $\mathcal{B}$ continuously while respecting simple planar graph conditions?  The answer to this question is a yes or no.  It has been shown that this problem can be posed as a planar satisfiability problem \cite{Breu19983,mulzer2008minimum} (Later on in this paper we'll cover satisfiability problems).  This is the type of problem that we face in this paper.  We will continue to explore this in a different manner, with circle packings.
-% \begin{definition}[Graph]\label{def:linkages-2}
-% An ordered pair $G = (V, E)$ comprising a set $V$ of vertices or nodes together with a set $E$ of edges or lines
-% \end{definition} 
-% \begin{definition}[Linkage]\label{def:linkages-1}
-% A collection of fixed-length 1D segments joined at their endpoints to form a graph.
-% \end{definition} 
-% A linkage can be thought of as a type of path-connected graph, i.e. the segments of a linkage are the edges of a graph, and the endpoints of the segments are the vertices. For this paper, we restrict our self to linkages that are simple planar graphs, i.e. a linkage that:
-% \begin{itemize}
-% \item[\rn{1}] does not have multiple edges between any pair of vertices,
-% \item[\rn{2}] does not have edges that cross, or
-% \item[\rn{3}] have loops (i.e. $(v,v) \in E$).
-% \end{itemize}  
-% \begin{definition}[Cycle]\label{def:linkages-3}
-%  A closed walk with no repetitions of vertices or edges allowed, other than the repetition of the starting and ending vertex
-% \end{definition} 
-% \begin{definition}[Configuration]\label{def:linkages-6}
-% A specification of the location of all the link endpoints, link orientations and
-% joint angles.\cite{demaine2008geometric}
-% \end{definition}
-% \begin{definition}[Configuration Space]\label{def:linkages-7}
-% The space of all configurations of a linkage.
-% \end{definition} 
-% A configurations space is said to be continuous if for any two configurations, $\mathcal{A}$ and $\mathcal{B}$ of a linkage $L$, $\mathcal{A}$ can be continuously reconfigured to $\mathcal{B}$ such that, the reconfigurations reside in the configuration domain, $L$ remains rigid throughout reconfiguration (i.e. all links' lengths are preserved), and no violations of linkage intersection conditions. 
-% \begin{definition}[Pinned Joint]\label{def:linkages-8}
-% A vertex of a graph (or linkage) that is fixed to a position in a plane.
-% \end{definition} 
-% \begin{definition}[Free Joint]\label{def:linkages-8}
-% A vertex of a graph (or linkage) that is not fixed to a position in a plane.
-% \end{definition} 
-% \begin{figure}[h]
-% \begin{center}
-% \includegraphics[scale=.5]{graphics/randomLinkage.pdf}
-% \end{center} 
-% \caption{A linkage with joints.}
-% \end{figure} 
-% \begin{figure}[h]
-% \begin{center}
-% \includegraphics{graphics/freeJointPinnedJoint.pdf}
-% \end{center} 
-% \caption{The cross represents a free joint; the pinned joints are denoted as disks.  The range of motion shown by the arc describes the continous configuration space of the linkage.}
-% \end{figure} 
-% 
-% For illustrations in the remainder of this paper, free joints will be represented as crosses and pinned joints will be represented as disks.
 %  

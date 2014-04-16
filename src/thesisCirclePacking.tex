@@ -1,17 +1,33 @@
 Here goes something
-\begin{figure}[htbp]
+% \begin{figure}[htbp]
+% \begin{center}
+% \includegraphics{graphics/RightSwitchBetweenTwoPolygons.pdf}
+% \caption{blah blah blah}
+% \end{center} 
+% \end{figure} 
+% \begin{figure}[htbp]
+% \begin{center}
+% \includegraphics{graphics/LeftSwitchBetweenTwoPolygons.pdf}
+% \caption{blah blah blah}
+% \end{center} 
+% \end{figure} 
+\begin{figure}[h]
 \begin{center}
-\includegraphics{graphics/RightSwitchBetweenTwoPolygons.pdf}
-\caption{blah blah blah}
+  ~ %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+    %(or a blank line to force the subfigure onto a new line)
+  \begin{subfigure}[b]{0.45\textwidth}
+	  \includegraphics[width=\textwidth]{graphics/RightSwitchBetweenTwoPolygons.pdf}
+	  \caption{blah blah blah}
+	  \label{fig:linkage-1-1}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+	  \includegraphics[width=\textwidth]{graphics/LeftSwitchBetweenTwoPolygons.pdf}
+	  \caption{blah blah blah}
+	  \label{fig:circlePacking1-2}
+  \end{subfigure}
 \end{center} 
-\end{figure} 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics{graphics/LeftSwitchBetweenTwoPolygons.pdf}
-\caption{blah blah blah}
-\end{center} 
-\end{figure} 
-
+\caption{Due to the strip in the plane that the hexagon is bounded within the configuration space is limited to just two realizations.}\label{fig:circlePacking-1}
+\end{figure}
 \subsection{Circle Packing}
 It turns out the circle packings are an equivalent way to to represent linkages and their corresponding problems.  Before we establish the relation, we will cover some fundamental concepts of circle packings.  A \it{circle packing}, $P$, embedded in a plane  is a set of circles with disjoint interiors $\left\lbrace C_i \right\rbrace_{i = 1}^n $ such that for any circle $C \in \left\lbrace C_i \right\rbrace_{i = 1}^n$, $C$ is tangent to a different circle of $\left\lbrace C_i \right\rbrace_{i = 1}^n$. 
 
