@@ -6,7 +6,6 @@ Given a \it{graph}, an ordered pair $G = (V,E)$, comprising of a set $V$ of vert
 \item[\rn{3}] does not have multiple edges between any pair of vertices.
 \end{itemize}
 We may visit special cases in which we look at planar graphs that satisfy the last two conditions but not the first.  
-\subsection{Linkage Realization}
 
 \subsection{Configuration Spaces of Linkages}
 To describe the types of motion that we are interested in linkages we must define the graph isomorphism.  Two graphs $G=(V_1,E_1)$ and $\Gamma = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
@@ -37,3 +36,6 @@ Some food for thought on configuration spaces and motions on linkages:
 \item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex is said to be \it{pinned}. Otherwise it is said to be \it{free}.
 \item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are translations.
 \end{itemize}\newpage 
+Note that configuration spaces for polygonal linkages are described similarly.
+\subsubsection{Realizability of Linkages}
+Suppose we had two configurations of a linkage, $\mathcal{A}$ and $\mathcal{B}$.  A question that can be posed is can we reconfigure $\mathcal{A}$ to $\mathcal{B}$ continuously while respecting simple planar graph conditions?  The answer to this question is a yes or no.  If yes, then there must exist a path connected configuration space between $\mathcal{A}$ and $\mathcal{B}$.  It has been shown that this problem can be posed as a planar satisfiability problem \cite{Breu19983,mulzer2008minimum} (Later on in this paper we'll cover satisfiability problems).  This is the type of problem that we face in this paper.  We will continue to explore this in a different manner, with circle packings.

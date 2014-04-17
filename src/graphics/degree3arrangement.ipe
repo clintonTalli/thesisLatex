@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.1">
-<info created="D:20140415193546" modified="D:20140415194046"/>
+<info created="D:20140415193546" modified="D:20140416195055"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -235,30 +235,30 @@ h
 <path layer="alpha" stroke="black">
 16 0 0 16 256 704 e
 </path>
-<path matrix="1 0 0 1 0.121918 31.9994" stroke="black">
+<path matrix="1 0 0 1 0.121918 31.9994" stroke="green">
 16 0 0 16 256 704 e
 </path>
-<path matrix="1 0 0 1 0.121918 -32.0006" stroke="black">
+<path matrix="1 0 0 1 0.121918 -32.0006" stroke="green">
 16 0 0 16 256 704 e
 </path>
-<text matrix="1 0 0 1 8.80147 0" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" height="5.7" depth="0.72" valign="top">1</text>
-<text matrix="1 0 0 1 8.80182 31.1819" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" height="5.7" depth="0.72" valign="top">2</text>
-<text matrix="1 0 0 1 8.55035 -31.9372" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" height="5.7" depth="0.72" valign="top">2</text>
-<path matrix="1 0 0 1 32.1219 31.9994" stroke="black">
+<text matrix="1 0 0 1 8.80147 0" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" valign="top">1</text>
+<text matrix="1 0 0 1 8.80182 31.1819" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" valign="top">2</text>
+<text matrix="1 0 0 1 8.55035 -31.9372" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" valign="top">2</text>
+<path matrix="1 0 0 1 32.1219 31.9994" stroke="blue">
 16 0 0 16 256 704 e
 </path>
-<path matrix="1 0 0 1 -31.8781 31.9994" stroke="black">
+<path matrix="1 0 0 1 -31.8781 31.9994" stroke="blue">
 16 0 0 16 256 704 e
 </path>
-<path matrix="1 0 0 1 -31.8781 -32.0006" stroke="black">
+<path matrix="1 0 0 1 -31.8781 -32.0006" stroke="blue">
 16 0 0 16 256 704 e
 </path>
-<path matrix="1 0 0 1 32.1219 -32.0006" stroke="black">
+<path matrix="1 0 0 1 32.1219 -32.0006" stroke="blue">
 16 0 0 16 256 704 e
 </path>
-<text matrix="1 0 0 1 -22.5652 31.8998" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" height="5.7" depth="0.72" valign="top">3</text>
-<text matrix="1 0 0 1 -22.8167 -31.2193" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" height="5.7" depth="0.72" valign="top">3</text>
-<text matrix="1 0 0 1 41.3891 31.845" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" height="5.7" depth="0.72" valign="top">3</text>
-<text matrix="1 0 0 1 41.1377 -31.2741" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" height="5.7" depth="0.72" valign="top">3</text>
+<text matrix="1 0 0 1 -22.5652 31.8998" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" valign="top">3</text>
+<text matrix="1 0 0 1 -22.8167 -31.2193" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" valign="top">3</text>
+<text matrix="1 0 0 1 41.3891 31.845" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" valign="top">3</text>
+<text matrix="1 0 0 1 41.1377 -31.2741" transformations="translations" pos="244.576 709.077" stroke="black" type="minipage" width="5.28088" valign="top">3</text>
 </page>
 </ipe>
