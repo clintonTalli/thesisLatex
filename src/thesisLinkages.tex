@@ -1,13 +1,19 @@
-\section{Linkages and Polygonal Linkages}
-Given a \it{graph}, an ordered pair $G = (V,E)$, comprising of a set $V$ of vertices or nodes together with a set $E$ of edges or lines, then a \it{linkage} of $G$ is the realization (or embedding) of $G$ in $\bbr^2$. A \it{polygonal linkage} is an ordered pair, $L = (H,P)$,  comprises of a set of polygons, $P$, and a set of hinge points $H$ where each hinge $h \in H$ corresponds to two points on the boundary of two distinct polygons in $P$. Without loss of generality, for this paper, we focus on linkages and polygonal linkages that are simple planar  graphs, i.e.:
+\section{Linkages}
+A \it{linkage} is an ordered pair $L = (V,E)$ comprising of a set $V$ of vertices or nodes together with a set $E$ of edges or lines. %then a \it{linkage} of $G$ is the realization (or embedding) of $G$ in $\bbr^2$. 
+%A \it{polygonal linkage} is an ordered pair, $L = (H,P)$,  comprises of a set of polygons, $P$, and a set of hinge points $H$ where each hinge $h \in H$ corresponds to two points on the boundary of two distinct polygons in $P$. Without loss of generality, for this paper, 
+We focus on linkages that are simple planar  graphs, i.e.:
 \begin{itemize}
-\item[\rn{1}] does not have edges (polygons) that cross (intersect),
+\item[\rn{1}] does not have edges that cross,
 \item[\rn{2}] have loops (i.e. $(v,v) \in E$), or
 \item[\rn{3}] does not have multiple edges between any pair of vertices.
 \end{itemize}
 We may visit special cases in which we look at planar graphs that satisfy the last two conditions but not the first.  
-
+\section{Polygonal Linkages}
+%describe how it is a generalization of Linkages.
+Polygon linkages are similar to linkages.  A \it{polygonal linkage} is an ordered pair $L = (\HH,\PP)$ comprising of a set of hinges, $\HH$, where each hinge $h\in \HH$ corresponds to two points on the boundary of two distinct polygons.  
+A \emph{realization} of a polygonal linkage is an interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the points corresponding to each hinge are identified.  
 \subsection{Configuration Spaces of Linkages}
+%Show example an example of a locked linkage and locked polygonal linkage.
 To describe the types of motion that we are interested in linkages we must define the graph isomorphism.  Two graphs $G=(V_1,E_1)$ and $\Gamma = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
 \begin{table}[!ht]
 \begin{center}
