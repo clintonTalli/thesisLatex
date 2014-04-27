@@ -10,39 +10,88 @@ We focus on linkages that are simple planar  graphs, i.e.:
 We may visit special cases in which we look at planar graphs that satisfy the last two conditions but not the first.  
 \section{Polygonal Linkages}
 %describe how it is a generalization of Linkages.
-Polygon linkages are similar to linkages.  A \it{polygonal linkage} is an ordered pair $L = (\HH,\PP)$ comprising of a set of hinges, $\HH$, where each hinge $h\in \HH$ corresponds to two points on the boundary of two distinct polygons.  
-A \emph{realization} of a polygonal linkage is an interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the points corresponding to each hinge are identified.  
+Polygon linkages are similar to linkages.  They are an ordered pair of sets, with the exception 
+that the set of vertices become a set of hinges, $\HH$, and the set of edges become a set of 
+polygons, $\PP$.  For each hinge point $h \in \HH$, there exists some subset $P \subset \PP$ with 
+at least cardinality of 2 such that for each polygon $p \in P$, $h$ corresponds to some point on 
+the boundary of $p$.  When the polygonal linkage is embedded in the plane, the hinge point is where 
+the polygons of $P$ \it{kiss}.  
+% show an example of polygonal linkages
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=1]{graphics/PolygonalLinkageExamples.pdf}
+\end{center} 
+\caption{(a) A polygonal linkage with a non-convex polygon and a hinge point corresponding to three 
+polygons.  (b) A polygonal linkage with 8 regular polygons.}
+\label{fig:linkage-2}
+\end{figure}
+For the remainder of this thesis, we'll focus on the polygonal linkages with the following 
+restrictions:
+\begin{enumerate}
+ \item  For each hinge point $h \in \HH$, there exists some subset $P \subset \PP$ with 
+exactly cardinality of 2, and
+\item every polygon in $\PP$ is convex.
+\end{enumerate}
+Formally, we define a \it{polygonal linkage} as an ordered pair $L = (\HH,\PP)$ comprising of a 
+set of hinges, $\HH$, where each hinge $h\in \HH$ corresponds to two points on the boundary of two 
+distinct polygons. A \emph{realization} of a polygonal linkage is an interior-disjoint placement of 
+congruent copies of the polygons in $\PP$ such that the points corresponding to each hinge are 
+identified (Fig. \ref{fig:1}). 
 \subsection{Configuration Spaces of Linkages}
 %Show example an example of a locked linkage and locked polygonal linkage.
-To describe the types of motion that we are interested in linkages we must define the graph isomorphism.  Two graphs $G=(V_1,E_1)$ and $\Gamma = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
+To describe the types of motion that we are interested in linkages we must define the graph 
+isomorphism.  Two graphs $G=(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ 
+such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only 
+if $(f(u),f(v)) \in E_2$. 
 \begin{table}[!ht]
 \begin{center}
 $$\begin{array}{|c|c|c|}\hline
 \text{Graph}&\text{Vertices}&\text{Edges}\\\hline
-G&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace \\\hline
-\Gamma&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace \\\hline
+G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
+\\\hline
+G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
+\\\hline
 \end{array} $$
 \caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) = 3$, $f(d)=4$, $f(e)=5$.}
 \end{center} 
 \label{table:linkage-1}
 \end{table} 
-
+% show an example of polygonal linkages
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
+\end{center} 
+\caption{This figure depicts the graph isomorphism shown in Table (\ref{table:linkage-1})between 
+$V_1$ and $V_2$ in the plane.}
+\label{fig:linkage-3}
+\end{figure}
 Next we add restrictions to our graph isomorphisms to narrow our focus:
 \begin{itemize}
 \item[\rn{1}] We focus on isomorphisms for planar graphs and or polygonal linkages, simple planar graphs, and
 \item[\rn{2}] the isomorphism preserves edge lengths (polygonal area), e.g. $d(u,v) = d(f(u),f(v))$.
 \end{itemize}  
-With these restrictions of our isomorphisms, we can begin to describe a range of motion to transform a linkage.  That range of motion is said to be the configuration space of that linkage.  To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set of points in which $v$ can be realized in the plane would be the configuration space for that vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n \right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion product of the configuration space of vertices:
-\begin{equation}\label{eqn:linkages-1}
-C(L) = C_{v_1} \cross C_{v_2} \cross \cdots \cross C_{v_n}
-\end{equation} 
-Some food for thought on configuration spaces and motions on linkages:
-\begin{itemize}
-\item[\rn{1}] A configuration space is said to be \it{connected} if there is a continuous mapping for any two planar realizations (linkages) of a graph in the plane.  Otherwise it is said to be \it{disconnected}.
-\item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex is said to be \it{pinned}. Otherwise it is said to be \it{free}.
-\item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are translations.
-\end{itemize}
-Note that configuration spaces for polygonal linkages are described similarly.
-\subsubsection{Realizability of Linkages}
-Suppose we had two configurations of a linkage, $\mathcal{A}$ and $\mathcal{B}$.  A question that can be posed is can we reconfigure $\mathcal{A}$ to $\mathcal{B}$ continuously while respecting simple planar graph conditions?  The answer to this question is a yes or no.  If yes, then there must exist a path connected configuration space between $\mathcal{A}$ and $\mathcal{B}$.  It has been shown that this problem can be posed as a planar satisfiability problem \cite{Breu19983,mulzer2008minimum} (Later on in this paper we'll cover satisfiability problems).  This is the type of problem that we face in this paper.  We will continue to explore this in a different manner, with circle packings.
+%With these restrictions of our isomorphisms, we can begin to describe a range of motion to 
+%transform a linkage.  That range of motion is said to be the configuration space of that linkage.  
+%To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set 
+%of points in which $v$ can be realized in the plane would be the configuration space for that 
+%vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n 
+%\right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion 
+%product of the configuration space of vertices:
+
+%DESCRIBE THE FOLLOWING:
+%1)CONFIGURATION SPACE AS A VECTOR SPACE OF DIMENSION 2^N WHERE EDGE LENGTH IS PRESERVED.
+%2)PINNING 1 VERTEX TO ORIGIN AND A NEIGHBOR, ADD MOTIVATION TO PREVENT ROTATION AND TRANSLATIONS.
+
+% \begin{equation}\label{eqn:linkages-1}
+% C(L) = C_{v_1} \cross C_{v_2} \cross \cdots \cross C_{v_n}
+% \end{equation} 
+% Some food for thought on configuration spaces and motions on linkages:
+% \begin{itemize}
+% \item[\rn{1}] A configuration space is said to be \it{connected} if there is a continuous mapping for any two planar realizations (linkages) of a graph in the plane.  Otherwise it is said to be \it{disconnected}.
+% \item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex is said to be \it{pinned}. Otherwise it is said to be \it{free}.
+% \item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are translations.
+% \end{itemize}
+% Note that configuration spaces for polygonal linkages are described similarly.
+% \subsubsection{Realizability of Linkages}
+% Suppose we had two configurations of a linkage, $\mathcal{A}$ and $\mathcal{B}$.  A question that can be posed is can we reconfigure $\mathcal{A}$ to $\mathcal{B}$ continuously while respecting simple planar graph conditions?  The answer to this question is a yes or no.  If yes, then there must exist a path connected configuration space between $\mathcal{A}$ and $\mathcal{B}$.  It has been shown that this problem can be posed as a planar satisfiability problem \cite{Breu19983,mulzer2008minimum} (Later on in this paper we'll cover satisfiability problems).  This is the type of problem that we face in this paper.  We will continue to explore this in a different manner, with circle packings.
 \newpage 
