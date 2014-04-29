@@ -1,6 +1,6 @@
 \section{Linkages}
 A \it{linkage} is an ordered pair $L = (V,E)$ comprising of a set $V$ of vertices or nodes together with a set $E$ of edges or lines. %then a \it{linkage} of $G$ is the realization (or embedding) of $G$ in $\bbr^2$. 
-%A \it{polygonal linkage} is an ordered pair, $L = (H,P)$,  comprises of a set of polygons, $P$, and a set of hinge points $H$ where each hinge $h \in H$ corresponds to two points on the boundary of two distinct polygons in $P$. Without loss of generality, for this paper, 
+Without loss of generality, for this paper, 
 We focus on linkages that are simple planar  graphs, i.e.:
 \begin{itemize}
 \item[\rn{1}] does not have edges that cross,
@@ -21,10 +21,18 @@ two hinge points can correspond to the same boundary point of a polygon.}
 %describe how it is a generalization of Linkages.
 Polygon linkages are similar to linkages.  They are an ordered pair of sets, with the exception 
 that the set of vertices become a set of hinges, $\HH$, and the set of edges become a set of 
-polygons, $\PP$.  For each hinge point $h \in \HH$, there exists some subset $P \subset \PP$ with 
-at least cardinality of 2 such that for each polygon $p \in P$, $h$ corresponds to some point on 
-the boundary of $p$.  When the polygonal linkage is embedded in the plane, the hinge point is where 
-the polygons of $P$ \it{kiss}.  
+polygons, $\PP$.  Formally, a \it{polygonal linkage} is an ordered pair, $L = (H,P)$,  comprises of 
+a set of polygons, $P$, and a set of hinge points $H$ where each hinge $h \in H$ corresponds to two 
+points on the boundary of two distinct polygons in $P$. 
+
+In figure (\ref{fig:linkage-1}), we illustrate that two hinge points can reside on the same point 
+in the plane. 
+%Foigr each hinge point $h \in \HH$, there 
+%exists some subset $P \subset \PP$ with 
+%at least cardinality of 2 such that for each polygon $p \in P$, $h$ corresponds to some point on 
+%the boundary of $p$.  When the polygonal linkage is embedded in the plane, the hinge point is 
+%where 
+%the polygons of $P$ \it{kiss}.  
 % show an example of polygonal linkages
 \begin{figure}[h]
 \begin{center}
