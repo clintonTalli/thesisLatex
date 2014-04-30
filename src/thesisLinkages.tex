@@ -1,8 +1,8 @@
 \section{Linkages}
 A \textit{linkage} is an ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or nodes 
 together with a set $E$ of edges or lines. This definition is commonly used for graphs.  Mapping 
-the linkage $G$ into the plane is said to be the \textit{embedding}, i.e. $l : G \mapsto 
-\bbR^2$.  We consider a \textit{realization} of to be the ordered pair $\left( l, G \right)$. 
+the linkage $G$ into the plane is said to be the \textit{embedding}, i.e. $l : E \mapsto 
+\bbR^{2}$.  We consider a \textit{realization} of a linkage is range of $l$, i.e. $l(E)$. 
 Without loss of generality, for this paper, we focus on linkages that are simple planar  graphs, 
 i.e.:
 \begin{itemize}
@@ -33,12 +33,18 @@ two hinge points can correspond to the same boundary point of a polygon.}
 %describe how it is a generalization of Linkages.
 Polygon linkages are similar to linkages.  They are an ordered pair of sets, with the exception 
 that the set of vertices become a set of hinges, $\HH$, and the set of edges become a set of 
-polygons, $\PP$.  Formally, a \it{polygonal linkage} is an ordered pair, $L = (H,P)$,  comprises of 
-a set of polygons, $P$, and a set of hinge points $H$ where each hinge $h \in H$ corresponds to two 
-points on the boundary of two distinct polygons in $P$. 
+polygons, $\PP$.  Formally, a \it{polygonal linkage} is an ordered pair, $G = (\HH,\PP)$,  
+comprises of a set of polygons, $\PP$, and a set of hinge points $\HH$ where each hinge $h \in \HH$ 
+corresponds to two points on the boundary of two distinct polygons in $\PP$. Mapping the linkage 
+$G$ into the plane is said to be the \textit{embedding}, i.e. $l : \PP \mapsto \bbR^{2}$.  We 
+consider a \textit{realization} of a polygonal linkage is range of $l$, i.e. $l(\PP)$.
 
 In figure (\ref{fig:linkage-1}), we illustrate that two hinge points can reside on the same point 
-in the plane. 
+in the plane. Figure (\ref{fig:linkage-1}) and figure (\ref{fig:linkage-3}) are examples of special 
+cases that we may run into, but do not want to focus heavily on.  They are presented to the reader 
+to facilitate understanding of the definitions of polygonal linkages and linkages respectively.  
+Without loss of generality, for this paper, we focus on polygonal linkages that are 
+equivalent to simple planar graphs.
 %Foigr each hinge point $h \in \HH$, there 
 %exists some subset $P \subset \PP$ with 
 %at least cardinality of 2 such that for each polygon $p \in P$, $h$ corresponds to some point on 
@@ -66,39 +72,7 @@ set of hinges, $\HH$, where each hinge $h\in \HH$ corresponds to two points on t
 distinct polygons. A \emph{realization} of a polygonal linkage is an interior-disjoint placement of 
 congruent copies of the polygons in $\PP$ such that the points corresponding to each hinge are 
 identified (Fig. \ref{fig:1}). 
-\subsection{Configuration Spaces of Linkages}
-%Show example an example of a locked linkage and locked polygonal linkage.
-To describe the types of motion that we are interested in linkages we must define the graph 
-isomorphism.  Two graphs $G=(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ 
-such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only 
-if $(f(u),f(v)) \in E_2$. 
-\begin{table}[!ht]
-\begin{center}
-$$\begin{array}{|c|c|c|}\hline
-\text{Graph}&\text{Vertices}&\text{Edges}\\\hline
-G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
-\\\hline
-G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
-\\\hline
-\end{array} $$
-\caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) = 3$, $f(d)=4$, $f(e)=5$.}
-\end{center} 
-\label{table:linkage-1}
-\end{table} 
-% show an example of polygonal linkages
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
-\end{center} 
-\caption{This figure depicts the graph isomorphism shown in Table (\ref{table:linkage-1})between 
-$V_1$ and $V_2$ in the plane.}
-\label{fig:linkage-3}
-\end{figure}
-Next we add restrictions to our graph isomorphisms to narrow our focus:
-\begin{itemize}
-\item[\rn{1}] We focus on isomorphisms for planar graphs and or polygonal linkages, simple planar graphs, and
-\item[\rn{2}] the isomorphism preserves edge lengths (polygonal area), e.g. $d(u,v) = d(f(u),f(v))$.
-\end{itemize}  
+
 %With these restrictions of our isomorphisms, we can begin to describe a range of motion to 
 %transform a linkage.  That range of motion is said to be the configuration space of that linkage.  
 %To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set 
