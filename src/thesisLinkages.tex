@@ -1,13 +1,25 @@
 \section{Linkages}
-A \it{linkage} is an ordered pair $L = (V,E)$ comprising of a set $V$ of vertices or nodes together with a set $E$ of edges or lines. %then a \it{linkage} of $G$ is the realization (or embedding) of $G$ in $\bbr^2$. 
-Without loss of generality, for this paper, 
-We focus on linkages that are simple planar  graphs, i.e.:
+A \textit{linkage} is an ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or nodes 
+together with a set $E$ of edges or lines. This definition is commonly used for graphs.  Mapping 
+the linkage $G$ into the plane is said to be the \textit{embedding}, i.e. $l : G \mapsto 
+\bbR^2$.  We consider a \textit{realization} of to be the ordered pair $\left( l, G \right)$. 
+Without loss of generality, for this paper, we focus on linkages that are simple planar  graphs, 
+i.e.:
 \begin{itemize}
 \item[\rn{1}] does not have edges that cross,
-\item[\rn{2}] have loops (i.e. $(v,v) \in E$), or
+\item[\rn{2}] have loops, i.e. $(v,v) \in E$, or
 \item[\rn{3}] does not have multiple edges between any pair of vertices.
 \end{itemize}
-We may visit special cases in which we look at planar graphs that satisfy the last two conditions but not the first.  
+We may visit special cases in which we look at planar graphs that satisfy the last two conditions 
+but not the first, e.g.:
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=1]{graphics/crossingEdgeLinkage.pdf}
+\end{center} 
+\caption{A linkage where edges cross however it does not contain loops or multiple edges between 
+vertices.}
+\label{fig:linkage-3}
+\end{figure}
 \section{Polygonal Linkages}
 \begin{figure}[h]
 \begin{center}
