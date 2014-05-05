@@ -1,0 +1,56 @@
+\section{Satisfiability}
+\begin{prob}[Satisfiability Problem]\label{prob:Satisfiability-1}%Problem/Question
+Let $\left\lbrace x_i \right\rbrace_{i=1}^{n} $ be boolean variables, and $t_i \in \left\lbrace 
+x_i\right\rbrace_{i=1}^{n}  \cup \left\lbrace \bar{x}_i\right\rbrace_{i=1}^{n}   $.  A 
+\textit{clause} is is said to be a disjuction of distinct terms:
+$$
+t_1 \vee \cdots \vee t_{j_k} = C_k
+$$
+Then the \textit{satisfiability problem} is the decidability of a conjuction of a set of clauses, 
+i.e.:
+$$ \wedge_{i=1}^m C_i$$
+\end{prob} \cite{skiena2009algorithm}
+A \textit{3-SAT problem} is a SAT problem with all clauses having only three boolean variables. 
+\begin{definition}[Planar 3-SAT Problem]\label{def:Satisfiability-2}
+Given a boolean 3-SAT formula $B$, define the associated graph of $B$ as follows:  
+\begin{equation}\label{eqn:sat-1}
+G(B) = \left(\set{v_x}{v_x\text{ represents a variable in }B} \cup \set{v_C}{v_C\text{ represent a 
+clause in }B}  , \set{\left( v_x, v_C\right) }{x \in C \text{ or } \bar{x} \in C}  \right) 
+\end{equation} 
+If $G(B)$ in equation (\ref{eqn:sat-1}) is planar, then $B$ is said to be a \textit{Planar 3-SAT 
+Problem} \cite{mulzer2008minimum}.
+\end{definition} 
+\begin{figure}[!h]
+\begin{center}
+\includegraphics{graphics/LeftSwitchBetweenTwoPolygons.pdf}
+\caption{left switch between polygons}
+\end{center} 
+\end{figure} 
+\begin{figure}[!h]
+\begin{center}  
+\end{center} 
+\end{figure} 
+\subsection{Logic Engine}
+The logic engine simulates the well known Not All Equal 3 SAT Problem (NAE3SAT).  
+\subsection{Not All Equal 3 SAT Problem}
+\begin{prob}[Satisfiability Problem]\label{prob:Satisfiability-2}%Problem/Question
+Give a set of clauses $C$, each containing three boolean variables, can each clause contain at 
+least one true variable and one false variable?
+\end{prob}
+%Universality component
+%encoding the engine
+\subsubsection{Construction of the Logic Engine}
+The components of the logic engine are as follows: the rigid frame, the shaft, the armatures, 
+the chains, and the flags.  The \textit{rigid frame} is a rectangular enclosure with a horizontal 
+shaft place at mid-height.  The \textit{armatures} are concentric rectangular frames contained 
+within the rigid frame.  Each armature can rotate about the shaft; other motions on the armature 
+are disallowed.  Given an NAE3SAT, for each variable there is a corresponding armature. On each 
+armature, there are chains.  A pair of \textit{chains}, $a_j$ and $\bar{a}_j$ correspond to the 
+variable $x_j$ and $\bar{x}_j$ respectively.  The pair is placed on each armature, reflected at a 
+height of $h$ above and below the shaft, i.e. one place above the shave at a height of $h$, the 
+other placed below the shaft at a height of $-h$.
+%insert an armature graphic
+
+\subsection{Encoding the Logic Engine}
+For each clause of an NAE3SAT, there exists a set of corresponding chains, namely the $h^\text{th}$ 
+clause set of chains on the armatures at a .  
