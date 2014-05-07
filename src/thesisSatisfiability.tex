@@ -53,4 +53,17 @@ other placed below the shaft at a height of $-h$.
 
 \subsection{Encoding the Logic Engine}
 For each clause of an NAE3SAT, there exists a set of corresponding chains, namely the $h^\text{th}$ 
-clause set of chains on the armatures at a .  
+clause is the set of chains on the armatures at the $h^\text{th}$ row above and below the shaft. A 
+chain is \textit{flagged} if the corresponding variable resides within the clause.  The flag can 
+point in either the left or right directions indicating a truth assignment for that variable within 
+the clause.  A flag is attached to the $i^\text{th}$ chain of every $a_j^\text{th}$ and 
+$\bar{a}_j^\text{th}$ chain with the following exceptions:
+\begin{enumerate}
+ \item if the variable $x_j$  is in clause $C_i$, then link $i$ of $a_j$ is unflagged,
+ \item if the variable $\bar{x}_j$ is in clause $C_i$, then link $i$ of $a_j$ is unflagged.
+\end{enumerate}
+\begin{thm}\label{thm:Satisfiability-1}
+ An instance of $NAE3SAT$ is a ``yes'' instance if and only if the corresponding logic engine has a 
+flat, collision-free configuration.
+\end{thm}
+%add proof
