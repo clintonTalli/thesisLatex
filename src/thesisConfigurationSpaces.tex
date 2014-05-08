@@ -106,29 +106,41 @@ So here we have a linkage whose conifguration space is limited to just two reali
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/switchTerminalFinalized3.pdf}
-	  \caption{A pinned pentagon residing in a channel junction that is formed by the sides of 3 large regular hexagons with 2 dashed pentagons intersecting it.}
+	  \caption{A pinned pentagon residing in a channel junction that is formed by the sides of 
+3 large regular hexagons with 2 dashed pentagons intersecting it.}
 	  \label{fig:linkage-2-2}
   \end{subfigure}
-\caption{Suppose the channel formed is a junction of three regular hexagons.  The polygon partially residing in the junction is a regular hexagon with an equalateral triangle appended at an edge.  This polygon would prevent other polygons (i.e. the dashed polygons) of the same shape residing in the center of the channel without intersection. This demonstrates that a the configuration space within a multichannel environment can have concurrency issues, i.e. some configurations cannot be realizable.}
+\caption{Suppose the channel formed is a junction of three regular hexagons.  The polygon partially 
+residing in the junction is a regular hexagon with an equalateral triangle appended at an edge.  
+This polygon would prevent other polygons (i.e. the dashed polygons) of the same shape residing in 
+the center of the channel without intersection. This demonstrates that a the configuration space 
+within a multichannel environment can have concurrency issues, i.e. some configurations cannot be 
+realizable.}
 \end{center} \label{fig:linkage-2}
 \end{figure}\newpage
-Expanding upon the ideo of \ref{fig:linkage-1}, forming channels with junctions as shown in Figure \ref{fig:linkage-2} can be formed as such by evenly spacing the edges of a hexagonal lattice.  Visually, it is shown that only one of three possible pentagons can reside in the channel at one time.  By asserting certain conditions on the lattice, and extending the problem to a greater region of a hexagonal lattice, we will be able to pose a realizability problem of whether a configuration $\mathcal{A}$ can be reconfigured to $\mathcal{B}$ by switching pentagons without violating overlapped polygon conditions.
+Expanding upon the idea of \ref{fig:linkage-1}, forming channels with junctions as shown in Figure 
+\ref{fig:linkage-2} can be formed as such by evenly spacing the edges of a hexagonal lattice.  
+Visually, it is shown that only one of three possible pentagons can reside in the channel at one 
+time.  By asserting certain conditions on the lattice, and extending the problem to a greater region 
+of a hexagonal lattice, we will be able to pose a realizability problem of whether a configuration 
+$\mathcal{A}$ can be reconfigured to $\mathcal{B}$ by switching pentagons without violating 
+overlapped polygon conditions.
 %Radius of regular polygons 
 \newdimen\R
 \R=3cm
-\begin{figure}[h] 
-\begin{center}
-\begin{tikzpicture}
-\begin{scope}
-\filldraw[pattern=hexagons]  (0:\R) \foreach \x in {60,120,...,359} {
-                -- (\x:\R)
-            }-- cycle (90:\R);
-\end{scope}
-\end{tikzpicture}
-\caption{A hexagonal lattice contained in a hexagon.}
-\label{fig:lattice}
-\end{center}
-\end{figure}
+% \begin{figure}[h] 
+% \begin{center}
+% \begin{tikzpicture}
+% \begin{scope}
+% \filldraw[pattern=hexagons]  (0:\R) \foreach \x in {60,120,...,359} {
+%                 -- (\x:\R)
+%             }-- cycle (90:\R);
+% \end{scope}
+% \end{tikzpicture}
+% \caption{A hexagonal lattice contained in a hexagon.}
+% \label{fig:lattice}
+% \end{center}
+% \end{figure}
 \newpage
 
 % \begin{definition}[Graph]\label{def:linkages-2}
