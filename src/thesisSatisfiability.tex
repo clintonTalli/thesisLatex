@@ -1,4 +1,4 @@
-\section{Satisfiability}
+\subsection{Satisfiability}
 \begin{prob}[Satisfiability Problem]\label{prob:Satisfiability-1}%Problem/Question
 Let $\left\lbrace x_i \right\rbrace_{i=1}^{n} $ be boolean variables, and $t_i \in \left\lbrace 
 x_i\right\rbrace_{i=1}^{n}  \cup \left\lbrace \bar{x}_i\right\rbrace_{i=1}^{n}   $.  A 
@@ -20,9 +20,9 @@ clause in }B}  , \set{\left( v_x, v_C\right) }{x \in C \text{ or } \bar{x} \in C
 If $G(B)$ in equation (\ref{eqn:sat-1}) is planar, then $B$ is said to be a \textit{Planar 3-SAT 
 Problem} \cite{mulzer2008minimum}.
 \end{definition}
-\subsection{Logic Engine}
+\subsubsection{Logic Engine}
 The logic engine simulates the well known Not All Equal 3 SAT Problem (NAE3SAT).  
-\subsection{Not All Equal 3 SAT Problem}
+\subsubsection{Not All Equal 3 SAT Problem}
 \begin{prob}[Satisfiability Problem]\label{prob:Satisfiability-2}%Problem/Question
 Give a set of clauses $C$, each containing three boolean variables, can each clause contain at 
 least one true variable and one false variable?
@@ -41,7 +41,7 @@ height of $h$ above and below the shaft, i.e. one place above the shave at a hei
 other placed below the shaft at a height of $-h$.
 %insert an armature graphic
 
-\subsection{Encoding the Logic Engine}
+\subsubsection{Encoding the Logic Engine}
 For each clause of an NAE3SAT, there exists a set of corresponding chains, namely the $h^\text{th}$ 
 clause is the set of chains on the armatures at the $h^\text{th}$ row above and below the shaft. A 
 chain is \textit{flagged} if the corresponding variable resides within the clause.  The flag can 

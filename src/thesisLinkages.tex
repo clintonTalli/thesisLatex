@@ -1,4 +1,5 @@
-\section{Linkages}
+\section{Background}
+\subsection{Linkages}
 A \textit{linkage} is an ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or nodes 
 together with a set $E$ of edges or lines. This definition is commonly used for graphs.  Mapping 
 the linkage $G$ into the plane is said to be the \textit{embedding}, i.e. $L : V \mapsto 
@@ -23,7 +24,7 @@ but not the first, e.g.:
 vertices.}
 \label{fig:linkage-3}
 \end{figure}
-\section{Polygonal Linkages}
+\subsection{Polygonal Linkages}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=1]{graphics/hingeOnThreeDistinctPolygons.pdf}
@@ -75,7 +76,53 @@ set of hinges, $\HH$, where each hinge $h\in \HH$ corresponds to two points on t
 distinct polygons. A \emph{realization} of a polygonal linkage is an interior-disjoint placement of 
 congruent copies of the polygons in $\PP$ such that the points corresponding to each hinge are 
 identified (Fig. \ref{fig:1}). 
+\subsection{Properties of Linkages and Graphs}
+To describe the types of motion that we are interested in linkages we must define the graph 
+isomorphism.  Two graphs $G=(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ 
+such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only 
+if $(f(u),f(v)) \in E_2$. 
+\begin{table}[!ht]
+\begin{center}
+$$\begin{array}{|c|c|c|}\hline
+\text{Graph}&\text{Vertices}&\text{Edges}\\\hline
+G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
+\\\hline
+G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
+\\\hline
+\end{array} $$
+\caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
+= 3$, $f(d)=4$, $f(e)=5$.}
+\end{center} 
+\label{table:configuration-1}
+\end{table} 
+% show an example of polygonal linkages
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
+\end{center} 
+\caption{This figure depicts the graph isomorphism shown in Table 
+(\ref{table:configuration-1}) between 
+$V_1$ and $V_2$ in the plane.}
+\label{fig:configuration-3}
+\end{figure}
+Next we add restrictions to our graph isomorphisms to narrow our focus:
+\begin{itemize}
+\item[\rn{1}] We focus on isomorphisms for planar graphs and or polygonal linkages, simple planar 
+graphs, and
+\item[\rn{2}] the isomorphism preserves edge lengths (polygonal area), e.g. $d(u,v) = d(f(u),f(v))$.
+\end{itemize}  
+\subsection{Summary}
+$$\begin{array}{|l|c|c|}
+ \hline
+&\text{Linkages}&\text{Polygonal Linkages}\\
+\text{Ordered Pair}&G&G\\
+\text{Edges}&E&\HH\\
+\text{Vertices}&V&\PP\\
+l&l&\text{-}\\
+\text{Embedding of }G&\Pi : V \mapsto \bbr^2&\PP ' = \left\lbrace P_i ' \right\rbrace_{i=1}^n
+\end{array}$$
 
+%1) 
 %With these restrictions of our isomorphisms, we can begin to describe a range of motion to 
 %transform a linkage.  That range of motion is said to be the configuration space of that linkage.  
 %To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set 
