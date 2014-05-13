@@ -1,21 +1,43 @@
 \section{Background}
+In this section, we cover the background subjects needed to formally pose the problem and solutions 
+in this thesis.  We start with two types of combinatorial structures, linkages and polygonal 
+linkages.  We then discuss the configuration spaces of linkages and polygonal linkages.   We then 
+look into an alternate representation of linkages, disk arrangements and state the disk arrangement 
+theorem but do not show its proof.  We then look at satisfiability problems, a logic engine that 
+encodes a type of satisfiability problems.  Finally, we cover the basic definitions of algorithm 
+complexity for $\textbf{P}$ and $\textbf{NP}$
 \subsection{Linkages}
-A \textit{linkage} is an ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or nodes 
-together with a set $E$ of edges or lines. This definition is commonly used for graphs.  Mapping 
-the linkage $G$ into the plane is said to be the \textit{embedding}, i.e. $L : V \mapsto 
-\bbR^{2}$.  A length function correspond to a linkage, $l: E \mapsto \bbr^+$ gives a length to an 
-edge in the linkage.  If We consider a \textit{realization} of a linkage is range of $L$, i.e. 
-$L(V)$. If for every edge $(u,v) \in E$ such that $l\left( \left(u,v\right) \right) = \left\vert 
-L(u) - L(v) \right\vert$ is true, then $L$ is said to be a \textit{proper embedding} of $G$.
-Without loss of generality, for this paper, we focus on linkages that are simple planar  graphs, 
-i.e.:
+%graph -> G = (V,E)
+%linkage -> (G,l)
+%embedding -> 
+There are two parts to a linkage, the graph and the edge length mapping.   A \textit{graph} is an 
+ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or together with a set $E$ of edges or 
+lines.  For every edge $e \in E$, there is a distinct pair of vertices in $V$ that it represents, 
+$(u,v) \in E$.  While graphs can have vertices that may not correspond to any edges, we rule out 
+this possibility for linkages.  The edge length assignement mapping of a linkage is $l: E \mapsto 
+\bbr^+$. A linkage is still an abstract combinatorial structure until an \textit{embedding} on the 
+graph of the linkage is posed, i.e. $\Pi : V \mapsto \bbR^{2}$. $\Pi$ has the \textit{proper 
+embedding} property, if for every edge $(u,v) \in E$ such that $l\left( \left(u,v\right) \right) 
+= \left\vert \Pi(u) - \Pi(v) \right\vert$ is true. The \textit{realization} of the the linkage is 
+said to be the range $\Pi$, i.e. $\Pi(V)$.  Without loss of generality, for this paper, we focus on 
+linkages that have simple planar graph properties, i.e.:
 \begin{itemize}
 \item[\rn{1}] does not have edges that cross,
-\item[\rn{2}] have loops, i.e. $(v,v) \in E$, or
+\item[\rn{2}] does not have loops, i.e. $(v,v) \in E$, or
 \item[\rn{3}] does not have multiple edges between any pair of vertices.
-\end{itemize}
+\end{itemize}  
 We may visit special cases in which we look at planar graphs that satisfy the last two conditions 
 but not the first, e.g.:
+%graph component of the linkage   the plane.  A linkage 
+%\textit{embedding} is $L : V \mapsto 
+%\bbR^{2}$.
+% A \textit{linkage} is an ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or nodes 
+% together with a set $E$ of edges or lines. This definition is commonly used for graphs.  Mapping 
+% the linkage $G$ into the plane is said to be the \textit{embedding}, i.e. $L : V \mapsto 
+% \bbR^{2}$.  A length function correspond to a linkage, $l: E \mapsto \bbr^+$ gives a length to an 
+% edge in the linkage.  If We consider a \textit{realization} of a linkage is range of $L$, i.e. 
+% $L(V)$. If for every edge $(u,v) \in E$ such that $l\left( \left(u,v\right) \right) = \left\vert 
+% L(u) - L(v) \right\vert$ is true, then $L$ is said to be a \textit{proper embedding} of $G$.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=1]{graphics/crossingEdgeLinkage.pdf}
@@ -35,9 +57,17 @@ two hinge points can correspond to the same boundary point of a polygon.}
 \label{fig:linkage-1}
 \end{figure}
 %describe how it is a generalization of Linkages.
+Polygonal linkages have some differences to linkages.  Polygonal linkages have a combinatorial 
+structure that is graph-like.  A polyonal linkage's combinatorial structure is an ordered pair 
+$\left(\HH,\PP \right)$.  Instead of a set of vertices, there is a set of hinges, $\HH$;  instead 
+of a set of edges, there is a set of polygons, $\PP$. Formally, a \textit{hinge} $h\in \HH$ 
+corresponds to two points on the boundary of two distinct polygons in $\PP$.  Since polygons do not 
+exhibit a length property, a polygonal linkage does not have an edge length mapping.  
+
+
 Polygon linkages are similar to linkages.  They are an ordered pair of sets, with the exception 
 that the set of vertices become a set of hinges, $\HH$, and the set of edges become a set of 
-polygons, $\PP$.  Formally, a \it{polygonal linkage} is an ordered pair, $G = (\HH,\PP)$,  
+polygons, $\PP$.  Formally, a \textit{polygonal linkage} is an ordered pair, $G = (\HH,\PP)$,  
 comprises of a set of polygons, $\PP$, and a set of hinge points $\HH$ where each hinge $h \in \HH$ 
 corresponds to two points on the boundary of two distinct polygons in $\PP$. Mapping the linkage 
 $G$ into the plane is said to be the \textit{embedding}, i.e. $L : \HH \mapsto \bbR^{2}$.  We 
