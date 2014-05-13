@@ -77,8 +77,13 @@ distinct polygons. A \emph{realization} of a polygonal linkage is an interior-di
 congruent copies of the polygons in $\PP$ such that the points corresponding to each hinge are 
 identified (Fig. \ref{fig:1}). 
 \subsection{Properties of Linkages and Graphs}
-To describe the types of motion that we are interested in linkages we must define the graph 
-isomorphism.  Two graphs $G=(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a bijection $f: V_1 \mapsto V_2$ 
+%things to do:
+%1) Isomorphism -> graph property
+%2) Ordered graph -> graph property ultimately for polygonal linkages.  
+%To describe the types of motion that we are interested in linkages we must define the graph 
+%isomorphism.  
+Given two graphs $G=(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a bijection $f: V_1 \mapsto 
+V_2$ 
 such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only 
 if $(f(u),f(v)) \in E_2$. 
 \begin{table}[!ht]
@@ -93,7 +98,7 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 \caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
 = 3$, $f(d)=4$, $f(e)=5$.}
 \end{center} 
-\label{table:configuration-1}
+\label{table:linkages-1}
 \end{table} 
 % show an example of polygonal linkages
 \begin{figure}[!h]
@@ -101,7 +106,7 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 \includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
 \end{center} 
 \caption{This figure depicts the graph isomorphism shown in Table 
-(\ref{table:configuration-1}) between 
+(\ref{table:linkages-1}) between 
 $V_1$ and $V_2$ in the plane.}
 \label{fig:configuration-3}
 \end{figure}
@@ -111,26 +116,37 @@ Next we add restrictions to our graph isomorphisms to narrow our focus:
 graphs, and
 \item[\rn{2}] the isomorphism preserves edge lengths (polygonal area), e.g. $d(u,v) = d(f(u),f(v))$.
 \end{itemize}  
+With these restrictions of our isomorphisms, we can begin to describe a range of motion to 
+transform a linkage.  That range of motion is said to be the configuration space of that linkage.  
+To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set 
+of points in which $v$ can be realized in the plane would be the configuration space for that 
+vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n 
+\right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion 
+product of the configuration space of vertices:
 \subsection{Summary}
+\begin{table}[!ht]
+\begin{center}
 $$\begin{array}{|l|c|c|}
  \hline
-&\text{Linkages}&\text{Polygonal Linkages}\\
-\text{Ordered Pair}&G&G\\
-\text{Edges}&E&\HH\\
-\text{Vertices}&V&\PP\\
-l&l&\text{-}\\
-\text{Embedding of }G&\Pi : V \mapsto \bbr^2&\PP ' = \left\lbrace P_i ' \right\rbrace_{i=1}^n
-\end{array}$$
-
+&\text{Linkages}&\text{Polygonal Linkages}\\\hline
+\text{Ordered Pair}&G&G\\\hline
+\text{Edges}&E&\HH\\\hline
+\text{Vertices}&V&\PP\\\hline
+l&l&\text{N.A.}\\\hline
+\text{Embedding of }G&\Pi : V \mapsto \bbr^2&\PP ' = \left\lbrace P_i ' 
+\right\rbrace_{i=1}^n\\\hline
+\text{Realization}&\text{See (a)}&\text{See (b)}\\\hline
+\end{array}
+\caption
+$$
+\caption{(a)The realization for a linkage is for any edge $(u,v) \in E$ such that $\left\vert 
+\Pi(u)-\Pi(v)\right\vert = l(u,v)$.(b)A \emph{realization} of a polygonal linkage is an 
+interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the points 
+corresponding to each hinge are identified (Fig. \ref{fig:1}, left).(c).}
+\end{center} 
+\label{table:linkages-2}
+\end{table} 
 %1) 
-%With these restrictions of our isomorphisms, we can begin to describe a range of motion to 
-%transform a linkage.  That range of motion is said to be the configuration space of that linkage.  
-%To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set 
-%of points in which $v$ can be realized in the plane would be the configuration space for that 
-%vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n 
-%\right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion 
-%product of the configuration space of vertices:
-
 %DESCRIBE THE FOLLOWING:
 %1)CONFIGURATION SPACE AS A VECTOR SPACE OF DIMENSION 2^N WHERE EDGE LENGTH IS PRESERVED.
 %2)PINNING 1 VERTEX TO ORIGIN AND A NEIGHBOR, ADD MOTIVATION TO PREVENT ROTATION AND TRANSLATIONS.
