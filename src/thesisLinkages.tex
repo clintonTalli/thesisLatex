@@ -8,8 +8,12 @@ encodes a type of satisfiability problems.  Finally, we cover the basic definiti
 complexity for $\textbf{P}$ and $\textbf{NP}$
 \subsection{Linkages}
 %graph -> G = (V,E)
+%edge length mapping -> $l: E \mapsto \bbr^+$
 %linkage -> (G,l)
-%embedding -> 
+%embedding -> $\Pi : V \mapsto \bbR^{2}$
+%proper embedding proper -> $l\left( \left(u,v\right) \right) = \left\vert \Pi(u) - \Pi(v) 
+%\right\vert$
+%realization -> $\Pi(V)$
 There are two parts to a linkage, the graph and the edge length mapping.   A \textit{graph} is an 
 ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or together with a set $E$ of edges or 
 lines.  For every edge $e \in E$, there is a distinct pair of vertices in $V$ that it represents, 
@@ -57,21 +61,45 @@ two hinge points can correspond to the same boundary point of a polygon.}
 \label{fig:linkage-1}
 \end{figure}
 %describe how it is a generalization of Linkages.
+%graph -> G = (V,E)
+%edge length mapping -> $l: E \mapsto \bbr^+$
+%linkage -> (G,l)
+%embedding -> $\Pi : V \mapsto \bbR^{2}$
+%proper embedding proper -> $l\left( \left(u,v\right) \right) = \left\vert \Pi(u) - \Pi(v) 
+%\right\vert$
+%realization -> $\Pi(V)$
 Polygonal linkages have some differences to linkages.  Polygonal linkages have a combinatorial 
 structure that is graph-like.  A polyonal linkage's combinatorial structure is an ordered pair 
 $\left(\HH,\PP \right)$.  Instead of a set of vertices, there is a set of hinges, $\HH$;  instead 
-of a set of edges, there is a set of polygons, $\PP$. Formally, a \textit{hinge} $h\in \HH$ 
-corresponds to two points on the boundary of two distinct polygons in $\PP$.  Since polygons do not 
-exhibit a length property, a polygonal linkage does not have an edge length mapping.  
+of a set of edges, there is a set of polygons, $\PP$. Formally, a \textit{hinge} 
+$h_i=\left(h_{i,1},h_{i,2}\right)\in \HH$ corresponds to two points on the boundary of two distinct 
+polygons in $\PP$ where $i = 1, \dots, \vert\HH\vert$.  Since polygons do not 
+exhibit a length property, a polygonal linkage does not have an edge length mapping.  The 
+\textit{embedding} is a mapping of polygons in $\PP$ into the plane, i.e. for each $P \in \PP$ 
+there exists a corresponding planar embedded polygon $P'$.  The embedding attains the 
+\textit{proper embedding} property when for every hinge $h_i \in \HH$:
+\begin{enumerate}
+ \item the corresonding boundary $h_{i,1} = h_{i,2}$ in the plane, 
+ \item polygons do not intersect anywhere other than possibly at hinge points, and
+ \item polygon edges do not cross.
+\end{enumerate}
+%NEEDS TO SHOW AN EXAMPLE OF A PROPER EMBEDDING
+A \textit{realization} of a polygonal linkage is set of corresponding polygons embedded in the 
+plane, $\left\lbrace P_j ' \right\rbrace_{j=1}^{\left\vert \PP \right\vert}$. Embeddings are 
+regarded to be equivalent if there exists a rigid motion between the two. Rigid motions 
+consists of rotations, translations, and compositions of thereof.  Inversions can alter the 
+orientation of a polygonal linkage embedding.  
+%SHOW AN EXAMPLE OF A RIGID MOTION
+%SHOW AN EXAMPLE OF AN INVERSION
 
-
-Polygon linkages are similar to linkages.  They are an ordered pair of sets, with the exception 
-that the set of vertices become a set of hinges, $\HH$, and the set of edges become a set of 
-polygons, $\PP$.  Formally, a \textit{polygonal linkage} is an ordered pair, $G = (\HH,\PP)$,  
-comprises of a set of polygons, $\PP$, and a set of hinge points $\HH$ where each hinge $h \in \HH$ 
-corresponds to two points on the boundary of two distinct polygons in $\PP$. Mapping the linkage 
-$G$ into the plane is said to be the \textit{embedding}, i.e. $L : \HH \mapsto \bbR^{2}$.  We 
-consider a \textit{realization} of a polygonal linkage is range of $L$, i.e. $l(\HH)$.
+% 
+% Polygon linkages are similar to linkages.  They are an ordered pair of sets, with the exception 
+% that the set of vertices become a set of hinges, $\HH$, and the set of edges become a set of 
+% polygons, $\PP$.  Formally, a \textit{polygonal linkage} is an ordered pair, $G = (\HH,\PP)$,  
+% comprises of a set of polygons, $\PP$, and a set of hinge points $\HH$ where each hinge $h \in \HH$ 
+% corresponds to two points on the boundary of two distinct polygons in $\PP$. Mapping the linkage 
+% $G$ into the plane is said to be the \textit{embedding}, i.e. $L : \HH \mapsto \bbR^{2}$.  We 
+% consider a \textit{realization} of a polygonal linkage is range of $L$, i.e. $l(\HH)$.
 
 In figure (\ref{fig:linkage-1}), we illustrate that two hinge points can reside on the same point 
 in the plane. Figure (\ref{fig:linkage-1}) and figure (\ref{fig:linkage-3}) are examples of special 
@@ -140,19 +168,19 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 $V_1$ and $V_2$ in the plane.}
 \label{fig:configuration-3}
 \end{figure}
-Next we add restrictions to our graph isomorphisms to narrow our focus:
-\begin{itemize}
-\item[\rn{1}] We focus on isomorphisms for planar graphs and or polygonal linkages, simple planar 
-graphs, and
-\item[\rn{2}] the isomorphism preserves edge lengths (polygonal area), e.g. $d(u,v) = d(f(u),f(v))$.
-\end{itemize}  
+A \textit{linkage isomorphism} preserves (polygonal) edge lengths as well.
+ 
 With these restrictions of our isomorphisms, we can begin to describe a range of motion to 
-transform a linkage.  That range of motion is said to be the configuration space of that linkage.  
-To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set 
-of points in which $v$ can be realized in the plane would be the configuration space for that 
-vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n 
-\right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion 
-product of the configuration space of vertices:
+transform a linkage.  The set of realizations for all proper embeddings of a (polygonal) linkage is 
+said to be a \textit{configuration space}.  A configuration space, $\mathcal{F}$, has a 
+\textit{continuous subspace}, $\mathcal{G}\subseteq \mathcal{F}$, for any pair of realizations 
+$R_0$, $R_1 \in 
+\mathcal{G}$ and continuous mapping $g: [0,1] \mapsto \bbr^{2 \vert V \vert}$ maps to another 
+realization in $\mathcal{G}$ where $g(0) = R_0$ and $g(1) = R_1$. 
+%NEEDS TO SHOW AN EXAMPLE OF A CONTINUOUS CONFIGURATION SPACE
+
+We can extend the properties of graphs with orientation.  
+%order with trees, matroids, psuedolines, etc. 
 \subsection{Summary}
 \begin{table}[!ht]
 \begin{center}
