@@ -1,4 +1,60 @@
-\section{Properties of Linkages and Graphs}
+\section{Graphs}
+A \textit{graph} is an 
+ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or together with a set $E$ of edges or 
+lines.  For every edge $e \in E$, there is a distinct pair of vertices in $V$ 
+that represents their adjacency, 
+$(u,v) \in E$. The edge length mapping of a graph is $l: E \mapsto 
+\bbr^+$. A graph is an abstract combinatorial structure until an \textit{embedding} on the 
+graph is posed, $\Pi : V \mapsto \bbR^{2}$. $\Pi$ has the \textit{proper 
+embedding} property, if for every edge $(u,v) \in E$ such that $l\left( \left(u,v\right) \right) 
+= \left\vert \Pi(u) - \Pi(v) \right\vert$ is true. The \textit{realization} of the graph is 
+said to be the range $\Pi$, $\Pi(V)$.
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[scale=.5]{graphics/PetersonGraph.png}
+\caption{A proper embedding of a Peterson graph.}
+\end{center} 
+\end{figure} 
+\subsection{Trees}
+A \textit{simple  cycle} is a sequence of adjacent vertices that do not repeat with the exception 
+of the starting (ending) vertex. A \textit{tree} is a graph that has no simple cycles. 
+\begin{figure}[h]
+\begin{center}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[scale=.5]{graphics/PetersonGraphWithSimpleCyle.png}
+    \caption{A proper embedding of the Peterson graph with a simple cycle of 
+    (2,7,9,6,1,0,5,8,3,2).}\label{fig:ch1-graph-2}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[scale=.5]{graphics/RandomTree16Nodes.png}
+    \caption{A tree with 16 vertices}\label{fig:ch1-graph-3}
+  \end{subfigure}
+\end{center}
+\end{figure}
+The vertices of an embedded tree have a nomenclature.  One vertex is designated to be the 
+\textit{root} where the edges are oriented away from the root.  Adjacent vertices have a 
+parent-child relationship.  The \textit{parent} is closer to the root, while the \textit{child} is 
+further way from the root.
+\subsection{Ordered Trees}
+An \textit{ordered tree} is a rooted tree in which the counter-clockwise ordering of children of a 
+common parent matters.
+\begin{figure}[h]
+\begin{center}
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[scale=.25]{graphics/orderedTreeExample1.png}
+    \caption{An embedding of a tree.}\label{fig:ch1-graph-4}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+    \includegraphics[scale=.25]{graphics/orderedTreeExample2.png}
+    \caption{Another embedding of a tree.}\label{fig:ch1-graph-5}
+  \end{subfigure}
+  \caption{A rooted tree with whose children have a different counter-clockwise 
+ordering.  Note that these ordered trees are not equivalent.}\label{fig:ch1-graph-6}
+\end{center}
+\end{figure}
+The orderedness of a tree is a property of the tree's embedding.  A fortiori, embeddings of ordered 
+trees are equivalent if for each parent, the counter-clockwise ordering of children are the same.
+\subsection{Graph Isomorphism}
 %things to do:
 %1) Isomorphism -> graph property
 %2) Ordered graph -> graph property ultimately for polygonal linkages.  
@@ -20,80 +76,82 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 \caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
 = 3$, $f(d)=4$, $f(e)=5$.}
 \end{center} 
-\label{table:linkages-1}
-\end{table} 
+\label{table:ch1-graph-1}
+\end{table}
 % show an example of polygonal linkages
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
 \end{center} 
 \caption{This figure depicts the graph isomorphism shown in Table 
-(\ref{table:linkages-1}) between 
+(\ref{table:ch1-graph-1}) between 
 $V_1$ and $V_2$ in the plane.}
 \label{fig:configuration-3}
 \end{figure}
-Next we add restrictions to our graph isomorphisms to narrow our focus:
-\begin{itemize}
-\item[\rn{1}] We focus on isomorphisms for planar graphs and or polygonal linkages, simple planar 
-graphs, and
-\item[\rn{2}] the isomorphism preserves edge lengths (polygonal area), e.g. $d(u,v) = d(f(u),f(v))$.
-\end{itemize}  
-With these restrictions of our isomorphisms, we can begin to describe a range of motion to 
-transform a linkage.  That range of motion is said to be the configuration space of that linkage.  
-To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set 
-of points in which $v$ can be realized in the plane would be the configuration space for that 
-vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n 
-\right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion 
-product of the configuration space of vertices:
-\subsection{Summary}
-\begin{table}[!ht]
-\begin{center}
-$$\begin{array}{|l|c|c|}
- \hline
-&\text{Linkages}&\text{Polygonal Linkages}\\\hline
-\text{Ordered Pair}&G&G\\\hline
-\text{Edges}&E&\HH\\\hline
-\text{Vertices}&V&\PP\\\hline
-l&l&\text{N.A.}\\\hline
-\text{Embedding of }G&\Pi : V \mapsto \bbr^2&\PP ' = \left\lbrace P_i ' 
-\right\rbrace_{i=1}^n\\\hline
-\text{Realization}&\text{See (a)}&\text{See (b)}\\\hline
-\end{array}
-\caption
-$$
-\caption{(a)The realization for a linkage is for any edge $(u,v) \in E$ such that $\left\vert 
-\Pi(u)-\Pi(v)\right\vert = l(u,v)$.(b)A \emph{realization} of a polygonal linkage is an 
-interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the points 
-corresponding to each hinge are identified (Fig. \ref{fig:1}, left).(c).}
-\end{center} 
-\label{table:linkages-2}
-\end{table} 
-%1) 
-%DESCRIBE THE FOLLOWING:
-%1)CONFIGURATION SPACE AS A VECTOR SPACE OF DIMENSION 2^N WHERE EDGE LENGTH IS PRESERVED.
-%2)PINNING 1 VERTEX TO ORIGIN AND A NEIGHBOR, ADD MOTIVATION TO PREVENT ROTATION AND TRANSLATIONS.
 
-% \begin{equation}\label{eqn:linkages-1}
-% C(L) = C_{v_1} \cross C_{v_2} \cross \cdots \cross C_{v_n}
-% \end{equation} 
-% Some food for thought on configuration spaces and motions on linkages:
+
+% Next we add restrictions to our graph isomorphisms to narrow our focus:
 % \begin{itemize}
-% \item[\rn{1}] A configuration space is said to be \it{connected} if there is a continuous mapping 
-for any two planar realizations (linkages) of a graph in the plane.  Otherwise it is said to be 
-\it{disconnected}.
-% \item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex 
-is said to be \it{pinned}. Otherwise it is said to be \it{free}.
-% \item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are 
-translations.
-% \end{itemize}
-% Note that configuration spaces for polygonal linkages are described similarly.
-% \subsubsection{Realizability of Linkages}
-% Suppose we had two configurations of a linkage, $\mathcal{A}$ and $\mathcal{B}$.  A question that 
-can be posed is can we reconfigure $\mathcal{A}$ to $\mathcal{B}$ continuously while respecting 
-simple planar graph conditions?  The answer to this question is a yes or no.  If yes, then there 
-must exist a path connected configuration space between $\mathcal{A}$ and $\mathcal{B}$.  It has 
-been shown that this problem can be posed as a planar satisfiability problem 
-\cite{Breu19983,mulzer2008minimum} (Later on in this paper we'll cover satisfiability problems).  
-This is the type of problem that we face in this paper.  We will continue to explore this in a 
-different manner, with circle packings.
-\newpage 
+% \item[\rn{1}] We focus on isomorphisms for planar graphs and or polygonal linkages, simple planar 
+% graphs, and
+% \item[\rn{2}] the isomorphism preserves edge lengths (polygonal area), e.g. $d(u,v) = d(f(u),f(v))$.
+% \end{itemize}  
+% With these restrictions of our isomorphisms, we can begin to describe a range of motion to 
+% transform a linkage.  That range of motion is said to be the configuration space of that linkage.  
+% To expand on this concept, for given linkage, $L=(V,E)$, and for a given vertex $v \in V$, the set 
+% of points in which $v$ can be realized in the plane would be the configuration space for that 
+% vertex, $C_v$.  Defining some order of the vertices in $L$, i.e. $V = \left\lbrace v_n 
+% \right\rbrace_{i=1}^n$, then the \it{configuration space} for $L$ is said to be the cartesion 
+% product of the configuration space of vertices:
+% \subsection{Summary}
+% \begin{table}[!ht]
+% \begin{center}
+% $$\begin{array}{|l|c|c|}
+%  \hline
+% &\text{Linkages}&\text{Polygonal Linkages}\\\hline
+% \text{Ordered Pair}&G&G\\\hline
+% \text{Edges}&E&\HH\\\hline
+% \text{Vertices}&V&\PP\\\hline
+% l&l&\text{N.A.}\\\hline
+% \text{Embedding of }G&\Pi : V \mapsto \bbr^2&\PP ' = \left\lbrace P_i ' 
+% \right\rbrace_{i=1}^n\\\hline
+% \text{Realization}&\text{See (a)}&\text{See (b)}\\\hline
+% \end{array}
+% \caption
+% $$
+% \caption{(a)The realization for a linkage is for any edge $(u,v) \in E$ such that $\left\vert 
+% \Pi(u)-\Pi(v)\right\vert = l(u,v)$.(b)A \emph{realization} of a polygonal linkage is an 
+% interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the points 
+% corresponding to each hinge are identified (Fig. \ref{fig:1}, left).(c).}
+% \end{center} 
+% \label{table:linkages-2}
+% \end{table} 
+% %1) 
+% %DESCRIBE THE FOLLOWING:
+% %1)CONFIGURATION SPACE AS A VECTOR SPACE OF DIMENSION 2^N WHERE EDGE LENGTH IS PRESERVED.
+% %2)PINNING 1 VERTEX TO ORIGIN AND A NEIGHBOR, ADD MOTIVATION TO PREVENT ROTATION AND TRANSLATIONS.
+% 
+% % \begin{equation}\label{eqn:linkages-1}
+% % C(L) = C_{v_1} \cross C_{v_2} \cross \cdots \cross C_{v_n}
+% % \end{equation} 
+% % Some food for thought on configuration spaces and motions on linkages:
+% % \begin{itemize}
+% % \item[\rn{1}] A configuration space is said to be \it{connected} if there is a continuous mapping 
+% for any two planar realizations (linkages) of a graph in the plane.  Otherwise it is said to be 
+% \it{disconnected}.
+% % \item[\rn{2}] If the configuration space of a vertex, $C_v$, is a singleton set, then the vertex 
+% is said to be \it{pinned}. Otherwise it is said to be \it{free}.
+% % \item[\rn{3}] The types of motions (mappings) that we refrain from using on linkages are 
+% translations.
+% % \end{itemize}
+% % Note that configuration spaces for polygonal linkages are described similarly.
+% % \subsubsection{Realizability of Linkages}
+% % Suppose we had two configurations of a linkage, $\mathcal{A}$ and $\mathcal{B}$.  A question that 
+% can be posed is can we reconfigure $\mathcal{A}$ to $\mathcal{B}$ continuously while respecting 
+% simple planar graph conditions?  The answer to this question is a yes or no.  If yes, then there 
+% must exist a path connected configuration space between $\mathcal{A}$ and $\mathcal{B}$.  It has 
+% been shown that this problem can be posed as a planar satisfiability problem 
+% \cite{Breu19983,mulzer2008minimum} (Later on in this paper we'll cover satisfiability problems).  
+% This is the type of problem that we face in this paper.  We will continue to explore this in a 
+% different manner, with circle packings.
+% \newpage 
