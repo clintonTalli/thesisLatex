@@ -1,4 +1,4 @@
-\documentclass[10pt]{CSUN}
+\documentclass[10pt]{CSUNthesis}
 %%%packages%%%
 \usepackage[latin1]{inputenc}
 %\usepackage{newcent}
@@ -36,7 +36,7 @@
 %\usepackage{subfigure}
 \usepackage{caption}
 \usepackage{subcaption}
-
+\usepackage{float}
 %%CSUN Stuff%%%
 \titlecontents{chapter}
   [0em]
@@ -220,19 +220,10 @@ X_2\right)^{-1}
 Hinged Polygons: \textit{Protein Folding in Flatland}}
 \date{April 1, 2014}
 \makeindex
+%CSUNthesis SETTINGS
+\submitted{August}{2014}
+\committee{Dr. Csaba T\'oth}{Dr. Silvia Fernandez}{Dr. John Dye}
+\abstract{abstract goes here}
 \begin{document}
-% \input{preface}
-% \input{abstract}
-% \input{introduction}
-% \input{background}
-% \input{problem}
-% \input{solution}
-% \input{conclusion}
-\input{thesisIntro}
-\input{thesisLinkages}
-\input{thesisConfigurationSpaces}
-\input{thesisDiskArrangement}
-\input{thesisSatisfiability}
-%\input{thesisCirclePacking}
-\input{references}
+\input{ch1/chapter1}
 \end{document}

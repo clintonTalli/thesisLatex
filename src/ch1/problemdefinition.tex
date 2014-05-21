@@ -1,0 +1,41 @@
+\section{Problem}
+The \emph{realizability} problem for a polygonal linkage asks whether a given polygonal linkage has 
+a realization (resp., orientated realization). For a weighted planar (resp., plane) graph,, it asks 
+whether the graph is
+the contact graph (resp., ordered contact graph) of some disk arrangement with specified radii. 
+These problems, in general, are known to be NP-hard. Specifically, it is NP-hard to decide whether a 
+given planar (or plane) graph can be embedded in $\RR^2$ with given edge lengths~\cite{CDD+10,EW90}. 
+Since an edge of given length can be modeled by a suitably long and skinny rhombus, the 
+realizability of polygonal linkages is also NP-hard. The recognition of the contact graphs of unit 
+disks in the plane (a.k.a. coin graphs) is NP-hard~\cite{BK98}, and so the realizability of weighted 
+graphs as contact graphs of disks is also NP-hard. However, previous reductions crucially rely on 
+configurations with high genus: the planar graphs in~\cite{CDD+10,EW90} and the coin graphs 
+in~\cite{BK98} have many cycles.
+
+In this paper, we consider the above four realizability problems when the union of the polygons 
+(resp., disks) in the desired configuration is simply connected (i.e., contractible). That is, the 
+contact graph of the disks is a tree, or the ``hinge graph'' of the polygonal linkage is a tree (the 
+vertices in the \emph{hinge graph} are the polygons in $\PP$, and edges represent a hinge between 
+two polygons). Our main result is that realizability remains NP-hard when restricted to simply 
+connected structures.
+ 
+\begin{thm}\label{thm:hinge}
+It is NP-complete to decide whether a polygonal linkage whose hinge graph is a tree can be realized 
+(both with and without orientation).
+\end{thm}
+
+\begin{thm}\label{thm:disk}
+It is NP-complete to decide whether a given tree (resp., plane tree) with positive vertex weights
+is the contact graph (resp., ordered contact graph) of a disk arrangements with specified radii.
+\end{thm}
+
+The unoriented versions, where the underlying graph (hinge graph or contact graph) is a tree can 
+easily be handled with the logic engine method (Section~\ref{sec:logic}). We prove 
+Theorem~\ref{thm:hinge} for \emph{oriented} realizations with a reduction from {\sc Planar-3SAT} 
+(Section~\ref{sec:hinge}), and then reduce the realizability of ordered contact trees to the 
+oriented realization of polygonal linkages by simulating polygons with arrangements of disks 
+(Section~\ref{sec:disk}).
+
+\subsection{Problem Statement} text
+\subsection{Decidability of Problem} test
+\subsection{Hexagonal Locked Configuration}
