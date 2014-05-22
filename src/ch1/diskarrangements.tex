@@ -1,19 +1,21 @@
 \subsection{Disk Arrangements}
-It turns out the disk arrangements are an equivalent way to to represent linkages and their 
-corresponding problems.  Before we establish the relation, we will cover some fundamental concepts 
-of disk arrangements.  
+It turns out the disk arrangements are an equivalent way to to represent plane graphs.  By 
+representing vertices as disks and edges are represented as points of contact, a \textit{kissing 
+point} between two disks.  The graph corresponding to a given disk arrangement, $\DD$, is said to 
+be the \textit{contact graph}.  
+
 A \it{disk arrangement} is a set, $\DD$, is pairwise interior-disjoint disks in the plane.
 %A \it{disk arrangement}, $P$, embedded in a plane  is a set of disks with disjoint interiors 
 $\left\lbrace C_i \right\rbrace_{i = 1}^n $ such that for any circle $C \in \left\lbrace C_i 
 \right\rbrace_{i = 1}^n$, $C$ is tangent to a different circle of $\left\lbrace C_i \right\rbrace_{i 
 = 1}^n$. 
-\begin{thm}[Disk Packing Theorem]\label{thm2-1}
-For every connected simple planar graph $G$ there is a disk arrangement in the
+\begin{thm}[\ref{stephenson2005introduction}Disk Packing Theorem]\label{thm2-1}
+For every graph $G$ there is a disk arrangement in the
 plane whose intersection graph is (isomorphic to) $G$.
 \end{thm}
 
 \begin{figure}[h]
-\begin{center}Linkages
+\begin{center}
 \includegraphics[scale=1]{graphics/diskPackingTheoremExample.pdf}
 \end{center} 
 \caption{This example represents a disk arrangement transformed to and from its corresponding graph 
@@ -25,9 +27,7 @@ $G_2$}
 \item Show the relation between polygonal linkages and disk arrangengements.
 \end{enumerate} 
 \subsubsection{Oriented Realizations}
-\begin{itemize}
-\item[\rn{1}]have the professor explain this part.
-\end{itemize}  
+%finish 
 \subsubsection{Disk Packing Confinement Problem}
 Consider the iterative problem:
 \begin{enumerate}%1,2,3,4....

@@ -42,11 +42,14 @@ do not occur:
 \end{figure}
 A \textit{planar graph} is an abstract graph that admits a plane embedding.
 \subsection{Trees}
-A \textit{simple  cycle} of a graph is a sequence of distinct vertices that do not repeat 
-with the exception 
-of the starting (ending) vertex. 
+A \textit{path} is a sequence of vertices that represent a traversal of edges within a 
+graph.  
+A \textit{simple  cycle} of a graph is a sequence of 
+distinct vertices that do not repeat 
+with the exception of the starting (ending) vertex.  A 
+graph is connected if for any two vertices $u,v \in V$, there exists a path between the two points.
 %REDEFINE CONNECTED AND TREE
-%A \textit{tree} is a graph that has no simple cycles. 
+A \textit{tree} is a graph that has no simple cycles and is connected.
 \begin{figure}[h]
 \begin{center}
   \begin{subfigure}[b]{0.49\textwidth}
@@ -60,10 +63,10 @@ of the starting (ending) vertex.
   \end{subfigure}
 \end{center}
 \end{figure}
-The vertices of an embedded tree have a nomenclature.  One vertex is designated to be the 
-\textit{root} where the edges are oriented away from the root.  Adjacent vertices have a 
-parent-child relationship.  The \textit{parent} is closer to the root, while the \textit{child} is 
-further way from the root.
+% The vertices of an embedded tree have a nomenclature.  One vertex is designated to be the 
+% \textit{root} where the edges are oriented away from the root.  Adjacent vertices have a 
+% parent-child relationship.  The \textit{parent} is closer to the root, while the \textit{child} is 
+% further way from the root.
 \subsection{Ordered Trees}
 An \textit{ordered tree} is a rooted tree in which the counter-clockwise ordering of children of a 
 common parent matters.
