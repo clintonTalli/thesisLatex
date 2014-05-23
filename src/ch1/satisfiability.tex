@@ -21,10 +21,37 @@ If $G(B)$ in equation (\ref{eqn:sat-1}) is planar, then $B$ is said to be a \tex
 Problem} \cite{mulzer2008minimum}.
 \end{definition}
 \subsection{Not All Equal 3 SAT Problem}
-\begin{prob}[Satisfiability Problem]\label{prob:Satisfiability-2}%Problem/Question
+\begin{prob}[Not All Equal 3 SAT Problem}\label{prob:Satisfiability-2}%Problem/Question
 Give a set of clauses $C$, each containing three boolean variables, can each clause contain at 
 least one true variable and one false variable?
 \end{prob}
+\subsection{Planar 3 SAT Problem}
+% Definition 1. (PLANAR 3-SAT) Let Φ be a
+% Boolean formula in 3-CNF. The formula graph of
+% Φ, G(Φ), has one variable-vertex vx for each variable
+% x and one clause-vertex vC for each clause C. The
+% variable-vertices vx are connected by edges to form a
+% variable cycle, and for each clause-vertex vC an edge
+% (vC, vx) is added if C contains either literal x or x.
+% We say Φ is planar iﬀ G(Φ) is planar. The PLANAR
+% 3-SAT problem is equivalent to the 3-SAT problem
+% restricted to planar formulae.
+% Theorem 2.1. (Lichtenstein [14] Theorem 2)
+% PLANAR 3-SAT is NP-complete
+\begin{prob}[Planar 3 SAT Problem]
+ A planar 3SAT instance is a 3SAT instance for which the graph built using the following rules is 
+planar:
+\begin{enumerate}
+ \item add a vertex for every $x_i$ and $\bar{x}_i$
+ \item add a vertex for every clause $C_j$
+ \item add an edge for every $\left(x_i,\bar{x}_i \right)$ pair
+ \item add an edge from vertex $x_i$ (or $\bar{x}_i$) to each vertex that represent a clause that 
+contains it
+ \item add edges between two consecutive variables $(x_1,x_2)$, $(x_2,x_3)$, $\dots$,$(x_n,x_1)$
+\end{enumerate}
+In particular, rule 5 builds a "backbone" that splits the clauses in two distinct regions.
+\end{prob}
+
 %Universality component
 \subsection{Logic Engine}
 The logic engine simulates the well known Not All Equal 3 SAT Problem (NAE3SAT).  

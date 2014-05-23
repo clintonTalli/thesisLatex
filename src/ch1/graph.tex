@@ -68,8 +68,8 @@ A \textit{tree} is a graph that has no simple cycles and is connected.
 % parent-child relationship.  The \textit{parent} is closer to the root, while the \textit{child} is 
 % further way from the root.
 \subsection{Ordered Trees}
-An \textit{ordered tree} is a rooted tree in which the counter-clockwise ordering of children of a 
-common parent matters.
+An \textit{ordered tree} is a rooted tree in which the counter-clockwise ordering of adjacent 
+vertices.
 \begin{figure}[h]
 \begin{center}
   \begin{subfigure}[b]{0.4\textwidth}
@@ -80,12 +80,12 @@ common parent matters.
     \includegraphics[scale=.25]{graphics/orderedTreeExample2.png}
     \caption{Another embedding of a tree.}\label{fig:ch1-graph-5}
   \end{subfigure}
-  \caption{A rooted tree with whose children have a different counter-clockwise 
+  \caption{A tree with adjacent nodes having a different counter-clockwise 
 ordering.  Note that these ordered trees are not equivalent.}\label{fig:ch1-graph-6}
 \end{center}
 \end{figure}
-The orderedness of a tree is a property of the tree's embedding.  A fortiori, embeddings of ordered 
-trees are equivalent if for each parent, the counter-clockwise ordering of children are the same.
+Embeddings of ordered trees are equivalent if for each node the counter-clockwise ordering of 
+adjacent nodes are the same.
 \subsection{Graph Isomorphism}
 %things to do:
 %1) Isomorphism -> graph property
@@ -93,7 +93,7 @@ trees are equivalent if for each parent, the counter-clockwise ordering of child
 %To describe the types of motion that we are interested in linkages we must define the graph 
 %isomorphism.  
 To determine when two graphs are equivalent, we need to define an isomorphism for graphs.  Given 
-two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textir{graph isomorphism} $f: V_1 \mapsto 
+two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} $f: V_1 \mapsto 
 V_2$ 
 such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only 
 if $(f(u),f(v)) \in E_2$. 

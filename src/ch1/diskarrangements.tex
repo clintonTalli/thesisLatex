@@ -2,7 +2,10 @@
 It turns out the disk arrangements are an equivalent way to to represent plane graphs.  By 
 representing vertices as disks and edges are represented as points of contact, a \textit{kissing 
 point} between two disks.  The graph corresponding to a given disk arrangement, $\DD$, is said to 
-be the \textit{contact graph}.  
+be the \textit{contact graph}. 
+
+%(fig 1) a disk arrangement
+%(fig 2) an equivalent contact graph to (fig 1)
 
 A \it{disk arrangement} is a set, $\DD$, is pairwise interior-disjoint disks in the plane.
 %A \it{disk arrangement}, $P$, embedded in a plane  is a set of disks with disjoint interiors 
@@ -10,9 +13,14 @@ $\left\lbrace C_i \right\rbrace_{i = 1}^n $ such that for any circle $C \in \lef
 \right\rbrace_{i = 1}^n$, $C$ is tangent to a different circle of $\left\lbrace C_i \right\rbrace_{i 
 = 1}^n$. 
 \begin{thm}[\ref{stephenson2005introduction}Disk Packing Theorem]\label{thm2-1}
-For every graph $G$ there is a disk arrangement in the
-plane whose intersection graph is (isomorphic to) $G$.
+For every graph $G$, there is a disk arrangement in the
+plane whose contact graph is isomorphic to $G$.
 \end{thm}
+\begin{prop}
+ For every graph $L$, there is a disk arrangement in the
+plane whose contact graph is isomorphic to $L$.
+\end{prop}
+
 
 \begin{figure}[h]
 \begin{center}
@@ -26,17 +34,28 @@ $G_2$}
 %\item Introduce the circle packing theorem.
 \item Show the relation between polygonal linkages and disk arrangengements.
 \end{enumerate} 
-\subsubsection{Oriented Realizations}
-%finish 
+\subsubsection{Ordered Disk Arrangement}
+Suppose we're given a tree. By the disk packing theorem we can ascertain a sense of order for the 
+isomorphic disk packing.  An \textit{ordered disk arrangement} is a rooted tree in which the 
+counter-clockwise ordering of adjacent vertices.
 \subsubsection{Disk Packing Confinement Problem}
-Consider the iterative problem:
+By adding constraints to the embeddings of disk arrangements, we can devise realizability problem 
+by a volume argument.
 \begin{enumerate}%1,2,3,4....
-\item Start with a circle of diameter 1.
-\item Add two kissing circles, each of diameter 1, that do not intersect with any other circle (they 
+\item Round 1: Start with a disk of diameter 2.
+\item Round 2: Add two kissing disks, each of diameter 2, that do not intersect with any other 
+disk (they 
 may kiss other
-circles).
-\item For each new kissing circle added, add two more non-intersecting kissing circles to it.
+disk).
+\item Round 3 and Higher: For each new kissing disk added, add two more non-intersecting kissing 
+disks of diameter 2 to it.
 \end{enumerate} 
+For each round $i$ we are adding $2^{(i-1)}$ disks, each with an of $\pi$.  The area that 
+the disk arrangement is bounded by at round $i$ is a box of length $2\cdot (2\cdot (i-1)+1)$ 
+totalling to an area of $(4\cdot i^2 - 4\cdot i + 1)$.  Meanwhile the total area of the disk 
+arrangement at round $i$ is $\pi \cdot (2^i - 1)$.  The exponential growth rate of the disk packing 
+will exceed its bounded area for sufficiently large $i$.
+
 Figure (\ref{fig:circlePacking-1}) illustrates the iterative problem.  The problem with this is that 
 the area in
 which is necessary to contain this disk growing disk arrangement will exceed the area needed to 
@@ -70,5 +89,3 @@ contain it.
 previously generated disks.  By continuing this arrangement growth, the space needed to contain the 
 kissing disks will exceed the area containing the disk arrangements.}\label{fig:circlePacking-1}
 \end{figure}
-This is so frustrating to explain.  I understand it, I have trouble explaining it.  Then I'd like to 
-show how this relates to our problem.
