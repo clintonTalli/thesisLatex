@@ -2,8 +2,10 @@
 A \textit{graph} is an 
 ordered pair $G = (V,E)$ comprising of a set $V$ of vertices and a set $E$ of edges or 
 lines.  Every edge $e \in E$, is an unordered pair of distinct vertices $u,v \in V$ (
-the edge represents their adjacency, $\{ u,v\} \in E$). With this definition of a graph, there are 
-no loops (self adjacent vertices) or multi-edges (several edges between the same pair of vertices).
+the edge represents their adjacency, $e = \{ u,v\}$). With this definition of a graph, there 
+are 
+no loops (self adjacent vertices, $\{v,v\}$) or multi-edges (several edges between the same pair of 
+vertices).
 
 A motivation for using graphs is modelling physical objects like molecules.  This requires an 
 embedding into the plane or $\bbr^3$.  An \textit{embedding} of the 
@@ -17,16 +19,15 @@ graph $G = (V,E)$ is an injective mapping $\Pi : V \mapsto \bbR^{2}$ (see Figure
 \end{center} 
 \end{figure} 
 \subsubsection{Edge Crossings}
-We define \textit{plane embeddings} to be an embedding where the following degenerate configurations 
+We define \textit{plane embeddings} of a graph to be an embedding where the following degenerate 
+configurations 
 do not occur:
 \begin{itemize}
 \item[\rn{1}] the interiors of two or more edges intersect, or
-\item[\rn{2}] an edge passing through a vertex
+\item[\rn{2}] an edge passes through a vertex
 \end{itemize} 
 \begin{figure}[H]
 \begin{center}
-    %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-    %(or a blank line to force the subfigure onto a new line)
   \begin{subfigure}[b]{0.49\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/crossingType2.png}
 	  \caption{The interior of the edges intersect.}
@@ -40,68 +41,53 @@ do not occur:
 \end{center} 
 \caption{These figures exhibit the 4 types of edge crossings.}\label{fig:ch1-linkages-1}
 \end{figure}
-A \textit{planar graph} is an abstract graph that admits a plane embedding.
+A graph is called \textit{planar} if it admits a plane embedding.  A \textit{plane graph} is a 
+graph together with a plane embedding.
 \subsection{Trees}
-A \textit{path} is a sequence of vertices that represent a traversal of edges within a 
-graph.  
-A \textit{simple  cycle} of a graph is a sequence of 
-distinct vertices that do not repeat 
-with the exception of the starting (ending) vertex.  A 
-graph is connected if for any two vertices $u,v \in V$, there exists a path between the two points.
-%REDEFINE CONNECTED AND TREE
+A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by 
+an edge.   
+A \textit{simple  cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of 
+distinct vertices such that every two consecutive vertices are connected by 
+an edge,  and the last vertex, $v_t$, connects to $v_1$.  A 
+graph is \textit{connected} if for any two vertices, there exists a path between 
+the two points.
+
 A \textit{tree} is a graph that has no simple cycles and is connected.
 \begin{figure}[h]
 \begin{center}
   \begin{subfigure}[b]{0.49\textwidth}
     \includegraphics[scale=.5]{graphics/PetersonGraphWithSimpleCyle.png}
-    \caption{A proper embedding of the Peterson graph with a simple cycle of 
-    (2,7,9,6,1,0,5,8,3,2).}\label{fig:ch1-graph-2}
+    \caption{An embedding of the Peterson graph with a simple cycle of 
+    (2,7,9,6,1,0,5,8,3).}\label{fig:ch1-graph-2}
   \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics[scale=.5]{graphics/RandomTree16Nodes.png}
-    \caption{A tree with 16 vertices}\label{fig:ch1-graph-3}
-  \end{subfigure}
+  
 \end{center}
 \end{figure}
-% The vertices of an embedded tree have a nomenclature.  One vertex is designated to be the 
-% \textit{root} where the edges are oriented away from the root.  Adjacent vertices have a 
-% parent-child relationship.  The \textit{parent} is closer to the root, while the \textit{child} is 
-% further way from the root.
 \subsection{Ordered Trees}
-An \textit{ordered tree} is a rooted tree in which the counter-clockwise ordering of adjacent 
-vertices.
+An \textit{ordered tree} is a tree together with a cyclic order of the neighbors for each vertex.
 \begin{figure}[h]
 \begin{center}
-  \begin{subfigure}[b]{0.4\textwidth}
-    \includegraphics[scale=.25]{graphics/orderedTreeExample1.png}
-    \caption{An embedding of a tree.}\label{fig:ch1-graph-4}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.4\textwidth}
-    \includegraphics[scale=.25]{graphics/orderedTreeExample2.png}
-    \caption{Another embedding of a tree.}\label{fig:ch1-graph-5}
-  \end{subfigure}
-  \caption{A tree with adjacent nodes having a different counter-clockwise 
-ordering.  Note that these ordered trees are not equivalent.}\label{fig:ch1-graph-6}
+\begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[scale=.5]{graphics/OrderedTreeExample.pdf}
+    \caption{A tree with two embeddings with different cyclic orderings around 
+vertices.}\label{fig:ch1-graph-6}
 \end{center}
 \end{figure}
 Embeddings of ordered trees are equivalent if for each node the counter-clockwise ordering of 
 adjacent nodes are the same.
-\subsection{Graph Isomorphism}
-%things to do:
-%1) Isomorphism -> graph property
-%2) Ordered graph -> graph property ultimately for polygonal linkages.  
-%To describe the types of motion that we are interested in linkages we must define the graph 
-%isomorphism.  
+\subsection{Graph Isomorphism} 
 To determine when two graphs are equivalent, we need to define an isomorphism for graphs.  Given 
-two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} $f: V_1 \mapsto 
+two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} a bijective 
+function $f: V_1 \mapsto 
 V_2$ 
-such that for any two vertices $u,v \in V_1$ that are adjacent, i.e. $(u, v) \in E_1$, if and only 
+such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and 
+only 
 if $(f(u),f(v)) \in E_2$. 
 \begin{table}[!ht]
 \begin{center}
 $$\begin{array}{|c|c|c|}\hline
 \text{Graph}&\text{Vertices}&\text{Edges}\\\hline
-G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
+G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace ab,(b,c),(c,d),(d,e),(e,a) \right\rbrace 
 \\\hline
 G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
 \\\hline
@@ -111,7 +97,7 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 \end{center} 
 \label{table:ch1-graph-1}
 \end{table}
-% show an example of polygonal linkages
+
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}

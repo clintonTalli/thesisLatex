@@ -1,23 +1,30 @@
 \subsection{Disk Arrangements}
 It turns out the disk arrangements are an equivalent way to to represent plane graphs.  By 
-representing vertices as disks and edges are represented as points of contact, a \textit{kissing 
-point} between two disks.  The graph corresponding to a given disk arrangement, $\DD$, is said to 
-be the \textit{contact graph}. 
+representing vertices as interioir disjoint disks and by representing edges as as points of 
+intersections (contact), \textit{kissing 
+points} between two disks.  The graph corresponding to a given disk arrangement, $\DD$, is said to 
+be the \textit{contact graph}. A \it{disk arrangement} is a set, $\DD$, of pairwise 
+interior-disjoint disks in the plane, 
+$\DD=\left\lbrace C_i \right\rbrace_{i = 1}^n $.
+$\left\lbrace C_i \right\rbrace_{i = 1}^n $ such that for any circle $C \in \left\lbrace C_i 
+\right\rbrace_{i = 1}^n$, $C$
+
 
 %(fig 1) a disk arrangement
 %(fig 2) an equivalent contact graph to (fig 1)
-
-A \it{disk arrangement} is a set, $\DD$, is pairwise interior-disjoint disks in the plane.
-%A \it{disk arrangement}, $P$, embedded in a plane  is a set of disks with disjoint interiors 
-$\left\lbrace C_i \right\rbrace_{i = 1}^n $ such that for any circle $C \in \left\lbrace C_i 
-\right\rbrace_{i = 1}^n$, $C$ is tangent to a different circle of $\left\lbrace C_i \right\rbrace_{i 
-= 1}^n$. 
+A classical result by Thurston and Koebe is that every disk arrangement embedded into the plane had 
+a corresponding plane graph.
 \begin{thm}[\ref{stephenson2005introduction}Disk Packing Theorem]\label{thm2-1}
 For every graph $G$, there is a disk arrangement in the
 plane whose contact graph is isomorphic to $G$.
 \end{thm}
+
+%add a paragraph with atoms of molecules are modeled with disks and balls of fixed radii. The 
+%if two disks are in contact, then the  distance between their centers  = the sum of the radii
+%conclude: disk arrangements are better models for representing atoms and molecules fixed distance 
+% betweeen atoms
 \begin{prop}
- For every graph $L$, there is a disk arrangement in the
+ For every linkage $L$, there is a disk arrangement in the
 plane whose contact graph is isomorphic to $L$.
 \end{prop}
 
@@ -39,10 +46,11 @@ Suppose we're given a tree. By the disk packing theorem we can ascertain a sense
 isomorphic disk packing.  An \textit{ordered disk arrangement} is a rooted tree in which the 
 counter-clockwise ordering of adjacent vertices.
 \subsubsection{Disk Packing Confinement Problem}
+Given inputs of radii 
 By adding constraints to the embeddings of disk arrangements, we can devise realizability problem 
 by a volume argument.
 \begin{enumerate}%1,2,3,4....
-\item Round 1: Start with a disk of diameter 2.
+\item Round 1: Start with a disk of unit radius.
 \item Round 2: Add two kissing disks, each of diameter 2, that do not intersect with any other 
 disk (they 
 may kiss other
