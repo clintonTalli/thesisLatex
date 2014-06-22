@@ -1,5 +1,31 @@
+%I) Algorithm Complexity
+%	a) Algorithm
+%		procedure of calculations
+%		has a running time
+%		utilizes resources
+%		goal: have an algorithm that runs quickly and utilizes a small amount of resources
+%	b) Qualitative Analysis of Algorithms
+%		worst case running time
+%		brute force
+%		efficiency
+%	c) Spaces of Algorithms
+%		polynomial time
+%		PSPACE
+%		NP
+%		P
+%		NP-Complete
 \section{Algorithm Complexity}
-\textit{Algorithms} are a set of procedural calculations.  Determining the time and space that algorithms use determine their efficiency.  The \textit{worst-case} running time is the largest possible running time that an algorithm could have over all inputs of a given size $N$.  \textit{Brute force} is when an algorithm tries all possibilities to see if any formulates a solution.  An algorithm is said to be \textit{efficient} if it achieves qualitatively better worst-case performance, at an analytical level, than brute force search. %cite algorithm design
+\textit{Algorithms} are a set of procedural calculations.  When an algorithm executes its procedure it can be measured in terms of units of consumed resources (in computers, that is memory) and the time it takes to complete the procedure of calculations.  Ideally, a desirable algorithm would run quickly and utilizes a small amount of resources.
 
-\subsection{Running Time}
-For combinatorial problems, as the number of inputs of the problem grows, the solution space tends to grow exponentially.  In general, as problems grow, it is desirable to minimize the running time for an algorithm.   \textit{Polynomial running time} is if the input size increases from $N$ to $2\cdot N$, the bound on the running time increases from $c \cdot (2N)^d = c \cdot 2^d \cdot N^d$.  
+\subsection{Qualitative Analysis of Algorithms  
+etermining the time and space that algorithms use determine their efficiency.  The \textit{worst-case} running time is the largest possible running time that an algorithm could have over all inputs of a given size $N$.  \textit{Brute force} is when an algorithm tries all possibilities to see if any formulates a solution.  An algorithm is said to be \textit{efficient} if it achieves qualitatively better worst-case performance, at an analytical level, than brute force search \cite{kleinberg2006algorithm}.
+
+
+\subsection{Categorization of Algorithms}
+For combinatorial problems, as the number of inputs of the problem grows, the solution space tends to grow exponentially.  In general, as problems grow, it is desirable to minimize the \textit{running time}, time take to run an algorithm that solves a problem. There are various types of running times; the running time that we will focus on in this thesis is polynomial running time.  \textit{Polynomial running time} is if the input size increases from $N$ to $2\cdot N$, the bound on the running time increases from $c \cdot (2N)^d = c \cdot 2^d \cdot N^d$.  
+
+To categorize problems \cite{kleinberg2006algorithm}, we ask the following:
+\begin{prob}
+Can arbitrary instances of problem $Y$ by solved using a polynomial number of standard computational steps, plus a polynomial number of calls to an algorithm that solves $X$?
+\end{prob}
+The class of problems that can be solved in polynomial running time is called the \textit{polynomial time} class.  
