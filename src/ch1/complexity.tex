@@ -20,12 +20,25 @@
 \subsection{Qualitative Analysis of Algorithms  
 etermining the time and space that algorithms use determine their efficiency.  The \textit{worst-case} running time is the largest possible running time that an algorithm could have over all inputs of a given size $N$.  \textit{Brute force} is when an algorithm tries all possibilities to see if any formulates a solution.  An algorithm is said to be \textit{efficient} if it achieves qualitatively better worst-case performance, at an analytical level, than brute force search \cite{kleinberg2006algorithm}.
 
-
 \subsection{Categorization of Algorithms}
-For combinatorial problems, as the number of inputs of the problem grows, the solution space tends to grow exponentially.  In general, as problems grow, it is desirable to minimize the \textit{running time}, time take to run an algorithm that solves a problem. There are various types of running times; the running time that we will focus on in this thesis is polynomial running time.  \textit{Polynomial running time} is if the input size increases from $N$ to $2\cdot N$, the bound on the running time increases from $c \cdot (2N)^d = c \cdot 2^d \cdot N^d$.  
+For combinatorial problems, as the number of inputs of the problem grows, the solution space tends to grow exponentially.  In general, as problems grow, it is desirable to minimize the \textit{running time}, time take to run an algorithm that solves a problem. Formally, we quantify running time with Big O notation.
+\begin{def}[Big O Notation]
+Let $f$ and $g$ be defined on some subset of $\bbR$.  $f(x) = O\left(g(x)\right)$ if and only if there exists a positive real number $M$ and $x_0$ such that $$\left\vert g(x)\right\vert \leq M \left\vert f(x) \right\vert$$
+for all $x \geq x_0$
+\end{def}
+ There are various types of running times; the running time that we will focus on in this thesis is polynomial running time ($\P$), nondeterministic polynomial running time ($\NP$), and non-deterministic polynomial complete running time ($\NP$ complete).
+
+An algorithm has a \textit{polynomial running time} if there is a polynomial function $p$ such that for every input string $s$, the algorithm terminantes on $s$ in at most $O\left( p \left( \left\vert s \right\vert\right)\right)$ steps.  Before we continue with the definitions for $\NP$ and $\NP$ complete, we will look into a type of problem, a reduction of a problem, and what an efficient certification is.  This facilitates the reader for the definitions and illustrate complexity better.
+\subsubsection{Independent Sets and Vertex Covers}
+Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two vertices in $S$ are joined by an edge. A \textit{vertex cover} of a graph $G = (V,E)$  is a set of vertices $S \subset V$ if every edge $e \in E$, has at least one end corresponding in $S$.
+
+\begin{thm}
+Let $G = (V,E)$ be a graph.  Then $S$ is an independent set if and only if its complement $V-S$ is a vertex cover.
+\end{thm}
+%\textit{Polynomial running time} is if the input size increases from $N$ to $2\cdot N$, the bound on the running time increases from $c \cdot (2N)^d = c \cdot 2^d \cdot N^d$.  
 
 To categorize problems \cite{kleinberg2006algorithm}, we ask the following:
 \begin{prob}
 Can arbitrary instances of problem $Y$ by solved using a polynomial number of standard computational steps, plus a polynomial number of calls to an algorithm that solves $X$?
 \end{prob}
-The class of problems that can be solved in polynomial running time is called the \textit{polynomial time} class.  
+The class of problems that can be solved in polynomial running time is called the \textit{polynomial time} class.  `
