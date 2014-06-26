@@ -17,15 +17,15 @@
 \section{Algorithm Complexity}
 \textit{Algorithms} are a set of procedural calculations.  When an algorithm executes its procedure it can be measured in terms of units of consumed resources (in computers, that is memory) and the time it takes to complete the procedure of calculations.  Ideally, a desirable algorithm would run quickly and utilizes a small amount of resources.
 
-\subsection{Qualitative Analysis of Algorithms  
-etermining the time and space that algorithms use determine their efficiency.  The \textit{worst-case} running time is the largest possible running time that an algorithm could have over all inputs of a given size $N$.  \textit{Brute force} is when an algorithm tries all possibilities to see if any formulates a solution.  An algorithm is said to be \textit{efficient} if it achieves qualitatively better worst-case performance, at an analytical level, than brute force search \cite{kleinberg2006algorithm}.
+\subsection{Qualitative Analysis of Algorithms  }
+Determining the time and space that algorithms use determine their efficiency.  The \textit{worst-case} running time is the largest possible running time that an algorithm could have over all inputs of a given size $N$.  \textit{Brute force} is when an algorithm tries all possibilities to see if any formulates a solution.  An algorithm is said to be \textit{efficient} if it achieves qualitatively better worst-case performance, at an analytical level, than brute force search.% \cite{kleinberg2006algorithm}.
 
 \subsection{Categorization of Algorithms}
 For combinatorial problems, as the number of inputs of the problem grows, the solution space tends to grow exponentially.  In general, as problems grow, it is desirable to minimize the \textit{running time}, time take to run an algorithm that solves a problem. Formally, we quantify running time with Big O notation.
-\begin{def}[Big O Notation]
+\begin{definition}[Big $O$ Notation]
 Let $f$ and $g$ be defined on some subset of $\bbR$.  $f(x) = O\left(g(x)\right)$ if and only if there exists a positive real number $M$ and $x_0$ such that $$\left\vert g(x)\right\vert \leq M \left\vert f(x) \right\vert$$
 for all $x \geq x_0$
-\end{def}
+\end{definition}
  There are various types of running times; the running time that we will focus on in this thesis is polynomial running time ($\P$), nondeterministic polynomial running time ($\NP$), and non-deterministic polynomial complete running time ($\NP$ complete).
 
 An algorithm has a \textit{polynomial running time} if there is a polynomial function $p$ such that for every input string $s$, the algorithm terminantes on $s$ in at most $O\left( p \left( \left\vert s \right\vert\right)\right)$ steps.  Before we continue with the definitions for $\NP$ and $\NP$ complete, we will look into a type of problem, a reduction of a problem, and what an efficient certification is.  This facilitates the reader for the definitions and illustrate complexity better.
