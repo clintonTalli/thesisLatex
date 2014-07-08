@@ -59,4 +59,10 @@ To categorize problems \cite{kleinberg2006algorithm}, we ask the following:
 \begin{prob}
 Can arbitrary instances of problem $Y$ by solved using a polynomial number of standard computational steps, plus a polynomial number of calls to an algorithm that solves $X$?
 \end{prob}
-The class of problems that can be solved in polynomial running time is called the \textit{polynomial time} class.  
+The class of problems that can be solved in polynomial running time is called the \textit{polynomial time} class, $\P$.  A second property of problems is whether if its solution can be verified efficiently.  This property is independent of whether it can be solved efficiently.  $B$ is said to be an efficient certifier for a problem $X$  if the following properties hold:
+\begin{itemize}
+\item[(i)] $B$ is a polynomial-time algorithm that takes two inputs $s$ and $t$.
+\item[(ii)] There exists a polynomial function $p$ such that for every string $s$, we have $s \in X$ if and only if there exists a string $t$ such that $\vert t \vert \leq p\left( \vert s \vert \right)$ and $B(s,t) = \text{'yes'}$.
+\end{itemize}
+
+The class of problems which have an efficient certifier is said to be the \textit{nondeterministic polynomial time} class, $\NP$.
