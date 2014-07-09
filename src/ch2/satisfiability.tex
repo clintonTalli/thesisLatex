@@ -1,0 +1,106 @@
+\section{Satisfiability}
+\begin{prob}[Satisfiability Problem]\label{prob:Satisfiability-1}%Problem/Question
+Let $\left\lbrace x_i \right\rbrace_{i=1}^{n} $ be boolean variables, and $t_i \in \left\lbrace 
+x_i\right\rbrace_{i=1}^{n}  \cup \left\lbrace \bar{x}_i\right\rbrace_{i=1}^{n}   $.  A 
+\textit{clause} is is said to be a disjuction of distinct terms:
+$$
+t_1 \vee \cdots \vee t_{j_k} = C_k
+$$
+Then the \textit{satisfiability problem} is the decidability of a conjuction of a set of clauses, 
+i.e.:
+$$ \wedge_{i=1}^m C_i$$
+\end{prob} \cite{skiena2009algorithm}
+A \textit{3-SAT problem} is a SAT problem with all clauses having only three boolean variables. 
+\begin{definition}[Planar 3-SAT Problem]\label{def:Satisfiability-2}
+Given a boolean 3-SAT formula $B$, define the associated graph of $B$ as follows:  
+\begin{equation}\label{eqn:sat-1}
+G(B) = \left(\set{v_x}{v_x\text{ represents a variable in }B} \cup \set{v_C}{v_C\text{ represent a 
+clause in }B}  , \set{\left( v_x, v_C\right) }{x \in C \text{ or } \bar{x} \in C}  \right) 
+\end{equation} 
+If $G(B)$ in equation (\ref{eqn:sat-1}) is planar, then $B$ is said to be a \textit{Planar 3-SAT 
+Problem} \cite{mulzer2008minimum}.
+\end{definition}
+\subsection{Not All Equal 3 SAT Problem}
+\begin{prob}[Not All Equal 3 SAT Problem]\label{prob:Satisfiability-2}%Problem/Question
+Give a set of clauses $C$, each containing three boolean variables, can each clause contain at 
+least one true variable and one false variable?
+\end{prob}
+\subsection{Planar 3 SAT Problem}
+% Definition 1. (PLANAR 3-SAT) Let Φ be a
+% Boolean formula in 3-CNF. The formula graph of
+% Φ, G(Φ), has one variable-vertex vx for each variable
+% x and one clause-vertex vC for each clause C. The
+% variable-vertices vx are connected by edges to form a
+% variable cycle, and for each clause-vertex vC an edge
+% (vC, vx) is added if C contains either literal x or x.
+% We say Φ is planar iﬀ G(Φ) is planar. The PLANAR
+% 3-SAT problem is equivalent to the 3-SAT problem
+% restricted to planar formulae.
+% Theorem 2.1. (Lichtenstein [14] Theorem 2)
+% PLANAR 3-SAT is NP-complete
+\begin{prob}[Planar 3 SAT Problem]
+ A planar 3SAT instance is a 3SAT instance for which the graph built using the following rules is 
+planar:
+\begin{enumerate}
+ \item add a vertex for every $x_i$ and $\bar{x}_i$
+ \item add a vertex for every clause $C_j$
+ \item add an edge for every $\left(x_i,\bar{x}_i \right)$ pair
+ \item add an edge from vertex $x_i$ (or $\bar{x}_i$) to each vertex that represent a clause that 
+contains it
+ \item add edges between two consecutive variables $(x_1,x_2)$, $(x_2,x_3)$, $\dots$,$(x_n,x_1)$
+\end{enumerate}
+In particular, rule 5 builds a "backbone" that splits the clauses in two distinct regions.
+\end{prob}
+
+%Universality component
+\subsection{Logic Engine}
+The logic engine simulates the well known Not All Equal 3 SAT Problem (NAE3SAT).  
+%add figure of logic engine.
+\subsection{Construction of the Logic Engine}
+The components of the logic engine are as follows: the rigid frame, the shaft, the armatures, 
+the chains, and the flags.  The \textit{rigid frame} is a rectangular enclosure with a horizontal 
+shaft place at mid-height.  The \textit{armatures} are concentric rectangular frames contained 
+within the rigid frame.  Each armature can rotate about the shaft; other motions on the armature 
+are disallowed.  Given an NAE3SAT, for each variable there is a corresponding armature. On each 
+armature, there are chains.  A pair of \textit{chains}, $a_j$ and $\bar{a}_j$ correspond to the 
+variable $x_j$ and $\bar{x}_j$ respectively.  The pair is placed on each armature, reflected at a 
+height of $h$ above and below the shaft, i.e. one place above the shave at a height of $h$, the 
+other placed below the shaft at a height of $-h$.
+%insert an armature graphic
+
+\subsection{Encoding the Logic Engine}
+For each clause of an NAE3SAT, there exists a set of corresponding chains, namely the $h^\text{th}$ 
+clause is the set of chains on the armatures at the $h^\text{th}$ row above and below the shaft. A 
+chain is \textit{flagged} if the corresponding variable resides within the clause.  The flag can 
+point in either the left or right directions indicating a truth assignment for that variable within 
+the clause.  A flag is attached to the $i^\text{th}$ chain of every $a_j^\text{th}$ and 
+$\bar{a}_j^\text{th}$ chain with the following exceptions:
+\begin{enumerate}
+ \item if the variable $x_j$  is in clause $C_i$, then link $i$ of $a_j$ is unflagged,
+ \item if the variable $\bar{x}_j$ is in clause $C_i$, then link $i$ of $a_j$ is unflagged.
+\end{enumerate}
+\begin{thm}\label{thm:Satisfiability-1}
+ An instance of $NAE3SAT$ is a ``yes'' instance if and only if the corresponding logic engine has a 
+flat, collision-free configuration.
+\end{thm}
+\begin{pf}
+ If an instance of $NAE3SAT$ is a ``yes'', then every clause in $C$ contains at least one true 
+variable and one false variable.  Now suppose the following truth assignment:
+\begin{equation}\label{eqn:Satisfiability-1}
+ t\left( x_j \right) = \left\lbrace\begin{array}{cr}
+  1 & x_j\text{ and }\bar{x}_j \text{are placed at the top and bottom respectively}\\
+  0 & x_j\text{ and }\bar{x}_j \text{are placed at the bottom and top respectively}\\
+ \end{array}\right.
+\end{equation}
+For each clause $c_i \in C$, there exists a variables in $c_i$ such that $t\left( y_i \right) = 1$ 
+and $t\left( z_i \right) = 0$.  This implies that there exists an unflagged chain in the 
+$i^\text{th}$ and $-i^\text{th}$ row of the frame.  To avoid a collision in each row, trigger the 
+flags to point towards the unflagged link. Thus, the corresponding logic engine has a 
+flat, collision-free configuration.
+
+If the corresponding logic engine has a flat, collision-free configuration, then there must exist 
+an unflagged link in each row.  Without loss of generality, we have that the variables $y_j$ and 
+$z_i$ is in clause $C_i$ such that $t\left( y_i \right) = 1$ and $t\left( z_i \right) = 0$ for each 
+$i$.  Thus, we have an instance of $NAE3SAT$ is a ``yes'' instance. \cite{BET+99}
+\end{pf}
+
