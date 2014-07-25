@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140708124627" modified="D:20140708124627"/>
+<info created="D:20140708124627" modified="D:20140724193308"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -232,42 +232,42 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" stroke="black" pen="heavier">
+<path layer="alpha" stroke="black" pen="ultrafat">
 192 704 m
 192 576 l
 256 576 l
 256 704 l
 h
 </path>
-<path stroke="black" pen="heavier">
+<path stroke="black" pen="ultrafat">
 160 736 m
 160 544 l
 288 544 l
 288 736 l
 h
 </path>
-<path stroke="black" pen="heavier">
+<path stroke="black" pen="ultrafat">
 128 768 m
 128 512 l
 320 512 l
 320 768 l
 h
 </path>
-<path stroke="black" pen="heavier">
+<path stroke="black" pen="ultrafat">
 96 800 m
 96 480 l
 352 480 l
 352 800 l
 h
 </path>
-<path stroke="black" pen="heavier">
+<path stroke="black" pen="ultrafat">
 64 832 m
 64 448 l
 384 448 l
 384 832 l
 h
 </path>
-<path stroke="black" pen="fat">
+<path stroke="darkred" pen="ultrafat">
 64 640 m
 384 640 l
 </path>
@@ -367,5 +367,72 @@ h
 352 704 l
 h
 </path>
+<use name="mark/disk(sx)" pos="352 624" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 608" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 592" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="320 592" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="320 608" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="320.118 624.462" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 624" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="256 624" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="256 608" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="256.826 592.95" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 592" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 656" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="320 656" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 656" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="256 656" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="256 672" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 672" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="256 688" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="288 688" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="320 688" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 688" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="352 672" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="320 672" size="normal" stroke="red"/>
+<path stroke="orange" pen="ultrafat" arrow="normal/normal">
+480 752 m
+400 784
+368 768 s
+</path>
+<path stroke="orange" pen="ultrafat" arrow="normal/normal">
+480 752 m
+400 784
+336 736 s
+</path>
+<path stroke="orange" pen="ultrafat" arrow="normal/normal">
+480 752 m
+400 784
+304 736 s
+</path>
+<path stroke="orange" pen="ultrafat" arrow="normal/normal">
+480 720 m
+400 752
+272 704 s
+</path>
+<text matrix="1 0 0 1 -44.6063 -1.82066" transformations="translations" pos="496 736" stroke="orange" type="label" width="94.322" height="14.116" depth="0" valign="baseline" size="huge">Armatures
+</text>
+<path stroke="red" pen="ultrafat" arrow="normal/normal">
+448 672 m
+384.158 683.602
+361.854 685.423 s
+</path>
+<path stroke="red" pen="ultrafat" arrow="normal/normal">
+446.971 671.768 m
+385.523 682.692
+358.213 674.499 s
+</path>
+<text matrix="1 0 0 1 -9.55849 -2.731" transformations="translations" pos="461.081 672.223" stroke="red" type="label" width="56.965" height="14.349" depth="0" valign="baseline" size="huge">Chains</text>
+<path stroke="purple" pen="ultrafat" arrow="normal/normal">
+449.246 639.451 m
+416.93 639.451
+374.144 624.431 s
+</path>
+<path stroke="purple" pen="ultrafat" arrow="normal/normal">
+448.336 639.451 m
+415.109 639.451
+371.868 656.748 s
+</path>
+<text transformations="translations" pos="454.708 640.817" stroke="purple" type="label" width="43.976" height="14.348" depth="4.02" valign="baseline" size="huge">Flags</text>
 </page>
 </ipe>
