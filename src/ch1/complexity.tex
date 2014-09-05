@@ -26,34 +26,19 @@ For combinatorial problems, as the number of inputs of the problem grows, the so
 Let $f$ and $g$ be defined on some subset of $\bbR$.  $f(x) = O\left(g(x)\right)$ if and only if there exists a positive real number $M$ and $x_0$ such that $$\left\vert g(x)\right\vert \leq M \left\vert f(x) \right\vert$$
 for all $x \geq x_0$
 \end{definition}
- There are various types of running times; the running time that we will focus on in this thesis is polynomial running time ($\P$), nondeterministic polynomial running time ($\NP$), and non-deterministic polynomial complete running time ($\NP$ complete).
-
-An algorithm has a \textit{polynomial running time} if there is a polynomial function $p$ such that for every input string $s$, the algorithm terminantes on $s$ in at most $O\left( p \left( \left\vert s \right\vert\right)\right)$ steps.  Before we continue with the definitions for $\NP$ and $\NP$ complete, we will look into a type of problem, a reduction of a problem, and what an efficient certification is.  This facilitates the reader for the definitions and illustrate complexity better.
-\subsubsection{Independent Sets and Vertex Covers}
-Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two vertices in $S$ are joined by an edge. A \textit{vertex cover} of a graph $G = (V,E)$  is a set of vertices $S \subset V$ if every edge $e \in E$, has at least one end corresponding in $S$.
-
-\begin{thm}\label{thm:ch1-complexity-1}
-Let $G = (V,E)$ be a graph.  Then $S$ is an independent set if and only if its complement $V-S$ is a vertex cover.
-\end{thm}
-\begin{pf}
-If $S$ is an independent set. Then for any pair of vertices in $S$, the pair are not joined by an edge if and only if for any $v_1, v_2 \in S$, $e = \left( v_1, v_2 \right) \not \in E$.  We have two cases.  The first case is if $v \in S$, then any vertex $u \in V$ that forms an edge $e = (v,u) \in E$ must reside in $V-S$. The second case is if there is an edge which no pair of vertices is in $S$, then both vertices are in $V-S$.  Both cases together imply that every edge has at least one end corresponding in $V-S$. 
 
 
-If $V-S$ is a vertex cover.  Every edge $e \in E$ has at least one vertex in $V-S$.  The two possible cases, the first case is that the second vertex is in $V-S$, and the second case is that the second vertex is in $S$.  The first case would yield $S = \emptyset$.  The second case implies that the edge $e \in E$ has exactly one vertex in $V-S$ and exactly one vertex in $S$.  $V-S$ is a vertex cover would disallow $S$ to have a pair of vertices to form an edge in the graph.
-\end{pf}
-Theorem \ref{thm:ch1-complexity-1} allows for problem reductions for independent set and vertex cover problems.
-\subsubsection{Reduction of the Independent Set and Vertex Cover Problem}
-There are two problems for the independent set: an optimization problem and a decision problem.
-\begin{prob}[Optimization of an Independent Set in $G$]
-Given a graph $G$, what is the largest independent set in $G$?
-\end{prob}
-\begin{prob}[Decision of an Independent Set of Size $k$]
-Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
-\end{prob}
-%NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH BELOW
-An algorithm that solves the optimization problem automatically solves the decision problem of the independent set.  An algorithm that solves the decision problem for all size $k$ solves the optimization problem where the decision is "yes" for the largest value of $k$.  This establishes a reduction of the optimization problem to the decision problem and vice versa. 
-%NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH ABOVE
-\subsubsection{Efficient Certification}
+
+\
+
+\subsubsection{P and NP}
+% There are various types of running times; the running time that we will focus on in this thesis is 
+% polynomial running time ($\P$), nondeterministic polynomial running time ($\NP$), and 
+% non-deterministic polynomial complete running time ($\NP$ complete).
+
+An algorithm has a \textit{polynomial running time} if there is a polynomial function $p$ such that 
+for every input string $s$, the algorithm terminantes on $s$ in at most $O\left( p \left( \left\vert 
+s \right\vert\right)\right)$ steps.  
 
 To categorize problems \cite{kleinberg2006algorithm}, we ask the following:
 \begin{prob}
@@ -65,4 +50,62 @@ The class of problems that can be solved in polynomial running time is called th
 \item[(ii)] There exists a polynomial function $p$ such that for every string $s$, we have $s \in X$ if and only if there exists a string $t$ such that $\vert t \vert \leq p\left( \vert s \vert \right)$ and $B(s,t) = \text{'yes'}$.
 \end{itemize}
 
-The class of problems which have an efficient certifier is said to be the \textit{nondeterministic polynomial time} class, $\NP$.  Other classes of problems are $\NP-\text{complete}$ and $\NP-\text{hard}$.  $\NP-\text{complete}$ is a class of decision problems.  A problem $\mathcal{C}$ is said to be $\NP-\text{complete}$ if $\mathcal{C} \in \NP$ and every problem $\mathcal{D} \in \NP$ is reducible to $\mathcal{C}$ in polynomial time.  $\NP-\text{hard}$ is a class of problems that are at least as hard as $\NP-\text{complete}$ problems.
+The class of problems which have an efficient certifier is said to be the \textit{nondeterministic 
+polynomial time} class, $\NP$. Before we continue with the definitions for $\NP$ and $\NP$ 
+complete, we will look into a type of problem, a reduction of a problem, and what an efficient 
+certification is.  This facilitates the reader for the definitions and illustrate complexity better. 
+ 
+\subsection{Reduction}
+A \textit{polynomial time reduction} is when arbitrary instances of problem $Y$ be solved using a polynomial number of standard computational steps, plus a polynomial number of calls to a black box that solves problem $X$.
+subsubsection{Independent Sets and Vertex Covers}
+To illustrate what a reduction is, we cover an example of independent sets and vertex covers.  
+Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two 
+vertices in $S$ are joined by an edge. A \textit{vertex cover} of a graph $G = (V,E)$  is a set of 
+vertices $S \subset V$ if every edge $e \in E$, has at least one end corresponding in $S$.
+
+\begin{thm}\label{thm:ch1-complexity-1}
+Let $G = (V,E)$ be a graph.  Then $S$ is an independent set if and only if its complement $V-S$ is a 
+vertex cover.
+\end{thm}
+\begin{pf}
+If $S$ is an independent set. Then for any pair of vertices in $S$, the pair are not joined by an 
+edge if and only if for any $v_1, v_2 \in S$, $e = \left( v_1, v_2 \right) \not \in E$.  We have two 
+cases.  The first case is if $v \in S$, then any vertex $u \in V$ that forms an edge $e = (v,u) \in 
+E$ must reside in $V-S$. The second case is if there is an edge which no pair of vertices is in $S$, 
+then both vertices are in $V-S$.  Both cases together imply that every edge has at least one end 
+corresponding in $V-S$. 
+
+
+If $V-S$ is a vertex cover.  Every edge $e \in E$ has at least one vertex in $V-S$.  The two 
+possible cases, the first case is that the second vertex is in $V-S$, and the second case is that 
+the second vertex is in $S$.  The first case would yield $S = \emptyset$.  The second case implies 
+that the edge $e \in E$ has exactly one vertex in $V-S$ and exactly one vertex in $S$.  $V-S$ is a 
+vertex cover would disallow $S$ to have a pair of vertices to form an edge in the graph.
+\end{pf}
+Theorem \ref{thm:ch1-complexity-1} allows for problem reductions for independent set and vertex 
+cover problems.
+
+\subsubsection{Reduction of the Independent Set and Vertex Cover Problem}
+There are two problems for the independent set: an optimization problem and a decision problem.
+\begin{prob}[Optimization of an Independent Set in $G$]
+Given a graph $G$, what is the largest independent set in $G$?
+\end{prob}
+\begin{prob}[Decision of an Independent Set of Size $k$]
+Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
+\end{prob}
+%NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH BELOW
+An algorithm that solves the optimization problem automatically solves the decision problem of the 
+independent set.  An algorithm that solves the decision problem for all size $k$ solves the 
+optimization problem where the decision is "yes" for the largest value of $k$.  This establishes a 
+reduction of the optimization problem to the decision problem and vice versa. 
+%NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH ABOVE
+
+
+
+% Other classes of problems are $\NP-\text{complete}$ and 
+% $\NP-\text{hard}$.  $\NP-\text{complete}$ is a class of decision problems.  A problem $\mathcal{C}$ 
+% is said to be $\NP-\text{complete}$ if $\mathcal{C} \in \NP$ and every problem $\mathcal{D} \in 
+% \NP$ 
+% is reducible to $\mathcal{C}$ in polynomial time.  $\NP-\text{hard}$ is a class of problems that 
+% are 
+% at least as hard as $\NP-\text{complete}$ problems.
