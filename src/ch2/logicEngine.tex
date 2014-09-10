@@ -63,5 +63,15 @@ flat, collision-free configuration.
 \begin{pf}
 %  If an instance of $NAE3SAT$ is a ``yes'', then every clause in $C$ contains at least one true
 % variable and one false variable.  Now suppose the following truth assignment:
+Suppose there is an instance of an NAE3SAT problem, $P$, with $n$ variables and $m$ clauses.  Let 
+$t$ be a truth assignment to the literals.  If $t \lr{x_1} = 1$, rotate the corresponding armature 
+such that $l_{j,k}$ above the shaft and $\bar{l}_{j,k}$ below the shaft.  If $t \lr{x_1} = 0$, 
+rotate the corresponding armature such that $l_{j,k}$ is below the shaft and $\bar{l}_{j,k}$ is 
+above the shaft.  For each clause $C_k$ there exists a ``true'' and ``false'' literal.  For clause 
+there is a correspond pair of rows accross the armatures.  The configuration of those armatures are 
+placed such that there is an unflagged link for at least one ``true'' and one ``false'' literal in 
+each row.  Configure the flags to point towards the unflagged links. We now have a collision-free 
+configuration.
 
+Suppose we have a collision free configuration of a logic engine
 \end{pf}
