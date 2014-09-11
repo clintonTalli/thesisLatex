@@ -32,7 +32,13 @@ each armature.  Every link is flagged except in the case of the following two co
  \item If the literal $x_j$ is found in clause $C_k$, then $l_{j,k}$ is unflagged.
  \item If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
 \end{enumerate}
-
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[scale=.66]{graphics/logicengineFlags.pdf}
+\caption{The blue flags indicate that $x_j$ or $\bar{x}_j$ is not found in clause $C_k$. 
+}\label{fig:logicengine-1}
+\end{center}
+\end{figure}
 % 
 % 
 %   The \textit{rigid frame} is a rectangular enclosure with a horizontal
@@ -73,5 +79,8 @@ placed such that there is an unflagged link for at least one ``true'' and one ``
 each row.  Configure the flags to point towards the unflagged links. We now have a collision-free 
 configuration.
 
-Suppose we have a collision free configuration of a logic engine
+Suppose we have a collision free configuration of a logic engine.  For each row, there exists at 
+least one unflagged link in each row.  For flags above the shaft, let each flagged $l_{j,k}$ 
+indicate that $x_j$ does not exist in the clause $C_k$.  For flags below the shaft, let each 
+flagged link indicate that $\bar{x}_j$ does not exist in the clause.  
 \end{pf}
