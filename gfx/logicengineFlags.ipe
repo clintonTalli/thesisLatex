@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140910202334" modified="D:20140910204917"/>
+<ipe version="70005" creator="Ipe 7.1.1">
+<info created="D:20140910202334" modified="D:20140914170248"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -202,13 +202,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
-<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
-<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -229,331 +229,507 @@ h
 <tiling name="falling" angle="-60" step="4" width="1"/>
 <tiling name="rising" angle="30" step="4" width="1"/>
 </ipestyle>
+<ipestyle name="bigpaper">
+<layout paper="10000 6000" origin="0 0" frame="10000 6000"/>
+<titlestyle pos="10 10" size="LARGE" color="title"  valign="baseline"/>
+</ipestyle>
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" stroke="black" pen="ultrafat">
+<path layer="alpha" matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 64 768 m
 64 256 l
 64 256 l
 </path>
-<path matrix="1 0 0 1 128 0" stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 5040.04 3199.96" stroke="black" pen="ultrafat">
 64 768 m
 64 256 l
 64 256 l
 </path>
-<path matrix="1 0 0 1 256 0" stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 5168.04 3199.96" stroke="black" pen="ultrafat">
 64 768 m
 64 256 l
 64 256 l
 </path>
-<path matrix="1 0 0 1 384 0" stroke="black" pen="ultrafat">
-64 768 m
-64 256 l
-64 256 l
-</path>
-<path matrix="1 0 0 1 512 0" stroke="black" pen="ultrafat">
-64 768 m
-64 256 l
-64 256 l
-</path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 64 512 m
 576 512 l
 </path>
-<path stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 0 -192" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 0 -320" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 0 -448" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 128 0" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 128 -128" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 128 -192" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 128 -256" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 128 -384" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 256 -128" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 256 -192" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 256 -384" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 256 -448" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 256 -256" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 384 -320" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 384 -384" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 384 -448" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 384 0" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path matrix="1 0 0 1 384 -128" stroke="black" fill="blue" pen="ultrafat">
-64 768 m
-160 736 l
-64 704 l
-</path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 64 768 m
 64 784 l
 16 784 l
 </path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 192 768 m
 192 800 l
 80 800 l
 </path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 320 768 m
 320 816 l
 160 816 l
 </path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 448 768 m
 448 832 l
 240 832 l
 </path>
-<path stroke="black" pen="ultrafat">
-576 768 m
-576 848 l
-</path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 64 256 m
 64 240 l
 16 240 l
 </path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 192 256 m
 192 224 l
 80 224 l
 </path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 320 256 m
 320 208 l
 </path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 320 208 m
 176 208 l
 </path>
-<path stroke="black" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
 448 256 m
 448 192 l
 256 192 l
 </path>
-<path stroke="red" pen="ultrafat">
-576 256 m
-576 176 l
-</path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 768 m
 80 768 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 704 m
 80 704 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 640 m
 80 640 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 576 m
 80 576 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 512 m
 80 512 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 448 m
 80 448 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 384 m
 80 384 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 320 m
 80 320 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 48 256 m
 80 256 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 176 768 m
 208 768 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 176 704 m
 208 704 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 176 640 m
 208 640 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 176 576 m
 208 576 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 176 512 m
 208 512 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 176 448 m
 208 448 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 176 320 m
 208 320 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 176 256 m
 208 256 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 768 m
 336 768 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 704 m
 336 704 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 640 m
 336 640 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 576 m
 336 576 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 512 m
 336 512 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 448 m
 336 448 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 384 m
 336 384 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 320 m
 336 320 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 304 256 m
 336 256 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 256 m
 464 256 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 320 m
 464 320 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 384 m
 464 384 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 448 m
 464 448 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 512 m
 464 512 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 576 m
 464 576 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 640 m
 464 640 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 704 m
 464 704 l
 </path>
-<path stroke="red" pen="ultrafat">
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="red" pen="ultrafat">
 432 768 m
 464 768 l
 </path>
-<use name="mark/disk(sx)" pos="32 512" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="16 512" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="0 512" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 4784.04 3199.96" name="mark/disk(sx)" pos="32 512" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 4784.04 3199.96" name="mark/disk(sx)" pos="16 512" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 4784.04 3199.96" name="mark/disk(sx)" pos="0 512" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 4784.04 3199.96" stroke="black" pen="ultrafat">
+192 768 m
+192 256 l
+192 256 l
+</path>
+<path matrix="-1 0 0 -1 5296.04 4543.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5296.04 4479.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 5168.04 2943.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5296.04 4287.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5296.04 4223.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5168.04 4223.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 5040.04 2879.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 5040.04 2943.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5168.04 4543.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 5040.04 3135.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 5040.04 3199.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4912.04 3007.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4912.04 2879.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4912.04 2815.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5040.04 4223.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 4912.04 4223.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4784.04 2815.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4784.04 2879.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4784.04 2943.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4784.04 3007.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4784.04 3135.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 4784.04 3135.96" stroke="red" pen="ultrafat">
+176 448 m
+208 448 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1728 2704 m
+1728 2032 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1232 2656 m
+1168 2656 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1312 2672 m
+1168 2672 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1392 2688 m
+1168 2688 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1728 2704 m
+1168 2704 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1232 2080 m
+1168 2080 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1328 2064 m
+1168 2064 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1408 2048 m
+1168 2048 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" pen="ultrafat">
+1728 2032 m
+1168 2032 l
+</path>
+<path matrix="1 0 0 1 5296.04 3199.96" stroke="black" pen="ultrafat">
+64 768 m
+64 256 l
+64 256 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 256 m
+464 256 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 320 m
+464 320 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 384 m
+464 384 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 448 m
+464 448 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 512 m
+464 512 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 576 m
+464 576 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 640 m
+464 640 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 704 m
+464 704 l
+</path>
+<path matrix="1 0 0 1 4912.04 3199.96" stroke="red" pen="ultrafat">
+432 768 m
+464 768 l
+</path>
+<path matrix="-1 0 0 -1 5424.04 4607.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5424.04 4543.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5424.04 4479.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5424.04 4351.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5424.04 4287.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="-1 0 0 -1 5424.04 4223.96" stroke="black" fill="gray" pen="ultrafat">
+64 768 m
+160 736 l
+64 704 l
+</path>
+<path matrix="1 0 0 1 3632 1344" stroke="black" fill="black" pen="ultrafat">
+1168 2720 m
+1168 2736 l
+1872 2736 l
+1872 2000 l
+1168 2000 l
+1168 2016 l
+1856 2016 l
+1856 2720 l
+1168 2720 l
+</path>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2640" stroke="black" type="label" width="9.298" height="4.294" depth="1.49" valign="baseline">$v_1$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2640" stroke="black" type="label" width="9.298" height="4.294" depth="1.49" valign="baseline">$v_2$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2640" stroke="black" type="label" width="9.298" height="4.294" depth="1.49" valign="baseline">$v_3$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2640" stroke="black" type="label" width="9.298" height="4.294" depth="1.49" valign="baseline">$v_4$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2640" stroke="black" type="label" width="9.298" height="4.294" depth="1.49" valign="baseline">$v_5$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2576" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{1,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2576" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{2,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2576" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{3,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2576" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{4,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2576" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{5,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2512" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{1,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2512" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{2,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2512" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{3,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2512" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{4,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2512" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{5,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2448" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{1,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2448" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{2,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2448" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{3,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2448" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{4,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2448" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{5,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2384" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{1,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2384" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{2,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2384" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{3,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2384" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{4,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2384" stroke="black" type="label" width="13.779" height="6.919" depth="2.85" valign="baseline">$l_{5,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2320" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{1,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2320" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{2,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2320" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{3,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2320" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{4,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2320" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{5,4}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2256" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{1,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2256" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{2,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2256" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{3,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2256" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{4,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2256" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{5,3}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2192" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{1,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2192" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{2,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2192" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{3,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2192" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{4,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2192" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{5,2}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1232 2128" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{1,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1360 2128" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{2,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1488 2128" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{3,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1616 2128" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{4,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1744 2128" stroke="black" type="label" width="13.779" height="8.286" depth="2.85" valign="baseline">$\bar{l}_{5,1}$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1184 2576" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_1$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1184 2512" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_2$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1184 2448" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_3$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1184 2384" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_4$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1184 2320" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_4$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1184 2256" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_3$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1184 2192" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_2$</text>
+<text matrix="1 0 0 1 3632 1344" transformations="translations" pos="1184 2128" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_1$</text>
 </page>
 </ipe>
