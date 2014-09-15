@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipestyle SYSTEM "ipe.dtd">
+<ipestyle name="palantino">
+	<preamble>
+		\usepackage{mathpazo}
+		\linespread{1.05}
+	</preamble>
+</ipestyle>

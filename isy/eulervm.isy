@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipestyle SYSTEM "ipe.dtd">
+<ipestyle name="euler">
+	<preamble>
+		\linespread{1.05}
+		\usepackage[OT1]{eulervm}
+	</preamble>
+</ipestyle>
