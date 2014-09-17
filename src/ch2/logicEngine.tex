@@ -1,9 +1,14 @@
-\chapter{Decidability of Unoriented Trees Realizations Using Logic Engines}
-\section{Not All Equal 3 SAT Problem}
-\begin{prob}[Not All Equal 3 SAT Problem]\label{prob:Satisfiability-2}%Problem/Question
-Give a set of clauses $C$, each containing three boolean variables, can each clause contain at
-least one true variable and one false variable?
-\end{prob}
+% CHAPTER 2 OUTLINE
+% 2.1 lOGIC eNGINE
+%	Intro, give reference to logic engine
+%	Explanation of how it works
+%	Theorem 2.1.1.
+% 2.2 Theorem and Proof to hinged polygons/Squares
+% 2.3 Unit Disk Contact Graph
+
+
+
+\chapter{Decidability Problems for Hinged Polygons and Unit Disks}
 \subsection{The Logic Engine}
 \begin{figure}[!htbp]
 \begin{center}
@@ -31,6 +36,15 @@ each armature.  Every link is flagged except in the case of the following two co
 \begin{enumerate}
  \item If the literal $x_j$ is found in clause $C_k$, then $l_{j,k}$ is unflagged.
  \item If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
+\end{enumerate}
+A \textit{collision} of flags occur if either of the following occurs:
+\begin{enumerate}
+\item flags in the same row on adjacent armatures point toward each other.
+%display a graphic
+\item a flag from the outermost armature $A_n$ points towards the outer rigid frame.
+%display a graphic
+\item a flag from the innermost armature $A_1$ points inwards of $A_1$.
+%display a graphic
 \end{enumerate}
 \begin{figure}[!htbp]
 \begin{center}
@@ -73,14 +87,49 @@ Suppose there is an instance of an NAE3SAT problem, $P$, with $n$ variables and 
 $t$ be a truth assignment to the literals.  If $t \lr{x_1} = 1$, rotate the corresponding armature 
 such that $l_{j,k}$ above the shaft and $\bar{l}_{j,k}$ below the shaft.  If $t \lr{x_1} = 0$, 
 rotate the corresponding armature such that $l_{j,k}$ is below the shaft and $\bar{l}_{j,k}$ is 
-above the shaft.  For each clause $C_k$ there exists a ``true'' and ``false'' literal.  For clause 
+above the shaft.  For each clause $C_k$ there exists a ``true'' and ``false'' literal.  For each 
+clause 
 there is a correspond pair of rows accross the armatures.  The configuration of those armatures are 
 placed such that there is an unflagged link for at least one ``true'' and one ``false'' literal in 
 each row.  Configure the flags to point towards the unflagged links. We now have a collision-free 
 configuration.
 
-Suppose we have a collision free configuration of a logic engine.  For each row, there exists at 
-least one unflagged link in each row.  For flags above the shaft, let each flagged $l_{j,k}$ 
+Suppose we have a collision free configuration of a logic engine. We claim that for each row, there 
+exists at least one unflagged armature.  To show this, suppose there for any row, there were no 
+unflagged armature.  We have two cases:
+\begin{enumerate}
+ \item Let the flag on $A_1$ point towards $A_n$. Then the flags of $A_2$ through $A_{n-1}$ must 
+point towards $A_n$ to be collision free between $A_1$ and $A_{n-1}$.  The flag on $A_n$ cannot 
+point toward $A_{n-1}$ otherwise we contradict the hypothesis of the collision free configuration.  
+By definition, $A_n$ cannot point towards the outer rigid frame, otherwise results into a 
+collision.  
+
+We've shown that there is no collision free row with all armatures flagged in a row.  
+To demonstrate that a collision free configuration exists with one flagless armature, suppose $A_i$ 
+has a flagless armature.  For all $j$ where $ 1 \leq j < i$, let the flags on $A_j$ point towards 
+$A_i$. For all $j$ where $ i < j \leq n$, let the flags on $A_j$ point towards 
+$A_i$.  This configuration prevents collision between $A_k$ and $A_{k+1}$ for $k = 1,\dots,n-1$ and 
+without loss of generality there is no collision between $A_{i-1}$ and $A_{i+1}$.
+\item Let the flag on $A_n$ point towards $A_1$. Then the flags of $A_2$ through $A_{n-1}$ must 
+point towards $A_1$ to be collision free between $A_2$ and $A_{n-1}$.  The flag on $A_1$ cannot 
+point toward outwards to the rigid frame otherwise we contradict the hypothesis of the collision 
+free configuration.  By definition, $A_1$ cannot point inwards, otherwise results into a 
+collision.  
+
+We've shown that there is no collision free row with all armatures flagged in a row.  
+To demonstrate that a collision free configuration exists with one flagless armature, suppose $A_i$ 
+has a flagless armature.  For all $j$ where $ 1 \leq j < i$, let the flags on $A_j$ point towards 
+$A_i$. For all $j$ where $ i < j \leq n$, let the flags on $A_j$ point towards 
+$A_i$.  This configuration prevents collision between $A_k$ and $A_{k+1}$ for $k = 1,\dots,n-1$ and 
+without loss of generality there is no collision between $A_{i-1}$ and $A_{i+1}$.
+\end{enumerate}
+Since there exists at least one unflagged armature in each row, there 
+For flags above the shaft, let each flagged $l_{j,k}$ 
 indicate that $x_j$ does not exist in the clause $C_k$.  For flags below the shaft, let each 
-flagged link indicate that $\bar{x}_j$ does not exist in the clause.  
+flagged link indicate that $\bar{x}_j$ does not exist in the clause.  Let 
+$t$ be a truth assignment to the literals.  If $t \lr{x_1} = 1$, rotate the corresponding armature 
+such that $l_{j,k}$ above the shaft and $\bar{l}_{j,k}$ below the shaft.  If $t \lr{x_1} = 0$, 
+rotate the corresponding armature such that $l_{j,k}$ is below the shaft and $\bar{l}_{j,k}$ is 
+above the shaft.  For each clause $C_k$ there exists a ``true'' and ``false'' literal which yields 
+a instance of an NAE3SAT is a yes.
 \end{pf}
