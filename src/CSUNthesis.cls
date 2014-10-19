@@ -276,7 +276,7 @@ jeffw@csun.edu}
 
 \newcommand{\@degree}{Master~of~Science}
 
-\newcommand{\@department}{Computer~Science}
+\newcommand{\@department}{Applied Mathematics}
 
 \newcommand{\degree}[2]{
   \renewcommand{\@degree}{#1}
