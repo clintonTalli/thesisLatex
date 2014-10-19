@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140915202354" modified="D:20140918192652"/>
+<info created="D:20140915202354" modified="D:20140915202354"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -22,7 +22,7 @@ h
 <symbol name="mark/circle(sx)" transformations="translations">
 <path fill="sym-stroke">
 0.6 0 0 0.6 0 0 e
-0.2 0 0 0.2 0 0 e
+0.4 0 0 0.4 0 0 e
 </path>
 </symbol>
 <symbol name="mark/disk(sx)" transformations="translations">
@@ -37,7 +37,7 @@ h
 </path>
 <path fill="sym-stroke" fillrule="eofill">
 0.6 0 0 0.6 0 0 e
-0.2 0 0 0.2 0 0 e
+0.4 0 0 0.4 0 0 e
 </path>
 </group>
 </symbol>
@@ -258,28 +258,28 @@ h
 h
 </path>
 <path fill="black">
-2 0 0 2 4000 3712 e
+16 0 0 16 4000 3712 e
 </path>
 <path fill="black">
-2 0 0 2 4000 3584 e
+16 0 0 16 4000 3584 e
 </path>
 <path fill="black">
-2 0 0 2 4000 3456 e
+16 0 0 16 4000 3456 e
 </path>
 <path fill="black">
-2 0 0 2 4000 3328 e
+16 0 0 16 4000 3328 e
 </path>
 <path fill="black">
-2 0 0 2 4000 3200 e
+16 0 0 16 4000 3200 e
 </path>
 <path fill="black">
-2 0 0 2 4000 3072 e
+16 0 0 16 4000 3072 e
 </path>
 <path fill="black">
-2 0 0 2 4000 2944 e
+16 0 0 16 4000 2944 e
 </path>
 <path fill="black">
-2 0 0 2 4000 2816 e
+16 0 0 16 4000 2816 e
 </path>
 <path matrix="1 0 0 1 0 -384" stroke="black" fill="seagreen" pen="fat">
 3968 3840 m
@@ -317,19 +317,19 @@ h
 h
 </path>
 <path fill="black">
-2 0 0 2 4000 2944 e
+16 0 0 16 4000 2944 e
 </path>
 <path fill="black">
-2 0 0 2 4000 3072 e
+16 0 0 16 4000 3072 e
 </path>
 <path stroke="black" fill="black" pen="fat">
-2 0 0 2 4000 3200 e
+16 0 0 16 4000 3200 e
 </path>
 <path fill="black">
-2 0 0 2 4000 3328 e
+16 0 0 16 4000 3328 e
 </path>
 <path fill="black">
-2 0 0 2 4000 3456 e
+16 0 0 16 4000 3456 e
 </path>
 <path matrix="1 0 0 1 0 -1024" stroke="black" fill="seagreen" pen="fat">
 3968 3840 m
@@ -339,7 +339,7 @@ h
 h
 </path>
 <path fill="black">
-2 0 0 2 4000 2816 e
+16 0 0 16 4000 2816 e
 </path>
 <path stroke="black" fill="seagreen" pen="fat">
 4032 3296 m
@@ -377,22 +377,22 @@ h
 h
 </path>
 <path fill="black">
-2 0 0 2 4160 3264 e
+16 0 0 16 4160 3264 e
 </path>
 <path matrix="1 0 0 1 128 0" fill="black">
-2 0 0 2 4160 3264 e
+16 0 0 16 4160 3264 e
 </path>
 <path matrix="1 0 0 1 256 0" fill="black">
-2 0 0 2 4160 3264 e
+16 0 0 16 4160 3264 e
 </path>
 <path matrix="1 0 0 1 384 0" fill="black">
-2 0 0 2 4160 3264 e
+16 0 0 16 4160 3264 e
 </path>
 <path matrix="1 0 0 1 512 0" fill="black">
-2 0 0 2 4160 3264 e
+16 0 0 16 4160 3264 e
 </path>
 <path fill="black">
-2 0 0 2 4032 3264 e
+16 0 0 16 4032 3264 e
 </path>
 <path matrix="1 0 0 1 704 0" stroke="black" fill="seagreen" pen="fat">
 3968 3840 m
@@ -416,28 +416,28 @@ h
 h
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3712 e
+16 0 0 16 4000 3712 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3584 e
+16 0 0 16 4000 3584 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3456 e
+16 0 0 16 4000 3456 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3328 e
+16 0 0 16 4000 3328 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3200 e
+16 0 0 16 4000 3200 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3072 e
+16 0 0 16 4000 3072 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 2944 e
+16 0 0 16 4000 2944 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 2816 e
+16 0 0 16 4000 2816 e
 </path>
 <path matrix="1 0 0 1 704 -384" stroke="black" fill="seagreen" pen="fat">
 3968 3840 m
@@ -475,19 +475,19 @@ h
 h
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 2944 e
+16 0 0 16 4000 2944 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3072 e
+16 0 0 16 4000 3072 e
 </path>
 <path matrix="1 0 0 1 704 0" stroke="black" fill="black" pen="fat">
-2 0 0 2 4000 3200 e
+16 0 0 16 4000 3200 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3328 e
+16 0 0 16 4000 3328 e
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 3456 e
+16 0 0 16 4000 3456 e
 </path>
 <path matrix="1 0 0 1 704 -1024" stroke="black" fill="seagreen" pen="fat">
 3968 3840 m
@@ -497,10 +497,10 @@ h
 h
 </path>
 <path matrix="1 0 0 1 704 0" fill="black">
-2 0 0 2 4000 2816 e
+16 0 0 16 4000 2816 e
 </path>
 <path fill="black">
-2 0 0 2 4672 3264 e
+16 0 0 16 4672 3264 e
 </path>
 <path stroke="black" fill="seagreen" pen="fat">
 4080 3296 m
@@ -545,22 +545,22 @@ h
 h
 </path>
 <path fill="black">
-2 0 0 2 4096 3696 e
+16 0 0 16 4096 3696 e
 </path>
 <path fill="black">
-2 0 0 2 4096 3616 e
+16 0 0 16 4096 3616 e
 </path>
 <path fill="black">
-2 0 0 2 4096 3536 e
+16 0 0 16 4096 3536 e
 </path>
 <path fill="black">
-2 0 0 2 4096 3456 e
+16 0 0 16 4096 3456 e
 </path>
 <path fill="black">
-2 0 0 2 4096 3376 e
+16 0 0 16 4096 3376 e
 </path>
 <path fill="black">
-2 0 0 2 4096 3296 e
+16 0 0 16 4096 3296 e
 </path>
 <path stroke="black" fill="seagreen" pen="fat">
 4112 3360 m

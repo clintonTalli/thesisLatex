@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140426180929" modified="D:20140426180929"/>
+<info created="D:20140426180929" modified="D:20141016192212"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -252,11 +252,6 @@ h
 <text matrix="1 0 0 1 63.8616 -16" transformations="translations" pos="164.588 458.905" stroke="black" type="label" width="4.428" height="4.289" depth="0" valign="baseline">c</text>
 <text matrix="1 0 0 1 63.8616 -16" transformations="translations" pos="128.63 535.373" stroke="black" type="label" width="5.535" height="6.918" depth="0" valign="baseline">d</text>
 <text matrix="1 0 0 1 62.9513 -20.0965" transformations="translations" pos="92.6721 458.905" stroke="black" type="label" width="4.428" height="4.289" depth="0" valign="baseline">e</text>
-<path matrix="1 0 0 1 0 -16" stroke="black" arrow="normal/normal">
-256 496 m
-35.7771 0 0 -35.7771 288 480 320 496 a
-</path>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="288 496" stroke="black" type="label" width="4.747" height="11.955" depth="0" valign="baseline" size="LARGE">f</text>
 <path stroke="black">
 416 480 m
 393.889 510.434 l
@@ -269,18 +264,11 @@ h
 <use name="mark/disk(sx)" pos="393.889 510.434" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="416 480" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="393.889 449.566" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -2.731 -4.0965" name="mark/disk(sx)" pos="358.111 461.191" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 -2.731 -4.0965" transformations="translations" pos="353.027 455.719" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">1</text>
+<use matrix="1 0 0 1 -0 -0" name="mark/disk(sx)" pos="358.111 461.191" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 -2.76106 -4.0965" transformations="translations" pos="353.027 455.719" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">1</text>
 <text transformations="translations" pos="346.655 500.325" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">2</text>
 <text transformations="translations" pos="395.813 519.442" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">3</text>
 <text transformations="translations" pos="422.667 478.932" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">4</text>
 <text transformations="translations" pos="395.358 442.064" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">5</text>
-<path stroke="black">
-128 544 m
-128 416 l
-448 416 l
-448 544 l
-h
-</path>
 </page>
 </ipe>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140523173310" modified="D:20140523181346"/>
+<info created="D:20140523173310" modified="D:20141016191929"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -232,75 +232,75 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<use layer="alpha" matrix="0.41652 0 0 0.973725 223.543 14.8596" name="mark/disk(sx)" pos="256 752" size="normal" stroke="black"/>
-<use matrix="0.41652 0 0 0.973725 223.543 14.8596" name="mark/disk(sx)" pos="256 704" size="normal" stroke="black"/>
-<use matrix="0.41652 0 0 0.973725 223.543 14.8596" name="mark/disk(sx)" pos="336 640" size="normal" stroke="black"/>
-<use matrix="0.41652 0 0 0.973725 223.543 30.4392" name="mark/disk(sx)" pos="160 624" size="normal" stroke="black"/>
-<use matrix="0.41652 0 0 0.973725 223.543 14.8596" name="mark/disk(sx)" pos="160 576" size="normal" stroke="black"/>
-<use matrix="0.41652 0 0 0.973725 223.543 14.8596" name="mark/disk(sx)" pos="112 576" size="normal" stroke="black"/>
-<use matrix="0.41652 0 0 0.973725 223.543 14.8596" name="mark/disk(sx)" pos="224 576" size="normal" stroke="black"/>
-<use matrix="0.41652 0 0 0.973725 223.543 14.8596" name="mark/disk(sx)" pos="352 576" size="normal" stroke="black"/>
-<path matrix="0.41652 0 0 0.973725 223.543 14.8596" stroke="black" pen="fat">
+<use layer="alpha" matrix="0.315199 0 0 0.73686 234.891 180.815" name="mark/disk(sx)" pos="256 752" size="normal" stroke="black"/>
+<use matrix="0.315199 0 0 0.73686 234.891 180.815" name="mark/disk(sx)" pos="256 704" size="normal" stroke="black"/>
+<use matrix="0.315199 0 0 0.73686 234.891 180.815" name="mark/disk(sx)" pos="336 640" size="normal" stroke="black"/>
+<use matrix="0.315199 0 0 0.73686 234.891 192.605" name="mark/disk(sx)" pos="160 624" size="normal" stroke="black"/>
+<use matrix="0.315199 0 0 0.73686 234.891 180.815" name="mark/disk(sx)" pos="160 576" size="normal" stroke="black"/>
+<use matrix="0.315199 0 0 0.73686 234.891 180.815" name="mark/disk(sx)" pos="112 576" size="normal" stroke="black"/>
+<use matrix="0.315199 0 0 0.73686 234.891 180.815" name="mark/disk(sx)" pos="224 576" size="normal" stroke="black"/>
+<use matrix="0.315199 0 0 0.73686 234.891 180.815" name="mark/disk(sx)" pos="352 576" size="normal" stroke="black"/>
+<path matrix="0.315199 0 0 0.73686 234.891 180.815" stroke="black" pen="fat">
 256 752 m
 256 704 l
 336 640 l
 352 576 l
 </path>
-<path matrix="0.41652 0 0 0.973725 223.543 14.8596" stroke="black" pen="fat">
+<path matrix="0.315199 0 0 0.73686 234.891 180.815" stroke="black" pen="fat">
 256 704 m
 160 640 l
 224 576 l
 </path>
-<path matrix="0.41652 0 0 0.973725 223.543 14.8596" stroke="black" pen="fat">
+<path matrix="0.315199 0 0 0.73686 234.891 180.815" stroke="black" pen="fat">
 160 640 m
 160 576 l
 160 640 l
 112 576 l
 112 576 l
 </path>
-<use matrix="-0.41652 0 0 0.973725 576.752 14.8596" name="mark/disk(sx)" pos="256 752" size="normal" stroke="black"/>
-<use matrix="-0.41652 0 0 0.973725 576.752 14.8596" name="mark/disk(sx)" pos="256 704" size="normal" stroke="black"/>
-<use matrix="-0.41652 0 0 0.973725 576.752 14.8596" name="mark/disk(sx)" pos="336 640" size="normal" stroke="black"/>
-<use matrix="-0.41652 0 0 0.973725 576.752 30.4392" name="mark/disk(sx)" pos="160 624" size="normal" stroke="black"/>
-<use matrix="-0.41652 0 0 0.973725 576.752 14.8596" name="mark/disk(sx)" pos="160 576" size="normal" stroke="black"/>
-<use matrix="-0.41652 0 0 0.973725 576.752 14.8596" name="mark/disk(sx)" pos="112 576" size="normal" stroke="black"/>
-<use matrix="-0.41652 0 0 0.973725 576.752 14.8596" name="mark/disk(sx)" pos="224 576" size="normal" stroke="black"/>
-<use matrix="-0.41652 0 0 0.973725 576.752 14.8596" name="mark/disk(sx)" pos="352 576" size="normal" stroke="black"/>
-<path matrix="-0.41652 0 0 0.973725 576.752 14.8596" stroke="black" pen="fat">
+<use matrix="-0.315199 0 0 0.73686 502.18 180.815" name="mark/disk(sx)" pos="256 752" size="normal" stroke="black"/>
+<use matrix="-0.315199 0 0 0.73686 502.18 180.815" name="mark/disk(sx)" pos="256 704" size="normal" stroke="black"/>
+<use matrix="-0.315199 0 0 0.73686 502.18 180.815" name="mark/disk(sx)" pos="336 640" size="normal" stroke="black"/>
+<use matrix="-0.315199 0 0 0.73686 502.18 192.605" name="mark/disk(sx)" pos="160 624" size="normal" stroke="black"/>
+<use matrix="-0.315199 0 0 0.73686 502.18 180.815" name="mark/disk(sx)" pos="160 576" size="normal" stroke="black"/>
+<use matrix="-0.315199 0 0 0.73686 502.18 180.815" name="mark/disk(sx)" pos="112 576" size="normal" stroke="black"/>
+<use matrix="-0.315199 0 0 0.73686 502.18 180.815" name="mark/disk(sx)" pos="224 576" size="normal" stroke="black"/>
+<use matrix="-0.315199 0 0 0.73686 502.18 180.815" name="mark/disk(sx)" pos="352 576" size="normal" stroke="black"/>
+<path matrix="-0.315199 0 0 0.73686 502.18 180.815" stroke="black" pen="fat">
 256 752 m
 256 704 l
 336 640 l
 352 576 l
 </path>
-<path matrix="-0.41652 0 0 0.973725 576.752 14.8596" stroke="black" pen="fat">
+<path matrix="-0.315199 0 0 0.73686 502.18 180.815" stroke="black" pen="fat">
 256 704 m
 160 640 l
 224 576 l
 </path>
-<path matrix="-0.41652 0 0 0.973725 576.752 14.8596" stroke="black" pen="fat">
+<path matrix="-0.315199 0 0 0.73686 502.18 180.815" stroke="black" pen="fat">
 160 640 m
 160 576 l
 160 640 l
 112 576 l
 112 576 l
 </path>
-<text matrix="0.624779 0 0 0.973725 200.218 14.8596" transformations="translations" pos="224.373 751.066" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$1$</text>
-<text matrix="0.624779 0 0 0.973725 200.218 14.8596" transformations="translations" pos="212.722 707.203" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$2$</text>
-<text matrix="0.624779 0 0 0.973725 191.557 18.6667" transformations="translations" pos="152.41 639.353" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$3$</text>
-<text matrix="0.624779 0 0 0.973725 194 19.0128" transformations="translations" pos="275.089 639.353" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$4$</text>
-<text matrix="0.624779 0 0 0.973725 202.645 9.71785" transformations="translations" pos="109.233 570.818" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$5$</text>
-<text matrix="0.624779 0 0 0.973725 201.106 11.7199" transformations="translations" pos="144.186 568.762" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$6$</text>
-<text matrix="0.624779 0 0 0.973725 195.776 11.7199" transformations="translations" pos="191.476 568.762" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$7$</text>
-<text matrix="0.624779 0 0 0.973725 201.55 11.0525" transformations="translations" pos="277.83 569.447" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$8$</text>
-<text matrix="0.624779 0 0 0.973725 200.218 14.8596" transformations="translations" pos="445.742 753.122" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$1$</text>
-<text matrix="0.624779 0 0 0.973725 200.218 14.8596" transformations="translations" pos="445.057 703.776" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$2$</text>
-<text matrix="0.624779 0 0 0.973725 188.892 20.7433" transformations="translations" pos="390.228 639.353" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$4$</text>
-<text matrix="0.624779 0 0 0.973725 190.003 17.2823" transformations="translations" pos="514.278 640.724" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$3$</text>
-<text matrix="0.624779 0 0 0.973725 201.55 15.724" transformations="translations" pos="367.612 564.649" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$8$</text>
-<text matrix="0.624779 0 0 0.973725 201.55 12.3872" transformations="translations" pos="452.596 568.076" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$6$</text>
-<text matrix="0.624779 0 0 0.973725 199.33 20.3954" transformations="translations" pos="497.829 559.852" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$5$</text>
-<text matrix="0.624779 0 0 0.973725 199.33 11.7199" transformations="translations" pos="530.041 568.762" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$7$</text>
-<text matrix="1 0 0 1 7.69231 -53.2544" transformations="translations" pos="4.40466 746.288" stroke="black" type="minipage" width="250.296" height="37.825" depth="32.91" valign="top">$$\begin{array}{l}
+<text matrix="0.472798 0 0 0.73686 217.24 180.815" transformations="translations" pos="224.373 751.066" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$1$</text>
+<text matrix="0.472798 0 0 0.73686 217.24 180.815" transformations="translations" pos="212.722 707.203" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$2$</text>
+<text matrix="0.472798 0 0 0.73686 210.686 183.696" transformations="translations" pos="152.41 639.353" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$3$</text>
+<text matrix="0.472798 0 0 0.73686 212.534 183.958" transformations="translations" pos="275.089 639.353" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$4$</text>
+<text matrix="0.472798 0 0 0.73686 219.077 176.924" transformations="translations" pos="109.233 570.818" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$5$</text>
+<text matrix="0.472798 0 0 0.73686 217.912 178.439" transformations="translations" pos="144.186 568.762" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$6$</text>
+<text matrix="0.472798 0 0 0.73686 213.878 178.439" transformations="translations" pos="191.476 568.762" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$7$</text>
+<text matrix="0.472798 0 0 0.73686 218.248 177.934" transformations="translations" pos="277.83 569.447" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$8$</text>
+<text matrix="0.472798 0 0 0.73686 217.24 180.815" transformations="translations" pos="445.742 753.122" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$1$</text>
+<text matrix="0.472798 0 0 0.73686 217.24 180.815" transformations="translations" pos="445.057 703.776" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$2$</text>
+<text matrix="0.472798 0 0 0.73686 208.669 185.268" transformations="translations" pos="390.228 639.353" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$4$</text>
+<text matrix="0.472798 0 0 0.73686 209.51 182.649" transformations="translations" pos="514.278 640.724" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$3$</text>
+<text matrix="0.472798 0 0 0.73686 218.248 181.469" transformations="translations" pos="367.612 564.649" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$8$</text>
+<text matrix="0.472798 0 0 0.73686 218.248 178.944" transformations="translations" pos="452.596 568.076" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$6$</text>
+<text matrix="0.472798 0 0 0.73686 216.568 185.004" transformations="translations" pos="497.829 559.852" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$5$</text>
+<text matrix="0.472798 0 0 0.73686 216.568 178.439" transformations="translations" pos="530.041 568.762" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">$7$</text>
+<text matrix="1 0 0 1 23.6923 -13.1998" transformations="translations" pos="4.40466 746.288" stroke="black" type="minipage" width="250.296" height="37.825" depth="32.91" valign="top">$$\begin{array}{l}
 G=(V,E)\\
 V=\{1,2,3,4,5,6,7,8\}\\
 E=\left\lbrace 12,23,24,35,36,37,48, \right\rbrace\\
