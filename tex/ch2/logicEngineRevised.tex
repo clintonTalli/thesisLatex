@@ -52,8 +52,13 @@ and flags that are adjacent to the rigid frame.}\label{fig:logicEngineValidConfi
 \end{figure}
 %define what it means to be collision-free
 %explain why at least one armature is unflagged in every row.
+A row is said to be \textit{collistion-free} when 
 \begin{lem}It is necessary to have at least one unflagged armature for a row to be collision-free \end{lem}
+\begin{proof}
+Suppose there are no unflagged armatures in a row.  The flag on armature $v_1$ must point to the right.  The adjacent flags must point right as well, i.e. $v_2, ..., v_n$.  The flag on $v_n$ collides with the rigid frame.  A similar argument holds with the argument beginning with the flag on the armature $v_n$ pointing to the left.  Thus there is no collision-free configuration with all armatures flagged.
 
+Now suppose we unflag one armature, $v_i$.  By pointing all flags left of $v_i$ to the right and  point all flags right of $v_i$, each adjacent pair of flags have a valid configuration that is collision-free.
+\end{proof}
 
 \begin{figure}[!htbp]
 \begin{center}
