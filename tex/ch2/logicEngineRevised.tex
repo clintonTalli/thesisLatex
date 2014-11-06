@@ -102,16 +102,29 @@ $NAE3SAT$ is a yes instance, every row contains at least one unflagged armature.
 By lemma \ref{lem:logicEngine1}, every row  has a collision-free configuration
 
 Suppose we have an instance of a $NAE3SAT$ such that the corresponding logic engine has a 
-collision-free configuration.  We assign true or false values to the variables.  If the 
-corresponding armatures 
+collision-free configuration. A collision-free configuration implies that every row at least one unflagged armature.  The $k^{th}$ clause is represented by the $k^{th}$ rows above and below the shaft. If the literal $x_j$ is found in clause $C_k$, then $l_{j,k}$ is unflagged. If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.  All negated literals reside below the shaft and non-negated literals reside above the shaft.  All together we have that every clause has a true literal and a false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
 
-Given the corresponding logic engine has a flat, collision-free configuration for a $NAE3SAT$ 
-instance.  Then every row must have an unflagged armature.  Each clause has two corresponding rows, 
-one row for negated literals and one for non-negated literals.  Unflagged armatures implies the 
-existence of a literal in a clause. All together, this implies that every clause contains a true and 
-false literal.  Thus we have a ``yes'' $NAE3SAT$ instance.
+%1) A collision-free configuration implies that every row at least one unflagged armature.
+%  \item If the literal $x_j$ is found in clause $C_k$, then $l_{j,k}$ is unflagged.
+%  \item If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
+%  all negated literals reside below the shaft and non-negated literals reside above the shaft.
+%  The k_th clause is represented by the k_th rows above and below the shaft.  This indicated that there is a negated and non-negated literal in each clause.  And so we have a 'yes' instance
+
+%We assign true or false values to the variables.  If the 
+%corresponding armatures 
+%There is a truth assignment $t$ 
+
+
+% t: A -> {1,0} s.t. for any C_j contains a true literal and a false literal.
+
+
+% Given the corresponding logic engine has a flat, collision-free configuration for a $NAE3SAT$ 
+% instance.  Then every row must have an unflagged armature.  Each clause has two corresponding rows, 
+% one row for negated literals and one for non-negated literals.  Unflagged armatures implies the 
+% existence of a literal in a clause. All together, this implies that every clause contains a true and 
+% false literal.  Thus we have a ``yes'' $NAE3SAT$ instance.
 \end{proof}
 
-\subsection{Construction of the NAE3SAT Problem over Hinged Polygons}
+\subsection{Construction of the NAE3SAT Problem over Hinged Polygons}         
 
 \subsection{Construction of the NAE3SAT Problem over Disks}
