@@ -1,19 +1,9 @@
-Given a boolean formula in NAE3SAT form, 
-
 \chapter{Decidability Problems for Hinged Polygons and Disks}
 \section{The Logic Engine}
+
 %#History of the logic engine.  Who invented it [comsadkis???]?
 \subsection{Construction of the Logic Engine and Encoding of an NAE3SAT Problem on a Logic 
 Engine}
-%#idea: SEPARATE THE CONSTRUCTION FROM THE REPRESENTATION.  AFTERWARDS TIE THE CONSTRUCTION TO 
-%#REPRESENTATION
-%#rigid frame - define as units of height in terms of n,m, and flag sizes (clauses, variables, and 
-%#the size of qeqquilateral triangle.  the rigid frame does not move  {(x,y) | rigid frame 
-%#dimensions}
-
-%# shaft {x | 0 <=x <= xMax}
-
-
 \begin{figure}[!h]
 \begin{center}
 %%%First Figure with armatures
@@ -22,25 +12,80 @@ Engine}
 shaft.}\label{fig:LogicEngineFrameFigure1.pdf}
 \end{center}
 \end{figure}
+%#idea: SEPARATE THE CONSTRUCTION FROM THE REPRESENTATION.  AFTERWARDS TIE THE CONSTRUCTION TO 
+%#REPRESENTATION
+%#rigid frame - define as units of height in terms of n,m, and flag sizes (clauses, variables, and 
+%#the size of qeqquilateral triangle.  the rigid frame does not move  {(x,y) | rigid frame 
+%#dimensions}
+
+% The logic engine \textit{rigid frame} is the boundar of the logic engine.  The rigid frame's center 
+% is embedded at the origin of the plane and has a height of $h$ and a width of $w$.  The 
+% \textit{shaft} is placed at mid-height of the rigid frame and extends the width of the frame.  The 
+% \textit{armatures} are of height $h$ and are placed adjacent to each other.  
+% 
+% Suppose we are given an instance of an NAE3SAT, $\phi$, with $n$ 
+% variables and $m$ clauses.  The logic engine is a planar model which can encode instances of the 
+% NAE3SAT problem.  The components of the logic engine consists of the outermost rigid frame, the 
+% shaft, the armatures, the chains, and the flags.  Figure \ref{fig:LogicEngineFrameFigure1.pdf} 
+% shows the a rigid frame, armatures, and shaft.  Each armature represents a boolean variable.  The 
+% rigid frame defines the border 
+% of the model and the armatures has two orientations with respect to the shaft.   
+\begin{figure}[!h]
+\begin{center}
+\includegraphics{graphics/LogicEngineFrameFigure1halfScaled.pdf}
+\caption{}\label{fig:LogicEngineFrameFigure2.pdf-1}
+\end{center}
+\end{figure}
+In figure \ref{fig:LogicEngineFrameFigure2.pdf-1}, the logic engine is flagged.  A \textit{flag} is 
+ in the shape of an equilateral triangle.
+%# shaft {x | 0 <=x <= xMax}
+
+
+
 
 
 The logic engine is a planar model which can encode instances of the NAE3SAT problem.  The 
 components of the logic engine are as follows: the rigid frame, the shaft, the armatures,
-the chains, and the flags.  Figure \ref{fig:LogicEngineFrameFigure1.pdf} shows the a rigid frame, 
-armatures, and shaft.  Each armature represents a boolean variable.  The rigid frame defines the border 
-of the model and the armatures has two orientations with respect to the shaft.  
+ and the flags.  
+%Figure \ref{fig:LogicEngineFrameFigure1.pdf} shows the a rigid frame, armatures, and shaft.  
+The \textit{rigid frame} is the rectangular boundary the logic engine fixed to the plane.  The 
+\textit{shaft} is a horizontal line segment that is placed at mid-height of the rigid frame.  The 
+\textit{armatures} are veritical line segments whose midpoints are one the shaft.  Each armature 
+has two orientations with respect to the shaft.  The \textit{flags} are equilateral triangles 
+attached to the armatures.  The placement of the flags is dependent on the instance of the NAE3SAT 
+boolean formula. Each flag as two orientations.
+
+For a given a boolean formula, $\Phi$, in $3-CNF$ with $n$ variables and $m$ clauses, the 
+corresponding logic engine is constructed as follows: all components will be specified with a 
+quantity and a size defined as polynomials in $m$ and $n$.
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Component & Quantity & Size & Set Definition\\\hline
+Rigid Frame&1&-&$\set{(x,y)\bbr^2}{x \in [-\frac{1}{2}(n + 1),-\frac{1}{2}(n+\frac{1}{2})] \cup 
+[\frac{1}{2}(n+\frac{1}{2}),\frac{1}{2}(n+1)] \text{ and }y \in [-m - 1,-m-\frac{1}{2}] \cup 
+[m+\frac{1}{2},m+1]}$\\\hline
+Shaft&1&$n+1$&$\set{(x,y) \in \bbr^2}{x \in 
+[-\frac{1}{2}(n+\frac{1}{2}),\frac{1}{2}(n+\frac{1}{2})]\text{ and } y=0}$\\\hline
+Armatures&n&&$\set{(x,y)\in\bbr^2}{x \in \left\lbrace \frac{-(n-1)}{2},\frac{-(n-1)}{2} + 1 ,\dots, 
+\frac{1}{2}, \dots,\frac{(n-1)}{2} \right\rbrace \text{ and } y \in [-m,m]}$\\\hline
+%Flags&-&&\\\hline
+\end{tabular}
+Each armature corresponds to a variable in $\Phi$. There are two literals for each variable, i.e. 
+the negated literal $\bar{x}_j$ and non-negated literal $x_j$ .   Flagging arragement 
+indicates the relationship of the boolean literal's existence within a clause. 
+\begin{enumerate}
+ \item If the literal $x_j$ is found in clause $C_k$, then $l_{j,k}$ is unflagged.
+ \item If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
+\end{enumerate}
+
 \begin{figure}[!h]
 \begin{center}
 \includegraphics{graphics/LogicEngineFrameFigure2Scaled.pdf}
 \caption{}\label{fig:LogicEngineFrameFigure2.pdf}
 \end{center}
 \end{figure}
-Flagging arragement indicates the relationship of the boolean literal's existence within a clause.  
-There are two literals for each variable.  
-\begin{enumerate}
- \item If the literal $x_j$ is found in clause $C_k$, then $l_{j,k}$ is unflagged.
- \item If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
-\end{enumerate}
+
 Negated literals reside below the shaft and non-negated literals reside above the shaft.
 % If the NAE3SAT problem contains $m$ clauses, each armature is partitioned into $2m$ pieces.  Since the armatures represent the boolean variables, the corresponding l  $m$ pieces above the shaft and $m$ pieces below the shaft.  Each row at height $h$ above and below the shaft represents the $h^\text{th}$ clause in the boolean formula.  The flags indicate that the literal of the boolean variable does not occur in the clause, i.e.
 
@@ -56,7 +101,8 @@ A \textit{collision} of flags occur if either of the following occurs:
 \caption{(a) Illustrates a adjacent flag collision at the same height, (b) and (c) illustrates a 
 rigid frame collision.}\label{fig:logicEngineCollisions.pdf}
 \end{center}
-
+The logic engine representation corresponding to $\Phi$ is to be configured such that no 
+horizontally adjacent flags collide and flags do not collide with the rigid frame. 
 \end{figure}
 \begin{figure}[!htbp]
 \begin{center}
@@ -92,15 +138,14 @@ armatures flagged.
 
 Suppose there is an unflagged armature in a row.  Turn all flags towards the nearest unflagged 
 armature.  If there are flags on $A_1$ and $A_n$, point toward the interior thus they do not 
-collide with the 
-rigid frame.  If there are flags on two consecutive armatures, they do not collide because the 
-nearest unflagged armature cannot be between them.  Therefore the row has a collision-free 
-configuration.
+collide with the rigid frame.  If there are flags on two consecutive armatures, they do not collide 
+because the nearest unflagged armature cannot be between them.  Therefore the row has a 
+collision-free configuration.
 \end{proof}
 
 \begin{figure}[!htbp]
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure5.pdf}
+\includegraphics{graphics/LogicEngineFrameFigure5Scaled.pdf}
 \caption{The logic engine from figure \ref{fig:LogicEngineFrameFigure2.pdf} whose armatures are rotated}\label{fig:LogicEngineFrameFigure5.pdf}
 \end{center}
 \end{figure}
@@ -108,8 +153,8 @@ configuration.
 %Add some introductory sentence of what happens next.  
 
 \begin{thm}\label{thm:Satisfiability-1}
- Given an instance of a $NAE3SAT$,  it is a ``yes'' instance if and only if the 
-corresponding logic engine has a collision-free configuration.
+ Given an instance of a $NAE3SAT$,  it is a ``yes'' instance if and only if the corresponding logic 
+engine has a collision-free configuration.
 \end{thm}
 \begin{proof}
 Suppose we have an instance of a $NAE3SAT$ that is a ``yes'' instance. This implies that there is a 
@@ -153,18 +198,19 @@ false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
 % false literal.  Thus we have a ``yes'' $NAE3SAT$ instance.
 \end{proof}
 
-\section{Construction of the NAE3SAT Problem over Hinged Polygons}         
+\section{Logic Engines Represented as Polygonal Linkages}         
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/HingedLogicEngineSmall.pdf}
 \caption{The logic engine realized as a polygonal linkage.}\label{fig:HingedLogicEngineSmall.pdf}
 \end{center}
 \end{figure}
-Suppose we have a NAE3SAT with $m$ clauses and $n$ variables in 3-CNF form.  The polygonal linkage logic engine that corresponds to this boolean formula has the following dimensions:
+Suppose we are given an instance of a NAE3SAT with $m$ clauses and $n$ variables in 3-CNF form.  
+The polygonal linkage logic engine that corresponds to this boolean formula has the following 
+dimensions:
 $$\begin{array}{|l|c|c|c|}
  \hline
  \text{Component} & \text{Height} & \text{Width} & \text{Quantity}\\\hline
- %Shaft & 1 & 3\cdot n + 2 & 1\\
  \text{Shaft Subcomponent} & 1 & 3 & n\\\hline
  \text{Armature Subcomponent} & 2 & 1 & 2\cdot m\\\hline
  \text{Flag} & 1 & 1.5 & -\\\hline
@@ -173,7 +219,7 @@ $$\begin{array}{|l|c|c|c|}
 \end{array}$$
 
 
-\section{Construction of the NAE3SAT Problem over Disks}
+\section{Logic Engines Represented as Unit Disk Contact Graphs}
 %show the snowflake graph with just lines, then show the snowflake graph with the disks specifying 
 %the size of the disks on the trunk and branches.  Then show the problem/proof using the Hausdorff 
 %Distance

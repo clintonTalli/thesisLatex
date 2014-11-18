@@ -12,20 +12,40 @@ graphs as contact graphs of disks is also NP-hard. However, previous reductions 
 configurations with high genus: the planar graphs in~\cite{CDD+10,EW90} and the coin graphs 
 in~\cite{BK98} have many cycles.
 
-In this paper, we consider the above four realizability problems when the union of the polygons 
+In this thesis, we consider the above four realizability problems when the union of the polygons 
 (resp., disks) in the desired configuration is simply connected (i.e., contractible). That is, the 
 contact graph of the disks is a tree, or the ``hinge graph'' of the polygonal linkage is a tree (the 
 vertices in the \emph{hinge graph} are the polygons in $\PP$, and edges represent a hinge between 
 two polygons). Our main result is that realizability remains NP-hard when restricted to simply 
 connected structures.
  
+ \subsection{Problem Statement} 
+%write up thm 1, 2 (unoriented versions of the problem)
+%write up thm 3, 4 (oriented versions of the problem)
+\begin{prob}[Unordered Realizibility Problem for the Tree]
+For a tree with positive weights for the verticies, it asks whether it is a contact graph of some 
+disk arrangement where the radii are equal to the vertex weights.
+\end{prob}
+\begin{prob}[Unordered Realizibility Problem for Polygonal Linkages]
+The \emph{realizability} problem for a polygonal linkage asks whether a given polygonal linkage has 
+a realization.
+\end{prob}
+\begin{prob}[Ordered Realizibility Problem for the Tree]
+For a tree with positive weights for the vertices, it asks whether its corresponding graph is the 
+ordered contact graph of some disk arrangement where the radii equal the vertex weights.
+\end{prob}
+\begin{prob}[Ordered Realizibility Problem for Polygonal Linkages]
+The \emph{realizability} problem for a ordered polygonal linkage asks whether a given polygonal 
+linkage has a realization with respect to order.
+\end{prob}
+
 \begin{thm}\label{thm:hinge}
-It is NP-complete to decide whether a polygonal linkage whose hinge graph is a tree can be realized 
+It is NP-Hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized 
 (both with and without orientation).
 \end{thm}
 
 \begin{thm}\label{thm:disk}
-It is NP-complete to decide whether a given tree (resp., plane tree) with positive vertex weights
+It is NP-Hard to decide whether a given tree (resp., plane tree) with positive vertex weights
 is the contact graph (resp., ordered contact graph) of a disk arrangements with specified radii.
 \end{thm}
 
@@ -36,26 +56,6 @@ Theorem~\ref{thm:hinge} for \emph{oriented} realizations with a reduction from {
 oriented realization of polygonal linkages by simulating polygons with arrangements of disks 
 (Section~\ref{sec:disk}).
 
-\subsection{Problem Statement} 
-%write up thm 1, 2 (unoriented versions of the problem)
-%write up thm 3, 4 (oriented versions of the problem)
-\begin{prob}[Unordered Realizibility Problem for Linkages]
-For a linkage, it asks 
-whether its corresponding graph is the contact graph (resp., ordered contact graph) of some disk 
-arrangement with specified radii.
-\end{prob}
-\begin{prob}[Unordered Realizibility Problem for Polygonal Linkages]
-The \emph{realizability} problem for a polygonal linkage asks whether a given polygonal linkage has 
-a realization.
-\end{prob}
-\begin{prob}[Ordered Realizibility Problem for Linkages]
-For a linkage, it asks 
-whether its corresponding graph is the ordered contact graph of some 
-disk arrangement with specified radii.
-\end{prob}
-\begin{prob}[Ordered Realizibility Problem for Polygonal Linkages]
-The \emph{realizability} problem for a ordered polygonal linkage asks whether a given polygonal 
-linkage has a realization with respect to order.
-\end{prob}
+
 \subsection{Decidability of Problem} test
 % \subsection{Hexagonal Locked Configuration}
