@@ -62,17 +62,35 @@ quantity and a size defined as polynomials in $m$ and $n$.
 \begin{tabular}{|c|c|c|c|}
 \hline
 Component & Quantity & Size & Set Definition\\\hline
-Rigid Frame&1&-&$\set{(x,y)\bbr^2}{x \in [-\frac{1}{2}(n + 1),-\frac{1}{2}(n+\frac{1}{2})] \cup 
-[\frac{1}{2}(n+\frac{1}{2}),\frac{1}{2}(n+1)] \text{ and }y \in [-m - 1,-m-\frac{1}{2}] \cup 
-[m+\frac{1}{2},m+1]}$\\\hline
-Shaft&1&$n+1$&$\set{(x,y) \in \bbr^2}{x \in 
-[-\frac{1}{2}(n+\frac{1}{2}),\frac{1}{2}(n+\frac{1}{2})]\text{ and } y=0}$\\\hline
-Armatures&n&&$\set{(x,y)\in\bbr^2}{x \in \left\lbrace \frac{-(n-1)}{2},\frac{-(n-1)}{2} + 1 ,\dots, 
-\frac{1}{2}, \dots,\frac{(n-1)}{2} \right\rbrace \text{ and } y \in [-m,m]}$\\\hline
+Rigid Frame&1&-&$\set{(x,y)\in\bbr^2}{\begin{array}{c}
+					x \in [-\frac{1}{2}(n + 
+1),-\frac{1}{2}(n+\frac{1}{2})] \cup 
+[\frac{1}{2}(n+\frac{1}{2}),\frac{1}{2}(n+1)] \\
+\text{ and }\\
+y \in [-m - 1,-m-\frac{1}{2}] \cup 
+[m+\frac{1}{2},m+1]
+                                      \end{array}
+                                    }$\\\hline
+Shaft&1&$n+1$&$\set{(x,y) \in \bbr^2}{
+\begin{array}{c}
+x \in 
+[-\frac{1}{2}(n+\frac{1}{2}),\frac{1}{2}(n+\frac{1}{2})]\\ 
+\text{ and }\\
+y=0
+\end{array}
+}$\\\hline
+Armatures&n&-&$\set{(x,y)\in\bbr^2}{
+\begin{array}{c}
+x \in \left\lbrace \frac{-(n-1)}{2},\frac{-(n-1)}{2} + 1 ,\dots, 
+\frac{1}{2}, \dots,\frac{(n-1)}{2} \right\rbrace\\ 
+\text{ and } \\
+y \in [-m,m]
+\end{array}
+ }$\\\hline
 %Flags&-&&\\\hline
 \end{tabular}
 Each armature corresponds to a variable in $\Phi$. There are two literals for each variable, i.e. 
-the negated literal $\bar{x}_j$ and non-negated literal $x_j$ .   Flagging arragement 
+the negated literal $\bar{x}_j$ and non-negated literal $x_j$.   Flagging arragement 
 indicates the relationship of the boolean literal's existence within a clause. 
 \begin{enumerate}
  \item If the literal $x_j$ is found in clause $C_k$, then $l_{j,k}$ is unflagged.
@@ -120,21 +138,24 @@ at least one unglagged armature. \end{lem}
 % Do this by induction  start with 1, then suppose i flags point right, show the i+1 armature points 
 % the to right.  State which types of collisions occur in the lemma.
 
+Suppose that the the flag on armature $A_1$ is flagged.  If the flag is oriented left, then there 
+is a flag-frame collision.  If the flag is oriented to the right and if $A_2$ is flagged, then 
+$A_2$ must also be oriented to the right; otherwise will result in a flag-flag collision.  Now 
+suppose the $i^\text{th}$ armature's flag is oriented to the right.  $A_{i+1}$ is also oriented to 
+the right; otherwise will result in a flag-flag collision. By induction all flags will orient to 
+the right up to $n$.  Thus the $n^\text{th}$ flag will will collide with the rigid frame.
+
 Suppose all armatures are flagged in a row.  The flag on armature $A_1$ must point to the 
 right otherwise we result in a rigid frame collision.  $A_2$ must point to the right otherwise 
 we result in a rigid frame collision.  Without loss of generality, $A_i$ and $A_{i+1}$ must 
 point to the right in order to prevent an adjacent flag collision.  This implies that $A_n$ 
 must also point to the right which results into a rigid frame collision.
-%The adjacent flags must point right as %well, i.e. $A_2, ..., A_n$.  The flag on $A_n$ 
-% collides with the rigid frame.  
+
 A same argument holds with the argument beginning with the flag 
 on the armature $A_n$ pointing to the left.  Thus there is no collision-free configuration with 
 all 
 armatures flagged.
 
-%Now suppose we unflag one armature, $A_i$.  By pointing all flags left of $A_i$ to the right and  
-%point all flags right of $A_i$, each adjacent pair of flags have a valid configuration that is 
-%collision-free.
 
 Suppose there is an unflagged armature in a row.  Turn all flags towards the nearest unflagged 
 armature.  If there are flags on $A_1$ and $A_n$, point toward the interior thus they do not 
@@ -143,7 +164,7 @@ because the nearest unflagged armature cannot be between them.  Therefore the ro
 collision-free configuration.
 \end{proof}
 
-\begin{figure}[!htbp]
+\begin{figure}[!h]
 \begin{center}
 \includegraphics{graphics/LogicEngineFrameFigure5Scaled.pdf}
 \caption{The logic engine from figure \ref{fig:LogicEngineFrameFigure2.pdf} whose armatures are rotated}\label{fig:LogicEngineFrameFigure5.pdf}
@@ -179,47 +200,4 @@ $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.  All fl
 corresponding to negated literals reside below the shaft and flags corresponding to non-negated 
 literals reside above the shaft.  All together we have that every clause has a true literal and a 
 false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
-%1) A collision-free configuration implies that every row at least one unflagged armature.
-%  \item If the literal $x_j$ is found in clause $C_k$, then $l_{j,k}$ is unflagged.
-%  \item If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
-%  all negated literals reside below the shaft and non-negated literals reside above the shaft.
-%  The k_th clause is represented by the k_th rows above and below the shaft.  This indicated that there is a negated and non-negated literal in each clause.  And so we have a 'yes' instance
-%
-%We assign true or false values to the variables.  If the 
-%corresponding armatures 
-%There is a truth assignment $t$
-% t: A -> {1,0} s.t. for any C_j contains a true literal and a false literal.
-%
-%
-% Given the corresponding logic engine has a flat, collision-free configuration for a $NAE3SAT$ 
-% instance.  Then every row must have an unflagged armature.  Each clause has two corresponding rows, 
-% one row for negated literals and one for non-negated literals.  Unflagged armatures implies the 
-% existence of a literal in a clause. All together, this implies that every clause contains a true and 
-% false literal.  Thus we have a ``yes'' $NAE3SAT$ instance.
 \end{proof}
-
-\section{Logic Engines Represented as Polygonal Linkages}         
-\begin{figure}[!htbp]
-\begin{center}
-\includegraphics{graphics/HingedLogicEngineSmall.pdf}
-\caption{The logic engine realized as a polygonal linkage.}\label{fig:HingedLogicEngineSmall.pdf}
-\end{center}
-\end{figure}
-Suppose we are given an instance of a NAE3SAT with $m$ clauses and $n$ variables in 3-CNF form.  
-The polygonal linkage logic engine that corresponds to this boolean formula has the following 
-dimensions:
-$$\begin{array}{|l|c|c|c|}
- \hline
- \text{Component} & \text{Height} & \text{Width} & \text{Quantity}\\\hline
- \text{Shaft Subcomponent} & 1 & 3 & n\\\hline
- \text{Armature Subcomponent} & 2 & 1 & 2\cdot m\\\hline
- \text{Flag} & 1 & 1.5 & -\\\hline
- \text{Large Frame SubComponent} & 2\cdot m & 1.75 & 4\\\hline
- \text{Small Shaft Subcomponent} & 1 & 1 & 2\\\hline
-\end{array}$$
-
-
-\section{Logic Engines Represented as Unit Disk Contact Graphs}
-%show the snowflake graph with just lines, then show the snowflake graph with the disks specifying 
-%the size of the disks on the trunk and branches.  Then show the problem/proof using the Hausdorff 
-%Distance

@@ -8,8 +8,39 @@
 
 
 % \section{Logic Engines Represented as Polygonal Linkages}
+
+\section{Logic Engines Represented as Polygonal Linkages}         
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics{graphics/HingedLogicEngineSmall.pdf}
+\caption{A logic engine realized as a polygonal linkage.}\label{fig:HingedLogicEngineSmall.pdf}
+\end{center}
+\end{figure}
+Suppose we are given an instance of a NAE3SAT with $m$ clauses and $n$ variables in 3-CNF form.  
+The polygonal linkage logic engine that corresponds to this boolean formula has the following 
+dimensions:
+$$\begin{array}{|l|c|c|c|}%TRY TO ADD SHADING COLUMN TO TABLE AND GRAPHIC:
+ \hline
+ \text{Component} & \text{Height} & \text{Width} & \text{Quantity}\\\hline
+ \text{Shaft Subcomponent} & 1 & 3 & n\\\hline
+ \text{Armature Subcomponent} & 2 & 1 & 2\cdot m\\\hline
+ \text{Flag} & 1 & 1.5 & -\\\hline
+ \text{Large Frame Subcomponent} & 2\cdot m & 1.75 & 4\\\hline
+ \text{Small Shaft Subcomponent} & 1 & 1 & 2\\\hline
+\end{array}$$
+The shaft subcomponents correspond to an armature and its subcomponents. The shaft subcomponents 
+have two orientations.  The armature subcomponents may have rectangular flags. Flagging arragement 
+indicates the relationship of the boolean literal's existence within a clause.   An armature 
+subcomponent is flagged according to the following rules:
+\begin{enumerate}
+ \item If the literal $x_j$ is found in clause $C_k$, then the armature subcomponent $l_{j,k}$ is 
+unflagged.
+ \item If the literal $\bar{x}_j$ is found in clause $C_k$, then the armature 
+subcomponent $\bar{l}_{j,k}$ is unflagged.
+\end{enumerate}
+Both frame subcomponents are static.  
 \begin{thm}\label{thm:Satisfiability-1}
  Given an instance of a $NAE3SAT$,  it is a ``yes'' instance if and only if the 
-corresponding polygonal linkage logic engine has a collision-free configuration.
+corresponding polygonal linkage logic engine has a collision-free configuration.  
 \end{thm}
 
