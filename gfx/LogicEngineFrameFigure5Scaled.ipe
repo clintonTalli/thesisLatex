@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20141019211704" modified="D:20141120055651"/>
+<info created="D:20141019211704" modified="D:20141201135143"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -228,6 +228,10 @@ h
 <anglesize name="22.5 deg" value="22.5"/>
 <tiling name="falling" angle="-60" step="4" width="1"/>
 <tiling name="rising" angle="30" step="4" width="1"/>
+</ipestyle>
+<ipestyle name="bigpaper">
+<layout paper="10000 6000" origin="0 0" frame="10000 6000"/>
+<titlestyle pos="10 10" size="LARGE" color="title"  valign="baseline"/>
 </ipestyle>
 <page>
 <layer name="alpha"/>
