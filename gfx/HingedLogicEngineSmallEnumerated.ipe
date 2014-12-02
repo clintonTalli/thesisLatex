@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20141106175101" modified="D:20141201150654"/>
+<info created="D:20141106175101" modified="D:20141201150755"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -353,6 +353,13 @@ h
 1408 512 l
 1472 512 l
 1472 384 l
+h
+</path>
+<path matrix="0.230083 0 0 0.230083 1231.87 654.725" stroke="black" fill="gray">
+1216 768 m
+1216 768 l
+1216 768 l
+1216 768 l
 h
 </path>
 <path matrix="0.230083 0 0 0.230083 1187.69 713.627" stroke="black" fill="gray">
@@ -862,6 +869,20 @@ h
 <use name="mark/disk(sx)" pos="1320.22 736.983" size="normal" stroke="red"/>
 <use name="mark/disk(sx)" pos="1343.48 743.077" size="normal" stroke="red"/>
 <use matrix="1 0 0 1 0.693293 0" name="mark/disk(sx)" pos="1430.31 728.351" size="normal" stroke="red"/>
+<text matrix="1 0 0 1 -4.37118 0.207176" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_3$</text>
+<text matrix="1 0 0 1 -4.37277 -31.2841" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_2$</text>
+<text matrix="1 0 0 1 -4.37277 -63.6036" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_1$</text>
+<text matrix="1 0 0 1 -4.37277 -102.448" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_1$</text>
+<text matrix="1 0 0 1 -4.37277 -134.003" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_2$</text>
+<text matrix="1 0 0 1 -4.37277 -163.796" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.59" height="6.812" depth="1.49" valign="baseline">$C_3$</text>
+<text matrix="1 0 0 1 51.4023 22.6105" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.941" height="6.812" depth="1.49" valign="baseline">$A_1$</text>
+<text matrix="1 0 0 1 94.75 22.6105" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.941" height="6.812" depth="1.49" valign="baseline">$A_2$</text>
+<text matrix="1 0 0 1 139.054 22.6105" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.941" height="6.812" depth="1.49" valign="baseline">$A_3$</text>
+<text matrix="1 0 0 1 183.745 22.6105" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.941" height="6.812" depth="1.49" valign="baseline">$A_4$</text>
+<text matrix="1 0 0 1 227.861 22.6105" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.941" height="6.812" depth="1.49" valign="baseline">$A_5$</text>
+<text matrix="1 0 0 1 271.627 22.6105" transformations="translations" pos="1284.39 815.742" stroke="black" type="label" width="11.941" height="6.812" depth="1.49" valign="baseline">$A_6$</text>
+<text matrix="1 0 0 1 -2.09022 0" transformations="translations" pos="1631.61 810.095" stroke="black" type="label" width="85.251" height="7.473" depth="2.49" valign="baseline">$C_1  = \left( x_1 \cup \bar{x}_2 \cup \bar{x}_6 \right)$</text>
+<text matrix="1 0 0 1 -2.09022 -19.504" transformations="translations" pos="1631.61 810.095" stroke="black" type="label" width="85.251" height="7.473" depth="2.49" valign="baseline">$C_2  = \left( x_2 \cup \bar{x}_3 \cup \bar{x}_5 \right)$</text>
 <path matrix="0.230083 0 0 0.230083 1276.04 360.505" stroke="black" fill="darkblue">
 512 1440 m
 512 1376 l
@@ -870,5 +891,7 @@ h
 h
 </path>
 <use matrix="1 0 0 1 44.1722 -29.8295" name="mark/disk(sx)" pos="1349.67 712.983" size="normal" stroke="red"/>
+<text matrix="1 0 0 1 -2.09022 -39.0079" transformations="translations" pos="1631.61 810.095" stroke="black" type="label" width="85.251" height="7.473" depth="2.49" valign="baseline">$C_3  = \left( x_5 \cup \bar{x}_2 \cup \bar{x}_6
+ \right)$</text>
 </page>
 </ipe>
