@@ -7,28 +7,31 @@ We can modify the mechanical structure of the logic engine to form a polygonal l
 \caption{A logic engine realized as a polygonal linkage.}\label{fig:HingedLogicEngineSmall.pdf}
 \end{center}
 \end{figure}
-Suppose we are given an instance of a boolean formula with $m$ clauses and $n$ variables in 3-CNF form.  
-The polygonal linkage logic engine that corresponds to this boolean formula has the following 
-dimensions:
-$$\begin{array}{|l|c|c|c|}%TRY TO ADD SHADING COLUMN TO TABLE AND GRAPHIC:
- \hline
- \text{Component} & \text{Height} & \text{Width} & \text{Quantity}\\\hline
- \text{Shaft Subcomponent} & 1 & 3 & n\\\hline
- \text{Armature Subcomponent} & 2 & 1 & 2\cdot m\\\hline
- \text{Flag} & 1 & 1.5 & -\\\hline
- \text{Large Frame Subcomponent} & 2\cdot m & - & 4\\\hline
-\end{array}$$
-Each shaft subcomponent corresponds to an armature and its subcomponents. The shaft subcomponents 
-have two orientations.  The armature subcomponents have two orientations.  The armature subcomponents may have rectangular flags. Flagging arragement 
-indicates the relationship of the boolean literal's existence within a clause.   An armature 
-subcomponent is flagged according to the following rules:
+\subsection{Construction of the Polygonal Linkage Logic Engine}
+Suppose we are given an boolean formula with $m$ clauses and $n$ variables in 3-CNF form, $\Phi$, we construct the polygonal linkage similarly to the logic engine.
+The corresponding polygonal linkage $P_\ell = (\PP,\HH)$ has the following polygon components:
+\begin{center}
+	\begin{table}\label{TBL:HingedPolygonsV3-1}
+		$$\begin{array}{|l|c|c|c|}%TRY TO ADD SHADING COLUMN TO TABLE AND GRAPHIC:
+		 \hline
+		 \text{Component} & \text{Height} & \text{Width} & \text{Quantity}\\\hline
+		 \text{Shaft Subcomponent} & 1 & 3 & n\\\hline
+		 \text{Armature Subcomponent} & 2 & 1 & 2\cdot m\\\hline
+		 \text{Flag} & 1 & 1.5 & 2mn-3m\\\hline
+		 \text{Large Frame Subcomponent} & 2\cdot m & 1 & 4\\\hline
+		\end{array}$$
+		\caption{The components of $\PP$ specified polynomially in terms of the size of the boolean formula $\Phi$.}
+	\end{table}
+\end{center}
+The large frame subcomponents are hinged on the left most and right most shaft subcomponents. Each adjacent shaft subcomponents are hinged and each shaft subcomponent has two orientations, a reflecion up and a reflection down about the shaft hinge points.  On each shaft subcomponent there are two armature shaft subcomponents, one above the shaft subcomponent and one below the shaft subcomponent.  By the two orientations of the shaft subcomponent, each armature subcomponent has to possible positions.  Each armature comprises of $m$ armature subcomponents that are hinged together; in total there are $2n$ armatures.  Each armature subcomponent has two orientations, a reflection left and a reflection right about the armature hinge points.  Label the armature subcomponents on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  Attach a rectangular flag specified in Table \ref{TBL:HingedPolygonsV3-1}, to some of these segments. Each segment is either flagged one or zero flags.
+
 \begin{enumerate}
- \item If the literal $x_j$ is found in clause $C_k$, then the armature subcomponent $l_{j,k}$ is 
-unflagged.
- \item If the literal $\bar{x}_j$ is found in clause $C_k$, then the armature 
-subcomponent $\bar{l}_{j,k}$ is unflagged.
+	 \item If the literal $x_j$ is found in clause $C_k$, then $\ell_{j,k}$ is unflagged.
+	 \item If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
 \end{enumerate}
-The left and right frame subcomponents are static and rigid.
+
+Each flag has two orientations with respect to armature it is attached to.  Each flag has four potential positions, the flag can reflect left or right about the armature and the armature can reflect up or down about the shaft.
+
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/HingedLogicEngineSmallEnumerated.pdf}
