@@ -1,4 +1,48 @@
-\section{Contact Graphs}
+\section{Contact Graphs and Disk Arrangements}
+% Outline:
+% 1) What is the goal of this section?
+% 	a) What is needed to achieve this goal?
+% 	b) Formally pose the problem.
+% 	c) How is (a) used to solve (b)?
+Using logic engines, it has been shown that it is NP-Hard to decide whether the graph $G$ is a contact graph of unit disks \cite{BET+99}. 
+\begin{thm}\label{thm:ContactGraphV3-1}
+It is NP-complete to decide whether a polygonal linkage whose hinge graph is a tree can be realized.
+\end{thm} 
+\begin{proof}
+proof goes here
+\end{proof}
+We take the proof of Theorem \ref{thm:ContactGraphV3-1} and adapt it to contact graphs, i.e.:
+\begin{thm}\label{thm:ContactGraphV3-2}
+It is NP-complete to decide whether a contact graph can be realized.
+\end{thm}
+In order to show this, we will review some properties about contact graphs.
+\subsection{Contact Graph Properties}
+\paragraph{Hausdorff Distance}  Let $A$ and $B$ be sets in the plane. The \textit{directed Hausdorff distance} is 
+\begin{equation}\label{eqn:ContactGraphV3-1}
+d\lr{A,B} = \sup_{a \in A} \inf_{b \in B} \left\vert\left\vert a-b \right\vert \right\vert
+\end{equation}
+$h\lr{A,B}$ finds the furthest point $a in A$ from any point in $B$.  \textit{Hausdorff distance} is
+\begin{equation}\label{eqn:ContactGraphV3-2}
+D\lr{A,B} = \max \left\lbrace d\lr{A,B}, d\lr{B,A} \right\rbrace
+\end{equation}
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics{graphics/HausdorffDistanceExample1.pdf}
+\caption{An illustrative example of $d(X,Y)$ and $d(Y,X)$ where $X$ is the inner curve, and $Y$ is the outer curve.}\label{fig:HausdorffDistanceExample1.pdf}
+\end{center}
+\end{figure}
+\paragraph{$\epsilon$-approximation}
+% Modeling the logic engine with polygonal linkages requires reflected copies of the
+% rectangles. For an oriented realization, we use a different technique in Section 3. The
+% above proof can be adapted to the realization of contact trees of disks by approximating
+% rectangles with disk arrangements. In this context, we say that a weighted graph G is a
+% ε-approximation of a polygon P if G is realizable as a contact graph of disks of given
+% radii, and in every such realization, the Hausdorff distance between the union of disks
+% and a congruent copy of P is at most ε. A weighted graph G is a stable ε-approximation
+% if, in addition, for every two such realizations of G, the distance between the centers of
+% the corresponding disks is at most ε after a suitable rigid transformation.
+The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most epsilon.  A weighted graph $G$ is said to be a stable $\epsilon$-approximation if, in addition, for every two such realizations of $G$, the distance between the centers of the corresponding disks is at most $\epsilon$ after a suitable rigid transformation.
+
 \begin{lem}\label{lem:ContactGraphV3-1}
 For any natural number $k$,  there exists a tree $T = (V,E)$ with vertex weights $1$ and $1 - k^{-3}$ such that a stable $\BigOh{k^{-1}}$-approximation of a rectangle with ratio $\sqrt{3}$.
 \end{lem}
