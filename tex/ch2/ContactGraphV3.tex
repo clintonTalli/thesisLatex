@@ -41,11 +41,18 @@ D\lr{A,B} = \max \left\lbrace d\lr{A,B}, d\lr{B,A} \right\rbrace
 % and a congruent copy of P is at most ε. A weighted graph G is a stable ε-approximation
 % if, in addition, for every two such realizations of G, the distance between the centers of
 % the corresponding disks is at most ε after a suitable rigid transformation.
-The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most epsilon.  A weighted graph $G$ is said to be a stable $\epsilon$-approximation if, in addition, for every two such realizations of $G$, the distance between the centers of the corresponding disks is at most $\epsilon$ after a suitable rigid transformation.
+The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most epsilon.  A weighted graph $G$ is said to be a \textit{$\BigOh{f(x)}$-approximation} of a polygon P if there is a positive constant $M$ such that for all sufficiently large values of $x$ the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at $M \cdot \vert f(x)\vert$. A weighted graph $G$ is said to be a \textit{stable} if it has the property that for every two such realizations of $G$, the distance between the centers of the corresponding disks is at most $\epsilon$ after a suitable rigid transformation.  
+
+
+
+
 
 \begin{lem}\label{lem:ContactGraphV3-1}
 For any natural number $k$,  there exists a tree $T = (V,E)$ with vertex weights $1$ and $1 - k^{-3}$ such that a stable $\BigOh{k^{-1}}$-approximation of a rectangle with ratio $\sqrt{3}$.
 \end{lem}
 \begin{thm}
 It is NP Complete to decide whether a given tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.
+%1) needs to show that 
+
 \end{thm}
+
