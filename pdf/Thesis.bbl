@@ -1,0 +1,54 @@
+\begin{thebibliography}{10}
+
+\bibitem{BET+99}
+G.~Di Battista, P.~Eades, R.~Tamassia, and I.~G. Tollis.
+\newblock {\em {Graph Drawing: Algorithms for the Visualization of Graphs}}.
+\newblock Prentice Hall, 1999.
+
+\bibitem{BC87}
+S.~N. Bhatt and S.~S. Cosmadakis.
+\newblock {The complexity of minimizing wire lengths in VLSI layouts}.
+\newblock {\em Inform. Process. Lett 25}, 4:263--267, 1987.
+
+\bibitem{BK98}
+H.~Breu and D.~G. Kirkpatrick.
+\newblock {Unit disk graph recognition is NP-hard}.
+\newblock {\em Comput. Geom}, 9:3--24, 1998.
+
+\bibitem{CDD+10}
+R.~Connelly, E.~D. Demaine, M.~L. Demaine, S.~P. Fekete, S.~Langerman, J.~S.~B.
+  Mitchell, A.~Rib{\'o}, and G.~Rote.
+\newblock {Locked and unlocked chains of planar shapes}.
+\newblock {\em Discrete Comput. Geom}, 44:439--462, 2010.
+
+\bibitem{CDR03}
+R.~Connelly, E.~D. Demaine, and G.~Rote.
+\newblock {Straightening polygonal arcs and convexifying polygonal cycles}.
+\newblock {\em Discrete Comput. Geom}, 30:205--239, 2003.
+
+\bibitem{EW90}
+P.~Eades and N.~C. Wormald.
+\newblock {Fixed edge-length graph drawing is NP-hard}.
+\newblock {\em Discrete Applied Mathematics}, 28:111--134, 1990.
+
+\bibitem{NAE3SATisNPhard}
+Michael~R Garey and David~S Johnson.
+\newblock {\em Computers and Intractibility}.
+\newblock WH Freeman and company New York, 1979.
+
+\bibitem{kleinberg2006algorithm}
+J.~Kleinberg and E.~Tardos.
+\newblock {\em {Algorithm Design}}.
+\newblock Pearson Education, 2006.
+
+\bibitem{skiena2009algorithm}
+S.S. Skiena.
+\newblock {\em {The Algorithm Design Manual}}.
+\newblock Springer, 2009.
+
+\bibitem{Str05}
+I.~Streinu.
+\newblock {Pseudo-triangulations, rigidity and motion planning}.
+\newblock {\em Discrete Comput. Geom}, 34:587--635, 2005.
+
+\end{thebibliography}

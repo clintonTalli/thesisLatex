@@ -1,0 +1,40 @@
+\contentsline {chapter}{Signature page}{ii}
+\contentsline {chapter}{Abstract}{iv}
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Background}{1}
+\contentsline {section}{\numberline {1.1}Graphs}{1}
+\contentsline {subsubsection}{\numberline {1.1.0.1}Edge Crossings}{1}
+\contentsline {subsection}{\numberline {1.1.1}Trees}{2}
+\contentsline {subsection}{\numberline {1.1.2}Ordered Trees}{3}
+\contentsline {subsection}{\numberline {1.1.3}Graph Isomorphism}{3}
+\contentsline {section}{\numberline {1.2}Linkages}{3}
+\contentsline {section}{\numberline {1.3}Polygonal Linkages}{4}
+\contentsline {subsection}{\numberline {1.3.1}Disk Arrangements}{4}
+\contentsline {subsubsection}{\numberline {1.3.1.1}Ordered Disk Arrangement}{5}
+\contentsline {subsubsection}{\numberline {1.3.1.2}Disk Packing Confinement Problem}{5}
+\contentsline {section}{\numberline {1.4}Configuration Spaces}{6}
+\contentsline {subsection}{\numberline {1.4.1}Configuration Spaces of Linkages}{7}
+\contentsline {subsection}{\numberline {1.4.2}Configuration Spaces of Polygonal Linkages}{8}
+\contentsline {subsection}{\numberline {1.4.3}Configuration Spaces of Disk Arrangements}{8}
+\contentsline {section}{\numberline {1.5}Algorithm Complexity}{8}
+\contentsline {subsection}{\numberline {1.5.1}Qualitative Analysis of Algorithms }{8}
+\contentsline {subsection}{\numberline {1.5.2}Categorization of Algorithms}{9}
+\contentsline {subsubsection}{\numberline {1.5.2.1}P and NP}{9}
+\contentsline {subsection}{\numberline {1.5.3}Reduction}{9}
+\contentsline {subsubsection}{\numberline {1.5.3.1}Reduction of the Independent Set and Vertex Cover Problem}{10}
+\contentsline {section}{\numberline {1.6}Satisfiability}{10}
+\contentsline {section}{\numberline {1.7}Problem}{10}
+\contentsline {subsection}{\numberline {1.7.1}Problem Statement}{11}
+\contentsline {subsection}{\numberline {1.7.2}Decidability of Problem}{11}
+\contentsline {chapter}{\numberline {2}Decidability Problems for Hinged Polygons and Disks}{12}
+\contentsline {section}{\numberline {2.1}The Logic Engine}{12}
+\contentsline {subsection}{\numberline {2.1.1}Construction of the Logic Engine}{12}
+\contentsline {subsection}{\numberline {2.1.2}The mechanics of the logic engine}{14}
+\contentsline {subsubsection}{\numberline {2.1.2.1}The Relationship of the Logic Engine and NAE3SAT}{15}
+\contentsline {section}{\numberline {2.2}Logic Engines Represented as Polygonal Linkages}{18}
+\contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{18}
+\contentsline {section}{\numberline {2.3}Contact Graphs and Disk Arrangements}{19}
+\contentsline {subsection}{\numberline {2.3.1}Contact Graph Properties}{20}
+\contentsline {paragraph}{Hausdorff Distance}{20}
+\contentsline {paragraph}{$\epsilon $-approximation}{20}
+\contentsfinish 
