@@ -1,0 +1,23 @@
+Booz Allen Hamilton Engineering Services, LLC
+Technologist
+
+June 2010 – Present
+El Segundo, CA
+
+- Designed a software architecture for SAASM Mission Planning System (SMPS).
+- Provided cryptographic analysis for a GPS CNAV project.
+	* Identified feasible solutions
+	* Assisted in drafting a cryptographic protocol and high level overview of key management
+	* Consulted and developed software for prototyping the cryptographic concept
+- Designed and prototyped a cradle to grave management system for NIST compliant cryptographic keys that met NIST SP800-53 SC-12 (1) and (2).
+- Developed a random number generation test suite in C#
+- Built and demonstrated Zigbee 802.15.4 wireless data transfer software in C to potential business partners.
+- Developed & tested a Reed-Solomon error correction code library for software defined radio project.
+- Developed & tested cryptographic software for a C/C# based GPS reciever.
+- Developed & demonstrated SHA-3 based embedded C software for a PIC24HJ12GP201I Controller
+- Corrected NIST test vectors for SHA-2 based digital signature algorithms.
+- Contributed the 'K' in SHAKE for NIST FIPS-202.
+- Directing weekly technical meetings between a team of software developers and clients for project management.
+
+Languages
+C, C++, C#, Java, Python, Matlab
