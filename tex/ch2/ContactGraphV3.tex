@@ -68,7 +68,34 @@ It is NP Complete to decide whether a given tree with positive vertex weights is
 	\begin{itemize}
 	\item[(a)] blah blah
 	\item[(b)] blah blah
-	\end{itemize}
+\end{itemize}
 \item[(ii)] Once we have (i), we then proceed with...
 \end{itemize}
 \end{pf}
+
+
+
+
+
+%%%COMMENTS FROM MEeting
+%Introduction:recall contact tree of disks with radii is hard.  
+%tool to prove is approx hexagonal tiling with disks.  Find NP Hardness Reduction via arrangement of hexagons with disks
+%modelling the hexagons with the arrangement of disks; r_0 = 1  r_i = 1 + \epsilon
+%state it intuitively with examples
+%stability: every realization is close to the hexagon graph with weights on vertices.  the disnce between the centers of hexagonal lattice and contact graph are close
+%property of a vertex weighted graph if for any two realizations has a \ldots let G be an ordered tree with any two realizations R_1, R_2.  G is \epsilon stable with any two realizations the vertices are close.  there exists a rigid transformation \gamma such that the vertices\left(\gamma\left(R_1 \right)\right) - vertices\left(\gamma\left(R_2\right)\right) < \epsilon
+%1) state goal of theorem
+%2) state theorem: Hexagon of side length 1, for any \epsilon > 0, there exists an oriented vertex weighted tree that satisfies the following:
+%	a) |V| is defined polynomially as a function of epsilon
+%	b) all weights are bounded by some polynomial as a function of epsilon
+%3) prove step by step:
+%	a) define the tree
+%	b) show that any realization of the tree is close to T_i, i.e. for any realization of a tree there exists a T_i such that H(T_i,P)<\epsilon
+%4) proof by induction
+%	a) one for the angles
+%	b) one for the centers
+%	c) fuzzy hexagons approximate regular hexagons are approximal from the same proof
+%Define tree by i^{th} layer
+%try defining without realization abstract
+%NTS T_{i,\epsilon} there exists a realization R\left(T_{i,\epsilon}\right) hint lattice -> introduce \epsilon  start with
+
