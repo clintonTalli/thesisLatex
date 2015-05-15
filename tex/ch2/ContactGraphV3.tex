@@ -77,6 +77,8 @@
 
 
 
+
+
 %%%COMMENTS FROM MEeting
 %Introduction:recall contact tree of disks with radii is hard.  
 %tool to prove is approx hexagonal tiling with disks.  Find NP Hardness Reduction via arrangement of hexagons with disks
@@ -101,15 +103,44 @@
 
 \section{Contact Graphs and Disk Arrangements}
 
-
-
 \begin{figure}[!htbp]
-\begin{center}
+\centering
+\begin{minipage}{0.45\textwidth}
+\centering
+\includegraphics{graphics/snowflakeOutline5LayerSmallNoCircles.pdf}
+\caption{A snowflake.}\label{fig:snowflakeOutline5LayerSmallNoCircles}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\centering
 \includegraphics{graphics/snowflakeOutline5LayerSmall.pdf}
 \caption{A configuration of disks about a snowflake.}\label{fig:snowflakeOutline5Layer}
-\end{center}
+\end{minipage}
 \end{figure}
+In Figure \ref{fig:snowflakeOutline5LayerSmallNoCircles}, we have a realization of a snowflake graph whose branches are placed $\frac{2 \pi}{3}$, $\frac{4 \pi}{3}$, and $2 \pi$ radians about the origin. Each branch contains five stems on its right side and on its left side.  Each consecutive stem is equidistant to its neighbor.  The $i^\text{th}$ stem of the right side is the same length as the $i^\text{th}$ stem of the left side.  We will denote these snowflake realizations as $S_i$ where $i$ is the number of stems on any side of any branch.  Figure \ref{fig:snowflakeOutline5LayerSmallNoCircles} is $S_5$.  In Figure \ref{fig:snowflakeOutline5Layer}, we have $S_5$ and corresponding set of outlined disks, $D_5$.  Each of the disks are of unit radius.  The disks are arranged in a disk packing that form concentric hexagonal rings with respect to the disk centered at the origin of the snowflake.  We will denote the set of disks as $D_i$, where $i$ is the number of concentric, hexagonal rings of disks.  The number disks in $D_i$ are (See Notebook).  The number of stems in $S_i$ is $6i$.  (needs to discuss the disk adjacency and its relation to $S_i$)
 
+\begin{prob}
+Let $\epsilon > 0$.  Given $D_i$ and $S_i$ such that the disk centered at the origin has radius $r_0 = 1+\epsilon$, does $D_i$ approximate a hexagonal packing?
+\end{prob}
+\begin{figure}[!htbp]
+\centering
+\begin{minipage}{0.45\textwidth}
+\centering
+\includegraphics{graphics/D1.pdf}
+\caption{$D_1$ illustrated.  All disks have unit radius.}\label{fig:D1}
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}
+\centering
+\includegraphics{graphics/epsilonCenter.pdf}
+\caption{A modified $D_1$ such that the center disk has radius $1+\epsilon$ whereas the other disks have unit radius.  Let this modified $D_1$ be called $D_{1,\epsilon}$.}\label{fig:epsilonCenter}
+\end{minipage}
+\end{figure}
+In order to answer this question be must define some terminology.  \textit{Stability} is the condition that every realization of $D_{i,\epsilon}$ is close to the hexagonal graph with weights on vertices.
 \begin{thm}\label{thm:ContactGraphV3-1}
 It is NP-complete to decide whether a polygonal linkage whose hinge graph is a tree can be realized.
-\end{thm} 
+\end{thm}
+ 
+\begin{lem}\label{lem:ContactGraphV3-1}
+For any natural number $k$,  there exists a tree $T = (V,E)$ with vertex weights $1$ and $1 - k^{-3}$ such that a stable $\BigOh{k^{-1}}$-approximation of a rectangle with ratio $\sqrt{3}$.
+\end{lem}
+
+
