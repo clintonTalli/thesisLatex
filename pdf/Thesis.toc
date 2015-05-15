@@ -34,7 +34,4 @@
 \contentsline {section}{\numberline {2.2}Logic Engines Represented as Polygonal Linkages}{18}
 \contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{18}
 \contentsline {section}{\numberline {2.3}Contact Graphs and Disk Arrangements}{19}
-\contentsline {subsection}{\numberline {2.3.1}Contact Graph Properties}{20}
-\contentsline {paragraph}{Hausdorff Distance}{20}
-\contentsline {paragraph}{$\epsilon $-approximation}{20}
 \contentsfinish 
