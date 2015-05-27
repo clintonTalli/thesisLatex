@@ -1,0 +1,40 @@
+\section{Realizability Problems for Weighted Trees}
+Recall problems (\ref{problem:UnorderedTree}) and (\ref{problem:OrderedTree}): given a positive weighted tree, $T$, is $T$ the (ordered) contact graph of some disk arrangement where the radii are equal to the vertex weights.  For now, we'll focus on a particular family of this problem space where the weighted trees can realized as a \textit{snowflake}. For $i \in \bbN$, the construction of the snowflake tree, $S_i$, is as follows:
+\begin{itemize}
+\item $v_0$ has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  Each path has $i$ vertices.
+\item For every other path $p_1$, $p_3$, and $p_5$: 
+	\begin{itemize}
+		\item 	Each vertex on that path has two paths attached, one path on each side of $p_k$.
+		\item		The number of vertices that lie on the path attached to the $j^\text{th}$ vertex of $p_k$ is $i-j$.
+	\end{itemize}
+\end{itemize}
+A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight 1.  A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$.
+
+Consider the triangular lattice,
+$$V = \left\lbrace a\cdot (1,0) + b \cdot \left(\frac{1}{2},\frac{\sqrt{3}}{2}\right) : a,b \in \bbZ \right\rbrace$$
+The perfectly weighted snowflake tree is a subgraph over the unit distance graph, $G=(V,E)$, of the triangular lattice where
+$$E = \left\lbrace uv : \vert\vert u-v \vert\vert = 1 \text{ and } u,v \in V\right\rbrace$$
+For our analysis, all realizations of any snowflake, perfect or perturbed, shall have $v_0$ fixed at origin.  This is said to be the canonical position of the snowflake tree. 
+%Define the snowflake graph, S_i, without pictures
+%v_0 has six paths attached to it, p_1, p_2, ..., p_6.  Each path has i vertices.
+%for every other path p_1, p_3, and p_5 ,
+%	Each vertex on that path has two paths attached, one path on each side of p_k.
+%	The number of vertices that lie on the path attached to the j^{th} vertex of p_k is $i-j$
+%Let all vertices on the contact graph have weight 1 except $v_0$ whose weight is 1 + \epsilon.
+%For any $i$, the weighted contact graph $S_i$, is a subgraph of the unit distance graph of the triangular lattice
+%lattice be V = {a(1,0) + b(1/2, \frac{\sqrt{2}}{3} such that a,b \in \bbZ}
+%		  E = {{u,v} such that u,v \in V and ||u-v||=1}
+%Define this as a canonical position of the disks corresponding to the vertices; goal: show every realization of S_i's disks is close to the canonical position of the disk under hausdorff distance (see lemma)
+%NTS: there exists a disk arrangement that corresponds to this weighted contact graph, S_i
+%pf:For any two adjacent stems are disjoint, angular displacement and planar (point) displacement
+  
+
+%    \begin{prob}[Unordered Realizibility Problem for the Tree]\label{problem:UnorderedTree}
+%    For a tree with positive weights for the verticies, it asks whether it is a contact graph of some 
+%    disk arrangement where the radii are equal to the vertex weights.
+%    \end{prob}
+%    
+%    \begin{prob}[Ordered Realizibility Problem for the Tree]\label{problem:OrderedTree}
+%    For a tree with positive weights for the vertices, it asks whether its corresponding graph is the 
+%    ordered contact graph of some disk arrangement where the radii equal the vertex weights.
+%    \end{prob}
