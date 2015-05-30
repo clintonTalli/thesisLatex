@@ -33,8 +33,8 @@
 \contentsline {subsubsection}{\numberline {2.1.2.1}The Relationship of the Logic Engine and NAE3SAT}{15}
 \contentsline {section}{\numberline {2.2}Logic Engines Represented as Polygonal Linkages}{18}
 \contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{18}
-\contentsline {subsection}{\numberline {2.2.2}Contact Graph Properties}{20}
+\contentsline {subsection}{\numberline {2.2.2}Properties for Weighted Trees and Polygonal Linkages}{19}
 \contentsline {paragraph}{Hausdorff Distance}{20}
 \contentsline {paragraph}{$\epsilon $-approximation}{20}
-\contentsline {section}{\numberline {2.3}Contact Graphs and Disk Arrangements}{20}
+\contentsline {section}{\numberline {2.3}Realizability Problems for Weighted Trees}{20}
 \contentsfinish 

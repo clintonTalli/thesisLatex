@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  19 MAY 2015 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  30 MAY 2015 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1169,59 +1169,26 @@ File: graphics/HingedLogicEngineSmallEnumerated.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/HingedLogicEngineSmallEnumerated.pdf used on 
 input line 37.
 (pdftex.def)             Requested size: 428.06822pt x 207.11928pt.
-)
-(./ch2/ContactGraphV3.tex [19 <./graphics/HingedLogicEngineSmallEnumerated.pdf>
-] <graphics/HausdorffDistanceExample1.pdf, id=277, 291.58937pt x 208.65755pt>
+) (./ch2/Hausdorff.tex
+[19 <./graphics/HingedLogicEngineSmallEnumerated.pdf>]
+<graphics/HausdorffDistanceExample1.pdf, id=277, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 30.
+ine 13.
 (pdftex.def)             Requested size: 291.58865pt x 208.65701pt.
+) (./ch2/ContactGraphV4.tex
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 4.
 
-<graphics/snowflakeOutline5LayerSmallNoCircles.pdf, id=278, 178.91844pt x 206.5
-4164pt>
-File: graphics/snowflakeOutline5LayerSmallNoCircles.pdf Graphic file (type pdf)
-
- <use graphics/snowflakeOutline5LayerSmallNoCircles.pdf>
-Package pdftex.def Info: graphics/snowflakeOutline5LayerSmallNoCircles.pdf used
- on input line 110.
-(pdftex.def)             Requested size: 178.91798pt x 206.54112pt.
-
-<graphics/snowflakeOutline5LayerSmall.pdf, id=279, 178.91844pt x 206.54164pt>
-File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
-
-<use graphics/snowflakeOutline5LayerSmall.pdf>
-Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
- line 115.
-(pdftex.def)             Requested size: 178.91798pt x 206.54112pt.
- [20 <./graphics/HausdorffDistanceExample1.pdf>] <graphics/D1.pdf, id=290, 129.
-03307pt x 117.63348pt>
-File: graphics/D1.pdf Graphic file (type pdf)
-
-<use graphics/D1.pdf>
-Package pdftex.def Info: graphics/D1.pdf used on input line 128.
-(pdftex.def)             Requested size: 129.03273pt x 117.63318pt.
-
-<graphics/epsilonCenter.pdf, id=291, 142.79146pt x 129.45866pt>
-File: graphics/epsilonCenter.pdf Graphic file (type pdf)
-
-<use graphics/epsilonCenter.pdf>
-Package pdftex.def Info: graphics/epsilonCenter.pdf used on input line 133.
-(pdftex.def)             Requested size: 142.7911pt x 129.45833pt.
-
-<graphics/epsilonCenterWithHexagon.pdf, id=292, 142.79146pt x 129.45866pt>
-File: graphics/epsilonCenterWithHexagon.pdf Graphic file (type pdf)
-
-<use graphics/epsilonCenterWithHexagon.pdf>
-Package pdftex.def Info: graphics/epsilonCenterWithHexagon.pdf used on input li
-ne 140.
-(pdftex.def)             Requested size: 142.7911pt x 129.45833pt.
-)) (../pdf/Thesis.bbl [21 <./graphics/snowflakeOutline5LayerSmallNoCircles.pdf>
- <./graphics/snowflakeOutline5LayerSmall.pdf> <./graphics/D1.pdf> <./graphics/e
-psilonCenter.pdf>] [22 <./graphics/epsilonCenterWithHexagon.pdf>])
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+ [20 <./graphics/HausdorffDistanceExample1.pdf>])) (../pdf/Thesis.bbl [21])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[23
+[22
 
 ] (../pdf/Thesis.aux)
 
@@ -1232,13 +1199,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17634 strings out of 493117
- 324184 string characters out of 6135433
+ 17625 strings out of 493117
+ 323542 string characters out of 6135433
  491310 words of memory out of 5000000
- 20607 multiletter control sequences out of 15000+600000
- 46617 words of font info for 72 fonts, out of 8000000 for 9000
+ 20597 multiletter control sequences out of 15000+600000
+ 43193 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,59p,1307b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,16n,59p,1199b,518s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1256,10 +1223,10 @@ st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (27 pages, 283118 bytes).
+Output written on ../pdf/Thesis.pdf (26 pages, 271287 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
+ 338 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
