@@ -8,14 +8,36 @@ Recall problems (\ref{problem:UnorderedTree}) and (\ref{problem:OrderedTree}): g
 		\item		The number of vertices that lie on the path attached to the $j^\text{th}$ vertex of $p_k$ is $i-j$.
 	\end{itemize}
 \end{itemize}
-A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight 1.  A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$.  For our analysis, all realizations of any snowflake, perfect or perturbed, shall have $v_0$ fixed at origin.  This is said to be the canonical position under Hausdorff distance of the snowflake tree.   
+A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $\frac{1}{2}$.  A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a radius of $\frac{1}{2} + \epsilon$.  For our analysis, all realizations of any snowflake, perfect or perturbed, shall have $v_0$ fixed at origin.  This is said to be the canonical position under Hausdorff distance of the snowflake tree.   
 
 Consider the graph of the triangular lattice with unit distant edges:
 \begin{eqnarray*}
 V &=& \left\lbrace a\cdot (1,0) + b \cdot \left(\frac{1}{2},\frac{\sqrt{3}}{2}\right) : a,b \in \bbZ \right\rbrace\\
 E &=& \left\lbrace uv : \vert\vert u-v \vert\vert = 1 \text{ and } u,v \in V\right\rbrace
 \end{eqnarray*}
-The perfectly weighted snowflake tree is a subgraph over the unit distance graph, $G=(V,E)$, of the triangular lattice.
+The perfectly weighted snowflake tree that is a subgraph over the unit distance graph, $G=(V,E)$, of the triangular lattice.  To show this, for any $S_i$, fix $v_0 = 0 \cdot \cdot (1,0) + 0 \cdot \left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)=\lr{0,0} \in V$ at origin.  Next consider the six paths attached from origin.  Fix each consecutive path $\frac{\pi}{3}$ radians away from the next such that the following points like on the corresponding paths: $\lr{1,0} \in p_1, \lr{\frac{1}{2} ,\frac{\sqrt{2}}{3}} \in p_2,\lr{-\frac{1}{2}\p_4,\frac{\sqrt{3}}{2}} \in p_3, \lr{-1,0} \in p4, \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}\in p_5,\lr{\frac{1}{2},-\frac{\sqrt{3}}{2}}\in p_6$.  For $S_i$, there are $i$ vertices on each path.  
+
+We define the six paths from origin as follows:
+\begin{eqnarray*}
+p_1 &=& \set{a\cdot\lr{1,0} \in \bbR^2}{a \in \bbR^+}\\
+p_2 &=& \set{b\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{b \in \bbR^+}\\
+p_3 &=& \set{-a\cdot \lr{1,0} + a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}} }{a \in \bbR^+}\\
+p_4 &=& \set{-a \cdot \lr{1,0}}{a \in \bbR^+}\\
+p_5 &=& \set{-b \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}} }{b \in \bbR^+}\\
+p_6 &=& \set{ a\cdot \lr{1,0} - a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{a \in \bbR^+} 
+\end{eqnarray*}
+
+
+
+
+
+
+
+%Consider the lattice points all unit distance away from $v_0$ and every $\frac{\pi}{3}$ radians away from the next consecutive point about origin: $\lr{1,0}, \lr{\frac{1}{2},\frac{\sqrt{2}}{3}},\lr{-\frac{1}{2},\frac{\sqrt{3}}{2}}, \lr{-1,0},\lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}},\lr{\frac{1}{2},-\frac{\sqrt{3}}{2}}$.
+
+
+
+%$\lr{1,0}, \lr{\frac{\sqrt{2}}{3},\frac{1}{2}},\lr{0,1},\lr{-1,0}, \lr{-\frac{\sqrt{2}}{3},\frac{1}{2}},\lr{0,-1}, \lr{-\frac{\sqrt{2}}{3},-\frac{1}{2}},\lr{\frac{1}{2}, -\frac{\sqrt{2}}{3}}$
 
 %To show that for any $i$, any perfectly weighted snowflake tree $S_i$ is a subgraph of the triangular lattice unit distance graph, first consider the canonical position where $v_0$ is at origin. 
 %Need to fix the realizations
