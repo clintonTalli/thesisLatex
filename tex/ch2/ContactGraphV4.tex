@@ -5,7 +5,7 @@ Recall problems (\ref{problem:UnorderedTree}) and (\ref{problem:OrderedTree}): g
 \item For every other path $p_1$, $p_3$, and $p_5$: 
 	\begin{itemize}
 		\item 	Each vertex on that path has two paths attached, one path on each side of $p_k$.
-		\item		The number of vertices that lie on the path attached to the $j^\text{th}$ vertex of $p_k$ is $i-j$.
+		\item	The number of vertices that lie on the path attached to the $j^\text{th}$ vertex of $p_k$ is $i-j$.
 	\end{itemize}
 \end{itemize}
 A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $\frac{1}{2}$.  A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a radius of $\frac{1}{2} + \epsilon$.  For our analysis, all realizations of any snowflake, perfect or perturbed, shall have $v_0$ fixed at origin.  This is said to be the canonical position under Hausdorff distance of the snowflake tree.   
@@ -19,16 +19,14 @@ The perfectly weighted snowflake tree that is a subgraph over the unit distance 
 
 We define the six paths from origin as follows:
 \begin{eqnarray*}
-p_1 &=& \set{a\cdot\lr{1,0} \in \bbR^2}{a \in \bbR^+}\\
-p_2 &=& \set{b\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{b \in \bbR^+}\\
-p_3 &=& \set{-a\cdot \lr{1,0} + a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}} }{a \in \bbR^+}\\
-p_4 &=& \set{-a \cdot \lr{1,0}}{a \in \bbR^+}\\
-p_5 &=& \set{-b \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}} }{b \in \bbR^+}\\
-p_6 &=& \set{ a\cdot \lr{1,0} - a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{a \in \bbR^+} 
+p_1 &=& \set{a\cdot\lr{1,0} = \vec{v}}{a \in \bbR^+}\\
+p_2 &=& \set{a\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}} = \vec{v}}{a \in \bbR^+}\\
+p_3 &=& \set{-a\cdot \lr{1,0} + a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}} = a\lr{-\frac{1}{2},\frac{\sqrt{3}}{2}} = \vec{v}}{a \in \bbR^+}\\
+p_4 &=& \set{a \cdot \lr{-1,0} = \vec{v}}{a \in \bbR^+}\\
+p_5 &=& \set{a \cdot \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}  = \vec{v}}{a \in \bbR^+}\\
+p_6 &=& \set{ a\cdot \lr{1,0} - a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}}= a \cdot \lr{\frac{1}{2}, -\frac{\sqrt{3}}{2}}}{a \in \bbR^+} 
 \end{eqnarray*}
-
-
-
+For $S_i$ there exists $i$ vertices on each path.  We shall denote the $i^\text{th}$ vertex on the $j^\text{th}$ path as $v_{j,i}$.  For each path defined above, the paths are defined as a set of vectors, $\vec{v} = a \cdot \vec{p}$  for some $a \in \bbR^+$ and $\vec{p} \in \bbR^2$.  By setting $a = 1,2,\dots, i$, we obtain points that are contained in $V$.  For $j = 1,3,5$, there exists two paths attached to each vertex $v_{j,i}$.  For $S_i$, each path attached to the $k^\text{th}$ vertex of $p_j$, there are $i-k$ vertices. In order to show that each of the $i-k$ vertices on each corresponding path are also in $V$, 
 
 
 
