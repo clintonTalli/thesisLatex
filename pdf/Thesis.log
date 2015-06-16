@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 JUN 2015 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 JUN 2015 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -851,21 +851,21 @@ File: graphics/PetersonGraphExample.pdf Graphic file (type pdf)
 
 <use graphics/PetersonGraphExample.pdf>
 Package pdftex.def Info: graphics/PetersonGraphExample.pdf used on input line 1
-7.
+6.
 (pdftex.def)             Requested size: 285.64362pt x 91.65117pt.
 
 <graphics/crossingType2.pdf, id=21, 149.4644pt x 133.90024pt>
 File: graphics/crossingType2.pdf Graphic file (type pdf)
 
 <use graphics/crossingType2.pdf>
-Package pdftex.def Info: graphics/crossingType2.pdf used on input line 32.
+Package pdftex.def Info: graphics/crossingType2.pdf used on input line 31.
 (pdftex.def)             Requested size: 149.46404pt x 133.8999pt.
 
 <graphics/crossingType3.pdf, id=22, 143.48204pt x 133.90024pt>
 File: graphics/crossingType3.pdf Graphic file (type pdf)
 
 <use graphics/crossingType3.pdf>
-Package pdftex.def Info: graphics/crossingType3.pdf used on input line 37.
+Package pdftex.def Info: graphics/crossingType3.pdf used on input line 36.
 (pdftex.def)             Requested size: 143.48167pt x 133.8999pt.
  [1
 
@@ -874,11 +874,11 @@ Package pdftex.def Info: graphics/crossingType3.pdf used on input line 37.
 File: graphics/PetersonGraphAgain.pdf Graphic file (type pdf)
 
 <use graphics/PetersonGraphAgain.pdf>
-Package pdftex.def Info: graphics/PetersonGraphAgain.pdf used on input line 59.
+Package pdftex.def Info: graphics/PetersonGraphAgain.pdf used on input line 58.
 
 (pdftex.def)             Requested size: 264.31482pt x 247.36555pt.
 
-Overfull \hbox (51.83865pt too wide) in paragraph at lines 59--61
+Overfull \hbox (51.83865pt too wide) in paragraph at lines 58--60
 [][] 
  []
 
@@ -886,11 +886,11 @@ Overfull \hbox (51.83865pt too wide) in paragraph at lines 59--61
 File: graphics/OrderedTreesExample.pdf Graphic file (type pdf)
 
 <use graphics/OrderedTreesExample.pdf>
-Package pdftex.def Info: graphics/OrderedTreesExample.pdf used on input line 70
+Package pdftex.def Info: graphics/OrderedTreesExample.pdf used on input line 69
 .
 (pdftex.def)             Requested size: 445.7181pt x 145.18605pt.
 
-Overfull \hbox (12.0981pt too wide) in paragraph at lines 70--72
+Overfull \hbox (12.0981pt too wide) in paragraph at lines 69--71
  [] 
  []
 
@@ -901,24 +901,24 @@ File: graphics/graphIsomorphismExample.pdf Graphic file (type pdf)
 
 <use graphics/graphIsomorphismExample.pdf>
 Package pdftex.def Info: graphics/graphIsomorphismExample.pdf used on input lin
-e 102.
+e 101.
 (pdftex.def)             Requested size: 278.06917pt x 87.81084pt.
 
 
-Package caption Warning: \label without proper \caption on input line 97.
+Package caption Warning: \label without proper \caption on input line 96.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `table:ch1-graph-1' on page 3 undefined on input line 
-106.
+105.
 
 
-Package caption Warning: \label without proper \caption on input line 97.
+Package caption Warning: \label without proper \caption on input line 96.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `table:ch1-graph-1' on page 3 undefined on input line 
-106.
+105.
 
 ) (./ch1/linkages.tex
 <graphics/linkageillustration.pdf, id=70, 193.12149pt x 110.57813pt>
@@ -1223,7 +1223,7 @@ st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (26 pages, 274533 bytes).
+Output written on ../pdf/Thesis.pdf (26 pages, 275268 bytes).
 PDF statistics:
  338 PDF objects out of 1000 (max. 8388607)
  212 compressed objects within 3 object streams
