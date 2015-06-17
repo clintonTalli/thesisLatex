@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140523173310" modified="D:20141016191929"/>
+<ipe version="70107" creator="Ipe 7.1.7">
+<info created="D:20140523173310" modified="D:20150616192135"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -303,7 +303,8 @@ h
 <text matrix="1 0 0 1 23.6923 -13.1998" transformations="translations" pos="4.40466 746.288" stroke="black" type="minipage" width="250.296" height="37.825" depth="32.91" valign="top">$$\begin{array}{l}
 G=(V,E)\\
 V=\{1,2,3,4,5,6,7,8\}\\
-E=\left\lbrace 12,23,24,35,36,37,48, \right\rbrace\\
+E=\left\lbrace 
+\left\lbrace1,2\right\rbrace, \left\lbrace2,3\right\rbrace, \left\lbrace2,4\right\rbrace, \left\lbrace3,5\right\rbrace, \left\lbrace3,6\right\rbrace, \left\lbrace3,7\right\rbrace, \left\lbrace4,8\right\rbrace \right\rbrace\\
 Order_1 = \left\lbrace (2)_1,(134)_2,(2567)_3,(8)_4,(3)_5,(3)_6,(3)_7,(4)_8 \right\rbrace\\
 Order_2 = \left\lbrace (2)_1,(143)_2,(2657)_3,(8)_4,(3)_5,(3)_6,(3)_7,(4)_8 \right\rbrace\\
 \end{array}$$</text>
