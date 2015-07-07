@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  16 JUN 2015 19:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 JUL 2015 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1186,9 +1186,10 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
- [20 <./graphics/HausdorffDistanceExample1.pdf>])) (../pdf/Thesis.bbl [21])
+ [20 <./graphics/HausdorffDistanceExample1.pdf>] [21])) (../pdf/Thesis.bbl [22]
+)
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[22
+[23
 
 ] (../pdf/Thesis.aux)
 
@@ -1201,7 +1202,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  17625 strings out of 493117
  323542 string characters out of 6135433
- 494310 words of memory out of 5000000
+ 497310 words of memory out of 5000000
  20597 multiletter control sequences out of 15000+600000
  43193 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1223,10 +1224,10 @@ st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (26 pages, 276325 bytes).
+Output written on ../pdf/Thesis.pdf (27 pages, 278150 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
+ 344 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
