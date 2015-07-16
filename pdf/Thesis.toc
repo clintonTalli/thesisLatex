@@ -14,7 +14,7 @@
 \contentsline {subsubsection}{\numberline {1.3.1.2}Disk Packing Confinement Problem}{5}
 \contentsline {section}{\numberline {1.4}Configuration Spaces}{6}
 \contentsline {subsection}{\numberline {1.4.1}Configuration Spaces of Linkages}{7}
-\contentsline {subsection}{\numberline {1.4.2}Configuration Spaces of Polygonal Linkages}{8}
+\contentsline {subsection}{\numberline {1.4.2}Configuration Spaces of Polygonal Linkages}{7}
 \contentsline {subsection}{\numberline {1.4.3}Configuration Spaces of Disk Arrangements}{8}
 \contentsline {section}{\numberline {1.5}Algorithm Complexity}{8}
 \contentsline {subsection}{\numberline {1.5.1}Qualitative Analysis of Algorithms }{8}
@@ -37,4 +37,5 @@
 \contentsline {paragraph}{Hausdorff Distance}{20}
 \contentsline {paragraph}{$\epsilon $-approximation}{20}
 \contentsline {section}{\numberline {2.3}Realizability Problems for Weighted Trees}{20}
+\contentsline {subsection}{\numberline {2.3.1}On the Decidability of Problem (\ref {problem:UnorderedTree})}{22}
 \contentsfinish 
