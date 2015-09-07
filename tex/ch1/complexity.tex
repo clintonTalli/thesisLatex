@@ -17,10 +17,10 @@
 \section{Algorithm Complexity}
 \textit{Algorithms} are a set of procedural calculations.  When an algorithm executes its procedure it can be measured in terms of units of consumed resources (in computers, that is memory) and the time it takes to complete the procedure of calculations.  Ideally, a desirable algorithm would run quickly and utilizes a small amount of resources.
 
-\subsection{Qualitative Analysis of Algorithms  }
+% \subsection{Qualitative Analysis of Algorithms  }
 Determining the time and space that algorithms use determine their efficiency.  The \textit{worst-case} running time is the largest possible running time that an algorithm could have over all inputs of a given size $N$.  \textit{Brute force} is when an algorithm tries all possibilities to see if any formulates a solution.  An algorithm is said to be \textit{efficient} if it achieves qualitatively better worst-case performance, at an analytical level, than brute force search.% \cite{kleinberg2006algorithm}.
 
-\subsection{Categorization of Algorithms}
+% \subsection{Categorization of Algorithms}
 For combinatorial problems, as the number of inputs of the problem grows, the solution space tends to grow exponentially.  In general, as problems grow, it is desirable to minimize the \textit{running time}, time take to run an algorithm that solves a problem. Formally, we quantify running time with Big O notation.
 \begin{definition}[Big $O$ Notation]
 Let $f$ and $g$ be defined on some subset of $\bbR$.  $f(x) = O\left(g(x)\right)$ if and only if there exists a positive real number $M$ and $x_0$ such that $$\left\vert g(x)\right\vert \leq M \left\vert f(x) \right\vert$$
@@ -31,7 +31,7 @@ for all $x \geq x_0$
 
 \
 
-\subsubsection{P and NP}
+% \subsubsection{P and NP}
 % There are various types of running times; the running time that we will focus on in this thesis is 
 % polynomial running time ($\P$), nondeterministic polynomial running time ($\NP$), and 
 % non-deterministic polynomial complete running time ($\NP$ complete).
@@ -55,7 +55,7 @@ polynomial time} class, $\NP$. Before we continue with the definitions for $\NP$
 complete, we will look into a type of problem, a reduction of a problem, and what an efficient 
 certification is.  This facilitates the reader for the definitions and illustrate complexity better. 
  
-\subsection{Reduction}
+% \subsection{Reduction}
 A \textit{polynomial time reduction} is when arbitrary instances of problem $Y$ be solved using a polynomial number of standard computational steps, plus a polynomial number of calls to a black box that solves problem $X$.
 subsubsection{Independent Sets and Vertex Covers}
 To illustrate what a reduction is, we cover an example of independent sets and vertex covers.  
@@ -85,7 +85,7 @@ vertex cover would disallow $S$ to have a pair of vertices to form an edge in th
 Theorem \ref{thm:ch1-complexity-1} allows for problem reductions for independent set and vertex 
 cover problems.
 
-\subsubsection{Reduction of the Independent Set and Vertex Cover Problem}
+% \subsubsection{Reduction of the Independent Set and Vertex Cover Problem}
 There are two problems for the independent set: an optimization problem and a decision problem.
 \begin{prob}[Optimization of an Independent Set in $G$]
 Given a graph $G$, what is the largest independent set in $G$?
@@ -93,12 +93,12 @@ Given a graph $G$, what is the largest independent set in $G$?
 \begin{prob}[Decision of an Independent Set of Size $k$]
 Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
 \end{prob}
-%NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH BELOW
+[NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH BELOW]
 An algorithm that solves the optimization problem automatically solves the decision problem of the 
 independent set.  An algorithm that solves the decision problem for all size $k$ solves the 
 optimization problem where the decision is "yes" for the largest value of $k$.  This establishes a 
 reduction of the optimization problem to the decision problem and vice versa. 
-%NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH ABOVE
+[NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH ABOVE]
 
 
 
