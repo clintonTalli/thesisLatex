@@ -1,53 +1,109 @@
 \section{Graphs}
-A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices, $V$, and a set of edges or lines, $E$.  Each edge $e \in E$ is an unordered pair of distinct vertices $\set{u,v} \in E$.  Vertices are said to be \textit{adjacent} it they form an edge in $E$. Edges are said to be \textit{incident} if they share a vertex.  When $E$ is a multiset, elements of $E$ can have multiplicity.  When an edge is a member of $E$ multiple times, then we say that the graph is a \textit{multigraph}.   
+A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices $V$ and a multiset of edges $E$.  
+An edge is a 2 element subset of $V$ and denoted as ``V choose two'', $\combo{V}{2}$.
+% Each edge $e \in E$ is an unordered pair of vertices $\curlybraces{u,v} \in E$.  
+Vertices are said to be \textit{adjacent} if they form an edge in $E$.  
+\textit{Neighbors} of vertex $v$ are the adjecent vertices of $v$.
+Vertices that are adjacent to themselves are \textit{self-adjacent}, i.e. $u = v$ for $\curlybraces{u,v} \in E$.  
+Edges are said to be \textit{incident} if they share a vertex.  
+When an edge is a member of $E$ multiple times, then we say that the graph is a \textit{multigraph}.   
+A \textit{simple graph} has no self-adjacent vertices. 
+Unless otherwise stated, this thesis will strictly work with simple graphs.
 
-
-
-
-
-A \textit{graph} is an 
-ordered pair $G = (V,E)$ comprising of a set of vertices, $V$, and a set of edges or 
-lines, $E$.  Every edge $e \in E$, is an unordered pair of distinct vertices $u,v \in V$ (the edge represents their adjacency, $e = \{ u,v\}$). With this definition of a graph, there 
-are 
-no loops (self adjacent vertices, $\{v,v\}$) or multi-edges (several edges between the same pair of 
-vertices).
-
-A motivation for using graphs is modeling physical objects like molecules.  This requires an 
-embedding into the plane or $\bbr^3$.  An \textit{embedding} of the 
-graph $G = (V,E)$ is an injective mapping $\Pi : V \mapsto \bbR^{2}$ (see Figure 
-\ref{fig:graph1-1}). 
-
-\begin{figure}[!htbp]
+For graph equivalency, we need to define an isomorphism for graphs.  Given 
+two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} a bijective 
+function $f: V_1 \mapsto 
+V_2$ 
+such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and 
+only 
+if $(f(u),f(v)) \in E_2$. 
+\begin{table}[!ht]
 \begin{center}
-\includegraphics[scale=.5]{graphics/PetersonGraphExample.pdf}
-\caption{An embedding of the Peterson graph.}\label{fig:graph1-1}
+$$\begin{array}{|c|c|c|}\hline
+\text{Graph}&\text{Vertices}&\text{Edges}\\\hline
+G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
+\\\hline
+G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
+\\\hline
+\end{array} $$
+\caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
+= 3$, $f(d)=4$, $f(e)=5$.}
 \end{center} 
-\end{figure} 
-% \subsubsection{Edge Crossings}
-We define \textit{plane embeddings} of a graph to be an embedding where the following degenerate 
-configurations 
-do not occur:
-\begin{itemize}
-\item[\rn{1}] the interiors of two or more edges intersect, or
-\item[\rn{2}] an edge passes through a vertex
-\end{itemize} 
-\begin{figure}[H]
+\label{table:ch1-graph-1}
+\end{table}
+
+\begin{figure}[!h]
 \begin{center}
-  \begin{subfigure}[b]{0.49\textwidth}
-	  \includegraphics{graphics/crossingType2.pdf}
-	  \caption{The interior of the edges intersect.}
-	  \label{fig:ch1-linkages-1-2}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.49\textwidth}
-	  \includegraphics{graphics/crossingType3.pdf}
-	  \caption{An edge passes through a vertex.}
-	  \label{fig:ch1-linkages-1-3}
-  \end{subfigure}
+\includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
 \end{center} 
-\caption{These figures exhibit the 4 types of edge crossings.}\label{fig:ch1-linkages-1}
+\caption{This figure depicts the graph isomorphism shown in Table 
+(\ref{table:ch1-graph-1}) between 
+$V_1$ and $V_2$ in the plane.}
+\label{fig:configuration-3}
 \end{figure}
-A graph is called \textit{planar} if it admits a plane embedding.  A \textit{plane graph} is a 
-graph together with a plane embedding.
+
+To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$ ,of $G$.  
+For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$. 
+The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph, i.e.
+$$cr(G) = min\lr{}$$
+A drawing is said to be \textit{planar} if no two distinct edges.
+
+The crossing number $cr(G)$ of a graph is the lowest number of edge crossings of a drawing of the graph $G$.
+If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}.  
+Two planar drawings of a graph G are equivalent if they determine the same circular orderings of the neighbor sets.
+A \textit{planar embedding} is an equivalence class of planar drawings and is described by the circular order of the neighrs of each vertex.
+An equivalence class of a planar drawing $\phi$ is any combination of rigid transformations: rotation, translation, and reflection.  
+
+
+
+% A graph \textit{embedding} of $G = (V,E)$ is an injective mapping $\Pi: V \mapsto \bbR^2$.  
+% \begin{figure}[!htbp]
+% \begin{center}
+% \includegraphics[scale=.5]{graphics/PetersonGraphExample.pdf}
+% \caption{An embedding of the Peterson graph.}\label{fig:graph1-1}
+% \end{center} 
+% \end{figure} 
+% A graph embedding is said to
+
+
+% A \textit{graph} is an 
+% ordered pair $G = (V,E)$ comprising of a set of vertices, $V$, and a set of edges or 
+% lines, $E$.  Every edge $e \in E$, is an unordered pair of distinct vertices $u,v \in V$ (the edge represents their adjacency, $e = \{ u,v\}$). With this definition of a graph, there 
+% are 
+% no loops (self adjacent vertices, $\{v,v\}$) or multi-edges (several edges between the same pair of 
+% vertices).
+
+%   This requires an 
+% embedding into the plane or $\bbr^3$.  An \textit{embedding} of the 
+% graph $G = (V,E)$ is an injective mapping $\Pi : V \mapsto \bbR^{2}$ (see Figure 
+% \ref{fig:graph1-1}). 
+
+
+% \subsubsection{Edge Crossings}
+% We define \textit{plane embeddings} of a graph to be an embedding where the following degenerate 
+% configurations 
+% do not occur:
+% \begin{itemize}
+% \item[\rn{1}] the interiors of two or more edges intersect, or
+% \item[\rn{2}] an edge passes through a vertex
+% \end{itemize} 
+% \begin{figure}[H]
+% \begin{center}
+%   \begin{subfigure}[b]{0.49\textwidth}
+% 	  \includegraphics{graphics/crossingType2.pdf}
+% 	  \caption{The interior of the edges intersect.}
+% 	  \label{fig:ch1-linkages-1-2}
+%   \end{subfigure}
+%   \begin{subfigure}[b]{0.49\textwidth}
+% 	  \includegraphics{graphics/crossingType3.pdf}
+% 	  \caption{An edge passes through a vertex.}
+% 	  \label{fig:ch1-linkages-1-3}
+%   \end{subfigure}
+% \end{center} 
+% \caption{These figures exhibit the 4 types of edge crossings.}\label{fig:ch1-linkages-1}
+% \end{figure}
+% A graph is called \textit{planar} if it admits a plane embedding.  A \textit{plane graph} is a 
+% graph together with a plane embedding.
 \subsection{Trees}
 A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by 
 an edge.   
@@ -80,38 +136,6 @@ vertices.}\label{fig:ch1-graph-6}
 Embeddings of ordered trees are equivalent if for each node the counter-clockwise ordering of 
 adjacent nodes are the same.
 % \subsection{Graph Isomorphism} 
-To determine when two graphs are equivalent, we need to define an isomorphism for graphs.  Given 
-two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} a bijective 
-function $f: V_1 \mapsto 
-V_2$ 
-such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and 
-only 
-if $(f(u),f(v)) \in E_2$. 
-\begin{table}[!ht]
-\begin{center}
-$$\begin{array}{|c|c|c|}\hline
-\text{Graph}&\text{Vertices}&\text{Edges}\\\hline
-G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
-\\\hline
-G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
-\\\hline
-\end{array} $$
-\caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
-= 3$, $f(d)=4$, $f(e)=5$.}
-\end{center} 
-\label{table:ch1-graph-1}
-\end{table}
-
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
-\end{center} 
-\caption{This figure depicts the graph isomorphism shown in Table 
-(\ref{table:ch1-graph-1}) between 
-$V_1$ and $V_2$ in the plane.}
-\label{fig:configuration-3}
-\end{figure}
-
 
 % Next we add restrictions to our graph isomorphisms to narrow our focus:
 % \begin{itemize}
