@@ -8,7 +8,9 @@ Vertices that are adjacent to themselves are \textit{self-adjacent}, i.e. $u = v
 Edges are said to be \textit{incident} if they share a vertex.  
 When an edge is a member of $E$ multiple times, then we say that the graph is a \textit{multigraph}.   
 A \textit{simple graph} has no self-adjacent vertices. 
-Unless otherwise stated, this thesis will strictly work with simple graphs.
+If $G' = (V',E')$ such that $V' \subset V$ and $E' \subset E$, then $G'$ is a \textit{subgraph} of $G$.
+Unless otherwise stated, this thesis will 
+strictly work with simple graphs.
 
 For graph equivalency, we need to define an isomorphism for graphs.  Given 
 two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} a bijective 
@@ -45,15 +47,33 @@ $V_1$ and $V_2$ in the plane.}
 To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$ ,of $G$.  
 For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$. 
 The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph, i.e.
-$$cr(G) = min\lr{}$$
 A drawing is said to be \textit{planar} if no two distinct edges.
 
-The crossing number $cr(G)$ of a graph is the lowest number of edge crossings of a drawing of the graph $G$.
+
+A \textit{crossing} is when two edges intersect.  
+The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
+We can treat $cr()$ as a mapping from the space of drawings of $G$ to the non-negative integers, i.e. $cr: \left\lbrace \Gamma_G \right\rbrace \mapsto \bbZ^+ \cup \left\lbrace 0 \right\rbrace$.
+One can ask if for any graph $G$, does there exists a drawing in which the crossing number is zero?
+Without loss of generality, this is a type of crossing number minimization problem, i.e.
+$$ \min_{\gamma \in \left\lbrace \Gamma_G \right\rbrace} cr(\gamma)$$
+Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a finite graph is planar if and only if it does not contain a subgraph that is a subdivision of $K_5$ or $K_{3,3}$ \cite{kuratowski1930probleme}. 
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics{graphics/kuratowskiExamples.pdf}
+\caption{The $K_5$ and $K_{3,3}$ drawn in the plane.}\label{fig:kuratowskiExamples.pdf}
+\end{center} 
+\end{figure} 
 If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}.  
-Two planar drawings of a graph G are equivalent if they determine the same circular orderings of the neighbor sets.
+Two planar drawings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets.
 A \textit{planar embedding} is an equivalence class of planar drawings and is described by the circular order of the neighrs of each vertex.
 An equivalence class of a planar drawing $\phi$ is any combination of rigid transformations: rotation, translation, and reflection.  
 
+
+
+%Two planar drawings are equivalent if they determine the same circular orderings of the neighbor sets.
+%Every proper drawing can be augmented to an embedded plane graph 
+%by inserting new vertices at the edge crossings, and subdividing the edges that pass
+%through those vertices. So the equivalence of two drawings reduces to the equivalence of plane graphs.
 
 
 % A graph \textit{embedding} of $G = (V,E)$ is an injective mapping $\Pi: V \mapsto \bbR^2$.  
@@ -105,25 +125,28 @@ An equivalence class of a planar drawing $\phi$ is any combination of rigid tran
 % A graph is called \textit{planar} if it admits a plane embedding.  A \textit{plane graph} is a 
 % graph together with a plane embedding.
 \subsection{Trees}
-A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by 
-an edge.   
-A \textit{simple  cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of 
-distinct vertices such that every two consecutive vertices are connected by 
-an edge,  and the last vertex, $v_t$, connects to $v_1$.  A 
-graph is \textit{connected} if for any two vertices, there exists a path between 
-the two points.
-
-A \textit{tree} is a graph that has no simple cycles and is connected.
-\begin{figure}[h]
+Some graphs can be classified by which properties they may have or not have.
+A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by an edge.   
+\begin{figure}[!htbp]
 \begin{center}
-  \begin{subfigure}[b]{0.49\textwidth}
-    \includegraphics{graphics/PetersonGraphAgain.pdf}
-    \caption{An embedding of the Peterson graph with a simple cycle of 
-    (2,7,9,6,1,0,5,8,3).}\label{fig:ch1-graph-2}
-  \end{subfigure}
-  
+\includegraphics{graphics/PetersonGraphWithPath.pdf}
+\caption{An embedding of the Peterson graph with a simple cycle of 
+(2,7,9,6,1,0,5,8,3).}\label{fig:ch1-graph-2}
 \end{center}
 \end{figure}
+A \textit{tree} is a graph that has no simple cycles and is connected.
+A \textit{simple  cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$.  
+A graph is \textit{connected} if for any two vertices, there exists a path between the two points.
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics{graphics/RandomTree.pdf}
+\caption{An example of a tree.}\label{fig:ch1-graph-2}
+\end{center}
+\end{figure}
+
+
+
+
 % \subsection{Ordered Trees}
 An \textit{ordered tree} is a tree together with a cyclic order of the neighbors for each vertex.
 \begin{figure}[h]
