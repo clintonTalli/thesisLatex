@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20141016193841" modified="D:20141016193841"/>
+<ipe version="70107" creator="Ipe 7.1.7">
+<info created="D:20141016193841" modified="D:20151004141122"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -257,7 +257,7 @@ h
 268.138 704 m
 247.456 740.252 l
 </path>
-<path matrix="1 0 0 1 136.544 -36.252" stroke="black" pen="fat">
+<path matrix="0.5 0.866025 -0.866025 0.5 877.787 71.3825" stroke="black" pen="fat">
 247.456 740.252 m
 276.787 759.426 l
 288 759.426 l
@@ -272,7 +272,7 @@ h
 192 704 l
 256.379 704 l
 </path>
-<path matrix="1 0 0 1 232.544 19.174" stroke="black" pen="fat">
+<path matrix="0.5 0.866025 -0.866025 0.5 877.787 182.234" stroke="black" pen="fat">
 256.379 704 m
 288 648.574 l
 224 648.574 l
@@ -285,23 +285,30 @@ h
 256.379 704 l
 288 648.574 l
 </path>
-<path matrix="1 0 0 1 148.303 -36.252" stroke="black" pen="fat">
+<path matrix="0.5 0.866025 -0.866025 0.5 883.667 81.5661" stroke="black" pen="fat">
 288 648.574 m
 320 704 l
 256.379 704 l
 288 648.574 l
 </path>
-<path stroke="black" pen="fat">
+<path matrix="0.5 0.866025 -0.866025 0.5 778.12 -28.742" stroke="black" pen="fat">
 520.544 667.748 m
 436.303 612.322 l
 </path>
-<path matrix="1 0 0 1 -52.303 91.678" stroke="black" pen="fat">
+<path matrix="0.5 0.866025 -0.866025 0.5 672.573 -28.1988" stroke="black" pen="fat">
 520.544 667.748 m
 436.303 612.322 l
 </path>
-<path stroke="black" pen="fat">
+<path matrix="0.5 0.866025 -0.866025 0.5 778.12 -28.742" stroke="black" pen="fat">
 468.241 759.426 m
 488.923 723.174 l
+</path>
+<path stroke="black">
+176 768 m
+176 640 l
+480 640 l
+480 768 l
+h
 </path>
 </page>
 </ipe>

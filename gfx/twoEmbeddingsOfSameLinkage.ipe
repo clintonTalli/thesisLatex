@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140502183118" modified="D:20140502184011"/>
+<ipe version="70107" creator="Ipe 7.1.7">
+<info created="D:20140502183118" modified="D:20151004125109"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -232,7 +232,7 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" stroke="black">
+<path layer="alpha" matrix="0.71261 0 0 0.71261 156.34 137.947" stroke="black">
 128 640 m
 160 704 l
 192 640 l
@@ -244,7 +244,7 @@ h
 128 640 l
 128 640 l
 </path>
-<path stroke="black">
+<path matrix="0.71261 0 0 0.71261 156.34 137.947" stroke="black">
 320 608 m
 384 640 l
 416 704 l
@@ -256,46 +256,46 @@ h
 320 608 l
 320 608 l
 </path>
-<path stroke="black">
+<path matrix="0.71261 0 0 0.71261 156.34 137.947" stroke="black">
 32 736 m
 32 480 l
 544 480 l
 544 736 l
 h
 </path>
-<text matrix="1 0 0 1 -6.16819 -0.685355" transformations="translations" pos="160 496" stroke="black" type="label" width="12.73" height="7.473" depth="2.49" valign="baseline">(a)</text>
-<text matrix="1 0 0 1 -6.16819 -0.685355" transformations="translations" pos="416 496" stroke="black" type="label" width="13.284" height="7.473" depth="2.49" valign="baseline">(b)</text>
-<use name="mark/disk(sx)" pos="160 704" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="256 608" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="160 512" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="64 608" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="128 640" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="192 640" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="192 576" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="128 576" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="320 608" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="384 576" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="416 640" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="448 576" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="512 608" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="448 640" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="416 704" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="384 640" size="normal" stroke="black"/>
-<text transformations="translations" pos="160 720" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">1</text>
-<text transformations="translations" pos="192 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">2</text>
-<text transformations="translations" pos="272 608" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">3</text>
-<text transformations="translations" pos="192 560" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">4</text>
-<text transformations="translations" pos="160 528" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">5</text>
-<text transformations="translations" pos="128 560" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">6</text>
-<text transformations="translations" pos="64 608" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">7</text>
-<text transformations="translations" pos="128 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">8</text>
-<text transformations="translations" pos="416 720" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">1</text>
-<text transformations="translations" pos="448 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">2</text>
-<text transformations="translations" pos="528 608" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">3</text>
-<text transformations="translations" pos="448 560" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">4</text>
-<text transformations="translations" pos="416 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">5</text>
-<text transformations="translations" pos="384 560" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">6</text>
-<text transformations="translations" pos="304 608" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">7</text>
-<text transformations="translations" pos="384 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">8</text>
+<text matrix="0.71261 0 0 0.71261 151.945 137.459" transformations="translations" pos="160 496" stroke="black" type="label" width="12.73" height="7.473" depth="2.49" valign="baseline">(a)</text>
+<text matrix="0.71261 0 0 0.71261 151.945 137.459" transformations="translations" pos="416 496" stroke="black" type="label" width="13.284" height="7.473" depth="2.49" valign="baseline">(b)</text>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="160 704" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="256 608" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="160 512" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="64 608" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="128 640" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="192 640" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="192 576" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="128 576" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="320 608" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="384 576" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="416 640" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="448 576" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="512 608" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="448 640" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="416 704" size="normal" stroke="black"/>
+<use matrix="0.71261 0 0 0.71261 156.34 137.947" name="mark/disk(sx)" pos="384 640" size="normal" stroke="black"/>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="160 720" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">1</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="192 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">2</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="272 608" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">3</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="192 560" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">4</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="160 528" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">5</text>
+<text matrix="0.71261 0 0 0.71261 148.74 137.702" transformations="translations" pos="128 560" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">6</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="64 608" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">7</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="128 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">8</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="416 720" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">1</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="448 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">2</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="528 608" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">3</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="448 560" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">4</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="416 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">5</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="384 560" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">6</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="304 608" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">7</text>
+<text matrix="0.71261 0 0 0.71261 156.34 137.947" transformations="translations" pos="384 656" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">8</text>
 </page>
 </ipe>
