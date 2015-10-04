@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140426180929" modified="D:20141016192212"/>
+<ipe version="70107" creator="Ipe 7.1.7">
+<info created="D:20140426180929" modified="D:20151003143110"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -264,11 +264,18 @@ h
 <use name="mark/disk(sx)" pos="393.889 510.434" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="416 480" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="393.889 449.566" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -0 -0" name="mark/disk(sx)" pos="358.111 461.191" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="358.111 461.191" size="normal" stroke="black"/>
 <text matrix="1 0 0 1 -2.76106 -4.0965" transformations="translations" pos="353.027 455.719" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">1</text>
 <text transformations="translations" pos="346.655 500.325" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">2</text>
 <text transformations="translations" pos="395.813 519.442" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">3</text>
 <text transformations="translations" pos="422.667 478.932" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">4</text>
 <text transformations="translations" pos="395.358 442.064" stroke="black" type="label" width="4.981" height="6.42" depth="0" valign="baseline">5</text>
+<path stroke="black">
+128 544 m
+128 416 l
+448 416 l
+448 544 l
+h
+</path>
 </page>
 </ipe>
