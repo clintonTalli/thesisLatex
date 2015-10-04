@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{abbott2012hinged}
+Timothy~G Abbott, Zachary Abel, David Charlton, Erik~D Demaine, Martin~L
+  Demaine, and Scott~Duke Kominers.
+\newblock {Hinged dissections exist}.
+\newblock {\em Discrete \& Computational Geometry}, 47(1):150--186, 2012.
+
 \bibitem{BC87}
 S.~N. Bhatt and S.~S. Cosmadakis.
 \newblock {The complexity of minimizing wire lengths in VLSI layouts}.

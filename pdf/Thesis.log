@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 OCT 2015 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  4 OCT 2015 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -945,40 +945,38 @@ t line 4.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<graphics/GeometricDissectionBusschop.pdf, id=95, 305.54149pt x 128.8815pt>
+[5 <./graphics/twoEmbeddingsOfSameLinkage.pdf>]
+<graphics/GeometricDissectionBusschop.pdf, id=104, 305.54149pt x 128.8815pt>
 File: graphics/GeometricDissectionBusschop.pdf Graphic file (type pdf)
 
 <use graphics/GeometricDissectionBusschop.pdf>
 Package pdftex.def Info: graphics/GeometricDissectionBusschop.pdf used on input
- line 24.
+ line 33.
 (pdftex.def)             Requested size: 305.54074pt x 128.88118pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphics/HaberdasherProblem.pdf, id=96, 290.47621pt x 144.5902pt>
+<graphics/HaberdasherProblem.pdf, id=105, 290.47621pt x 144.5902pt>
 File: graphics/HaberdasherProblem.pdf Graphic file (type pdf)
 
 <use graphics/HaberdasherProblem.pdf>
-Package pdftex.def Info: graphics/HaberdasherProblem.pdf used on input line 36.
+Package pdftex.def Info: graphics/HaberdasherProblem.pdf used on input line 45.
 
 (pdftex.def)             Requested size: 290.4755pt x 144.58983pt.
- [5 <./graphics/twoEmbeddingsOfSameLinkage.pdf>]) (./ch1/diskarrangements.tex [
-6 <./graphics/hingeOnThreeDistinctPolygons.pdf> <./graphics/GeometricDissection
-Busschop.pdf> <./graphics/HaberdasherProblem.pdf>]
+) (./ch1/diskarrangements.tex [6 <./graphics/hingeOnThreeDistinctPolygons.pdf> 
+<./graphics/GeometricDissectionBusschop.pdf>]
 
 LaTeX Warning: Reference `stephenson2005introduction' on page 7 undefined on in
 put line 17.
 
-<graphics/diskPackingTheoremExample.pdf, id=124, 284.38043pt x 101.58252pt>
+<graphics/diskPackingTheoremExample.pdf, id=117, 284.38043pt x 101.58252pt>
 File: graphics/diskPackingTheoremExample.pdf Graphic file (type pdf)
 
 <use graphics/diskPackingTheoremExample.pdf>
 Package pdftex.def Info: graphics/diskPackingTheoremExample.pdf used on input l
 ine 34.
 (pdftex.def)             Requested size: 284.37973pt x 101.58226pt.
-
-<graphics/degree2arrangement.pdf, id=125, 97.76526pt x 33.52626pt>
+ [7 <./graphics/HaberdasherProblem.pdf> <./graphics/diskPackingTheoremExample.p
+df>]
+<graphics/degree2arrangement.pdf, id=133, 97.76526pt x 33.52626pt>
 File: graphics/degree2arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree2arrangement.pdf>
@@ -986,7 +984,7 @@ Package pdftex.def Info: graphics/degree2arrangement.pdf used on input line 77.
 
 (pdftex.def)             Requested size: 104.07117pt x 35.69112pt.
 
-<graphics/degree3arrangement.pdf, id=126, 97.76526pt x 97.76526pt>
+<graphics/degree3arrangement.pdf, id=134, 97.76526pt x 97.76526pt>
 File: graphics/degree3arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree3arrangement.pdf>
@@ -994,7 +992,7 @@ Package pdftex.def Info: graphics/degree3arrangement.pdf used on input line 82.
 
 (pdftex.def)             Requested size: 104.07117pt x 104.07819pt.
 
-<graphics/degree4arrangement.pdf, id=127, 162.00525pt x 162.00525pt>
+<graphics/degree4arrangement.pdf, id=135, 162.00525pt x 162.00525pt>
 File: graphics/degree4arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree4arrangement.pdf>
@@ -1002,15 +1000,14 @@ Package pdftex.def Info: graphics/degree4arrangement.pdf used on input line 87.
 
 (pdftex.def)             Requested size: 104.07117pt x 104.07356pt.
 
-<graphics/degree5arrangement.pdf, id=128, 226.24524pt x 226.24524pt>
+<graphics/degree5arrangement.pdf, id=136, 226.24524pt x 226.24524pt>
 File: graphics/degree5arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree5arrangement.pdf>
 Package pdftex.def Info: graphics/degree5arrangement.pdf used on input line 92.
 
 (pdftex.def)             Requested size: 104.07117pt x 104.0706pt.
-) (./ch1/configurationspaces.tex [7 <./graphics/diskPackingTheoremExample.pdf>]
-
+) (./ch1/configurationspaces.tex
 
 Package caption Warning: \label without proper \caption on input line 24.
 See the caption package documentation for explanation.
@@ -1024,41 +1021,39 @@ Overfull \hbox (19.65956pt too wide) in paragraph at lines 12--25
 [][][] 
  []
 
-<graphics/DiskPackingReconfiguration.pdf, id=137, 194.17012pt x 129.9254pt>
+[8 <./graphics/degree2arrangement.pdf> <./graphics/degree3arrangement.pdf> <./g
+raphics/degree4arrangement.pdf> <./graphics/degree5arrangement.pdf>]
+<graphics/DiskPackingReconfiguration.pdf, id=160, 194.17012pt x 129.9254pt>
 File: graphics/DiskPackingReconfiguration.pdf Graphic file (type pdf)
 
 <use graphics/DiskPackingReconfiguration.pdf>
 Package pdftex.def Info: graphics/DiskPackingReconfiguration.pdf used on input 
 line 48.
 (pdftex.def)             Requested size: 145.62721pt x 97.4438pt.
+) (./ch1/complexity.tex [9 <./graphics/DiskPackingReconfiguration.pdf>] [10]) (
+./ch1/satisfiability.tex)
+(./ch1/problemdefinition.tex
+
+LaTeX Warning: Reference `sec:logic' on page 11 undefined on input line 39.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./ch1/complexity.tex [8 <./graphics/degree2arrangement.pdf> <./graphics/degr
-ee3arrangement.pdf> <./graphics/degree4arrangement.pdf> <./graphics/degree5arra
-ngement.pdf>] [9 <./graphics/DiskPackingReconfiguration.pdf>])
-(./ch1/satisfiability.tex [10]) (./ch1/problemdefinition.tex
-
-LaTeX Warning: Reference `sec:logic' on page 11 undefined on input line 53.
+LaTeX Warning: Reference `sec:hinge' on page 11 undefined on input line 41.
 
 
-LaTeX Warning: Reference `sec:hinge' on page 11 undefined on input line 55.
-
-
-LaTeX Warning: Reference `sec:disk' on page 11 undefined on input line 57.
+LaTeX Warning: Reference `sec:disk' on page 11 undefined on input line 43.
 
 ) (./ch1/result.tex)) (./ch2/chapter2.tex (./ch2/LogicEngineV3.tex [11]
+[12]
 Chapter 2.
 
-<graphics/LogicEngineFrameFigure1Scaled.pdf, id=175, 233.38191pt x 282.96716pt>
+<graphics/LogicEngineFrameFigure1Scaled.pdf, id=178, 233.38191pt x 282.96716pt>
 File: graphics/LogicEngineFrameFigure1Scaled.pdf Graphic file (type pdf)
 <use graphics/LogicEngineFrameFigure1Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure1Scaled.pdf used on inp
 ut line 8.
 (pdftex.def)             Requested size: 233.38133pt x 282.96648pt.
 
-<graphics/LogicEngineFrameFigure1halfScaled.pdf, id=176, 207.97699pt x 242.3052
+<graphics/LogicEngineFrameFigure1halfScaled.pdf, id=179, 207.97699pt x 242.3052
 4pt>
 File: graphics/LogicEngineFrameFigure1halfScaled.pdf Graphic file (type pdf)
  <use graphics/LogicEngineFrameFigure1halfScaled.pdf>
@@ -1069,18 +1064,18 @@ Package pdftex.def Info: graphics/LogicEngineFrameFigure1halfScaled.pdf used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12
+[13
 
  <./graphics/LogicEngineFrameFigure1Scaled.pdf>]
-<graphics/LogicEngineFrameFigure2Scaled.pdf, id=185, 252.44313pt x 142.49236pt>
+<graphics/LogicEngineFrameFigure2Scaled.pdf, id=188, 252.44313pt x 142.49236pt>
 File: graphics/LogicEngineFrameFigure2Scaled.pdf Graphic file (type pdf)
 <use graphics/LogicEngineFrameFigure2Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure2Scaled.pdf used on inp
 ut line 37.
 (pdftex.def)             Requested size: 252.4425pt x 142.492pt.
- [13 <./graphics/LogicEngineFrameFigure1halfScaled.pdf> <./graphics/LogicEngine
+ [14 <./graphics/LogicEngineFrameFigure1halfScaled.pdf> <./graphics/LogicEngine
 FrameFigure2Scaled.pdf>]
-<graphics/logicEngineCollisions.pdf, id=203, 323.27173pt x 257.62349pt>
+<graphics/logicEngineCollisions.pdf, id=206, 323.27173pt x 257.62349pt>
 File: graphics/logicEngineCollisions.pdf Graphic file (type pdf)
 
 <use graphics/logicEngineCollisions.pdf>
@@ -1088,15 +1083,15 @@ Package pdftex.def Info: graphics/logicEngineCollisions.pdf used on input line
 73.
 (pdftex.def)             Requested size: 323.27094pt x 257.62285pt.
 
-<graphics/logicEngineValidConfigurations.pdf, id=204, 308.6983pt x 97.74919pt>
+<graphics/logicEngineValidConfigurations.pdf, id=207, 308.6983pt x 97.74919pt>
 File: graphics/logicEngineValidConfigurations.pdf Graphic file (type pdf)
 
 <use graphics/logicEngineValidConfigurations.pdf>
 Package pdftex.def Info: graphics/logicEngineValidConfigurations.pdf used on in
 put line 82.
 (pdftex.def)             Requested size: 308.69754pt x 97.74895pt.
- [14 <./graphics/logicEngineCollisions.pdf>]
-<graphics/LogicEngineFrameFigure5Scaled.pdf, id=222, 2967.46141pt x 3038.79994p
+ [15 <./graphics/logicEngineCollisions.pdf>]
+<graphics/LogicEngineFrameFigure5Scaled.pdf, id=226, 2967.46141pt x 3038.79994p
 t>
 File: graphics/LogicEngineFrameFigure5Scaled.pdf Graphic file (type pdf)
  <use graphics/LogicEngineFrameFigure5Scaled.pdf>
@@ -1109,27 +1104,27 @@ Overfull \hbox (2533.8342pt too wide) in paragraph at lines 119--120
  []
 
 
-LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 15 undefined
+LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 16 undefined
  on input line 120.
 
 
-LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 15 undefined
+LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 16 undefined
  on input line 120.
 
 
 LaTeX Warning: Float too large for page by 2421.36258pt on input line 122.
 
-[15 <./graphics/logicEngineValidConfigurations.pdf>]
+[16 <./graphics/logicEngineValidConfigurations.pdf>]
 
 Package caption Warning: \label without proper \caption on input line 50.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 16 undefined on
+LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 17 undefined on
  input line 159.
 
-) (./ch2/HingedPolygonsV3.tex [16] [17 <./graphics/LogicEngineFrameFigure5Scale
-d.pdf>] <graphics/HingedLogicEngineSmall.pdf, id=247, 296.04602pt x 193.789pt>
+) (./ch2/HingedPolygonsV3.tex [17] [18 <./graphics/LogicEngineFrameFigure5Scale
+d.pdf>] <graphics/HingedLogicEngineSmall.pdf, id=250, 296.04602pt x 193.789pt>
 File: graphics/HingedLogicEngineSmall.pdf Graphic file (type pdf)
 
 <use graphics/HingedLogicEngineSmall.pdf>
@@ -1142,13 +1137,13 @@ Package caption Warning: \label without proper \caption on input line 14.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `TBL:HingedPolygonsV3-1' on page 18 undefined on input
+LaTeX Warning: Reference `TBL:HingedPolygonsV3-1' on page 19 undefined on input
  line 26.
 
-[18
+[19
 
  <./graphics/HingedLogicEngineSmall.pdf>]
-<graphics/HingedLogicEngineSmallEnumerated.pdf, id=254, 428.06926pt x 207.1198p
+<graphics/HingedLogicEngineSmallEnumerated.pdf, id=257, 428.06926pt x 207.1198p
 t>
 File: graphics/HingedLogicEngineSmallEnumerated.pdf Graphic file (type pdf)
  <use graphics/HingedLogicEngineSmallEnumerated.pdf>
@@ -1156,8 +1151,8 @@ Package pdftex.def Info: graphics/HingedLogicEngineSmallEnumerated.pdf used on
 input line 37.
 (pdftex.def)             Requested size: 428.06822pt x 207.11928pt.
 ) (./ch2/Hausdorff.tex
-[19 <./graphics/HingedLogicEngineSmallEnumerated.pdf>]
-<graphics/HausdorffDistanceExample1.pdf, id=269, 291.58937pt x 208.65755pt>
+[20 <./graphics/HingedLogicEngineSmallEnumerated.pdf>]
+<graphics/HausdorffDistanceExample1.pdf, id=272, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
@@ -1172,10 +1167,10 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
- [20 <./graphics/HausdorffDistanceExample1.pdf>] [21])) (../pdf/Thesis.bbl [22]
+ [21 <./graphics/HausdorffDistanceExample1.pdf>] [22])) (../pdf/Thesis.bbl [23]
 )
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[23
+[24
 
 ] (../pdf/Thesis.aux)
 
@@ -1186,10 +1181,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17617 strings out of 493117
- 323278 string characters out of 6135433
+ 17618 strings out of 493117
+ 323296 string characters out of 6135433
  497310 words of memory out of 5000000
- 20587 multiletter control sequences out of 15000+600000
+ 20588 multiletter control sequences out of 15000+600000
  45057 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1199b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1210,10 +1205,10 @@ st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (27 pages, 282032 bytes).
+Output written on ../pdf/Thesis.pdf (28 pages, 283980 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
+ 336 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

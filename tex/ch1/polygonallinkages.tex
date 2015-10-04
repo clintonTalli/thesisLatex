@@ -14,10 +14,19 @@ Formally, a \textit{polygonal linkage} is an ordered pair $\left(\PP,\HH
 corresponds to two points on the boundary of two distinct polygons in $\PP$.  A \emph{realization 
 of a polygonal linkage} is an interior-disjoint placement of 
 congruent copies of the polygons in $\PP$ such that the points corresponding to each hinge are 
-identified (Fig. \ref{fig:linkage-1}). 
+identified (e.g., Figure \ref{fig:linkage-1}).  A \textit{polygonal linkage realization with orientation} allows for any combination of translations and rotated copies of polygons in $\PP$ where every hinge has a cyclic order of  of incident polygons.  Note that oriented polygonal realizations do not allow for reflection transformations.  
 
+These two types of realization types allow one to pose two different types of problems:
+\begin{prob}[Unordered Realizibility Problem for Polygonal Linkages]\label{problem:UnorderedPolygonal}
+The \emph{realizability} problem for a polygonal linkage asks whether a given polygonal linkage has 
+a realization.
+\end{prob}
+\begin{prob}[Ordered Realizibility Problem for Polygonal Linkages]label{problem:OrderedPolygonal}
+The \emph{realizability} problem for a ordered polygonal linkage asks whether a given polygonal 
+linkage has a realization with respect to order.
+\end{prob}
 \subsection{Geometric Dissections}
-The Wallace-Bolyai-Gerwien Theorem simply states that two polygons are congruent by dissection iff they have the same area.  A \textit{dissection} being a collection of smaller polygons that when hinged together form a polygon.
+The Wallace-Bolyai-Gerwien Theorem simply states that two polygons are congruent by dissection iff they have the same area.  A \textit{dissection} being a collection of smaller polygons that when hinged together form a polygon.  Here dissections don't have to be hinged.  Hinged dissections preserve adjacent polygon relationships and their points of connection.  The question of whether two polygons of equal area have a hinged dissection was an outstanding problem until 2007 \cite{abbott2012hinged}.
 
 \begin{figure}[h]
 \begin{center}
@@ -39,7 +48,6 @@ The Haberdasher problem was proposed in 1902 by Henry Dudeny which dissects an e
  }
 \label{fig:polygonallinkage-5}
 \end{figure}
-
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
