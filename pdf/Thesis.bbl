@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{BET+99}
-G.~Di Battista, P.~Eades, R.~Tamassia, and I.~G. Tollis.
-\newblock {\em {Graph Drawing: Algorithms for the Visualization of Graphs}}.
-\newblock Prentice Hall, 1999.
-
 \bibitem{BC87}
 S.~N. Bhatt and S.~S. Cosmadakis.
 \newblock {The complexity of minimizing wire lengths in VLSI layouts}.
@@ -40,6 +35,11 @@ Michael~R Garey and David~S Johnson.
 J.~Kleinberg and E.~Tardos.
 \newblock {\em {Algorithm Design}}.
 \newblock Pearson Education, 2006.
+
+\bibitem{kuratowski1930probleme}
+Casimir Kuratowski.
+\newblock Sur le probleme des courbes gauches en topologie.
+\newblock {\em Fundamenta mathematicae}, 1(15):271--283, 1930.
 
 \bibitem{skiena2009algorithm}
 S.S. Skiena.
