@@ -19,7 +19,7 @@ V_2$
 such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and 
 only 
 if $(f(u),f(v)) \in E_2$. 
-\begin{table}[!ht]
+\begin{table}[!ht]\label{table:ch1-graph-1})
 \begin{center}
 $$\begin{array}{|c|c|c|}\hline
 \text{Graph}&\text{Vertices}&\text{Edges}\\\hline
@@ -67,6 +67,8 @@ If no two distinct edges intersect in the drawing, the drawing is said to be \te
 Two planar drawings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets.
 A \textit{planar embedding} is an equivalence class of planar drawings and is described by the circular order of the neighrs of each vertex.
 An equivalence class of a planar drawing $\phi$ is any combination of rigid transformations: rotation, translation, and reflection.  
+
+
 
 
 
@@ -124,6 +126,7 @@ An equivalence class of a planar drawing $\phi$ is any combination of rigid tran
 % \end{figure}
 % A graph is called \textit{planar} if it admits a plane embedding.  A \textit{plane graph} is a 
 % graph together with a plane embedding.
+\newpage
 \subsection{Trees}
 Some graphs can be classified by which properties they may have or not have.
 A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by an edge.   
@@ -134,22 +137,21 @@ A \textit{path} is a sequence of vertices in which every two consecutive vertice
 (2,7,9,6,1,0,5,8,3).}\label{fig:ch1-graph-2}
 \end{center}
 \end{figure}
-A \textit{tree} is a graph that has no simple cycles and is connected.
-A \textit{simple  cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$.  
+A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$.  
 A graph is \textit{connected} if for any two vertices, there exists a path between the two points.
+A \textit{tree} is a graph that has no simple cycles and is connected.
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/RandomTree.pdf}
 \caption{An example of a tree.}\label{fig:ch1-graph-2}
 \end{center}
 \end{figure}
-
-
+A tree 
 
 
 % \subsection{Ordered Trees}
-An \textit{ordered tree} is a tree together with a cyclic order of the neighbors for each vertex.
-\begin{figure}[h]
+An \textit{ordered tree} is a tree $T$ together with a cyclic order of the neighbors for each vertex, $O$.
+\begin{figure}[!htbp]
 \begin{center}
     \includegraphics{graphics/OrderedTreesExample.pdf}
     \caption{A tree with two embeddings with different cyclic orderings around 
@@ -158,6 +160,9 @@ vertices.}\label{fig:ch1-graph-6}
 \end{figure}
 Embeddings of ordered trees are equivalent if for each node the counter-clockwise ordering of 
 adjacent nodes are the same.
+
+For embeddings of ordered trees, an equivalence class for an embedding $\phi$ is any combination of rotations and translations. 
+Unlike embeddings for planar graphs where ordering of adjacent vertices is not a distinguishing condition,  we do not consider reflection based transformations for embeddings of ordered trees for equivaliency as that can modify the ordering of adjacent vertices.
 % \subsection{Graph Isomorphism} 
 
 % Next we add restrictions to our graph isomorphisms to narrow our focus:
