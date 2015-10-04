@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  3 OCT 2015 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  3 OCT 2015 20:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,13 +685,13 @@ LaTeX Warning: Label `table:ch1-graph-1' multiply defined.
 LaTeX Warning: Label `fig:ch1-graph-2' multiply defined.
 
 
+LaTeX Warning: Label `fig:configuration-3' multiply defined.
+
+
 LaTeX Warning: Label `fig:circlePacking1-3' multiply defined.
 
 
 LaTeX Warning: Label `sub@fig:circlePacking1-3' multiply defined.
-
-
-LaTeX Warning: Label `fig:configuration-3' multiply defined.
 
 )
 \openout1 = `Thesis.aux'.
@@ -910,10 +910,10 @@ File: graphics/OrderedTreesExample.pdf Graphic file (type pdf)
 
 <use graphics/OrderedTreesExample.pdf>
 Package pdftex.def Info: graphics/OrderedTreesExample.pdf used on input line 15
-6.
+5.
 (pdftex.def)             Requested size: 436.43947pt x 155.12415pt.
 
-Overfull \hbox (2.81947pt too wide) in paragraph at lines 156--158
+Overfull \hbox (2.81947pt too wide) in paragraph at lines 155--157
  [] 
  []
 
@@ -925,47 +925,60 @@ File: graphics/HumanTurkeyLinkage.pdf Graphic file (type pdf)
 <use graphics/HumanTurkeyLinkage.pdf>
 Package pdftex.def Info: graphics/HumanTurkeyLinkage.pdf used on input line 4.
 (pdftex.def)             Requested size: 338.40646pt x 206.59132pt.
- [4 <./graphics/OrderedTreesExample.pdf> <./graphics/HumanTurkeyLinkage.pdf>]) 
-(./ch1/polygonallinkages.tex
-<graphics/hingeOnThreeDistinctPolygons.pdf, id=93, 297.0608pt x 129.93243pt>
+ [4 <./graphics/OrderedTreesExample.pdf> <./graphics/HumanTurkeyLinkage.pdf>]
+<graphics/twoEmbeddingsOfSameLinkage.pdf, id=93, 295.8513pt x 136.12357pt>
+File: graphics/twoEmbeddingsOfSameLinkage.pdf Graphic file (type pdf)
+
+<use graphics/twoEmbeddingsOfSameLinkage.pdf>
+Package pdftex.def Info: graphics/twoEmbeddingsOfSameLinkage.pdf used on input 
+line 40.
+(pdftex.def)             Requested size: 295.85057pt x 136.12321pt.
+
+<graphics/LockedConnellyLinkage.pdf, id=94, 535.49683pt x 233.31265pt>
+File: graphics/LockedConnellyLinkage.pdf Graphic file (type pdf)
+
+<use graphics/LockedConnellyLinkage.pdf>
+Package pdftex.def Info: graphics/LockedConnellyLinkage.pdf used on input line 
+63.
+(pdftex.def)             Requested size: 401.62163pt x 174.98405pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./graphics/twoEmbeddingsOfSameLinkage.pdf>]) (./ch1/polygonallinkages.tex
+<graphics/hingeOnThreeDistinctPolygons.pdf, id=103, 297.0608pt x 129.93243pt>
 File: graphics/hingeOnThreeDistinctPolygons.pdf Graphic file (type pdf)
 
 <use graphics/hingeOnThreeDistinctPolygons.pdf>
 Package pdftex.def Info: graphics/hingeOnThreeDistinctPolygons.pdf used on inpu
-t line 4.
+t line 5.
 (pdftex.def)             Requested size: 297.06007pt x 129.9321pt.
 
 
-LaTeX Warning: Reference `fig:1' on page 5 undefined on input line 19.
+LaTeX Warning: Reference `fig:1' on page 6 undefined on input line 20.
 
-<graphics/GeometricDissectionBusschop.pdf, id=94, 330.98053pt x 148.86014pt>
+<graphics/GeometricDissectionBusschop.pdf, id=104, 330.98053pt x 148.86014pt>
 File: graphics/GeometricDissectionBusschop.pdf Graphic file (type pdf)
 
 <use graphics/GeometricDissectionBusschop.pdf>
 Package pdftex.def Info: graphics/GeometricDissectionBusschop.pdf used on input
- line 24.
+ line 28.
 (pdftex.def)             Requested size: 330.9797pt x 148.85977pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphics/linkageillustration.pdf, id=95, 193.12149pt x 110.57813pt>
+ [6 <./graphics/LockedConnellyLinkage.pdf> <./graphics/hingeOnThreeDistinctPoly
+gons.pdf>]
+<graphics/linkageillustration.pdf, id=118, 193.12149pt x 110.57813pt>
 File: graphics/linkageillustration.pdf Graphic file (type pdf)
 
 <use graphics/linkageillustration.pdf>
-Package pdftex.def Info: graphics/linkageillustration.pdf used on input line 34
+Package pdftex.def Info: graphics/linkageillustration.pdf used on input line 38
 .
 (pdftex.def)             Requested size: 193.12102pt x 110.57785pt.
+) (./ch1/diskarrangements.tex
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./ch1/diskarrangements.tex [5 <./graphics/hingeOnThreeDistinctPolygons.pdf>]
-
-LaTeX Warning: Reference `stephenson2005introduction' on page 6 undefined on in
+LaTeX Warning: Reference `stephenson2005introduction' on page 7 undefined on in
 put line 17.
 
-<graphics/diskPackingTheoremExample.pdf, id=106, 284.38043pt x 101.58252pt>
+<graphics/diskPackingTheoremExample.pdf, id=119, 284.38043pt x 101.58252pt>
 File: graphics/diskPackingTheoremExample.pdf Graphic file (type pdf)
 
 <use graphics/diskPackingTheoremExample.pdf>
@@ -976,8 +989,8 @@ ine 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./graphics/GeometricDissectionBusschop.pdf> <./graphics/linkageillustration
-.pdf>] <graphics/degree2arrangement.pdf, id=118, 97.76526pt x 33.52626pt>
+[7 <./graphics/GeometricDissectionBusschop.pdf> <./graphics/linkageillustration
+.pdf>] <graphics/degree2arrangement.pdf, id=131, 97.76526pt x 33.52626pt>
 File: graphics/degree2arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree2arrangement.pdf>
@@ -985,7 +998,7 @@ Package pdftex.def Info: graphics/degree2arrangement.pdf used on input line 77.
 
 (pdftex.def)             Requested size: 104.07117pt x 35.69112pt.
 
-<graphics/degree3arrangement.pdf, id=119, 97.76526pt x 97.76526pt>
+<graphics/degree3arrangement.pdf, id=132, 97.76526pt x 97.76526pt>
 File: graphics/degree3arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree3arrangement.pdf>
@@ -993,7 +1006,7 @@ Package pdftex.def Info: graphics/degree3arrangement.pdf used on input line 82.
 
 (pdftex.def)             Requested size: 104.07117pt x 104.07819pt.
 
-<graphics/degree4arrangement.pdf, id=120, 162.00525pt x 162.00525pt>
+<graphics/degree4arrangement.pdf, id=133, 162.00525pt x 162.00525pt>
 File: graphics/degree4arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree4arrangement.pdf>
@@ -1001,59 +1014,39 @@ Package pdftex.def Info: graphics/degree4arrangement.pdf used on input line 87.
 
 (pdftex.def)             Requested size: 104.07117pt x 104.07356pt.
 
-<graphics/degree5arrangement.pdf, id=121, 226.24524pt x 226.24524pt>
+<graphics/degree5arrangement.pdf, id=134, 226.24524pt x 226.24524pt>
 File: graphics/degree5arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree5arrangement.pdf>
 Package pdftex.def Info: graphics/degree5arrangement.pdf used on input line 92.
 
 (pdftex.def)             Requested size: 104.07117pt x 104.0706pt.
-) (./ch1/configurationspaces.tex
+) (./ch1/configurationspaces.tex [8 <./graphics/diskPackingTheoremExample.pdf> 
+<./graphics/degree2arrangement.pdf> <./graphics/degree3arrangement.pdf> <./grap
+hics/degree4arrangement.pdf> <./graphics/degree5arrangement.pdf>]
 
 Package caption Warning: \label without proper \caption on input line 24.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table:configurationSpace-1' on page 7 undefined on in
+LaTeX Warning: Reference `table:configurationSpace-1' on page 9 undefined on in
 put line 8.
 
-[7 <./graphics/diskPackingTheoremExample.pdf> <./graphics/degree2arrangement.pd
-f> <./graphics/degree3arrangement.pdf> <./graphics/degree4arrangement.pdf> <./g
-raphics/degree5arrangement.pdf>]
+
 Overfull \hbox (19.65956pt too wide) in paragraph at lines 12--25
 [][][] 
  []
 
-<graphics/twoEmbeddingsOfSameLinkage.pdf, id=150, 295.8513pt x 136.12357pt>
-File: graphics/twoEmbeddingsOfSameLinkage.pdf Graphic file (type pdf)
-
-<use graphics/twoEmbeddingsOfSameLinkage.pdf>
-Package pdftex.def Info: graphics/twoEmbeddingsOfSameLinkage.pdf used on input 
-line 43.
-(pdftex.def)             Requested size: 295.85057pt x 136.12321pt.
-
-<graphics/LockedConnellyLinkage.pdf, id=151, 535.49683pt x 233.31265pt>
-File: graphics/LockedConnellyLinkage.pdf Graphic file (type pdf)
-
-<use graphics/LockedConnellyLinkage.pdf>
-Package pdftex.def Info: graphics/LockedConnellyLinkage.pdf used on input line 
-66.
-(pdftex.def)             Requested size: 401.62163pt x 174.98405pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8 <./graphics/twoEmbeddingsOfSameLinkage.pdf>]
-<graphics/DiskPackingReconfiguration.pdf, id=160, 194.17012pt x 129.9254pt>
+<graphics/DiskPackingReconfiguration.pdf, id=163, 194.17012pt x 129.9254pt>
 File: graphics/DiskPackingReconfiguration.pdf Graphic file (type pdf)
 
 <use graphics/DiskPackingReconfiguration.pdf>
 Package pdftex.def Info: graphics/DiskPackingReconfiguration.pdf used on input 
-line 90.
+line 48.
 (pdftex.def)             Requested size: 145.62721pt x 97.4438pt.
-) (./ch1/complexity.tex [9 <./graphics/LockedConnellyLinkage.pdf> <./graphics/D
-iskPackingReconfiguration.pdf>]
-[10]) (./ch1/satisfiability.tex) (./ch1/problemdefinition.tex [11]
+) (./ch1/complexity.tex [9 <./graphics/DiskPackingReconfiguration.pdf>] [10]) (
+./ch1/satisfiability.tex)
+(./ch1/problemdefinition.tex [11]
 
 LaTeX Warning: Reference `sec:logic' on page 12 undefined on input line 53.
 
@@ -1225,7 +1218,7 @@ st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (28 pages, 287422 bytes).
+Output written on ../pdf/Thesis.pdf (28 pages, 288942 bytes).
 PDF statistics:
  340 PDF objects out of 1000 (max. 8388607)
  212 compressed objects within 3 object streams

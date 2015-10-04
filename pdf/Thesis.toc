@@ -5,12 +5,12 @@
 \contentsline {section}{\numberline {1.1}Graphs}{1}
 \contentsline {subsection}{\numberline {1.1.1}Trees}{3}
 \contentsline {section}{\numberline {1.2}Linkages}{4}
-\contentsline {section}{\numberline {1.3}Polygonal Linkages}{5}
-\contentsline {section}{\numberline {1.4}Disk Arrangements}{6}
-\contentsline {section}{\numberline {1.5}Configuration Spaces}{7}
-\contentsline {subsection}{\numberline {1.5.1}Configuration Spaces of Linkages}{8}
-\contentsline {subsection}{\numberline {1.5.2}Configuration Spaces of Polygonal Linkages}{9}
-\contentsline {subsection}{\numberline {1.5.3}Configuration Spaces of Disk Arrangements}{9}
+\contentsline {subsection}{\numberline {1.2.1}Configuration Spaces of Linkages}{5}
+\contentsline {section}{\numberline {1.3}Polygonal Linkages}{6}
+\contentsline {section}{\numberline {1.4}Disk Arrangements}{7}
+\contentsline {section}{\numberline {1.5}Configuration Spaces}{9}
+\contentsline {subsection}{\numberline {1.5.1}Configuration Spaces of Polygonal Linkages}{9}
+\contentsline {subsection}{\numberline {1.5.2}Configuration Spaces of Disk Arrangements}{9}
 \contentsline {section}{\numberline {1.6}Algorithm Complexity}{9}
 \contentsline {section}{\numberline {1.7}Satisfiability}{11}
 \contentsline {section}{\numberline {1.8}Problem}{11}

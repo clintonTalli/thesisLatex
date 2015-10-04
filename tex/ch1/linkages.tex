@@ -2,6 +2,7 @@
 \begin{figure}[!htbp]
  \begin{center}
   \includegraphics{graphics/HumanTurkeyLinkage.pdf}
+  \caption{Here are skeleton drawings of a human and a turkey.  When animating skeletons, one tends to make sure that the lengths of the skeleton segments are kept the same length throught the animation.  Otherwise, the animation may depart from what is ideally understood of skeletal motions.}
  \end{center}
 \end{figure}
 
@@ -27,6 +28,51 @@ For $\gamma$ to be continuous we would have that for every $\epsilon > 0$, there
 $\gamma$ can be thought of as an animation of drawings that starts at $\gamma(0)$ and ends at $\gamma(1)$
 To ask if $\mu(P)$ is a connected space, is to ask if $\mu(P)$ is connected in $\bbR^{2\vert V \vert}$.
 
+\subsection{Configuration Spaces of Linkages}
+
+\textbf{NOTE THAT THIS SUBSECTION MAY HAVE REPEATED CONTENT}
+
+Let's focus on the space of embeddings of a linkage. If there are $n$ vertices of a linkage, 
+the \textit{configuration space} of a linkage is said to be a vector space of dimension $2 \cdot n$ 
+where edge length is preserved.  
+\begin{figure}[!h]
+\begin{center}
+\includegraphics{graphics/twoEmbeddingsOfSameLinkage.pdf}
+\end{center} 
+\caption{(a) and (b) show a linkage in two embeddings.}
+\label{fig:configuration-3}
+\end{figure}
+A \textit{configuration space} for a linkage $G$ and corresponding proper embedding, $L_1$ is said 
+to be for any other proper embedding of a linkage $G$, $L_2$, such that the lengths 
+of every edge of $G$ is preserved between the two embeddings, i.e.: 
+$$l\left( \left(u,v\right) 
+\right) = \left\vert 
+L_1(u) - L_1(v) \right\vert = \left\vert L_2(u) - L_2(v) \right\vert$$
+Equivalent embeddings include translations and rotations about the center of mass on $L(V)$.  We 
+further our embeddings by requiring that one vertice is pinned to the point of origin on the plane 
+as well as a neighboring vertex.
+
+\begin{thm}[\cite{CDR03,Str05}Carpenter's Rule Theorem]
+ Every realization of a linkage can be continuously moved (without 
+self-intersection) to any other 
+realization. In other words, the realization space of such a linkage is always connected.
+\end{thm}
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[scale=.75]{graphics/LockedConnellyLinkage.pdf}
+\end{center} 
+\caption{A linkage whose complete configuration space is discontinuous.  These two examples above 
+are two configurations of the same linkage that cannot continuously transform into the other 
+without edge crossing.}
+\label{fig:configuration-4}
+\end{figure}
+A \textit{reconfiguration} of a linkage whose graph is $G=(V,E)$ and length assignment is $\ell$ is 
+a continuous function $f: [0,1] \mapsto \bbr^{2 \cdot \vert V \vert}$ specifying a configuration of 
+the linkage for every $t \in [0,1]$ where length assignment $\ell$ is preserved, edges do not cross 
+and for every $\epsilon > 0$, there exists a $\delta > 0$ such that $\vert t_1 - t_2 \vert < 
+\delta$ implies 
+$$\left\vert f\left( t_1 \right) - f\left( t_2 \right) \right\vert < \epsilon$$
 
 %(fig 1) insert a table of a graph and define a length assigment 
 %(fig 2) insert a realization of (fig 1)
