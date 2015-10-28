@@ -1,6 +1,6 @@
 \section{Graphs}
 A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices $V$ and a multiset of edges $E$.  
-An edge is a 2 element subset of $V$ and denoted as ``V choose two'', $\combo{V}{2}$.
+An edge is a 2 element subset of $V$ and denoted as ``V choose two'', ${V \choose 2}$.
 % Each edge $e \in E$ is an unordered pair of vertices $\curlybraces{u,v} \in E$.  
 Vertices are said to be \textit{adjacent} if they form an edge in $E$.  
 \textit{Neighbors} of vertex $v$ are the adjecent vertices of $v$.
@@ -9,8 +9,7 @@ Edges are said to be \textit{incident} if they share a vertex.
 When an edge is a member of $E$ multiple times, then we say that the graph is a \textit{multigraph}.   
 A \textit{simple graph} has no self-adjacent vertices. 
 If $G' = (V',E')$ such that $V' \subset V$ and $E' \subset E$, then $G'$ is a \textit{subgraph} of $G$.
-Unless otherwise stated, this thesis will 
-strictly work with simple graphs.
+Unless otherwise stated, this thesis will strictly work with simple graphs.
 
 For graph equivalency, we need to define an isomorphism for graphs.  Given 
 two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} a bijective 
@@ -44,18 +43,18 @@ $V_1$ and $V_2$ in the plane.}
 \label{fig:configuration-3}
 \end{figure}
 
-To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$ ,of $G$.  
+To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$, of $G$.  
 For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$. 
 The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph, i.e.
-A drawing is said to be \textit{planar} if no two distinct edges.
-
+A drawing is said to be \textit{planar} if no two distinct edges cross.
+For this thesis, we will strictly work with straigt line drawings.
 
 A \textit{crossing} is when two edges intersect.  
-The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
-We can treat $cr()$ as a mapping from the space of drawings of $G$ to the non-negative integers, i.e. $cr: \left\lbrace \Gamma_G \right\rbrace \mapsto \bbZ^+ \cup \left\lbrace 0 \right\rbrace$.
-One can ask if for any graph $G$, does there exists a drawing in which the crossing number is zero?
-Without loss of generality, this is a type of crossing number minimization problem, i.e.
-$$ \min_{\gamma \in \left\lbrace \Gamma_G \right\rbrace} cr(\gamma)$$
+%The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
+%We can treat $cr()$ as a mapping from the space of drawings of $G$ to the non-negative integers, i.e. $cr: \left\lbrace \Gamma_G \right\rbrace \mapsto \bbZ^+ \cup \left\lbrace 0 \right\rbrace$.
+%One can ask if for any graph $G$, does there exists a drawing in which the crossing number is zero?
+%Without loss of generality, this is a type of crossing number minimization problem, i.e.
+%$$ \min_{\gamma \in \left\lbrace \Gamma_G \right\rbrace} cr(\gamma)$$
 Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a finite graph is planar if and only if it does not contain a subgraph that is a subdivision of $K_5$ or $K_{3,3}$ \cite{kuratowski1930probleme}. 
 \begin{figure}[!htbp]
 \begin{center}
@@ -64,9 +63,8 @@ Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a fin
 \end{center} 
 \end{figure} 
 If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}.  
-Two planar drawings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets.
-An (planar) \textit{embedding} is an equivalence class of planar drawings and is described by the circular order of the neighrs of each vertex.
-An equivalence class of a planar drawing $\phi$ is any combination of rigid transformations: rotation, translation, and reflection.  
+An (planar) \textit{embedding} is a planar drawing with a corresponding circular order of the neighbors of each vertex.
+Two embeddings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets and the embeddings can be described as a combination of translations and rotations of the other.
 
 
 
@@ -146,7 +144,7 @@ A \textit{tree} is a graph that has no simple cycles and is connected.
 \caption{An example of a tree.}\label{fig:ch1-graph-2}
 \end{center}
 \end{figure}
-
+Any two embeddings of trees are equivalent if they can be described as any combination of rotations, translations, and or reflections.
 
 % \subsection{Ordered Trees}
 An \textit{ordered tree} is a tree $T$ together with a cyclic order of the neighbors for each vertex, $O$.
@@ -158,9 +156,7 @@ vertices.}\label{fig:ch1-graph-6}
 \end{center}
 \end{figure}
 Embeddings of ordered trees are equivalent if for each node the counter-clockwise ordering of 
-adjacent nodes are the same.
-
-For embeddings of ordered trees, an equivalence class for an embedding $\phi$ is any combination of rotations and translations. 
+adjacent nodes are the same and can be described as a combination of translations and rotations of the other.
 Unlike embeddings for planar graphs where ordering of adjacent vertices is not a distinguishing condition,  we do not consider reflection based transformations for embeddings of ordered trees for equivaliency as that can modify the ordering of adjacent vertices.
 
 
