@@ -1,6 +1,6 @@
 \chapter{Decidability Problems for Hinged Polygons and Disks}
 \section{The Logic Engine}
-The \textit{logic engine} is a planar, mechanical device that simulates an instance NAE3SAT problem. It was introduced in \cite{BC87}.
+The \textit{logic engine} is a planar, mechanical device that simulates an instance NAE3SAT problem. It was introduced in Bhatt et. al. \cite{BC87}.
 \subsection{Construction of the Logic Engine}
 
 \begin{figure}[!h]
@@ -11,10 +11,12 @@ The \textit{logic engine} is a planar, mechanical device that simulates an insta
 \end{center}
 \end{figure}
 
-For a given a boolean formula, $\Phi$, in 3-CNF with $n$ variables and $m$ clauses, we construct a logic engine. The logic engine has a \textit{rigid frame} which houses the mechanical components of the the logic engine.  The rigid frame is the boundary of which the logic engine can operate within.  The 
-\textit{shaft} is a horizontal line segment that is placed at mid-height of the rigid frame. The 
-\textit{armatures} are veritical line segments whose midpoints are on the shaft.  Each armature 
-has two orientations with respect to the shaft. 
+For a given a boolean formula, $\Phi$, in 3-CNF with $n$ variables and $m$ clauses, we construct a logic engine. The logic engine has a \textit{rigid frame} which houses the mechanical components of the the logic engine.  The rigid frame is the boundary of which the logic engine can operate within.  The \textit{shaft} is a horizontal line segment that is placed at mid-height of the rigid frame. 
+The \textit{armatures} are veritical line segments whose midpoints are on the shaft.  
+Each armature has two orientations with respect to the shaft. 
+There will be some flags on each armature that will be described later.
+The armatures each have length $2n$ units, the shaft has length $m$ units, and the frame has a height of $2n$ and width of $m$ units.
+
 
 \begin{figure}[!h]
 \begin{center}
@@ -23,8 +25,12 @@ has two orientations with respect to the shaft.
 \end{center}
 \end{figure}
 
-  Each armature corresponds to a variable in $\Phi$. There are two literals for each variable, i.e. 
-the negated literal $\bar{x}_j$ and non-negated literal $x_j$.   Flagging arragement indicates the relationship of the boolean literal's existence within a clause.  Partition each armature into $2m$ unit, vertical line segments. Label the segments on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  Attach regular triangles, called \textit{flags}, to some of these segments. Each segment is either flagged one or zero flags, i.e. \textit{flagged} or \textit{unflagged}. 
+  Each armature corresponds to a variable in $\Phi$. There are two literals for each variable, i.e. the literal $x_j$ and the negated literal 
+ $\bar{x}_j$.   
+ %Flagging arragement indicates the relationship of the boolean literal's existence within a clause.   
+ To describe the flagging arrangement, first partition each armature into $2m$ units, vertical line segments. Label the segments on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  
+ Attach regular triangles, called \textit{flags}, to some of these segments. 
+ Each segment is either flagged one or zero flags, i.e. \textit{flagged} or \textit{unflagged}. 
 
 \begin{enumerate}
  \item If the literal $x_j$ is found in clause $C_k$, then $\ell_{j,k}$ is unflagged.
@@ -61,18 +67,19 @@ quantity and coordinates defined as polynomials in $m$ and $n$.
 \end{center}
 
 \subsection{The mechanics of the logic engine}
-A \textit{collision} of flags occur if either of the following occurs:
+In any of the following cases, a \texit{collision} of flags occurs:
+%A \textit{collision} of flags occur if either of the following occurs:
 \begin{enumerate}
 \item flags in the same row on adjacent armatures point toward each other.
-\item a flag from the outermost armature $A_n$ points towards the outer rigid frame.
-\item a flag from the innermost armature $A_1$ points inwards of $A_1$.
+\item a flag from the rightmost armature $A_n$ points towards the outer rigid frame.
+\item a flag from the leftmost armature $A_1$ points inwards of $A_1$.
 \end{enumerate}
 
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/logicEngineCollisions.pdf}
 \caption{(a) Illustrates a adjacent flag collision at the same height, (b) and (c) illustrates a 
-rigid frame collision.}\label{fig:logicEngineCollisions.pdf}
+rigid frame collision.}\label{fig:logicEngineCollisionsSmall.pdf}
 \end{center}
 \end{figure}
 The logic engine representation corresponding to $\Phi$ is to be configured such that no 
@@ -92,7 +99,7 @@ at least one unglagged armature. \end{lem}
 % is a flag-frame collision.  If the flag is oriented to the right and if $A_2$ is flagged, then 
 % $A_2$ must also be oriented to the right; otherwise will result in a flag-flag collision.  Now 
 % suppose the $i^\text{th}$ armature's flag is oriented to the right.  $A_{i+1}$ is also oriented to 
-% the right; otherwise will result in a flag-flag collision. By induction all flags will orient to 
+% the right; otherwise will result in a flag-flag collision. By induction all flags will orient to 8187173855 135 500
 % the right up to $n$.  Thus the $n^\text{th}$ flag will will collide with the rigid frame.
 
 Suppose all armatures are flagged in a row.  The flag on armature $A_1$ must point to the 
@@ -123,7 +130,7 @@ A logic engine is said to be \textit{collision-free configurable} when every row
 
 \subsubsection{The Relationship of the Logic Engine and NAE3SAT}
 
-We can show that given an boolean formula in 3-CNF form, $\Phi$, and a truth assignement, $\tau$, where the variables are given a truth assignment such that there is at least one true literal and one false literal in each clause of $\Phi$, then the corresponding logic engine to $\Phi$ is collision-free configurable.
+We show that given an boolean formula in 3-CNF form, $\Phi$, and a truth assignement, $\tau$, where the variables are given a truth assignment such that there is at least one true literal and one false literal in each clause of $\Phi$, then the corresponding logic engine to $\Phi$ is collision-free configurable.
 \begin{thm}\label{thm:LogicEngineV3-1}
  Given an instance of a $NAE3SAT$,  it is a ``yes'' instance if and only if the corresponding logic 
 engine is collision-free configurable.

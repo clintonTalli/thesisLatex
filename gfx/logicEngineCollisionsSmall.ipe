@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.1.7">
-<info created="D:20140916202303" modified="D:20151109181848"/>
+<info created="D:20140916202303" modified="D:20151109182019"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -236,122 +236,122 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 64 0" stroke="black" fill="gray">
+<path layer="alpha" matrix="0.54902 0 0 0.54902 525.803 230.902" stroke="black" fill="gray">
 128 704 m
 176 672 l
 128 640 l
 128 704 l
 </path>
-<text matrix="1 0 0 1 72.4615 3.69231" transformations="translations" pos="112 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_i$</text>
-<text matrix="1 0 0 1 50.1538 4.60231" transformations="translations" pos="192 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_{i+1}$</text>
-<text matrix="1 0 0 1 52.4615 20" transformations="translations" pos="160 528" stroke="black" type="label" valign="baseline" size="LARGE">(a)</text>
-<path matrix="1 0 0 1 -128 0" stroke="blue" dash="dashed" pen="ultrafat">
+<text matrix="0.54902 0 0 0.54902 530.449 232.929" transformations="translations" pos="112 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_i$</text>
+<text matrix="0.54902 0 0 0.54902 518.201 233.428" transformations="translations" pos="192 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_{i+1}$</text>
+<text matrix="0.54902 0 0 0.54902 519.468 241.882" transformations="translations" pos="160 528" stroke="black" type="label" valign="baseline" size="LARGE">(a)</text>
+<path matrix="0.54902 0 0 0.54902 420.391 230.902" stroke="blue" dash="dashed" pen="ultrafat">
 320 768 m
 320 576 l
 320 576 l
 </path>
-<path matrix="1 0 0 1 -64 0" stroke="blue" dash="dashed" pen="ultrafat">
+<path matrix="0.54902 0 0 0.54902 455.529 230.902" stroke="blue" dash="dashed" pen="ultrafat">
 320 768 m
 320 576 l
 320 576 l
 </path>
-<path matrix="1 0 0 1 128 0" stroke="black" fill="gray">
+<path matrix="0.54902 0 0 0.54902 560.941 230.902" stroke="black" fill="gray">
 128 704 m
 176 672 l
 128 640 l
 128 704 l
 </path>
-<path matrix="-1 0 0 1 512 0" stroke="black" fill="gray">
+<path matrix="-0.54902 0 0 0.54902 771.764 230.902" stroke="black" fill="gray">
 128 704 m
 176 672 l
 128 640 l
 128 704 l
 </path>
-<text matrix="1 0 0 1 264.462 3.69231" transformations="translations" pos="112 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_i$</text>
-<text matrix="1 0 0 1 242.154 4.60231" transformations="translations" pos="192 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_{i+1}$</text>
-<text matrix="1 0 0 1 244.462 20" transformations="translations" pos="160 528" stroke="black" type="label" valign="baseline" size="LARGE">(b)</text>
-<path matrix="1 0 0 1 64 0" stroke="blue" dash="dashed" pen="ultrafat">
+<text matrix="0.54902 0 0 0.54902 635.861 232.929" transformations="translations" pos="112 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_i$</text>
+<text matrix="0.54902 0 0 0.54902 623.613 233.428" transformations="translations" pos="192 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_{i+1}$</text>
+<text matrix="0.54902 0 0 0.54902 624.881 241.882" transformations="translations" pos="160 528" stroke="black" type="label" valign="baseline" size="LARGE">(b)</text>
+<path matrix="0.54902 0 0 0.54902 525.803 230.902" stroke="blue" dash="dashed" pen="ultrafat">
 320 768 m
 320 576 l
 320 576 l
 </path>
-<path matrix="1 0 0 1 128 0" stroke="blue" dash="dashed" pen="ultrafat">
+<path matrix="0.54902 0 0 0.54902 560.941 230.902" stroke="blue" dash="dashed" pen="ultrafat">
 320 768 m
 320 576 l
 320 576 l
 </path>
-<path matrix="1 0 0 1 320 0" stroke="black" fill="gray">
+<path matrix="0.54902 0 0 0.54902 666.352 230.902" stroke="black" fill="gray">
 128 704 m
 176 672 l
 128 640 l
 128 704 l
 </path>
-<path matrix="-1 0 0 1 768 0" stroke="black" fill="gray">
+<path matrix="-0.54902 0 0 0.54902 912.314 230.902" stroke="black" fill="gray">
 128 704 m
 176 672 l
 128 640 l
 128 704 l
 </path>
-<text matrix="1 0 0 1 456.46 3.69231" transformations="translations" pos="112 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_i$</text>
-<text matrix="1 0 0 1 434.15 4.60231" transformations="translations" pos="192 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_{i+1}$</text>
-<text matrix="1 0 0 1 436.46 20" transformations="translations" pos="160 528" stroke="black" type="label" valign="baseline" size="LARGE">(c)</text>
-<path matrix="-1 0 0 1 960 0" stroke="blue" dash="dashed" pen="ultrafat">
+<text matrix="0.54902 0 0 0.54902 741.272 232.929" transformations="translations" pos="112 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_i$</text>
+<text matrix="0.54902 0 0 0.54902 729.023 233.428" transformations="translations" pos="192 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_{i+1}$</text>
+<text matrix="0.54902 0 0 0.54902 730.291 241.882" transformations="translations" pos="160 528" stroke="black" type="label" valign="baseline" size="LARGE">(c)</text>
+<path matrix="-0.54902 0 0 0.54902 1017.73 230.902" stroke="blue" dash="dashed" pen="ultrafat">
 320 768 m
 320 576 l
 320 576 l
 </path>
-<path matrix="-1 0 0 1 896 0" stroke="blue" dash="dashed" pen="ultrafat">
+<path matrix="-0.54902 0 0 0.54902 982.588 230.902" stroke="blue" dash="dashed" pen="ultrafat">
 320 768 m
 320 576 l
 320 576 l
 </path>
-<path matrix="-1 0 0 1 704 0" stroke="black" fill="gray">
+<path matrix="-0.54902 0 0 0.54902 877.176 230.902" stroke="black" fill="gray">
 128 704 m
 176 672 l
 128 640 l
 128 704 l
 </path>
-<path matrix="1 0 0 1 656 0" stroke="black" fill="black">
+<path matrix="0.54902 0 0 0.54902 850.823 230.902" stroke="black" fill="black">
 112 768 m
 112 576 l
 128 576 l
 128 768 l
 h
 </path>
-<text matrix="1 0 0 1 231.538 3.69231" transformations="translations" pos="576 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_1$</text>
-<text matrix="1 0 0 1 242.308 20" transformations="translations" pos="544 528" stroke="black" type="label" valign="baseline" size="LARGE">(d)</text>
-<path matrix="1 0 0 1 496 0" stroke="blue" dash="dashed" pen="ultrafat">
+<text matrix="0.54902 0 0 0.54902 617.785 232.929" transformations="translations" pos="576 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_1$</text>
+<text matrix="0.54902 0 0 0.54902 623.698 241.882" transformations="translations" pos="544 528" stroke="black" type="label" valign="baseline" size="LARGE">(d)</text>
+<path matrix="0.54902 0 0 0.54902 762.98 230.902" stroke="blue" dash="dashed" pen="ultrafat">
 320 768 m
 320 576 l
 320 576 l
 </path>
-<path matrix="1 0 0 1 896 0" stroke="black" fill="black">
+<path matrix="0.54902 0 0 0.54902 982.588 230.902" stroke="black" fill="black">
 112 768 m
 112 576 l
 128 576 l
 128 768 l
 h
 </path>
-<text matrix="1 0 0 1 664.46 3.69231" transformations="translations" pos="304 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_n$</text>
-<text matrix="1 0 0 1 626.77 20" transformations="translations" pos="352 528" stroke="black" type="label" valign="baseline" size="LARGE">(e)</text>
-<path matrix="1 0 0 1 656 0" stroke="blue" dash="dashed" pen="ultrafat">
+<text matrix="0.54902 0 0 0.54902 855.468 232.929" transformations="translations" pos="304 784" stroke="black" type="label" valign="baseline" size="LARGE">$A_n$</text>
+<text matrix="0.54902 0 0 0.54902 834.775 241.882" transformations="translations" pos="352 528" stroke="black" type="label" valign="baseline" size="LARGE">(e)</text>
+<path matrix="0.54902 0 0 0.54902 850.823 230.902" stroke="blue" dash="dashed" pen="ultrafat">
 320 768 m
 320 576 l
 320 576 l
 </path>
-<path matrix="1 0 0 1 688 0" stroke="black" fill="gray">
+<path matrix="0.54902 0 0 0.54902 868.392 230.902" stroke="black" fill="gray">
 128 704 m
 176 672 l
 128 640 l
 128 704 l
 </path>
-<path matrix="1 0 0 1 784 0" stroke="black" fill="gray">
+<path matrix="0.54902 0 0 0.54902 921.098 230.902" stroke="black" fill="gray">
 192 704 m
 144 672 l
 192 640 l
 192 704 l
 </path>
-<path stroke="black">
+<path matrix="0.54902 0 0 0.54902 490.666 230.902" stroke="black">
 128 832 m
 128 512 l
 1088 512 l
