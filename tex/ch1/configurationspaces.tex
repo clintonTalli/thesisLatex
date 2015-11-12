@@ -4,26 +4,29 @@ Just as one can compose colors or forms, so one can compose motions.
 \end{quote}
 {\raggedright{}Alexander Calder, 1933}
 
-We'd like to describe motions and range of motions of embedded graphs, linkages, polygonal 
-linkages, and disk arrangements.  Table \ref{table:configurationSpace-1} provides the definition of 
-\textit{reconfiguration} for each type of object covered so far:
-\begin{center}
-\begin{table}[htbp!]
-\begin{tabular}{|p{.2\textwidth}|p{.79\textwidth}|}
-\hline
-Object Type&Definition of Reconfiguration\\\hline
-Graph Embeddings&a continuous motion of the vertices that never causes the edges to 
-intersect.\\\hline
-Linkage&a continuous motion of the vertices that preserves the lengths of the edges and never 
-causes 
-the edges to intersect.\\\hline
-Polygonal Linkage&a continuous motion of polygons that preserves shapes of polygons, hinge point 
-pairings, and never causes the polygonal sides to intersect.\\\hline
-Disk Arrangement&a continuous motion of disks that preserves disk radii, pairs of contact points, 
-and never causes disks to intersect.\\\hline
-\end{tabular}\label{table:configurationSpace-1}
-\end{table}
-\end{center}
+
+We described the configuration space of a linkage earlier and have introduced polygonal linkages and disk arrangements without describing their corresponding definitions of a configuration space.  Here we will describe configuration spaces for each structure.
+
+% We'd like to describe motions and range of motions of embedded graphs, linkages, polygonal 
+% linkages, and disk arrangements.  Table \ref{table:configurationSpace-1} provides the definition of 
+% \textit{reconfiguration} for each type of object covered so far:
+% \begin{center}
+% \begin{table}[htbp!]
+% \begin{tabular}{|p{.2\textwidth}|p{.79\textwidth}|}
+% \hline
+% Object Type&Definition of Reconfiguration\\\hline
+% Graph Embeddings&a continuous motion of the vertices that never causes the edges to 
+% intersect.\\\hline
+% Linkage&a continuous motion of the vertices that preserves the lengths of the edges and never 
+% causes 
+% the edges to intersect.\\\hline
+% Polygonal Linkage&a continuous motion of polygons that preserves shapes of polygons, hinge point 
+% pairings, and never causes the polygonal sides to intersect.\\\hline
+% Disk Arrangement&a continuous motion of disks that preserves disk radii, pairs of contact points, 
+% and never causes disks to intersect.\\\hline
+% \end{tabular}\label{table:configurationSpace-1}
+% \end{table}
+% \end{center}
 
 
 
@@ -35,12 +38,16 @@ and never causes disks to intersect.\\\hline
 
  
  \subsection{Configuration Spaces of Polygonal Linkages}
-%Show example an example of a locked linkage and locked polygonal linkage.
-%an example of a geometric dissection in several configurations would be nice
-Some text goes here
+Recall a realization of a polygonal linkage is an interior-disjoint placement of 
+congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).
+First consider the set of all realizations for the polygonal linkage. $\left(\PP,\HH
+\right)$ and call it $P$.  For any realization $R \in P$, the parameterization $\mu:R \mapsto \bbR^{2m}$ where $m$ is the number of distinct vertices in $\PP$.     The configuration space is the set $\mu(P)$.
+
  \subsection{Configuration Spaces of Disk Arrangements}
 %show an equivalent disk arrangment to the geometric dissection in thier corresponding/equivalent
 % configurations.
+Consider the set of realizations $P$ for a given disk arrangement $\DD = \left\lbrace D_i \right\rbrace_{i=1}^n$.  For any realization $R \in P$, there exists a corresponding contact graph, $C$.  The configuration spaces of $\DD$ are sets of $R \in P$ that are classified by the equivalent contact graphs, i.e. if $R_1$, $R_2 \in P$ and their corresponding contact graphs $C_1$ and $C_2$ have a graph isomorphism, $\phi$, then $R_1$ and $R_2$ belong to the same configuration space.
+
 
 
 \begin{figure}[!h]
@@ -53,10 +60,30 @@ without edge crossing.}
 \label{fig:configuration-5}
 \end{figure}
 
+\subsection{Reconfiguration}
 
 
 
-
+We'd like to describe motions and range of motions of embedded graphs, linkages, polygonal 
+linkages, and disk arrangements.  Table \ref{table:configurationSpace-1} provides the definition of 
+\textit{reconfiguration} for each type of object covered so far:
+\begin{center}
+\begin{table}[htbp!]
+\begin{tabular}{|p{.2\textwidth}|p{.79\textwidth}|}
+\hline
+Object Type&Definition of Reconfiguration\\\hline
+Graph Embeddings&a continuous motion of the realized vertices that never causes the edges to 
+intersect.\\\hline
+Linkage&a continuous motion of the realized vertices that preserves the lengths of the edges and never 
+causes 
+the edges to intersect.\\\hline
+Polygonal Linkage&a continuous motion of polygons that preserves shapes of polygons, hinge point 
+pairings, and never causes the polygonal sides to intersect.\\\hline
+Disk Arrangement&a continuous motion of disks that preserves disk radii, pairs of contact points, 
+and never causes disks to intersect.\\\hline
+\end{tabular}\label{table:configurationSpace-1}
+\end{table}
+\end{center}
 
 
 

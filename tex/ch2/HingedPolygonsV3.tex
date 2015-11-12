@@ -1,5 +1,12 @@
-\section{Logic Engines Represented as Polygonal Linkages}   
+													]\section{Logic Engines Represented as Polygonal Linkages}   
+In the previous section, we introduced the logic engine.  
+This section builds an analogous structure that is formed from a polygonal linkage and we may interchangeably say subcomponent for polygon.
 We can modify the mechanical structure of the logic engine to form a polygonal linkage.  
+For a given a boolean formula, $\Phi$, in 3-CNF with $n$ variables and $m$ clauses,
+the rigid frame is broken into two polygons, each polygon on the extremity of the structure.
+The shaft is broken into $n$ polygons.
+Each armature is broken into two parts, each part containing $m$ subcomponents.
+In figure \ref{fig:HingedLogicEngineSmall.pdf}, each flag becomes a rectangle.
 
 \begin{figure}[!htbp]
 \begin{center}
@@ -15,15 +22,24 @@ The corresponding polygonal linkage $P_\ell = (\PP,\HH)$ has the following polyg
 		$$\begin{array}{|l|c|c|c|}%TRY TO ADD SHADING COLUMN TO TABLE AND GRAPHIC:
 		 \hline
 		 \text{Component} & \text{Height} & \text{Width} & \text{Quantity}\\\hline
+		 \text{Large Frame Subcomponent} & 2\cdot m & 1 & 2\\\hline
 		 \text{Shaft Subcomponent} & 1 & 3 & n\\\hline
 		 \text{Armature Subcomponent} & 2 & 1 & 2\cdot m\\\hline
 		 \text{Flag} & 1 & 1.5 & 2mn-3m\\\hline
-		 \text{Large Frame Subcomponent} & 2\cdot m & 1 & 4\\\hline
 		\end{array}$$
 		\caption{The components of $\PP$ specified polynomially in terms of the size of the boolean formula $\Phi$.}
 	\end{table}
 \end{center}
-The large frame subcomponents are hinged on the left most and right most shaft subcomponents. Each adjacent shaft subcomponents are hinged and each shaft subcomponent has two orientations, a reflecion up and a reflection down about the shaft hinge points.  On each shaft subcomponent there are two armature shaft subcomponents, one above the shaft subcomponent and one below the shaft subcomponent.  By the two orientations of the shaft subcomponent, each armature subcomponent has to possible positions.  Each armature comprises of $m$ armature subcomponents that are hinged together; in total there are $2n$ armatures.  Each armature subcomponent has two orientations, a reflection left and a reflection right about the armature hinge points.  Label the armature subcomponents on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  Attach a rectangular flag specified in Table \ref{TBL:HingedPolygonsV3-1}, to some of these segments. Each segment is either flagged one or zero flags.
+
+The large frame subcomponents are hinged on the left most and right most shaft subcomponents. 
+Each adjacent shaft subcomponents are hinged and each shaft subcomponent has two orientations, a reflecion up and a reflection down about the shaft hinge points.  
+On each shaft subcomponent there are two armature shaft subcomponents, one above the shaft subcomponent and one below the shaft subcomponent.  
+By the two orientations of the shaft subcomponent, each armature subcomponent has to possible positions.  
+Each armature comprises of $m$ armature subcomponents that are hinged together; in total there are $2n$ armatures.  
+Each armature subcomponent has two orientations, a reflection left and a reflection right about the armature hinge points.  
+Label the armature subcomponents on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  
+Attach a rectangular flag specified in Table \ref{TBL:HingedPolygonsV3-1}, to some of these segments. 
+Each segment is either flagged one or zero flags.
 
 \begin{enumerate}
 	 \item If the literal $x_j$ is found in clause $C_k$, then $\ell_{j,k}$ is unflagged.

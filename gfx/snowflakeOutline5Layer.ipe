@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70107" creator="Ipe 7.1.7">
-<info created="D:20150514141954" modified="D:20150514154812"/>
+<ipe version="70107" creator="Ipe 7.1.8">
+<info created="D:20150514141954" modified="D:20151111154219"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -263,126 +263,6 @@ h
 4384 4330.87 l
 </path>
 <path stroke="black" pen="fat">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 224 277.13" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 288 277.13" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 352 277.13" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 416 277.13" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 480 277.13" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 224 -277.13" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 288 -277.13" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 352 -277.13" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 416 -277.13" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 480 -277.13" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 128 332.556" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 96 387.981" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 64 443.407" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 32 498.833" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 0 554.258" stroke="black">
-4544 4608 m
-4384 4330.87 l
-</path>
-<path matrix="1 0 0 1 -352 55.4256" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 -384 110.851" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 -416 166.277" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 -448 221.703" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 -480 277.128" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 128 -332.556" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 96 -387.981" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 64 -443.407" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 32 -498.833" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 0 -554.258" stroke="black">
-4544 4608 m
-4384 4885.13 l
-</path>
-<path matrix="1 0 0 1 -352 -55.4256" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 -384 -110.851" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 -416 -166.277" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 -448 -221.703" stroke="black">
-4544 4608 m
-4864 4608 l
-</path>
-<path matrix="1 0 0 1 -480 -277.128" stroke="black">
 4544 4608 m
 4864 4608 l
 </path>
@@ -658,6 +538,102 @@ h
 </path>
 <path stroke="violet">
 32 0 0 32 4352 4829.7 e
+</path>
+<path stroke="black">
+4352 4829.7 m
+4416 4829.7 l
+</path>
+<path stroke="black">
+4320 4774.28 m
+4448 4774.28 l
+</path>
+<path stroke="black">
+4288 4718.85 m
+4480 4718.85 l
+</path>
+<path stroke="black">
+4256 4663.43 m
+4512 4663.43 l
+</path>
+<path stroke="black">
+4256 4552.57 m
+4512 4552.57 l
+</path>
+<path stroke="black">
+4288 4497.15 m
+4480 4497.15 l
+</path>
+<path stroke="black">
+4320 4441.72 m
+4448 4441.72 l
+</path>
+<path stroke="black">
+4352 4386.3 m
+4416 4386.3 l
+</path>
+<path stroke="black">
+4448 4330.87 m
+4416 4386.3 l
+</path>
+<path stroke="black">
+4512 4330.87 m
+4448 4441.72 l
+</path>
+<path stroke="black">
+4576 4330.87 m
+4480 4497.15 l
+</path>
+<path stroke="black">
+4640 4330.87 m
+4512 4552.57 l
+</path>
+<path stroke="black">
+4448 4885.13 m
+4416 4829.7 l
+</path>
+<path stroke="black">
+4512 4885.13 m
+4448 4774.28 l
+</path>
+<path stroke="black">
+4576 4885.13 m
+4480 4718.85 l
+</path>
+<path stroke="black">
+4640 4885.13 m
+4512 4663.43 l
+</path>
+<path stroke="black">
+4608 4608 m
+4736 4386.3 l
+</path>
+<path stroke="black">
+4736 4829.7 m
+4608 4608 l
+</path>
+<path stroke="black">
+4768 4774.28 m
+4672 4608 l
+</path>
+<path stroke="black">
+4800 4718.85 m
+4736 4608 l
+</path>
+<path stroke="black">
+4832 4663.43 m
+4800 4608 l
+</path>
+<path stroke="black">
+4832 4552.57 m
+4800 4608 l
+</path>
+<path stroke="black">
+4800 4497.15 m
+4736 4608 l
+</path>
+<path stroke="black">
+4768 4441.72 m
+4672 4608 l
 </path>
 </page>
 </ipe>
