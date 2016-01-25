@@ -9,10 +9,22 @@ congruent copies of the polygons in $\PP$ such that the copies of a hinge are ma
 
 These two types of realization types allow one to pose two different types of problems:
 \begin{prob}[Unordered Realizibility Problem for Polygonal Linkages]\label{problem:UnorderedPolygonal}
-The \emph{realizability} problem for a polygonal linkage asks whether a given polygonal linkage has 
+The realizability problem for a polygonal linkage asks whether a given polygonal linkage has 
 a realization.
 \end{prob}
-\begin{figure}[h]
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[scale=1]{graphics/Problem1.pdf}
+\end{center} 
+\caption{Here we have 7 congruent copies of an equilateral triangle with a hinge point of $A$.  The polygonal linkage is not realizable.  The best we can realize is at most 6 congruent copies of an equilateral triangle with the hinge point of $A$ in the plane.}
+\label{fig:problem1}
+\end{figure}
+
+
+Figure \ref{fig:problem1} demonstrates that not all polygonal linkages have a planar realization.  
+
+
+\begin{figure}[!htbp]
 \begin{center}
 \includegraphics[scale=1]{graphics/hingeOnThreeDistinctPolygons.pdf}
 \end{center} 
@@ -21,21 +33,51 @@ three polygons.  Note that hinge points correspond to two distinct polygons.(b) 
 two hinge points can correspond to the same boundary point of a polygon.}
 \label{fig:linkage-1}
 \end{figure}
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=1]{graphics/Problem1.pdf}
-\end{center} 
-\caption{Here we have 7 congruent copies of an equilateral triangle with a hinge point of $A$.  The polygonal linkage is not realizable.  The best we can realize is at most 6 congruent copies of an equilateral triangle with the hinge point of $A$ in the plane.}
-\label{fig:problem1}
-\end{figure}
+
 \begin{prob}[Ordered Realizibility Problem for Polygonal Linkages]\label{problem:OrderedPolygonal}
 The \emph{realizability} problem for a ordered polygonal linkage asks whether a given polygonal 
 linkage has a realization with respect to order.
 \end{prob}
+
+\begin{thm}\label{thm:hinge2}
+It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with fixed orientation.
+\end{thm}
+
+Our proof for Theorem \ref{thm:hinge2} is a reduction from {\sc Planar-3-SAT} (P3SAT): decide whether a given Boolean formula in 3-CNF with a planar associated graph is satisfiable. The \emph{graph associated} to a Boolean formula in 3-CNF is a bipartite graph where the two vertex classes correspond to the variables and to the clauses, respectively; there is an edge between a variable $x$ and a clause $C$ iff $x$ or $\neg x$ appears in $C$. See Fig.~\ref{fig:assoc}(left).
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[scale=1]{graphics/collidingHingedPolygons.pdf}
+\end{center} 
+\caption{This example shows a polygonal linkage with a realization where two polygons intersect another.}
+\label{fig:collidingHingedPolygons}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{graphics/fig-assoc-hex.pdf}
+	\caption[]{Left: the associated graph $A(\Phi)$ for a Boolean formula $\Phi$.
+Right: the schematic layout of the variable, clause, and transmitter gadgets in our construction.}
+	\label{fig:assoc}
+\end{figure}
+
+
 \subsection{Geometric Dissections}
 The Wallace-Bolyai-Gerwien Theorem simply states that two polygons are congruent by dissection iff they have the same area.  A \textit{dissection} being a collection of smaller polygons that when hinged together form a polygon.  Here dissections don't have to be hinged.  Hinged dissections preserve adjacent polygon relationships and their points of connection.  The question of whether two polygons of equal area have a hinged dissection was an outstanding problem until 2007 \cite{abbott2012hinged}.
 
-\begin{figure}[h]
+The Haberdasher problem was proposed in 1902 by Henry Dudeney which dissects an equilateral triangle into a square.
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics{graphics/HaberdasherProblem.pdf}
+\end{center}
+\caption{The Haberdasher problem was proposed in 1902 and solved in 1903 by Henry Dudeny.  The dissection is for polygons that forms a square and equilateral traingle
+ }
+
+
+
+\label{fig:polygonallinkage-5}
+\end{figure}
+
+\begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/GeometricDissectionBusschop.pdf}
 \end{center}
@@ -46,15 +88,7 @@ instead of hinges.  These two realizations of the polygonal linkage are invalid 
 \end{figure}
 
 % With three cuts, dissect an equilateral triangle into a square. The problem was first proposed by Dudeney in 1902, and subsequently discussed in Dudeney (1958), and Gardner (1961, p. 34), Stewart (1987, p. 169), and Wells (1991, pp. 61-62). The solution can be hinged so that the four pieces collapse into either the triangle or the square. Two of the hinges bisect sides of the triangle, while the third hinge and the corner of the large piece on the base cut the base in the approximate ratio 0.982:2:1.018.
-The Haberdasher problem was proposed in 1902 by Henry Dudeney which dissects an equilateral triangle into a square.
-\begin{figure}[!htbp]
-\begin{center}
-\includegraphics{graphics/HaberdasherProblem.pdf}
-\end{center}
-\caption{The Haberdasher problem was proposed in 1902 and solved in 1903 by Henry Dudeny.  The dissection is for polygons that forms a square and equilateral traingle
- }
-\label{fig:polygonallinkage-5}
-\end{figure}
+
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

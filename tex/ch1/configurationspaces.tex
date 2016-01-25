@@ -35,7 +35,52 @@ We described the configuration space of a linkage earlier and have introduced po
 % the vertices that preserve the length edges and never cause edges to collide \cite{AKR+04}.  For 
 % polygonal linkages, a reconfiguration is 
 
+\subsection{Configuration Spaces of Linkages}
 
+Consider embeddings of a graph that respects the length assignment.  
+A \textit{realization} of a linkage, $(G,\ell)$, is an embedding of a graph, $\Pi$, such that for every edge $\{u,v\} \in E$, $\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert = \left\vert \Pi(v) - \Pi(u) \right\vert$. 
+A \textit{plane realization} is a plane embedding with the property, $\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert$.
+First let's define the space of realizations for a corresponding linkage, i.e.:
+$$P_{(G,\ell)} = \set{\Pi_{(G,\ell)}}{\forall \{u,v\} \in E\text{, }\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert}$$
+With respect to $P$, we can establish a \textit{configuration space} that allows one to study problems of motion.  For each vertex of $G$, the embedding of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  By enumerating each vertex of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a projection mapping from $\mu: P \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{th}$ coordinates in $\bbR^{2\vert V \vert}$.  The configuration space is $\mu(P)$.  
+
+Using standard definitions from real analysis, we can begin to pose problems about linkages with respect to a corresponding configuration space.  
+We define a path $\gamma: [0,1]\mapsto \mu(P)$ where $\gamma(0)$ corresponds the the projection of a realization of a linkage $\Pi_0$ and $\gamma(1)$ corresponds to another realization of a linkage $\Pi_1$.  
+If for any two elements $a,b \in \mu(P)$ that there exists a continuous path $\gamma$ such that $\gamma(0)=a$ and $\gamma(1)=b$, $\mu(P)$ is said to be path connected.   
+For $\gamma$ to be continuous we would have that for every $\epsilon > 0$, there exists a $\delta >0$ such that if $x,y \in [0,1]$ and $\vert x-y \vert <\delta$ then $\vlr{\vlr{\gamma(x)-\gamma(y)}}<\epsilon$.
+$\gamma$ can be thought of as an animation of drawings that starts at $\gamma(0)$ and ends at $\gamma(1)$
+To ask if $\mu(P)$ is a connected space, is to ask if $\mu(P)$ is connected in $\bbR^{2\vert V \vert}$.
+By Carpenter's Rule theorem, every realization of a linkage can be continuously moved (without self-intersection) to any other realization \cite{CDR03,Str05}.
+In other words, the realization space of such a linkage is always connected.
+
+% \subsection{Configuration Spaces of Linkages}
+
+% \textbf{NOTE THAT THIS SUBSECTION MAY HAVE REPEATED CONTENT}
+
+% Let's focus on the space of embeddings of a linkage. If there are $n$ vertices of a linkage, 
+% the \textit{configuration space} of a linkage is said to be a vector space of dimension $2 \cdot n$ 
+% where edge length is preserved.  
+
+% A \textit{configuration space} for a linkage $G$ and corresponding proper embedding, $L_1$ is said 
+% to be for any other proper embedding of a linkage $G$, $L_2$, such that the lengths 
+% of every edge of $G$ is preserved between the two embeddings, i.e.: 
+% $$l\left( \left(u,v\right) 
+% \right) = \left\vert 
+% L_1(u) - L_1(v) \right\vert = \left\vert L_2(u) - L_2(v) \right\vert$$
+% Equivalent embeddings include translations and rotations about the center of mass on $L(V)$.  We 
+% further our embeddings by requiring that one vertice is pinned to the point of origin on the plane 
+% as well as a neighboring vertex.
+
+
+% Can a simple planar polygon be moved continuously to a position where all its vertices are in convex position, so that the edge lengths and simplicity are preserved along the way?
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics{graphics/twoEmbeddingsOfSameLinkage.pdf}
+\end{center} 
+\caption{(a) and (b) show a linkage in two embeddings.  Any realization of a path can be continuously moved without self-intersection to any other realizations.}
+\label{fig:configuration-3}
+\end{figure}
  
  \subsection{Configuration Spaces of Polygonal Linkages}
 Recall a realization of a polygonal linkage is an interior-disjoint placement of 

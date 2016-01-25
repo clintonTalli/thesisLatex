@@ -18,7 +18,7 @@ V_2$
 such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and 
 only 
 if $(f(u),f(v)) \in E_2$. 
-\begin{table}[!ht]\label{table:ch1-graph-1})
+\begin{table}[!htbp]\label{table:ch1-graph-1}
 \begin{center}
 $$\begin{array}{|c|c|c|}\hline
 \text{Graph}&\text{Vertices}&\text{Edges}\\\hline
@@ -30,10 +30,9 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 \caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
 = 3$, $f(d)=4$, $f(e)=5$.}
 \end{center} 
-\label{table:ch1-graph-1}
 \end{table}
 
-\begin{figure}[!h]
+\begin{figure}[!htbp]
 \begin{center}
 \includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
 \end{center} 
@@ -46,8 +45,9 @@ $V_1$ and $V_2$ in the plane.}
 To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$, of $G$.  
 For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$. 
 The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph, i.e.
-A drawing is said to be \textit{planar} if no two distinct edges cross.
-For this thesis, we will strictly work with straigt line drawings.
+A drawing is said to be \textit{planar} if no two distinct edges cross \cite{BET+99}.
+For this thesis, we will strictly work with straigt line drawings where all $c_{u,v}$ are straight line segments unless specified otherwise.
+
 
 A \textit{crossing} is when two edges intersect.  
 %The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
@@ -62,11 +62,17 @@ Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a fin
 \caption{The $K_5$ and $K_{3,3}$ drawn in the plane.}\label{fig:kuratowskiExamples.pdf}
 \end{center} 
 \end{figure} 
-If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}.  
-An (planar) \textit{embedding} is a planar drawing with a corresponding circular order of the neighbors of each vertex.
+%If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}. 
+
+A combinatorial \textit{embedding} is a planar drawing with a corresponding circular order of the neighbors of each vertex.
 Two embeddings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets and the embeddings can be described as a combination of translations and rotations of the other.
 
-
+\begin{figure}[!htbp]
+\begin{center}
+    \includegraphics{graphics/equivalentWheelEmbedding.pdf}
+    \caption{Here is a wheel graph, $W_5$, in two separate drawings with the same counterclock}\label{fig:equivalentWheelEmbedding.pdf}
+\end{center}
+\end{figure}
 
 
 
@@ -126,7 +132,7 @@ Two embeddings of a graph $G$ are equivalent if they determine the same circular
 % graph together with a plane embedding.
 \newpage
 \subsection{Trees}
-Some graphs can be classified by which properties they may have or not have.
+Some graphs can be classified by which properties they have.
 A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by an edge.   
 \begin{figure}[!htbp]
 \begin{center}
@@ -135,6 +141,7 @@ A \textit{path} is a sequence of vertices in which every two consecutive vertice
 (2,7,9,6,1,0,5,8,3).}\label{fig:ch1-graph-2}
 \end{center}
 \end{figure}
+
 A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$.  
 A graph is \textit{connected} if for any two vertices, there exists a path between the two points.
 A \textit{tree} is a graph that has no simple cycles and is connected.
@@ -144,6 +151,7 @@ A \textit{tree} is a graph that has no simple cycles and is connected.
 \caption{An example of a tree.}\label{fig:ch1-graph-2}
 \end{center}
 \end{figure}
+
 Any two embeddings of trees are equivalent if they can be described as any combination of rotations, translations, and or reflections.
 
 % \subsection{Ordered Trees}
@@ -155,9 +163,11 @@ An \textit{ordered tree} is a tree $T$ together with a cyclic order of the neigh
 vertices.}\label{fig:ch1-graph-6}
 \end{center}
 \end{figure}
+
 Embeddings of ordered trees are equivalent if for each node the counter-clockwise ordering of 
 adjacent nodes are the same and can be described as a combination of translations and rotations of the other.
 Unlike embeddings for planar graphs where ordering of adjacent vertices is not a distinguishing condition,  we do not consider reflection based transformations for embeddings of ordered trees for equivaliency as that can modify the ordering of adjacent vertices.
+
 
 
 % \subsection{Graph Isomorphism} 
