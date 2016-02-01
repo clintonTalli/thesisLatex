@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.1.8">
-<info created="D:20160125133753" modified="D:20160125133753"/>
+<info created="D:20160125133753" modified="D:20160130173801"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -313,16 +313,16 @@ h
 <use name="mark/disk(sx)" pos="5385.37 2695.19" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="5453.25 2656" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="5385.37 2616.81" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 2.17614 -13.7822" transformations="translations" pos="5233.68 2704" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">1</text>
-<text matrix="1 0 0 1 2.17614 -15.9584" transformations="translations" pos="5314.92 2706.18" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">2</text>
-<text transformations="translations" pos="5322.18 2613.33" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">3</text>
-<text transformations="translations" pos="5235.13 2611.15" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">4</text>
-<text transformations="translations" pos="5274.3 2671.36" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">5</text>
-<text matrix="1 0 0 1 8.61566 -20.9323" transformations="translations" pos="5362.07 2710.53" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">1</text>
-<text matrix="1 0 0 1 -13.0569 -12.3315" transformations="translations" pos="5408 2672" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">2</text>
-<text matrix="1 0 0 1 -0.725382 -3.62691" transformations="translations" pos="5395.44 2643.79" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">3</text>
-<text matrix="1 0 0 1 -4.4412 0.146194" transformations="translations" pos="5374.4 2610.43" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">4</text>
-<text matrix="1 0 0 1 -10.8807 -5.80305" transformations="translations" pos="5470.88 2656.85" stroke="black" type="label" width="7.895" height="11.097" depth="0" valign="baseline" size="LARGE">5</text>
+<text matrix="1 0 0 1 81.7469 -12.4213" transformations="translations" pos="5233.68 2704" stroke="black" type="label" valign="baseline" size="LARGE">1</text>
+<text matrix="1 0 0 1 -77.7248 -13.9409" transformations="translations" pos="5314.92 2706.18" stroke="black" type="label" valign="baseline" size="LARGE">2</text>
+<text matrix="1 0 0 1 -87.296 0.461353" transformations="translations" pos="5322.18 2613.33" stroke="black" type="label" valign="baseline" size="LARGE">3</text>
+<text matrix="1 0 0 1 81.2216 2.64135" transformations="translations" pos="5235.13 2611.15" stroke="black" type="label" valign="baseline" size="LARGE">4</text>
+<text matrix="1 0 0 1 1.65085 -7.92406" transformations="translations" pos="5274.3 2671.36" stroke="black" type="label" valign="baseline" size="LARGE">5</text>
+<text matrix="1 0 0 1 8.61566 -18.2909" transformations="translations" pos="5362.07 2710.53" stroke="black" type="label" valign="baseline" size="LARGE">1</text>
+<text matrix="1 0 0 1 -13.0569 -12.3315" transformations="translations" pos="5408 2672" stroke="black" type="label" valign="baseline" size="LARGE">2</text>
+<text matrix="1 0 0 1 -0.725382 -3.62691" transformations="translations" pos="5395.44 2643.79" stroke="black" type="label" valign="baseline" size="LARGE">3</text>
+<text matrix="1 0 0 1 -4.4412 0.146194" transformations="translations" pos="5374.4 2610.43" stroke="black" type="label" valign="baseline" size="LARGE">4</text>
+<text matrix="1 0 0 1 -10.8807 -5.80305" transformations="translations" pos="5470.88 2656.85" stroke="black" type="label" valign="baseline" size="LARGE">5</text>
 <path stroke="black">
 5216 2720 m
 5216 2592 l

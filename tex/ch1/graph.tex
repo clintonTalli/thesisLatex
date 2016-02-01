@@ -44,7 +44,7 @@ $V_1$ and $V_2$ in the plane.}
 
 To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$, of $G$.  
 For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$. 
-The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph, i.e.
+The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph.
 A drawing is said to be \textit{planar} if no two distinct edges cross \cite{BET+99}.
 For this thesis, we will strictly work with straigt line drawings where all $c_{u,v}$ are straight line segments unless specified otherwise.
 
@@ -63,24 +63,36 @@ Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a fin
 \end{center} 
 \end{figure} 
 %If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}. 
-
 A combinatorial \textit{embedding} is a planar drawing with a corresponding circular order of the neighbors of each vertex.
 Two embeddings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets and the embeddings can be described as a combination of translations and rotations of the other.
-
 \begin{figure}[!htbp]
 \begin{center}
     \includegraphics{graphics/combinatorialEmbedding.pdf}
-    \caption{Here is a wheel graph, $W_5$, in two separate drawings with the same counterclock}\label{fig:combinatorialEmbedding.pdf}
+    \caption{Here is a wheel graph, $W_5$, in two separate drawings with the same counterclockwise ordering of neighbors for each vertex.}\label{fig:combinatorialEmbedding.pdf}
 \end{center}
 \end{figure}
-
-\begin{figure}[!htbp]
+In figure \ref{fig:combinatorialEmbedding.pdf}, the wheel graph is depcted in two different drawings, one on the left and one on the right.  The drawings have the followings counterclockwise order of neighbors for each vertex:
+\begin{table}[!htbp]\label{table:combinatorialEmbedding}
 \begin{center}
-\includegraphics[scale=1]{graphics/orderedFaces.pdf}
+$$\begin{array}{|c|c|c|}\hline
+\text{Vertex}&\text{Left Drawing}&\text{Right Drawing}\\\hline
+1&(2,5,4)& (4,2,5) 
+\\\hline
+2&(3,5,1) & (1,3,5) 
+\\\hline
+3&(2,4,5)& (2,4,5) 
+\\\hline
+4& (1,5,3)  & (1,5,3) 
+\\\hline
+5&(2,3,4,1)& (1,2,3,4) 
+\\\hline
+\end{array} $$
+\caption{A table showing the counter clockwise circular ordering of neighbors for the left and right drawing in Figure \ref{fig:combinatorialEmbedding.pdf}.  Note that the permutation cycles are equivalent for the right and left drawings.}
 \end{center} 
-\label{fig:orderedFaces.pdf}
-\caption{}
-\end{figure}
+\end{table}
+Referencing table \ref{table:combinatorialEmbedding} and figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
+
+
 
 
 
@@ -153,7 +165,8 @@ A \textit{path} is a sequence of vertices in which every two consecutive vertice
 A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$.  
 A graph is \textit{connected} if for any two vertices, there exists a path between the two points.
 A \textit{tree} is a graph that has no simple cycles and is connected.
-\begin{figure}[!htbp]
+\newpage
+\begin{figure}[!hbpt]
 \begin{center}
 \includegraphics{graphics/RandomTree.pdf}
 \caption{An example of a tree.}\label{fig:ch1-graph-2}
@@ -164,7 +177,7 @@ Any two embeddings of trees are equivalent if they can be described as any combi
 
 % \subsection{Ordered Trees}
 An \textit{ordered tree} is a tree $T$ together with a cyclic order of the neighbors for each vertex, $O$.
-\begin{figure}[!htbp]
+\begin{figure}[!hbpt]
 \begin{center}
     \includegraphics{graphics/OrderedTreesExample.pdf}
     \caption{A tree with two embeddings with different cyclic orderings around 

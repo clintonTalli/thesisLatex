@@ -5,10 +5,10 @@ Formally, a \textit{polygonal linkage} is an ordered pair $\left(\PP,\HH
 \textit{hinge} $h\in \HH$ 
 corresponds to two points on the boundary of two distinct polygons in $\PP$.  A \emph{realization 
 of a polygonal linkage} is an interior-disjoint placement of 
-congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).  A \textit{polygonal linkage realization with fixed orientation} allows for any combination of translations and rotated copies of polygons in $\PP$ where every hinge has a cyclic order of  of incident polygons.  Note that oriented polygonal realizations do not allow for reflection transformations.  
+congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).  A \textit{polygonal linkage realization with fixed orientation} allows for any combination of translations and rotated copies of polygons in $\PP$ where every hinge has a cyclic order of  of incident polygons.  Note that oriented polygonal linkage realizations do not allow for reflection transformations.  
 
-These two types of realization types allow one to pose two different types of problems:
-\begin{prob}[Unordered Realizibility Problem for Polygonal Linkages]\label{problem:UnorderedPolygonal}
+These two types of realization types allow one to pose two different types of problems, the realizability problem for polygonal linkages and the realizability problem for polygonal linkages with fixed orientation:
+\begin{prob}[Realizibility Problem for Polygonal Linkages]\label{problem:UnorderedPolygonal}
 The realizability problem for a polygonal linkage asks whether a given polygonal linkage has 
 a realization.
 \end{prob}
@@ -21,8 +21,13 @@ a realization.
 \end{figure}
 
 
-Figure \ref{fig:problem1} demonstrates that not all polygonal linkages have a planar realization.  
-
+Figures \ref{fig:problem1} and \ref{fig:collidingHingedPolygons} demonstrates that not all polygonal linkages have a planar realization.  
+\begin{figure}[!htbp]\label{fig:collidingHingedPolygons}
+\begin{center}
+\includegraphics[scale=1]{graphics/collidingHingedPolygons.pdf}
+\end{center} 
+\caption{This example shows yet another example where two realizations of the same polygonal linkage.  One realization where there is an intersection and another where there isn't an intersection.}
+\end{figure}
 
 \begin{figure}[!htbp]
 \begin{center}
@@ -34,31 +39,36 @@ two hinge points can correspond to the same boundary point of a polygon.}
 \label{fig:linkage-1}
 \end{figure}
 
-\begin{prob}[Ordered Realizibility Problem for Polygonal Linkages]\label{problem:OrderedPolygonal}
+\begin{prob}[ Realizibility Problem for Polygonal Linkages with Fixed Orientation]\label{problem:OrderedPolygonal}
 The \emph{realizability} problem for a ordered polygonal linkage asks whether a given polygonal 
 linkage has a realization with respect to order.
 \end{prob}
 
-\begin{figure}[!htbp]
+\begin{figure}[!htbp]\label{fig:orderedLinkages}
 \begin{center}
 \includegraphics[scale=1]{graphics/orderedLinkages.pdf}
 \end{center} 
-\caption{The ordering of the polygonal linkages (A,B,C) differs (A,C,B)}
-\label{fig:orderedLinkages.pdf}
+\caption{The realizations of the polygonal linkage with order (A,B,C) differs (A,C,B)}
 \end{figure}
+In figure \ref{fig:orderedLinkages}, we show that orientation of polygons can alter the realization.  In addition, figure \ref{fig:orderedFaces.pdf} shows that changing the order of the polygons A, B, and C can be the difference between a realization without intersection of polygons and a realization with intersection of polygons.
+\newpage
+\begin{figure}[!htbp]\label{fig:orderedFaces.pdf}
+\begin{center}
+\includegraphics[scale=1]{graphics/orderedFaces.pdf}
+\caption{Here we have two realizations of a polygonal linkage with two different clockwise orderings (C,B,A) and (B,C,A) respectively.  Note that the realization with ordering (B,C,A) has polygonal intersection.}
+\end{center} 
+
+\end{figure}
+
+\newpage
+
 
 \begin{thm}\label{thm:hinge2}
 It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with fixed orientation.
 \end{thm}
 
-Our proof for Theorem \ref{thm:hinge2} is a reduction from {\sc Planar-3-SAT} (P3SAT): decide whether a given Boolean formula in 3-CNF with a planar associated graph is satisfiable. The \emph{graph associated} to a Boolean formula in 3-CNF is a bipartite graph where the two vertex classes correspond to the variables and to the clauses, respectively; there is an edge between a variable $x$ and a clause $C$ iff $x$ or $\neg x$ appears in $C$. See Fig.~\ref{fig:assoc}(left).
-\begin{figure}[!htbp]
-\begin{center}
-\includegraphics[scale=1]{graphics/collidingHingedPolygons.pdf}
-\end{center} 
-\caption{This example shows a polygonal linkage with a realization where two polygons intersect another.}
-\label{fig:collidingHingedPolygons}
-\end{figure}
+Our proof for Theorem \ref{thm:hinge2} is a reduction from {\sc Planar-3-SAT} (P3SAT): decide whether a given Boolean formula in 3-CNF with a planar associated graph is satisfiable. The \emph{graph associated} to a Boolean formula in 3-CNF is a bipartite graph where the two vertex classes correspond to the variables and to the clauses, respectively; there is an edge between a variable $x$ and a clause $C$ iff $x$ or $\neg x$ appears in $C$. See Fig.~\ref{fig:assoc} (left).
+
 
 \begin{figure}[!htbp]
 	\centering
@@ -67,6 +77,9 @@ Our proof for Theorem \ref{thm:hinge2} is a reduction from {\sc Planar-3-SAT} (P
 Right: the schematic layout of the variable, clause, and transmitter gadgets in our construction.}
 	\label{fig:assoc}
 \end{figure}
+
+
+
 
 
 \subsection{Geometric Dissections}
@@ -79,12 +92,9 @@ The Haberdasher problem was proposed in 1902 by Henry Dudeney which dissects an 
 \end{center}
 \caption{The Haberdasher problem was proposed in 1902 and solved in 1903 by Henry Dudeny.  The dissection is for polygons that forms a square and equilateral traingle
  }
-
-
-
 \label{fig:polygonallinkage-5}
 \end{figure}
-
+\newpage
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/GeometricDissectionBusschop.pdf}
@@ -94,6 +104,17 @@ instead of hinges.  These two realizations of the polygonal linkage are invalid 
  }
 \label{fig:polygonallinkage-4}
 \end{figure}
+Geometric dissections are closely related to polygonal linkages.  Figure \ref{fig:polygonallinkage-4} shows two arrangements of the same polygons to form a hexagon and a square.  The reason these polygons are not polygonal linkages is that the polygons do not have consistent hinge points.  Figure \ref{fig:HingedTriangleSquare}, shows the Haberdasher problem with hinges.  This makes the Haberdasher problem as a type of polygonal linkage where the polygons are free to move about their hinge points and take the form of a triangle or square.
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics{graphics/HingedTriangleSquare.pdf}
+\end{center}
+\caption{This shows the Haberdasher problem in the form of polygonal linkage.}
+\label{fig:HingedTriangleSquare}
+\end{figure}
+
+
+
 
 % With three cuts, dissect an equilateral triangle into a square. The problem was first proposed by Dudeney in 1902, and subsequently discussed in Dudeney (1958), and Gardner (1961, p. 34), Stewart (1987, p. 169), and Wells (1991, pp. 61-62). The solution can be hinged so that the four pieces collapse into either the triangle or the square. Two of the hinges bisect sides of the triangle, while the third hinge and the corner of the large piece on the base cut the base in the approximate ratio 0.982:2:1.018.
 
