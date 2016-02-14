@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70107" creator="Ipe 7.1.7">
-<info created="D:20151027190600" modified="D:20151027190600"/>
+<ipe version="70107" creator="Ipe 7.1.8">
+<info created="D:20151027190600" modified="D:20160214134926"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -257,7 +257,7 @@ h
 h
 </path>
 <use matrix="0.827731 0 0 0.827731 4.90762 78.79" name="mark/disk(sx)" pos="272 768" size="normal" stroke="black"/>
-<text matrix="0.827731 0 0 0.827731 6.48999 76.6802" transformations="translations" pos="273.285 773.904" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="0.827731 0 0 0.827731 6.48999 76.6802" transformations="translations" pos="273.285 773.904" stroke="black" type="label" valign="baseline">$A$</text>
 <path matrix="0.827731 0 0 0.827731 -74.5546 105.277" stroke="black">
 272 768 m
 248 781.856 l
@@ -265,7 +265,7 @@ h
 h
 </path>
 <use matrix="0.827731 0 0 0.827731 -74.5546 105.277" name="mark/disk(sx)" pos="272 768" size="normal" stroke="black"/>
-<text matrix="0.827731 0 0 0.827731 -72.9722 103.168" transformations="translations" pos="273.285 773.904" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="0.827731 0 0 0.827731 -72.9722 103.168" transformations="translations" pos="273.285 773.904" stroke="black" type="label" valign="baseline">$A$</text>
 <path matrix="0.827731 0 0 0.827731 -34.8235 105.277" stroke="black">
 272 768 m
 248 781.856 l
@@ -273,7 +273,7 @@ h
 h
 </path>
 <use matrix="0.827731 0 0 0.827731 -34.8235 105.277" name="mark/disk(sx)" pos="272 768" size="normal" stroke="black"/>
-<text matrix="0.827731 0 0 0.827731 -33.2411 103.168" transformations="translations" pos="273.285 773.904" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="0.827731 0 0 0.827731 -33.2411 103.168" transformations="translations" pos="273.285 773.904" stroke="black" type="label" valign="baseline">$A$</text>
 <path matrix="0.827731 0 0 0.827731 4.90762 105.277" stroke="black">
 272 768 m
 248 781.856 l
@@ -281,7 +281,7 @@ h
 h
 </path>
 <use matrix="0.827731 0 0 0.827731 4.90762 105.277" name="mark/disk(sx)" pos="272 768" size="normal" stroke="black"/>
-<text matrix="0.827731 0 0 0.827731 6.48999 103.168" transformations="translations" pos="273.285 773.904" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="0.827731 0 0 0.827731 6.48999 103.168" transformations="translations" pos="273.285 773.904" stroke="black" type="label" valign="baseline">$A$</text>
 <path matrix="0.827731 0 0 0.827731 -34.8235 78.79" stroke="black">
 272 768 m
 248 781.856 l
@@ -289,7 +289,7 @@ h
 h
 </path>
 <use matrix="0.827731 0 0 0.827731 -34.8235 78.79" name="mark/disk(sx)" pos="272 768" size="normal" stroke="black"/>
-<text matrix="0.827731 0 0 0.827731 -33.2411 76.6802" transformations="translations" pos="273.285 773.904" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="0.827731 0 0 0.827731 -33.2411 76.6802" transformations="translations" pos="273.285 773.904" stroke="black" type="label" valign="baseline">$A$</text>
 <path matrix="0.827731 0 0 0.827731 -74.5546 78.79" stroke="black">
 272 768 m
 248 781.856 l
@@ -297,7 +297,7 @@ h
 h
 </path>
 <use matrix="0.827731 0 0 0.827731 -74.5546 78.79" name="mark/disk(sx)" pos="272 768" size="normal" stroke="black"/>
-<text matrix="0.827731 0 0 0.827731 -72.9722 76.6802" transformations="translations" pos="273.285 773.904" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="0.827731 0 0 0.827731 -72.9722 76.6802" transformations="translations" pos="273.285 773.904" stroke="black" type="label" valign="baseline">$A$</text>
 <path matrix="0.827731 0 0 0.827731 -114.286 78.79" stroke="black">
 272 768 m
 248 781.856 l
@@ -305,7 +305,7 @@ h
 h
 </path>
 <use matrix="0.827731 0 0 0.827731 -114.286 78.79" name="mark/disk(sx)" pos="272 768" size="normal" stroke="black"/>
-<text matrix="0.827731 0 0 0.827731 -112.703 76.6802" transformations="translations" pos="273.285 773.904" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="0.827731 0 0 0.827731 -112.703 76.6802" transformations="translations" pos="273.285 773.904" stroke="black" type="label" valign="baseline">$A$</text>
 <path matrix="0.827731 0 0 0.827731 57.8824 118.521" stroke="black">
 320 736 m
 304 763.713 l
@@ -328,13 +328,6 @@ h
 272 708.287 l
 </path>
 <use matrix="0.827731 0 0 0.827731 57.8824 118.521" name="mark/disk(sx)" pos="288 736" size="normal" stroke="black"/>
-<text matrix="0.827731 0 0 0.827731 67.9616 70.2768" transformations="translations" pos="273.285 773.904" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
-<path matrix="0.827731 0 0 0.827731 57.8824 118.521" stroke="black">
-32 784 m
-32 688 l
-336 688 l
-336 784 l
-h
-</path>
+<text matrix="0.827731 0 0 0.827731 67.9616 70.2768" transformations="translations" pos="273.285 773.904" stroke="black" type="label" valign="baseline">$A$</text>
 </page>
 </ipe>

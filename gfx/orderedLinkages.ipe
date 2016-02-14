@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.1.8">
-<info created="D:20160125144342" modified="D:20160125144342"/>
+<info created="D:20160125144342" modified="D:20160214143027"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -254,7 +254,7 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="0.772755 0 0 0.772755 219.621 -47.2865" stroke="black">
+<path layer="alpha" matrix="-0.00273667 -0.77275 0.77275 -0.00273667 -79.8637 619.215" stroke="black">
 224 640 m
 192 576 l
 192 512 l
@@ -262,24 +262,24 @@ h
 256 576 l
 224 640 l
 </path>
-<path matrix="0.772755 0 0 0.772755 145.437 51.6262" stroke="black">
+<path matrix="-0.00273667 -0.77275 0.77275 -0.00273667 19.3111 693.048" stroke="black">
 320 576 m
 320 512 l
 384 512 l
 384 576 l
 h
 </path>
-<path matrix="0.772755 0 0 0.772755 145.437 76.3543" stroke="black">
+<path matrix="-0.00273667 -0.77275 0.77275 -0.00273667 44.0391 692.96" stroke="black">
 320 480 m
 272 507.713 l
 272 452.287 l
 h
 </path>
-<use matrix="0.772755 0 0 0.772755 145.437 76.3543" name="mark/disk(sx)" pos="320 480" size="normal" stroke="black"/>
-<text matrix="0.772755 0 0 0.772755 153.164 57.8082" transformations="translations" pos="336 528" stroke="black" type="label" width="17.185" height="16.934" depth="0" valign="baseline" size="Huge">A</text>
-<text matrix="0.772755 0 0 0.772755 136.524 67.8965" transformations="translations" pos="288 480" stroke="black" type="label" width="16.219" height="16.934" depth="0" valign="baseline" size="Huge">B</text>
-<text matrix="0.772755 0 0 0.772755 139.255 67.854" transformations="translations" pos="320 416" stroke="black" type="label" width="16.548" height="16.934" depth="0" valign="baseline" size="Huge">C</text>
-<path matrix="-0 0.772755 0.772755 0 84.648 271.554" stroke="black">
+<use matrix="-0.00273667 -0.77275 0.77275 -0.00273667 44.0391 692.96" name="mark/disk(sx)" pos="320 480" size="normal" stroke="black"/>
+<text matrix="-0.00273667 -0.77275 0.77275 -0.00273667 25.4657 685.299" transformations="translations" pos="336 528" stroke="black" type="label" width="17.185" height="16.934" depth="0" valign="baseline" size="Huge">A</text>
+<text matrix="-0.00273667 -0.77275 0.77275 -0.00273667 37.7675 683.589" transformations="translations" pos="288 480" stroke="black" type="label" width="16.219" height="16.934" depth="0" valign="baseline" size="Huge">B</text>
+<text matrix="-0.00273667 -0.77275 0.77275 -0.00273667 35.8301 688.399" transformations="translations" pos="320 416" stroke="black" type="label" width="16.548" height="16.934" depth="0" valign="baseline" size="Huge">C</text>
+<path matrix="0 0.772755 0.772755 0 84.648 271.554" stroke="black">
 224 640 m
 192 576 l
 192 512 l
@@ -294,7 +294,7 @@ h
 384 576 l
 h
 </path>
-<path matrix="-0 0.772755 0.772755 0 208.289 197.37" stroke="black">
+<path matrix="0 0.772755 0.772755 0 208.289 197.37" stroke="black">
 320 480 m
 272 507.713 l
 272 452.287 l
@@ -304,12 +304,7 @@ h
 <text matrix="0.772755 0 0 0.772755 339.657 55.1828" transformations="translations" pos="336 528" stroke="black" type="label" width="17.185" height="16.934" depth="0" valign="baseline" size="Huge">A</text>
 <text matrix="0.772755 0 0 0.772755 349.032 38.9396" transformations="translations" pos="288 480" stroke="black" type="label" width="16.219" height="16.934" depth="0" valign="baseline" size="Huge">B</text>
 <text matrix="0.772755 0 0 0.772755 264.522 114.566" transformations="translations" pos="320 416" stroke="black" type="label" width="16.548" height="16.934" depth="0" valign="baseline" size="Huge">C</text>
-<path matrix="0.772755 0 0 0.772755 145.437 76.3543" stroke="black">
-256 560 m
-256 336 l
-640 336 l
-640 560 l
-h
-</path>
+<text matrix="1 0 0 1 10.7732 10.2345" transformations="translations" pos="408.594 436.143" stroke="black" type="label" width="4.981" height="4.289" depth="0" valign="baseline">a</text>
+<text matrix="1 0 0 1 175.333 2.42415" transformations="translations" pos="408.594 436.143" stroke="black" type="label" valign="baseline">a</text>
 </page>
 </ipe>

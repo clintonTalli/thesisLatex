@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70107" creator="Ipe 7.1.7">
-<info created="D:20151003123735" modified="D:20151003124241"/>
+<ipe version="70107" creator="Ipe 7.1.8">
+<info created="D:20151003123735" modified="D:20160214134149"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -320,15 +320,8 @@ h
 434.596 736 m
 343.067 765.74 l
 </path>
-<text matrix="1 0 0 1 22.3723 -9.55851" transformations="translations" pos="160 688" stroke="black" type="label" width="19.268" height="6.808" depth="2.85" valign="baseline">$K_{3,3}$</text>
-<text matrix="1 0 0 1 224 -16" transformations="translations" pos="160 688" stroke="black" type="label" width="12.931" height="6.812" depth="1.49" valign="baseline">$K_{5}$</text>
-<path stroke="black">
-92.9479 805.766 m
-92.9479 657.928 l
-467.004 657.928 l
-467.004 805.766 l
-h
-</path>
+<text matrix="1 0 0 1 22.3723 -9.55851" transformations="translations" pos="160 688" stroke="black" type="label" valign="baseline">$K_{3,3}$</text>
+<text matrix="1 0 0 1 224 -16" transformations="translations" pos="160 688" stroke="black" type="label" valign="baseline">$K_{5}$</text>
 <use name="mark/disk(sx)" pos="399.635 784.12" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="343.067 765.74" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="343.067 706.26" size="normal" stroke="black"/>

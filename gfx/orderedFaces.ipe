@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.1.8">
-<info created="D:20160125113429" modified="D:20160125132219"/>
+<info created="D:20160125113429" modified="D:20160214145845"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -291,13 +291,13 @@ h
 219.852 752.243 l
 192.28 799.999 l
 </path>
-<path matrix="2.55562 0 0 2.55562 -187.499 -1456.32" stroke="black">
+<path matrix="2.55562 0 0 2.55562 -187.799 -1455.79" stroke="black">
 164.568 751.999 m
 193.002 768 l
 192.28 799.999 l
 164.568 751.999 l
 </path>
-<path matrix="-1.34484 2.17315 -2.17315 -1.34484 2234.96 1119.88" stroke="black">
+<path matrix="-1.34484 2.17315 -2.17315 -1.34484 2233.98 1120.34" stroke="black">
 164.568 751.999 m
 193.002 768 l
 201.717 762.886 l
@@ -309,12 +309,9 @@ h
 <text matrix="2.55562 0 0 2.55562 -189.057 -1455.79" transformations="translations" pos="182.703 771.517" stroke="black" type="label" width="11.936" height="11.761" depth="0" valign="baseline" size="LARGE">A</text>
 <text matrix="2.55562 0 0 2.55562 -201.962 -1497.58" transformations="translations" pos="197.206 773.258" stroke="black" type="label" width="11.493" height="11.761" depth="0" valign="baseline" size="LARGE">C</text>
 <text matrix="2.55562 0 0 2.55562 -168.111 -1416.73" transformations="translations" pos="190.825 758.465" stroke="black" type="label" width="11.265" height="11.761" depth="0" valign="baseline" size="LARGE">B</text>
-<path stroke="black">
-60 600 m
-60 440 l
-400 440 l
-400 600 l
-h
-</path>
+<use name="mark/disk(sx)" pos="305.441 506.924" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="156.477 506.056" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 -5.46199 -3.18616" transformations="translations" pos="160.247 499.522" stroke="black" type="label" width="4.981" height="4.289" depth="0" valign="baseline">a</text>
+<text matrix="1 0 0 1 143.833 -1.82101" transformations="translations" pos="160.247 499.522" stroke="black" type="label" valign="baseline">a</text>
 </page>
 </ipe>

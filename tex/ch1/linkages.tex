@@ -8,8 +8,12 @@
 
 When graph drawings model physical objects, other qualities about the graph can be contextualized in a geometric sense.  
 Distance, angular relationstips and other geometric qualities of the drawings can be other useful properties of the drawing to perform analysis on.
-The \textit{length assignment} of a graph $G=(V,E)$ is $\ell:E \mapsto \bbr^+$. 
+In any drawing, edges have length, angles formed by adjacent edges, and so on.  
+In this thesis we are interested in the inverse problem where we would like to embed a graph with specific geometric properties, for example, an embedding with specified edge lengths. 
+This motivates the following definition:
+\textit{length assignment} of a graph $G=(V,E)$ is $\ell:E \mapsto \bbr^+$. 
 For simple graphs, length assignment must be strictly positive, otherwise it may result in two distinct vertices with the same coordinates.
+Like combinatorial embeddings are equivalency class of embeddings of the same circular order around vertices, we can also define equivalence classes of drawings with the same length assignment.
 A \textit{linkage} is a graph $G = (V,E)$ with a length assignment $\ell:E \mapsto \bbr^+$.  
 Length assignments can be thought of as a metric where $\ell(u,v) = \ell(v,u)>0$.
 %Inser linkage here

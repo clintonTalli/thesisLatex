@@ -1,34 +1,7 @@
 \section{Polygonal Linkages}
-
-Formally, a \textit{polygonal linkage} is an ordered pair $\left(\PP,\HH
-\right)$ where $\PP$ is a finite set of polygons and $\HH$ is a finite set of hinges; a 
-\textit{hinge} $h\in \HH$ 
-corresponds to two points on the boundary of two distinct polygons in $\PP$.  A \emph{realization 
-of a polygonal linkage} is an interior-disjoint placement of 
-congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).  A \textit{polygonal linkage realization with fixed orientation} allows for any combination of translations and rotated copies of polygons in $\PP$ where every hinge has a cyclic order of  of incident polygons.  Note that oriented polygonal linkage realizations do not allow for reflection transformations.  
-
-These two types of realization types allow one to pose two different types of problems, the realizability problem for polygonal linkages and the realizability problem for polygonal linkages with fixed orientation:
-\begin{prob}[Realizibility Problem for Polygonal Linkages]\label{problem:UnorderedPolygonal}
-The realizability problem for a polygonal linkage asks whether a given polygonal linkage has 
-a realization.
-\end{prob}
-\begin{figure}[!htbp]
-\begin{center}
-\includegraphics[scale=1]{graphics/Problem1.pdf}
-\end{center} 
-\caption{Here we have 7 congruent copies of an equilateral triangle with a hinge point of $A$.  The polygonal linkage is not realizable.  The best we can realize is at most 6 congruent copies of an equilateral triangle with the hinge point of $A$ in the plane.}
-\label{fig:problem1}
-\end{figure}
-
-
-Figures \ref{fig:problem1} and \ref{fig:collidingHingedPolygons} demonstrates that not all polygonal linkages have a planar realization.  
-\begin{figure}[!htbp]\label{fig:collidingHingedPolygons}
-\begin{center}
-\includegraphics[scale=1]{graphics/collidingHingedPolygons.pdf}
-\end{center} 
-\caption{This example shows yet another example where two realizations of the same polygonal linkage.  One realization where there is an intersection and another where there isn't an intersection.}
-\end{figure}
-
+A generalization of linkages is a polygonal linkage.
+Formally, a \textit{polygonal linkage} is an ordered pair $\left(\PP,\HH \right)$ where $\PP$ is a finite set of polygons and $\HH$ is a finite set of hinges; a \textit{hinge} $h\in \HH$ corresponds to two or more points on the boundary of two distinct polygons in $\PP$.  
+A \emph{realization of a polygonal linkage} is an interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).  
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics[scale=1]{graphics/hingeOnThreeDistinctPolygons.pdf}
@@ -38,52 +11,77 @@ three polygons.  Note that hinge points correspond to two distinct polygons.(b) 
 two hinge points can correspond to the same boundary point of a polygon.}
 \label{fig:linkage-1}
 \end{figure}
-
-\begin{prob}[ Realizibility Problem for Polygonal Linkages with Fixed Orientation]\label{problem:OrderedPolygonal}
-The \emph{realizability} problem for a ordered polygonal linkage asks whether a given polygonal 
-linkage has a realization with respect to order.
-\end{prob}
-
+A \textit{realization of a polygonal linkage with fixed orientation} allows for any combination of translations and rotated copies of polygons in $\PP$ where every hinge has a cyclic order of  of incident polygons.  
 \begin{figure}[!htbp]\label{fig:orderedLinkages}
 \begin{center}
 \includegraphics[scale=1]{graphics/orderedLinkages.pdf}
 \end{center} 
-\caption{The realizations of the polygonal linkage with order (A,B,C) differs (A,C,B)}
+\caption{The realizations of the polygonal linkage with order (A,B,C) differs (A,C,B).}
 \end{figure}
-In figure \ref{fig:orderedLinkages}, we show that orientation of polygons can alter the realization.  In addition, figure \ref{fig:orderedFaces.pdf} shows that changing the order of the polygons A, B, and C can be the difference between a realization without intersection of polygons and a realization with intersection of polygons.
-\newpage
+Note that oriented polygonal linkage realizations do not allow for reflection transformations of polygons in $\PP$.
+
+These two realization types allow one to pose two different types of problems, the realizability problem for polygonal linkages and the realizability problem for polygonal linkages with fixed orientation:
+\begin{prob}[Realizibility Problem for Polygonal Linkages]\label{problem:UnorderedPolygonal}
+%The realizability problem for a polygonal linkage asks whether a given polygonal linkage has 
+%a realization.
+Given a polygonal linkage, does it have a realization?
+\end{prob}
+\begin{prob}[ Realizibility Problem for Polygonal Linkages with Fixed Orientation]\label{problem:OrderedPolygonal}
+%The \emph{realizability} problem for a ordered polygonal linkage asks whether a given polygonal 
+%linkage has a realization with respect to order.
+Given a polygonal linkage with fixed orientation, does it have a realization?
+\end{prob}
+
+Not every polygonal linkage has a realization.
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[scale=1]{graphics/Problem1.pdf}
+\end{center} 
+\caption{Here we have 7 congruent copies of an equilateral triangle with a hinge point of $A$.  The polygonal linkage is not realizable.  The best we can realize is at most 6 congruent copies of an equilateral triangle with the hinge point of $A$ in the plane.}
+\label{fig:problem1}
+\end{figure}
+To prove that 7 congruent copies of an equilateral triange with a common hinge point, i.e. Figure \ref{fig:problem1}, does not have a realization, we first suppose it does.  Each angle of every triangle is $\frac{\pi}{3}$ radians.  The sum of 7 angles formed by the triangles is $\frac{7\pi}{3}>2\pi$.  The total radian measure around $A$ is $2 \pi$; the polygonal linkage of \ref{fig:problem1} would overlap itself and does not have a realization.
+
+Figure \ref{fig:collidingHingedPolygons} show the congruent copies of the polygons $A$, $B$, $C$, and $D$ in two different configurations, the far right is a realization, the middle fails to be a realization because of the interiors of $B$ and $D$ intersecting and the left showing the polygons in $\PP$.  To formally prove that this polygonal linkage cannot satisfy Problem \ref{problem:OrderedPolygonal}, suppose there is a realization.  $A$, $D$, and $B$ have unique placement around triangle $C$.  $D$ and $C$ have common intersecting interiors and thus a contradiction of the existence of a realization.  
+\begin{figure}[!htbp]\label{fig:collidingHingedPolygons}
+\begin{center}
+\includegraphics[scale=1]{graphics/collidingHingedPolygons.pdf}
+\end{center} 
+\caption{This example shows yet another example where two realizations of the same polygonal linkage.  One realization where there is an intersection and another where there isn't an intersection.}
+\end{figure}
+Figure \ref{fig:collidingHingedPolygons}, satisfies Problem \ref{problem:UnorderedPolygonal} but not Problem \ref{problem:OrderedPolygonal}.  The far right is a realization but with polygon $B$ reflected. If $B$ were not reflected we see that the only way to attach the polygons by their hinges together is if $B$ and $D$ intersect in their interiors.  
+
+Figure \ref{fig:collidingHingedPolygons} does not quite get at the heart of the challenge with Problem \ref{problem:UnorderedPolygonal} because the order of the polygons is not considered.
 \begin{figure}[!htbp]\label{fig:orderedFaces.pdf}
 \begin{center}
 \includegraphics[scale=1]{graphics/orderedFaces.pdf}
 \caption{Here we have two realizations of a polygonal linkage with two different clockwise orderings (C,B,A) and (B,C,A) respectively.  Note that the realization with ordering (B,C,A) has polygonal intersection.}
 \end{center} 
-
 \end{figure}
+Figure \ref{fig:orderedFaces.pdf} consider the order of the augmented triangles around hinge point $a$.  Note that when ordered $(B,C,A)$, the polygonal linkage has an intersection in the interior. 
 
-\newpage
+
+
+
 
 
 \begin{thm}\label{thm:hinge2}
 It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with fixed orientation.
 \end{thm}
 
-Our proof for Theorem \ref{thm:hinge2} is a reduction from {\sc Planar-3-SAT} (P3SAT): decide whether a given Boolean formula in 3-CNF with a planar associated graph is satisfiable. The \emph{graph associated} to a Boolean formula in 3-CNF is a bipartite graph where the two vertex classes correspond to the variables and to the clauses, respectively; there is an edge between a variable $x$ and a clause $C$ iff $x$ or $\neg x$ appears in $C$. See Fig.~\ref{fig:assoc} (left).
-
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[width=0.7\columnwidth]{graphics/fig-assoc-hex.pdf}
-	\caption[]{Left: the associated graph $A(\Phi)$ for a Boolean formula $\Phi$.
-Right: the schematic layout of the variable, clause, and transmitter gadgets in our construction.}
-	\label{fig:assoc}
-\end{figure}
-
+Our proof for Theorem \ref{thm:hinge2} is a reduction from {\sc Planar-3-SAT} (P3SAT): decide whether a given Boolean formula in 3-CNF with a planar associated graph is satisfiable. 
 
 
 
 
 \subsection{Geometric Dissections}
-The Wallace-Bolyai-Gerwien Theorem simply states that two polygons are congruent by dissection iff they have the same area.  A \textit{dissection} being a collection of smaller polygons that when hinged together form a polygon.  Here dissections don't have to be hinged.  Hinged dissections preserve adjacent polygon relationships and their points of connection.  The question of whether two polygons of equal area have a hinged dissection was an outstanding problem until 2007 \cite{abbott2012hinged}.
+Hilbert's third problem asks: given any two polyhedra of equal volume, is it always possible to cut the first into finitely many polyhedral pieces which can be reassembled to yield the second\cite{aigner2010hilbert}?  In three dimensions the answer is no however for two dimensions it is true \cite{10.23073621846}.
+
+The Wallace-Bolyai-Gerwien Theorem simply states that two polygons are congruent by dissection iff they have the same area.  
+A \textit{dissection} being a collection of smaller polygons whose interior disjoint union forms a polygon.
+Hinged dissections are polygonal linkages whose disjoint interior union forms a polygon.  
+The question of given two polygons of equal area, does there exist a hinged dissection whose two possible realizations are the polygons?
+The question of whether two polygons of equal area have a common hinged dissection was an outstanding problem until 2007 \cite{abbott2012hinged}.
 
 The Haberdasher problem was proposed in 1902 by Henry Dudeney which dissects an equilateral triangle into a square.
 \begin{figure}[!htbp]
@@ -104,13 +102,18 @@ instead of hinges.  These two realizations of the polygonal linkage are invalid 
  }
 \label{fig:polygonallinkage-4}
 \end{figure}
-Geometric dissections are closely related to polygonal linkages.  Figure \ref{fig:polygonallinkage-4} shows two arrangements of the same polygons to form a hexagon and a square.  The reason these polygons are not polygonal linkages is that the polygons do not have consistent hinge points.  Figure \ref{fig:HingedTriangleSquare}, shows the Haberdasher problem with hinges.  This makes the Haberdasher problem as a type of polygonal linkage where the polygons are free to move about their hinge points and take the form of a triangle or square.
+Geometric dissections are closely related to polygonal linkages.  Figure \ref{fig:polygonallinkage-4} shows two arrangements of the same polygons to form a hexagon and a square. 
+The polygons are not hinged and are arranged in differing order.
+The polygons are merely tiled together to form the hexagon and square.    
+Figure \ref{fig:HingedHaberdasher}, shows the Haberdasher problem with hinges.  
+This makes the Haberdasher problem as a type of polygonal linkage where the polygons are free to move about their hinge points and take the form of a triangle or square.  
+Demaine et. al. \cite{abbott2012hinged} showed that any two polygons of the same area have a common hinged dissection where polygonal pieces must hinge together at vertices to form a connected realization.
 \begin{figure}[!htbp]
 \begin{center}
-\includegraphics{graphics/HingedTriangleSquare.pdf}
+\includegraphics{graphics/HingedHaberdasher.pdf}
 \end{center}
-\caption{This shows the Haberdasher problem in the form of polygonal linkage.}
-\label{fig:HingedTriangleSquare}
+\caption{This shows the Haberdasher problem in the form of polygonal linkage \cite{abbott2012hinged}.  This is a classic example of two polygons of equal area that have a common hinged dissection.}
+\label{fig:HingedHaberdasher}
 \end{figure}
 
 

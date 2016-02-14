@@ -38,59 +38,69 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 \end{center} 
 \caption{This figure depicts the graph isomorphism shown in Table 
 (\ref{table:ch1-graph-1}) between 
-$V_1$ and $V_2$ in the plane.}
+$V_1$ and $V_2$.}
 \label{fig:configuration-3}
 \end{figure}
 
 To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$, of $G$.  
 For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$. 
-The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph.
-A drawing is said to be \textit{planar} if no two distinct edges cross \cite{BET+99}.
 For this thesis, we will strictly work with straigt line drawings where all $c_{u,v}$ are straight line segments unless specified otherwise.
-
-
-A \textit{crossing} is when two edges intersect.  
-%The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
-%We can treat $cr()$ as a mapping from the space of drawings of $G$ to the non-negative integers, i.e. $cr: \left\lbrace \Gamma_G \right\rbrace \mapsto \bbZ^+ \cup \left\lbrace 0 \right\rbrace$.
-%One can ask if for any graph $G$, does there exists a drawing in which the crossing number is zero?
-%Without loss of generality, this is a type of crossing number minimization problem, i.e.
-%$$ \min_{\gamma \in \left\lbrace \Gamma_G \right\rbrace} cr(\gamma)$$
-Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a finite graph is planar if and only if it does not contain a subgraph that is a subdivision of $K_5$ or $K_{3,3}$ \cite{kuratowski1930probleme}. 
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/kuratowskiExamples.pdf}
 \caption{The $K_5$ and $K_{3,3}$ drawn in the plane.}\label{fig:kuratowskiExamples.pdf}
 \end{center} 
 \end{figure} 
-%If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}. 
-A combinatorial \textit{embedding} is a planar drawing with a corresponding circular order of the neighbors of each vertex.
+Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a finite graph is planar if and only if it does not contain a subgraph that is a subdivision of $K_5$ or $K_{3,3}$ \cite{kuratowski1930probleme}. 
+A \textit{crossing} is when two edges have a common interior point.  
+The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph.
+A drawing is said to be \textit{planar} if no two distinct edges cross \cite{BET+99}.
+A planar drawing is also called an \textit{embedding}.
 Two embeddings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets and the embeddings can be described as a combination of translations and rotations of the other.
+A combinatorial \textit{embedding} is a planar drawing with a corresponding circular order of the neighbors of each vertex. 
 \begin{figure}[!htbp]
 \begin{center}
     \includegraphics{graphics/combinatorialEmbedding.pdf}
     \caption{Here is a wheel graph, $W_5$, in two separate drawings with the same counterclockwise ordering of neighbors for each vertex.}\label{fig:combinatorialEmbedding.pdf}
 \end{center}
 \end{figure}
-In figure \ref{fig:combinatorialEmbedding.pdf}, the wheel graph is depcted in two different drawings, one on the left and one on the right.  The drawings have the followings counterclockwise order of neighbors for each vertex:
+An orientation preserving rigid transformation (i.e. rotation and translation) map an embedding to an equivalent embedding.  Reflections reverse the circular order around each vertex.
+
+In figure \ref{fig:combinatorialEmbedding.pdf}, the wheel graph is depcted in two different drawings, one on the left and one on the right. 
+The drawings have the followings counterclockwise order of neighbors for each vertex:
 \begin{table}[!htbp]\label{table:combinatorialEmbedding}
 \begin{center}
 $$\begin{array}{|c|c|c|}\hline
-\text{Vertex}&\text{Left Drawing}&\text{Right Drawing}\\\hline
-1&(2,5,4)& (4,2,5) 
+\text{Vertex}&\text{Left \& Middle Drawing}&\text{Right Drawing}\\\hline
+1&(2,5,4)& (4,5,2) 
 \\\hline
-2&(3,5,1) & (1,3,5) 
+2&(3,5,1) & (1,5,3) 
 \\\hline
-3&(2,4,5)& (2,4,5) 
+3&(2,4,5)& (5,4,2) 
 \\\hline
-4& (1,5,3)  & (1,5,3) 
+4& (1,5,3)  & (3,5,1) 
 \\\hline
-5&(2,3,4,1)& (1,2,3,4) 
+5&(2,3,4,1)& (4,3,2,1) 
 \\\hline
 \end{array} $$
 \caption{A table showing the counter clockwise circular ordering of neighbors for the left and right drawing in Figure \ref{fig:combinatorialEmbedding.pdf}.  Note that the permutation cycles are equivalent for the right and left drawings.}
 \end{center} 
 \end{table}
+%The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
+%We can treat $cr()$ as a mapping from the space of drawings of $G$ to the non-negative integers, i.e. $cr: \left\lbrace \Gamma_G \right\rbrace \mapsto \bbZ^+ \cup \left\lbrace 0 \right\rbrace$.
+%One can ask if for any graph $G$, does there exists a drawing in which the crossing number is zero?
+%Without loss of generality, this is a type of crossing number minimization problem, i.e.
+%$$ \min_{\gamma \in \left\lbrace \Gamma_G \right\rbrace} cr(\gamma)$$
 Referencing table \ref{table:combinatorialEmbedding} and figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
+
+
+
+%If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}. 
+
+
+
+ 
+
 
 
 
@@ -162,7 +172,7 @@ A \textit{path} is a sequence of vertices in which every two consecutive vertice
 \end{center}
 \end{figure}
 
-A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$.  
+A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$ (see Figure \ref{fig:ch1-graph-2}).  
 A graph is \textit{connected} if for any two vertices, there exists a path between the two points.
 A \textit{tree} is a graph that has no simple cycles and is connected.
 \newpage
@@ -173,7 +183,7 @@ A \textit{tree} is a graph that has no simple cycles and is connected.
 \end{center}
 \end{figure}
 
-Any two embeddings of trees are equivalent if they can be described as any combination of rotations, translations, and or reflections.
+%Any two embeddings of trees are equivalent if they can be described as any combination of rotations, translations, and or reflections.
 
 % \subsection{Ordered Trees}
 An \textit{ordered tree} is a tree $T$ together with a cyclic order of the neighbors for each vertex, $O$.
@@ -187,7 +197,7 @@ vertices.}\label{fig:ch1-graph-6}
 
 Embeddings of ordered trees are equivalent if for each node the counter-clockwise ordering of 
 adjacent nodes are the same and can be described as a combination of translations and rotations of the other.
-Unlike embeddings for planar graphs where ordering of adjacent vertices is not a distinguishing condition,  we do not consider reflection based transformations for embeddings of ordered trees for equivaliency as that can modify the ordering of adjacent vertices.
+%Unlike embeddings for planar graphs where ordering of adjacent vertices is not a distinguishing condition,  we do not consider reflection based transformations for embeddings of ordered trees for equivaliency as that can modify the ordering of adjacent vertices.
 
 
 
