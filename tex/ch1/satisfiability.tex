@@ -1,23 +1,27 @@
 \section{Satisfiability}
 Let $x_1, \dots, x_n$ be boolean variables.  A boolean formula is a combination of conjunction, 
-disjunctions, and negations of the boolean variables $x_1,  \dots, x_n$.   A boolean formula is 
-\textit{satisfiable} if one can assign true or false value to each variable so that the formula is 
-true. 
+disjunctions, and negations of the boolean variables $x_1,  \dots, x_n$.   
+A \textit{clause} is a disjunction of distinct literals.  
+A \textit{literal} is a variable or a negated variable, $x_i$ or $\bar{x}_i$, for $i = 1,\dots,n$. 
+A boolean formula is \textit{satisfiable} if one can assign true or false value to each variable so that the formula is true. 
+It is known that every boolean formula can be rewritten in \textit{conjunctive normal form} (CNF), a conjunction of clauses, via DeMorgan's law and distributive law.   
+Furthermore, it is also known that every boolean formula can be written in CNF such that each clause has exactly three literals. 
+This form is called 3-CNF.  
+\textit{3-SAT problem}.
 \begin{prob}[Satisfiability Problem (SAT)]\label{prob:Satisfiability-1}%Problem/Question
-Given a boolean formula, decide whether it is satisfiable.
-\end{prob} \cite{skiena2009algorithm}
-It is known that every boolean formula can be rewritten in \textit{conjunctive normal form} (CNF), 
-a conjunction of clauses.  A \textit{clause} is a disjunction of distinct literals.  
-A \textit{literal} is a variable or a negated variable, $x_i$ or $\bar{x}_i$, for $i = 1,\dots,n$.  
-Furthermore, it is also known that every boolean formula can be written in CNF such that each 
-clause has exactly three literals.  This form is called 3-CNF.  Given a boolean formula in 3-CNF, 
-decide whether it is satisfiable is a \textit{3-SAT problem}.
+Given a boolean formula, is it satisfiable? \cite{skiena2009algorithm}
+\end{prob} 
+\begin{prob}[3-SAT Problem]
+Given a boolean formula in 3-CNF, is it satisfiable?
+\end{prob}
 
-The problems we focus on in this thesis have a geometry.  A special geometric 3-SAT problem is that 
-Planar 3-SAT Problem.   Given a 3-CNF boolean formula, $B$, we define the associated graph as 
-follows: the vertices correspond to the variables and clauses in $B$, when a variable or its 
-negation appears in a clause there is an edge between the corresponding vertices.
-
+The problems we focus on in this thesis have a geometry.  
+A special geometric 3-SAT problem is that Planar 3-SAT Problem.   
+Given a 3-CNF boolean formula, $B$, we define the associated graph as follows: the vertices correspond to the variables and clauses in $B$, when a variable or its negation appears in a clause there is an edge between the corresponding vertices.
+\begin{prob}[Not All Equal 3 SAT Problem (NAE3SAT)]\label{prob:Satisfiability-2}%Problem/Question
+Given a boolean formula in 3-CNF, is it satisfiable so that each clause contains a 
+true and a false literal?
+\end{prob}
 %draw a picture for this one.
 \begin{prob}[Planar 3-SAT]
  Given a boolean formula $B$ in 3-CNF such that its associated graph is planar, decide whether it 
@@ -33,10 +37,7 @@ is satisfiable is a \textit{3-SAT problem}.
 % If $G(B)$ in equation (\ref{eqn:sat-1}) is planar, then $B$ is said to be a \textit{Planar 3-SAT 
 
 
-\begin{prob}[Not All Equal 3 SAT Problem (NAE3SAT)]\label{prob:Satisfiability-2}%Problem/Question
-Given a boolean formula in 3-CNF, decide whether it is satisfiable so that each clause contains a 
-true and a false literal.
-\end{prob}
+
 
 
 %3-SAT, PLANAR 3-SAT, NAE3SAT are NP hard [ADD REFERENCE].  THE PROOF FOR THESE REDUCTIONS ARE NOT 

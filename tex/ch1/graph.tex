@@ -1,15 +1,18 @@
 \section{Graphs}
-A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices $V$ and a multiset of edges $E$.  
-An edge is a 2 element subset of $V$ and denoted as ``V choose two'', ${V \choose 2}$.
+A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices $V$ and a set of edges $E$.  
+An edge is a two element subset of $V$.% and is denoted as ``V choose two'', ${V \choose 2}$.
 % Each edge $e \in E$ is an unordered pair of vertices $\curlybraces{u,v} \in E$.  
 Vertices are said to be \textit{adjacent} if they form an edge in $E$.  
 \textit{Neighbors} of vertex $v$ are the adjecent vertices of $v$.
-Vertices that are adjacent to themselves are \textit{self-adjacent}, i.e. $u = v$ for $\curlybraces{u,v} \in E$.  
+%Vertices that are adjacent to themselves are \textit{self-adjacent}, i.e. $u = v$ for $\curlybraces{u,v} \in E$.  
 Edges are said to be \textit{incident} if they share a vertex.  
-When an edge is a member of $E$ multiple times, then we say that the graph is a \textit{multigraph}.   
-A \textit{simple graph} has no self-adjacent vertices. 
-If $G' = (V',E')$ such that $V' \subset V$ and $E' \subset E$, then $G'$ is a \textit{subgraph} of $G$.
-Unless otherwise stated, this thesis will strictly work with simple graphs.
+%When an edge is a member of $E$ multiple times,  then we say that the graph is a \textit{multigraph}.   
+Note that with edge definition, it is not possible to have one element subset of $V$ as an edge (sometimes referred to as a self-adjacent edge or loop).
+A \textit{simple graph} has no self-adjacent vertices.
+Note that in this thesis every graph is a simple graph.
+If $G' = (V',E')$ is a graph such that $V' \subset V$ and $E' \subset E$, then $G'$ is a \textit{subgraph} of $G$.
+
+
 
 For graph equivalency, we need to define an isomorphism for graphs.  Given 
 two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} a bijective 
@@ -43,7 +46,7 @@ $V_1$ and $V_2$.}
 \end{figure}
 
 To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$, of $G$.  
-For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$. 
+For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$, $c_{u,v}(1) = \Pi(v)$ , and the curve $c_{u,v}$ does not pass through any other vertex in $V$.
 For this thesis, we will strictly work with straigt line drawings where all $c_{u,v}$ are straight line segments unless specified otherwise.
 \begin{figure}[!htbp]
 \begin{center}
@@ -53,7 +56,7 @@ For this thesis, we will strictly work with straigt line drawings where all $c_{
 \end{figure} 
 Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a finite graph is planar if and only if it does not contain a subgraph that is a subdivision of $K_5$ or $K_{3,3}$ \cite{kuratowski1930probleme}. 
 A \textit{crossing} is when two edges have a common interior point.  
-The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph.
+The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph over all drawings.
 A drawing is said to be \textit{planar} if no two distinct edges cross \cite{BET+99}.
 A planar drawing is also called an \textit{embedding}.
 Two embeddings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets and the embeddings can be described as a combination of translations and rotations of the other.
@@ -66,7 +69,7 @@ A combinatorial \textit{embedding} is a planar drawing with a corresponding circ
 \end{figure}
 An orientation preserving rigid transformation (i.e. rotation and translation) map an embedding to an equivalent embedding.  Reflections reverse the circular order around each vertex.
 
-In figure \ref{fig:combinatorialEmbedding.pdf}, the wheel graph is depcted in two different drawings, one on the left and one on the right. 
+In Figure \ref{fig:combinatorialEmbedding.pdf}, the wheel graph is depicted in two different drawings, one on the left and one on the right. 
 The drawings have the followings counterclockwise order of neighbors for each vertex:
 \begin{table}[!htbp]\label{table:combinatorialEmbedding}
 \begin{center}
@@ -91,7 +94,7 @@ $$\begin{array}{|c|c|c|}\hline
 %One can ask if for any graph $G$, does there exists a drawing in which the crossing number is zero?
 %Without loss of generality, this is a type of crossing number minimization problem, i.e.
 %$$ \min_{\gamma \in \left\lbrace \Gamma_G \right\rbrace} cr(\gamma)$$
-Referencing table \ref{table:combinatorialEmbedding} and figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
+Referencing table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
 
 
 
@@ -162,7 +165,7 @@ Referencing table \ref{table:combinatorialEmbedding} and figure \ref{fig:combina
 % graph together with a plane embedding.
 \newpage
 \subsection{Trees}
-Some graphs can be classified by which properties they have.
+%Some graphs can be classified by which properties they have.
 A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by an edge.   
 \begin{figure}[!htbp]
 \begin{center}
@@ -195,8 +198,8 @@ vertices.}\label{fig:ch1-graph-6}
 \end{center}
 \end{figure}
 
-Embeddings of ordered trees are equivalent if for each node the counter-clockwise ordering of 
-adjacent nodes are the same and can be described as a combination of translations and rotations of the other.
+Embeddings of ordered trees are combinatorially equivalent if for each node the counter-clockwise ordering of adjacent nodes are the same. 
+%and can be described as a combination of translations and rotations of the other.
 %Unlike embeddings for planar graphs where ordering of adjacent vertices is not a distinguishing condition,  we do not consider reflection based transformations for embeddings of ordered trees for equivaliency as that can modify the ordering of adjacent vertices.
 
 

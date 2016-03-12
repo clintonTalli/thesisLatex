@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140602200841" modified="D:20140602200841"/>
+<ipe version="70107" creator="Ipe 7.1.8">
+<info created="D:20140602200841" modified="D:20160215180121"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -229,57 +229,165 @@ h
 <tiling name="falling" angle="-60" step="4" width="1"/>
 <tiling name="rising" angle="30" step="4" width="1"/>
 </ipestyle>
+<ipestyle name="bigpaper">
+<layout paper="10000 6000" origin="0 0" frame="10000 6000"/>
+<titlestyle pos="10 10" size="LARGE" color="title"  valign="baseline"/>
+</ipestyle>
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 -192 48" stroke="black">
+<path layer="alpha" matrix="1 0 0 1 576 48" stroke="black">
 16 0 0 16 256 704 e
 </path>
-<path matrix="1 0 0 1 -192 48" stroke="black">
+<path matrix="1 0 0 1 576 48" stroke="black">
 16.0402 0 0 16.0402 288 704 e
 </path>
-<path matrix="1 0 0 1 -192 48" stroke="black">
+<path matrix="1 0 0 1 576 48" stroke="black">
 16 0 0 16 288 672 e
 </path>
-<path matrix="1 0 0 1 -192 48" stroke="black">
+<path matrix="1 0 0 1 576 48" stroke="black">
 16.0016 0 0 16.0016 256 672 e
 </path>
-<path matrix="1 0 0 1 -192 48" stroke="black">
+<path matrix="1 0 0 1 576 48" stroke="black">
 16.0047 0 0 16.0047 256 640 e
 </path>
-<path matrix="1 0 0 1 -192 48" stroke="black">
+<path matrix="1 0 0 1 576 48" stroke="black">
 16 0 0 16 256 608 e
 </path>
-<use matrix="1 0 0 1 -192 48" name="mark/disk(sx)" pos="256 624" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -192 48" name="mark/disk(sx)" pos="256 656" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -192 48" name="mark/disk(sx)" pos="256 688" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -192 48" name="mark/disk(sx)" pos="272 704" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -192 48" name="mark/disk(sx)" pos="288 688" size="normal" stroke="black"/>
-<path matrix="1 0 0 1 -64 48" stroke="black">
+<use matrix="1 0 0 1 576 48" name="mark/disk(sx)" pos="256 624" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 576 48" name="mark/disk(sx)" pos="256 656" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 576 48" name="mark/disk(sx)" pos="256 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 576 48" name="mark/disk(sx)" pos="272 704" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 576 48" name="mark/disk(sx)" pos="288 688" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 704 48" stroke="black">
 16 0 0 16 256 704 e
 </path>
-<path matrix="1 0 0 1 -64 48" stroke="black">
+<path matrix="1 0 0 1 704 48" stroke="black">
 16.0402 0 0 16.0402 288 704 e
 </path>
-<path matrix="1 0 0 1 -64 48" stroke="black">
+<path matrix="1 0 0 1 704 48" stroke="black">
 16 0 0 16 288 672 e
 </path>
-<path matrix="1 0 0 1 -64 48" stroke="black">
+<path matrix="1 0 0 1 704 48" stroke="black">
 16.0016 0 0 16.0016 256 672 e
 </path>
-<path matrix="1 0 0 1 -64 48" stroke="black">
+<path matrix="1 0 0 1 704 48" stroke="black">
 16.0047 0 0 16.0047 256 640 e
 </path>
-<path matrix="1 0 0 1 -96 80" stroke="black">
+<path matrix="1 0 0 1 672 80" stroke="black">
 16 0 0 16 256 608 e
 </path>
-<use matrix="1 0 0 1 -64 48" name="mark/disk(sx)" pos="256 656" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -64 48" name="mark/disk(sx)" pos="256 688" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -64 48" name="mark/disk(sx)" pos="272 704" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -64 48" name="mark/disk(sx)" pos="288 688" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 -64 80" name="mark/disk(sx)" pos="256 624" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="80 720" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="208 720" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="176 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 704 48" name="mark/disk(sx)" pos="256 656" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 704 48" name="mark/disk(sx)" pos="256 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 704 48" name="mark/disk(sx)" pos="272 704" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 704 48" name="mark/disk(sx)" pos="288 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 704 80" name="mark/disk(sx)" pos="256 624" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 768 0" name="mark/disk(sx)" pos="80 720" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 768 0" name="mark/disk(sx)" pos="208 720" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 768 0" name="mark/disk(sx)" pos="176 688" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 480 48" stroke="black">
+16 0 0 16 256 704 e
+</path>
+<path matrix="1 0 0 1 480 48" stroke="black">
+16.0402 0 0 16.0402 288 704 e
+</path>
+<path matrix="1 0 0 1 480 48" stroke="black">
+16 0 0 16 288 672 e
+</path>
+<path matrix="1 0 0 1 480 48" stroke="black">
+16.0016 0 0 16.0016 256 672 e
+</path>
+<path matrix="1 0 0 1 480 48" stroke="black">
+16.0047 0 0 16.0047 256 640 e
+</path>
+<use matrix="1 0 0 1 480 48" name="mark/disk(sx)" pos="256 656" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 480 48" name="mark/disk(sx)" pos="256 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 480 48" name="mark/disk(sx)" pos="272 704" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 480 48" name="mark/disk(sx)" pos="288 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 672 0" name="mark/disk(sx)" pos="80 720" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 511.325 73.3578" stroke="black">
+16 0 0 16 256 608 e
+</path>
+<use matrix="1 0 0 1 495.653 60.6361" name="mark/disk(sx)" pos="256 624" size="normal" stroke="black"/>
+<text transformations="translations" pos="764.32 683.224" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="1 0 0 1 64.634 -29.1311" transformations="translations" pos="764.32 683.224" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="1 0 0 1 157.488 -0.9108" transformations="translations" pos="764.32 683.224" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<path matrix="1 0 0 1 672 -80" stroke="black">
+16 0 0 16 256 704 e
+</path>
+<path matrix="1 0 0 1 672 -80" stroke="black">
+16.0402 0 0 16.0402 288 704 e
+</path>
+<path matrix="1 0 0 1 672 -80" stroke="black">
+16 0 0 16 288 672 e
+</path>
+<path matrix="1 0 0 1 672 -80" stroke="black">
+16.0016 0 0 16.0016 256 672 e
+</path>
+<path matrix="1 0 0 1 640 -48" stroke="black">
+16.0047 0 0 16.0047 256 640 e
+</path>
+<path matrix="1 0 0 1 608 -16" stroke="black">
+16 0 0 16 256 608 e
+</path>
+<use matrix="1 0 0 1 656 -64" name="mark/disk(sx)" pos="256 656" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 672 -80" name="mark/disk(sx)" pos="256 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 672 -80" name="mark/disk(sx)" pos="272 704" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 672 -80" name="mark/disk(sx)" pos="288 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 656 -32" name="mark/disk(sx)" pos="256 624" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 736 -128" name="mark/disk(sx)" pos="208 720" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 704 -96" name="mark/disk(sx)" pos="176 688" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 93.488 -96.9108" transformations="translations" pos="764.32 683.224" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="1 0 0 1 -176 -128" transformations="translations" pos="1072 720" stroke="black" type="label" width="8.057" height="6.808" depth="0" valign="baseline">$B$</text>
+<text matrix="1 0 0 1 -112 -32" transformations="translations" pos="1072 720" stroke="black" type="label" width="8.057" height="6.808" depth="0" valign="baseline">$B$</text>
+<text matrix="1 0 0 1 -240 -32" transformations="translations" pos="1072 720" stroke="black" type="label" width="8.057" height="6.808" depth="0" valign="baseline">$B$</text>
+<text matrix="1 0 0 1 -336 -32" transformations="translations" pos="1072 720" stroke="black" type="label" width="8.057" height="6.808" depth="0" valign="baseline">$B$</text>
+<path matrix="1 0 0 1 505.505 -80.6693" stroke="black">
+16 0 0 16 256 704 e
+</path>
+<path matrix="1 0 0 1 504.459 -88.6185" stroke="black">
+16.0402 0 0 16.0402 288 704 e
+</path>
+<path matrix="1 0 0 1 511.413 -87.9477" stroke="black">
+16 0 0 16 288 672 e
+</path>
+<path matrix="1 0 0 1 512 -80" stroke="black">
+16.0016 0 0 16.0016 256 672 e
+</path>
+<path matrix="1 0 0 1 480 -48" stroke="black">
+16.0047 0 0 16.0047 256 640 e
+</path>
+<path matrix="1 0 0 1 448 -16" stroke="black">
+16 0 0 16 256 608 e
+</path>
+<use matrix="1 0 0 1 496 -64" name="mark/disk(sx)" pos="256 656" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 527.085 -99.6954" name="mark/disk(sx)" pos="256 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 492.185 -97.0925" name="mark/disk(sx)" pos="272 704" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 488.812 -68.3788" name="mark/disk(sx)" pos="288 688" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 496 -32" name="mark/disk(sx)" pos="256 624" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 586.717 -120.366" name="mark/disk(sx)" pos="208 720" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 544 -96" name="mark/disk(sx)" pos="176 688" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 -66.512 -96.9108" transformations="translations" pos="764.32 683.224" stroke="black" type="label" width="7.472" height="6.808" depth="0" valign="baseline">$A$</text>
+<text matrix="1 0 0 1 -336 -128" transformations="translations" pos="1072 720" stroke="black" type="label" width="8.057" height="6.808" depth="0" valign="baseline">$B$</text>
+<text transformations="translations" pos="735.394 719.905" stroke="black" type="label" width="7.833" height="6.808" depth="0" valign="baseline">$C$</text>
+<text transformations="translations" pos="768 720" stroke="black" type="label" width="8.525" height="6.808" depth="0" valign="baseline">$D$</text>
+<text transformations="translations" pos="736 752" stroke="black" type="label" width="7.79" height="6.808" depth="0" valign="baseline">$F$</text>
+<text transformations="translations" pos="768 752" stroke="black" type="label" width="7.929" height="6.808" depth="0" valign="baseline">$E$</text>
+<text matrix="1 0 0 1 96 0" transformations="translations" pos="735.394 719.905" stroke="black" type="label" width="7.833" height="6.808" depth="0" valign="baseline">$C$</text>
+<text matrix="1 0 0 1 96 0" transformations="translations" pos="768 720" stroke="black" type="label" width="8.525" height="6.808" depth="0" valign="baseline">$D$</text>
+<text matrix="1 0 0 1 96 0" transformations="translations" pos="736 752" stroke="black" type="label" width="7.79" height="6.808" depth="0" valign="baseline">$F$</text>
+<text matrix="1 0 0 1 96 0" transformations="translations" pos="768 752" stroke="black" type="label" width="7.929" height="6.808" depth="0" valign="baseline">$E$</text>
+<text matrix="1 0 0 1 224 0" transformations="translations" pos="735.394 719.905" stroke="black" type="label" width="7.833" height="6.808" depth="0" valign="baseline">$C$</text>
+<text matrix="1 0 0 1 224 0" transformations="translations" pos="768 720" stroke="black" type="label" width="8.525" height="6.808" depth="0" valign="baseline">$D$</text>
+<text matrix="1 0 0 1 224 0" transformations="translations" pos="736 752" stroke="black" type="label" width="7.79" height="6.808" depth="0" valign="baseline">$F$</text>
+<text matrix="1 0 0 1 224 0" transformations="translations" pos="768 752" stroke="black" type="label" width="7.929" height="6.808" depth="0" valign="baseline">$E$</text>
+<text matrix="1 0 0 1 192 -128" transformations="translations" pos="735.394 719.905" stroke="black" type="label" width="7.833" height="6.808" depth="0" valign="baseline">$C$</text>
+<text matrix="1 0 0 1 192 -128" transformations="translations" pos="768 720" stroke="black" type="label" width="8.525" height="6.808" depth="0" valign="baseline">$D$</text>
+<text matrix="1 0 0 1 192 -128" transformations="translations" pos="736 752" stroke="black" type="label" width="7.79" height="6.808" depth="0" valign="baseline">$F$</text>
+<text matrix="1 0 0 1 192 -128" transformations="translations" pos="768 752" stroke="black" type="label" width="7.929" height="6.808" depth="0" valign="baseline">$E$</text>
+<text matrix="1 0 0 1 27.9035 -132.552" transformations="translations" pos="735.394 719.905" stroke="black" type="label" width="7.833" height="6.808" depth="0" valign="baseline">$C$</text>
+<text matrix="1 0 0 1 28.8138 -138.469" transformations="translations" pos="768 720" stroke="black" type="label" width="8.525" height="6.808" depth="0" valign="baseline">$D$</text>
+<text matrix="1 0 0 1 24.7173 -128.91" transformations="translations" pos="736 752" stroke="black" type="label" width="7.79" height="6.808" depth="0" valign="baseline">$F$</text>
+<text matrix="1 0 0 1 21.9863 -138.924" transformations="translations" pos="768 752" stroke="black" type="label" width="7.929" height="6.808" depth="0" valign="baseline">$E$</text>
 </page>
 </ipe>

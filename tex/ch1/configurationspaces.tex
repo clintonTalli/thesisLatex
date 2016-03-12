@@ -4,8 +4,8 @@ Just as one can compose colors or forms, so one can compose motions.
 \end{quote}
 {\raggedright{}Alexander Calder, 1933}
 
+Recall Figure \ref{fig:HingedHaberdasher} illustrating the hinged dissection that formed a square and triangle and several drawings of the hinged dissections that simulate the motion of moving the polygons around the hinge points to form each shape.  The set of all drawings in that motion represents the \textit{configuration space} for that polygonal linkage.  In this section we will formally describe the configuration space for each object we've drawn thus far.
 
-We described the configuration space of a linkage earlier and have introduced polygonal linkages and disk arrangements without describing their corresponding definitions of a configuration space.  Here we will describe configuration spaces for each structure.
 
 % We'd like to describe motions and range of motions of embedded graphs, linkages, polygonal 
 % linkages, and disk arrangements.  Table \ref{table:configurationSpace-1} provides the definition of 
@@ -35,22 +35,32 @@ We described the configuration space of a linkage earlier and have introduced po
 % the vertices that preserve the length edges and never cause edges to collide \cite{AKR+04}.  For 
 % polygonal linkages, a reconfiguration is 
 
+\subsection{Configuration Spaces of Graph Drawings}
+Recall that for a graph drawing we have an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a straight line segment, $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$, and does not pass through other vertices.
+For each vertex of $G$, the embedding of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  
+By enumerating each vertex of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a projection mapping from $\mu: \Pi \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{th}$ coordinates in $\bbR^{2\vert V \vert}$.  
+$\mu(\Pi)$ is a configuration.
+The configuration space is the set of $\mu(\Pi)$ for all drawings $\Pi$.  
+
 \subsection{Configuration Spaces of Linkages}
 
-Consider embeddings of a graph that respects the length assignment.  
-A \textit{realization} of a linkage, $(G,\ell)$, is an embedding of a graph, $\Pi$, such that for every edge $\{u,v\} \in E$, $\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert = \left\vert \Pi(v) - \Pi(u) \right\vert$. 
-A \textit{plane realization} is a plane embedding with the property, $\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert$.
+Consider drawings of a graph that respects the length assignment.  
+A \textit{realization} of a linkage, $(G,\ell)$, is a drawing of a graph, $\Pi$, such that for every edge $\{u,v\} \in E$, $\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert = \left\vert \Pi(v) - \Pi(u) \right\vert$. 
+A \textit{plane realization} is a plane drawing with the property, $\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert$.
 First let's define the space of realizations for a corresponding linkage, i.e.:
 $$P_{(G,\ell)} = \set{\Pi_{(G,\ell)}}{\forall \{u,v\} \in E\text{, }\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert}$$
-With respect to $P$, we can establish a \textit{configuration space} that allows one to study problems of motion.  For each vertex of $G$, the embedding of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  By enumerating each vertex of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a projection mapping from $\mu: P \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{th}$ coordinates in $\bbR^{2\vert V \vert}$.  The configuration space is $\mu(P)$.  
+With respect to $P$, we can establish a \textit{configuration space} that allows one to study problems of motion.  For each vertex of $G$, the drawing of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  
+By enumerating each vertex of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a projection mapping from $\mu: P \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{th}$ coordinates in $\bbR^{2\vert V \vert}$.  
+The configuration space is $\mu(P)$.  
 
 Using standard definitions from real analysis, we can begin to pose problems about linkages with respect to a corresponding configuration space.  
 We define a path $\gamma: [0,1]\mapsto \mu(P)$ where $\gamma(0)$ corresponds the the projection of a realization of a linkage $\Pi_0$ and $\gamma(1)$ corresponds to another realization of a linkage $\Pi_1$.  
 If for any two elements $a,b \in \mu(P)$ that there exists a continuous path $\gamma$ such that $\gamma(0)=a$ and $\gamma(1)=b$, $\mu(P)$ is said to be path connected.   
 For $\gamma$ to be continuous we would have that for every $\epsilon > 0$, there exists a $\delta >0$ such that if $x,y \in [0,1]$ and $\vert x-y \vert <\delta$ then $\vlr{\vlr{\gamma(x)-\gamma(y)}}<\epsilon$.
-$\gamma$ can be thought of as an animation of drawings that starts at $\gamma(0)$ and ends at $\gamma(1)$
+$\gamma$ can be thought of as an animation of drawings that starts at $\gamma(0)$ and ends at $\gamma(1)$.
 To ask if $\mu(P)$ is a connected space, is to ask if $\mu(P)$ is connected in $\bbR^{2\vert V \vert}$.
-By Carpenter's Rule theorem, every realization of a linkage can be continuously moved (without self-intersection) to any other realization \cite{CDR03,Str05}.
+STATE THE CARPENTER'S RULE THEOREM.
+By Carpenter's Rule theorem, every realization of a path linkage can be continuously moved (without self-intersection) to any other realization \cite{CDR03,Str05}.
 In other words, the realization space of such a linkage is always connected.
 
 % \subsection{Configuration Spaces of Linkages}
@@ -81,54 +91,55 @@ In other words, the realization space of such a linkage is always connected.
 \caption{(a) and (b) show a linkage in two embeddings.  Any realization of a path can be continuously moved without self-intersection to any other realizations.}
 \label{fig:configuration-3}
 \end{figure}
- 
- \subsection{Configuration Spaces of Polygonal Linkages}
+
+\subsection{Configuration Spaces of Polygonal Linkages}
 Recall a realization of a polygonal linkage is an interior-disjoint placement of 
 congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).
 First consider the set of all realizations for the polygonal linkage. $\left(\PP,\HH
-\right)$ and call it $P$.  For any realization $R \in P$, the parameterization $\mu:R \mapsto \bbR^{2m}$ where $m$ is the number of distinct vertices in $\PP$.     The configuration space is the set $\mu(P)$.
+\right)$ and call it $P$.  For any realization $R \in P$, the parameterization $\mu:R \mapsto \bbR^{2m}$ where $m$ is the number of distinct vertices in $\PP$.  The configuration space is the set $\mu(P)$.
 
  \subsection{Configuration Spaces of Disk Arrangements}
 %show an equivalent disk arrangment to the geometric dissection in thier corresponding/equivalent
 % configurations.
+
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[scale=.75]{graphics/DiskPackingReconfiguration.pdf}
+\end{center} 
+\caption{An example of a disk arrangement where $A$ and $B$ have a large range of freedom to move around.  $C$, $D$, $E$, and $F$ are limited in their range of motion to due to their hinge points.}
+\label{fig:configuration-5}
+\end{figure}
+
 Consider the set of realizations $P$ for a given disk arrangement $\DD = \left\lbrace D_i \right\rbrace_{i=1}^n$.  For any realization $R \in P$, there exists a corresponding contact graph, $C$.  The configuration spaces of $\DD$ are sets of $R \in P$ that are classified by the equivalent contact graphs, i.e. if $R_1$, $R_2 \in P$ and their corresponding contact graphs $C_1$ and $C_2$ have a graph isomorphism, $\phi$, then $R_1$ and $R_2$ belong to the same configuration space.
 
 
 
-\begin{figure}[!h]
-\begin{center}
-\includegraphics[scale=.75]{graphics/DiskPackingReconfiguration.pdf}
-\end{center} 
-\caption{A linkage whose complete configuration space is discontinuous.  These two examples above 
-are two configurations of the same linkage that cannot continuously transform into the other 
-without edge crossing.}
-\label{fig:configuration-5}
-\end{figure}
 
-\subsection{Reconfiguration}
+
+% \subsection{Reconfiguration}
 
 
 
-We'd like to describe motions and range of motions of embedded graphs, linkages, polygonal 
-linkages, and disk arrangements.  Table \ref{table:configurationSpace-1} provides the definition of 
-\textit{reconfiguration} for each type of object covered so far:
-\begin{center}
-\begin{table}[htbp!]
-\begin{tabular}{|p{.2\textwidth}|p{.79\textwidth}|}
-\hline
-Object Type&Definition of Reconfiguration\\\hline
-Graph Embeddings&a continuous motion of the realized vertices that never causes the edges to 
-intersect.\\\hline
-Linkage&a continuous motion of the realized vertices that preserves the lengths of the edges and never 
-causes 
-the edges to intersect.\\\hline
-Polygonal Linkage&a continuous motion of polygons that preserves shapes of polygons, hinge point 
-pairings, and never causes the polygonal sides to intersect.\\\hline
-Disk Arrangement&a continuous motion of disks that preserves disk radii, pairs of contact points, 
-and never causes disks to intersect.\\\hline
-\end{tabular}\label{table:configurationSpace-1}
-\end{table}
-\end{center}
+% We'd like to describe motions and range of motions of embedded graphs, linkages, polygonal 
+% linkages, and disk arrangements.  Table \ref{table:configurationSpace-1} provides the definition of 
+% \textit{reconfiguration} for each type of object covered so far:
+% \begin{center}
+% \begin{table}[htbp!]\label{table:configurationSpace-1}
+% \begin{tabular}{|p{.2\textwidth}|p{.79\textwidth}|}
+% \hline
+% Object Type&Definition of Reconfiguration\\\hline
+% Graph Embeddings&a continuous motion of the realized vertices that never causes the edges to 
+% intersect.\\\hline
+% Linkage&a continuous motion of the realized vertices that preserves the lengths of the edges and never 
+% causes 
+% the edges to intersect.\\\hline
+% Polygonal Linkage&a continuous motion of polygons that preserves shapes of polygons, hinge point 
+% pairings, and never causes the polygonal sides to intersect.\\\hline
+% Disk Arrangement&a continuous motion of disks that preserves disk radii, pairs of contact points, 
+% and never causes disks to intersect.\\\hline
+% \end{tabular}
+% \end{table}
+% \end{center}
 
 
 
