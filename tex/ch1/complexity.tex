@@ -62,7 +62,7 @@ This facilitates the reader for the definitions and illustrate complexity better
  
 % \subsection{Reduction}
 A \textit{polynomial time reduction} is when arbitrary instances of problem $Y$ be solved using a polynomial number of standard computational steps, plus a polynomial number of calls to a black box that solves problem $X$.
-\subsubsection{Independent Sets and Vertex Covers}
+\subsection{Independent Sets and Vertex Covers}
 To illustrate what a reduction is, we cover an example of independent sets and vertex covers.  
 Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two vertices in $S$ are joined by an edge. 
 A \textit{vertex cover} of a graph $G = (V,E)$  is a set of vertices $S \subset V$ if every edge $e \in E$, has at least one end corresponding in $S$.
@@ -88,21 +88,24 @@ Theorem \ref{thm:ch1-complexity-1} allows for problem reductions for independent
 
 % \subsubsection{Reduction of the Independent Set and Vertex Cover Problem}
 There are two problems for the independent set: an optimization problem and a decision problem.
-\begin{prob}[Optimization of an Independent Set in $G$]
+\begin{prob}[Optimization of an Independent Set in $G$]\label{prob:maxindependentset}
 Given a graph $G$, what is the largest independent set in $G$?
 \end{prob}
-\begin{prob}[Decision of an Independent Set of Size $k$]
+\begin{prob}[Decision of an Independent Set of Size $k$]\label{prob:kindependentset}
 Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
 \end{prob}
-[NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH BELOW]
-An algorithm that solves the optimization problem automatically solves the decision problem of the 
-independent set.  An algorithm that solves the decision problem for all size $k$ solves the 
-optimization problem where the decision is "yes" for the largest value of $k$.  This establishes a 
-reduction of the optimization problem to the decision problem and vice versa. 
-[NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH ABOVE]
-
-
-
+% [NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH BELOW]
+% An algorithm that solves the optimization problem automatically solves the decision problem of the 
+% independent set.  An algorithm that solves the decision problem for all size $k$ solves the 
+% optimization problem where the decision is "yes" for the largest value of $k$.  This establishes a 
+% reduction of the optimization problem to the decision problem and vice versa. 
+% [NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH ABOVE]
+Consider an algorithm $A$ that determines whether $G$ contains an independent set of size $k$.  
+By querying $A$ with $k=1,2,...,\vert V \vert$, one can find a maximal independent set size in $G$.
+Conversely, if we have an algorithm $B$ that can the largest independent set in $S \subset V$, then we know the order of $S$, $\vert S\vert$.  
+Any subset of $S$ is also an independent set; any subset $W \subset V$ such that $\vert S \vert < \vert W \vert \leq \vert V \vert$ is not independent.  
+While $B$ is an algorithm that solves Problem \ref{prob:maxindependentset}, $B$ can be leveraged to solve Problem \ref{prob:kindependentset}.  
+Likewise, $A$ solve Problem \ref{prob:kindependentset} but can be leveraged to solve Problem \ref{prob:maxindependentset}.
 % Other classes of problems are $\NP-\text{complete}$ and 
 % $\NP-\text{hard}$.  $\NP-\text{complete}$ is a class of decision problems.  A problem $\mathcal{C}$ 
 % is said to be $\NP-\text{complete}$ if $\mathcal{C} \in \NP$ and every problem $\mathcal{D} \in 

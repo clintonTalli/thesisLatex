@@ -7,14 +7,15 @@ A boolean formula is \textit{satisfiable} if one can assign true or false value 
 It is known that every boolean formula can be rewritten in \textit{conjunctive normal form} (CNF), a conjunction of clauses, via DeMorgan's law and distributive law.   
 Furthermore, it is also known that every boolean formula can be written in CNF such that each clause has exactly three literals. 
 This form is called 3-CNF.  
-\textit{3-SAT problem}.
+For example, consider the clause $A \lor B \lor C \lor D \lor E$. 
+This clause can be rewritten in 3-CNF form as $(A \lor B \lor x_1) \land (\lnot x_1 \lor C \lor x_2) \land (\lnot x_2 \lor D \lor E)$ where $x_1$ and $x_2$ are literals that allow us to form 3-CNF clauses.
+%\textit{3-SAT problem}.
 \begin{prob}[Satisfiability Problem (SAT)]\label{prob:Satisfiability-1}%Problem/Question
 Given a boolean formula, is it satisfiable? \cite{skiena2009algorithm}
 \end{prob} 
 \begin{prob}[3-SAT Problem]
 Given a boolean formula in 3-CNF, is it satisfiable?
 \end{prob}
-
 The problems we focus on in this thesis have a geometry.  
 A special geometric 3-SAT problem is that Planar 3-SAT Problem.   
 Given a 3-CNF boolean formula, $B$, we define the associated graph as follows: the vertices correspond to the variables and clauses in $B$, when a variable or its negation appears in a clause there is an edge between the corresponding vertices.
