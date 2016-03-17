@@ -6,26 +6,15 @@
 \contentsline {subsection}{\numberline {1.1.1}Trees}{3}
 \contentsline {section}{\numberline {1.2}Linkages}{4}
 \contentsline {section}{\numberline {1.3}Polygonal Linkages}{5}
-\contentsline {subsection}{\numberline {1.3.1}Geometric Dissections}{6}
-\contentsline {section}{\numberline {1.4}Disk Arrangements}{7}
-\contentsline {subsubsection}{\numberline {1.4.0.1}Disk Packing Confinement Problem}{7}
-\contentsline {section}{\numberline {1.5}Configuration Spaces}{8}
-\contentsline {subsection}{\numberline {1.5.1}Configuration Spaces of Polygonal Linkages}{9}
-\contentsline {subsection}{\numberline {1.5.2}Configuration Spaces of Disk Arrangements}{9}
-\contentsline {subsection}{\numberline {1.5.3}Reconfiguration}{9}
-\contentsline {section}{\numberline {1.6}Algorithm Complexity}{10}
-\contentsline {section}{\numberline {1.7}Satisfiability}{11}
-\contentsline {section}{\numberline {1.8}Problem}{11}
-\contentsline {chapter}{\numberline {2}Decidability Problems for Hinged Polygons and Disks}{13}
-\contentsline {section}{\numberline {2.1}The Logic Engine}{13}
-\contentsline {subsection}{\numberline {2.1.1}Construction of the Logic Engine}{13}
-\contentsline {subsection}{\numberline {2.1.2}The mechanics of the logic engine}{15}
-\contentsline {subsubsection}{\numberline {2.1.2.1}The Relationship of the Logic Engine and NAE3SAT}{16}
-\contentsline {section}{\numberline {2.2}Logic Engines Represented as Polygonal Linkages}{19}
-\contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{19}
-\contentsline {subsection}{\numberline {2.2.2}Properties for Weighted Trees and Polygonal Linkages}{21}
-\contentsline {paragraph}{Hausdorff Distance}{21}
-\contentsline {paragraph}{$\epsilon $-approximation}{21}
-\contentsline {section}{\numberline {2.3}Realizability Problems for Weighted Trees}{22}
-\contentsline {subsection}{\numberline {2.3.1}On the Decidability of Problem (\ref {problem:UnorderedTree})}{24}
+\contentsline {subsection}{\numberline {1.3.1}Geometric Dissections}{7}
+\contentsline {section}{\numberline {1.4}Disk Arrangements}{8}
+\contentsline {section}{\numberline {1.5}Configuration Spaces}{11}
+\contentsline {subsection}{\numberline {1.5.1}Configuration Spaces of Graph Drawings}{11}
+\contentsline {subsection}{\numberline {1.5.2}Configuration Spaces of Linkages}{11}
+\contentsline {subsection}{\numberline {1.5.3}Configuration Spaces of Polygonal Linkages}{11}
+\contentsline {subsection}{\numberline {1.5.4}Configuration Spaces of Disk Arrangements}{12}
+\contentsline {section}{\numberline {1.6}Algorithm Complexity}{12}
+\contentsline {subsection}{\numberline {1.6.1}Independent Sets and Vertex Covers}{13}
+\contentsline {section}{\numberline {1.7}Satisfiability}{14}
+\contentsline {section}{\numberline {1.8}Problem}{14}
 \contentsfinish 

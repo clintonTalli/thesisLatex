@@ -6,10 +6,15 @@ Timothy~G Abbott, Zachary Abel, David Charlton, Erik~D Demaine, Martin~L
 \newblock {Hinged dissections exist}.
 \newblock {\em Discrete \& Computational Geometry}, 47(1):150--186, 2012.
 
-\bibitem{BC87}
-S.~N. Bhatt and S.~S. Cosmadakis.
-\newblock {The complexity of minimizing wire lengths in VLSI layouts}.
-\newblock {\em Inform. Process. Lett 25}, 4:263--267, 1987.
+\bibitem{aigner2010hilbert}
+Martin Aigner and G{\"u}nter~M Ziegler.
+\newblock Hilbert's third problem: decomposing polyhedra.
+\newblock {\em Proofs from the book}, pages 53--61, 2010.
+
+\bibitem{BET+99}
+G.~Di Battista, P.~Eades, R.~Tamassia, and I.~G. Tollis.
+\newblock {\em {Graph Drawing: Algorithms for the Visualization of Graphs}}.
+\newblock Prentice Hall, 1999.
 
 \bibitem{BK98}
 H.~Breu and D.~G. Kirkpatrick.
@@ -32,11 +37,6 @@ P.~Eades and N.~C. Wormald.
 \newblock {Fixed edge-length graph drawing is NP-hard}.
 \newblock {\em Discrete Applied Mathematics}, 28:111--134, 1990.
 
-\bibitem{NAE3SATisNPhard}
-Michael~R Garey and David~S Johnson.
-\newblock {\em Computers and Intractibility}.
-\newblock WH Freeman and company New York, 1979.
-
 \bibitem{kleinberg2006algorithm}
 J.~Kleinberg and E.~Tardos.
 \newblock {\em {Algorithm Design}}.
@@ -56,5 +56,10 @@ S.S. Skiena.
 I.~Streinu.
 \newblock {Pseudo-triangulations, rigidity and motion planning}.
 \newblock {\em Discrete Comput. Geom}, 34:587--635, 2005.
+
+\bibitem{10.23073621846}
+E.~C. Zeeman.
+\newblock On hilbert's third problem.
+\newblock {\em The Mathematical Gazette}, 86(506):241--247, 2002.
 
 \end{thebibliography}

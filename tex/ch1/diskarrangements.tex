@@ -83,7 +83,7 @@ Given an ordered tree with positive weighted vertices, is it the ordered contact
 
 There exists a tree with no realizable disk arrangement.  
 To show that this can be done with even the simplest of trees and linkages, consider the binary trees $\left\lbrace T_i \right\rbrace_{i=1}^n$ with unit distance between adjacent vertices.  
-\begin{figure}[!ht]\label{fig:circlePacking-1}
+\begin{figure}[!htbp]\label{fig:circlePacking-1}
 \begin{center}
     %add desired spacing between images, e. g. ~, \quad, \qquad etc.
     %(or a blank line to force the subfigure onto a new line)
@@ -110,65 +110,77 @@ To show that this can be done with even the simplest of trees and linkages, cons
   \caption{ We show the linkages $T_1$ through $T_4$ with unit distance between adjacent vertices.  }
 \end{center} 
 \end{figure}
-To show that as $i \rightarrow \infty$, the corresponding disk arrangement will not have a drawing.  
-We construct the disk arrangement as follows: (1) place a disk of unit radius centered at origin; (2) for each disk continue to add two non-intersecting kissing disks of unit radius to it.  
-To illustrate, see Figure \ref{fig:circlePacking-1}:
-\begin{figure}[!htbp]\label{fig:circlePacking-1}
+%To show that as $i \rightarrow \infty$, the corresponding disk arrangement will not have a drawing.  
+%We construct the disk arrangement as follows: (1) place a disk of unit radius centered at origin; (2) for each disk continue to add two non-intersecting kissing disks of unit radius to it.  
+%To illustrate, see Figure \ref{fig:circlePacking-1}:
+Let the total area of the disk arrangement be the sum of the areas of the disks. 
+The upper bound of the of the total area of the disk arrangement is the boxed region about the disk arrangement.  
+The upper bound of the total area is $\left( 2\cdot (i-1) \right)^2$.
+Suppose the root of the disk arrangement is centered at origin.
+The centers of the disks at level $i$ are at a distance at most $2\cdot (i-1)$ away from the origin.
+\begin{figure}[!htbp]\label{fig:circlePacking-2}
 \begin{center}
     %add desired spacing between images, e. g. ~, \quad, \qquad etc.
     %(or a blank line to force the subfigure onto a new line)
   \begin{subfigure}[b]{0.24\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/degree2arrangement.pdf}
 	  \caption{A disk arrangement with two layers of disks}
-	  \label{fig:circlePacking1-1}
+	  \label{fig:circlePacking2-1}
   \end{subfigure}
   \begin{subfigure}[b]{0.24\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/degree3arrangement.pdf}
 	  \caption{A disk arrangement with three layers of disks}
-	  \label{fig:circlePacking1-2}
+	  \label{fig:circlePacking2-2}
   \end{subfigure}
   \begin{subfigure}[b]{0.24\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/degree4arrangement.pdf}
 	  \caption{A disk arrangement with four layers of disks}
-	  \label{fig:circlePacking1-3}
+	  \label{fig:circlePacking2-3}
   \end{subfigure}
   \begin{subfigure}[b]{0.24\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/degree5arrangement.pdf}
 	  \caption{A disk arrangement with five layers of disks}
-	  \label{fig:circlePacking1-4}
+	  \label{fig:circlePacking2-4}
   \end{subfigure}
 \end{center} 
 \caption{The gradual growth of disk arrangements by adding two kissing disks to each of the 
 previously generated disks.  By continuing this arrangement growth, the space needed to contain the 
 kissing disks will exceed the area containing the disk arrangements.}\label{fig:circlePacking-1}
 \end{figure}
-The first round has one unit disk.  
-The next round, two unit radii disk are in contact with the first, i.e. Figure \ref{fig:circlePacking1-1}.
-The subsequent rounds are shown in Figures \ref{fig:circlePacking1-2}, \ref{fig:circlePacking1-3}, and \ref{fig:circlePacking1-4}.  
-For each round $i$ we are adding $2^{(i-1)}$ disks, each with an area of $\pi$.  
-The area that the disk arrangement is bounded at round $i$ is a box of length $2\cdot (2\cdot (i-1)+1)$ totalling to an area of $(4\cdot i^2 - 4\cdot i + 1)$.  
-Meanwhile the total area of the disk arrangement at $i$ is $\pi \cdot (2^i - 1)$.  The exponential growth rate of the disk packing will exceed its bounded area for sufficiently large $i$, i.e. pick $i \geq 6$.
-
-
-
-
-\newpage
-Let the total area of the disk arrangement be the sum of the areas of the disks. 
-The upper bound of the of the total area of the disk arrangement is the boxed region about the disk arrangement.  
-The upper bound of the total area is $\left( 2\cdot (i-1) \right)^2$.
-Suppose the root of the disk arrangement is centered at origin.
-The centers of the disks at level $i$ are at a distance at most $2\cdot (i-1)$ away from the origin.
+% The first round has one unit disk.  
+% The next round, two unit radii disk are in contact with the first, i.e. Figure \ref{fig:circlePacking1-1}.
+% The subsequent rounds are shown in Figures \ref{fig:circlePacking1-2}, \ref{fig:circlePacking1-3}, and \ref{fig:circlePacking1-4}.  
+% For each round $i$ we are adding $2^{(i-1)}$ disks, each with an area of $\pi$.  
+% The area that the disk arrangement is bounded at round $i$ is a box of length $2\cdot (2\cdot (i-1)+1)$ totalling to an area of $(4\cdot i^2 - 4\cdot i + 1)$.  
+% Meanwhile the total area of the disk arrangement at $i$ is $\pi \cdot (2^i - 1)$.  The exponential growth rate of the disk packing will exceed its bounded area for sufficiently large $i$, i.e. pick $i \geq 6$.
 Every disk at level up to $i$ is contained in a disk of radius $2\cdot i - 1$ centered at the origin.
 The total area of the disk arrangement is $(2\cdot i -1)^2 \cdot \pi$. 
 When $i>???$ the total area of the disk arrangement exceeds the total bounded area and thus we have a contradiction.
 
-\newpage
-
-The embedding problems for trees and corresponding disk arrangements are as follows:
-
- 
-
-
+\begin{figure}[!htbp]\label{fig:circlePacking-3}
+\begin{center}
+    %add desired spacing between images, e. g. ~, \quad, \qquad etc.
+    %(or a blank line to force the subfigure onto a new line)
+  \begin{subfigure}[b]{.48\textwidth}
+  \begin{center}
+	  \includegraphics[scale=.9]{graphics/OrderedDiskArrangementExample1.pdf}
+	  \label{fig:circlePacking3-1}
+	  \end{center}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+  \begin{center}
+	  \includegraphics[scale=.9]{graphics/OrderedDiskArrangementExample2.pdf}	  
+	  \label{fig:circlePacking3-2}
+	  \end{center}
+  \end{subfigure}
+  \caption{Consider these two ordered disk arrangements where A and B are in the concentric rings of disks.  The large disks are in contact to A and B respectively.  
+  If A and B are adjacent, then there is a restriction of how large the size of the disks can be that are attached to them as seen in on the left.  
+  Whereas if A and B are not adjacent in this disk arrangment as shown on the right, the size of the kissings disks could be arbitrarily large.}
+\end{center} 
+\end{figure}
+Figure \ref{fig:circlePacking-3} shows how an ordered disk arrangment may not be realizable.  
+On the left, it shows a limitation on the weights of the disks that are in contact with disks A and B. 
+On the right, the figure shows the order where A and B are on opposing ends of the ring of disks and can allow of arbitrary size of wieghted disks in contact with A and B.
 % \subsection{Disk Packing Confinement Problem}
 
 % Given inputs of radii 

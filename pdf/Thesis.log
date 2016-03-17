@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  11 NOV 2015 19:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  17 MAR 2016 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,36 +679,30 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 Writing index file Thesis.idx
 (../pdf/Thesis.aux
 
-LaTeX Warning: Label `table:ch1-graph-1' multiply defined.
-
-
 LaTeX Warning: Label `fig:ch1-graph-2' multiply defined.
+
+
+LaTeX Warning: Label `fig:circlePacking-1' multiply defined.
 
 
 LaTeX Warning: Label `fig:configuration-3' multiply defined.
 
-
-LaTeX Warning: Label `fig:circlePacking1-3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:circlePacking1-3' multiply defined.
-
 )
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 236.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 237.
+LaTeX Font Info:    ... okay on input line 237.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 237.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -727,66 +721,61 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \everyMPtoPDFconversion=\toks49
 )
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 23
-6.
+7.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 23
-6.
+7.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 23
-6.
+7.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 23
-6.
+7.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 236.
+LaTeX Font Info:    Try loading font information for U+msa on input line 237.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 236.
+LaTeX Font Info:    Try loading font information for U+msb on input line 237.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 236.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 237.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 237.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 236.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 237.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 236.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 237.
 
 
-Package mathptmx Warning: There are no bold math fonts on input line 236.
+Package mathptmx Warning: There are no bold math fonts on input line 237.
 
 (../pdf/Thesis.toc
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
 []| 
  []
 
@@ -852,350 +841,323 @@ Package caption Info: End \AtBeginDocument code.
  (./ch1/chapter1.tex (./ch1/background.tex
 Chapter 1.
 ) (./ch1/graph.tex
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 3.
-
-<graphics/graphIsomorphismExample.pdf, id=20, 321.6015pt x 128.8815pt>
+<graphics/graphIsomorphismExample.pdf, id=20, 278.06987pt x 87.81107pt>
 File: graphics/graphIsomorphismExample.pdf Graphic file (type pdf)
 
 <use graphics/graphIsomorphismExample.pdf>
 Package pdftex.def Info: graphics/graphIsomorphismExample.pdf used on input lin
-e 38.
-(pdftex.def)             Requested size: 321.60071pt x 128.88118pt.
+e 40.
+(pdftex.def)             Requested size: 278.06917pt x 87.81084pt.
 
 
-Package caption Warning: \label without proper \caption on input line 33.
+Package caption Warning: \label without proper \caption on input line 24.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `table:ch1-graph-1' on page 1 undefined on input line 
-42.
+44.
 
 
-Package caption Warning: \label without proper \caption on input line 33.
+Package caption Warning: \label without proper \caption on input line 24.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `table:ch1-graph-1' on page 1 undefined on input line 
-42.
+44.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<graphics/kuratowskiExamples.pdf, id=21, 375.86029pt x 148.7939pt>
+<graphics/kuratowskiExamples.pdf, id=21, 312.7645pt x 116.54541pt>
 File: graphics/kuratowskiExamples.pdf Graphic file (type pdf)
 
 <use graphics/kuratowskiExamples.pdf>
-Package pdftex.def Info: graphics/kuratowskiExamples.pdf used on input line 61.
+Package pdftex.def Info: graphics/kuratowskiExamples.pdf used on input line 53.
 
-(pdftex.def)             Requested size: 375.85938pt x 148.79352pt.
+(pdftex.def)             Requested size: 312.76372pt x 116.54512pt.
+
+<graphics/combinatorialEmbedding.pdf, id=22, 233.88379pt x 93.10785pt>
+File: graphics/combinatorialEmbedding.pdf Graphic file (type pdf)
+
+<use graphics/combinatorialEmbedding.pdf>
+Package pdftex.def Info: graphics/combinatorialEmbedding.pdf used on input line
+ 66.
+(pdftex.def)             Requested size: 233.88321pt x 93.1076pt.
  [1
 
-] [2 <./graphics/graphIsomorphismExample.pdf> <./graphics/kuratowskiExamples.pd
-f>]
-<graphics/PetersonGraphWithPath.pdf, id=57, 417.96149pt x 193.12149pt>
+ <./graphics/graphIsomorphismExample.pdf>]
+
+Package caption Warning: \label without proper \caption on input line 74.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:combinatorialEmbedding' on page 2 undefined on 
+input line 97.
+
+[2 <./graphics/kuratowskiExamples.pdf> <./graphics/combinatorialEmbedding.pdf>]
+<graphics/PetersonGraphWithPath.pdf, id=64, 369.26657pt x 148.29604pt>
 File: graphics/PetersonGraphWithPath.pdf Graphic file (type pdf)
 
 <use graphics/PetersonGraphWithPath.pdf>
 Package pdftex.def Info: graphics/PetersonGraphWithPath.pdf used on input line 
-133.
-(pdftex.def)             Requested size: 417.96046pt x 193.12102pt.
-
-<graphics/RandomTree.pdf, id=58, 225.2415pt x 225.2415pt>
+172.
+(pdftex.def)             Requested size: 369.26566pt x 148.29565pt.
+ [3 <./graphics/PetersonGraphWithPath.pdf>] <graphics/RandomTree.pdf, id=74, 16
+6.42015pt x 166.41975pt>
 File: graphics/RandomTree.pdf Graphic file (type pdf)
 
 <use graphics/RandomTree.pdf>
-Package pdftex.def Info: graphics/RandomTree.pdf used on input line 143.
-(pdftex.def)             Requested size: 225.24094pt x 225.24094pt.
+Package pdftex.def Info: graphics/RandomTree.pdf used on input line 184.
+(pdftex.def)             Requested size: 166.41974pt x 166.41934pt.
 
-<graphics/OrderedTreesExample.pdf, id=59, 436.44054pt x 155.12454pt>
+<graphics/OrderedTreesExample.pdf, id=75, 392.7483pt x 131.83453pt>
 File: graphics/OrderedTreesExample.pdf Graphic file (type pdf)
 
 <use graphics/OrderedTreesExample.pdf>
-Package pdftex.def Info: graphics/OrderedTreesExample.pdf used on input line 15
-3.
-(pdftex.def)             Requested size: 436.43947pt x 155.12415pt.
-
-Overfull \hbox (2.81947pt too wide) in paragraph at lines 153--155
- [] 
- []
-
-[3 <./graphics/PetersonGraphWithPath.pdf> <./graphics/RandomTree.pdf>])
-(./ch1/linkages.tex
-<graphics/HumanTurkeyLinkage.pdf, id=72, 338.40729pt x 206.59183pt>
+Package pdftex.def Info: graphics/OrderedTreesExample.pdf used on input line 19
+5.
+(pdftex.def)             Requested size: 392.74733pt x 131.8342pt.
+) (./ch1/linkages.tex
+<graphics/HumanTurkeyLinkage.pdf, id=76, 255.56679pt x 151.56123pt>
 File: graphics/HumanTurkeyLinkage.pdf Graphic file (type pdf)
 
 <use graphics/HumanTurkeyLinkage.pdf>
 Package pdftex.def Info: graphics/HumanTurkeyLinkage.pdf used on input line 4.
-(pdftex.def)             Requested size: 338.40646pt x 206.59132pt.
- [4 <./graphics/OrderedTreesExample.pdf> <./graphics/HumanTurkeyLinkage.pdf>]
-<graphics/twoEmbeddingsOfSameLinkage.pdf, id=92, 366.62572pt x 183.51361pt>
-File: graphics/twoEmbeddingsOfSameLinkage.pdf Graphic file (type pdf)
-
-<use graphics/twoEmbeddingsOfSameLinkage.pdf>
-Package pdftex.def Info: graphics/twoEmbeddingsOfSameLinkage.pdf used on input 
-line 56.
-(pdftex.def)             Requested size: 366.62482pt x 183.51315pt.
-) (./ch1/polygonallinkages.tex
-[5 <./graphics/twoEmbeddingsOfSameLinkage.pdf>]
-<graphics/hingeOnThreeDistinctPolygons.pdf, id=103, 337.6615pt x 161.0015pt>
+(pdftex.def)             Requested size: 255.56616pt x 151.56085pt.
+) (./ch1/polygonallinkages.tex [4 <./graphics/RandomTree.pdf> <./graphics/Order
+edTreesExample.pdf>]
+<graphics/hingeOnThreeDistinctPolygons.pdf, id=96, 297.0608pt x 129.93243pt>
 File: graphics/hingeOnThreeDistinctPolygons.pdf Graphic file (type pdf)
 
 <use graphics/hingeOnThreeDistinctPolygons.pdf>
 Package pdftex.def Info: graphics/hingeOnThreeDistinctPolygons.pdf used on inpu
-t line 17.
-(pdftex.def)             Requested size: 337.66066pt x 161.00108pt.
+t line 7.
+(pdftex.def)             Requested size: 297.06007pt x 129.9321pt.
 
-<graphics/Problem1.pdf, id=104, 252.97531pt x 80.16148pt>
+<graphics/orderedLinkages.pdf, id=97, 315.16145pt x 100.14615pt>
+File: graphics/orderedLinkages.pdf Graphic file (type pdf)
+
+<use graphics/orderedLinkages.pdf>
+Package pdftex.def Info: graphics/orderedLinkages.pdf used on input line 17.
+(pdftex.def)             Requested size: 315.16068pt x 100.14589pt.
+
+<graphics/Problem1.pdf, id=98, 233.03532pt x 50.01184pt>
 File: graphics/Problem1.pdf Graphic file (type pdf)
 
 <use graphics/Problem1.pdf>
-Package pdftex.def Info: graphics/Problem1.pdf used on input line 26.
-(pdftex.def)             Requested size: 252.97469pt x 80.16127pt.
+Package pdftex.def Info: graphics/Problem1.pdf used on input line 38.
+(pdftex.def)             Requested size: 233.03474pt x 50.0117pt.
+ [5 <./graphics/HumanTurkeyLinkage.pdf> <./graphics/hingeOnThreeDistinctPolygon
+s.pdf>]
 
-<graphics/GeometricDissectionBusschop.pdf, id=105, 305.54149pt x 128.8815pt>
-File: graphics/GeometricDissectionBusschop.pdf Graphic file (type pdf)
-
-<use graphics/GeometricDissectionBusschop.pdf>
-Package pdftex.def Info: graphics/GeometricDissectionBusschop.pdf used on input
- line 40.
-(pdftex.def)             Requested size: 305.54074pt x 128.88118pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<graphics/HaberdasherProblem.pdf, id=106, 290.47621pt x 144.5902pt>
-File: graphics/HaberdasherProblem.pdf Graphic file (type pdf)
-
-<use graphics/HaberdasherProblem.pdf>
-Package pdftex.def Info: graphics/HaberdasherProblem.pdf used on input line 52.
-
-(pdftex.def)             Requested size: 290.4755pt x 144.58983pt.
-) (./ch1/diskarrangements.tex [6 <./graphics/hingeOnThreeDistinctPolygons.pdf> 
-<./graphics/Problem1.pdf>]
-<graphics/diskPackingTheoremExample.pdf, id=120, 284.38043pt x 101.58252pt>
-File: graphics/diskPackingTheoremExample.pdf Graphic file (type pdf)
-
-<use graphics/diskPackingTheoremExample.pdf>
-Package pdftex.def Info: graphics/diskPackingTheoremExample.pdf used on input l
-ine 12.
-(pdftex.def)             Requested size: 284.37973pt x 101.58226pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./graphics/GeometricDissectionBusschop.pdf> <./graphics/HaberdasherProblem.
-pdf>] <graphics/degree2arrangement.pdf, id=134, 97.76526pt x 33.52626pt>
-File: graphics/degree2arrangement.pdf Graphic file (type pdf)
-
-<use graphics/degree2arrangement.pdf>
-Package pdftex.def Info: graphics/degree2arrangement.pdf used on input line 56.
-
-(pdftex.def)             Requested size: 104.07117pt x 35.69112pt.
-
-<graphics/degree3arrangement.pdf, id=135, 97.76526pt x 97.76526pt>
-File: graphics/degree3arrangement.pdf Graphic file (type pdf)
-
-<use graphics/degree3arrangement.pdf>
-Package pdftex.def Info: graphics/degree3arrangement.pdf used on input line 61.
-
-(pdftex.def)             Requested size: 104.07117pt x 104.07819pt.
-
-<graphics/degree4arrangement.pdf, id=136, 162.00525pt x 162.00525pt>
-File: graphics/degree4arrangement.pdf Graphic file (type pdf)
-
-<use graphics/degree4arrangement.pdf>
-Package pdftex.def Info: graphics/degree4arrangement.pdf used on input line 66.
-
-(pdftex.def)             Requested size: 104.07117pt x 104.07356pt.
-
-<graphics/degree5arrangement.pdf, id=137, 226.24524pt x 226.24524pt>
-File: graphics/degree5arrangement.pdf Graphic file (type pdf)
-
-<use graphics/degree5arrangement.pdf>
-Package pdftex.def Info: graphics/degree5arrangement.pdf used on input line 71.
-
-(pdftex.def)             Requested size: 104.07117pt x 104.0706pt.
-) (./ch1/configurationspaces.tex [8 <./graphics/diskPackingTheoremExample.pdf> 
-<./graphics/degree2arrangement.pdf> <./graphics/degree3arrangement.pdf> <./grap
-hics/degree4arrangement.pdf> <./graphics/degree5arrangement.pdf>]
-<graphics/DiskPackingReconfiguration.pdf, id=166, 194.17012pt x 129.9254pt>
-File: graphics/DiskPackingReconfiguration.pdf Graphic file (type pdf)
-
-<use graphics/DiskPackingReconfiguration.pdf>
-Package pdftex.def Info: graphics/DiskPackingReconfiguration.pdf used on input 
-line 55.
-(pdftex.def)             Requested size: 145.62721pt x 97.4438pt.
-
-
-Package caption Warning: \label without proper \caption on input line 84.
+Package caption Warning: \label without proper \caption on input line 58.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table:configurationSpace-1' on page 9 undefined on in
-put line 68.
+LaTeX Warning: Reference `fig:collidingHingedPolygons' on page 6 undefined on i
+nput line 53.
 
+<graphics/collidingHingedPolygons.pdf, id=111, 451.557pt x 94.60344pt>
+File: graphics/collidingHingedPolygons.pdf Graphic file (type pdf)
 
-Overfull \hbox (19.65956pt too wide) in paragraph at lines 72--85
-[][][] 
- []
+<use graphics/collidingHingedPolygons.pdf>
+Package pdftex.def Info: graphics/collidingHingedPolygons.pdf used on input lin
+e 60.
+(pdftex.def)             Requested size: 451.5559pt x 94.6032pt.
 
-) (./ch1/complexity.tex [9 <./graphics/DiskPackingReconfiguration.pdf>]
-[10]) (./ch1/satisfiability.tex) (./ch1/problemdefinition.tex [11]
-
-LaTeX Warning: Reference `sec:logic' on page 12 undefined on input line 39.
-
-
-LaTeX Warning: Reference `sec:hinge' on page 12 undefined on input line 41.
-
-
-LaTeX Warning: Reference `sec:disk' on page 12 undefined on input line 43.
-
-) (./ch1/result.tex)) (./ch2/chapter2.tex (./ch2/LogicEngineV3.tex [12]
-Chapter 2.
-
-<graphics/LogicEngineFrameFigure1Scaled.pdf, id=184, 233.38191pt x 282.96716pt>
-File: graphics/LogicEngineFrameFigure1Scaled.pdf Graphic file (type pdf)
-<use graphics/LogicEngineFrameFigure1Scaled.pdf>
-Package pdftex.def Info: graphics/LogicEngineFrameFigure1Scaled.pdf used on inp
-ut line 8.
-(pdftex.def)             Requested size: 233.38133pt x 282.96648pt.
-
-<graphics/LogicEngineFrameFigure1halfScaled.pdf, id=185, 207.97699pt x 242.3052
-4pt>
-File: graphics/LogicEngineFrameFigure1halfScaled.pdf Graphic file (type pdf)
- <use graphics/LogicEngineFrameFigure1halfScaled.pdf>
-Package pdftex.def Info: graphics/LogicEngineFrameFigure1halfScaled.pdf used on
- input line 23.
-(pdftex.def)             Requested size: 207.97647pt x 242.30464pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13
-
- <./graphics/LogicEngineFrameFigure1Scaled.pdf>]
-<graphics/LogicEngineFrameFigure2Scaled.pdf, id=194, 252.44313pt x 142.49236pt>
-File: graphics/LogicEngineFrameFigure2Scaled.pdf Graphic file (type pdf)
-<use graphics/LogicEngineFrameFigure2Scaled.pdf>
-Package pdftex.def Info: graphics/LogicEngineFrameFigure2Scaled.pdf used on inp
-ut line 43.
-(pdftex.def)             Requested size: 252.4425pt x 142.492pt.
- [14 <./graphics/LogicEngineFrameFigure1halfScaled.pdf> <./graphics/LogicEngine
-FrameFigure2Scaled.pdf>]
-<graphics/logicEngineCollisions.pdf, id=213, 323.27173pt x 257.62349pt>
-File: graphics/logicEngineCollisions.pdf Graphic file (type pdf)
-
-<use graphics/logicEngineCollisions.pdf>
-Package pdftex.def Info: graphics/logicEngineCollisions.pdf used on input line 
-80.
-(pdftex.def)             Requested size: 323.27094pt x 257.62285pt.
-
-<graphics/logicEngineValidConfigurations.pdf, id=214, 308.6983pt x 97.74919pt>
-File: graphics/logicEngineValidConfigurations.pdf Graphic file (type pdf)
-
-<use graphics/logicEngineValidConfigurations.pdf>
-Package pdftex.def Info: graphics/logicEngineValidConfigurations.pdf used on in
-put line 89.
-(pdftex.def)             Requested size: 308.69754pt x 97.74895pt.
- [15 <./graphics/logicEngineCollisions.pdf>]
-<graphics/LogicEngineFrameFigure5Scaled.pdf, id=232, 2967.46141pt x 3038.79994p
-t>
-File: graphics/LogicEngineFrameFigure5Scaled.pdf Graphic file (type pdf)
- <use graphics/LogicEngineFrameFigure5Scaled.pdf>
-Package pdftex.def Info: graphics/LogicEngineFrameFigure5Scaled.pdf used on inp
-ut line 126.
-(pdftex.def)             Requested size: 2967.4542pt x 3038.79257pt.
-
-Overfull \hbox (2533.8342pt too wide) in paragraph at lines 126--127
+Overfull \hbox (17.9359pt too wide) in paragraph at lines 60--61
  [] 
  []
 
 
-LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 16 undefined
- on input line 127.
-
-
-LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 16 undefined
- on input line 127.
-
-
-LaTeX Warning: Float too large for page by 2421.36258pt on input line 129.
-
-[16 <./graphics/logicEngineValidConfigurations.pdf>]
-
-Package caption Warning: \label without proper \caption on input line 56.
+Package caption Warning: \label without proper \caption on input line 58.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 17 undefined on
- input line 166.
-
-) (./ch2/HingedPolygonsV3.tex [17] [18 <./graphics/LogicEngineFrameFigure5Scale
-d.pdf>] <graphics/HingedLogicEngineSmall.pdf, id=256, 296.04602pt x 193.789pt>
-File: graphics/HingedLogicEngineSmall.pdf Graphic file (type pdf)
-
-<use graphics/HingedLogicEngineSmall.pdf>
-Package pdftex.def Info: graphics/HingedLogicEngineSmall.pdf used on input line
- 13.
-(pdftex.def)             Requested size: 296.04529pt x 193.78851pt.
+LaTeX Warning: Reference `fig:collidingHingedPolygons' on page 6 undefined on i
+nput line 64.
 
 
-Package caption Warning: \label without proper \caption on input line 21.
+Package caption Warning: \label without proper \caption on input line 58.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `TBL:HingedPolygonsV3-1' on page 19 undefined on input
- line 41.
+LaTeX Warning: Reference `fig:collidingHingedPolygons' on page 6 undefined on i
+nput line 66.
 
-[19
+<graphics/orderedFaces.pdf, id=112, 205.15646pt x 86.25023pt>
+File: graphics/orderedFaces.pdf Graphic file (type pdf)
 
- <./graphics/HingedLogicEngineSmall.pdf>]
-<graphics/HingedLogicEngineSmallEnumerated.pdf, id=263, 428.06926pt x 207.1198p
-t>
-File: graphics/HingedLogicEngineSmallEnumerated.pdf Graphic file (type pdf)
- <use graphics/HingedLogicEngineSmallEnumerated.pdf>
-Package pdftex.def Info: graphics/HingedLogicEngineSmallEnumerated.pdf used on 
-input line 53.
-(pdftex.def)             Requested size: 428.06822pt x 207.11928pt.
- [20 <./graphics/HingedLogicEngineSmallEnumerated.pdf>]) (./ch2/Hausdorff.tex
-<graphics/HausdorffDistanceExample1.pdf, id=278, 291.58937pt x 208.65755pt>
-File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
+<use graphics/orderedFaces.pdf>
+Package pdftex.def Info: graphics/orderedFaces.pdf used on input line 69.
+(pdftex.def)             Requested size: 205.15594pt x 86.25pt.
+ [6 <./graphics/orderedLinkages.pdf> <./graphics/Problem1.pdf> <./graphics/coll
+idingHingedPolygons.pdf>]
 
-<use graphics/HausdorffDistanceExample1.pdf>
-Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 13.
-(pdftex.def)             Requested size: 291.58865pt x 208.65701pt.
-) (./ch2/ContactGraphV4.tex
-<graphics/hexagonOutline5LayerSmall.pdf, id=279, 204.32335pt x 179.61102pt>
-File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
+Package caption Warning: \label without proper \caption on input line 67.
+See the caption package documentation for explanation.
 
-<use graphics/hexagonOutline5LayerSmall.pdf>
-Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
-ine 5.
-(pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
- [21 <./graphics/HausdorffDistanceExample1.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 15.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
-<graphics/snowflakeOutline5LayerSmall.pdf, id=291, 189.76897pt x 166.8333pt>
-File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `fig:orderedFaces.pdf' on page 7 undefined on input li
+ne 74.
 
-<use graphics/snowflakeOutline5LayerSmall.pdf>
-Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
- line 24.
-(pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
- [22 <./graphics/hexagonOutline5LayerSmall.pdf>] [23 <./graphics/snowflakeOutli
-ne5LayerSmall.pdf>]))
-(../pdf/Thesis.bbl [24])
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 78.
+<graphics/HaberdasherProblem.pdf, id=134, 265.8201pt x 132.09651pt>
+File: graphics/HaberdasherProblem.pdf Graphic file (type pdf)
+
+<use graphics/HaberdasherProblem.pdf>
+Package pdftex.def Info: graphics/HaberdasherProblem.pdf used on input line 99.
+
+(pdftex.def)             Requested size: 265.81944pt x 132.09618pt.
+ [7 <./graphics/orderedFaces.pdf>]
+<graphics/GeometricDissectionBusschop.pdf, id=146, 276.21796pt x 112.4722pt>
+File: graphics/GeometricDissectionBusschop.pdf Graphic file (type pdf)
+
+<use graphics/GeometricDissectionBusschop.pdf>
+Package pdftex.def Info: graphics/GeometricDissectionBusschop.pdf used on input
+ line 108.
+(pdftex.def)             Requested size: 276.21727pt x 112.47191pt.
+
+<graphics/HingedHaberdasher.pdf, id=147, 478.2165pt x 118.96725pt>
+File: graphics/HingedHaberdasher.pdf Graphic file (type pdf)
+
+<use graphics/HingedHaberdasher.pdf>
+Package pdftex.def Info: graphics/HingedHaberdasher.pdf used on input line 123.
+
+(pdftex.def)             Requested size: 433.62pt x 107.87733pt.
+) (./ch1/diskarrangements.tex
+<graphics/diskPackingTheoremExample.pdf, id=148, 284.38043pt x 101.58252pt>
+File: graphics/diskPackingTheoremExample.pdf Graphic file (type pdf)
+
+<use graphics/diskPackingTheoremExample.pdf>
+Package pdftex.def Info: graphics/diskPackingTheoremExample.pdf used on input l
+ine 44.
+(pdftex.def)             Requested size: 284.37973pt x 101.58226pt.
+ [8 <./graphics/HaberdasherProblem.pdf> <./graphics/GeometricDissectionBusschop
+.pdf> <./graphics/HingedHaberdasher.pdf>] <graphics/BinaryTree1.pdf, id=185, 69
+.25874pt x 5.01875pt>
+File: graphics/BinaryTree1.pdf Graphic file (type pdf)
+
+<use graphics/BinaryTree1.pdf>
+Package pdftex.def Info: graphics/BinaryTree1.pdf used on input line 91.
+(pdftex.def)             Requested size: 91.0631pt x 6.59879pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+
+<graphics/BinaryTree2.pdf, id=186, 69.25874pt x 69.25874pt>
+File: graphics/BinaryTree2.pdf Graphic file (type pdf)
+
+<use graphics/BinaryTree2.pdf>
+Package pdftex.def Info: graphics/BinaryTree2.pdf used on input line 96.
+(pdftex.def)             Requested size: 91.0631pt x 91.06354pt.
+
+<graphics/BinaryTree3.pdf, id=187, 114.68848pt x 114.68848pt>
+File: graphics/BinaryTree3.pdf Graphic file (type pdf)
+
+<use graphics/BinaryTree3.pdf>
+Package pdftex.def Info: graphics/BinaryTree3.pdf used on input line 101.
+(pdftex.def)             Requested size: 91.0631pt x 91.06314pt.
+
+<graphics/BinaryTree4.pdf, id=188, 114.68848pt x 114.68848pt>
+File: graphics/BinaryTree4.pdf Graphic file (type pdf)
+
+<use graphics/BinaryTree4.pdf>
+Package pdftex.def Info: graphics/BinaryTree4.pdf used on input line 106.
+(pdftex.def)             Requested size: 91.0631pt x 91.06314pt.
+
+<graphics/degree2arrangement.pdf, id=189, 97.76526pt x 33.52626pt>
+File: graphics/degree2arrangement.pdf Graphic file (type pdf)
+
+<use graphics/degree2arrangement.pdf>
+Package pdftex.def Info: graphics/degree2arrangement.pdf used on input line 126
+.
+(pdftex.def)             Requested size: 104.07117pt x 35.69112pt.
+
+<graphics/degree3arrangement.pdf, id=190, 97.76526pt x 97.76526pt>
+File: graphics/degree3arrangement.pdf Graphic file (type pdf)
+
+<use graphics/degree3arrangement.pdf>
+Package pdftex.def Info: graphics/degree3arrangement.pdf used on input line 131
+.
+(pdftex.def)             Requested size: 104.07117pt x 104.07819pt.
+
+<graphics/degree4arrangement.pdf, id=191, 162.00525pt x 162.00525pt>
+File: graphics/degree4arrangement.pdf Graphic file (type pdf)
+
+<use graphics/degree4arrangement.pdf>
+Package pdftex.def Info: graphics/degree4arrangement.pdf used on input line 136
+.
+(pdftex.def)             Requested size: 104.07117pt x 104.07356pt.
+
+<graphics/degree5arrangement.pdf, id=192, 226.24524pt x 226.24524pt>
+File: graphics/degree5arrangement.pdf Graphic file (type pdf)
+
+<use graphics/degree5arrangement.pdf>
+Package pdftex.def Info: graphics/degree5arrangement.pdf used on input line 141
+.
+(pdftex.def)             Requested size: 104.07117pt x 104.0706pt.
+
+<graphics/OrderedDiskArrangementExample1.pdf, id=193, 123.93301pt x 190.29092pt
+>
+File: graphics/OrderedDiskArrangementExample1.pdf Graphic file (type pdf)
+ <use graphics/OrderedDiskArrangementExample1.pdf>
+Package pdftex.def Info: graphics/OrderedDiskArrangementExample1.pdf used on in
+put line 166.
+(pdftex.def)             Requested size: 111.53867pt x 171.26024pt.
+
+<graphics/OrderedDiskArrangementExample2.pdf, id=194, 123.2605pt x 132.46489pt>
+File: graphics/OrderedDiskArrangementExample2.pdf Graphic file (type pdf)
+<use graphics/OrderedDiskArrangementExample2.pdf>
+Package pdftex.def Info: graphics/OrderedDiskArrangementExample2.pdf used on in
+put line 172.
+(pdftex.def)             Requested size: 110.93341pt x 119.21729pt.
+
+
+Package caption Warning: \label without proper \caption on input line 160.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:circlePacking-3' on page 9 undefined on input lin
+e 181.
+
+[9 <./graphics/diskPackingTheoremExample.pdf> <./graphics/BinaryTree1.pdf> <./g
+raphics/BinaryTree2.pdf> <./graphics/BinaryTree3.pdf> <./graphics/BinaryTree4.p
+df>] [10 <./graphics/degree2arrangement.pdf> <./graphics/degree3arrangement.pdf
+> <./graphics/degree4arrangement.pdf> <./graphics/degree5arrangement.pdf> <./gr
+aphics/OrderedDiskArrangementExample1.pdf> <./graphics/OrderedDiskArrangementEx
+ample2.pdf>]) (./ch1/configurationspaces.tex
+<graphics/twoEmbeddingsOfSameLinkage.pdf, id=250, 339.39998pt x 169.65584pt>
+File: graphics/twoEmbeddingsOfSameLinkage.pdf Graphic file (type pdf)
+
+<use graphics/twoEmbeddingsOfSameLinkage.pdf>
+Package pdftex.def Info: graphics/twoEmbeddingsOfSameLinkage.pdf used on input 
+line 88.
+(pdftex.def)             Requested size: 339.39915pt x 169.65541pt.
+ [11]
+<graphics/DiskPackingReconfiguration.pdf, id=255, 322.6454pt x 202.1432pt>
+File: graphics/DiskPackingReconfiguration.pdf Graphic file (type pdf)
+
+<use graphics/DiskPackingReconfiguration.pdf>
+Package pdftex.def Info: graphics/DiskPackingReconfiguration.pdf used on input 
+line 106.
+(pdftex.def)             Requested size: 241.98344pt x 151.60701pt.
+) (./ch1/complexity.tex [12 <./graphics/twoEmbeddingsOfSameLinkage.pdf> <./grap
+hics/DiskPackingReconfiguration.pdf>] [13]) (./ch1/satisfiability.tex) (./ch1/p
+roblemdefinition.tex [14]
+
+LaTeX Warning: Reference `sec:logic' on page 15 undefined on input line 39.
+
+
+LaTeX Warning: Reference `sec:hinge' on page 15 undefined on input line 41.
+
+
+LaTeX Warning: Reference `sec:disk' on page 15 undefined on input line 43.
+
+) (./ch1/result.tex)) (../pdf/Thesis.bbl [15])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[25
+[16
 
 ] (../pdf/Thesis.aux)
 
@@ -1206,34 +1168,34 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17647 strings out of 493089
- 324128 string characters out of 6134841
- 504657 words of memory out of 5000000
- 20639 multiletter control sequences out of 15000+600000
- 43193 words of font info for 70 fonts, out of 8000000 for 9000
+ 17644 strings out of 493089
+ 323224 string characters out of 6134841
+ 502657 words of memory out of 5000000
+ 20647 multiletter control sequences out of 15000+600000
+ 55495 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,59p,967b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,59p,1149b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/te
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/
 texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (29 pages, 299354 bytes).
+es/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/Thesis.pdf (20 pages, 327544 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
+ 327 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
