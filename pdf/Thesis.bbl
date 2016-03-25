@@ -16,6 +16,11 @@ G.~Di Battista, P.~Eades, R.~Tamassia, and I.~G. Tollis.
 \newblock {\em {Graph Drawing: Algorithms for the Visualization of Graphs}}.
 \newblock Prentice Hall, 1999.
 
+\bibitem{BC87}
+S.~N. Bhatt and S.~S. Cosmadakis.
+\newblock {The complexity of minimizing wire lengths in VLSI layouts}.
+\newblock {\em Inform. Process. Lett 25}, 4:263--267, 1987.
+
 \bibitem{BK98}
 H.~Breu and D.~G. Kirkpatrick.
 \newblock {Unit disk graph recognition is NP-hard}.
@@ -37,10 +42,15 @@ P.~Eades and N.~C. Wormald.
 \newblock {Fixed edge-length graph drawing is NP-hard}.
 \newblock {\em Discrete Applied Mathematics}, 28:111--134, 1990.
 
-\bibitem{kleinberg2006algorithm}
-J.~Kleinberg and E.~Tardos.
-\newblock {\em {Algorithm Design}}.
-\newblock Pearson Education, 2006.
+\bibitem{NAE3SATisNPhard}
+Michael~R Garey and David~S Johnson.
+\newblock {\em Computers and Intractibility}.
+\newblock WH Freeman and company New York, 1979.
+
+\bibitem{koebe1936kontaktprobleme}
+Paul Koebe.
+\newblock {\em Kontaktprobleme der konformen Abbildung}.
+\newblock Hirzel, 1936.
 
 \bibitem{kuratowski1930probleme}
 Casimir Kuratowski.

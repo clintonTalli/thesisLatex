@@ -43,23 +43,28 @@
 \begin{center}
 \includegraphics[scale=1]{graphics/diskPackingTheoremExample.pdf}
 \end{center} 
-\caption{This example represents a disk arrangement transformed to and from its corresponding graph 
-$G_2$}
+\caption{This example represents a disk arrangement and its contact graph.}
 %Figure shows a 5-cycle with a unique realization of a disk arrangement.
 \label{fig:DiskArrangement-1}
 \end{figure}
-A \textit{contact graph} $G=(V,E)$ corresponding to a given disk arrangement where there is a bijection $b_V: V \mapsto D$ and a bijection that maps an edge $e_{i,j} \in E$ to an interior disjoint pair of disks $d_i$, $d_j \in D$.
-Let $\omega: V \mapsto \bbR^+$ be the \textit{weight function}.  
-$\omega$ assigns a weight to each vertex in $V$.  
-$D$ \textit{respects radii assignments} if for every $v \in V$ such that $b_V(v) = D_v$, $\omega(v)$ is the radius of $D_v$.  
-Let $\Pi:V \mapsto \bbr^2$ be that planar mapping of vertices.  $D$ \textit{respects center assignments} if for every $v \in V$, $\Pi(v)$ is the center of $D_v$.  
-%Note that if $\omega$ respects radii assignments, then it can be equivelently said that the linkage $(G,\ell)$ with length assignment $\ell$ also respects radii assignments.  
-In this thesis, unless otherwise stated we assume that the contact graph associates to an $\omega$ and $\Pi$ mapping that respect radii and center assignments.
-%we may also interchange contact graph with linkage.
-Koebe's theorem states that for every connected simple planar graph $G$, there exists a planar disk arrangement whose contact graph is $G$.
-
+A \textit{contact graph} $G=(V,E)$ corresponding to a given disk arrangement where there is a bijection $b_V: V \mapsto D$ and a bijection that maps an edge $e_{i,j} \in E$ to an interior disjoint pair of disks $d_i$, $d_j \in D$ (see Figure \ref{fig:DiskArrangement-1}).
 Given a disk arrangement, the contact graph can be thought of as a linkage because the distance between two kissing disk equal the sum of radii.  
 However if the two disks don't kiss, the distance between their centers is strictly greater than the sum of their radii.
+Given a disk arrangement, the contact graph can be thought of as a linkage because the distance between two kissing disk equal the sum of radii.  
+However if the two disks don't kiss, the distance between their centers is strictly greater than the sum of their radii.
+
+Koebe's theorem states that for every planar graph $G$, there exists a planar disk arrangement whose contact graph is $G$ \cite{koebe1936kontaktprobleme}.
+This motivates the question of whether a planar graph $G$ is a contact graph of a disk arrangement with given radii.
+The radii can be given by a weight function.
+Let $\omega: V \mapsto \bbR^+$ be the \textit{weight function}.  
+$\omega$ assigns a weight to each vertex in $V$.  
+Let $\Pi:V \mapsto \bbr^2$ be that planar mapping of vertices.
+%$D$ \textit{respects radii assignments} if for every $v \in V$ such that $b_V(v) = D_v$, $\omega(v)$ is the radius of $D_v$.    
+%$D$ \textit{respects center assignments} if for every $v \in V$, $\Pi(v)$ is the center of $D_v$.  
+%Note that if $\omega$ respects radii assignments, then it can be equivelently said that the linkage $(G,\ell)$ with length assignment $\ell$ also respects radii assignments.  
+%In this thesis, unless otherwise stated we assume that the contact graph associates to an $\omega$ and $\Pi$ mapping that respect radii and center assignments.
+%we may also interchange contact graph with linkage.
+
 
 
 % For the sake of simplicity, throughout this thesis we often refer to disks and their corre- sponding vertices synonymously. For example, we might simply say ’we create a disk D2 with radius r2 that touches disk D1’ instead of saying ’we create a vertex v2, a correspond- ing disk D2 with radius r2 and an edge between v2 and vertex v1 whose corresponding disk is D1’.
@@ -73,52 +78,73 @@ However if the two disks don't kiss, the distance between their centers is stric
 
 
 %What is not obvious is when given a graph with positive weights, does there exist a planar drawing?
-For a tree with positive weighted vertices, we posed two realizability problems:
-\begin{prob}[Unordered Realizibility Problem for the Tree]\label{problem:UnorderedTree}
-Given a tree with positive weighted vertices, is it a contact graph of some disk arrangement where the radii equal the vertex weights?
+%Some variants of these problems were known to be NP-Hard.
+For planar graphs with positive weighted vertices, we pose two realizability problems:
+\begin{prob}[Unordered Realizibility Problem for a Contact Graph]\label{problem:UnorderedContactGraph}
+Given a planar graph with positive weighted vertices, is it a contact graph of some disk arrangement where the radii equal the vertex weights?
 \end{prob}
-\begin{prob}[Ordered Realizibility Problem for the Tree]\label{problem:OrderedTree}
-Given an ordered tree with positive weighted vertices, is it the ordered contact graph of some disk arrangement where the radii equal the vertex weights?
+\begin{prob}[Ordered Realizibility Problem for a Contact Graph]\label{problem:OrderedContactGraph}
+Given a planar graph with positive weighted vertices and a combinatorial embedding, is it a contact graph of some disk arrangement where the radii equal the vertex weights and the counter-clockwise order of neighbors of each disk is specified by the combinatorial embedding?
 \end{prob}
 
-There exists a tree with no realizable disk arrangement.  
-To show that this can be done with even the simplest of trees and linkages, consider the binary trees $\left\lbrace T_i \right\rbrace_{i=1}^n$ with unit distance between adjacent vertices.  
+An instance of Problem \ref{problem:UnorderedContactGraph} is shown in Figure \ref{fig:DiskArrangement-1} where the cycle graph $C_5$ is the contact graph of unit disks.
+It is not difficult to see that there exists a planar graph with positive weights with no realizable disk arrangement.
+Consider the a star graph with 6 leafs, each vertex with unit weight.
+In any realization, the angle between two consecutive edges must be greater than $\frac{\pi}{3}$. 
+The sum of 6 angles is $2 \pi$ however, the sum of 6 consecutive angles is greater than $2\pi$.
+The contradiction shows that no realization is possible (refer to Figure \ref{figure:starweel}).
+Note that with the wheel graph $W_7$ is realizable as a contact graph of unit disks.
+
+Every path with arbitrary positive radii is realizable as a contact graph, place the vertices on a line.
+We show that not all binary trees are realizable, even with unit disks.% of unit radii.
+Consider the balanced binary trees of depth $i$ $\left\lbrace T_i \right\rbrace_{i=1}^\infty$ with unit weights on the vertices (see Figure \ref{fig:circlePacking-1}).
+These trees are not realizable for sufficiently large $i$.
 \begin{figure}[!htbp]\label{fig:circlePacking-1}
 \begin{center}
     %add desired spacing between images, e. g. ~, \quad, \qquad etc.
     %(or a blank line to force the subfigure onto a new line)
   \begin{subfigure}[b]{0.21\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/BinaryTree1.pdf}
-	  \caption{Binary tree $T_1$.}
+	  \caption{Binary tree $T_2$.}
 	  \label{fig:circlePacking1-1}
   \end{subfigure}
   \begin{subfigure}[b]{0.21\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/BinaryTree2.pdf}
-	  \caption{Binary tree $T_2$.}
+	  \caption{Binary tree $T_3$.}
 	  \label{fig:circlePacking1-2}
   \end{subfigure}
   \begin{subfigure}[b]{0.21\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/BinaryTree3.pdf}
-	  \caption{Binary tree $T_3$.}
+	  \caption{Binary tree $T_4$.}
 	  \label{fig:circlePacking1-3}
   \end{subfigure}
   \begin{subfigure}[b]{0.21\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/BinaryTree4.pdf}
-	  \caption{Binary tree $T_4$.}
+	  \caption{Binary tree $T_5$.}
 	  \label{fig:circlePacking1-4}
   \end{subfigure}
-  \caption{ We show the linkages $T_1$ through $T_4$ with unit distance between adjacent vertices.  }
+  \caption{ We show the linkages $T_2$ through $T_5$ with distance 2 between adjacent vertices.  }
 \end{center} 
 \end{figure}
 %To show that as $i \rightarrow \infty$, the corresponding disk arrangement will not have a drawing.  
 %We construct the disk arrangement as follows: (1) place a disk of unit radius centered at origin; (2) for each disk continue to add two non-intersecting kissing disks of unit radius to it.  
 %To illustrate, see Figure \ref{fig:circlePacking-1}:
-Let the total area of the disk arrangement be the sum of the areas of the disks. 
-The upper bound of the of the total area of the disk arrangement is the boxed region about the disk arrangement.  
-The upper bound of the total area is $\left( 2\cdot (i-1) \right)^2$.
-Suppose the root of the disk arrangement is centered at origin.
-The centers of the disks at level $i$ are at a distance at most $2\cdot (i-1)$ away from the origin.
-\begin{figure}[!htbp]\label{fig:circlePacking-2}
+Let $i$ be a positive integer and suppose that $T_i$ is a contact graph of unit disks.
+The balanced binary tree $T_i$ has $2^i -1$ vertices.
+The total area of the disks is $\left( 2^i -1 \right)^2 \cdot \pi$.
+We now derive an upper bound for this area.
+%Suppose the root of the disk arrangement is centered at origin.
+Suppose the disk corresponding to the root of the tree is centered at the origin.
+The centers of the disks at level $j$ are at a distance at most $2\cdot (j-1)$ away from the origin.
+The centers of all disks are at distance at most $2 \cdot (i -1)$ away from the origin.
+All unit disks are contained in a disk of radius $2i-1$ centered at the origin.
+The total area of the disks is at most $(2i-1)^2$.
+%Let the total area of the disks arrangement be the sum of the areas of the disks. 
+A upper bound of the total area of the disk arrangement is the area of the bounding box of the disks.
+The upper bound of the 
+
+
+\begin{figure}[!htpb]\label{fig:circlePacking-2}
 \begin{center}
     %add desired spacing between images, e. g. ~, \quad, \qquad etc.
     %(or a blank line to force the subfigure onto a new line)
@@ -143,9 +169,7 @@ The centers of the disks at level $i$ are at a distance at most $2\cdot (i-1)$ a
 	  \label{fig:circlePacking2-4}
   \end{subfigure}
 \end{center} 
-\caption{The gradual growth of disk arrangements by adding two kissing disks to each of the 
-previously generated disks.  By continuing this arrangement growth, the space needed to contain the 
-kissing disks will exceed the area containing the disk arrangements.}\label{fig:circlePacking-1}
+\caption{For $i=2,3,4,5$ the tree $T_i$ is a contact graph of unit disks.}\label{fig:circlePacking-1}
 \end{figure}
 % The first round has one unit disk.  
 % The next round, two unit radii disk are in contact with the first, i.e. Figure \ref{fig:circlePacking1-1}.
@@ -153,9 +177,10 @@ kissing disks will exceed the area containing the disk arrangements.}\label{fig:
 % For each round $i$ we are adding $2^{(i-1)}$ disks, each with an area of $\pi$.  
 % The area that the disk arrangement is bounded at round $i$ is a box of length $2\cdot (2\cdot (i-1)+1)$ totalling to an area of $(4\cdot i^2 - 4\cdot i + 1)$.  
 % Meanwhile the total area of the disk arrangement at $i$ is $\pi \cdot (2^i - 1)$.  The exponential growth rate of the disk packing will exceed its bounded area for sufficiently large $i$, i.e. pick $i \geq 6$.
+Figure \ref{fig:circlePacking-2} shows the first four non-trivial trees as a contact graph of unit disks.
 Every disk at level up to $i$ is contained in a disk of radius $2\cdot i - 1$ centered at the origin.
 The total area of the disk arrangement is $(2\cdot i -1)^2 \cdot \pi$. 
-When $i>???$ the total area of the disk arrangement exceeds the total bounded area and thus we have a contradiction.
+When $i\geq 8$ we have a contradiciton.%the total area of the disk arrangement exceeds the total bounded area and thus we have a contradiction.
 
 \begin{figure}[!htbp]\label{fig:circlePacking-3}
 \begin{center}
@@ -178,9 +203,37 @@ When $i>???$ the total area of the disk arrangement exceeds the total bounded ar
   Whereas if A and B are not adjacent in this disk arrangment as shown on the right, the size of the kissings disks could be arbitrarily large.}
 \end{center} 
 \end{figure}
-Figure \ref{fig:circlePacking-3} shows how an ordered disk arrangment may not be realizable.  
+
+There are instances where a planar graph with weights admits a realization but the cyclic order of neighbors may not be the same as the combinatorial embedding.
+Define $G$ as follows: start with a star centered at $C$ and with 6 leafs, $A_1$ through $A_6$; attach two leafs, $B_1$ and $B_2$, to $A_1$ and  $A_2$ respectively (see  Figure \ref{fig:circlePacking-3}).
+Let the weight of $C$ be $1+\epsilon$ for sufficiently small $\epsilon > 0$.
+The neighbors of $C$ have unit weight.
+The weights of the two leaves have weight $\frac{1}{\epsilon}$/
+The right of Figure \ref{fig:circlePacking-3}) shows a realization where $A_1$ and $A_2$ are in opposite position of the counter-clockwise order around $C$.
+If $A_1$ and $A_2$ are required to be consecutive in the counter-clockwise order around $C$, there is no realization.
+%as epsilon goes to 0 the half planes approximates the disks and so the disks will intersect as well.  label everything, draw halff planes, epsilon and delta, 1/epsilon.
+
+Suppose there is a realization where $A_1, \ldots, A_6$ are in the counter-clockwise order around $C$ (see Figure \ref{{fig:DiskArrangement-4}}).
+If $\epsilon>0$ is sufficiently small, then the centers of of $A_1, \ldots, A_6$ are arbitrarily close to the vertices of a regular hexagon.
+Consider the common tangent lines between $A_1$ and $B_1$ and $A_2$ and $B_2$.
+The possible position of tangent line between $A_1$ and $B_1$ ranges from the common tangent line of $A_1$ and $A_6$ to the common tangent line of $A_1$ and $A_2$.
+Similarly, The possible position of tangent line between $A_2$ and $B_2$ ranges from the common tangent line of $A_2$ and $A_3$ to the common tangent line of $A_1$ and $A_2$.
+In any position, the common tangent lines between $A_1$ and $B_1$ and $A_2$ and $B_2$ intersect.
+If $\frac{1}{\epsilon}$ is sufficiently large, then the disks $D_1$ and $D_2$ also intersect.
+This contradicts that there is a realization.
+\begin{figure}[!hbtp]
+\begin{center}
+\includegraphics[scale=1]{graphics/orderedPlaneIntersection.pdf}
+\end{center} 
+\caption{This example represents a disk arrangement and its contact graph.}
+%Figure shows a 5-cycle with a unique realization of a disk arrangement.
+\label{fig:DiskArrangement-4}
+\end{figure}
+Figure \ref{fig:circlePacking-3} shows how an ordered contact graph may not be realizable.  
 On the left, it shows a limitation on the weights of the disks that are in contact with disks A and B. 
 On the right, the figure shows the order where A and B are on opposing ends of the ring of disks and can allow of arbitrary size of wieghted disks in contact with A and B.
+% Figure \ref{fig:orderedFaces.pdf} shows three polygons with a common hinge.
+% In the counter-clockwise order $(A,B,C)$, the polygonal linkage admits a realization whereas in the counter-clockwise order $(A,C,B)$, it does not admit a realization.
 % \subsection{Disk Packing Confinement Problem}
 
 % Given inputs of radii 
@@ -251,12 +304,12 @@ On the right, the figure shows the order where A and B are on opposing ends of t
 
 
 % The embedding problems for trees and corresponding disk arrangements are as follows:
-% \begin{prob}[Unordered Realizibility Problem for the Tree]\label{problem:UnorderedTree}
+% \begin{prob}[Unordered Realizibility Problem for the Tree]\label{problem:UnorderedContactGraph}
 % For a tree with positive weights for the verticies, it asks whether it is a contact graph of some 
 % disk arrangement where the radii are equal to the vertex weights.
 % \end{prob}
 
-% \begin{prob}[Ordered Realizibility Problem for the Tree]\label{problem:OrderedTree}
+% \begin{prob}[Ordered Realizibility Problem for the Tree]\label{problem:OrderedContactGraph}
 % For a tree with positive weights for the vertices, it asks whether its corresponding graph is the 
 % ordered contact graph of some disk arrangement where the radii equal the vertex weights.
 % \end{prob}

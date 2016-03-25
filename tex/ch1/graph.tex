@@ -3,24 +3,20 @@ A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices 
 An edge is a two element subset of $V$.% and is denoted as ``V choose two'', ${V \choose 2}$.
 % Each edge $e \in E$ is an unordered pair of vertices $\curlybraces{u,v} \in E$.  
 Vertices are said to be \textit{adjacent} if they form an edge in $E$.  
-\textit{Neighbors} of vertex $v$ are the adjecent vertices of $v$.
+\textit{Neighbors} of a vertex $v$ are the vertices adjecent to $v$.
 %Vertices that are adjacent to themselves are \textit{self-adjacent}, i.e. $u = v$ for $\curlybraces{u,v} \in E$.  
-Edges are said to be \textit{incident} if they share a vertex.  
+Edges are said to be adjacent if they share a vertex.  
 %When an edge is a member of $E$ multiple times,  then we say that the graph is a \textit{multigraph}.   
-Note that with edge definition, it is not possible to have one element subset of $V$ as an edge (sometimes referred to as a self-adjacent edge or loop).
+Note that with this definition of an edge it is not possible to have one element subset of $V$ as an edge (sometimes referred to as a self-adjacent edge or loop).
 A \textit{simple graph} has no self-adjacent vertices.
-Note that in this thesis every graph is a simple graph.
+In this thesis every graph is a simple graph.
 If $G' = (V',E')$ is a graph such that $V' \subset V$ and $E' \subset E$, then $G'$ is a \textit{subgraph} of $G$.
 
-
-
-For graph equivalency, we need to define an isomorphism for graphs.  Given 
-two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} a bijective 
-function $f: V_1 \mapsto 
-V_2$ 
-such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and 
-only 
-if $(f(u),f(v)) \in E_2$. 
+To formally show when two graphs are the same, we use the concept of graph isomorphism.
+%For graph equivalency, we need to define an isomorphism for graphs.  
+Two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $ are \textit{isomorphic} if there exists a bijective function $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$ if and only if $(f(u),f(v)) \in E_2$. 
+See an example in Table \ref{table:ch1-graph-1} and Figure \ref{fig:configuration-3}.
+%Given two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} is a bijective function $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
 \begin{table}[!htbp]\label{table:ch1-graph-1}
 \begin{center}
 $$\begin{array}{|c|c|c|}\hline
@@ -45,31 +41,34 @@ $V_1$ and $V_2$.}
 \label{fig:configuration-3}
 \end{figure}
 
-To visualize a graph, $G$, we create a \textit{drawing} $\Gamma$, of $G$.  
-For a drawing, we use an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$, $c_{u,v}(1) = \Pi(v)$ , and the curve $c_{u,v}$ does not pass through any other vertex in $V$.
-For this thesis, we will strictly work with straigt line drawings where all $c_{u,v}$ are straight line segments unless specified otherwise.
+To visualize a graph, $G$, we create a drawing $\Gamma$, of $G$.  
+The \textit{drawing} of a graph $G=(V,E)$ is an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$, $c_{u,v}(1) = \Pi(v)$ , and the curve $c_{u,v}$ does not pass through any other vertex in $V$.
+In this thesis, we will strictly work with straight line drawings where all $c_{u,v}$ are straight line segments unless specified otherwise.
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/kuratowskiExamples.pdf}
 \caption{The $K_5$ and $K_{3,3}$ drawn in the plane.}\label{fig:kuratowskiExamples.pdf}
 \end{center} 
 \end{figure} 
-Kuratowski's theorem allows one to characterize finite planar graphs, i.e. a finite graph is planar if and only if it does not contain a subgraph that is a subdivision of $K_5$ or $K_{3,3}$ \cite{kuratowski1930probleme}. 
-A \textit{crossing} is when two edges have a common interior point.  
+Kuratowski's theorem characterizes finite planar graphs.
+A finite graph is planar if and only if it does not contain a subgraph that is a subdivision of $K_5$ or $K_{3,3}$ \cite{kuratowski1930probleme}. 
+Figure \ref{fig:kuratowskiExamples.pdf} shows a drawing of $K_5$ and $K_{3,3}$.
+Two edges in a drawing \textit{cross} if they have a common interior point.  
 The \textit{crossing number} of a graph is the smallest number of edge crossings for a graph over all drawings.
 A drawing is said to be \textit{planar} if no two distinct edges cross \cite{BET+99}.
 A planar drawing is also called an \textit{embedding}.
-Two embeddings of a graph $G$ are equivalent if they determine the same circular orderings of the neighbor sets and the embeddings can be described as a combination of translations and rotations of the other.
-A combinatorial \textit{embedding} is a planar drawing with a corresponding circular order of the neighbors of each vertex. 
+Two embeddings of a graph $G$ are \textit{equivalent} if for every vertex the counter-clockwise order of neighbors are the same.% determine the same circular order of the in neighbor sets and the embeddings can be described as a combination of translations and rotations of the other.
+A combinatorial \textit{embedding} is a planar drawing with a corresponding counter-clockwise order of the neighbors of each vertex. 
 \begin{figure}[!htbp]
 \begin{center}
     \includegraphics{graphics/combinatorialEmbedding.pdf}
     \caption{Here is a wheel graph, $W_5$, in two separate drawings with the same counterclockwise ordering of neighbors for each vertex.}\label{fig:combinatorialEmbedding.pdf}
 \end{center}
 \end{figure}
-An orientation preserving rigid transformation (i.e. rotation and translation) map an embedding to an equivalent embedding.  Reflections reverse the circular order around each vertex.
+An orientation preserving rigid transformation (i.e., rotation and translation) map an embedding to an equivalent embedding.  
+Reflections reverse the counter-clockwise order around each vertex.
 
-In Figure \ref{fig:combinatorialEmbedding.pdf}, the wheel graph is depicted in two different drawings, one on the left and one on the right. 
+Figure \ref{fig:combinatorialEmbedding.pdf} depicts two different drawings of the wheel graph $W_5$.%, one on the left and one on the right. 
 The drawings have the followings counterclockwise order of neighbors for each vertex:
 \begin{table}[!htbp]\label{table:combinatorialEmbedding}
 \begin{center}
@@ -86,7 +85,7 @@ $$\begin{array}{|c|c|c|}\hline
 5&(2,3,4,1)& (4,3,2,1) 
 \\\hline
 \end{array} $$
-\caption{A table showing the counter clockwise circular ordering of neighbors for the left and right drawing in Figure \ref{fig:combinatorialEmbedding.pdf}.  Note that the permutation cycles are equivalent for the right and left drawings.}
+\caption{A table showing the counter-clockwise circular ordering of neighbors for the left and right drawing in Figure \ref{fig:combinatorialEmbedding.pdf}.  Note that the permutation cycles are equivalent for the right and left drawings.}
 \end{center} 
 \end{table}
 %The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
@@ -163,7 +162,7 @@ Referencing table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combina
 % \end{figure}
 % A graph is called \textit{planar} if it admits a plane embedding.  A \textit{plane graph} is a 
 % graph together with a plane embedding.
-\newpage
+
 \subsection{Trees}
 %Some graphs can be classified by which properties they have.
 A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by an edge.   
@@ -171,14 +170,14 @@ A \textit{path} is a sequence of vertices in which every two consecutive vertice
 \begin{center}
 \includegraphics{graphics/PetersonGraphWithPath.pdf}
 \caption{An embedding of the Peterson graph with a simple cycle of 
-(2,7,9,6,1,0,5,8,3).}\label{fig:ch1-graph-2}
+(2,7,9,6,1,0,5,8,3).}\label{fig:PetersonGraphWithPath}
 \end{center}
 \end{figure}
 
-A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$ (see Figure \ref{fig:ch1-graph-2}).  
+A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$ (see Figure \ref{fig:PetersonGraphWithPath}).  
 A graph is \textit{connected} if for any two vertices, there exists a path between the two points.
-A \textit{tree} is a graph that has no simple cycles and is connected.
-\newpage
+A \textit{tree} is a graph that has no simple cycles and is connected (see Figure \ref{fig:ch1-graph-2}).
+Every tree is planar.
 \begin{figure}[!hbpt]
 \begin{center}
 \includegraphics{graphics/RandomTree.pdf}
@@ -189,7 +188,7 @@ A \textit{tree} is a graph that has no simple cycles and is connected.
 %Any two embeddings of trees are equivalent if they can be described as any combination of rotations, translations, and or reflections.
 
 % \subsection{Ordered Trees}
-An \textit{ordered tree} is a tree $T$ together with a cyclic order of the neighbors for each vertex, $O$.
+An \textit{ordered tree} is a tree $T$ together with a cyclic order of the neighbors for each vertex (see Figure \ref{fig:ch1-graph-6}).
 \begin{figure}[!hbpt]
 \begin{center}
     \includegraphics{graphics/OrderedTreesExample.pdf}

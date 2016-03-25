@@ -9,25 +9,33 @@ Furthermore, it is also known that every boolean formula can be written in CNF s
 This form is called 3-CNF.  
 For example, consider the clause $A \lor B \lor C \lor D \lor E$. 
 This clause can be rewritten in 3-CNF form as $(A \lor B \lor x_1) \land (\lnot x_1 \lor C \lor x_2) \land (\lnot x_2 \lor D \lor E)$ where $x_1$ and $x_2$ are literals that allow us to form 3-CNF clauses.
+Here are the problem statements for satisfiability:
 %\textit{3-SAT problem}.
 \begin{prob}[Satisfiability Problem (SAT)]\label{prob:Satisfiability-1}%Problem/Question
 Given a boolean formula, is it satisfiable? \cite{skiena2009algorithm}
 \end{prob} 
+\textit{Brute force} is when an algorithm tries all possibilities to see if any formulates a satisfiable solution.
+It is clear that SAT is decidable in exponential time by testing all possibilities.
+This is callled a brute force solution.
+It is not known whether SAT admits a polynomial time solution, that is whether it is in $\P$. 
 \begin{prob}[3-SAT Problem]
 Given a boolean formula in 3-CNF, is it satisfiable?
 \end{prob}
 The problems we focus on in this thesis have a geometry.  
 A special geometric 3-SAT problem is that Planar 3-SAT Problem.   
 Given a 3-CNF boolean formula, $B$, we define the associated graph as follows: the vertices correspond to the variables and clauses in $B$, when a variable or its negation appears in a clause there is an edge between the corresponding vertices.
-\begin{prob}[Not All Equal 3 SAT Problem (NAE3SAT)]\label{prob:Satisfiability-2}%Problem/Question
-Given a boolean formula in 3-CNF, is it satisfiable so that each clause contains a 
-true and a false literal?
-\end{prob}
-%draw a picture for this one.
 \begin{prob}[Planar 3-SAT]
  Given a boolean formula $B$ in 3-CNF such that its associated graph is planar, decide whether it 
 is satisfiable is a \textit{3-SAT problem}.
 \end{prob}
+\begin{prob}[Not All Equal 3 SAT Problem (NAE3SAT)]\label{prob:Satisfiability-2}%Problem/Question
+Given a boolean formula in 3-CNF, is it satisfiable so that each clause contains a 
+true and a false literal?
+\end{prob}
+
+Problems \ref{prob:Satisfiability-1}---\ref{prob:Satisfiability-2} are known to be NP-hard and are often used to show other problems are NP-hard as well. 
+%draw a picture for this one.
+
 
 % 
 % Given a boolean 3-SAT formula $B$, define the associated graph of $B$ as follows:  
