@@ -50,17 +50,33 @@ For $S_i$ there exists $i$ vertices on each path.  We shall denote the $i^\text{
 
 The triangular lattice is symmetice under rotation about $v_0$ by $\frac{\pi}{3}$ radians.  For each vertex $v_{1,l}$ for $l=1,2,..., i-k$, we place two paths from it; the first path $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these paths $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  With respect to $v_{1,l}$, one unit along $p_{1,l}^+$ is a point on the triangular lattice and similarly so on $p_{1,l}^-$.  Continuing the walk along these paths, unit distance-by-unit distance, we obtain the next point corresponding point on the the triangular lattice up to $i-k$ distance away from $v_{1,l}$.  This shows that each of the $i-k$ vertices on $p_{1,l}^-$ and $p_{1,l}^+$ are in $V$.  By rotating all of the paths along $p_1$ by $\frac{2\pi}{3}$ and $\frac{4\pi}{3}$, we obtain the the paths along $p_3$ and $p_5$ respectively, completing the construction.
 
-
-\subsection{On the Decidability of Problem (\ref{problem:UnorderedTree})}
-Recall that problem (\ref{problem:UnorderedTree}) states: given a positive weighted tree, $T$, is $T$ the contact graph of some disk arrangement where the radii are equal to the vertex weights?  
-
-\begin{proof}
-Suppose we are given a positive weighted tree, $T = \lr{V_1,E_1}$.  By the Disk Packing Theorem, there is a disk arrangement in the plane, $D$, whose contact graph, $G=\lr{V_2,E_2}$ is isomorphic to $T$.  We need to so that $G=T$ and the radii of the disks in $D$ are equal to the vertex weights of $T$.
-
-To show that $G=T$, we need to show that $V_1=V_2$ and $E_1=E_2$.  
-
-To show that the radii of the disks in $D$ are equal to the vertex weights of $T$, we first consider ....  
+ \subsection{On the Decidability of Problem \ref{problem:UnorderedContactGraph}}
+\begin{proof} 
+Consider a $k \times (\sqrt{3}k)$ rectangle section of a triangular lattice, and place disks of radius 1 at each grid point as in Fig. ?????. 
+The contact graph of these disks contains 2-cycles. 
+Consider the spanning tree $T$ of the contact graph indicated in Fig. ????. 
+The tree $T$ decomposes into paths of collinear edges: $T$ contains two paths along the two main diagonals, each containing $2k - 1$ vertices; all other paths have an endpoint on a main diagonal. 
+ We now modify the disk arrangement to ensure that its contact graph is $T$. 
+ The disks along the main diagonal do not change. 
+ We reduce the radii of all other disks by a factor of $1 - k^{-3}$ (as a result, they lose contact with other disks), and then successively translate them parallel in the direction of the shortest path in $T$ to the main diagonal until the contact with the adjacent disk is reestablished. 
+ The Hausdorff distance between the union of these disks and the initial $k \times (\sqrt{3}k)$ rectangle is clearly less than 1.
+ However, the contact tree $T$ with these radii no longer has a unique realization (small perturbations are possible). 
+ To show stability, we argue by induction on the hop distance from the central disk. 
+ There are $O(i)$ disks at i hops from the central disk, most one which have radius $(1-k^{-3}) \frac{1}{2}$.
+ Since all radii are 1 or $(1-k^{-3}) \frac{1}{2}$,the six neighbors of the central disk can differ from the regular hexagon by at most $O(k )$. 
+ Similarly, the disks at $i$ hops from the center be off from the triangular grid pattern by $O(i2^{k-3})$, for $i = 1,2,\dots,k$.
 \end{proof}
+
+
+% Recall that problem (\ref{problem:UnorderedTree}) states: given a positive weighted tree, $T$, is $T$ the contact graph of some disk arrangement where the radii are equal to the vertex weights?  
+
+% \begin{proof}
+% Suppose we are given a positive weighted tree, $T = \lr{V_1,E_1}$.  By the Disk Packing Theorem, there is a disk arrangement in the plane, $D$, whose contact graph, $G=\lr{V_2,E_2}$ is isomorphic to $T$.  We need to so that $G=T$ and the radii of the disks in $D$ are equal to the vertex weights of $T$.
+
+% To show that $G=T$, we need to show that $V_1=V_2$ and $E_1=E_2$.  
+
+% To show that the radii of the disks in $D$ are equal to the vertex weights of $T$, we first consider ....  
+% \end{proof}
 
 % Related Previous Work. Polygonal linkages (or body-and-joint frameworks) are a gen-
 % eralization of classical linkages (bar-and-joint frameworks) in rigidity theory. A linkage

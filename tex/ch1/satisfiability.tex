@@ -23,17 +23,31 @@ Given a boolean formula in 3-CNF, is it satisfiable?
 \end{prob}
 The problems we focus on in this thesis have a geometry.  
 A special geometric 3-SAT problem is that Planar 3-SAT Problem.   
-Given a 3-CNF boolean formula, $B$, we define the associated graph as follows: the vertices correspond to the variables and clauses in $B$, when a variable or its negation appears in a clause there is an edge between the corresponding vertices.
+Given a 3-CNF boolean formula, $\Phi$, with $n$ variables and $m$ clauses.
+  We define the \textit{associated graph} $A(\Phi)$ as follows: the vertices correspond to the variables and clauses in $\Phi$.  
+  We place an edge in the graph if variable $x_i$ appears in clause $C_j$.
+
+  \begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\columnwidth]{graphics/fig-assoc-hex}
+	\caption{Left: the associated graph $A(\Phi)$ for a Boolean formula $\Phi$.
+Right: the schematic layout of the variable, clause, and transmitter gadgets in the auxiliary construction showing in Section \ref{sec:auxiliaryConstruction}}
+	\label{fig:assoc}
+\end{figure} 
 \begin{prob}[Planar 3-SAT]
- Given a boolean formula $B$ in 3-CNF such that its associated graph is planar, decide whether it 
+ Given a boolean formula $\Phi$ in 3-CNF such that its associated graph is planar, decide whether it 
 is satisfiable is a \textit{3-SAT problem}.
 \end{prob}
+Figure \ref{fig:assoc} is associated to a family of boolean formulas.  
+One such associated boolean formula is:
+$$(x_1 \lor x_3 \lor \lnot x_5) \land (\lnot x_1 \lor \lnot x_2 \lor x_3) \land (\lnot x_3 \lor x_4 \lor \lnot x_5) \land (x_2 \lor x_4 \lor \lnot x_5) \land ( \lnot x_1 \lor x_2 \lor x_5)$$
+Note that the figure establishes an edge relation between variables and clauses whereas the clauses in boolean formulas do not have variables but literals of variables.
 \begin{prob}[Not All Equal 3 SAT Problem (NAE3SAT)]\label{prob:Satisfiability-2}%Problem/Question
 Given a boolean formula in 3-CNF, is it satisfiable so that each clause contains a 
 true and a false literal?
 \end{prob}
 
-Problems \ref{prob:Satisfiability-1}---\ref{prob:Satisfiability-2} are known to be NP-hard and are often used to show other problems are NP-hard as well. 
+Problems \ref{prob:Satisfiability-1}---\ref{prob:Satisfiability-2} are known to be NP-hard and are often used to show other problems are NP-hard as well \cite{lichtenstein1982planar,karp1972reducibility}.
 %draw a picture for this one.
 
 

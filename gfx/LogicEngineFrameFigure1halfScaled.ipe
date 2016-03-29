@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20141011171119" modified="D:20141113175333"/>
+<ipe version="70107" creator="Ipe 7.1.8">
+<info created="D:20141011171119" modified="D:20160329052145"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -236,205 +236,205 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="0.534374 0 0 0.534374 1777.52 1391.15" stroke="black" fill="black" pen="ultrafat">
+<path layer="alpha" matrix="0.392915 0 0 0.392915 2243.77 1830.24" stroke="black" fill="black" pen="ultrafat">
 2912 3552 m
 2912 3104 l
 3296 3104 l
 3296 3552 l
 h
 </path>
-<path matrix="0.534374 0 0 0.534374 1777.52 1391.15" stroke="black" fill="white" pen="ultrafat">
+<path matrix="0.392915 0 0 0.392915 2243.77 1830.24" stroke="black" fill="white" pen="ultrafat">
 2928 3536 m
 2928 3120 l
 3280 3120 l
 3280 3536 l
 h
 </path>
-<path matrix="0.534374 0 0 0.534374 1777.52 1391.15" stroke="red" fill="red" pen="ultrafat">
+<path matrix="0.392915 0 0 0.392915 2243.77 1830.24" stroke="red" fill="red" pen="ultrafat">
 2928 3328 m
 3280 3328 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1946.94 1582.96" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
+<path matrix="0.350542 0 0 0.350542 2368.34 1971.27" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
 2944 3536 m
 2944 3120 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1950.66 1582.96" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
+<path matrix="0.350542 0 0 0.350542 2371.07 1971.27" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
 3008 3536 m
 3008 3120 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1954.28 1581.86" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
+<path matrix="0.350542 0 0 0.350542 2373.74 1970.46" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
 3072 3536 m
 3072 3120 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1956.9 1582.96" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
+<path matrix="0.350542 0 0 0.350542 2375.66 1971.27" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
 3136 3536 m
 3136 3120 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1960.58 1581.1" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
+<path matrix="0.350542 0 0 0.350542 2378.37 1969.9" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
 3200 3536 m
 3200 3120 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1966.77 1582.34" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
+<path matrix="0.350542 0 0 0.350542 2382.92 1970.82" stroke="blue" fill="blue" dash="dashed" pen="ultrafat">
 3264 3536 m
 3264 3120 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1946.94 1582.96" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2368.34 1971.27" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1946.94 1521.93" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2368.34 1926.4" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1946.94 1460.91" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2368.34 1881.53" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1946.94 1430.4" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2368.34 1859.1" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1981.17 1582.96" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2393.51 1971.27" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1981.17 1552.45" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2393.51 1948.84" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1981.17 1521.93" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2393.51 1926.4" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1981.17 1491.42" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2393.51 1903.96" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2015.31 1581.86" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2418.61 1970.46" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2015.31 1551.35" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2418.61 1948.03" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2015.31 1490.33" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2418.61 1903.16" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2048.44 1552.45" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2442.97 1948.84" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2048.44 1491.42" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2442.97 1903.96" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2048.44 1430.4" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2442.97 1859.1" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2082.62 1550.59" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2468.1 1947.47" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2082.62 1489.56" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2468.1 1902.6" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1936.26 1521.31" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2360.49 1925.94" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 2015.31 1520.84" stroke="black" fill="brown">
+<path matrix="0.350542 0 0 0.350542 2418.61 1925.6" stroke="black" fill="brown">
 2944 3520 m
 3008 3488 l
 2944 3456 l
 2944 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1899.55 1581.1" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2333.49 1969.9" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1936.26 1582.34" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2360.49 1970.82" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1936.26 1429.78" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2360.49 1858.64" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1899.55 1520.08" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2333.49 1925.04" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1832.24 1459.81" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2284 1880.72" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1865.37 1460.91" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2308.36 1881.53" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1899.55 1459.05" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2333.49 1880.16" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1936.26 1460.29" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2360.49 1881.07" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l
 3328 3520 l
 </path>
-<path matrix="0.476745 0 0 0.476745 1832.24 1429.3" stroke="black" fill="black">
+<path matrix="0.350542 0 0 0.350542 2284 1858.29" stroke="black" fill="black">
 3328 3520 m
 3264 3488 l
 3328 3456 l

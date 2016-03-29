@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**HingedPolygons36.tex
-(./HingedPolygons36.tex
+**HingedPolygons32.tex
+(./HingedPolygons32.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -146,24 +146,12 @@ Package: wrapfig 2003/01/31  v 3.6
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/refcount.sty
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
-\thm@preskip=\skip55
-\thm@postskip=\skip56
-\thm@headsep=\skip57
-\dth@everypar=\toks27
-)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks28
+\MT@toks=\toks22
 \MT@count=\count101
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen116
@@ -175,7 +163,7 @@ File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip58
+\MT@outer@space=\skip55
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -184,12 +172,12 @@ File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip59
-\subfigcapskip=\skip60
+\subfigtopskip=\skip56
+\subfigcapskip=\skip57
 \subfigcaptopadj=\dimen117
-\subfigbottomskip=\skip61
+\subfigbottomskip=\skip58
 \subfigcapmargin=\dimen118
-\subfiglabelskip=\skip62
+\subfiglabelskip=\skip59
 \c@subfigure=\count103
 \c@lofdepth=\count104
 \c@subtable=\count105
@@ -199,8 +187,8 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip63
-\subfig@bottom=\skip64
+\subfig@top=\skip60
+\subfig@bottom=\skip61
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -217,7 +205,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
-\@enLab=\toks29
+\@enLab=\toks23
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
@@ -240,7 +228,7 @@ Package caption Info: wrapfig package is loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count108
-\output=\toks30
+\output=\toks24
 \linenoprevgraf=\count109
 \linenumbersep=\dimen126
 \linenumberwidth=\dimen127
@@ -388,50 +376,51 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip65
+\Hy@SectionHShift=\skip62
 )
-\c@proposition=\count125
-\c@theorem=\count126
-\c@lemma=\count127
-\c@observation=\count128
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
-Package hyperref Info: Option `breaklinks' set `true' on input line 24.
+\c@observation=\count125
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+Package hyperref Info: Option `breaklinks' set `true' on input line 21.
 
-(../pdf/HingedPolygons36.aux)
-\openout1 = `HingedPolygons36.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 75.
+LaTeX Warning: Unused global option(s):
+    [runningheads].
+
+(../pdf/HingedPolygons32.aux)
+\openout1 = `HingedPolygons32.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 86.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
+\scratchcounter=\count126
 \scratchdimen=\dimen135
 \scratchbox=\box30
-\nofMPsegments=\count130
-\nofMParguments=\count131
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count132
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count129
 \MPscratchDim=\dimen136
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
-\everyMPtoPDFconversion=\toks32
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -447,7 +436,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 75.
+LaTeX Info: Redefining \microtypecontext on input line 86.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -465,7 +454,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 75.
+Package hyperref Info: Link coloring ON on input line 86.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -473,22 +462,28 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count135
+\c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 86.
+LaTeX Info: Redefining \pageref on input line 86.
+LaTeX Info: Redefining \nameref on input line 86.
 
-(../pdf/HingedPolygons36.out) (../pdf/HingedPolygons36.out)
+(../pdf/HingedPolygons32.out) (../pdf/HingedPolygons32.out)
 \@outlinefile=\write3
-\openout3 = `HingedPolygons36.out'.
+\openout3 = `HingedPolygons32.out'.
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 104.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 77.
+LaTeX Font Info:    Try loading font information for U+msa on input line 104.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -496,7 +491,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 77.
+LaTeX Font Info:    Try loading font information for U+msb on input line 104.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -504,136 +499,150 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 77.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 104.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-
-LaTeX Warning: No \author given.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
-[1
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<fig1+.pdf, id=37, 514.07758pt x 144.56912pt>
+<fig1+.pdf, id=9, 514.07758pt x 144.56912pt>
 File: fig1+.pdf Graphic file (type pdf)
  <use fig1+.pdf>
-Package pdftex.def Info: fig1+.pdf used on input line 96.
+Package pdftex.def Info: fig1+.pdf used on input line 110.
 (pdftex.def)             Requested size: 338.09853pt x 95.0806pt.
- [2 <./fig1+.pdf>] [3] [4] <fig-chains.pdf, id=130, 557.19196pt x 118.57098pt>
-File: fig-chains.pdf Graphic file (type pdf)
+ [1
 
-<use fig-chains.pdf>
-Package pdftex.def Info: fig-chains.pdf used on input line 150.
-(pdftex.def)             Requested size: 327.74895pt x 69.74458pt.
- <fig-triangles.pdf, id=132, 491.99608pt x 102.56718pt>
-File: fig-triangles.pdf Graphic file (type pdf)
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-<use fig-triangles.pdf>
-Package pdftex.def Info: fig-triangles.pdf used on input line 162.
-(pdftex.def)             Requested size: 276.00105pt x 57.54051pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 181.
- [5 <./fig-chains.pdf> <./fig-triangles.pdf>]
-<fig-assoc-hex.pdf, id=160, 328.38896pt x 99.16548pt>
-File: fig-assoc-hex.pdf Graphic file (type pdf)
- <use fig-assoc-hex.pdf>
-Package pdftex.def Info: fig-assoc-hex.pdf used on input line 188.
-(pdftex.def)             Requested size: 241.49895pt x 72.92886pt.
+LaTeX Warning: Reference `sec:path' on page 2 undefined on input line 127.
 
-[6 <./fig-assoc-hex.pdf>]
-<fig-variable-hex+.pdf, id=184, 515.06215pt x 110.3061pt>
-File: fig-variable-hex+.pdf Graphic file (type pdf)
 
-<use fig-variable-hex+.pdf>
-Package pdftex.def Info: fig-variable-hex+.pdf used on input line 208.
-(pdftex.def)             Requested size: 310.4979pt x 66.49892pt.
- [7 <./fig-variable-hex+.pdf>]
-<fig-transmitter-hex.pdf, id=212, 385.34363pt x 100.8819pt>
-File: fig-transmitter-hex.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `sec:hinge' on page 2 undefined on input line 129.
 
-<use fig-transmitter-hex.pdf>
-Package pdftex.def Info: fig-transmitter-hex.pdf used on input line 232.
-(pdftex.def)             Requested size: 241.49895pt x 63.22496pt.
 
-<fig-clause-hex.pdf, id=215, 388.96014pt x 101.64073pt>
-File: fig-clause-hex.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `sec:disk' on page 2 undefined on input line 130.
 
-<use fig-clause-hex.pdf>
-Package pdftex.def Info: fig-clause-hex.pdf used on input line 247.
-(pdftex.def)             Requested size: 241.49895pt x 63.10654pt.
- [8 <./fig-transmitter-hex.pdf>] [9 <./fig-clause-hex.pdf>] <fig-ushape.pdf, id
-=256, 476.63461pt x 116.79434pt>
-File: fig-ushape.pdf Graphic file (type pdf)
- <use fig-ushape.pdf>
-Package pdftex.def Info: fig-ushape.pdf used on input line 318.
-(pdftex.def)             Requested size: 276.00105pt x 67.63205pt.
 
-<block3c.pdf, id=260, 493.845pt x 446.66875pt>
-File: block3c.pdf Graphic file (type pdf)
- <use block3c.pdf>
-Package pdftex.def Info: block3c.pdf used on input line 339.
-(pdftex.def)             Requested size: 120.7521pt x 109.21329pt.
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no ’ in font ptmr7t!
- [10 <./fig-ushape.pdf> <./block3c.pdf, page is rotated 270 degrees>]
-Overfull \hbox (9.44507pt too wide) in paragraph at lines 374--377
-\OT1/ptm/m/it/10 (-20) tional Work-shop on Draw-ing Al-go-rithms for Net-works 
-of Chang-ing En-ti-ties (DANCE 2014)\OT1/ptm/m/n/10 (-20) ,
- []
+LaTeX Warning: Citation `BC87' on page 2 undefined on input line 136.
 
-[11]
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
- [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 509.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 509.
- (../pdf/HingedPolygons36.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 509.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 509.
-Package rerunfilecheck Info: File `HingedPolygons36.out' has not changed.
-(rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 509.
- ) 
+
+LaTeX Warning: Citation `BET+99' on page 2 undefined on input line 136.
+
+
+LaTeX Warning: Citation `EW96' on page 2 undefined on input line 136.
+
+
+LaTeX Warning: Citation `FHW97' on page 2 undefined on input line 136.
+
+
+LaTeX Warning: Citation `HK01' on page 2 undefined on input line 136.
+
+[2 <./fig1+.pdf>]
+
+LaTeX Warning: Citation `CDR07' on page 3 undefined on input line 138.
+
+
+LaTeX Warning: Citation `EW90' on page 3 undefined on input line 138.
+
+
+LaTeX Warning: Citation `W33' on page 3 undefined on input line 138.
+
+
+LaTeX Warning: Citation `CDR07' on page 3 undefined on input line 138.
+
+
+LaTeX Warning: Citation `BV96' on page 3 undefined on input line 138.
+
+
+LaTeX Warning: Citation `CDR03' on page 3 undefined on input line 140.
+
+
+LaTeX Warning: Citation `Str05' on page 3 undefined on input line 140.
+
+
+LaTeX Warning: Citation `BCD+09' on page 3 undefined on input line 140.
+
+
+LaTeX Warning: Citation `AKR+04' on page 3 undefined on input line 140.
+
+
+LaTeX Warning: Citation `Rei79' on page 3 undefined on input line 141.
+
+
+LaTeX Warning: Citation `CdG+07' on page 3 undefined on input line 142.
+
+
+LaTeX Warning: Citation `CDD+10' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Reference `thm:hinge1' on page 3 undefined on input line 144.
+
+
+LaTeX Warning: Citation `HK01' on page 3 undefined on input line 146.
+
+
+LaTeX Warning: Citation `BK98' on page 3 undefined on input line 146.
+
+
+LaTeX Warning: Citation `BET+99' on page 3 undefined on input line 146.
+
+
+LaTeX Warning: Citation `KNR15' on page 3 undefined on input line 146.
+
+
+LaTeX Warning: Citation `HK01' on page 3 undefined on input line 146.
+
+
+LaTeX Warning: Citation `BK95' on page 3 undefined on input line 146.
+
+
+LaTeX Warning: Citation `Hli97' on page 3 undefined on input line 146.
+
+
+LaTeX Warning: Citation `HK01' on page 3 undefined on input line 146.
+
+
+LaTeX Warning: Citation `EW90' on page 3 undefined on input line 148.
+
+
+LaTeX Warning: Citation `Sch13' on page 3 undefined on input line 148.
+
+[3]
+
+LaTeX Warning: Citation `DEEH02' on page 4 undefined on input line 154.
+
+
+! LaTeX Error: Environment proposition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \begin{proposition}
+                         \label{pp:chain}
+? X
+ 
 Here is how much of TeX's memory you used:
- 10088 strings out of 493089
- 151529 string characters out of 6134841
- 271623 words of memory out of 5000000
- 13105 multiletter control sequences out of 15000+600000
- 38418 words of font info for 220 fonts, out of 8000000 for 9000
+ 9784 strings out of 493089
+ 147885 string characters out of 6134841
+ 267612 words of memory out of 5000000
+ 12965 multiletter control sequences out of 15000+600000
+ 27702 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,43p,1224b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{observation.1} has been referenced but does not e
-xist, replaced by a fixed one
-
+ 38i,6n,43p,1028b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on ../pdf/HingedPolygons36.pdf (13 pages, 236420 bytes).
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/HingedPolygons32.pdf (3 pages, 101337 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 26710 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 21006 words of extra memory for PDF output out of 24883 (max. 10000000)
 

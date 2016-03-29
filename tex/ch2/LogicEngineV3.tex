@@ -1,5 +1,7 @@
-\chapter{Decidability Problems for Hinged Polygons and Disks}
+\chapter{Decision Problems for Hinged Polygons and Disks\label{chapter:logicEngine}}
 \section{The Logic Engine}
+%explain what is the connection between the title of the chapter and the technical details of the chapter.  
+%expand a bit about the gadget and how it is a decision problem for Hinged Polygons and Disks.
 The \textit{logic engine} is a planar, mechanical device that simulates an instance NAE3SAT problem. It was introduced in Bhatt et. al. \cite{BC87}.
 \subsection{Construction of the Logic Engine}
 
@@ -54,7 +56,7 @@ quantity and coordinates defined as polynomials in $m$ and $n$.
 
 \begin{center}
 	\begin{table}\label{LogicEngineV3PolynomialTable}
-		\begin{tabular}{|c|c|c|}%
+		\begin{tabular}{|c|c|c|}
 			\hline
 			Component & Quantity &  Set Definition\\ \hline
 			Rigid Frame&1&$\set{(x,y)\in\bbr^2}{ \text{The boundary of }\left[ \frac{1}{2} , n + \frac{1}{2}\right] \times \left[ -m, m \right]}$\\ \hline
@@ -68,7 +70,6 @@ quantity and coordinates defined as polynomials in $m$ and $n$.
 
 \subsection{The mechanics of the logic engine}
 In any of the following cases, a \textit{collision} of flags occurs:
-%A \textit{collision} of flags occur if either of the following occurs:
 \begin{enumerate}
 \item flags in the same row on adjacent armatures point toward each other.
 \item a flag from the rightmost armature $A_n$ points towards the outer rigid frame.
@@ -77,9 +78,9 @@ In any of the following cases, a \textit{collision} of flags occurs:
 
 \begin{figure}[!htbp]
 \begin{center}
-\includegraphics{graphics/logicEngineCollisions.pdf}
+\includegraphics[scale=.5]{graphics/logicEngineCollisions.pdf}
 \caption{(a) Illustrates a adjacent flag collision at the same height, (b) and (c) illustrates a 
-rigid frame collision.}\label{fig:logicEngineCollisionsSmall.pdf}
+rigid frame collision.}\label{fig:logicEngineCollisions.pdf}
 \end{center}
 \end{figure}
 The logic engine representation corresponding to $\Phi$ is to be configured such that no 

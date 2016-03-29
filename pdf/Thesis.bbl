@@ -17,9 +17,14 @@ G.~Di Battista, P.~Eades, R.~Tamassia, and I.~G. Tollis.
 \newblock Prentice Hall, 1999.
 
 \bibitem{BC87}
-S.~N. Bhatt and S.~S. Cosmadakis.
-\newblock {The complexity of minimizing wire lengths in VLSI layouts}.
-\newblock {\em Inform. Process. Lett 25}, 4:263--267, 1987.
+Sandeep~N Bhatt and Stavros~S Cosmadakis.
+\newblock The complexity of minimizing wire lengths in vlsi layouts.
+\newblock {\em Information Processing Letters}, 25(4):263--267, 1987.
+
+\bibitem{BK+98}
+Therese Biedl and Goos Kant.
+\newblock A better heuristic for orthogonal graph drawings.
+\newblock {\em Computational Geometry}, 9(3):159--180, 1998.
 
 \bibitem{BK98}
 H.~Breu and D.~G. Kirkpatrick.
@@ -37,6 +42,12 @@ R.~Connelly, E.~D. Demaine, and G.~Rote.
 \newblock {Straightening polygonal arcs and convexifying polygonal cycles}.
 \newblock {\em Discrete Comput. Geom}, 30:205--239, 2003.
 
+\bibitem{cook1971complexity}
+Stephen~A Cook.
+\newblock The complexity of theorem-proving procedures.
+\newblock In {\em Proceedings of the third annual ACM symposium on Theory of
+  computing}, pages 151--158. ACM, 1971.
+
 \bibitem{EW90}
 P.~Eades and N.~C. Wormald.
 \newblock {Fixed edge-length graph drawing is NP-hard}.
@@ -47,6 +58,11 @@ Michael~R Garey and David~S Johnson.
 \newblock {\em Computers and Intractibility}.
 \newblock WH Freeman and company New York, 1979.
 
+\bibitem{karp1972reducibility}
+Richard~M Karp.
+\newblock {\em Reducibility among combinatorial problems}.
+\newblock Springer, 1972.
+
 \bibitem{koebe1936kontaktprobleme}
 Paul Koebe.
 \newblock {\em Kontaktprobleme der konformen Abbildung}.
@@ -56,6 +72,11 @@ Paul Koebe.
 Casimir Kuratowski.
 \newblock Sur le probleme des courbes gauches en topologie.
 \newblock {\em Fundamenta mathematicae}, 1(15):271--283, 1930.
+
+\bibitem{lichtenstein1982planar}
+David Lichtenstein.
+\newblock Planar formulae and their uses.
+\newblock {\em SIAM journal on computing}, 11(2):329--343, 1982.
 
 \bibitem{skiena2009algorithm}
 S.S. Skiena.

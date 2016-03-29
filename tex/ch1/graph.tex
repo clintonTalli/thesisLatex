@@ -1,15 +1,20 @@
 \section{Graphs}
 A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices $V$ and a set of edges $E$.  
-An edge is a two element subset of $V$.% and is denoted as ``V choose two'', ${V \choose 2}$.
+An edge is a two element subset of $V$.
+Note that with this definition of an edge it is not possible to have one element subset of $V$ as an edge (sometimes referred to as a self-adjacent edge or loop).
+The \textit{degree} of a vertex $v$ is the number of edges that $v$ is an element of.
+% and is denoted as ``V choose two'', ${V \choose 2}$.
 % Each edge $e \in E$ is an unordered pair of vertices $\curlybraces{u,v} \in E$.  
 Vertices are said to be \textit{adjacent} if they form an edge in $E$.  
 \textit{Neighbors} of a vertex $v$ are the vertices adjecent to $v$.
 %Vertices that are adjacent to themselves are \textit{self-adjacent}, i.e. $u = v$ for $\curlybraces{u,v} \in E$.  
 Edges are said to be adjacent if they share a vertex.  
+
 %When an edge is a member of $E$ multiple times,  then we say that the graph is a \textit{multigraph}.   
-Note that with this definition of an edge it is not possible to have one element subset of $V$ as an edge (sometimes referred to as a self-adjacent edge or loop).
 A \textit{simple graph} has no self-adjacent vertices.
 In this thesis every graph is a simple graph.
+Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two vertices in $S$ are joined by an edge. 
+A \textit{vertex cover} of a graph $G = (V,E)$  is a set of vertices $S \subset V$ if every edge $e \in E$, has at least one end corresponding in $S$.
 If $G' = (V',E')$ is a graph such that $V' \subset V$ and $E' \subset E$, then $G'$ is a \textit{subgraph} of $G$.
 
 To formally show when two graphs are the same, we use the concept of graph isomorphism.
@@ -35,9 +40,7 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 \begin{center}
 \includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
 \end{center} 
-\caption{This figure depicts the graph isomorphism shown in Table 
-(\ref{table:ch1-graph-1}) between 
-$V_1$ and $V_2$.}
+\caption{This figure depicts the graph isomorphism shown in Table \ref{table:ch1-graph-1} between $V_1$ and $V_2$.}
 \label{fig:configuration-3}
 \end{figure}
 
@@ -166,36 +169,44 @@ Referencing table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combina
 \subsection{Trees}
 %Some graphs can be classified by which properties they have.
 A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by an edge.   
-\begin{figure}[!htbp]
+%\begin{figure}[!htbp]
+\noindent%
+\begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics{graphics/PetersonGraphWithPath.pdf}
-\caption{An embedding of the Peterson graph with a simple cycle of 
+\captionof{figure}{An embedding of the Peterson graph with a simple cycle of 
 (2,7,9,6,1,0,5,8,3).}\label{fig:PetersonGraphWithPath}
 \end{center}
-\end{figure}
-
+%\end{figure}
+\end{minipage}
 A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$ (see Figure \ref{fig:PetersonGraphWithPath}).  
 A graph is \textit{connected} if for any two vertices, there exists a path between the two points.
 A \textit{tree} is a graph that has no simple cycles and is connected (see Figure \ref{fig:ch1-graph-2}).
 Every tree is planar.
-\begin{figure}[!hbpt]
+A \textit{forest} is a disjoint union of trees.  
+%\begin{figure}[!hbpt]
+\noindent%
+\begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics{graphics/RandomTree.pdf}
-\caption{An example of a tree.}\label{fig:ch1-graph-2}
+\captionof{figure}{An example of a tree.}\label{fig:ch1-graph-2}
 \end{center}
-\end{figure}
-
+%\end{figure}
+\end{minipage}
 %Any two embeddings of trees are equivalent if they can be described as any combination of rotations, translations, and or reflections.
 
 % \subsection{Ordered Trees}
 An \textit{ordered tree} is a tree $T$ together with a cyclic order of the neighbors for each vertex (see Figure \ref{fig:ch1-graph-6}).
-\begin{figure}[!hbpt]
+%\begin{figure}[!hbpt]
+\noindent%
+\begin{minipage}{\linewidth}
 \begin{center}
     \includegraphics{graphics/OrderedTreesExample.pdf}
-    \caption{A tree with two embeddings with different cyclic orderings around 
+    \captionof{figure}{A tree with two embeddings with different cyclic orderings around 
 vertices.}\label{fig:ch1-graph-6}
 \end{center}
-\end{figure}
+%\end{figure}
+\end{minipage}
 
 Embeddings of ordered trees are combinatorially equivalent if for each node the counter-clockwise ordering of adjacent nodes are the same. 
 %and can be described as a combination of translations and rotations of the other.

@@ -3,10 +3,10 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Background}{1}
 \contentsline {section}{\numberline {1.1}Graphs}{1}
-\contentsline {subsection}{\numberline {1.1.1}Trees}{2}
+\contentsline {subsection}{\numberline {1.1.1}Trees}{3}
 \contentsline {section}{\numberline {1.2}Linkages}{4}
 \contentsline {section}{\numberline {1.3}Polygonal Linkages}{4}
-\contentsline {subsection}{\numberline {1.3.1}Geometric Dissections}{6}
+\contentsline {subsection}{\numberline {1.3.1}Geometric Dissections}{7}
 \contentsline {section}{\numberline {1.4}Disk Arrangements}{8}
 \contentsline {section}{\numberline {1.5}Configuration Spaces}{11}
 \contentsline {subsection}{\numberline {1.5.1}Configuration Spaces of Graph Drawings}{12}
@@ -17,18 +17,22 @@
 \contentsline {subsection}{\numberline {1.6.1}Complexity Classes}{14}
 \contentsline {subsection}{\numberline {1.6.2}Independent Sets and Vertex Covers}{14}
 \contentsline {section}{\numberline {1.7}Satisfiability}{15}
-\contentsline {section}{\numberline {1.8}Problem}{15}
-\contentsline {chapter}{\numberline {2}Decidability Problems for Hinged Polygons and Disks}{17}
+\contentsline {section}{\numberline {1.8}Contribution}{16}
+\contentsline {chapter}{\numberline {2}Decision Problems for Hinged Polygons and Disks}{17}
 \contentsline {section}{\numberline {2.1}The Logic Engine}{17}
 \contentsline {subsection}{\numberline {2.1.1}Construction of the Logic Engine}{17}
-\contentsline {subsection}{\numberline {2.1.2}The mechanics of the logic engine}{19}
+\contentsline {subsection}{\numberline {2.1.2}The mechanics of the logic engine}{18}
 \contentsline {subsubsection}{\numberline {2.1.2.1}The Relationship of the Logic Engine and NAE3SAT}{20}
-\contentsline {section}{\numberline {2.2}Logic Engines Represented as Polygonal Linkages}{23}
-\contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{23}
-\contentsline {subsection}{\numberline {2.2.2}Properties for Weighted Trees and Polygonal Linkages}{25}
-\contentsline {paragraph}{Hausdorff Distance}{25}
-\contentsline {paragraph}{$\epsilon $-approximation}{25}
-\contentsline {section}{\numberline {2.3}Realizability Problems for Weighted Trees}{26}
-\contentsline {subsection}{\numberline {2.3.1}On the Decidability of Problem (\ref {problem:UnorderedTree})}{28}
-\contentsline {section}{\numberline {2.4}chapter 3}{28}
+\contentsline {section}{\numberline {2.2}Logic Engines Represented as Polygonal Linkages}{22}
+\contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{22}
+\contentsline {subsection}{\numberline {2.2.2}Properties for Weighted Trees and Polygonal Linkages}{24}
+\contentsline {paragraph}{Hausdorff Distance}{24}
+\contentsline {paragraph}{$\epsilon $-approximation}{24}
+\contentsline {section}{\numberline {2.3}Realizability Problems for Weighted Trees}{24}
+\contentsline {subsection}{\numberline {2.3.1}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{26}
+\contentsline {chapter}{\numberline {3}Realizability of Polygonal Linkages with Fixed Orientation}{28}
+\contentsline {section}{\numberline {3.1}Auxiliary Construction}{28}
+\contentsline {subsection}{\numberline {3.1.1}Variable Gadget}{29}
+\contentsline {subsection}{\numberline {3.1.2}Transmitter Gadget}{29}
+\contentsline {subsection}{\numberline {3.1.3}Clause Gadget}{29}
 \contentsfinish 

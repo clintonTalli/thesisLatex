@@ -1,3 +1,5 @@
 #usr/bin/bash
 pdflatex --output-directory ../pdf HingedPolygons36.tex
 pdflatex --output-directory ../pdf HingedPolygons36.tex
+pdflatex --output-directory ../pdf HingedPolygons32.tex
+pdflatex --output-directory ../pdf HingedPolygons32.tex
