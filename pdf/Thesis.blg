@@ -3,49 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Thesis.aux
 The style file: plain.bst
 Database file #1: WorkCited.bib
-Repeated entry---line 87 of file WorkCited.bib
- : @article{BC87
- :              ,
-I'm skipping whatever remains of this entry
-You've used 18 entries,
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            618 strings with 6289 characters,
-and the built_in function-call counts, 5850 in all, are:
-= -- 585
-> -- 251
+            633 strings with 6691 characters,
+and the built_in function-call counts, 6813 in all, are:
+= -- 672
+> -- 310
 < -- 2
-+ -- 103
-- -- 82
-* -- 399
-:= -- 984
-add.period$ -- 55
-call.type$ -- 18
-change.case$ -- 90
++ -- 128
+- -- 102
+* -- 468
+:= -- 1151
+add.period$ -- 64
+call.type$ -- 21
+change.case$ -- 107
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 222
-empty$ -- 470
-format.name$ -- 82
-if$ -- 1210
+cite$ -- 21
+duplicate$ -- 257
+empty$ -- 541
+format.name$ -- 102
+if$ -- 1404
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 23
-newline$ -- 93
-num.names$ -- 36
-pop$ -- 96
+int.to.str$ -- 21
+missing$ -- 28
+newline$ -- 108
+num.names$ -- 42
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 93
 quote$ -- 0
-skip$ -- 146
+skip$ -- 165
 stack$ -- 0
-substring$ -- 411
-swap$ -- 35
+substring$ -- 453
+swap$ -- 38
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 62
+type$ -- 70
 warning$ -- 0
-while$ -- 63
-width$ -- 20
-write$ -- 196
-(There was 1 error message)
+while$ -- 71
+width$ -- 23
+write$ -- 227

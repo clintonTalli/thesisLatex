@@ -8,16 +8,34 @@ Let $\Phi$ be a Boolean formula in 3-CNF with variables $x_1,\ldots , x_n$ and c
 We modify $A(\Phi)$ to obtain a plane graph $\tilde{A}(\Phi)$ of maximum degree 3 as follows: replace each \emph{variable} vertex $v$ by a cycle whose length equals the degree of $v$, and distribute the edges incident to $v$ among the vertices of the cycle.
 
 Embed $\tilde{A}(\Phi)$ into the section of a hexagonal tiling (Fig.~\ref{fig:assoc}, right), contained in a regular hexagon of side length $N$, where $N$ is a polynomial of $n$ and $m$~\cite{BK+98}.
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.9\columnwidth]{graphics/fig-variable-hex+}
-	\caption{(a) A corridor when all unit hexagons are in state R.
+% \begin{figure}[htbp]
+% 	\centering
+% 	\includegraphics[width=0.9\columnwidth]{graphics/fig-variable-hex+}
+% 	\caption{(a) A corridor when all unit hexagons are in state R.
+% (b) A corridor where all unit hexagons are in state L.
+% (c) A junction where a small hexagon between two corridors
+%     ensures that at most one unit hexagon enters the junction from those corridors.}
+	
+% \end{figure}
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=0.9\columnwidth]{graphics/fig-variable-hex+}
+\captionof{figure}{(a) A corridor when all unit hexagons are in state R.
 (b) A corridor where all unit hexagons are in state L.
 (c) A junction where a small hexagon between two corridors
-    ensures that at most one unit hexagon enters the junction from those corridors.}
-	\label{fig:variable}
-\end{figure}
-Let $t=2N^3+1$ ($t$ will be the number of flexible hexagons in a corridor). Scale the grid such that the cells become regular hexagons of side length $(5t-1)/2+\sqrt{3}$, and then scale each cell independently from its center to a hexagon of side length $(5t-1)/2$. These large hexagons are considered fixed obstacles in our auxiliary construction. Between two adjacent obstacle hexagons, there is a $\frac{5t-1}{2}\times \sqrt{3}$ rectangle, which we call a \emph{corridor}. Three adjacent corridors meet at a regular triangle, which we call a \emph{junction}. We next describe variable, clause, and transmitter gadgets.
+    ensures that at most one unit hexagon enters the junction from those corridors.}\label{fig:variable}
+\end{center}
+%\end{figure}
+\end{minipage}
+Let $t=2N^3+1$ ($t$ will be the number of flexible hexagons in a corridor). Scale the grid such that the cells become regular hexagons of side length $(5t-1)/2+\sqrt{3}$, and then scale each cell independently from its center to a hexagon of side length $(5t-1)/2$ (see Figure \ref{fig:honeycomb}). These large hexagons are considered fixed obstacles in our auxiliary construction. Between two adjacent obstacle hexagons, there is a $\frac{5t-1}{2}\times \sqrt{3}$ rectangle, which we call a \emph{corridor}. Three adjacent corridors meet at a regular triangle, which we call a \emph{junction}. We next describe variable, clause, and transmitter gadgets.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=0.3\columnwidth]{graphics/honeycomb.pdf}
+\captionof{figure}{The small honeycomb-like structure within the large hexagons depicts cells.}\label{fig:honeycomb}
+\end{center}
+%\end{figure}
+\end{minipage}
 
 The basic building block of both variable and transmitter gadgets consists of $t$ regular hexagons of side length 1 (\emph{unit hexagons}, for short) attached to a wall of a corridor such that the hinges divide the wall into $t+1$ intervals of length $(1,2.5,\ldots ,2.5,1)$ as shown in Fig.~\ref{fig:variable}(a-b) for $t=3$. Since the height of the corridor is $\sqrt{3}$, each hexagon has exactly two possible realizations: it can lie either \emph{left} or \emph{right} of the hinge in a horizontal corridor. For simplicity, we use the same notation (R and L) in nonhorizontal corridors, too. Hence, the \emph{state} of each flexible hexagon in a realization is either L or R. The following observation describes the key mechanism of a corridor.
 

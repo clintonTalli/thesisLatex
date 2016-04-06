@@ -1,0 +1,45 @@
+\subsection{RSA Cryptosystem}
+Cryptography is the study of secure communication between parties in an untrusted or unsecure communication channel.
+Cryptography has three primary purposes for secure communications: provide confidentiality, authenticate entities, and verification of data.
+Modern cryptography is based on hard math problems such as integer factorization, discrete logarithmic problem, and pre-image problems. 
+In most forms of modern cryptography, \textit{keys}, are data parameters used to form function outputs for the use in a communication channel.
+There are three common types of keys in cryptography:
+\begin{enumerate}
+\item A \textit{secret key} is known by certain entities.  Typically a secret key is used by entities to encrypt and decrypt data that is communcated over an untrusted channel.  Secret keys are used in symmetric cryptography.
+\item In asymmetric cryptography, there is a private and public key. A \textit{public key} is a key that can be shared with any entity, i.e. trusted and untrusted entities can know it.
+\item Lastly, the \textit{private key} is a key that is kept to one entity. It is treated like a secret key and should only be known to that entity.
+\end{enumerate}
+A \textit{cryptosystem} is a suite of algorithms used to establish secure communication channel between parties. 
+The RSA cryptosystem is the first practical cryptosystem in modern cryptography that allows for encryption of data (confidentiality), authentication of entites, and verify message integrity using just one underlying hard math problem, integer factorization.
+
+RSA is named after its second inventors, Ron Rivest, Adi Shamir, and Leonard Adelmen.
+These three individuals devised and published the algorithm in 1977.
+The original inventor of RSA was Clifford Cocks in 1973 however, it was only known to the public since 1997 that Clifford Cocks was the original inventor because his was was classified by Government Communication Headquaters, an intelligence agency of the United Kingdom.
+
+The RSA cryptosystem is based around the following formula:
+$$\left(m^e\right)^d = \left(m^d\right)^e \equiv m \mod n$$
+where we have natural numbers $e$, $d$, $m$, and $n$, such that $m < n$ and $gcd(m,n)=1$.
+Suppose Bob wants to send Alic an encrypted natural number $m$ to Bob over an untrusted or insecure communication channel.  
+Alice sends her public key $(n,e)$ and keeps her private key $d$ secret.  
+Bob sends the following value, $c$, to Alice:
+$$c \equiv m^e \mod n$$
+$c$ is said to be a ciphertext.
+Alice can decrypt the ciphertext and recover $m$ by computing:
+$$ m \equiv c^d \mod n = \lr{m^e}^d \mod n$$
+Most implementations of RSA use the following derivation \cite{rivest1978method}:
+\begin{enumerate}
+\item Let $n=p\cdot q$ where $p$ and $q$ are randomly chosen prime numbers.
+\item Choose an integer $e$ such that $1 < e \leq \phi (n)$ and $gcd\lr{e,\phi\lr{n}}=1$ where $\phi$ is the Euler totient function.
+\item Let $d \equiv e^{-1} \mod \phi(n)$.
+\end{enumerate}
+
+The RSA cryptosystem is based on integer factorization and the RSA problem, given $n$ where $n=p\cdot q$ where $p$ and $q$ are prime numbers, find $p$ and $q$.
+For sufficiently large integers, factorization and the RSA problem becomes very difficult.  
+If there were an algorithm that solved integer factorization in polynomial time, then one can also solve the RSA problem as well.
+Currently, the most efficient factorization algorithm is the general number sieve algorithm \cite{lenstra1993number}.
+It's an exponential running time algorithm.
+If a polynomial running time algorithm for integer factorization existed, it would allow for compromise of security that is provided to communicating parties by the RSA cryptosystem.
+The algorithm would allow for an adversary to attack RSA \cite{menezes1996handbook}.
+
+
+

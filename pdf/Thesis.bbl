@@ -73,10 +73,26 @@ Casimir Kuratowski.
 \newblock Sur le probleme des courbes gauches en topologie.
 \newblock {\em Fundamenta mathematicae}, 1(15):271--283, 1930.
 
+\bibitem{lenstra1993number}
+Arjen~K Lenstra, Hendrik~W Lenstra~Jr, Mark~S Manasse, and John~M Pollard.
+\newblock {\em The number field sieve}.
+\newblock Springer, 1993.
+
 \bibitem{lichtenstein1982planar}
 David Lichtenstein.
 \newblock Planar formulae and their uses.
 \newblock {\em SIAM journal on computing}, 11(2):329--343, 1982.
+
+\bibitem{menezes1996handbook}
+Alfred~J Menezes, Paul~C Van~Oorschot, and Scott~A Vanstone.
+\newblock {\em Handbook of applied cryptography}.
+\newblock CRC press, 1996.
+
+\bibitem{rivest1978method}
+Ronald~L Rivest, Adi Shamir, and Len Adleman.
+\newblock A method for obtaining digital signatures and public-key
+  cryptosystems.
+\newblock {\em Communications of the ACM}, 21(2):120--126, 1978.
 
 \bibitem{skiena2009algorithm}
 S.S. Skiena.
