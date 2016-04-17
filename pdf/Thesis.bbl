@@ -58,6 +58,12 @@ Michael~R Garey and David~S Johnson.
 \newblock {\em Computers and Intractibility}.
 \newblock WH Freeman and company New York, 1979.
 
+\bibitem{jonsson2003public}
+J~Jonsson and B~Kaliski.
+\newblock Public-key cryptography standards (pkcs)\# 1: Rsa cryptography
+  specifications, version 2.1. internet request for comments 3447 (rfc 3447),
+  2003.
+
 \bibitem{karp1972reducibility}
 Richard~M Karp.
 \newblock {\em Reducibility among combinatorial problems}.

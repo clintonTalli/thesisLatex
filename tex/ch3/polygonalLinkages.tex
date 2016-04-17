@@ -1,10 +1,45 @@
 \chapter{Realizability of Polygonal Linkages with Fixed Orientation\label{chapter:polygonalLinkage}}
 
-We begin the chapter with describing several gadgets that translates the associated graph $A(\Phi)$ of a planar 3-SAT instance.  
+We begin the chapter with describing several gadgets that translates the associated graph $A(\Phi)$ of a planar 3SAT instance.  
 These gadgets will be used together to form a special hexagonal tiling that behaves in a similar nature to the logic engine of Chapter \ref{chapter:logicEngine} but simulate a Planar 3-SAT and its associated graph.
-The hexagonal tiling with then be used to prove the following theorem:
+Together the gadgets will form what is called the auxilary construction.
+The hexagonal tiling would then be used to prove the following theorem:
 \begin{thm}\label{thm:hinge2}
 It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.
 \end{thm}
 
+\paragraph{Modifying the Associated Graph of a P3SAT}
 
+Given a P3SAT of $n$ variables and $m$ clauses with associated graph $A(\Phi)$. 
+We construct a finite \textit{honeycomb} grid $H_{A \lr{\Phi}}$ of regular hexagons over the plane centered at origin.
+Each hexagon of $H_{A \lr{\Phi}}$ is of unit side length and has a polynomial number of hexagons, $s(n,m)$.
+It is known that the size of the honeycomb is finite and can be determined by polynomials $h(n,m) \times w(n,m)$ \cite{BK+98}.
+Let $D = \max degree\lr{ V }$ where $V$ is the set of vertices of $A(\Phi)$.
+We modify the associated graph drawing $A\lr{\Phi}$ by overlaying it onto a honeycomb in the following way:
+
+\begin{enumerate}
+%variables represent cycles of 2m 
+\item \textbf{Variable:} A vertex representing a variable shall encompass a horizontally consecutive set of hexagons in the honeycomb. 
+Every variable vertex $v$  must encompass at least $degree(v)$ consecutive hexagons but can encompass upto $D$number of consecutive hexagons where $V$ is the set of vertices in $A(\Phi)$.
+\item \textbf{Clause:} A vertex representing a clause shall be a vertex of a hexagon in the honeycomb.
+\item \textbf{Edge:} Edges of the associated graph $A(\Phi)$ are paths from the variable $x_i$ and clause $C_j$.  An edge $\left\lbrace x_i, C_j \right\rbrace$ of the associated graph is pariwise edge disjoint. 
+An edge of the drawing shall traverse the edges of hexagons in a vertically or horizontally zigzagging manner in the honeycomb from the literal to the corresponding clause. 
+The edges are drawn in a manner that best represents an orthogonal graph drawing over the honeycomb.  
+The length of the edges are bounded above by $6 \cdot \lr{\ell_1 \lr{x_i,C_j} + D}$. Edges traverse a hexagon in two edges vertically, three edges horizontally.
+  When the edge transisitions from a vertical to horizontal traversal, the edge traverses in over 4 edges about the hexagon.
+\end{enumerate}
+Figure \ref{fig:HoneyCombAssociatedGraphSmall} illustrates an associated graph of a P3SAT overlayed on a honeycomb.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[scale=.5]{graphics/HoneyCombAssociatedGraphSmall.pdf}
+\captionof{figure}{
+This is an instance of an associated graph for a P3SAT overlayed onto a honeycomb grid.  
+This honeycomb graph could correspond to Boolean formula $\lr{\lnot x_1 \lor \lnot x_2 \lor x_4} \land \lr{x_2 \lor \lnot x_3 \lor x_4} \land \lr{x_1 \lor \lnot x_3 \lor \lnot x_4}$.
+%This boolean formula for this P3SAT is $\lr{\lnot x_1 \lor \lnot x_2 \lor x_4} \land \lr{x_2 \lor \lnot x_3 \lor x_4} \land \lr{x_1 \lor \lnot x_3 \lor \lnot x_4}$.  The associated bipartite graph is overlaid onto a honeycomb. 
+}\label{fig:HoneyCombAssociatedGraphSmall}
+\end{center}
+\end{minipage}
+
+The honeycomb construction will act as preliminary concept that will be refined further in the Auxilary Contruction.
+We denote the associated graph overlayed on the honeycomb as $\tilde{A}\lr{\Phi}$.

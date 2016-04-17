@@ -1,33 +1,62 @@
-\section{Auxiliary Construction\label{sec:auxiliaryConstruction}}
-Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses, we construct a simply connected polygonal linkage $(\PP,H)$, of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable iff $(\PP,H)$ admits a realization with fixed orientation. 
+\section{Auxilary Construction\label{sec:auxiliaryConstruction}}
+Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$, of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
+
 We construct a polygonal linkage  in two main steps: first, we construct an auxiliary structure where some of the polygons have fixed position in the plane (called \emph{obstacles}), while other polygons are flexible, and each flexible polygon is hinged to an obstacle. 
 Second, we modify the auxiliary construction into a polygonal linkage by allowing the obstacles to move freely, and by adding new polygons and hinges as well as an exterior \emph{frame} that holds the obstacle polygons in place.
 All polygons in our constructions are regular hexagons or long and skinny rhombi because these are the polygons that we can ``simulate'' with disk arrangements in Section~\ref{sec:disk}.
 
-Let $\Phi$ be a Boolean formula in 3-CNF with variables $x_1,\ldots , x_n$ and clauses $C_1,\ldots ,C_m$, and let $A(\Phi)$ be the associated planar graph.
-We modify $A(\Phi)$ to obtain a plane graph $\tilde{A}(\Phi)$ of maximum degree 3 as follows: replace each \emph{variable} vertex $v$ by a cycle whose length equals the degree of $v$, and distribute the edges incident to $v$ among the vertices of the cycle.
+Let $\Phi$ be a Boolean formula of P3SAT with variables $x_1,\ldots , x_n$ and clauses $C_1,\ldots ,C_m$, where $A(\Phi)$ is the associated planar graph and $\tilde{A}\lr{\Phi}$ be corresponding honeycomb graph.
+We continue to modify $\tilde{A}\lr{\Phi}$ to form the auxilary construction.   
+For each hexagon in $\tilde{A}\lr{\Phi}$, we scale the hexagons in the following way: first we fix the center of the hexagon and then scale (shrink) the hexagon; the hexagons in the honeycomb no longer touch each other and form corridors and junctions between the hexagons. 
+Formally, let a \textit{corridor} be a channel between two adjacent hexagons and a \textit{junction} be a region where three corridors meet.
+We then finally re-scale this form of the honeycomb such that the side length of the hexagons are determined by polynomial of variable $n$ and $m$, $N(n,m)$, while preserving the corridors formed from the first scaling.\newline
 
-Embed $\tilde{A}(\Phi)$ into the section of a hexagonal tiling (Fig.~\ref{fig:assoc}, right), contained in a regular hexagon of side length $N$, where $N$ is a polynomial of $n$ and $m$~\cite{BK+98}.
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[scale=.66]{graphics/FlexibleHexagons.pdf}
+\captionof{figure}{
+(a) A region of the honeycomb shown with scaling. The corridors and junctions formed from the first scaling is preserved after scaling the honeycomb grid to where the side lengths of the hexagon are $N(n,m)$.
+(b) The same region in (a) containing flexible hexagons.
+}\label{fig:HoneycombFlixible.pdf}
+\end{center}
+%\end{figure}
+\end{minipage}
+
+Let the hexagons of Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstacle hexagons that are fixed at their centers.
+In Figure \ref{fig:HoneycombFlixible.pdf}(b), we have smaller hexagons within some corridors and junctions.
+These hexagons are flexible hexagons.
+For each edge in $\tilde{A}(\Phi)$, we will replace that edge with flexible hexagons.
+Flexible hexagons are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
+Let $t=2N^3+1$ be the number of flexible hexagons in a corridor (see Figure \ref{fig:variable}). 
+Scale the honeycomb such that the obstacle hexagons become regular hexagons of side length $(5t-1)/2+\sqrt{3}$, and then scale each obstacle hexagon independently from its center to a hexagon of side length $(5t-1)/2$ (see Figure \ref{fig:honeycomb}). 
+%Let $\Phi$ be a Boolean formula in 3-CNF with variables $x_1,\ldots , x_n$ and clauses $C_1,\ldots ,C_m$, and let $A(\Phi)$ be the associated planar graph.
+%We modify $A(\Phi)$ to obtain a plane graph $\tilde{A}(\Phi)$ of maximum degree 3 as follows: replace each \emph{variable} vertex $v$ by a cycle whose length equals the degree of $v$, and distribute the edges incident to $v$ among the vertices of the cycle.
+%Embed $\tilde{A}(\Phi)$ into the section of a hexagonal tiling (e.g. see Figure \ref{fig:HoneyCombAssociatedGraphSmall} and Figure \ref{fig:assoc}, right), contained in a regular hexagon of side length $N$, where $N$ is a polynomial of $n$ and $m$~\cite{BK+98}.
 % \begin{figure}[htbp]
 % 	\centering
 % 	\includegraphics[width=0.9\columnwidth]{graphics/fig-variable-hex+}
 % 	\caption{(a) A corridor when all unit hexagons are in state R.
 % (b) A corridor where all unit hexagons are in state L.
 % (c) A junction where a small hexagon between two corridors
-%     ensures that at most one unit hexagon enters the junction from those corridors.}
-	
+%     ensures that at most one unit hexagon enters the junction from those corridors.}	
 % \end{figure}
+
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=0.9\columnwidth]{graphics/fig-variable-hex+}
-\captionof{figure}{(a) A corridor when all unit hexagons are in state R.
+\captionof{figure}{
+(a) A corridor when all unit hexagons are in state R.
 (b) A corridor where all unit hexagons are in state L.
 (c) A junction where a small hexagon between two corridors
     ensures that at most one unit hexagon enters the junction from those corridors.}\label{fig:variable}
 \end{center}
 %\end{figure}
 \end{minipage}
-Let $t=2N^3+1$ ($t$ will be the number of flexible hexagons in a corridor). Scale the grid such that the cells become regular hexagons of side length $(5t-1)/2+\sqrt{3}$, and then scale each cell independently from its center to a hexagon of side length $(5t-1)/2$ (see Figure \ref{fig:honeycomb}). These large hexagons are considered fixed obstacles in our auxiliary construction. Between two adjacent obstacle hexagons, there is a $\frac{5t-1}{2}\times \sqrt{3}$ rectangle, which we call a \emph{corridor}. Three adjacent corridors meet at a regular triangle, which we call a \emph{junction}. We next describe variable, clause, and transmitter gadgets.
+
+%These large hexagons are considered fixed obstacles in our auxiliary construction. 
+Between two adjacent obstacle hexagons, there is a $\frac{5t-1}{2}\times \sqrt{3}$ rectanglar corridor.  %, which we call corridor. 
+Three adjacent corridors meet at a regular triangle, which we call a \emph{junction}. 
+We next describe variable, clause, and transmitter gadgets.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -37,19 +66,44 @@ Let $t=2N^3+1$ ($t$ will be the number of flexible hexagons in a corridor). Scal
 %\end{figure}
 \end{minipage}
 
-The basic building block of both variable and transmitter gadgets consists of $t$ regular hexagons of side length 1 (\emph{unit hexagons}, for short) attached to a wall of a corridor such that the hinges divide the wall into $t+1$ intervals of length $(1,2.5,\ldots ,2.5,1)$ as shown in Fig.~\ref{fig:variable}(a-b) for $t=3$. Since the height of the corridor is $\sqrt{3}$, each hexagon has exactly two possible realizations: it can lie either \emph{left} or \emph{right} of the hinge in a horizontal corridor. For simplicity, we use the same notation (R and L) in nonhorizontal corridors, too. Hence, the \emph{state} of each flexible hexagon in a realization is either L or R. The following observation describes the key mechanism of a corridor.
+The basic building block of both variable and transmitter gadgets consists of $t$ regular hexagons of side length 1 (\emph{unit hexagons}, for short) attached to a wall of a corridor such that the hinges divide the wall into $t+1$ intervals of length $(1,2.5,\ldots ,2.5,1)$ as shown in Fig.~\ref{fig:variable}(a-b) for $t=3$. 
+Since the height of the corridor is $\sqrt{3}$, each hexagon has exactly two possible realizations: it can lie either \emph{left} or \emph{right} of the hinge in a horizontal corridor. 
+For simplicity, we use the same notation (R and L) in nonhorizontal corridors, too. 
+Hence, the \emph{state} of each flexible hexagon in a realization is either L or R. The following observation describes the key mechanism of a corridor.
 
 \begin{observation}\label{obs:corridor}
 \begin{itemize}
-\item[]
 \item[(1)] If the leftmost hexagon is in state R, then all $t$ hexagons are in state R, and the rightmost hexagon enters the junction on the right of the corridor.
 \item[(2)] Similarly, if the rightmost hexagon is in state L, then all $t$ hexagons are in state L, and the leftmost hexagon enters the junction on the left of the corridor.
 \end{itemize}
 \end{observation}
-
-Each junction is a regular triangle, adjacent to three corridors. In some of the junctions, we attach a small hexagon of side length $\frac{1}{3}$ to one or two corners of the junction (see Fig.~\ref{fig:variable}(c) and Fig.~\ref{fig:transmitter}). Importantly, if such a small hexagon is attached to a vertex between two corridors, then a unit hexagon can enter the junction from at most one of those corridors.
+% \begin{lem}
+% If the leftmost hexagon is in state R, then all $t$ hexagons are in state R, and the rightmost hexagon enters the junction on the right of the corridor.
+% \end{lem}
+% \begin{proof}
+% Suppose the left most hexagon, $h_1$, in a corridor is in state R and there are $t$ hexagons in the corridor. 
+% $h_i$ for $i=2,\dots, t$ is in either state $R$ or $L$.
+% $h_2$ must be in the state $R$ otherwise we result in a collision with 
+% \end{proof}
+Each junction is a regular triangle, adjacent to three corridors. 
+In some of the junctions, we attach a small hexagon of side length $\frac{1}{3}$ to one or two corners of the junction (see Fig.~\ref{fig:variable}(c) and Fig.~\ref{fig:transmitter}). 
+Importantly, if such a small hexagon is attached to a vertex between two corridors, then a unit hexagon can enter the junction from at most one of those corridors.
 \subsection{Variable Gadget}
-The {\bf variable gadget} for variable $x_i$ is constructed as follows. Recall that variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$, which has been embedded as a cycle in the hexagonal tiling, with corridors and junctions. In each junction along this cycle, attach a small hexagon in the common boundary of the two corridors in the cycle. Observation~\ref{obs:corridor} and the small hexagons ensure that the state of any unit hexagon along the cycle determines the state of all other unit hexagons in the cycle. This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexagons in the top horizontal corridors are in state R; and if $x_i=F$, they are all in state L.
+The {\bf variable gadget} for variable $x_i$ is constructed as follows. 
+Recall that variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$, which has been embedded as a cycle in the hexagonal tiling, with corridors and junctions. 
+In each junction along this cycle, attach a small hexagon in the common boundary of the two corridors in the cycle. 
+Figure \ref{fig:VariableGadgetSmall.pdf} depicts a \textit{variable gadget} in the hexagonal grid.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=0.45\columnwidth]{graphics/VariableGadgetSmall.pdf}
+\captionof{figure}{This depicts a variable gadget with $x_1 = T$.  Carefully note that the flexible hexagons around $x_1$ are in the state $R$. Corridors adjacent to two obstacles of a variable in the honeycomb do not have $t$ flexible hexagons; these corridors simply have the flexible hexagons at the junctions.}\label{fig:VariableGadgetSmall.pdf}
+\end{center}
+%\end{figure}
+\end{minipage}
+
+Observation~\ref{obs:corridor} and the small hexagons ensure that the state of any unit hexagon along the cycle determines the state of all other unit hexagons in the cycle. 
+This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexagons in the top horizontal corridors are in state R; and if $x_i=F$, they are all in state L.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.7\columnwidth]{graphics/fig-transmitter-hex}
@@ -61,31 +115,46 @@ The {\bf variable gadget} for variable $x_i$ is constructed as follows. Recall t
 \end{figure}
 \subsection{Transmitter Gadget}
 A {\bf transmitter gadget} is constructed for each edge $(x_i,C_j)$ of the graph $A(\Phi)$.
-It connects a junction of the variable gadget $x_i$ with the junction representing the clause gadget $C_j$. The gadget consists of a path of corridors and junctions: at each interior junction, attach a small hexagon in the common boundary of the two corridors in the path (similarly to the variable gadget). At the common junction with the variable gadget $x_i$, we attach one additional small hexagon to one of the vertices (refer to Fig.~\ref{fig:transmitter}). If the literal $x_i$ (resp., $\overline{x}_i$) appears in $C_j$, then we attach a small hexagon to the corner of this junction such that if $x_i=F$ (resp., $\overline{x}_i=F)$, then the unit hexagon of the transmitter gadget cannot enter this junction. This ensures that false literals are always correctly transmitted to the clause junctions (and true literals can always transmit correctly).
+It connects a junction of the variable gadget $x_i$ with the junction representing the clause gadget $C_j$. 
+The gadget consists of a path of corridors and junctions: at each interior junction, attach a small hexagon in the common boundary of the two corridors in the path (similarly to the variable gadget). 
+At the common junction with the variable gadget $x_i$, we attach one additional small hexagon to one of the vertices (refer to Fig.~\ref{fig:transmitter}). If the literal $x_i$ (resp., $\overline{x}_i$) appears in $C_j$, then we attach a small hexagon to the corner of this junction such that if $x_i=F$ (resp., $\overline{x}_i=F)$, then the unit hexagon of the transmitter gadget cannot enter this junction. 
+This ensures that false literals are always correctly transmitted to the clause junctions (and true literals can always transmit correctly).
 \subsection{Clause Gadget}
-The {\bf clause gadget} lies at a junction adjacent to three transmitter gadgets (see Fig.~\ref{fig:clause}). At such a junction, we attach a unit line segment to an arbitrary vertex of the junction, and a small hexagon of side length $\frac{1}{3}$ to the other end of the segment. If unit hexagons enter the junction from all three corridors (i.e., all three literals are false), then there is no space left for the small hexagon. But if at most two unit hexagons enter the junction (i.e., one of the literals is true), then the unit segment and the small hexagon are realizable.
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.7\columnwidth]{graphics/fig-clause-hex}
-	\caption{(a-b) A clause gadget $(x_i\vee x_j\vee x_k)$ is
+The {\bf clause gadget} lies at a junction adjacent to three transmitter gadgets (see Fig.~\ref{fig:clause}). 
+At such a junction, we attach a unit line segment to an arbitrary vertex of the junction, and a small hexagon of side length $\frac{1}{3}$ to the other end of the segment. 
+If unit hexagons enter the junction from all three corridors (i.e., all three literals are false), then there is no space left for the small hexagon. 
+But if at most two unit hexagons enter the junction (i.e., one of the literals is true), then the unit segment and the small hexagon are realizable.
+% \begin{figure}[htbp]
+% 	\centering
+% 	\includegraphics[width=0.7\columnwidth]{graphics/fig-clause-hex}
+% 	\caption{(a-b) A clause gadget $(x_i\vee x_j\vee x_k)$ is
+%     realizable when at least one of the literals is {\sc True}.
+%     (c) The clause gadget cannot be realized when all three literals are {\sc False}.}
+% 	\label{fig:clause}
+% \end{figure}
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=0.7\columnwidth]{graphics/fig-clause-hex}
+\captionof{figure}{(a-b) A clause gadget $(x_i\vee x_j\vee x_k)$ is
     realizable when at least one of the literals is {\sc True}.
-    (c) The clause gadget cannot be realized when all three literals are {\sc False}.}
-	\label{fig:clause}
-\end{figure}
+    (c) The clause gadget cannot be realized when all three literals are {\sc False}.}\label{fig:clause}
+\end{center}
+%\end{figure}
+\end{minipage}
 
 The following lemma summarizes our result about the auxiliary construction.
 \begin{lem}\label{lem:aux}
-For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons
-has the following properties: (1) it has polynomial size; (2) its hinge graph is a forest;
+For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons has the following properties: (1) it has polynomial size; (2) its hinge graph is a forest;
 (3) it admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is satisfiable.
 \end{lem}
 \begin{proof}
-Let $\Phi$ be an instance of P3SAT (i.e., a Boolean formula $\Phi$
-in 3-CNF with $n$ variables, $m$ clauses, and a planar graph $A(\Phi)$).
-We construct a simply connected polygonal linkage $(\PP,H)$ that has a
-realization with fixed orientation iff $\Phi$ is satisfiable.
+Let $\Phi$ be an instance of P3SAT (i.e., a Boolean formula $\Phi$ in 3-CNF with $n$ variables, $m$ clauses, and a planar graph $A(\Phi)$).
+We construct a simply connected polygonal linkage $(\PP,H)$ that has a realization with fixed orientation iff $\Phi$ is satisfiable.
 
-We modify the auxiliary construction allowing all polygons to move freely, and by adding extra polygons and hinges so that the hinge graph becomes a \emph{tree}, and the size of the construction remains polynomial. Recall that our auxiliary construction is based on a polynomial section of the hexagonal tiling, using obstacle hexagons of side lengths $(5t-1)/2$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. We modify it in 3 steps as follows.
+We modify the auxiliary construction allowing all polygons to move freely, and by adding extra polygons and hinges so that the hinge graph becomes a \emph{tree}, and the size of the construction remains polynomial. 
+Recall that our auxiliary construction is based on a polynomial section of the hexagonal tiling, using obstacle hexagons of side lengths $(5t-1)/2$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. 
+We modify it in 3 steps as follows.
 
 \begin{enumerate}
 \item Move the obstacle hexagons apart such that the width of each corridor increases from $\sqrt{3}$ to $\sqrt{3}+1/(100N)$.

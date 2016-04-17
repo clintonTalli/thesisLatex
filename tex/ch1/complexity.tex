@@ -1,4 +1,4 @@
-%I) Algorithm Complexity
+x%I) Algorithm Complexity
 %	a) Algorithm
 %		procedure of calculations
 %		has a running time
@@ -80,7 +80,7 @@ The class of problems which have an efficient certifier is said to be the \texti
 We continue with the definitions for $\NP$-hard and $\NP$-complete.
 A problem is $\NP$-hard if every problem in $\NP$ can be reduced to it in polynomial time.
 A \textit{polynomial time reduction} is when arbitrary instances of problem $Y$ be solved using a polynomial number of standard computational steps, plus a polynomial number of calls to a black box that solves problem $X$, i.e. $Y$ is reduced in polynomial time to $X$.
-A problem is $\NP$-complete if it $\NP$ and $\NP$-hard, i.e. $\NP$-complete = $\NP \ cap \NP$-hard.
+A problem is $\NP$-complete if it $\NP$ and $\NP$-hard, i.e. $\NP$-complete = $\NP \cap \NP$-hard.
 
 
  %and what an efficient certification is.  
@@ -90,51 +90,51 @@ A problem is $\NP$-complete if it $\NP$ and $\NP$-hard, i.e. $\NP$-complete = $\
 
 
 
-\subsection{Independent Sets and Vertex Covers}
-To illustrate what a reduction is, we cover an example of independent sets and vertex covers.  
-Recall the definitions of an independent set and vertex cover.
-Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two vertices in $S$ are joined by an edge. 
-A \textit{vertex cover} of a graph $G = (V,E)$  is a set of vertices $S \subset V$ if every edge $e \in E$, has at least one end corresponding in $S$.
+% \subsection{Independent Sets and Vertex Covers}
+% To illustrate what a reduction is, we cover an example of independent sets and vertex covers.  
+% Recall the definitions of an independent set and vertex cover.
+% Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two vertices in $S$ are joined by an edge. 
+% A \textit{vertex cover} of a graph $G = (V,E)$  is a set of vertices $S \subset V$ if every edge $e \in E$, has at least one end corresponding in $S$.
 
-\begin{thm}\label{thm:ch1-complexity-1}
-Let $G = (V,E)$ be a graph.  
-Then $S$ is an independent set if and only if its complement $V-S$ is a vertex cover.
-\end{thm}
-\begin{proof}
-If $S$ is an independent set. Then for any pair of vertices in $S$, the pair are not joined by an edge if and only if for any $v_1, v_2 \in S$, $e = \left( v_1, v_2 \right) \not \in E$.  
-We have two cases.  
-The first case is if $v \in S$, then any vertex $u \in V$ that forms an edge $e = (v,u) \in E$ must reside in $V-S$. 
-The second case is if there is an edge which no pair of vertices is in $S$, then both vertices are in $V-S$.  
-Both cases together imply that every edge has at least one end corresponding in $V-S$. 
+% \begin{thm}\label{thm:ch1-complexity-1}
+% Let $G = (V,E)$ be a graph.  
+% Then $S$ is an independent set if and only if its complement $V-S$ is a vertex cover.
+% \end{thm}
+% \begin{proof}
+% If $S$ is an independent set. Then for any pair of vertices in $S$, the pair are not joined by an edge if and only if for any $v_1, v_2 \in S$, $e = \left( v_1, v_2 \right) \not \in E$.  
+% We have two cases.  
+% The first case is if $v \in S$, then any vertex $u \in V$ that forms an edge $e = (v,u) \in E$ must reside in $V-S$. 
+% The second case is if there is an edge which no pair of vertices is in $S$, then both vertices are in $V-S$.  
+% Both cases together imply that every edge has at least one end corresponding in $V-S$. 
 
-If $V-S$ is a vertex cover.  
-Every edge $e \in E$ has at least one vertex in $V-S$.  
-The two possible cases, the first case is that the second vertex is in $V-S$, and the second case is that the second vertex is in $S$.  The first case would yield $S = \emptyset$.  
-The second case implies that the edge $e \in E$ has exactly one vertex in $V-S$ and exactly one vertex in $S$.  
-$V-S$ is a vertex cover would disallow $S$ to have a pair of vertices to form an edge in the graph.
-\end{proof}
-Theorem \ref{thm:ch1-complexity-1} allows for problem reductions for independent set and vertex cover problems.
+% If $V-S$ is a vertex cover.  
+% Every edge $e \in E$ has at least one vertex in $V-S$.  
+% The two possible cases, the first case is that the second vertex is in $V-S$, and the second case is that the second vertex is in $S$.  The first case would yield $S = \emptyset$.  
+% The second case implies that the edge $e \in E$ has exactly one vertex in $V-S$ and exactly one vertex in $S$.  
+% $V-S$ is a vertex cover would disallow $S$ to have a pair of vertices to form an edge in the graph.
+% \end{proof}
+% Theorem \ref{thm:ch1-complexity-1} allows for problem reductions for independent set and vertex cover problems.
 
-% \subsubsection{Reduction of the Independent Set and Vertex Cover Problem}
-There are two problems for the independent set: an optimization problem and a decision problem.
-\begin{prob}[Optimization of an Independent Set in $G$]\label{prob:maxindependentset}
-Given a graph $G$, what is the largest independent set in $G$?
-\end{prob}
-\begin{prob}[Decision of an Independent Set of Size $k$]\label{prob:kindependentset}
-Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
-\end{prob}
-% [NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH BELOW]
-% An algorithm that solves the optimization problem automatically solves the decision problem of the 
-% independent set.  An algorithm that solves the decision problem for all size $k$ solves the 
-% optimization problem where the decision is "yes" for the largest value of $k$.  This establishes a 
-% reduction of the optimization problem to the decision problem and vice versa. 
-% [NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH ABOVE]
-Consider an algorithm $A$ that determines whether $G$ contains an independent set of size $k$.  
-By querying $A$ with $k=1,2,...,\vert V \vert$, one can find a maximal independent set size in $G$.
-Conversely, if we have an algorithm $B$ that can the largest independent set in $S \subset V$, then we know the order of $S$, $\vert S\vert$.  
-Any subset of $S$ is also an independent set; any subset $W \subset V$ such that $\vert S \vert < \vert W \vert \leq \vert V \vert$ is not independent.  
-While $B$ is an algorithm that solves Problem \ref{prob:maxindependentset}, $B$ can be leveraged to solve Problem \ref{prob:kindependentset}.  
-Likewise, $A$ solve Problem \ref{prob:kindependentset} but can be leveraged to solve Problem \ref{prob:maxindependentset}.
+% % \subsubsection{Reduction of the Independent Set and Vertex Cover Problem}
+% There are two problems for the independent set: an optimization problem and a decision problem.
+% \begin{prob}[Optimization of an Independent Set in $G$]\label{prob:maxindependentset}
+% Given a graph $G$, what is the largest independent set in $G$?
+% \end{prob}
+% \begin{prob}[Decision of an Independent Set of Size $k$]\label{prob:kindependentset}
+% Given a graph $G$ and a number $k$, does $G$ contain an independent set of size at least $k$?
+% \end{prob}
+% % [NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH BELOW]
+% % An algorithm that solves the optimization problem automatically solves the decision problem of the 
+% % independent set.  An algorithm that solves the decision problem for all size $k$ solves the 
+% % optimization problem where the decision is "yes" for the largest value of $k$.  This establishes a 
+% % reduction of the optimization problem to the decision problem and vice versa. 
+% % [NEEDS TO PROVE REDUCIBILITY IN THIS PARAGRAPH ABOVE]
+% Consider an algorithm $A$ that determines whether $G$ contains an independent set of size $k$.  
+% By querying $A$ with $k=1,2,...,\vert V \vert$, one can find a maximal independent set size in $G$.
+% Conversely, if we have an algorithm $B$ that can the largest independent set in $S \subset V$, then we know the order of $S$, $\vert S\vert$.  
+% Any subset of $S$ is also an independent set; any subset $W \subset V$ such that $\vert S \vert < \vert W \vert \leq \vert V \vert$ is not independent.  
+% While $B$ is an algorithm that solves Problem \ref{prob:maxindependentset}, $B$ can be leveraged to solve Problem \ref{prob:kindependentset}.  
+% Likewise, $A$ solve Problem \ref{prob:kindependentset} but can be leveraged to solve Problem \ref{prob:maxindependentset}.
 
 
 %FROM COMPLEXITY, USE THE PAPER TO SHOW THAT OUR DECISION PROBLEMS ARE HARD.
