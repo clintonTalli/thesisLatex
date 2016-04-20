@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160416183948" modified="D:20160416183948"/>
+<info created="D:20160416183948" modified="D:20160418143208"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -760,7 +760,7 @@ h
 4320 2952.57 l
 h
 </path>
-<path matrix="-0.0499014 0 -0 -0.0499014 3512.6 1254.1" fill="black">
+<path matrix="-0.0499014 0 0 -0.0499014 3512.6 1254.1" fill="black">
 4352 3008 m
 4320 3063.43 l
 4256 3063.43 l
@@ -769,7 +769,7 @@ h
 4320 2952.57 l
 h
 </path>
-<path matrix="-0.0499014 0 -0 -0.0499014 3508.61 1261.01" fill="black">
+<path matrix="-0.0499014 0 0 -0.0499014 3508.61 1261.01" fill="black">
 4352 3008 m
 4320 3063.43 l
 4256 3063.43 l
@@ -778,7 +778,7 @@ h
 4320 2952.57 l
 h
 </path>
-<path matrix="0.0499014 0 -0 0.0499014 3075.07 931.766" fill="black">
+<path matrix="0.0499014 0 0 0.0499014 3075.07 931.766" fill="black">
 4352 3008 m
 4320 3063.43 l
 4256 3063.43 l
@@ -898,5 +898,14 @@ h
 <text matrix="1 0 0 1 -13.2015 -5.04165" transformations="translations" pos="3200 1104" stroke="black" type="label" width="23.766" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_1$</text>
 <text matrix="1 0 0 1 24.3608 17.0412" transformations="translations" pos="3200 1104" stroke="black" type="label" width="23.766" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_1$</text>
 <text matrix="1 0 0 1 63.4422 -6.76679" transformations="translations" pos="3200 1104" stroke="black" type="label" width="23.766" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_1$</text>
+<path matrix="0.0249507 -0.0432158 0.0432158 0.0249507 3013.74 1214.26" fill="black">
+4352 3008 m
+4320 3063.43 l
+4256 3063.43 l
+4224 3008 l
+4256 2952.57 l
+4320 2952.57 l
+h
+</path>
 </page>
 </ipe>

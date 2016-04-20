@@ -32,12 +32,8 @@ The armatures each have length $2n$ units, the shaft has length $m$ units, and t
  %Flagging arragement indicates the relationship of the boolean literal's existence within a clause.   
  To describe the flagging arrangement, first partition each armature into $2m$ units, vertical line segments. Label the segments on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  
  Attach regular triangles, called \textit{flags}, to some of these segments. 
- Each segment is either flagged one or zero flags, i.e. \textit{flagged} or \textit{unflagged}. 
-
-\begin{enumerate}
- \item If the literal $x_j$ is found in clause $C_k$, then $\ell_{j,k}$ is unflagged.
- \item If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
-\end{enumerate}
+ Each segment is either flagged one or zero flags, i.e. \textit{flagged} or \textit{unflagged}. If the literal $x_j$ is found in clause $C_k$, then $\ell_{j,k}$ is unflagged.
+   If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
 
 Each flag has two orientations with respect to armature it is attached to.  Each flag has four potential positions, the flag can reflect left or right about the armature and the armature can reflect up or down about the shaft.
 \begin{figure}[!h]
@@ -55,7 +51,7 @@ For the NP hardness reduction in Theorem \ref{thm:LogicEngineV3-2} we need to ma
 quantity and coordinates defined as polynomials in $m$ and $n$.
 
 \begin{center}
-	\begin{table}\label{LogicEngineV3PolynomialTable}
+	\begin{table}[H]\label{LogicEngineV3PolynomialTable}
 		\begin{tabular}{|c|c|c|}
 			\hline
 			Component & Quantity &  Set Definition\\ \hline

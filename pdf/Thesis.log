@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 APR 2016 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  19 APR 2016 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1266,23 +1266,23 @@ Package pdftex.def Info: graphics/LogicEngineFrameFigure1halfScaled.pdf used on
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18
 
- <./graphics/LogicEngineFrameFigure1Scaled.pdf>]
-<graphics/LogicEngineFrameFigure2Scaled.pdf, id=318, 252.44313pt x 142.49236pt>
+<graphics/LogicEngineFrameFigure2Scaled.pdf, id=310, 252.44313pt x 142.49236pt>
 File: graphics/LogicEngineFrameFigure2Scaled.pdf Graphic file (type pdf)
 <use graphics/LogicEngineFrameFigure2Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure2Scaled.pdf used on inp
-ut line 45.
+ut line 41.
 (pdftex.def)             Requested size: 252.4425pt x 142.492pt.
- [19 <./graphics/LogicEngineFrameFigure1halfScaled.pdf> <./graphics/LogicEngine
-FrameFigure2Scaled.pdf>]
+ [18
+
+ <./graphics/LogicEngineFrameFigure1Scaled.pdf>] [19 <./graphics/LogicEngineFra
+meFigure1halfScaled.pdf> <./graphics/LogicEngineFrameFigure2Scaled.pdf>]
 <graphics/logicEngineCollisions.pdf, id=336, 323.27173pt x 257.62349pt>
 File: graphics/logicEngineCollisions.pdf Graphic file (type pdf)
 
 <use graphics/logicEngineCollisions.pdf>
 Package pdftex.def Info: graphics/logicEngineCollisions.pdf used on input line 
-81.
+77.
 (pdftex.def)             Requested size: 161.63547pt x 128.81142pt.
 
 <graphics/logicEngineValidConfigurations.pdf, id=337, 308.6983pt x 97.74919pt>
@@ -1290,7 +1290,7 @@ File: graphics/logicEngineValidConfigurations.pdf Graphic file (type pdf)
 
 <use graphics/logicEngineValidConfigurations.pdf>
 Package pdftex.def Info: graphics/logicEngineValidConfigurations.pdf used on in
-put line 90.
+put line 86.
 (pdftex.def)             Requested size: 308.69754pt x 97.74895pt.
  [20 <./graphics/logicEngineCollisions.pdf> <./graphics/logicEngineValidConfigu
 rations.pdf>]
@@ -1299,31 +1299,31 @@ t>
 File: graphics/LogicEngineFrameFigure5Scaled.pdf Graphic file (type pdf)
  <use graphics/LogicEngineFrameFigure5Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure5Scaled.pdf used on inp
-ut line 127.
+ut line 123.
 (pdftex.def)             Requested size: 2967.4542pt x 3038.79257pt.
 
-Overfull \hbox (2533.8342pt too wide) in paragraph at lines 127--128
+Overfull \hbox (2533.8342pt too wide) in paragraph at lines 123--124
  [] 
  []
 
 
 LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 21 undefined
- on input line 128.
+ on input line 124.
 
 
 LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 21 undefined
- on input line 128.
+ on input line 124.
 
 
-LaTeX Warning: Float too large for page by 2421.36258pt on input line 130.
+LaTeX Warning: Float too large for page by 2421.36258pt on input line 126.
 
 
-Package caption Warning: \label without proper \caption on input line 58.
+Package caption Warning: \label without proper \caption on input line 54.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 21 undefined on
- input line 167.
+ input line 163.
 
 ) (./ch2/HingedPolygonsV3.tex [21] [22 <./graphics/LogicEngineFrameFigure5Scale
 d.pdf>] <graphics/HingedLogicEngineSmall.pdf, id=372, 296.04602pt x 193.789pt>
@@ -1335,20 +1335,21 @@ Package pdftex.def Info: graphics/HingedLogicEngineSmall.pdf used on input line
 (pdftex.def)             Requested size: 296.04529pt x 193.78851pt.
 
 
-Package caption Warning: \label without proper \caption on input line 38.
+Package caption Warning: \label without proper \caption on input line 39.
 See the caption package documentation for explanation.
 
 
+LaTeX Warning: Reference `tbl:hingedPolygonsv3-1a' on page 23 undefined on inpu
+t line 19.
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 37--54
+[]$[]$ 
+ []
+
+
 LaTeX Warning: Reference `TBL:HingedPolygonsV3-1' on page 23 undefined on input
- line 19.
-
-
-Package caption Warning: \label without proper \caption on input line 38.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `TBL:HingedPolygonsV3-1' on page 23 undefined on input
- line 58.
+ line 62.
 
 [23
 
@@ -1358,18 +1359,18 @@ t>
 File: graphics/HingedLogicEngineSmallEnumerated.pdf Graphic file (type pdf)
  <use graphics/HingedLogicEngineSmallEnumerated.pdf>
 Package pdftex.def Info: graphics/HingedLogicEngineSmallEnumerated.pdf used on 
-input line 69.
+input line 73.
 (pdftex.def)             Requested size: 428.06822pt x 207.11928pt.
- [24 <./graphics/HingedLogicEngineSmallEnumerated.pdf>]) (./ch2/ContactGraphV4.
-tex
-<graphics/hexagonOutline5LayerSmall.pdf, id=395, 204.32335pt x 179.61102pt>
+)
+(./ch2/ContactGraphV4.tex
+<graphics/hexagonOutline5LayerSmall.pdf, id=380, 204.32335pt x 179.61102pt>
 File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
 ine 5.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
-
+ [24 <./graphics/HingedLogicEngineSmallEnumerated.pdf>]
 
 LaTeX Warning: Reference `problem:UnorderedTree' on page 25 undefined on input 
 line 13.
@@ -1385,7 +1386,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
-<graphics/snowflakeOutline5LayerSmall.pdf, id=396, 189.76897pt x 166.8333pt>
+<graphics/snowflakeOutline5LayerSmall.pdf, id=400, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
@@ -1397,7 +1398,7 @@ ne5LayerSmall.pdf>]))
 (./ch3/chapter3.tex (./ch3/polygonalLinkages.tex [27]
 Chapter 3.
 
-<graphics/HoneyCombAssociatedGraphSmall.pdf, id=413, 605.97394pt x 323.16232pt>
+<graphics/HoneyCombAssociatedGraphSmall.pdf, id=417, 605.97394pt x 323.16232pt>
 File: graphics/HoneyCombAssociatedGraphSmall.pdf Graphic file (type pdf)
 <use graphics/HoneyCombAssociatedGraphSmall.pdf>
 Package pdftex.def Info: graphics/HoneyCombAssociatedGraphSmall.pdf used on inp
@@ -1415,7 +1416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--13
 
  []
 
-<graphics/FlexibleHexagons.pdf, id=426, 272.63959pt x 156.12328pt>
+<graphics/FlexibleHexagons.pdf, id=430, 272.63959pt x 156.12328pt>
 File: graphics/FlexibleHexagons.pdf Graphic file (type pdf)
 
 <use graphics/FlexibleHexagons.pdf>
@@ -1426,7 +1427,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 14--24
 []$[]$ 
  []
 
-<graphics/fig-variable-hex+.pdf, id=427, 515.06215pt x 110.3061pt>
+<graphics/fig-variable-hex+.pdf, id=431, 515.06215pt x 110.3061pt>
 File: graphics/fig-variable-hex+.pdf Graphic file (type pdf)
 
 <use graphics/fig-variable-hex+.pdf>
@@ -1438,7 +1439,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 44--55
  []
 
 [29 <./graphics/FlexibleHexagons.pdf>]
-<graphics/honeycomb.pdf, id=437, 195.70114pt x 197.05621pt>
+<graphics/honeycomb.pdf, id=441, 195.70114pt x 197.05621pt>
 File: graphics/honeycomb.pdf Graphic file (type pdf)
 
 <use graphics/honeycomb.pdf>
@@ -1449,60 +1450,79 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 61--68
 []$[]$ 
  []
 
-<graphics/VariableGadgetSmall.pdf, id=438, 200.76003pt x 151.91757pt>
+<graphics/VariableGadgetSmall.pdf, id=442, 200.75pt x 151.91757pt>
 File: graphics/VariableGadgetSmall.pdf Graphic file (type pdf)
 
 <use graphics/VariableGadgetSmall.pdf>
 Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 99
 .
-(pdftex.def)             Requested size: 195.12767pt x 147.66121pt.
+(pdftex.def)             Requested size: 195.12767pt x 147.67279pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 97--104
 []$[]$ 
  []
 
 [30 <./graphics/fig-variable-hex+.pdf> <./graphics/honeycomb.pdf>]
-<graphics/fig-transmitter-hex.pdf, id=456, 385.34363pt x 100.8819pt>
+<graphics/fig-transmitter-hex.pdf, id=460, 385.1429pt x 100.51854pt>
 File: graphics/fig-transmitter-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-transmitter-hex.pdf>
 Package pdftex.def Info: graphics/fig-transmitter-hex.pdf used on input line 10
 9.
-(pdftex.def)             Requested size: 303.53267pt x 79.46953pt.
+(pdftex.def)             Requested size: 303.53267pt x 79.22163pt.
 
-<graphics/fig-clause-hex.pdf, id=457, 388.96014pt x 101.64073pt>
+<graphics/fig-clause-hex.pdf, id=461, 388.96014pt x 101.64073pt>
 File: graphics/fig-clause-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-clause-hex.pdf>
-Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 138.
+Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 127.
 (pdftex.def)             Requested size: 303.53267pt x 79.3213pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 136--145
+Overfull \hbox (15.0pt too wide) in paragraph at lines 125--134
 []$[]$ 
  []
 
 [31 <./graphics/VariableGadgetSmall.pdf> <./graphics/fig-transmitter-hex.pdf>]
-<graphics/fig-frame-hex.pdf, id=479, 477.26376pt x 197.06023pt>
+<graphics/TransmitterGadgetSmall.pdf, id=486, 156.52478pt x 187.62094pt>
+File: graphics/TransmitterGadgetSmall.pdf Graphic file (type pdf)
+
+<use graphics/TransmitterGadgetSmall.pdf>
+Package pdftex.def Info: graphics/TransmitterGadgetSmall.pdf used on input line
+ 143.
+(pdftex.def)             Requested size: 195.12767pt x 233.90434pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 141--148
+[]$[]$ 
+ []
+
+[32 <./graphics/fig-clause-hex.pdf> <./graphics/TransmitterGadgetSmall.pdf>]
+Overfull \hbox (15.62889pt too wide) in paragraph at lines 217--220
+[]\T1/ptm/m/n/10 We can bound the num-ber of ob-sta-cle hexagons to rep-re-sent
+ a vari-able gad-get to $\OT1/ztmcm/m/n/10 2 \OMS/ztmcm/m/n/10 ^^A \OML/ztmcm/m
+/it/10 D \OT1/ztmcm/m/n/10 = 2 \OMS/ztmcm/m/n/10 ^^A []$\T1/ptm/m/n/10 .
+ []
+
+[33] <graphics/fig-frame-hex.pdf, id=515, 477.26376pt x 197.06023pt>
 File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-frame-hex.pdf>
-Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 168.
+Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 250.
 (pdftex.def)             Requested size: 411.93767pt x 170.09091pt.
- [32 <./graphics/fig-clause-hex.pdf>]))
-(./ch4/chapter4.tex (./ch4/Hausdorff.tex [33 <./graphics/fig-frame-hex.pdf>]
+ [34 <./graphics/fig-frame-hex.pdf>]))
+(./ch4/chapter4.tex (./ch4/Hausdorff.tex [35]
 Chapter 4.
-<graphics/HausdorffDistanceExample1.pdf, id=513, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=540, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
 ine 14.
 (pdftex.def)             Requested size: 145.79433pt x 104.3285pt.
-)) (../pdf/Thesis.bbl [34
+)) (../pdf/Thesis.bbl [36
 
  <./graphics/HausdorffDistanceExample1.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[35
+[37
 
 ] (../pdf/Thesis.aux)
 
@@ -1513,11 +1533,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17875 strings out of 493089
- 329652 string characters out of 6134841
+ 17888 strings out of 493089
+ 329953 string characters out of 6134841
  504597 words of memory out of 5000000
- 20812 multiletter control sequences out of 15000+600000
- 56101 words of font info for 102 fonts, out of 8000000 for 9000
+ 20821 multiletter control sequences out of 15000+600000
+ 57965 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1540,10 +1560,10 @@ w/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (39 pages, 530477 bytes).
+Output written on ../pdf/Thesis.pdf (41 pages, 540738 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
+ 603 PDF objects out of 1000 (max. 8388607)
+ 383 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 words of extra memory for PDF output out of 10000 (max. 10000000)
 
