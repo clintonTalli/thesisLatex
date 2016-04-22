@@ -1,11 +1,141 @@
-\section{chapter 3}
-The \emph{graph associated} to a Boolean formula in 3-CNF is a bipartite graph where the two vertex classes correspond to the variables and to the clauses, respectively; there is an edge between a variable $x$ and a clause $C$ iff $x$ or $\neg x$ appears in $C$. See Fig.~\ref{fig:assoc} (left).
+\subsection{Functionality of the Auxilary Construction and Gadgets}
+Section \ref{sec:auxiliaryConstruction} is a formal description of the auxilary construction and its gadgets.
+This subsection covers the underlying assumptions and proofs about the functionality of the auxilary construction.
+The first observations about the functionality of the auxilary construction are about the flexible hexagons.
+\begin{observation}\label{obs:corridor}
+\begin{itemize}
+\item[(1)] If the leftmost hexagon is in state R, then all $t$ hexagons are in state R, and the rightmost hexagon enters the junction on the right of the corridor.
+\item[(2)] Similarly, if the rightmost hexagon is in state L, then all $t$ hexagons are in state L, and the leftmost hexagon enters the junction on the left of the corridor.
+\end{itemize}
+\end{observation}
+The proof of the Observation \ref{obs:corridor} is similar to the proof of Lemma \ref{lem:logicEngine1} regarding a row in a logic engine having a collision-free configuration.
+% Proof. Suppose all armatures are flagged in a row. The flag on armature A1 must point to the right otherwise we result in a rigid frame collision. A2 must point to the right otherwise we result in a rigid frame collision. Without loss of generality, Ai and Ai+1 must point to the right in order to prevent an adjacent flag collision. This implies that An must also point to the right which results into a rigid frame collision.
+% A same argument holds with the argument beginning with the flag on the armature An pointing to the left. Thus there is no collision-free configuration with all armatures flagged.
+% Suppose there is an unflagged armature in a row. Turn all flags towards the nearest unflagged armature. If there are flags on A1 and An, point toward the interior thus they do not collide with the rigid frame. If there are flags on two consecutive armatures, they do not collide because the nearest unflagged armature cannot be between them. Therefore the row has a collision-free configuration.
+\begin{proof}
+Suppose the leftmost hexagon, $h_1$, is in state $R$ in a corridor.
+Denote the $t$ flexible hexagons in a corridor as $h_1$, $h_2$, $\ldots$, $h_t$ from leftmost to rightmost respectively.
+$h_2$ must be in state $R$ otherwise we result in a collision between $h_1$ and $h_2$.
+Without losss of generality, $h_i$ and $h_{i+1}$ must be in a state $R$ in order to prevent an adjacent flexible hexagon collision. 
+This implies that rightmost flexible hexagon $h_t$ must also be in state $R$; this implies that $h_t$ enters the junction that is on the right of the corridor.
 
+Similarly, suppose the rightmost hexagon, $h_t$, is in state $L$ in a corridor.
+Denote the $t$ flexible hexagons in a corridor as $h_1$, $h_2$, $\ldots$, $h_t$ from leftmost to rightmost respectively.
+$h_{t-1}$ must be in state $L$ otherwise we result in a collision between $h_t$ and $h_{t-1}$.
+Without losss of generality, $h_i$ and $h_{i+1}$ must be in a state $L$ in order to prevent an adjacent flexible hexagon collision. 
+This implies that rightmost flexible hexagon $h_1$ must also be in state $L$; this implies that $h_1$ enters the junction that is on the left of the corridor.
+\end{proof}
+The flexible hexagons of the auxilary construction help communicate the boolean value of a variable gadget to the rest of the auxilary construction.
+This communication property of the flexible hexagons in a corridor is analagous to the flags in a row of a logic engine.
 
-\begin{figure}[!htbp]
+Each junction is a regular triangle, adjacent to three corridors. 
+In some of the junctions, we attach a small hexagon of side length $\frac{1}{3}$ to one or two corners of the junction (see Fig.~\ref{fig:variable}(c) and Fig.~\ref{fig:transmitter}). 
+Importantly, we have the following observation:
+\begin{observation}\label{obs:junction}
+If a small hexagon is attached to a vertex at a junction between two adjacent corridors, then a flexible hexagon can enter the junction from at most one of those corridors.
+\end{observation}
+\begin{proof}
+Suppose there is a small hexagon attached to a vertex at a junction between two adjacent corridors.
+Suppose it is not that case that a flexible hexagon can enter the junction from at most one of these adjacent corridors.
+Then there are two flexible hexagons entering the junction, one from each adjacent corridor.
+The angular sum of the vertex about the adjacent corridors consists of the obstacle hexagon, both flexible hexagons, and the small unit hexagon.
+Each angle of each hexagon is $\frac{2 \pi}{3}$ radians, totalling to an angular sum of $\frac{8 \pi}{3} > 2 \pi$.
+This is a contradiction with the total angular sum of a vertex on the plane to be $2 \pi$.
+\end{proof}
+
+Observation~\ref{obs:corridor} and the small hexagons ensure that the state of any unit hexagon along the cycle determines the state of all other unit hexagons in the cycle. 
+This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexagons in the top horizontal corridors are in state R; and if $x_i=F$, they are all in state L.
+
+\begin{lem}\label{lem:aux}
+For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons has the following properties: (1) it has polynomial size; (2) its hinge graph is a forest;
+(3) it admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is satisfiable.
+\end{lem}
+\begin{proof}
+
+Suppose we have an instance $\Phi$ of P3SAT with $m$ variables and $n$ clauses with a corresponding associated graph $A(\Phi)=(V,E)$ and it is satisfiable.  
+We need to show the following three properties about its corresponding auxilliary construnction: it has polynomial size, its hinge graph is a forest, and it admits a realization such that the obstacle polygons remain fixed.
+
+\noindent (1) We can bound the number of obstacle hexagons to represent a variable gadget by $2 D$, where $D = \lr{ \max_{v \in V} \deg (v)}$.  
+The number of clause junctions is $n$.
+To give an upper bound on the number of flexible hexagons in the auxiliary construction, we have to account for the flexible hexagons in the transmitter gadgets, the extra hexagons found in junctions, and the flexible hexagons around the variable gadgets.
+
+Recall that that the number of flexible hexagons in a corridor are $ t = 2N(m,n)^3 + 1 $ where $N(m,n)$ is a polynomial. 
+Recall that the drawing of $A(\Phi)$ have edges drawn in vertically and horizontally and can join at some ``elbow''.  
+The distance can be measured in the $\ell_1$ norm.
+Similarly in the honeycomb construction, the flexable hexagons zig-zig vertically and horizontally through out honeycomb.  
+The number of corridors about an obstacle hexagon is $6$.
+To give a generous upper bound on the number of flexible hexagons in a transmitter gadget, is $6 \cdot t \cdot \ell_1\lr{v_i,C_j}$, assuming each obstacle hexagon is of unit height.
+
+The number of junctions in the auxiliary construction is the number of junctions to form all variable gadgets, transmitter gadgets, and clause gadgets. 
+We know there are at most $2 \cdot D$ obstacle hexagons to form each variable gadget and $6$ junctions for each obstacle hexagon.  
+Therefore an upper bound for the number of flexible hexagons around variable gadgets is $m \cdot 6 \cdot t \cdot 2 \cdot D$.
+The upper bound for the number of junctions in a transmitter gadget is $6 \ell_1 \lr{v_i, C_j}$.  
+Thus, the upper bound of all junctions in all transmitter gadgets is $$6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
+The upper bound on the total number of flexible hexagons is
+$$m \cdot 6 \cdot t \cdot 2 \cdot D + 6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
+
+\noindent (2) Recall that a forest is a disjoint union of trees. 
+By construction, each flexible hexagon is hinged to exactly one obstacle hexagon.  
+There are no hinges between obstacle hexagons.
+Consequently, each component of the hinge graph is a star, where the center corresponds to an obstacle hexagon and the leafs corresponds to the flexable hexagons attached to it.
+
+\noindent (3) The final statement is to show an if and only if statement: it admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is satisfiable.
+
+Suppose $\Phi$ is satisfiable and has $m$ variables $x_1$ through $x_m$ and $n$ clauses $C_1$ through $C_n$.
+Each variable has a boolean value and we can encode the corresponding auxilary construction accordingly. 
+For each variable, we encode the boolean value by the state of the flexible hexagons surrounding the variable gadget to $R$ or $L$.  
+Observation \ref{obs:corridor} and \ref{obs:junction} show that the corridors and junctions around the variable gadget are realizable.
+The very same observations also show that for each transmitter gadget, every corridor and junction are also realizable. 
+Observation \ref{obs:junction} and the fact that at least one literal corresponding to a variable in every clause is true, there is at least one hexagon in the clause junction and that the clause is realizable.
+
+Suppose the construction admits a realization such that the obstacle polygons remain fixed.
+Each variable gadget's flexible hexagons are configured to state $L$ or $R$. 
+The variable's corresponding state correspond to the variable's truth value, i.e. $R$ for true and $L$ for false.
+Each clause is realizable and so for every clause, there exists one true literal in the clause corresponding to a variable.  
+If every clause has some true literal, then the corresponding 3-CNF boolean formula is satisfiable.
+\end{proof}
+To show that the hinge graph is a forest, we construct a simply connected polygonal linkage $(\PP,H)$ that has a realization with fixed orientation if and only if $\Phi$ is satisfiable.
+We modify the auxiliary construction allowing all polygons to move freely, and by adding extra polygons and hinges so that the hinge graph becomes a \emph{tree}, and the size of the construction remains polynomial. 
+Recall that our auxiliary construction is based on a polynomial section of the hexagonal grid, using obstacle hexagons of side lengths $(5t-1)/2$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. 
+We modify it in 3 steps as follows.
+
+\begin{enumerate}
+\item Move the obstacle hexagons apart such that the width of each corridor increases from $\sqrt{3}$ to $\sqrt{3}+1/(100N)$.
+\item Replace the unit segment in each the clause gadget by a skinny rhombus of diameter $1.1$ and width $1/(200N)$.
+\item Consider a large (polynomial-size) regular hexagon $R$ that contains all gadgets in our construction, and enclose $R$ by a \emph{frame} of 6 congruent regular hexagons, as shown in Fig.~\ref{fig:frame}(a), hinged together in a path.
+\item Connect the frame and the obstacles in $R$ into a simply connected polygonal linkage: In each obstacle hexagon, the bottom or bottom-left side is adjacent to the frame or to a corridor. Introduce a hinge at the midpoint of one such side in each obstacle hexagon. If this side is adjacent to the frame, then attach the hinge to the frame. Otherwise, the hinge is attached to a new \emph{connector} polygon: a skinny rhombus of diameter 1 and width $1/(200N)$. The far corner of each rhombus is hinged to the unit hexagon in the middle of the corridor at shown in Fig.~\ref{fig:frame}(b).
+\end{enumerate}
+
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.7\columnwidth]{graphics/fig-assoc-hex.pdf}
-	\caption[]{Left: the associated graph $A(\Phi)$ for a Boolean formula $\Phi$.
-Right: the schematic layout of the variable, clause, and transmitter gadgets in our construction.}
-	\label{fig:assoc}
+	\includegraphics[width=0.95\columnwidth]{graphics/fig-frame-hex}
+	\caption{(a) A frame (built of 6 hinged regular hexagons) encloses a hexagonal tiling, and
+    vertical paths connect all obstacle hexagons to the frame.
+    (b) A corridor is widened to $\sqrt{3}+1/N^2$. A connection between
+    two adjacent obstacle hexagons is established via a skinny rhombus.}
+	\label{fig:frame}
 \end{figure}
+We obtain a simply connected polygonal linkage. 
+We now allow the obstacle hexagons to move freely, and call their original fixed position \emph{canonical}. 
+\noindent (3) We may assume without loss of generality that the frame is at its original position. 
+It is enough to show that the obstacle hexagons are still confined to an $1/N$-neighborhood of their canonical position, then it
+follows that the polygonal linkage is realizable if and only if $\Phi$ is satisfiable.
+
+
+
+
+
+
+%Let $\Phi$ be an instance of P3SAT (i.e., a Boolean formula $\Phi$ in 3-CNF with $n$ variables, $m$ clauses, and a planar graph $A(\Phi)$).
+
+
+
+
+
+
+
+
+\begin{lem}\label{lem:aux}
+For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons has the following properties: (1) it has polynomial size; (2) the polygonal linkage is a tree;
+(3) it admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is satisfiable.
+\end{lem}

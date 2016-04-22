@@ -1,4 +1,4 @@
-\section{Auxilary Construction\label{sec:auxiliaryConstruction}}
+\section{Auxilary Construction}\label{sec:auxiliaryConstruction}
 Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$, of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
 
 We construct a polygonal linkage  in two main steps: first, we construct an auxiliary structure where some of the polygons have fixed position in the plane (called \emph{obstacles}), while other polygons are flexible, and each flexible polygon is hinged to an obstacle. 
@@ -67,16 +67,8 @@ We next describe variable, clause, and transmitter gadgets.
 \end{minipage}
 
 The basic building block of both variable and transmitter gadgets consists of $t$ regular hexagons of side length 1 (\emph{unit hexagons}, for short) attached to a wall of a corridor such that the hinges divide the wall into $t+1$ intervals of length $(1,2.5,\ldots ,2.5,1)$ as shown in Fig.~\ref{fig:variable}(a-b) for $t=3$. 
-Since the height of the corridor is $\sqrt{3}$, each hexagon has exactly two possible realizations: it can lie either \emph{left} or \emph{right} of the hinge in a horizontal corridor. 
-For simplicity, we use the same notation (R and L) in nonhorizontal corridors, too. 
-Hence, the \emph{state} of each flexible hexagon in a realization is either L or R. The following observation describes the key mechanism of a corridor.
 
-\begin{observation}\label{obs:corridor}
-\begin{itemize}
-\item[(1)] If the leftmost hexagon is in state R, then all $t$ hexagons are in state R, and the rightmost hexagon enters the junction on the right of the corridor.
-\item[(2)] Similarly, if the rightmost hexagon is in state L, then all $t$ hexagons are in state L, and the leftmost hexagon enters the junction on the left of the corridor.
-\end{itemize}
-\end{observation}
+
 % \begin{lem}
 % If the leftmost hexagon is in state R, then all $t$ hexagons are in state R, and the rightmost hexagon enters the junction on the right of the corridor.
 % \end{lem}
@@ -87,7 +79,11 @@ Hence, the \emph{state} of each flexible hexagon in a realization is either L or
 % \end{proof}
 Each junction is a regular triangle, adjacent to three corridors. 
 In some of the junctions, we attach a small hexagon of side length $\frac{1}{3}$ to one or two corners of the junction (see Fig.~\ref{fig:variable}(c) and Fig.~\ref{fig:transmitter}). 
-Importantly, if such a small hexagon is attached to a vertex between two corridors, then a unit hexagon can enter the junction from at most one of those corridors.
+Importantly, we have the following observation:
+\begin{observation}\label{obs:junction}
+If a small hexagon is attached to a vertex between two corridors, then a unit hexagon can enter the junction from at most one of those corridors.
+\end{observation}
+
 \subsection{Variable Gadget}
 The {\bf variable gadget} for variable $x_i$ is constructed as follows. 
 Recall that variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$, which has been embedded as a cycle in the hexagonal tiling, with corridors and junctions. 
@@ -115,6 +111,7 @@ This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexag
 \end{figure}
 When a binary variable $x_i = T$, we will say that the variable in state $R$ and that the cycle of small hexagons around the variable gadget are in a ``clockwise direction''.
 When a binary variable $x_i = F$, we will say that the variable is in state $L$ and that the cycle of small hexagons around the variable gadget are in a ``counter-clockwise direction''. 
+
 \subsection{Clause Gadget}
 Recall that a clause from a Boolean formula $\Phi$ in 3-CNF has three literals.  If $\Phi$ is a  'yes' instance, then at least one literal in every clause of $\Phi$ is true.  We construct the clause gadget to model this fact about Boolean formulas in 3-CNF.
 
@@ -154,13 +151,13 @@ Similarly, when the variable is true (i.e. state $R$), the tranmitter is place o
 When $x_i = F$ , no hexagon from the transmitter enters a junction of the variable gadget.
 This ensures that false literals are always correctly transmitted to the clause junctions (and true literals can always transmit correctly).
 
-A variable gadget for vertex $v$ in the associated graph of a P3SAT Boolean formula encompasses at least $2 \cdot degree(v)$ consecutive obstacle hexagons. 
-The arrangement of the consecutive obstacle hexagons are in staggered fashion where there are at least $degree(v)$ obstacle hexagons in the upper portion of the staggering arrangement and at least $degree(v)$ obstacle hexagons in the lower portion of the staggering arrangement.
-To construct all transmitter gadgets corresponding to the edges of an associated graph of a P3SAT instance, there must be at least $degree(v)$ left-most junctions and $degree(v)$ right-most junctions in both the upper portion of the variable gadget and the lower portion of the variable gadget.
+A variable gadget for vertex $v$ in the associated graph of a P3SAT Boolean formula encompasses at least $2 \cdot \deg (v)$ consecutive obstacle hexagons. 
+The arrangement of the consecutive obstacle hexagons are in staggered fashion where there are at least $\deg (v)$ obstacle hexagons in the upper portion of the staggering arrangement and at least $\deg (v)$ obstacle hexagons in the lower portion of the staggering arrangement.
+To construct all transmitter gadgets corresponding to the edges of an associated graph of a P3SAT instance, there must be at least $\deg (v)$ left-most junctions and $\deg (v)$ right-most junctions in both the upper portion of the variable gadget and the lower portion of the variable gadget.
 Suppose the variable $v$ exists only in clauses that lie above the variable gadget.  
-The construction of the variable gadget allows for $degree(v)$ placements of transmitters on either the left or right side of the upper obstacle hexagons accordingly.
+The construction of the variable gadget allows for $\deg (v)$ placements of transmitters on either the left or right side of the upper obstacle hexagons accordingly.
 Similarly, suppose the variable $v$ exists only in clauses that lie above the variable gadget.  
-The construction of the variable gadget allows for $degree(v)$ placements of transmitters on either the left or right side of the lower obstacle hexagons accordingly.
+The construction of the variable gadget allows for $\deg (v)$ placements of transmitters on either the left or right side of the lower obstacle hexagons accordingly.
 Each obstacle hexagon has a left and right junction to admit a transmitter gadget to connect to.
 
 % \begin{figure}[htbp]
@@ -174,7 +171,7 @@ Each obstacle hexagon has a left and right junction to admit a transmitter gadge
 
 
 
-The following lemma summarizes our result about the auxiliary construction.
+
 
 % \begin{thm}\label{thm:chp2-HingedPolygons-1}
 %  Given an instance of a $NAE3SAT$,  it is a ``yes'' instance if and only if the 
@@ -204,7 +201,36 @@ The following lemma summarizes our result about the auxiliary construction.
 % literals reside above the shaft.  All together we have that every clause has a true literal and a 
 % false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
 % \end{proof}
+\subsection{Functionality of the Auxilary Construction and Gadgets}
+%Prove Observation 1
+%Prove Observation 2
+%Prove Observation 3
+%Prove Lemma 2
+%Prove Lemma 3 - same as lemma 2 but with tree
+%
+We have described the auxiliary construction.  
 
+Since the height of the corridor is $\sqrt{3}$, each hexagon has exactly two possible realizations: it can lie either \emph{left} or \emph{right} of the hinge in a horizontal corridor. 
+For simplicity, we use the same notation (R and L) in nonhorizontal corridors, too. 
+Hence, the \emph{state} of each flexible hexagon in a realization is either L or R. The following observation describes the key mechanism of a corridor.
+
+\begin{observation}\label{obs:corridor}
+\begin{itemize}
+\item[(1)] If the leftmost hexagon is in state R, then all $t$ hexagons are in state R, and the rightmost hexagon enters the junction on the right of the corridor.
+\item[(2)] Similarly, if the rightmost hexagon is in state L, then all $t$ hexagons are in state L, and the leftmost hexagon enters the junction on the left of the corridor.
+\end{itemize}
+\end{observation}
+The proof of Obesrvation \ref{obs:junction} is as follows:
+\begin{proof}\label{proof:junction}
+PROOF GOES HERE
+\end{proof}
+
+Prove that all flexagons around a variable gadget are either clockwise or counterclockwise
+
+
+Prove that 
+
+The following lemma summarizes our result about the auxiliary construction.
 \begin{lem}\label{lem:aux}
 For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons has the following properties: (1) it has polynomial size; (2) its hinge graph is a forest;
 (3) it admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is satisfiable.
@@ -214,7 +240,7 @@ For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible an
 Suppose we have an instance $\Phi$ of P3SAT with $m$ variables and $n$ clauses with a corresponding associated graph $A(\Phi)=(V,E)$ and it is satisfiable.  
 We need to show the following three properties about its corresponding auxilliary construnction: it has polynomial size, its hinge graph is a forest, and it admits a realization such that the obstacle polygons remain fixed.
 
-We can bound the number of obstacle hexagons to represent a variable gadget to $2 \cdot D = 2 \cdot \lr{ \max_{v \in V} degree(v)}$.  
+\noindent (1) We can bound the number of obstacle hexagons to represent a variable gadget by $2 D$, where $D = \lr{ \max_{v \in V} \deg (v)}$.  
 The number of clause junctions is $n$.
 To give an upper bound on the number of flexible hexagons in the auxiliary construction, we have to account for the flexible hexagons in the transmitter gadgets, the extra hexagons found in junctions, and the flexible hexagons around the variable gadgets.
 
@@ -223,17 +249,24 @@ Recall that the drawing of $A(\Phi)$ have edges drawn in vertically and horizont
 The distance can be measured in the $\ell_1$ norm.
 Similarly in the honeycomb construction, the flexable hexagons zig-zig vertically and horizontally through out honeycomb.  
 The number of corridors about an obstacle hexagon is $6$.
-To give a relaxed upperbound on the number of flexible hexagons in a transmitter gadget, is $6 \cdot t \cdot \ell_1\lr{v_i,C_j}$, assuming each obstacle hexagon is unit height.
+To give a generous upper bound on the number of flexible hexagons in a transmitter gadget, is $6 \cdot t \cdot \ell_1\lr{v_i,C_j}$, assuming each obstacle hexagon is of unit height.
 
 The number of junctions in the auxiliary construction is the number of junctions to form all variable gadgets, transmitter gadgets, and clause gadgets. 
 We know there are at most $2 \cdot D$ obstacle hexagons to form each variable gadget and $6$ junctions for each obstacle hexagon.  
-Therefore we can give an upper bound to the number of flexible hexagons around variable gadgets to $m \cdot 6 \cdot t \cdot 2 \cdot D$.
-The upper bound to the number of junctions in a transmitter gadget is $6 \ell_1 \lr{v_i, C_j}$.  
-Thus, the upperbound of all junctions in all transmitter gadgets is $$6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}$$
-The upperbound on the total number of flexible hexagons is
-$$m \cdot 6 \cdot t \cdot 2 \cdot D + 6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}$$
+Therefore an upper bound for the number of flexible hexagons around variable gadgets is $m \cdot 6 \cdot t \cdot 2 \cdot D$.
+The upper bound for the number of junctions in a transmitter gadget is $6 \ell_1 \lr{v_i, C_j}$.  
+Thus, the upper bound of all junctions in all transmitter gadgets is $$6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
+The upper bound on the total number of flexible hexagons is
+$$m \cdot 6 \cdot t \cdot 2 \cdot D + 6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
 
-Recall that a forest is a disjoint union of trees.  To show that the hinge graph is a forest, we construct a simply connected polygonal linkage $(\PP,H)$ that has a realization with fixed orientation if and only if $\Phi$ is satisfiable.
+\noindent (2) Recall that a forest is a disjoint union of trees. 
+By construction, each flexible hexagon is hinged to exactly one obstacle hexagon.  
+There are no hinges between obstacle hexagons.
+Consequently, each component of the hinge graph is a star, where the center corresponds to an obstacle hexagon and the leafs corresponds to the flexable hexagons attached to it.
+
+\noindent (3) 
+
+To show that the hinge graph is a forest, we construct a simply connected polygonal linkage $(\PP,H)$ that has a realization with fixed orientation if and only if $\Phi$ is satisfiable.
 We modify the auxiliary construction allowing all polygons to move freely, and by adding extra polygons and hinges so that the hinge graph becomes a \emph{tree}, and the size of the construction remains polynomial. 
 Recall that our auxiliary construction is based on a polynomial section of the hexagonal grid, using obstacle hexagons of side lengths $(5t-1)/2$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. 
 We modify it in 3 steps as follows.
@@ -254,8 +287,9 @@ We modify it in 3 steps as follows.
     two adjacent obstacle hexagons is established via a skinny rhombus.}
 	\label{fig:frame}
 \end{figure}
-We obtain a simply connected polygonal linkage. We now allow the obstacle hexagons to move freely, and call their original fixed position \emph{canonical}. 
-We may assume without loss of generality that the frame is at its original position. 
+We obtain a simply connected polygonal linkage. 
+We now allow the obstacle hexagons to move freely, and call their original fixed position \emph{canonical}. 
+\noindent (3) We may assume without loss of generality that the frame is at its original position. 
 It is enough to show that the obstacle hexagons are still confined to an $1/N$-neighborhood of their canonical position, then it
 follows that the polygonal linkage is realizable if and only if $\Phi$ is satisfiable.
 
