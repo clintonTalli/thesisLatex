@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  19 APR 2016 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 APR 2016 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -690,22 +690,28 @@ LaTeX Warning: Label `fig:configuration-3' multiply defined.
 
 LaTeX Warning: Label `thm:hinge2' multiply defined.
 
+
+LaTeX Warning: Label `obs:junction' multiply defined.
+
+
+LaTeX Warning: Label `lem:aux' multiply defined.
+
 )
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 239.
-LaTeX Font Info:    ... okay on input line 239.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 239.
-LaTeX Font Info:    ... okay on input line 239.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 239.
-LaTeX Font Info:    ... okay on input line 239.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 239.
-LaTeX Font Info:    ... okay on input line 239.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 239.
-LaTeX Font Info:    ... okay on input line 239.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 239.
-LaTeX Font Info:    ... okay on input line 239.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 239.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 240.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -723,59 +729,59 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \makeMPintoPDFobject=\count154
 \everyMPtoPDFconversion=\toks49
 )
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 23
-9.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 24
+0.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 23
-9.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 24
+0.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 23
-9.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 24
+0.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 23
-9.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 24
+0.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 239.
+LaTeX Font Info:    Try loading font information for U+msa on input line 240.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 239.
+LaTeX Font Info:    Try loading font information for U+msb on input line 240.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 239.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 240.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 239.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 239.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 240.
 
 
-Package mathptmx Warning: There are no bold math fonts on input line 239.
+Package mathptmx Warning: There are no bold math fonts on input line 240.
 
 (../pdf/Thesis.toc
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
@@ -793,7 +799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--31
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 []| 
  []
 
@@ -1454,11 +1460,11 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 61--68
 File: graphics/VariableGadgetSmall.pdf Graphic file (type pdf)
 
 <use graphics/VariableGadgetSmall.pdf>
-Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 99
+Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 95
 .
 (pdftex.def)             Requested size: 195.12767pt x 147.67279pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 97--104
+Overfull \hbox (15.0pt too wide) in paragraph at lines 93--100
 []$[]$ 
  []
 
@@ -1468,17 +1474,17 @@ File: graphics/fig-transmitter-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-transmitter-hex.pdf>
 Package pdftex.def Info: graphics/fig-transmitter-hex.pdf used on input line 10
-9.
+5.
 (pdftex.def)             Requested size: 303.53267pt x 79.22163pt.
 
 <graphics/fig-clause-hex.pdf, id=461, 388.96014pt x 101.64073pt>
 File: graphics/fig-clause-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-clause-hex.pdf>
-Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 127.
+Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 124.
 (pdftex.def)             Requested size: 303.53267pt x 79.3213pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 125--134
+Overfull \hbox (15.0pt too wide) in paragraph at lines 122--131
 []$[]$ 
  []
 
@@ -1488,41 +1494,70 @@ File: graphics/TransmitterGadgetSmall.pdf Graphic file (type pdf)
 
 <use graphics/TransmitterGadgetSmall.pdf>
 Package pdftex.def Info: graphics/TransmitterGadgetSmall.pdf used on input line
- 143.
+ 140.
 (pdftex.def)             Requested size: 195.12767pt x 233.90434pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 141--148
+Overfull \hbox (15.0pt too wide) in paragraph at lines 138--145
 []$[]$ 
  []
 
 [32 <./graphics/fig-clause-hex.pdf> <./graphics/TransmitterGadgetSmall.pdf>]
-Overfull \hbox (15.62889pt too wide) in paragraph at lines 217--220
-[]\T1/ptm/m/n/10 We can bound the num-ber of ob-sta-cle hexagons to rep-re-sent
- a vari-able gad-get to $\OT1/ztmcm/m/n/10 2 \OMS/ztmcm/m/n/10 ^^A \OML/ztmcm/m
-/it/10 D \OT1/ztmcm/m/n/10 = 2 \OMS/ztmcm/m/n/10 ^^A []$\T1/ptm/m/n/10 .
- []
+<graphics/VariableTrueTransmitterClause.pdf, id=511, 463.62912pt x 465.72395pt>
+File: graphics/VariableTrueTransmitterClause.pdf Graphic file (type pdf)
+<use graphics/VariableTrueTransmitterClause.pdf>
+Package pdftex.def Info: graphics/VariableTrueTransmitterClause.pdf used on inp
+ut line 167.
+(pdftex.def)             Requested size: 152.99808pt x 153.68938pt.
 
-[33] <graphics/fig-frame-hex.pdf, id=515, 477.26376pt x 197.06023pt>
+<graphics/TrueVariableNegatedLiteralTransmitter.pdf, id=512, 541.86443pt x 444.
+27982pt>
+File: graphics/TrueVariableNegatedLiteralTransmitter.pdf Graphic file (type pdf
+)
+ <use graphics/TrueVariableNegatedLiteralTransmitter.pdf>
+Package pdftex.def Info: graphics/TrueVariableNegatedLiteralTransmitter.pdf use
+d on input line 173.
+(pdftex.def)             Requested size: 178.81581pt x 146.6128pt.
+
+<graphics/FalseVariableNonNegatedLiteralTransmitter.pdf, id=513, 321.87253pt x 
+323.94524pt>
+File: graphics/FalseVariableNonNegatedLiteralTransmitter.pdf Graphic file (type
+ pdf)
+ <use graphics/FalseVariableNonNegatedLiteralTransmitter.pdf>
+Package pdftex.def Info: graphics/FalseVariableNonNegatedLiteralTransmitter.pdf
+ used on input line 183.
+(pdftex.def)             Requested size: 160.93587pt x 161.97221pt.
+
+<graphics/VariableFalseTransmitterClause.pdf, id=514, 463.63213pt x 465.72293pt
+>
+File: graphics/VariableFalseTransmitterClause.pdf Graphic file (type pdf)
+ <use graphics/VariableFalseTransmitterClause.pdf>
+Package pdftex.def Info: graphics/VariableFalseTransmitterClause.pdf used on in
+put line 189.
+(pdftex.def)             Requested size: 162.27367pt x 163.00546pt.
+ [33 <./graphics/VariableTrueTransmitterClause.pdf> <./graphics/TrueVariableNeg
+atedLiteralTransmitter.pdf> <./graphics/FalseVariableNonNegatedLiteralTransmitt
+er.pdf> <./graphics/VariableFalseTransmitterClause.pdf>] [34] [35]
+<graphics/fig-frame-hex.pdf, id=550, 477.26376pt x 197.06023pt>
 File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-frame-hex.pdf>
-Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 250.
+Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 344.
 (pdftex.def)             Requested size: 411.93767pt x 170.09091pt.
- [34 <./graphics/fig-frame-hex.pdf>]))
-(./ch4/chapter4.tex (./ch4/Hausdorff.tex [35]
+)) (./ch4/chapter4.tex (./ch4/Hausdorff.tex
+[36 <./graphics/fig-frame-hex.pdf>]
 Chapter 4.
-<graphics/HausdorffDistanceExample1.pdf, id=540, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=571, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
 ine 14.
 (pdftex.def)             Requested size: 145.79433pt x 104.3285pt.
-)) (../pdf/Thesis.bbl [36
+)) (../pdf/Thesis.bbl [37
 
  <./graphics/HausdorffDistanceExample1.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[37
+[38
 
 ] (../pdf/Thesis.aux)
 
@@ -1533,10 +1568,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17888 strings out of 493089
- 329953 string characters out of 6134841
+ 17912 strings out of 493089
+ 331109 string characters out of 6134841
  504597 words of memory out of 5000000
- 20821 multiletter control sequences out of 15000+600000
+ 20841 multiletter control sequences out of 15000+600000
  57965 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1560,10 +1595,10 @@ w/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (41 pages, 540738 bytes).
+Output written on ../pdf/Thesis.pdf (42 pages, 566177 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 383 compressed objects within 4 object streams
+ 635 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

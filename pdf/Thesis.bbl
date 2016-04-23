@@ -42,12 +42,6 @@ R.~Connelly, E.~D. Demaine, and G.~Rote.
 \newblock {Straightening polygonal arcs and convexifying polygonal cycles}.
 \newblock {\em Discrete Comput. Geom}, 30:205--239, 2003.
 
-\bibitem{cook1971complexity}
-Stephen~A Cook.
-\newblock The complexity of theorem-proving procedures.
-\newblock In {\em Proceedings of the third annual ACM symposium on Theory of
-  computing}, pages 151--158. ACM, 1971.
-
 \bibitem{EW90}
 P.~Eades and N.~C. Wormald.
 \newblock {Fixed edge-length graph drawing is NP-hard}.

@@ -34,8 +34,10 @@
 \contentsline {subsection}{\numberline {3.1.1}Variable Gadget}{30}
 \contentsline {subsection}{\numberline {3.1.2}Clause Gadget}{31}
 \contentsline {subsection}{\numberline {3.1.3}Transmitter Gadget}{32}
-\contentsline {chapter}{\numberline {4}Disk Arrangement}{36}
-\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{36}
-\contentsline {paragraph}{Hausdorff Distance}{36}
-\contentsline {paragraph}{$\epsilon $-approximation}{36}
+\contentsline {subsection}{\numberline {3.1.4}Functionality of the Auxilary Construction and Gadgets}{33}
+\contentsline {paragraph}{Modified Auxilary Construction}{35}
+\contentsline {chapter}{\numberline {4}Disk Arrangement}{37}
+\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{37}
+\contentsline {paragraph}{Hausdorff Distance}{37}
+\contentsline {paragraph}{$\epsilon $-approximation}{37}
 \contentsfinish 

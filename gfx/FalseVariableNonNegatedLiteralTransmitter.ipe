@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160416183547" modified="D:20160420201205"/>
+<info created="D:20160416183547" modified="D:20160422173953"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -1278,6 +1278,6 @@ h
 <text matrix="1 0 0 1 -12.3862 4.11361" transformations="translations" pos="6300.67 343.059" stroke="black" type="label" width="21.192" height="10.671" depth="5.01" valign="baseline" size="Huge">$x_i$</text>
 <text matrix="1 0 0 1 43.9224 26.3871" transformations="translations" pos="6300.67 343.059" stroke="black" type="label" width="21.192" height="10.671" depth="5.01" valign="baseline" size="Huge">$x_i$</text>
 <text matrix="1 0 0 1 92.0987 1.02265" transformations="translations" pos="6300.67 343.059" stroke="black" type="label" width="21.192" height="10.671" depth="5.01" valign="baseline" size="Huge">$x_i$</text>
-<text matrix="1 0 0 1 -112.956 132.565" transformations="translations" pos="6300.67 343.059" stroke="black" type="label" width="27.395" height="16.934" depth="9.03" valign="baseline" size="Huge">$C_j$</text>
+<text matrix="1 0 0 1 -116.801 128.401" transformations="translations" pos="6300.67 343.059" stroke="black" type="label" width="27.395" height="16.934" depth="9.03" valign="baseline" size="Huge">$C_j$</text>
 </page>
 </ipe>

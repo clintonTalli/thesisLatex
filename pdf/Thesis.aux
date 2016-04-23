@@ -185,15 +185,15 @@
 \@writefile{toc}{\contentsline {paragraph}{Modifying the Associated Graph of a P3SAT}{28}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces  This is an instance of an associated graph for a P3SAT overlayed onto a honeycomb grid. This honeycomb graph could correspond to Boolean formula $\left ( \lnot x_1 \lor \lnot x_2 \lor x_4 \right ) \land \left ( x_2 \lor \lnot x_3 \lor x_4 \right ) \land \left ( x_1 \lor \lnot x_3 \lor \lnot x_4 \right )$. \relax }}{28}}
 \newlabel{fig:HoneyCombAssociatedGraphSmall}{{3.1}{28}}
-\newlabel{sec:auxiliaryConstruction}{{3.1}{29}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Auxilary Construction}{29}}
+\newlabel{sec:auxiliaryConstruction}{{3.1}{29}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces  (a) A region of the honeycomb shown with scaling. The corridors and junctions formed from the first scaling is preserved after scaling the honeycomb grid to where the side lengths of the hexagon are $N(n,m)$. (b) The same region in (a) containing flexible hexagons. \relax }}{29}}
 \newlabel{fig:HoneycombFlixible.pdf}{{3.2}{29}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces  (a) A corridor when all unit hexagons are in state R. (b) A corridor where all unit hexagons are in state L. (c) A junction where a small hexagon between two corridors ensures that at most one unit hexagon enters the junction from those corridors.\relax }}{30}}
 \newlabel{fig:variable}{{3.3}{30}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces The small honeycomb-like structure within the large hexagons depicts cells.\relax }}{30}}
 \newlabel{fig:honeycomb}{{3.4}{30}}
-\newlabel{obs:corridor}{{1}{30}}
+\newlabel{obs:junction}{{1}{30}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Variable Gadget}{30}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces This depicts a variable gadget with $x_1 = T$. Carefully note that the flexible hexagons around $x_1$ are in the state $R$. Corridors adjacent to two obstacles of a variable in the honeycomb do not have $t$ flexible hexagons; these corridors simply have the flexible hexagons at the junctions.\relax }}{31}}
 \newlabel{fig:VariableGadgetSmall.pdf}{{3.5}{31}}
@@ -206,22 +206,34 @@
 \newlabel{transmitterGadget}{{3.1.3}{32}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces This depicts a transmitter gadget connected with the variable gadget shown in Figure \ref  {fig:VariableGadgetSmall.pdf}. \relax }}{32}}
 \newlabel{fig:TransmitterGadgetSmall.pdf}{{3.8}{32}}
-\newlabel{lem:aux}{{2}{33}}
-\citation{cook1971complexity}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces (a) A frame (built of 6 hinged regular hexagons) encloses a hexagonal tiling, and vertical paths connect all obstacle hexagons to the frame. (b) A corridor is widened to $\sqrt  {3}+1/N^2$. A connection between two adjacent obstacle hexagons is established via a skinny rhombus.\relax }}{34}}
-\newlabel{fig:frame}{{3.9}{34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Variable $x_i$ with state $R$ transmitting the non-negated literal $x_i$ into clause $C_j$.\relax }}{33}}
+\newlabel{fig:VariableTrueTransmitterClause.pdf}{{3.9}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Variable $x_i$ with state $R$ transmitting the negated literal $\lnot x_i$ into clause $C_j$.\relax }}{33}}
+\newlabel{fig:TrueVariableNegatedLiteralTransmitter.pdf}{{3.10}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Variable $x_i$ with state $L$ transmitting the non-negated literal $x_i$ into clause $C_j$.\relax }}{33}}
+\newlabel{fig:FalseVariableNonNegatedLiteralTransmitter.pdf}{{3.11}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Variable $x_i$ with state $L$ transmitting the negated literal $\lnot x_i$ into clause $C_j$.\relax }}{33}}
+\newlabel{fig:VariableFalseTransmitterClause.pdf}{{3.12}{33}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Functionality of the Auxilary Construction and Gadgets}{33}}
+\newlabel{obs:corridor}{{2}{33}}
+\newlabel{obs:junction}{{3}{34}}
+\newlabel{lem:aux}{{2}{34}}
+\@writefile{toc}{\contentsline {paragraph}{Modified Auxilary Construction}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces (a) A frame (built of 6 hinged regular hexagons) encloses a hexagonal tiling, and vertical paths connect all obstacle hexagons to the frame. (b) A corridor is widened to $\sqrt  {3}+1/N^2$. A connection between two adjacent obstacle hexagons is established via a skinny rhombus.\relax }}{36}}
+\newlabel{fig:frame}{{3.13}{36}}
+\newlabel{lem:aux}{{3}{36}}
 \bibstyle{plain}
 \bibdata{WorkCited}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Disk Arrangement}{36}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Disk Arrangement}{37}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{36}}
-\@writefile{toc}{\contentsline {paragraph}{Hausdorff Distance}{36}}
-\newlabel{eqn:ContactGraphV3-1}{{4.1}{36}}
-\newlabel{eqn:ContactGraphV3-2}{{4.2}{36}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces An illustrative example of $d(X,Y)$ and $d(Y,X)$ where $X$ is the inner curve, and $Y$ is the outer curve.\relax }}{36}}
-\newlabel{fig:HausdorffDistanceExample1.pdf}{{4.1}{36}}
-\@writefile{toc}{\contentsline {paragraph}{$\epsilon $-approximation}{36}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{37}}
+\@writefile{toc}{\contentsline {paragraph}{Hausdorff Distance}{37}}
+\newlabel{eqn:ContactGraphV3-1}{{4.1}{37}}
+\newlabel{eqn:ContactGraphV3-2}{{4.2}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces An illustrative example of $d(X,Y)$ and $d(Y,X)$ where $X$ is the inner curve, and $Y$ is the outer curve.\relax }}{37}}
+\newlabel{fig:HausdorffDistanceExample1.pdf}{{4.1}{37}}
+\@writefile{toc}{\contentsline {paragraph}{$\epsilon $-approximation}{37}}
 \bibcite{abbott2012hinged}{1}
 \bibcite{aigner2010hilbert}{2}
 \bibcite{BET+99}{3}
@@ -230,19 +242,18 @@
 \bibcite{BK98}{6}
 \bibcite{CDD+10}{7}
 \bibcite{CDR03}{8}
-\bibcite{cook1971complexity}{9}
-\bibcite{EW90}{10}
-\bibcite{NAE3SATisNPhard}{11}
-\bibcite{jonsson2003public}{12}
-\bibcite{karp1972reducibility}{13}
-\bibcite{klemzthesis}{14}
-\bibcite{koebe1936kontaktprobleme}{15}
-\bibcite{kuratowski1930probleme}{16}
-\bibcite{lenstra1993number}{17}
-\bibcite{lichtenstein1982planar}{18}
-\bibcite{menezes1996handbook}{19}
-\bibcite{rivest1978method}{20}
-\bibcite{skiena2009algorithm}{21}
-\bibcite{Str05}{22}
-\bibcite{10.23073621846}{23}
+\bibcite{EW90}{9}
+\bibcite{NAE3SATisNPhard}{10}
+\bibcite{jonsson2003public}{11}
+\bibcite{karp1972reducibility}{12}
+\bibcite{klemzthesis}{13}
+\bibcite{koebe1936kontaktprobleme}{14}
+\bibcite{kuratowski1930probleme}{15}
+\bibcite{lenstra1993number}{16}
+\bibcite{lichtenstein1982planar}{17}
+\bibcite{menezes1996handbook}{18}
+\bibcite{rivest1978method}{19}
+\bibcite{skiena2009algorithm}{20}
+\bibcite{Str05}{21}
+\bibcite{10.23073621846}{22}
 \ttl@finishall
