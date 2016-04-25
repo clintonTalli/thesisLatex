@@ -1,8 +1,9 @@
-#/usr/bin/bash
+i#/usr/bin/bash
 pdflatex --output-directory ../pdf Thesis.tex
 cd ../pdf
-pwd
 bash buildBiblio
 cd ../tex
-pwd
 pdflatex --output-directory ../pdf Thesis.tex
+cd ../pdf
+bash buildBiblio
+cd ../tex

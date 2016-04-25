@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 APR 2016 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  24 APR 2016 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,7 +799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--31
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
 []| 
  []
 
@@ -1433,6 +1433,10 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 14--24
 []$[]$ 
  []
 
+
+LaTeX Warning: Reference `fig:honeycomb' on page 29 undefined on input line 31.
+
+
 <graphics/fig-variable-hex+.pdf, id=431, 515.06215pt x 110.3061pt>
 File: graphics/fig-variable-hex+.pdf Graphic file (type pdf)
 
@@ -1445,12 +1449,12 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 44--55
  []
 
 [29 <./graphics/FlexibleHexagons.pdf>]
-<graphics/honeycomb.pdf, id=441, 195.70114pt x 197.05621pt>
-File: graphics/honeycomb.pdf Graphic file (type pdf)
+<graphics/ActiveChannel.pdf, id=441, 648.77379pt x 237.70808pt>
+File: graphics/ActiveChannel.pdf Graphic file (type pdf)
 
-<use graphics/honeycomb.pdf>
-Package pdftex.def Info: graphics/honeycomb.pdf used on input line 63.
-(pdftex.def)             Requested size: 130.08731pt x 130.99562pt.
+<use graphics/ActiveChannel.pdf>
+Package pdftex.def Info: graphics/ActiveChannel.pdf used on input line 63.
+(pdftex.def)             Requested size: 390.25534pt x 142.99228pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 61--68
 []$[]$ 
@@ -1460,104 +1464,83 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 61--68
 File: graphics/VariableGadgetSmall.pdf Graphic file (type pdf)
 
 <use graphics/VariableGadgetSmall.pdf>
-Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 95
+Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 96
 .
 (pdftex.def)             Requested size: 195.12767pt x 147.67279pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 93--100
+Overfull \hbox (15.0pt too wide) in paragraph at lines 94--101
 []$[]$ 
  []
 
-[30 <./graphics/fig-variable-hex+.pdf> <./graphics/honeycomb.pdf>]
-<graphics/fig-transmitter-hex.pdf, id=460, 385.1429pt x 100.51854pt>
+[30 <./graphics/fig-variable-hex+.pdf> <./graphics/ActiveChannel.pdf>]
+<graphics/fig-transmitter-hex.pdf, id=463, 385.1429pt x 100.51854pt>
 File: graphics/fig-transmitter-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-transmitter-hex.pdf>
 Package pdftex.def Info: graphics/fig-transmitter-hex.pdf used on input line 10
-5.
+6.
 (pdftex.def)             Requested size: 303.53267pt x 79.22163pt.
 
-<graphics/fig-clause-hex.pdf, id=461, 388.96014pt x 101.64073pt>
+<graphics/fig-clause-hex.pdf, id=464, 388.96014pt x 101.64073pt>
 File: graphics/fig-clause-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-clause-hex.pdf>
-Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 124.
+Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 129.
 (pdftex.def)             Requested size: 303.53267pt x 79.3213pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 122--131
+Overfull \hbox (15.0pt too wide) in paragraph at lines 127--136
 []$[]$ 
  []
 
 [31 <./graphics/VariableGadgetSmall.pdf> <./graphics/fig-transmitter-hex.pdf>]
-<graphics/TransmitterGadgetSmall.pdf, id=486, 156.52478pt x 187.62094pt>
-File: graphics/TransmitterGadgetSmall.pdf Graphic file (type pdf)
+<graphics/TransmitterDrawingTranslation.pdf, id=489, 462.85924pt x 164.19342pt>
+File: graphics/TransmitterDrawingTranslation.pdf Graphic file (type pdf)
+<use graphics/TransmitterDrawingTranslation.pdf>
+Package pdftex.def Info: graphics/TransmitterDrawingTranslation.pdf used on inp
+ut line 146.
+(pdftex.def)             Requested size: 286.19078pt x 101.52327pt.
 
-<use graphics/TransmitterGadgetSmall.pdf>
-Package pdftex.def Info: graphics/TransmitterGadgetSmall.pdf used on input line
- 140.
-(pdftex.def)             Requested size: 195.12767pt x 233.90434pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 138--145
+Overfull \hbox (15.0pt too wide) in paragraph at lines 144--151
 []$[]$ 
  []
 
-[32 <./graphics/fig-clause-hex.pdf> <./graphics/TransmitterGadgetSmall.pdf>]
-<graphics/VariableTrueTransmitterClause.pdf, id=511, 463.62912pt x 465.72395pt>
-File: graphics/VariableTrueTransmitterClause.pdf Graphic file (type pdf)
-<use graphics/VariableTrueTransmitterClause.pdf>
-Package pdftex.def Info: graphics/VariableTrueTransmitterClause.pdf used on inp
-ut line 167.
-(pdftex.def)             Requested size: 152.99808pt x 153.68938pt.
 
-<graphics/TrueVariableNegatedLiteralTransmitter.pdf, id=512, 541.86443pt x 444.
-27982pt>
-File: graphics/TrueVariableNegatedLiteralTransmitter.pdf Graphic file (type pdf
-)
- <use graphics/TrueVariableNegatedLiteralTransmitter.pdf>
-Package pdftex.def Info: graphics/TrueVariableNegatedLiteralTransmitter.pdf use
-d on input line 173.
-(pdftex.def)             Requested size: 178.81581pt x 146.6128pt.
+<graphics/VariableJunctionTransmitterSelection.pdf, id=490, 964.13202pt x 979.6
+4995pt>
+File: graphics/VariableJunctionTransmitterSelection.pdf Graphic file (type pdf)
 
-<graphics/FalseVariableNonNegatedLiteralTransmitter.pdf, id=513, 321.87253pt x 
-323.94524pt>
-File: graphics/FalseVariableNonNegatedLiteralTransmitter.pdf Graphic file (type
- pdf)
- <use graphics/FalseVariableNonNegatedLiteralTransmitter.pdf>
-Package pdftex.def Info: graphics/FalseVariableNonNegatedLiteralTransmitter.pdf
- used on input line 183.
-(pdftex.def)             Requested size: 160.93587pt x 161.97221pt.
+ <use graphics/VariableJunctionTransmitterSelection.pdf>
+Package pdftex.def Info: graphics/VariableJunctionTransmitterSelection.pdf used
+ on input line 166.
+(pdftex.def)             Requested size: 346.89731pt x 352.47939pt.
 
-<graphics/VariableFalseTransmitterClause.pdf, id=514, 463.63213pt x 465.72293pt
->
-File: graphics/VariableFalseTransmitterClause.pdf Graphic file (type pdf)
- <use graphics/VariableFalseTransmitterClause.pdf>
-Package pdftex.def Info: graphics/VariableFalseTransmitterClause.pdf used on in
-put line 189.
-(pdftex.def)             Requested size: 162.27367pt x 163.00546pt.
- [33 <./graphics/VariableTrueTransmitterClause.pdf> <./graphics/TrueVariableNeg
-atedLiteralTransmitter.pdf> <./graphics/FalseVariableNonNegatedLiteralTransmitt
-er.pdf> <./graphics/VariableFalseTransmitterClause.pdf>] [34] [35]
-<graphics/fig-frame-hex.pdf, id=550, 477.26376pt x 197.06023pt>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 164--171
+[]$[]$ 
+ []
+
+[32 <./graphics/fig-clause-hex.pdf> <./graphics/TransmitterDrawingTranslation.p
+df>] [33 <./graphics/VariableJunctionTransmitterSelection.pdf>] [34] [35]
+[36] <graphics/fig-frame-hex.pdf, id=554, 477.26376pt x 197.06023pt>
 File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-frame-hex.pdf>
-Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 344.
+Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 471.
 (pdftex.def)             Requested size: 411.93767pt x 170.09091pt.
-)) (./ch4/chapter4.tex (./ch4/Hausdorff.tex
-[36 <./graphics/fig-frame-hex.pdf>]
+ [37 <./graphics/fig-frame-hex.pdf>]))
+(./ch4/chapter4.tex (./ch4/Hausdorff.tex [38]
 Chapter 4.
-<graphics/HausdorffDistanceExample1.pdf, id=571, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=576, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
 ine 14.
 (pdftex.def)             Requested size: 145.79433pt x 104.3285pt.
-)) (../pdf/Thesis.bbl [37
+)) (../pdf/Thesis.bbl [39
 
  <./graphics/HausdorffDistanceExample1.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[38
+[40
 
 ] (../pdf/Thesis.aux)
 
@@ -1568,10 +1551,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17912 strings out of 493089
- 331109 string characters out of 6134841
+ 17898 strings out of 493089
+ 330359 string characters out of 6134841
  504597 words of memory out of 5000000
- 20841 multiletter control sequences out of 15000+600000
+ 20830 multiletter control sequences out of 15000+600000
  57965 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1579,26 +1562,27 @@ Here is how much of TeX's memory you used:
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
-b8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (42 pages, 566177 bytes).
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
+symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8
+a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/Thesis.pdf (44 pages, 558852 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
+ 642 PDF objects out of 1000 (max. 8388607)
+ 414 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
