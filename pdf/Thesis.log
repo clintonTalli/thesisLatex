@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  24 APR 2016 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  24 APR 2016 19:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1485,10 +1485,10 @@ Package pdftex.def Info: graphics/fig-transmitter-hex.pdf used on input line 10
 File: graphics/fig-clause-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-clause-hex.pdf>
-Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 129.
+Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 125.
 (pdftex.def)             Requested size: 303.53267pt x 79.3213pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 127--136
+Overfull \hbox (15.0pt too wide) in paragraph at lines 123--132
 []$[]$ 
  []
 
@@ -1497,10 +1497,10 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 127--136
 File: graphics/TransmitterDrawingTranslation.pdf Graphic file (type pdf)
 <use graphics/TransmitterDrawingTranslation.pdf>
 Package pdftex.def Info: graphics/TransmitterDrawingTranslation.pdf used on inp
-ut line 146.
+ut line 142.
 (pdftex.def)             Requested size: 286.19078pt x 101.52327pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 144--151
+Overfull \hbox (15.0pt too wide) in paragraph at lines 140--147
 []$[]$ 
  []
 
@@ -1511,10 +1511,10 @@ File: graphics/VariableJunctionTransmitterSelection.pdf Graphic file (type pdf)
 
  <use graphics/VariableJunctionTransmitterSelection.pdf>
 Package pdftex.def Info: graphics/VariableJunctionTransmitterSelection.pdf used
- on input line 166.
+ on input line 162.
 (pdftex.def)             Requested size: 346.89731pt x 352.47939pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 164--171
+Overfull \hbox (15.0pt too wide) in paragraph at lines 160--167
 []$[]$ 
  []
 
@@ -1524,23 +1524,48 @@ df>] [33 <./graphics/VariableJunctionTransmitterSelection.pdf>] [34] [35]
 File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-frame-hex.pdf>
-Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 471.
+Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 469.
 (pdftex.def)             Requested size: 411.93767pt x 170.09091pt.
- [37 <./graphics/fig-frame-hex.pdf>]))
-(./ch4/chapter4.tex (./ch4/Hausdorff.tex [38]
+ [37 <./graphics/fig-frame-hex.pdf>]
+<graphics/AngularDisplacement.pdf, id=573, 193.9245pt x 48.74611pt>
+File: graphics/AngularDisplacement.pdf Graphic file (type pdf)
+
+<use graphics/AngularDisplacement.pdf>
+Package pdftex.def Info: graphics/AngularDisplacement.pdf used on input line 53
+2.
+(pdftex.def)             Requested size: 195.12767pt x 49.0487pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 530--537
+[]$[]$ 
+ []
+
+<graphics/NonCanonicalPosition.pdf, id=574, 186.7477pt x 197.16661pt>
+File: graphics/NonCanonicalPosition.pdf Graphic file (type pdf)
+
+<use graphics/NonCanonicalPosition.pdf>
+Package pdftex.def Info: graphics/NonCanonicalPosition.pdf used on input line 5
+40.
+(pdftex.def)             Requested size: 130.08731pt x 137.3538pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 538--545
+[]$[]$ 
+ []
+
+[38 <./graphics/AngularDisplacement.pdf>])) (./ch4/chapter4.tex
+(./ch4/Hausdorff.tex [39 <./graphics/NonCanonicalPosition.pdf>]
 Chapter 4.
-<graphics/HausdorffDistanceExample1.pdf, id=576, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=594, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
 ine 14.
 (pdftex.def)             Requested size: 145.79433pt x 104.3285pt.
-)) (../pdf/Thesis.bbl [39
+)) (../pdf/Thesis.bbl [40
 
  <./graphics/HausdorffDistanceExample1.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[40
+[41
 
 ] (../pdf/Thesis.aux)
 
@@ -1551,10 +1576,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17898 strings out of 493089
- 330359 string characters out of 6134841
+ 17908 strings out of 493089
+ 330704 string characters out of 6134841
  504597 words of memory out of 5000000
- 20830 multiletter control sequences out of 15000+600000
+ 20838 multiletter control sequences out of 15000+600000
  57965 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1579,10 +1604,10 @@ symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (44 pages, 558852 bytes).
+Output written on ../pdf/Thesis.pdf (45 pages, 563599 bytes).
 PDF statistics:
- 642 PDF objects out of 1000 (max. 8388607)
- 414 compressed objects within 5 object streams
+ 659 PDF objects out of 1000 (max. 8388607)
+ 424 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 

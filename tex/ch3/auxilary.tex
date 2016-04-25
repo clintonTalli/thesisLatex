@@ -113,10 +113,6 @@ This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexag
 When a binary variable $x_i = T$, we will say that the variable in state $R$ and that the cycle of small hexagons around the variable gadget are in a ``clockwise direction''.
 When a binary variable $x_i = F$, we will say that the variable is in state $L$ and that the cycle of small hexagons around the variable gadget are in a ``counter-clockwise direction''. 
 
-ActiveChannel.pdf
-VariableGadgetTruthness.pdf
-
-
 \paragraph{Clause Gadget}
 Recall that a clause from a Boolean formula $\Phi$ in 3-CNF has three literals.  If $\Phi$ is a  'yes' instance, then at least one literal in every clause of $\Phi$ is true.  We construct the clause gadget to model this fact about Boolean formulas in 3-CNF.
 
@@ -175,7 +171,9 @@ The second column transmits a ``false'' value between the variable gadget and cl
 The variable gadgets in the first row are are in state $R$, i.e. variable $x_i = T$.
 The variable gadgets in the second row are are in state $L$, i.e. variable $x_i = F$.
 
-At the common junction with the variable gadget $x_i$, we attach one additional small hexagon to one of the vertices (refer to Fig.~\ref{fig:transmitter}). 
+For each junction in the transmitter gadget, we attach a small hexagon in the junction as shown in Figure \ref{fig:transmitter} except at the clause junction.
+
+%At the common junction with the variable gadget $x_i$, we attach one additional small hexagon to one of the vertices (refer to Fig.~\ref{fig:transmitter}). 
 If the literal $x_i$ (resp., $\overline{x}_i$) appears in $C_j$, then we attach a small hexagon to the corner of this junction such that if $x_i=F$ (resp., $\overline{x}_i=F)$, then the unit hexagon of the transmitter gadget cannot enter this junction. 
 
 A variable gadget for vertex $v$ in the associated graph of a P3SAT Boolean formula encompasses at least $2 \cdot \deg (v)$ consecutive obstacle hexagons. 
@@ -483,7 +481,7 @@ follows that the polygonal linkage is realizable if and only if $\Phi$ is satisf
 
 \begin{lem}\label{lem:aux}
 For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons has the following properties: (1) it has polynomial size; (2) the hinge graph of the modified auxilary construction is a tree;
-(3) it admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is satisfiable.
+(3) it admits a realization such that the obstacle polygons has a maximal displacement from canonical position if and only if $\Phi$ is satisfiable.
 \end{lem}
 
 \begin{proof}
@@ -506,10 +504,45 @@ Thus, the upper bound of all junctions in all transmitter gadgets is $$6 \cdot \
 The upper bound on the total number of flexible hexagons is
 $$m \cdot 6 \cdot t \cdot 2 \cdot D + 6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
 
-\noindent (2) Recall that a forest is a disjoint union of trees. 
-By construction, each flexible hexagon is hinged to exactly one obstacle hexagon.  
-There are no hinges between obstacle hexagons.
-Consequently, each component of the hinge graph is a star, where the center corresponds to an obstacle hexagon and the leafs corresponds to the flexable hexagons attached to it.
+For each corridor, there is one skinny rhombus attached to one flexible hexagon in the corridor.  If the number of corridors is bounded polynomially, then the number of skinny rhombi is bounded by the same bound of the corridor.
+
+\noindent (2) Recall that in the original auxilary construnction is a forest.
+each obstacle hexagon with hinged flexible hexagons (and small hexagons) is disjoint from the remainder of the the construction. 
+The skinny rhombi in the modified auxilary construction connect the disjointed trees to form one tree.
+
+\noindent (3) 
+
+\begin{enumerate}
+\item Suppose the honeycomb grid has a total height of $h$
+\item the number of obstacle hexagons along a vertical path from the top/bottom of the grid is K and the sum of their heights is $K \cdot h_\text{O}$.  
+\item the different of (1) and (2) is $h - K \cdot h_\text{O}$.
+\item ???
+\item profit
+\end{enumerate}
+
+Maclaurin series of $\tan^{-1}$ is:
+$$x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+\frac{x^9}{9}+O(x^{10})$$
+
+
+$$\alpha \leq \tan^{-1} \frac{3}{N} \leq M = \frac{3}{N}$$
+$$ \lim_{x\rightarrow 0} \tan^{-1} x = x$$
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=0.45\columnwidth]{graphics/AngularDisplacement.pdf}
+
+\end{center}
+%\end{figure}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=0.3\columnwidth]{graphics/NonCanonicalPosition.pdf}
+
+\end{center}
+%\end{figure}
+\end{minipage}
+
 \end{proof}
 
 
