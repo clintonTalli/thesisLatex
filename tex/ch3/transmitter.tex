@@ -1,0 +1,49 @@
+\paragraph{Transmitter Gadget}\label{transmitterGadget}
+In the planar 3-SAT graph $A(\Phi)$, Every variable vertex has an associated cyclic order of edges.
+In Figure \ref{fig:TransmitterGadgetSmall.pdf}(b), we have variable vertex $x_i$ with counter-clockwise cyclic order of edges $\lr{\left\lbrace x_i,C_1\right\rbrace,\left\lbrace x_i,C_2\right\rbrace,\left\lbrace x_i,C_3\right\rbrace }$. 
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/TransmitterDrawingTranslation.pdf}
+\captionof{figure}{(a) The large vertices on the variable gadget indicate the the corresponding junction of where a tranmitter gadget corresponding to an edge from $x_i$ to a clause in $\Phi$.  (b) The corresponding edges about $x_i$ of the bipartite planar graph $A(\Phi)$ and shows the cyclic order of edges about $x_i$.}\label{fig:TransmitterGadgetSmall.pdf}
+\end{center}
+%\end{figure}
+\end{minipage} 
+
+The order in which transmitter gadgets about the obstacle hexagons of a variable gadget follows from the counter-clockwise cyclic order of $A(\Phi)$. 
+A {\bf transmitter gadget} is constructed for each edge $(x_i,C_j)$ of the graph $A(\Phi)$; it consists of a sequence of junctions and corridors from a variable gadget's junction to a clause junction.
+For each variable-clause edge of $A(\Phi)$, there are two possible junctions of for the corresponding transmitter gadget.
+Figure \ref{fig:TransmitterGadgetSmall.pdf}(a) shows an example of the possible junctions (indicated with large vertices on the appropriate obstacle hexagons of the variable gadget) in which a transmitter gadget can be connected that corresponds to an edge in Figure \ref{fig:TransmitterGadgetSmall.pdf}(b).
+Choosing the junction of the variable gadget to attach a transmitter gadget depends on the truth value of the variable and the type of literal found in the clause.
+\begin{itemize}
+\item[(a)]  For an edge $(x_i,C_j)$ of the graph $A(\Phi)$, if the non-negated literal of $x_i$ exists in $C_j$ where $x_i=T$, attach the transmitter gadget to the non-active junction (see Figure \ref{fig:VariableJunctionTransmitterSelection.pdf}(a)).
+\item[(b)]  For an edge $(x_i,C_j)$ of the graph $A(\Phi)$, if the negated literal of $x_i$ exists in $C_j$ where $x_i=T$, attach the transmitter gadget to the active junction (see Figure \ref{fig:VariableJunctionTransmitterSelection.pdf}(b)).
+\item[(c)] For an edge $(x_i,C_j)$ of the graph $A(\Phi)$, if the negated literal of $x_i$ exists in $C_j$ where $x_i=F$, attach the transmitter to the non-active junction (see Figure \ref{fig:VariableJunctionTransmitterSelection.pdf}(c)).
+\item[(d)] For an edge $(x_i,C_j)$ of the graph $A(\Phi)$, if the non-negated literal of $x_i$ exists in $C_j$ where $x_i=F$, attach the transmitter gadget to the active junction (see Figure \ref{fig:VariableJunctionTransmitterSelection.pdf}(d)).
+\end{itemize}
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=0.80\columnwidth]{graphics/VariableJunctionTransmitterSelection.pdf}
+\captionof{figure}{These four figures depict an example of placing a transmitter gadget corresponding to edge $\left\lbrace x_i, C_j \right\rbrace$.}\label{fig:VariableJunctionTransmitterSelection.pdf}
+\end{center}
+%\end{figure}
+\end{minipage} 
+
+Figure \ref{fig:VariableJunctionTransmitterSelection.pdf} shows an example of each rule on choosing a junction to attach a transmitter gadget.
+The first column transmits a ``true'' value between the variable gadget and clause junction.
+The second column transmits a ``false'' value between the variable gadget and clause junction.
+The variable gadgets in the first row are are in state $R$, i.e. variable $x_i = T$.
+The variable gadgets in the second row are are in state $L$, i.e. variable $x_i = F$.
+
+At the common junction with the variable gadget $x_i$, we attach one additional small hexagon to one of the vertices (refer to Fig.~\ref{fig:transmitter}). 
+If the literal $x_i$ (resp., $\overline{x}_i$) appears in $C_j$, then we attach a small hexagon to the corner of this junction such that if $x_i=F$ (resp., $\overline{x}_i=F)$, then the unit hexagon of the transmitter gadget cannot enter this junction. 
+
+A variable gadget for vertex $v$ in the associated graph of a P3SAT Boolean formula encompasses at least $2 \cdot \deg (v)$ consecutive obstacle hexagons. 
+The arrangement of the consecutive obstacle hexagons are in staggered fashion about a horizontal line where there are at least $\deg (v)$ obstacle hexagons in the upper portion of the staggering arrangement and at least $\deg (v)$ obstacle hexagons in the lower portion of the staggering arrangement.
+
+%The junction placement of a transmitter gadget depends upon the variable's state, $R$ or $L$.
+%When the variable is false (i.e. state $L$), the tranmitter is place on a right-most junction above a variable gadget's obstacle hexagon or a left-most junction below a varaiable gadget's obstacle hexagon.
+%Similarly, when the variable is true (i.e. state $R$), the tranmitter is place on a left-most junction above a variable gadget's obstacle hexagon or a right-most junction below a varaiable gadget's obstacle hexagon.
+%When $x_i = F$ , no hexagon from the transmitter enters a junction of the variable gadget.
+%This ensures that false literals are always correctly transmitted to the clause junctions (and true literals can always transmit correctly).
