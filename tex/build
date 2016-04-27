@@ -4,6 +4,4 @@ cd ../pdf
 bash buildBiblio
 cd ../tex
 pdflatex --output-directory ../pdf Thesis.tex
-cd ../pdf
-bash buildBiblio
-cd ../tex
+pdflatex --output-directory ../pdf Thesis.tex

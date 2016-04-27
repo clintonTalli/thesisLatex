@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160424185140" modified="D:20160424185140"/>
+<info created="D:20160424185140" modified="D:20160426180540"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -258,7 +258,7 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="0.532189 0 0 0.532189 1658.69 1850.47" stroke="black" pen="ultrafat">
+<path layer="alpha" matrix="0.532189 0 0 0.532189 1662.98 1852.52" stroke="black" pen="ultrafat">
 3200 4224 m
 3520 4224 l
 </path>
@@ -294,6 +294,42 @@ h
 h
 </path>
 <path matrix="0.739914 0.198259 -0.198259 0.739914 1616.01 445.929" stroke="black" pen="ultrafat">
+3635.78 3936 m
+3617.89 3966.98 l
+3582.11 3966.98 l
+3564.22 3936 l
+3582.11 3905.02 l
+3617.89 3905.02 l
+h
+</path>
+<path matrix="0.766017 0 0 0.766017 617.786 912.697" stroke="black" pen="ultrafat">
+3635.78 3936 m
+3617.89 3966.98 l
+3582.11 3966.98 l
+3564.22 3936 l
+3582.11 3905.02 l
+3617.89 3905.02 l
+h
+</path>
+<path matrix="0.763101 0.0667627 -0.0667627 0.763101 893.182 782.065" stroke="black" pen="ultrafat">
+3635.78 3936 m
+3617.89 3966.98 l
+3582.11 3966.98 l
+3564.22 3936 l
+3582.11 3905.02 l
+3617.89 3905.02 l
+h
+</path>
+<path matrix="-0.763101 0.0667627 0.0667627 0.763101 5861.95 732.395" stroke="black" pen="ultrafat">
+3635.78 3936 m
+3617.89 3966.98 l
+3582.11 3966.98 l
+3564.22 3936 l
+3582.11 3905.02 l
+3617.89 3905.02 l
+h
+</path>
+<path matrix="-0.763101 0.0667627 0.0667627 0.763101 5861.95 831.737" stroke="black" pen="ultrafat">
 3635.78 3936 m
 3617.89 3966.98 l
 3582.11 3966.98 l
