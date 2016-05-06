@@ -36,9 +36,12 @@ Recall Figure \ref{fig:HingedHaberdasher} illustrating the hinged dissection tha
 % polygonal linkages, a reconfiguration is 
 
 \subsection{Configuration Spaces of Graph Drawings}
-Recall that for a graph drawing we have an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a straight line segment, $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$, and does not pass through other vertices.
-For each vertex of $G$, the embedding of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  
-By enumerating each vertex of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a projection mapping from $\mu: \Pi \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{th}$ coordinates in $\bbR^{2\vert V \vert}$.  
+Recall that for a graph drawing we have an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane.  %and for each edge $\curlybraces{u,v} \in E$, a straight line segment, $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$, and does not pass through other vertices.
+The mapping $\Pi$ uniquely determines each edge.
+An edge $\curlybraces{u,v} \in E$, is mapped to a straight line segment, $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$, and does not pass through other vertices.
+%For each vertex of $G$, the embedding of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  
+Let $\DD_G$ be the set of all drawings of the graph $G$.  
+By labelling the vertices of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a mapping from $\mu: \DD_G \mapsto \bbR^{2\vert V \vert}$ where the coordinates of $\Pi(v_k)$ are the $(2k)^\text{th}$ and $(2k+1)^\text{st}$ coordinates in $\bbR^{2\vert V \vert}$.  
 $\mu(\Pi)$ is a configuration.
 The configuration space is the set of $\mu(\Pi)$ for all drawings $\Pi$.  
 
@@ -48,19 +51,22 @@ Consider drawings of a graph that respects the length assignment.
 A \textit{realization} of a linkage, $(G,\ell)$, is a drawing of a graph, $\Pi$, such that for every edge $\{u,v\} \in E$, $\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert = \left\vert \Pi(v) - \Pi(u) \right\vert$. 
 A \textit{plane realization} is a plane drawing with the property, $\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert$.
 First let's define the space of realizations for a corresponding linkage, i.e.:
-$$P_{(G,\ell)} = \set{\Pi_{(G,\ell)}}{\forall \{u,v\} \in E\text{, }\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert}$$
-With respect to $P$, we can establish a \textit{configuration space} that allows one to study problems of motion.  For each vertex of $G$, the drawing of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  
-By enumerating each vertex of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a projection mapping from $\mu: P \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{th}$ coordinates in $\bbR^{2\vert V \vert}$.  
-The configuration space is $\mu(P)$.  
+$$P_{(G,\ell)} = \set{\Pi\in \DD_G }{\forall \{u,v\} \in E\text{, }\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert}$$
+With respect to $P_{(G,\ell)}$, we can establish a configuration space that allows one to study problems of motion.  
+For each vertex of $G$, the drawing of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  
+By enumerating each vertex of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a mapping from $\mu: P_{(G,\ell)} \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{st}$ coordinates in $\bbR^{2\vert V \vert}$.  
+The configuration space is $\mu\lr{P_{(G,\ell)}}$.  
 
 Using standard definitions from real analysis, we can begin to pose problems about linkages with respect to a corresponding configuration space.  
-We define a path $\gamma: [0,1]\mapsto \mu(P)$ where $\gamma(0)$ corresponds the the projection of a realization of a linkage $\Pi_0$ and $\gamma(1)$ corresponds to another realization of a linkage $\Pi_1$.  
-If for any two elements $a,b \in \mu(P)$ that there exists a continuous path $\gamma$ such that $\gamma(0)=a$ and $\gamma(1)=b$, $\mu(P)$ is said to be path connected.   
-For $\gamma$ to be continuous we would have that for every $\epsilon > 0$, there exists a $\delta >0$ such that if $x,y \in [0,1]$ and $\vert x-y \vert <\delta$ then $\vlr{\vlr{\gamma(x)-\gamma(y)}}<\epsilon$.
+A continuous function $\gamma: [0,1]\mapsto \mu\lr{P_{(G,\ell)}}$ is a path from a realization $\gamma(0)$ to another realization $\gamma(1)$.
 $\gamma$ can be thought of as an animation of drawings that starts at $\gamma(0)$ and ends at $\gamma(1)$.
-To ask if $\mu(P)$ is a connected space, is to ask if $\mu(P)$ is connected in $\bbR^{2\vert V \vert}$.
+%corresponds to the mapping of a realization of a linkage $\Pi_0$ and $\gamma(1)$ corresponds to another realization of a linkage $\Pi_1$.  
+%If for any two elements $a,b \in \mu(P)$ that there exists a continuous path $\gamma$ such that $\gamma(0)=a$ and $\gamma(1)=b$, $\mu(P)$ is said to be path connected.   
+%For $\gamma$ to be continuous we would have that for every $\epsilon > 0$, there exists a $\delta >0$ such that if $x,y \in [0,1]$ and $\vert x-y \vert <\delta$ then $\vlr{\vlr{\gamma(x)-\gamma(y)}}<\epsilon$.
+Any two realizations in the same path-connected component can be animated from one to the other continuously.
 The Carpenter's Rule states that every realization of a path linkage can be continuously moved (without self-intersection) to any other realization \cite{CDR03,Str05}.
-In other words, the realization space of such a linkage is always connected.
+To ask if $\mu\lr{P_{(G,\ell)}}$ is a connected space, is to ask if $\mu(P)$ is connected in $\bbR^{2\vert V \vert}$.
+In other words, the realization space of such a linkage is always path-connected.
 
 % \subsection{Configuration Spaces of Linkages}
 
@@ -92,19 +98,29 @@ In other words, the realization space of such a linkage is always connected.
 \end{figure}
 
 \subsection{Configuration Spaces of Polygonal Linkages}
+The placement of a polygon is described by an isometry of Euclidian plane.
+An isometry is a composition of a translation, a rotation, and a possible reflection.
+As such, the isometry can be descibed as three parameters: $\lr{a,b,\theta}$ where $(a,b)$ is a translation vector; if $\theta \geq 0$, it describes a counter-clockwise rotation by $\theta$ and if $\theta < 0$, it descibes a reflection in the x-axis followed by a counter-clockwise rotation $\theta$.
+For $m$ polygons there will be $3 m$ parameters.
 Recall a realization of a polygonal linkage is an interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).
 First consider the set of all realizations for the polygonal linkage $\left(\PP,\HH\right)$ and call it $P$.  
-For any realization $R \in P$, the parameterization $\mu:R \mapsto \bbR^{2m}$ where $m$ is the number of distinct vertices in $\PP$.  The configuration space is the set $\mu(P)$.
+$\mu:P \mapsto \bbR^{3m}$ where $m$ is the number of polygons in $\PP$ is the configuration space function and the configuration space is the set $\mu(P)$. 
 
  \subsection{Configuration Spaces of Disk Arrangements}
-%show an equivalent disk arrangment to the geometric dissection in thier corresponding/equivalent
-% configurations.
+rewrite where theta is not needed.  disks are symmetric and rotation does not help.
+The placement of a polygon is described by an isometry of Euclidian plane.
+An isometry is a composition of a translation, a rotation, and a possible reflection.
+As such, the isometry can be descibed as three parameters: $\lr{a,b,\theta}$ where $(a,b)$ is a translation vector; if $\theta \geq 0$, it describes a counter-clockwise rotation by $\theta$ and if $\theta < 0$, it descibes a reflection in the x-axis followed by a counter-clockwise rotation $\theta$.
+For $m$ polygons there will be $3 m$ parameters.
+Recall a realization of a polygonal linkage is an interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the copies of a contact are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).
+First consider the set of all realizations for the polygonal linkage $\left(\PP,\HH\right)$ and call it $P$.  
+$\mu:P \mapsto \bbR^{3m}$ where $m$ is the number of polygons in $\PP$ is the configuration space function and the configuration space is the set $\mu(P)$. 
 
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics[scale=.75]{graphics/DiskPackingReconfiguration.pdf}
 \end{center} 
-\caption{An example of a disk arrangement where $A$ and $B$ have a large range of freedom to move around.  $C$, $D$, $E$, and $F$ are limited in their range of motion to due to their hinge points.}
+\caption{An example of a disk arrangement where $A$ and $B$ have a large range of freedom to move around.  $C$, $D$, $E$, and $F$ are limited in their range of motion to due to their contact points.}
 \label{fig:configuration-5}
 \end{figure}
 

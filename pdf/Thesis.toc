@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {1.6.1}Complexity Classes}{14}
 \contentsline {subsection}{\numberline {1.6.2}RSA Cryptosystem}{14}
 \contentsline {section}{\numberline {1.7}Satisfiability}{16}
-\contentsline {section}{\numberline {1.8}Contribution}{16}
+\contentsline {section}{\numberline {1.8}Contribution}{17}
 \contentsline {section}{\numberline {1.9}Related Work and Results}{17}
 \contentsline {chapter}{\numberline {2}Decision Problems for Hinged Polygons and Disks}{18}
 \contentsline {section}{\numberline {2.1}The Logic Engine}{18}
@@ -29,13 +29,13 @@
 \contentsline {section}{\numberline {2.3}Realizability Problems for Weighted Trees}{25}
 \contentsline {subsection}{\numberline {2.3.1}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{27}
 \contentsline {chapter}{\numberline {3}Realizability of Polygonal Linkages with Fixed Orientation}{28}
-\contentsline {paragraph}{Modifying the Associated Graph of a P3SAT}{28}
+\contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{28}
 \contentsline {section}{\numberline {3.1}Auxilary Construction}{29}
-\contentsline {paragraph}{Variable Gadget}{30}
-\contentsline {paragraph}{Clause Gadget}{31}
-\contentsline {paragraph}{Transmitter Gadget}{32}
+\contentsline {paragraph}{Variable Gadget.}{30}
+\contentsline {paragraph}{Clause Gadget.}{31}
+\contentsline {paragraph}{Transmitter Gadget.}{31}
 \contentsline {subsection}{\numberline {3.1.1}Functionality of the Auxilary Construction and Gadgets}{33}
-\contentsline {paragraph}{The Activation Process}{35}
+\contentsline {paragraph}{The Activation Process.}{34}
 \contentsline {paragraph}{Modified Auxilary Construction}{36}
 \contentsline {chapter}{\numberline {4}Disk Arrangement}{40}
 \contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{40}
