@@ -475,6 +475,115 @@ We now allow the obstacle hexagons to move freely, and call their original fixed
 It is enough to show that the obstacle hexagons are still confined to an $1/N$-neighborhood of their canonical position, then it
 follows that the polygonal linkage is realizable if and only if $\Phi$ is satisfiable.
 
+\begin{lem}\label{lem:aux-C}
+Let P be a polygonal linkage obtained from the modified auxilary construction.  
+In every realization of $P$, the obstacle polygons are close to canonical position.
+\end{lem}
+
+\begin{proof}
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.3\columnwidth]{graphics/WrapAround.pdf}
+\captionof{figure}{This depicts an impossible realization from a column of obstacle hexagons in canonical position to a revolution wrapping around itself.}\label{fig:WrapAround.pdf}
+\end{center}
+\end{minipage}
+
+
+%1)frame is fixed, only one realization of the frame
+%2)NTS that a cross section of a column of obstacle polygons between two opposing hexagon frames
+% 	a) h bounds the height
+%	b) if alpha_i of the obstacle hexagon is a non-zero angle, the have a larger cross section.
+For any realization of P, the frame hexagons are fixed in position.  
+This implies there is a fixed height $h$ of any two opposing hexagonal frames.
+Suppose we draw a straight line segment $\ell$ of length $h$ from two opposing hexagonal frames; we will use this line segment as a guide to show that the modified auxilary construction admits a realization such that the obstascle polygons along $\ell$ has a maximal displacement from canonical position.
+$h$ is the upper bound of the height of vertically aligned obstacle hexagons and corridors.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[scale=.2]{graphics/CrossSectionArea.pdf}
+\captionof{figure}{The red dashed boxes enclosing the obstacle hexagons in the center column establish the cross sectional area for each obstacle hexagon in canonical position.}\label{fig:CrossSectionArea.pdf}
+\end{center}
+\end{minipage}
+
+In Figure \ref{fig:CrossSectionArea.pdf}, the cross section of each obstacle hexagon in canonical position denoted in red dashed boxes.
+The skinny rhombi attached to flags have freedom to move (see Figure \ref{fig:FlagWithRhombus.pdf}).
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.33\columnwidth]{graphics/FlagWithRhombus.pdf}
+\captionof{figure}{The figure shows the a flag with a skinny rhombus in a corridor.  The red circle shows a potential range of motion of the rhombus.}\label{fig:FlagWithRhombus.pdf}
+\end{center}
+\end{minipage}
+
+Suppose there are $m+1$ obstacle hexagons and $m$ corridors along $\ell$.
+Each corridor has $N$ flags and one skinny rhombus. 
+The skinny rhombus  has length $\sqrt{1 + \lr{100N}^{-2}}$
+The height of a skinny rhombus in canonical position is $\frac{1}{100N}$.
+In canonical position, the height of a skinny rhombus is $\frac{1}{100N}$, the obstacle hexagon has height of $ (t+1) \cdot \sqrt{3}$, and the flag is of height $\sqrt{3}$.  
+The total height $h$ is the following sum:
+$$h = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}$$
+We treat this sum as the total height as the supremum of $h$; denote it as $h_\text{max}$.
+To find a lower bound on of the total height, we examine some qualities of the noncanonical realizations.
+
+Denote the obstacle hexagons in a column along $\ell$ as $O_1$, $O_2$, $\ldots$, $O_{m+1}$.
+Suppose the realization of P is not in canonical position.
+Then there exists some angular rotation for $\alpha_i$ for each obestacle hexagon $O_i$ for $i = 1 , \ldots, m+1$ (see Figuree \ref{fig:hexagonNonCanonical.pdf}).
+If $\alpha_i$ is nonzero, the canonical height of the obstacle hexagon changes from $(t+1) \sqrt{3}$ to:
+\begin{eqnarray*}
+\frac{(t+1) \sqrt{3}}{\cos \alpha_i} &=& (t+1) \cdot \sec \alpha_i \cdot \sqrt{3}\\
+&\geq& (t+1) \lr{1 + \frac{\alpha_i}{2}} \sqrt{3}\\
+&&\text{ where } \frac{-\pi}{2} \leq \alpha_i \leq \frac{\pi}{2}
+\end{eqnarray*}
+Note that the Maclaurin series of $\sec \alpha_i$ expanded to two terms is $\lr{1 + \frac{\alpha_i}{2}} $.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.33\columnwidth]{graphics/hexagonNonCanonical.pdf}
+\captionof{figure}{The obstacle hexagon here is in non-canonical position, and showing the side lengths adjacent to $\alpha_i$.}\label{fig:hexagonNonCanonical.pdf}
+\end{center}
+\end{minipage}
+
+
+The total height of the non-canonical corridor must be at least $\sqrt{3}$ everywhere.
+Otherwise, a flag can overlap with an obstacle hexagon; thus, the drawing would no longer remain a realization since the height of a flag is $\sqrt{3}$
+In Figure \ref{fig:corridorNonCanonical.pdf}, we illustrate an obstacle hexagon, its upper corridor with the flag that has the hinge to the skinny rhombus.  
+The rhombus is hinged at the midpoint of the upper side of the corridor.
+The heigth of the rhombus is $\frac{1}{100N}$.
+The length from a corridor's midpoint to one end of the corridor is $\frac{N}{2}$.
+$\gamma_j$ is the angle between $s_j$ and the horizontal axis at the height of the flag ($j = 1,2,\ldots, m$).
+The bound of $\gamma_j$ is $\cos {\frac{N}{2\cdot s_j }} \leq \gamma_j < \frac{pi}{2}$.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical.pdf}
+\captionof{figure}{The obstacle hexagon here is in non-canonical position, and showing the side lengths adjacent to $\alpha_i$.}\label{fig:corridorNonCanonical.pdf}
+\end{center}
+\end{minipage}
+
+We can now establish the lower bound of $h$. 
+The smallest height of a corridor is $\sqrt{3}$.
+The height of an obstacle polygon in noncanonical position is $(t+1) \cdot \sec \alpha_i \cdot \sqrt{3}$.  
+\begin{eqnarray*}
+h_\text{max} = (m+1) (t+1) \sqrt{3} + m \lr{\sqrt{3}+ \frac{1}{100N}}&\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
+%h_\text{max} = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}  &\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
+%h_\text{max} = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}  &\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
+&\iff&\\
+(m+1) (t+1) \sum_{i = 1}^{m+1} \lr{1 - \sec \alpha_i}&\geq& m \lr{\sqrt{3} - \lr{\sqrt{3}+ \frac{1}{100N}}}\\
+&\iff&\\
+\sum_{i = 1}^{m+1} \lr{ \sec \alpha_i - 1} &\leq& \frac{m}{100 N \sqrt{3} (m+1)(t+1) }\\
+\sum_{i = 1}^{m+1}  \sec \alpha_i &\leq& \frac{m}{100 N \sqrt{3} (m+1)(t+1) } + (m+1)
+\end{eqnarray*}
+The bound above shows that each $\alpha_i$ is bounded above by the right hand side, i.e.:
+\begin{equation}\label{eqn:alphaBound}
+\alpha_i \leq \sec^{-1} \lr{\frac{m}{100 N \sqrt{3} (m+1)(t+1) } + (m+1)}
+\end{equation}
+Since $\alpha_i$ is bounded above, then there is a maximal rotation of each obstacle hexagon from canonical position.
+Thus every realization of $P$, the obstacle polygons are close to canonical position.
+%Let P be a polygonal linkage obtained from the modified auxilary construction.  
+% In every realization of $P$, the obstacle polygons are close to canonical position.
+
+\end{proof}
 \begin{lem}\label{lem:aux-B}
 For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons has the following properties: (1) it has polynomial size; (2) the hinge graph of the modified auxilary construction is a tree;
 (3) it admits a realization such that the obstacle polygons has a maximal displacement from canonical position if and only if $\Phi$ is satisfiable.

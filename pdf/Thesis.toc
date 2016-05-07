@@ -37,8 +37,8 @@
 \contentsline {subsection}{\numberline {3.1.1}Functionality of the Auxilary Construction and Gadgets}{33}
 \contentsline {paragraph}{The Activation Process.}{34}
 \contentsline {paragraph}{Modified Auxilary Construction}{36}
-\contentsline {chapter}{\numberline {4}Disk Arrangement}{40}
-\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{40}
-\contentsline {paragraph}{Hausdorff Distance}{40}
-\contentsline {paragraph}{$\epsilon $-approximation}{40}
+\contentsline {chapter}{\numberline {4}Disk Arrangement}{43}
+\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{43}
+\contentsline {paragraph}{Hausdorff Distance}{43}
+\contentsline {paragraph}{$\epsilon $-approximation}{43}
 \contentsfinish 
