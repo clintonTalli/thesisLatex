@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  5 MAY 2016 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  6 MAY 2016 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1525,35 +1525,42 @@ File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 465.
 (pdftex.def)             Requested size: 411.93767pt x 170.09091pt.
  [36]
-<graphics/NonCanonicalPosition.pdf, id=528, 200.45892pt x 199.22429pt>
+<graphics/tangentalpha.pdf, id=528, 725.07889pt x 106.45772pt>
+File: graphics/tangentalpha.pdf Graphic file (type pdf)
+
+<use graphics/tangentalpha.pdf>
+Package pdftex.def Info: graphics/tangentalpha.pdf used on input line 537.
+(pdftex.def)             Requested size: 130.08731pt x 19.09982pt.
+
+<graphics/NonCanonicalPosition.pdf, id=529, 200.45892pt x 199.22429pt>
 File: graphics/NonCanonicalPosition.pdf Graphic file (type pdf)
 
 <use graphics/NonCanonicalPosition.pdf>
 Package pdftex.def Info: graphics/NonCanonicalPosition.pdf used on input line 5
-36.
+44.
 (pdftex.def)             Requested size: 130.08731pt x 129.28754pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 534--540
-[]$[]$ 
+Overfull \hbox (15.0pt too wide) in paragraph at lines 535--548
+[]$[]$
  []
 
-[37 <./graphics/fig-frame-hex.pdf>] [38 <./graphics/NonCanonicalPosition.pdf>]
-<graphics/AngularDisplacement.pdf, id=556, 193.9245pt x 48.74611pt>
+[37 <./graphics/fig-frame-hex.pdf> <./graphics/tangentalpha.pdf>]
+<graphics/AngularDisplacement.pdf, id=579, 193.9245pt x 48.74611pt>
 File: graphics/AngularDisplacement.pdf Graphic file (type pdf)
 
 <use graphics/AngularDisplacement.pdf>
-Package pdftex.def Info: graphics/AngularDisplacement.pdf used on input line 57
-4.
+Package pdftex.def Info: graphics/AngularDisplacement.pdf used on input line 58
+1.
 (pdftex.def)             Requested size: 195.12767pt x 49.0487pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 572--577
+Overfull \hbox (15.0pt too wide) in paragraph at lines 579--584
 []$[]$ 
  []
 
-)) (./ch4/chapter4.tex (./ch4/Hausdorff.tex [39 <./graphics/AngularDisplacement
-.pdf>]
+[38 <./graphics/NonCanonicalPosition.pdf>])) (./ch4/chapter4.tex
+(./ch4/Hausdorff.tex [39 <./graphics/AngularDisplacement.pdf>]
 Chapter 4.
-<graphics/HausdorffDistanceExample1.pdf, id=570, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=599, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
@@ -1575,10 +1582,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17907 strings out of 493089
- 330512 string characters out of 6134841
+ 17912 strings out of 493089
+ 330647 string characters out of 6134841
  504597 words of memory out of 5000000
- 20835 multiletter control sequences out of 15000+600000
+ 20839 multiletter control sequences out of 15000+600000
  59673 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1586,26 +1593,27 @@ Here is how much of TeX's memory you used:
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
-b8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (45 pages, 555498 bytes).
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
+symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8
+a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/Thesis.pdf (45 pages, 565787 bytes).
 PDF statistics:
- 634 PDF objects out of 1000 (max. 8388607)
- 403 compressed objects within 5 object streams
+ 663 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
