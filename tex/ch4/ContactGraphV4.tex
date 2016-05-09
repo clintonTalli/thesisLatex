@@ -1,4 +1,4 @@
-\section{Realizability Problems for Weighted Trees}
+\chapter{Realizability Problems for Weighted Trees}
 In figure \ref{fig:hexagonOutline5LayerSmall.pdf}, we have a set of unit radius disks (circles) arranged in a manner that outlines regular, concentric hexagons.
 \begin{figure}[!htbp]
 \begin{center}
@@ -10,7 +10,7 @@ In figure \ref{fig:hexagonOutline5LayerSmall.pdf}, we have a set of unit radius 
 For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
 \end{prob}
 
-Recall problems (\ref{problem:UnorderedTree}) and (\ref{problem:OrderedTree}): given a positive weighted tree, $T$, is $T$ the (ordered) contact graph of some disk arrangement where the radii are equal to the vertex weights.  For now, we'll focus on a particular family of this problem space where the weighted trees can be realized as a \textit{snowflake}. For $i \in \bbN$, the construction of the snowflake tree, $S_i$, is as follows:
+Recall problems (\ref{problem:UnorderedContactGraph}) and (\ref{problem:OrderedContactGraph}): given a positive weighted tree, $T$, is $T$ the (ordered) contact graph of some disk arrangement where the radii are equal to the vertex weights.  For now, we'll focus on a particular family of this problem space where the weighted trees can be realized as a \textit{snowflake}. For $i \in \bbN$, the construction of the snowflake tree, $S_i$, is as follows:
 \begin{itemize}
 \item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  Each path has $i$ vertices.
 \item For every other path $p_1$, $p_3$, and $p_5$: 
@@ -25,7 +25,10 @@ Recall problems (\ref{problem:UnorderedTree}) and (\ref{problem:OrderedTree}): g
 \caption{The same contact graph as in figure \ref{fig:hexagonOutline5LayerSmall.pdf} overlayed with the a perfectly weighted snowflake tree.}\label{fig:snowflakeOutline5LayerSmall.pdf}
 \end{center}
 \end{figure}
-A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $\frac{1}{2}$.  A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a radius of $\frac{1}{2} + \gamma$.  For our analysis, all realizations of any snowflake, perfect or perturbed, shall have $v_0$ fixed at origin.  This is said to be the canonical position under Hausdorff distance of the snowflake tree.   
+
+A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $\frac{1}{2}$.  A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $\frac{1}{2} + \gamma$.  For our analysis, all realizations of any snowflake, perfect or perturbed, shall have $v_0$ fixed at origin.  This is said to be the canonical position under Hausdorff distance of the snowflake tree.   
+
+\paragraph{Perfectly Weighted Snowflake Tree.}
 
 Consider the graph of the triangular lattice with unit distant edges:
 \begin{eqnarray*}
@@ -50,7 +53,30 @@ For $S_i$ there exists $i$ vertices on each path.  We shall denote the $i^\text{
 
 The triangular lattice is symmetice under rotation about $v_0$ by $\frac{\pi}{3}$ radians.  For each vertex $v_{1,l}$ for $l=1,2,..., i-k$, we place two paths from it; the first path $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these paths $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  With respect to $v_{1,l}$, one unit along $p_{1,l}^+$ is a point on the triangular lattice and similarly so on $p_{1,l}^-$.  Continuing the walk along these paths, unit distance-by-unit distance, we obtain the next point corresponding point on the the triangular lattice up to $i-k$ distance away from $v_{1,l}$.  This shows that each of the $i-k$ vertices on $p_{1,l}^-$ and $p_{1,l}^+$ are in $V$.  By rotating all of the paths along $p_1$ by $\frac{2\pi}{3}$ and $\frac{4\pi}{3}$, we obtain the the paths along $p_3$ and $p_5$ respectively, completing the construction.
 
- \subsection{On the Decidability of Problem \ref{problem:UnorderedContactGraph}}
+\paragraph{Perturbed Snowflake Tree.}
+
+The perturbed snowflake follows the construction of the perfect snowflake with the exception of $v_0$ having weight $\frac{1}{2} + \gamma$ where $\gamma > 0$.
+A perturbed snowflake realization has some distinct qualities from perfect snowflake realizations.  
+The angular relationships between adjacent vertices may vary; the distance between adjacent and neighboring vertices may vary as well.
+
+%Consider a perturbed snowflake with six unit weight vertices having an edge to $v_0$, each unit weighted vertex lying on one distinct path $p_1, \ldots, p_6$.
+
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.33\columnwidth]{graphics/modifiedContactGraph.pdf}
+\captionof{figure}{A disk arrangement from a perturbed snowflake with 6 unit disks around a central disk with radius $\frac{1}{2} + \gamma$.}\label{fig:modifiedContactGraph.pdf}
+\end{center}
+\end{minipage}
+
+In Figure \ref{fig:modifiedContactGraph.pdf}, we have a realization of disk arrangement from a perturbed snowflake.
+In a disk arrangement of a perfect snowflake, the disks around the central disk contact the adjacent disks.
+The disk arrangement from the perturbed snowflake does not have this quality.  
+Figure \ref{fig:modifiedContactGraph.pdf} shows a gap $\epsilon(\gamma)$ between the disks around the central disk.  
+This gap is formed from the perturbed weight $\frac{1}{2} + \gamma$ of the central disk.  
+
+
+ \section{On the Decidability of Problem \ref{problem:UnorderedContactGraph}}
 \begin{proof} 
 Consider a $k \times (\sqrt{3}k)$ rectangle section of a triangular lattice, and place disks of radius 1 at each grid point as in Fig. ?????. 
 The contact graph of these disks contains 2-cycles. 
