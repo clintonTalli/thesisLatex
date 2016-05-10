@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  8 MAY 2016 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  9 MAY 2016 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,7 +793,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--29
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--38
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 []| 
  []
 
@@ -1490,17 +1490,17 @@ transmitter-hex.pdf>] [31] [32]
 File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-frame-hex.pdf>
-Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 465.
+Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 466.
 (pdftex.def)             Requested size: 411.93767pt x 170.09091pt.
 
 <graphics/WrapAround.pdf, id=507, 366.5194pt x 366.5193pt>
 File: graphics/WrapAround.pdf Graphic file (type pdf)
 
 <use graphics/WrapAround.pdf>
-Package pdftex.def Info: graphics/WrapAround.pdf used on input line 487.
+Package pdftex.def Info: graphics/WrapAround.pdf used on input line 488.
 (pdftex.def)             Requested size: 130.08731pt x 130.0845pt.
 
-Overfull \hbox (29.8298pt too wide) in paragraph at lines 485--491
+Overfull \hbox (29.8298pt too wide) in paragraph at lines 486--492
 []$[]$ 
  []
 
@@ -1508,10 +1508,10 @@ Overfull \hbox (29.8298pt too wide) in paragraph at lines 485--491
 File: graphics/CrossSectionArea.pdf Graphic file (type pdf)
 
 <use graphics/CrossSectionArea.pdf>
-Package pdftex.def Info: graphics/CrossSectionArea.pdf used on input line 504.
+Package pdftex.def Info: graphics/CrossSectionArea.pdf used on input line 505.
 (pdftex.def)             Requested size: 135.50987pt x 241.81514pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 502--508
+Overfull \hbox (15.0pt too wide) in paragraph at lines 503--509
 []$[]$ 
  []
 
@@ -1520,10 +1520,10 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 502--508
 File: graphics/FlagWithRhombus.pdf Graphic file (type pdf)
 
 <use graphics/FlagWithRhombus.pdf>
-Package pdftex.def Info: graphics/FlagWithRhombus.pdf used on input line 514.
+Package pdftex.def Info: graphics/FlagWithRhombus.pdf used on input line 515.
 (pdftex.def)             Requested size: 143.09538pt x 135.07523pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 512--518
+Overfull \hbox (15.0pt too wide) in paragraph at lines 513--519
 []$[]$ 
  []
 
@@ -1533,10 +1533,10 @@ File: graphics/hexagonNonCanonical.pdf Graphic file (type pdf)
 
 <use graphics/hexagonNonCanonical.pdf>
 Package pdftex.def Info: graphics/hexagonNonCanonical.pdf used on input line 54
-2.
+3.
 (pdftex.def)             Requested size: 143.09538pt x 138.24515pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 540--546
+Overfull \hbox (15.0pt too wide) in paragraph at lines 541--547
 []$[]$ 
  []
 
@@ -1545,50 +1545,17 @@ File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
 
 <use graphics/corridorNonCanonical.pdf>
 Package pdftex.def Info: graphics/corridorNonCanonical.pdf used on input line 5
-59.
+60.
 (pdftex.def)             Requested size: 390.25534pt x 89.38618pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 557--563
+Overfull \hbox (15.0pt too wide) in paragraph at lines 558--564
 []$[]$ 
  []
 
 [36 <./graphics/hexagonNonCanonical.pdf> <./graphics/corridorNonCanonical.pdf>]
-[37] <graphics/tangentalpha.pdf, id=593, 725.07889pt x 106.45772pt>
-File: graphics/tangentalpha.pdf Graphic file (type pdf)
-
-<use graphics/tangentalpha.pdf>
-Package pdftex.def Info: graphics/tangentalpha.pdf used on input line 646.
-(pdftex.def)             Requested size: 303.53267pt x 44.56572pt.
-
-<graphics/NonCanonicalPosition.pdf, id=594, 200.45892pt x 199.22429pt>
-File: graphics/NonCanonicalPosition.pdf Graphic file (type pdf)
-
-<use graphics/NonCanonicalPosition.pdf>
-Package pdftex.def Info: graphics/NonCanonicalPosition.pdf used on input line 6
-53.
-(pdftex.def)             Requested size: 130.08731pt x 129.28754pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 644--657
-[]$[]$
- []
-
-[38 <./graphics/tangentalpha.pdf> <./graphics/NonCanonicalPosition.pdf>]
-<graphics/AngularDisplacement.pdf, id=627, 193.9245pt x 48.74611pt>
-File: graphics/AngularDisplacement.pdf Graphic file (type pdf)
-
-<use graphics/AngularDisplacement.pdf>
-Package pdftex.def Info: graphics/AngularDisplacement.pdf used on input line 69
-0.
-(pdftex.def)             Requested size: 195.12767pt x 49.0487pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 688--693
-[]$[]$ 
- []
-
-)) (./ch4/chapter4.tex (./ch4/ContactGraphV4.tex [39 <./graphics/AngularDisplac
-ement.pdf>]
+)) (./ch4/chapter4.tex (./ch4/ContactGraphV4.tex [37]
 Chapter 4.
-<graphics/hexagonOutline5LayerSmall.pdf, id=641, 204.32335pt x 179.61102pt>
+<graphics/hexagonOutline5LayerSmall.pdf, id=593, 204.32335pt x 179.61102pt>
 File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
@@ -1603,18 +1570,18 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
-<graphics/snowflakeOutline5LayerSmall.pdf, id=642, 189.76897pt x 166.8333pt>
+<graphics/snowflakeOutline5LayerSmall.pdf, id=594, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
  line 24.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
- [40
+ [38
 
- <./graphics/hexagonOutline5LayerSmall.pdf>] [41 <./graphics/snowflakeOutline5L
+ <./graphics/hexagonOutline5LayerSmall.pdf>] [39 <./graphics/snowflakeOutline5L
 ayerSmall.pdf>]
-<graphics/modifiedContactGraph.pdf, id=655, 418.96524pt x 380.2446pt>
+<graphics/modifiedContactGraph.pdf, id=608, 418.96524pt x 380.2446pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
@@ -1626,17 +1593,17 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 65--71
 []$[]$ 
  []
 
-) (./ch4/Hausdorff.tex [42 <./graphics/modifiedContactGraph.pdf>]
-<graphics/HausdorffDistanceExample1.pdf, id=671, 291.58937pt x 208.65755pt>
+) (./ch4/Hausdorff.tex [40 <./graphics/modifiedContactGraph.pdf>]
+<graphics/HausdorffDistanceExample1.pdf, id=624, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
 ine 14.
 (pdftex.def)             Requested size: 145.79433pt x 104.3285pt.
-)) (../pdf/Thesis.bbl [43 <./graphics/HausdorffDistanceExample1.pdf>])
+)) (../pdf/Thesis.bbl [41 <./graphics/HausdorffDistanceExample1.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[44
+[42
 
 ] (../pdf/Thesis.aux)
 
@@ -1647,11 +1614,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17948 strings out of 493089
- 331740 string characters out of 6134841
+ 17930 strings out of 493089
+ 331245 string characters out of 6134841
  504597 words of memory out of 5000000
- 20869 multiletter control sequences out of 15000+600000
- 59673 words of font info for 108 fonts, out of 8000000 for 9000
+ 20857 multiletter control sequences out of 15000+600000
+ 57965 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1678,10 +1645,10 @@ ts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (48 pages, 609439 bytes).
+Output written on ../pdf/Thesis.pdf (46 pages, 597737 bytes).
 PDF statistics:
- 738 PDF objects out of 1000 (max. 8388607)
- 479 compressed objects within 5 object streams
+ 692 PDF objects out of 1000 (max. 8388607)
+ 444 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 

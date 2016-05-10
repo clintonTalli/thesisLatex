@@ -347,23 +347,30 @@ This is a contradiction with the total angular sum of a vertex on the plane to b
 Observation~\ref{obs:corridor} and the small hexagons ensure that the state of any unit hexagon along the cycle determines the state of all other unit hexagons in the cycle. 
 This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexagons in the top horizontal corridors are in state R; and if $x_i=F$, they are all in state L.
 
-\begin{lem}\label{lem:aux-1}
-Hexagons in a clause junction have a non-overlapping placement if and only if at least one of the three literals is true.
+Suppose there is an edge $\left\lbrace x_i, C_j \right\rbrace$ in the graph $A(\Phi)$.
+\begin{lem}\label{lem:aux-3}
+If $x_i = T$ and its negated literal is in $C_j$, then a flag enters into the clause gadget of $C_j$, otherwise it need not enter; if $x_i = F$ and its non-negated literal is in $C_j$, then a flexible hexagon enters into the clause gadget of $C_j$, otherwise it need not enter.
 \end{lem}
 \begin{proof}
-Suppose we have a hexagons in a clause junction that have a non-overlapping placement.
-To show that there is at least on of the three literals is true,  we do a proof by contradiciton.
-Suppose all literals of the clause are false.
-
-\paragraph{The Activation Process.} 
 The transmitter gadget for each literal is placed on an active junction of the variable gadget. 
 This junction is ``activated'' by the variable gadget.  
 By Observation \ref{obs:junction}, the flag nearest of the transmitter gadget to the variable gadget does not enter the transmitter-variable junction.
 By Observation \ref{obs:corridor} and the state of the flag nearest of the transmitter gadget to the variable gadget implies that the flags in that transmitter corridor activate the junction opposite the transmitter-variable junction.
 The subsequent flags in the transmitter gadget corridors have the same state of the flag in the transmitter gadget nearest of the transmitter-variable junction by Observations \ref{obs:corridor} and \ref{obs:junction}.
 This activation process continues up to the clause junction and the flag in the transmitter gadget nearest the clause junction enters the clause junction.
+\end{proof}
 
+\begin{lem}\label{lem:aux-1}
+Hexagons in a clause junction have a non-overlapping placement if and only if at least one of the three literals is true.
+\end{lem}
+\begin{proof}
+Suppose we have a hexagons in a clause junction that have a non-overlapping placement.
+To show that there is at least one of the three literals is true,  we do a proof by contradiction.
+Suppose all literals of the clause are false.
 If all literals of the clause are false, then all flags in each transmitter gadget nearest their clause junction enters the clause junction, as shown in Figure \ref{fig:clause}(c) which show the small hexagon overlapping flags in the clause junction, a contradiction with hexagons in the clause junction have a non-overlapping placement.
+
+If at least one of the three literals is true, then by Lemma \ref{lem:aux-3}, this literal's flag need not enter the transmitter-variable junction.
+There allows for the small hexagon in the clause junction to move into the area where this literal's flag could enter the junction and thus allow non-overlapping placement of hexagons in the junction.
 \end{proof}
 
 For a variable gadget $x_i$, place horizontal axis $h$ at mid-height of the gadget.
@@ -381,13 +388,7 @@ The argument is similar if the hexagon entering $J_i$ is from corridor $k_{i+1}$
 
 Because variable gadgets form a simple cycle of corridors and junctions $\lr{k_1, J_1, k_2, J_2, \dots, k_n, J_n}$ and the argument above, all flags about a variable gadget have the same state.
 \end{proof}
-Suppose there is an edge $\left\lbrace x_i, C_j \right\rbrace$ in the graph $A(\Phi)$.
-\begin{lem}\label{lem:aux-3}
-If $x_i = T$ and its negated literal is in $C_j$, then a flag enters into the clause gadget of $C_j$, otherwise it need not enter; if $x_i = F$ and its non-negated literal is in $C_j$, then a flexible hexagon enters into the clause gadget of $C_j$, otherwise it need not enter.
-\end{lem}
-\begin{proof}
-See the paragraph ``\textbf{Activation Process}'' in the proof of Lemma \ref{lem:aux-1}.
-\end{proof}
+
 
 \begin{lem}\label{lem:aux-A}
 For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons has the following properties: (1) it has polynomial size; (2) its hinge graph is a forest;
@@ -552,7 +553,7 @@ The rhombus is hinged at the midpoint of the upper side of the corridor.
 The heigth of the rhombus is $\frac{1}{100N}$.
 The length from a corridor's midpoint to one end of the corridor is $\frac{N}{2}$.
 $\gamma_j$ is the angle between $s_j$ and the horizontal axis at the height of the flag ($j = 1,2,\ldots, m$).
-The bound of $\gamma_j$ is $\cos {\frac{N}{2\cdot s_j }} \leq \gamma_j < \frac{pi}{2}$.
+The bound of $\gamma_j$ is $\cos {\frac{N}{2\cdot s_j }} \leq \gamma_j < \frac{\pi}{2}$.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -617,79 +618,89 @@ each obstacle hexagon with hinged flags (and small hexagons) is disjoint from th
 The skinny rhombi in the modified auxilary construction connect the disjointed trees to form one tree.
 
 \noindent (3) 
+
+
+
+
+
+
+
 %it admits a realization such that the obstacle polygons has a maximal displacement from canonical position if and only if $\Phi$ is satisfiable.
 
-When a flag hinged to a rhombus has sufficient range of motion to change state ($R$ to $L$ and vice versa), the construction becomes unstable.  
-If the state of the hexagons are preserved, regardless of the realization that the construction is in, then the Boolean logic encoded into the the construction is also preserved.
+Suppose that $\Phi$ is satisfiable.  
+Encode $\Phi$ into its corresponding modified auxilary construction.
 
- First suppose that $\Phi$ is satisfiable.  
- Consider the canonical position of the modified auxiliary construction that encodes $\Phi$.
- The frame of the modified construction has fixed position and implies a fixed height $h$ of any two opposing hexagonal frames.
-Suppose we draw a straight line segment $\ell$ of length $h$ from two opposing hexagonal frames; we will use this line segment as a guide to show that the modified auxilary construction admits a realization such that the obstascle polygons has a maximal displacement from canonical position.
+% When a flag hinged to a rhombus has sufficient range of motion to change state ($R$ to $L$ and vice versa), the construction becomes unstable.  
+% If the state of the hexagons are preserved, regardless of the realization that the construction is in, then the Boolean logic encoded into the the construction is also preserved.
 
-Suppose there are $m+1$ obstacle hexagons and $m$ corridors along $\ell$.
-Each corridor has $N$ flags and one skinny rhombus. 
-The skinny rhombus  has length $\sqrt{1 + \lr{100N}^{-2}}$
-The height of a skinny rhombus in canonical position is $\frac{1}{100N}$.
-In canonical position, the height of a skinny rhombus is $\frac{1}{100N}$, the obstacle hexagon has height of $ (t+1) \cdot \sqrt{3}$, the flag is of height $\sqrt{3}$.  
-The total height $h$ is the following sum:
-$$h = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}$$
+%  First suppose that $\Phi$ is satisfiable.  
+%  Consider the canonical position of the modified auxiliary construction that encodes $\Phi$.
+%  The frame of the modified construction has fixed position and implies a fixed height $h$ of any two opposing hexagonal frames.
+% Suppose we draw a straight line segment $\ell$ of length $h$ from two opposing hexagonal frames; we will use this line segment as a guide to show that the modified auxilary construction admits a realization such that the obstascle polygons has a maximal displacement from canonical position.
 
-From the canoncical position, from the widest point of a skinny rhombus there is a total of $\frac{1}{200N}$ gap space in the corridor between the flag, skinny rhombus, and the obstacle hexagons shaping the corridor; at the most the gap space in the corridor is at the point where the hinge of the skinny rhombus and the obstacle hexagon is $\frac{1}{100N}$.
-The bounds of total gap space $g_t$ across amongst the corridors along $\ell$ is $\frac{m}{200N} \leq g_t \leq \frac{m}{100N} \leq m \sqrt{3}$.
-$g_t$ does not admit enough space for a flag to move and alter state in any corridor.
+% Suppose there are $m+1$ obstacle hexagons and $m$ corridors along $\ell$.
+% Each corridor has $N$ flags and one skinny rhombus. 
+% The skinny rhombus  has length $\sqrt{1 + \lr{100N}^{-2}}$
+% The height of a skinny rhombus in canonical position is $\frac{1}{100N}$.
+% In canonical position, the height of a skinny rhombus is $\frac{1}{100N}$, the obstacle hexagon has height of $ (t+1) \cdot \sqrt{3}$, the flag is of height $\sqrt{3}$.  
+% The total height $h$ is the following sum:
+% $$h = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}$$
 
-
-
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=0.7\columnwidth]{graphics/tangentalpha.pdf}
-\captionof{figure}{Maclaurin series of $\tan^{-1}x$ is:
-$x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+\frac{x^9}{9}+O(x^{10})$}
-\end{center}
-\end{minipage}
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=0.3\columnwidth]{graphics/NonCanonicalPosition.pdf}
-\captionof{figure}{A stack of obstacle hexagons in an Non Canonical position between the parallel sides of two frame hexagons.}
-\end{center}
-\end{minipage}
-
-
-Given a modified auxilary construction $\tilde{A}(\Phi) = \left(\PP,\HH\right)$, the canonical realization of $\tilde{A}(\Phi)$, $R$, and the corresponding set of realizations $P$. 
-We need to show that for every $\epsilon > 0$ there exists a parameterization $\rho \in P$, $\mu:Phi \mapsto \bbR^{2m}$ where $m$ is the number of distinct vertices in $\PP_\rho$, such that $$\left\vert \mu (\rho) - \mu (R) \right\vert < \epsilon$$.
-
-First suppose the height of the honeycomb has a total height of $h$.
-This height is fixed due to the locked frame surrounding the honeycomb. 
-The total height $h$ is also the sum of the heights of the obstacle hexagons $h_O$, flags $h_f$, and skinny rhombi $h_r$ that intersect a vertical axis. 
-
-In canonical position, where $k$ is the number corridors along the vertical axis:
-\begin{enumerate}
-\item The height of the skinny rhombi is $h_r = \frac{k}{100 N^2}$. 
-\item The height of flags is $h_f = k \sqrt{3}$.
-\item The height of the obstacle hexagons is $h_O = (k+1) \cdot (t+1) \cdot \sqrt{3}$
-\end{enumerate}
-Thus $$h = k \lr{(t+2) \sqrt{3} + \frac{1}{100 N^2}} + (t+1) \cdot \sqrt{3}$$
-By taking a 
-\begin{enumerate}
-\item Suppose the honeycomb grid has a total height of $h$
-\item the number of obstacle hexagons along a vertical path from the top/bottom of the grid is K and the sum of their heights is $K \cdot h_\text{O}$.  
-\item the different of (1) and (2) is $h - K \cdot h_\text{O}$.
-\item ???
-\item profit
-\end{enumerate}
+% From the canoncical position, from the widest point of a skinny rhombus there is a total of $\frac{1}{200N}$ gap space in the corridor between the flag, skinny rhombus, and the obstacle hexagons shaping the corridor; at the most the gap space in the corridor is at the point where the hinge of the skinny rhombus and the obstacle hexagon is $\frac{1}{100N}$.
+% The bounds of total gap space $g_t$ across amongst the corridors along $\ell$ is $\frac{m}{200N} \leq g_t \leq \frac{m}{100N} \leq m \sqrt{3}$.
+% $g_t$ does not admit enough space for a flag to move and alter state in any corridor.
 
 
 
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=0.7\columnwidth]{graphics/tangentalpha.pdf}
+% \captionof{figure}{Maclaurin series of $\tan^{-1}x$ is:
+% $x-\frac{x^3}{3}+\frac{x^5}{5}-\frac{x^7}{7}+\frac{x^9}{9}+O(x^{10})$}
+% \end{center}
+% \end{minipage}
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=0.3\columnwidth]{graphics/NonCanonicalPosition.pdf}
+% \captionof{figure}{A stack of obstacle hexagons in an Non Canonical position between the parallel sides of two frame hexagons.}
+% \end{center}
+% \end{minipage}
 
-$$\alpha \leq \tan^{-1} \frac{3}{N} \leq M = \frac{3}{N}$$
-$$ \lim_{x\rightarrow 0} \tan^{-1} x = x$$
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=0.45\columnwidth]{graphics/AngularDisplacement.pdf}
-\end{center}
-\end{minipage}
+% Given a modified auxilary construction $\tilde{A}(\Phi) = \left(\PP,\HH\right)$, the canonical realization of $\tilde{A}(\Phi)$, $R$, and the corresponding set of realizations $P$. 
+% We need to show that for every $\epsilon > 0$ there exists a parameterization $\rho \in P$, $\mu:Phi \mapsto \bbR^{2m}$ where $m$ is the number of distinct vertices in $\PP_\rho$, such that $$\left\vert \mu (\rho) - \mu (R) \right\vert < \epsilon$$.
+
+% First suppose the height of the honeycomb has a total height of $h$.
+% This height is fixed due to the locked frame surrounding the honeycomb. 
+% The total height $h$ is also the sum of the heights of the obstacle hexagons $h_O$, flags $h_f$, and skinny rhombi $h_r$ that intersect a vertical axis. 
+
+% In canonical position, where $k$ is the number corridors along the vertical axis:
+% \begin{enumerate}
+% \item The height of the skinny rhombi is $h_r = \frac{k}{100 N^2}$. 
+% \item The height of flags is $h_f = k \sqrt{3}$.
+% \item The height of the obstacle hexagons is $h_O = (k+1) \cdot (t+1) \cdot \sqrt{3}$
+% \end{enumerate}
+% Thus $$h = k \lr{(t+2) \sqrt{3} + \frac{1}{100 N^2}} + (t+1) \cdot \sqrt{3}$$
+% By taking a 
+% \begin{enumerate}
+% \item Suppose the honeycomb grid has a total height of $h$
+% \item the number of obstacle hexagons along a vertical path from the top/bottom of the grid is K and the sum of their heights is $K \cdot h_\text{O}$.  
+% \item the different of (1) and (2) is $h - K \cdot h_\text{O}$.
+% \item ???
+% \item profit
+% \end{enumerate}
+
+
+
+
+% $$\alpha \leq \tan^{-1} \frac{3}{N} \leq M = \frac{3}{N}$$
+% $$ \lim_{x\rightarrow 0} \tan^{-1} x = x$$
+
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=0.45\columnwidth]{graphics/AngularDisplacement.pdf}
+% \end{center}
+% \end{minipage}
 
 
 

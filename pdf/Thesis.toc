@@ -33,13 +33,12 @@
 \contentsline {paragraph}{Clause Gadget.}{28}
 \contentsline {paragraph}{Transmitter Gadget.}{28}
 \contentsline {subsection}{\numberline {3.1.1}Functionality of the Auxilary Construction and Gadgets}{30}
-\contentsline {paragraph}{The Activation Process.}{31}
 \contentsline {paragraph}{Modified Auxilary Construction}{33}
-\contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{40}
-\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{40}
-\contentsline {paragraph}{Perturbed Snowflake Tree.}{42}
-\contentsline {section}{\numberline {4.1}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{42}
-\contentsline {section}{\numberline {4.2}Properties for Weighted Trees and Polygonal Linkages}{42}
-\contentsline {paragraph}{Hausdorff Distance}{43}
-\contentsline {paragraph}{$\epsilon $-approximation}{43}
+\contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{38}
+\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{38}
+\contentsline {paragraph}{Perturbed Snowflake Tree.}{40}
+\contentsline {section}{\numberline {4.1}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{40}
+\contentsline {section}{\numberline {4.2}Properties for Weighted Trees and Polygonal Linkages}{40}
+\contentsline {paragraph}{Hausdorff Distance}{41}
+\contentsline {paragraph}{$\epsilon $-approximation}{41}
 \contentsfinish 
