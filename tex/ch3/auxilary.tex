@@ -483,13 +483,6 @@ In every realization of $P$, the obstacle polygons are close to canonical positi
 
 \begin{proof}
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.3\columnwidth]{graphics/WrapAround.pdf}
-\captionof{figure}{This depicts an impossible realization from a column of obstacle hexagons in canonical position to a revolution wrapping around itself.}\label{fig:WrapAround.pdf}
-\end{center}
-\end{minipage}
-
 
 %1)frame is fixed, only one realization of the frame
 %2)NTS that a cross section of a column of obstacle polygons between two opposing hexagon frames
@@ -502,7 +495,7 @@ $h$ is the upper bound of the height of vertically aligned obstacle hexagons and
 
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[scale=.2]{graphics/CrossSectionArea.pdf}
+\includegraphics[width=.2\columnwidth ]{graphics/CrossSectionArea.pdf}
 \captionof{figure}{The red dashed boxes enclosing the obstacle hexagons in the center column establish the cross sectional area for each obstacle hexagon in canonical position.}\label{fig:CrossSectionArea.pdf}
 \end{center}
 \end{minipage}
@@ -584,6 +577,14 @@ Thus every realization of $P$, the obstacle polygons are close to canonical posi
 %Let P be a polygonal linkage obtained from the modified auxilary construction.  
 % In every realization of $P$, the obstacle polygons are close to canonical position.
 
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.3\columnwidth]{graphics/WrapAround.pdf}
+\captionof{figure}{This depicts an impossible realization from a column of obstacle hexagons in canonical position to a revolution wrapping around itself.}\label{fig:WrapAround.pdf}
+\end{center}
+\end{minipage}
+
+Since the angles $\alpha_i$ are so small, extreme configurations of obstacle hexagons like the spiral in Figure \ref{fig:WrapAround.pdf} are not feasible.
 \end{proof}
 \begin{lem}\label{lem:aux-B}
 For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible and obstacle polygons has the following properties: (1) it has polynomial size; (2) the hinge graph of the modified auxilary construction is a tree;
@@ -629,6 +630,14 @@ The skinny rhombi in the modified auxilary construction connect the disjointed t
 
 Suppose that $\Phi$ is satisfiable.  
 Encode $\Phi$ into its corresponding modified auxilary construction.
+The modified auxilary construction is the auxilary construction with a skinny rhombus attached to a flag in each corridor.   
+By Lemma \ref{lem:aux-A}, the auxilary construction of $\Phi$ admits a realization.
+By Lemma \ref{lem:aux-C}, the modified auxilary construction of $\Phi$ admits a realization such that the obstacle polygons has a maximal displacement from canonical position.
+
+Suppose we have a modified auxiliary construction where the obstacle polygons have a maximal displacement from canonical position.
+We first transform the realization of this construction back to its canonical position.
+We then decode the realization back to $\Phi$.  
+Since this realization has nonoverlapping parts, we have that $\Phi$ is satisfiable.
 
 % When a flag hinged to a rhombus has sufficient range of motion to change state ($R$ to $L$ and vice versa), the construction becomes unstable.  
 % If the state of the hexagons are preserved, regardless of the realization that the construction is in, then the Boolean logic encoded into the the construction is also preserved.
