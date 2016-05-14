@@ -447,7 +447,7 @@ We modify it in 3 steps as follows.
 
 \begin{enumerate}
 \item Move the obstacle hexagons apart such that the width of each corridor increases from $\sqrt{3}$ to $\sqrt{3}+1/(100N)$.
-\item Replace the unit segment in each the clause gadget by a skinny rhombus of diameter $\sqrt{1 + \lr{100N}^{-2}}$ and width $1/(200N)$.
+\item Replace the unit segment in each the clause gadget by a skinny rhombus of diameter $\sqrt{1 + \lr{100N}^{-2}}$ and width $1/(100N)$.
 \item Consider a large (polynomial-size) regular hexagon $R$ that contains all gadgets in our construction, and enclose $R$ by a \emph{frame} of 6 congruent regular hexagons, as shown in Fig.~\ref{fig:frame}(a), hinged together in a path.
 %
 % \begin{minipage}{\linewidth}
@@ -482,11 +482,11 @@ Canonical position would have each obstacle hexagon's position as $(0,0,0)$.
 Let P be a polygonal linkage obtained from the modified auxilary construction.  
 In every realization of $P$, the obstacle polygons are close to canonical position such that for every $\epsilon >0$, $$\left\vert \lr{\alpha,\beta,\delta} \right\vert < \epsilon$$
 \end{lem}
-We need to show that the modified auxilary construction could not deform in such a way that any information the construction encoded is preserved and the functionality of the gadgets within the construction behave as stated in the description.
+We need to show that the modified auxilary construction could not deform in such a way that any information the construction encodes is lost or modified and the functionality of the gadgets within the construction behave as stated in the description.
 In Figure \ref{fig:tiltedObstaclesInFrame.pdf}, we have a column of obstacle hexagons veering off $\ell$.
 % The bottom most obstacle hexagon is glued to the side of the bottom frame hexagon.  
 % The subsequent obstacle hexagons are rotated 
-Our goal is show that this quality cannot happen in the modified auxilary construction.  
+%Our goal is show that this quality cannot happen in the modified auxilary construction.  
 Lemma \ref{lem:aux-C} serves as assurance that once a boolean formula of P3SAT is encoded into an arbitrary realization of the modified auxilary construction, the information of the boolean formula is preserved regardless of the positioning of the gadgets and components in the construction.
 This quality shows that the information is stable and preserved in an arbitrary realization of the modified auxilary construction.
 
@@ -598,15 +598,14 @@ This quality shows that the information is stable and preserved in an arbitrary 
 
 
 
-Given an arbitrary realization of $P$.
-Each corridor in the realization has $t$ flags and one skinny rhombus. 
+Given an arbitrary realization of $P$, each corridor in the realization has $t$ flags and one skinny rhombus. 
 The skinny rhombus  has length $\sqrt{1 + \lr{100N}^{-2}}$.
 The height of a skinny rhombus in canonical position is $\frac{1}{100N}$.
 The obstacle hexagon has height of $ (t+1) \cdot \sqrt{3}$, and the flag is of height $\sqrt{3}$.  
 Suppose there are $m+1$ obstacle hexagons and $m$ corridors between two opposing frame hexagons. 
-The  $h$ is the following sum:
-$$h = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}$$
-We treat this sum as the total height as the supremum of $h$; denote it as $h_\text{max}$.
+The  $h_\text{max}$ is the following sum:
+$$h_\text{max} = (m+1) (t+1) \sqrt{3} + m \lr{\sqrt{3}+ \frac{1}{100N}}$$
+This sum is the upper bound of the distance between two opposing frame hexagons.%; denote it as $h_\text{max}$.
 To find a lower bound on of the total height, we examine some qualities of the noncanonical realizations.
 
 \begin{minipage}{\linewidth}
@@ -626,8 +625,16 @@ $\gamma_j$ is the angle between $s_j$ and the horizontal axis at the height of t
 The bound of $\gamma_j$ is:
 \begin{equation}\label{eqn:gammaBound}
 \begin{array}{rcl}
-\gamma_j &\leq & \tan^{-1} \lr{\frac{1}{50N^2}}\\
-&\leq& \frac{1}{50N^2} - \frac{1}{3}\frac{1}{\lr{50N^2}^3}
+\gamma_j &\leq & \tan^{-1} \lr{
+								\frac{
+										\sqrt{1+ \lr{	\frac{1}{100N}	}^2}
+								}{
+										\frac{N}{2}
+								}	
+							}\\
+&=& \tan^{-1} \lr{\frac{2\sqrt{1 + \frac{1}{(100N)^2}}}{N}}\\
+&\leq& \frac{2\sqrt{1 + \frac{1}{(100N)^2}}}{N} - \frac{1}{3}\lr{\frac{2\sqrt{1 + \frac{1}{(100N)^2}}}{N}}^3\\
+&=&\frac{\lr{6N^2 - 8 - \frac{8}{(100N)^2}}\cdot \sqrt{1 + \frac{1}{(100N)^2}} }{3N^3}
 \end{array} 
 \end{equation}
 Inequality \ref{eqn:gammaBound} uses the first two terms Maclaurin series of $\tan^{-1}$.
@@ -916,6 +923,7 @@ Thus, the modified auxilary construction admits a realization.
 By Lemma \ref{lem:aux-C}, if the modified auxilary construction admits a realization, it must be close to canonical; every gadget has the same functionality as the ordinary auxilary construction.
 With Lemma \ref{lem:aux-1}, at least one literal in every clause is true; Lemma \ref{lem:aux-2} the variable gadgets have state $R$ or $L$ accordingly.
 Together, this implies that the flags and small hexagons in all corridors and junctions have a nonoverlapping area in the plane, thus the modified auxilary construction has a realization.
+
 
 
 % By Lemma \ref{lem:aux-A} the 
