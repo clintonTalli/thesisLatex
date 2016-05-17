@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  13 MAY 2016 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 MAY 2016 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1591,21 +1591,58 @@ Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
  [40 <./graphics/hexagonOutline5LayerSmall.pdf> <./graphics/snowflakeOutline5La
 yerSmall.pdf>] [41]
-<graphics/modifiedContactGraph.pdf, id=636, 215.8745pt x 187.2064pt>
+<graphics/modifiedContactGraph.pdf, id=636, 217.35605pt x 187.2074pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
 Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 6
-7.
-(pdftex.def)             Requested size: 143.09538pt x 124.09933pt.
+8.
+(pdftex.def)             Requested size: 143.09538pt x 123.2516pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 65--71
+Overfull \hbox (15.0pt too wide) in paragraph at lines 66--72
 []$[]$ 
  []
 
-)) (../pdf/Thesis.bbl [42 <./graphics/modifiedContactGraph.pdf>])
+<graphics/PerturbedContactGraphAnatomy.pdf, id=637, 452.4403pt x 230.63164pt>
+File: graphics/PerturbedContactGraphAnatomy.pdf Graphic file (type pdf)
+
+<use graphics/PerturbedContactGraphAnatomy.pdf>
+Package pdftex.def Info: graphics/PerturbedContactGraphAnatomy.pdf used on inpu
+t line 93.
+(pdftex.def)             Requested size: 286.19078pt x 145.8864pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 91--97
+[]$[]$ 
+ []
+
+[42 <./graphics/modifiedContactGraph.pdf> <./graphics/PerturbedContactGraphAnat
+omy.pdf>] <graphics/PerturbedSpine.pdf, id=665, 162.00525pt x 222.93489pt>
+File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
+
+<use graphics/PerturbedSpine.pdf>
+Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 102.
+(pdftex.def)             Requested size: 143.09538pt x 196.91806pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 100--106
+[]$[]$ 
+ []
+
+<graphics/PerturbedVertebrae.pdf, id=666, 162.00525pt x 121.2791pt>
+File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
+
+<use graphics/PerturbedVertebrae.pdf>
+Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 111
+.
+(pdftex.def)             Requested size: 195.12767pt x 146.07825pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 109--115
+[]$[]$ 
+ []
+
+[43 <./graphics/PerturbedSpine.pdf> <./graphics/PerturbedVertebrae.pdf>]))
+(../pdf/Thesis.bbl [44])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[43
+[45
 
 ] (../pdf/Thesis.aux)
 
@@ -1616,10 +1653,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17936 strings out of 493089
- 331348 string characters out of 6134841
- 505597 words of memory out of 5000000
- 20857 multiletter control sequences out of 15000+600000
+ 17955 strings out of 493089
+ 331973 string characters out of 6134841
+ 506597 words of memory out of 5000000
+ 20873 multiletter control sequences out of 15000+600000
  60451 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1647,10 +1684,10 @@ ts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (47 pages, 602950 bytes).
+Output written on ../pdf/Thesis.pdf (49 pages, 626902 bytes).
 PDF statistics:
- 708 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
+ 748 PDF objects out of 1000 (max. 8388607)
+ 488 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 308 words of extra memory for PDF output out of 10000 (max. 10000000)
 

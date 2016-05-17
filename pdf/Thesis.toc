@@ -41,5 +41,5 @@
 \contentsline {section}{\numberline {4.2}Approximating Regular Hexagons with Snowflakes}{39}
 \contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{41}
 \contentsline {paragraph}{Perturbed Snowflake Tree.}{41}
-\contentsline {section}{\numberline {4.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{42}
+\contentsline {section}{\numberline {4.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{43}
 \contentsfinish 
