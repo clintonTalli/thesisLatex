@@ -34,12 +34,15 @@
 \contentsline {paragraph}{Transmitter Gadget.}{28}
 \contentsline {subsection}{\numberline {3.1.1}Functionality of the Auxilary Construction and Gadgets}{30}
 \contentsline {paragraph}{Modified Auxilary Construction}{33}
-\contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{39}
-\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{39}
-\contentsline {paragraph}{Hausdorff Distance}{39}
-\contentsline {paragraph}{$\epsilon $-approximation}{39}
-\contentsline {section}{\numberline {4.2}Approximating Regular Hexagons with Snowflakes}{39}
-\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{41}
-\contentsline {paragraph}{Perturbed Snowflake Tree.}{41}
-\contentsline {section}{\numberline {4.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{43}
+\contentsline {paragraph}{Bound for $\alpha $.}{39}
+\contentsline {paragraph}{Vertical Displacement Bound for $\beta $.}{40}
+\contentsline {paragraph}{Horizontal Displacement Bound for $\delta $.}{40}
+\contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{43}
+\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{43}
+\contentsline {paragraph}{Hausdorff Distance}{43}
+\contentsline {paragraph}{$\epsilon $-approximation}{43}
+\contentsline {section}{\numberline {4.2}Approximating Regular Hexagons with Snowflakes}{43}
+\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{45}
+\contentsline {paragraph}{Perturbed Snowflake Tree.}{45}
+\contentsline {section}{\numberline {4.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{47}
 \contentsfinish 

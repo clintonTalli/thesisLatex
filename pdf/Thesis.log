@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 MAY 2016 20:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  19 MAY 2016 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -690,6 +690,21 @@ LaTeX Warning: Label `fig:configuration-3' multiply defined.
 
 LaTeX Warning: Label `thm:hinge2' multiply defined.
 
+
+LaTeX Warning: Label `lem:aux-C' multiply defined.
+
+
+LaTeX Warning: Label `fig:tiltedObstaclesInFrame.pdf' multiply defined.
+
+
+LaTeX Warning: Label `fig:corridorNonCanonical.pdf' multiply defined.
+
+
+LaTeX Warning: Label `eqn:gammaBound' multiply defined.
+
+
+LaTeX Warning: Label `fig:corridorNonCanonical.pdf' multiply defined.
+
 )
 \openout1 = `Thesis.aux'.
 
@@ -793,7 +808,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--29
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
 []| 
  []
 
@@ -1498,22 +1513,22 @@ File: graphics/tiltedObstaclesInFrame.pdf Graphic file (type pdf)
 
 <use graphics/tiltedObstaclesInFrame.pdf>
 Package pdftex.def Info: graphics/tiltedObstaclesInFrame.pdf used on input line
- 495.
+ 497.
 (pdftex.def)             Requested size: 130.08731pt x 112.70178pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 493--499
+Overfull \hbox (15.0pt too wide) in paragraph at lines 495--501
 []$[]$ 
  []
 
-<graphics/corridorNonCanonical.pdf, id=512, 304.04993pt x 67.1308pt>
+<graphics/corridorNonCanonical.pdf, id=512, 318.21886pt x 109.40875pt>
 File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
 
 <use graphics/corridorNonCanonical.pdf>
 Package pdftex.def Info: graphics/corridorNonCanonical.pdf used on input line 6
-13.
-(pdftex.def)             Requested size: 390.25534pt x 86.16884pt.
+15.
+(pdftex.def)             Requested size: 390.25534pt x 134.18796pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 611--617
+Overfull \hbox (15.0pt too wide) in paragraph at lines 613--619
 []$[]$ 
  []
 
@@ -1530,7 +1545,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 691--697
 []$[]$ 
  []
 
-<graphics/FlagWithRhombus.pdf, id=569, 170.95871pt x 161.52345pt>
+[36 <./graphics/CrossSectionArea.pdf>]
+<graphics/FlagWithRhombus.pdf, id=575, 170.95871pt x 161.52345pt>
 File: graphics/FlagWithRhombus.pdf Graphic file (type pdf)
 
 <use graphics/FlagWithRhombus.pdf>
@@ -1541,8 +1557,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 701--707
 []$[]$ 
  []
 
-[36 <./graphics/CrossSectionArea.pdf> <./graphics/FlagWithRhombus.pdf>]
-<graphics/hexagonNonCanonical.pdf, id=579, 189.37952pt x 182.95753pt>
+<graphics/hexagonNonCanonical.pdf, id=576, 189.37952pt x 182.95753pt>
 File: graphics/hexagonNonCanonical.pdf Graphic file (type pdf)
 
 <use graphics/hexagonNonCanonical.pdf>
@@ -1554,10 +1569,45 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 719--728
 []$[]$ 
  []
 
-[37 <./graphics/hexagonNonCanonical.pdf>])) (./ch4/chapter4.tex
-(./ch4/Hausdorff.tex [38]
+[37 <./graphics/FlagWithRhombus.pdf> <./graphics/hexagonNonCanonical.pdf>])
+(./ch3/lemma6.tex
+File: graphics/tiltedObstaclesInFrame.pdf Graphic file (type pdf)
+ <use graphics/tiltedObstaclesInFrame.pdf>
+Package pdftex.def Info: graphics/tiltedObstaclesInFrame.pdf used on input line
+ 20.
+(pdftex.def)             Requested size: 130.08731pt x 112.70178pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 18--24
+[]$[]$ 
+ []
+
+[38]
+File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
+ <use graphics/corridorNonCanonical.pdf>
+Package pdftex.def Info: graphics/corridorNonCanonical.pdf used on input line 3
+4.
+(pdftex.def)             Requested size: 390.25534pt x 134.18796pt.
+ [39]
+<graphics/FrameObstacleHexagonCloseUp.pdf, id=614, 772.08452pt x 3789.5177pt>
+File: graphics/FrameObstacleHexagonCloseUp.pdf Graphic file (type pdf)
+
+<use graphics/FrameObstacleHexagonCloseUp.pdf>
+Package pdftex.def Info: graphics/FrameObstacleHexagonCloseUp.pdf used on input
+ line 89.
+(pdftex.def)             Requested size: 216.81pt x 1064.12239pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 87--93
+[]$[]$ 
+ []
+
+[40]
+Overfull \vbox (431.6924pt too high) has occurred while \output is active []
+
+
+[41 <./graphics/FrameObstacleHexagonCloseUp.pdf>])) (./ch4/chapter4.tex
+(./ch4/Hausdorff.tex [42]
 Chapter 4.
-<graphics/HausdorffDistanceExample1.pdf, id=610, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=627, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
@@ -1565,14 +1615,14 @@ Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
 ine 15.
 (pdftex.def)             Requested size: 145.79433pt x 104.3285pt.
 ) (./ch4/ContactGraphV4.tex
-<graphics/hexagonOutline5LayerSmall.pdf, id=611, 204.32335pt x 179.61102pt>
+<graphics/hexagonOutline5LayerSmall.pdf, id=628, 204.32335pt x 179.61102pt>
 File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
 ine 5.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
- [39
+ [43
 
  <./graphics/HausdorffDistanceExample1.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 15.
@@ -1582,16 +1632,16 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
 
-<graphics/snowflakeOutline5LayerSmall.pdf, id=623, 189.76897pt x 166.8333pt>
+<graphics/snowflakeOutline5LayerSmall.pdf, id=639, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
  line 24.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
- [40 <./graphics/hexagonOutline5LayerSmall.pdf> <./graphics/snowflakeOutline5La
-yerSmall.pdf>] [41]
-<graphics/modifiedContactGraph.pdf, id=636, 217.35605pt x 187.2074pt>
+ [44 <./graphics/hexagonOutline5LayerSmall.pdf> <./graphics/snowflakeOutline5La
+yerSmall.pdf>] [45]
+<graphics/modifiedContactGraph.pdf, id=653, 217.35605pt x 187.2074pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
@@ -1603,7 +1653,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 66--72
 []$[]$ 
  []
 
-<graphics/PerturbedContactGraphAnatomy.pdf, id=637, 452.4403pt x 230.63164pt>
+<graphics/PerturbedContactGraphAnatomy.pdf, id=654, 452.4403pt x 230.63164pt>
 File: graphics/PerturbedContactGraphAnatomy.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedContactGraphAnatomy.pdf>
@@ -1615,8 +1665,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 91--97
 []$[]$ 
  []
 
-[42 <./graphics/modifiedContactGraph.pdf> <./graphics/PerturbedContactGraphAnat
-omy.pdf>] <graphics/PerturbedSpine.pdf, id=665, 162.00525pt x 222.93489pt>
+[46 <./graphics/modifiedContactGraph.pdf> <./graphics/PerturbedContactGraphAnat
+omy.pdf>] <graphics/PerturbedSpine.pdf, id=682, 162.00525pt x 222.93489pt>
 File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedSpine.pdf>
@@ -1627,7 +1677,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 100--106
 []$[]$ 
  []
 
-<graphics/PerturbedVertebrae.pdf, id=666, 162.00525pt x 121.2791pt>
+<graphics/PerturbedVertebrae.pdf, id=683, 162.00525pt x 121.2791pt>
 File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedVertebrae.pdf>
@@ -1639,10 +1689,10 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 109--115
 []$[]$ 
  []
 
-[43 <./graphics/PerturbedSpine.pdf> <./graphics/PerturbedVertebrae.pdf>]))
-(../pdf/Thesis.bbl [44])
+[47 <./graphics/PerturbedSpine.pdf> <./graphics/PerturbedVertebrae.pdf>]))
+(../pdf/Thesis.bbl [48])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[45
+[49
 
 ] (../pdf/Thesis.aux)
 
@@ -1653,10 +1703,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17955 strings out of 493089
- 331973 string characters out of 6134841
- 506597 words of memory out of 5000000
- 20873 multiletter control sequences out of 15000+600000
+ 17963 strings out of 493089
+ 332219 string characters out of 6134841
+ 505597 words of memory out of 5000000
+ 20877 multiletter control sequences out of 15000+600000
  60451 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1684,10 +1734,10 @@ ts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (49 pages, 626902 bytes).
+Output written on ../pdf/Thesis.pdf (53 pages, 635974 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 488 compressed objects within 5 object streams
+ 764 PDF objects out of 1000 (max. 8388607)
+ 497 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
