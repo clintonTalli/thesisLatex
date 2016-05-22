@@ -107,8 +107,15 @@ Using Equation \ref{eqn:Hnm} of $H(n,m)$, the length from the canonical position
 \begin{eqnarray*}
 H(n,m) = (u+1) (t+1) \sqrt{3} + u \lr{\frac{1}{100N} + \sqrt{3}}&=& \sum_{i=1}^{u} \sqrt{3} + \sum_{i=1}^{u+1} (t+1) \sqrt{3} \sec \alpha_i \\ 
 &\leq& u \sqrt{3} + (t+1) \sqrt{3} \sum_{i = 1}^{u+1} \sec \alpha_i\\
-
+u \lr{\frac{1}{100N} + \sqrt{3} - \sqrt{3} } &\leq&(t+1) \sqrt{3}    \sum_{i = 1}^{u+1}  \lr{\sec \alpha_i - 1}\\
+\frac{u}{100N(t+1)\sqrt{3}}&\leq& \sum_{i = 1}^{u+1} \lr{1 + \frac{\alpha_i^2}{2} - 1}\\
+\frac{2u}{100N(t+1)\sqrt{3}}&\leq& \sum_{i = 1}^{u+1} \alpha_i^2\\
+\sqrt{\frac{2u}{100N(t+1)\sqrt{3}}} &\leq& \sum_{i=1}^{u+1} \alpha_i\\
+\sqrt{\frac{2u}{100N(t+1)\sqrt{3}}} &\leq& \sum_{i=1}^{u+1} \alpha_i + \alpha_i - \alpha_i\\
+\sum_{i=1}^{u+1} \alpha_i + \alpha_i - \alpha_i &\leq& \sum_{i=1}^{u+1} \alpha_i + \frac{3N^2 - 4 - \frac{4}{(100N)^2}}{N^3}
 \end{eqnarray*}
+Which implies:
+$$\sqrt{\frac{2u}{100N(t+1)\sqrt{3}}} \leq \sum_{i=1}^{u+1} \alpha_i  \leq (u+1) \lr{\frac{3N^2 - 4 - \frac{4}{(100N)^2}}{N^3}}$$
 % \begin{eqnarray*}
 % h_\text{max} = (u+1) (t+1) \sqrt{3} + u\lr{\sqrt{3}+ \frac{1}{100N}}&\geq& \sum_{i = 1}^{u+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
 % (m+1) (t+1) \sum_{i = 1}^{m+1} \lr{1 - \sec \alpha_i}&\geq& m \lr{\sqrt{3} - \lr{\sqrt{3}+ \frac{1}{100N}}}\\
@@ -123,12 +130,13 @@ H(n,m) = (u+1) (t+1) \sqrt{3} + u \lr{\frac{1}{100N} + \sqrt{3}}&=& \sum_{i=1}^{
 % \frac{1}{100N^4 \sqrt{3}}&<& 1
 % \end{eqnarray*}
 
-As $N \rightarrow \infty$, $\frac{m}{100N^4 (m+1) \sqrt{3}} \rightarrow 0$ which implies $\sum_{i = 1}^{m+1} \alpha_i^2$ is bounded.  
-The number of obstacle hexagons is determined by a polynomial $N(a,b)$ where $a$ is the number of variables in a corresponding Boolean formula and $b$ is the number of clauses in the Boolean formula.
+As $N \rightarrow \infty$, $(u+1) \lr{\frac{3N^2 - 4 - \frac{4}{(100N)^2}}{N^3}}\rightarrow 0$ which implies $\sum_{i = 1}^{m+1} \alpha_i^2$ is bounded.  
+The number of obstacle hexagons is determined by a polynomial $N(m,n)$ where $a$ is the number of variables in a corresponding Boolean formula and $b$ is the number of clauses in the Boolean formula.
 Since $\alpha_i$ is bounded above, then there is a maximal rotation of each obstacle hexagon from canonical position.
-Thus every realization of $P$, the obstacle polygons are close to canonical position.
+%Thus every realization of $P$, the obstacle polygons are close to canonical position.
 
 
 \paragraph{Vertical Displacement $\delta$}
+
 \paragraph{Horizontal Displacement $\alpha$}
 \end{proof}

@@ -216,31 +216,23 @@ If $\alpha_i$ is nonzero, the length of the cross section $\ell \cap O_i$ from $
 \end{eqnarray*}
 Where we use the fact that the Maclaurin series of $\sec \alpha_i$ expanded to two terms is $\lr{1 + \frac{\alpha_i^2}{2}} $.
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.33\columnwidth]{graphics/hexagonNonCanonical.pdf}
-\captionof{figure}{
-% The obstacle hexagon here is in non-canonical position, and showing the side lengths adjacent to $\alpha_i$.
-This figure shows two right triangles with angle $\alpha_i$ and sides of length $\frac{h}{2}$ and $\frac{h}{2 \cos \alpha_i}$
-}\label{fig:hexagonNonCanonical.pdf}
-\end{center}
-\end{minipage}
+
 
 
 
 % We can now establish the lower bound of $h$. 
 % The smallest height of a corridor is $\sqrt{3}$.
 % The height of an obstacle polygon in noncanonical position is $(t+1) \cdot \sec \alpha_i \cdot \sqrt{3}$.  
-% \begin{eqnarray*}
-% h_\text{max} = (m+1) (t+1) \sqrt{3} + m \lr{\sqrt{3}+ \frac{1}{100N}}&\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
-% %h_\text{max} = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}  &\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
-% %h_\text{max} = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}  &\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
-% &\iff&\\
-% (m+1) (t+1) \sum_{i = 1}^{m+1} \lr{1 - \sec \alpha_i}&\geq& m \lr{\sqrt{3} - \lr{\sqrt{3}+ \frac{1}{100N}}}\\
-% &\iff&\\
-% \sum_{i = 1}^{m+1} \lr{ \sec \alpha_i - 1} &\leq& \frac{m}{100 N \sqrt{3} (m+1)(t+1) }\\
-% \sum_{i = 1}^{m+1}  \sec \alpha_i &\leq& \frac{m}{100 N \sqrt{3} (m+1)(t+1) } + (m+1)
-% \end{eqnarray*}
+\begin{eqnarray*}
+h_\text{max} = (m+1) (t+1) \sqrt{3} + m \lr{\sqrt{3} + \frac{1}{100N}}&\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
+%h_\text{max} = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}  &\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\	
+%h_\text{max} = m \cdot \lr{\sqrt{3} + 1 + \frac{1}{100N} + (t+1) \cdot \sqrt{3}} + (t+1) \cdot \sqrt{3}  &\geq& \sum_{i = 1}^{m+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
+&\iff&\\
+(m+1) (t+1) \sum_{i = 1}^{m+1} \lr{1 - \sec \alpha_i}&\geq& m \lr{\sqrt{3} - \lr{\sqrt{3}+ \frac{1}{100N}}}\\
+&\iff&\\
+\sum_{i = 1}^{m+1} \lr{ \sec \alpha_i - 1} &\leq& \frac{m}{100 N \sqrt{3} (m+1)(t+1) }\\
+\sum_{i = 1}^{m+1}  \sec \alpha_i &\leq& \frac{m}{100 N \sqrt{3} (m+1)(t+1) } + (m+1)
+\end{eqnarray*}
 % The bound above shows that each $\alpha_i$ is bounded above by the right hand side, i.e.:
 % \begin{equation}\label{eqn:alphaBound}
 % \alpha_i \leq \sec^{-1} \lr{\frac{m}{100 N \sqrt{3} (m+1)(t+1) } + (m+1)}
