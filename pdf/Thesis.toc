@@ -1,48 +1,15 @@
 \contentsline {chapter}{Signature page}{ii}
 \contentsline {chapter}{Abstract}{iv}
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Background}{1}
-\contentsline {section}{\numberline {1.1}Graphs}{1}
-\contentsline {subsection}{\numberline {1.1.1}Trees}{3}
-\contentsline {section}{\numberline {1.2}Linkages}{4}
-\contentsline {section}{\numberline {1.3}Polygonal Linkages}{4}
-\contentsline {subsection}{\numberline {1.3.1}Geometric Dissections}{7}
-\contentsline {section}{\numberline {1.4}Disk Arrangements}{8}
-\contentsline {section}{\numberline {1.5}Configuration Spaces}{11}
-\contentsline {subsection}{\numberline {1.5.1}Configuration Spaces of Graph Drawings}{12}
-\contentsline {subsection}{\numberline {1.5.2}Configuration Spaces of Linkages}{12}
-\contentsline {subsection}{\numberline {1.5.3}Configuration Spaces of Polygonal Linkages}{13}
-\contentsline {subsection}{\numberline {1.5.4}Configuration Spaces of Disk Arrangements}{13}
-\contentsline {section}{\numberline {1.6}Algorithm Complexity}{13}
-\contentsline {subsection}{\numberline {1.6.1}Complexity Classes}{14}
-\contentsline {subsection}{\numberline {1.6.2}RSA Cryptosystem}{14}
-\contentsline {section}{\numberline {1.7}Satisfiability}{16}
-\contentsline {section}{\numberline {1.8}Contribution}{17}
-\contentsline {section}{\numberline {1.9}Related Work and Results}{17}
-\contentsline {chapter}{\numberline {2}Decision Problems for Hinged Polygons and Disks}{18}
-\contentsline {section}{\numberline {2.1}The Logic Engine}{18}
-\contentsline {subsection}{\numberline {2.1.1}Construction of the Logic Engine}{18}
-\contentsline {subsection}{\numberline {2.1.2}The mechanics of the logic engine}{20}
-\contentsline {subsubsection}{\numberline {2.1.2.1}The Relationship of the Logic Engine and NAE3SAT}{21}
-\contentsline {section}{\numberline {2.2}Logic Engines Represented as Polygonal Linkages}{23}
-\contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{23}
-\contentsline {chapter}{\numberline {3}Realizability of Polygonal Linkages with Fixed Orientation}{25}
-\contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{25}
-\contentsline {section}{\numberline {3.1}Auxilary Construction}{26}
-\contentsline {paragraph}{Variable Gadget.}{27}
-\contentsline {paragraph}{Clause Gadget.}{28}
-\contentsline {paragraph}{Transmitter Gadget.}{28}
-\contentsline {subsection}{\numberline {3.1.1}Functionality of the Auxilary Construction and Gadgets}{30}
-\contentsline {paragraph}{Modified Auxilary Construction}{33}
-\contentsline {paragraph}{Bound for $\alpha $.}{39}
-\contentsline {paragraph}{Vertical Displacement Bound for $\beta $.}{40}
-\contentsline {paragraph}{Horizontal Displacement Bound for $\delta $.}{40}
-\contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{43}
-\contentsline {section}{\numberline {4.1}Properties for Weighted Trees and Polygonal Linkages}{43}
-\contentsline {paragraph}{Hausdorff Distance}{43}
-\contentsline {paragraph}{$\epsilon $-approximation}{43}
-\contentsline {section}{\numberline {4.2}Approximating Regular Hexagons with Snowflakes}{43}
-\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{45}
-\contentsline {paragraph}{Perturbed Snowflake Tree.}{45}
-\contentsline {section}{\numberline {4.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{47}
+\contentsline {chapter}{\numberline {1}Realizability of Polygonal Linkages with Fixed Orientation}{1}
+\contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{1}
+\contentsline {section}{\numberline {1.1}Auxilary Construction}{2}
+\contentsline {paragraph}{Variable Gadget.}{3}
+\contentsline {paragraph}{Clause Gadget.}{4}
+\contentsline {paragraph}{Transmitter Gadget.}{4}
+\contentsline {subsection}{\numberline {1.1.1}Functionality of the Auxilary Construction and Gadgets}{6}
+\contentsline {paragraph}{Modified Auxilary Construction}{9}
+\contentsline {paragraph}{Angular Rotation $\alpha $}{11}
+\contentsline {paragraph}{Vertical Displacement $\delta $}{13}
+\contentsline {paragraph}{Horizontal Displacement $\alpha $}{13}
 \contentsfinish 
