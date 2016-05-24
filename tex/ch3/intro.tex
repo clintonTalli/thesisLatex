@@ -21,25 +21,30 @@ We modify the associated graph drawing $A\lr{\Phi}$ by overlaying it onto a hone
 \begin{enumerate}
 %variables represent cycles of 2m 
 \item \textbf{Variable:} A vertex representing a variable shall encompass a consecutive set of hexagons along a horizontal line in the honeycomb. 
+Let $D = \max_{v \in V} \deg(v)$ where $V$ is the set of vertices of $A(\Phi)$.
 Every variable vertex $v$  must encompass at least $2 \cdot \deg(v)$ consecutive hexagons but can encompass upto $2 \cdot D$ consecutive hexagons.
 \item \textbf{Clause:} A vertex representing a clause shall be a vertex of a hexagon in the honeycomb.
-\item \textbf{Edge:} Edges of the associated graph $A(\Phi)$ are paths from the variable $x_i$ and clause $C_j$.  An edge $\left\lbrace x_i, C_j \right\rbrace$ of the associated graph is pariwise edge disjoint. 
-An edge of the drawing shall traverse the edges of hexagons in a vertically or horizontally zigzagging manner in the honeycomb from the literal to the corresponding clause. 
-The edges are drawn in a manner that best represents an orthogonal graph drawing over the honeycomb.  
-The length of the edges are bounded above by $6 \cdot \lr{\ell_1 \lr{x_i,C_j} + D}$. Edges traverse a hexagon in two edges vertically, three edges horizontally.
-  When the edge transisitions from a vertical to horizontal traversal, the edge traverses in over 4 edges about the hexagon.
+\item \textbf{Edge:} Edges of the associated graph $A(\Phi)$ are paths between the variable $x_i$ and clause $C_j$.  An edge $\left\lbrace x_i, C_j \right\rbrace$ of the associated graph is pariwise edge disjoint. 
+The edges of the drawing shall traverse the edges of hexagons in a vertically or horizontally zigzagging manner (see Figure \ref{fig:HoneyCombAssociatedGraphSmall}) in the honeycomb from the literal to the corresponding clause. 
+Edges traverse a hexagon in two edges vertically, three edges horizontally.  
+The vertical zigzagging edge segments traverse the left or right sides of a hexagon(s).
+The horizontal zigzagging edge segments traverse the top or bottom halves of a hexagon(s).
+When the edge transisitions from a vertical to horizontal traversal, the edge traverses in over 4 edges about the hexagon.
+The length of the edges are bounded above by $6 \cdot \lr{\ell_1 \lr{x_i,C_j} + D}$ where $\ell_1$ is the $L_1$ norm. 
 \end{enumerate}
 Figure \ref{fig:HoneyCombAssociatedGraphSmall} illustrates an associated graph of a P3SAT overlayed on a honeycomb.
-Each hexagon of $H_{A \lr{\Phi}}$ is of unit side length and has a polynomial number of hexagons, $s(n,m)$.
-It is known that the size of the honeycomb is finite and can be determined by polynomials $h(n,m) \times h(n,m)$ \cite{BK+98}.
-Let $D = \max_{v \in V} degree(v)$ where $V$ is the set of vertices of $A(\Phi)$.
+This type of construction emulates an \textit{orthoganal drawring} over a hexagonal grid; an orthoganal drawing where edges are drawn with alternating vertical and horizontal line segments.
+Biedle showed that for graphs maximum degree 3 can be embedded in $\ceil{\frac{n}{2}}\times \ceil{\frac{n}{2}}$ grid \cite{biedl}.
+We can extend this finding to say that our construction over the hexagonal grid can be drawn over a finite region of the plane and with a polynomial number of hexagons $s(n,m)$.
+Each hexagon of $H_{A \lr{\Phi}}$ is of unit side length. 
+Let the region in which the construction lies in be determined with the polynomial $h(n,m)$ such that the region is of size $h(n,m) \times h(n,m)$ \cite{BK+98}.
+
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[scale=.5]{graphics/HoneyCombAssociatedGraphSmall.pdf}
 \captionof{figure}{
 This is an instance of an associated graph for a P3SAT overlayed onto a honeycomb grid.  
-This honeycomb graph could correspond to Boolean formula $\lr{\lnot x_1 \lor \lnot x_2 \lor x_4} \land \lr{x_2 \lor \lnot x_3 \lor x_4} \land \lr{x_1 \lor \lnot x_3 \lor \lnot x_4}$.
-%This boolean formula for this P3SAT is $\lr{\lnot x_1 \lor \lnot x_2 \lor x_4} \land \lr{x_2 \lor \lnot x_3 \lor x_4} \land \lr{x_1 \lor \lnot x_3 \lor \lnot x_4}$.  The associated bipartite graph is overlaid onto a honeycomb. 
+This honeycomb graph could correspond to Boolean formula $\lr{\lnot x_1 \lor \lnot x_2 \lor x_4} \land \lr{x_2 \lor \lnot x_3 \lor x_4} \land \lr{x_1 \lor \lnot x_3 \lor \lnot x_4}$. 
 }\label{fig:HoneyCombAssociatedGraphSmall}
 \end{center}
 \end{minipage}

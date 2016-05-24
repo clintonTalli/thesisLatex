@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  21 MAY 2016 19:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  24 MAY 2016 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,27 +680,24 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 
 
 Writing index file Thesis.idx
-(../pdf/Thesis.aux
-
-LaTeX Warning: Label `lem:aux-C' multiply defined.
-
-)
+(../pdf/Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 240.
-LaTeX Font Info:    ... okay on input line 240.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 240.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 242.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -718,58 +715,58 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \everyMPtoPDFconversion=\toks49
 )
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 24
-0.
+2.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 24
-0.
+2.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 24
-0.
+2.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 24
-0.
+2.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 240.
+LaTeX Font Info:    Try loading font information for U+msa on input line 242.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 240.
+LaTeX Font Info:    Try loading font information for U+msb on input line 242.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 240.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 242.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 242.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 242.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 242.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 240.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 242.
 
 
-Package mathptmx Warning: There are no bold math fonts on input line 240.
+Package mathptmx Warning: There are no bold math fonts on input line 242.
 
 (../pdf/Thesis.toc
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
@@ -845,23 +842,22 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 
 LaTeX Warning: Reference `sec:disk' on page 1 undefined on input line 15.
 
+[1
 
-<graphics/HoneyCombAssociatedGraphSmall.pdf, id=20, 605.97394pt x 323.16232pt>
+]
+<graphics/HoneyCombAssociatedGraphSmall.pdf, id=31, 605.97394pt x 337.95761pt>
 File: graphics/HoneyCombAssociatedGraphSmall.pdf Graphic file (type pdf)
 
 <use graphics/HoneyCombAssociatedGraphSmall.pdf>
 Package pdftex.def Info: graphics/HoneyCombAssociatedGraphSmall.pdf used on inp
-ut line 38.
-(pdftex.def)             Requested size: 302.98622pt x 161.58076pt.
+ut line 44.
+(pdftex.def)             Requested size: 302.98622pt x 168.97838pt.
 
-Overfull \hbox (107.33873pt too wide) in paragraph at lines 32--46
-\T1/ptm/m/n/10 the set of ver-tices of $\OML/ztmcm/m/it/10 A\OT1/ztmcm/m/n/10 (
-^^H)$\T1/ptm/m/n/10 . $[]$ 
+Overfull \hbox (15.0pt too wide) in paragraph at lines 42--51
+[]$[]$ 
  []
 
-[1
-
-]) (./ch3/auxilary.tex
+) (./ch3/auxilary.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -880,7 +876,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 8--17
 
 LaTeX Warning: Reference `fig:honeycomb' on page 2 undefined on input line 24.
 
-<graphics/fig-variable-hex+.pdf, id=33, 515.06215pt x 110.3061pt>
+[2 <./graphics/HoneyCombAssociatedGraphSmall.pdf> <./graphics/FlexibleHexagons.
+pdf>] <graphics/fig-variable-hex+.pdf, id=55, 515.06215pt x 110.3061pt>
 File: graphics/fig-variable-hex+.pdf Graphic file (type pdf)
 
 <use graphics/fig-variable-hex+.pdf>
@@ -891,8 +888,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 37--48
 []$[]$ 
  []
 
-[2 <./graphics/HoneyCombAssociatedGraphSmall.pdf> <./graphics/FlexibleHexagons.
-pdf>] <graphics/ActiveChannel.pdf, id=56, 648.77379pt x 237.70808pt>
+<graphics/ActiveChannel.pdf, id=56, 648.77379pt x 237.70808pt>
 File: graphics/ActiveChannel.pdf Graphic file (type pdf)
 
 <use graphics/ActiveChannel.pdf>
@@ -969,82 +965,105 @@ LaTeX Warning: Reference `lem:logicEngine1' on page 6 undefined on input line 3
 15.
 
 [6 <./graphics/fig-transmitter-hex.pdf>] [7] [8]) (./ch3/modifiedAuxilary.tex
-<graphics/fig-frame-hex.pdf, id=148, 477.26376pt x 197.06023pt>
+<graphics/HalfSizeHexagon.pdf, id=148, 785.35406pt x 396.72214pt>
+File: graphics/HalfSizeHexagon.pdf Graphic file (type pdf)
+
+<use graphics/HalfSizeHexagon.pdf>
+Package pdftex.def Info: graphics/HalfSizeHexagon.pdf used on input line 32.
+(pdftex.def)             Requested size: 134.84532pt x 68.1138pt.
+ [9]
+<graphics/fig-frame-hex.pdf, id=153, 477.26376pt x 197.06023pt>
 File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-frame-hex.pdf>
-Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 29.
+Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 41.
 (pdftex.def)             Requested size: 411.93767pt x 170.09091pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 27--42
+Overfull \hbox (15.0pt too wide) in paragraph at lines 39--54
 []$[]$
  []
 
-[9] <graphics/tiltedObstaclesInFrame.pdf, id=153, 184.51936pt x 159.85722pt>
+<graphics/tiltedObstaclesInFrame.pdf, id=154, 184.51936pt x 161.31267pt>
 File: graphics/tiltedObstaclesInFrame.pdf Graphic file (type pdf)
 
 <use graphics/tiltedObstaclesInFrame.pdf>
 Package pdftex.def Info: graphics/tiltedObstaclesInFrame.pdf used on input line
- 61.
-(pdftex.def)             Requested size: 130.08731pt x 112.70178pt.
+ 72.
+(pdftex.def)             Requested size: 130.08731pt x 113.72789pt.
 ) (./ch3/lemma6V2.tex
-Overfull \hbox (15.0pt too wide) in paragraph at lines 59--3
-[]$[]$
+Overfull \hbox (15.0pt too wide) in paragraph at lines 70--3
+[]$[]$ 
  []
 
-[10 <./graphics/fig-frame-hex.pdf> <./graphics/tiltedObstaclesInFrame.pdf>]
-<graphics/smallHexagonalGridWithEll.pdf, id=183, 226.21513pt x 196.87552pt>
-File: graphics/smallHexagonalGridWithEll.pdf Graphic file (type pdf)
+[10 <./graphics/HalfSizeHexagon.pdf> <./graphics/fig-frame-hex.pdf> <./graphics
+/tiltedObstaclesInFrame.pdf>]
+<graphics/dualSmallHexagonalGrid.pdf, id=187, 527.5409pt x 233.5927pt>
+File: graphics/dualSmallHexagonalGrid.pdf Graphic file (type pdf)
 
-<use graphics/smallHexagonalGridWithEll.pdf>
-Package pdftex.def Info: graphics/smallHexagonalGridWithEll.pdf used on input l
-ine 28.
-(pdftex.def)             Requested size: 216.81pt x 188.69794pt.
+<use graphics/dualSmallHexagonalGrid.pdf>
+Package pdftex.def Info: graphics/dualSmallHexagonalGrid.pdf used on input line
+ 28.
+(pdftex.def)             Requested size: 216.81pt x 96.00174pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 26--32
 []$[]$ 
  []
 
-<graphics/corridorNonCanonical.pdf, id=184, 318.21886pt x 109.40875pt>
+) (./ch3/Angular.tex
+<graphics/corridorNonCanonical.pdf, id=188, 316.25153pt x 109.39871pt>
 File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
 
 <use graphics/corridorNonCanonical.pdf>
-Package pdftex.def Info: graphics/corridorNonCanonical.pdf used on input line 5
-5.
-(pdftex.def)             Requested size: 390.25534pt x 134.18796pt.
+Package pdftex.def Info: graphics/corridorNonCanonical.pdf used on input line 1
+2.
+(pdftex.def)             Requested size: 390.25534pt x 134.99863pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 53--59
-[]$[]$ 
+Overfull \hbox (15.0pt too wide) in paragraph at lines 10--26
+[]$[]$
  []
 
-[11 <./graphics/smallHexagonalGridWithEll.pdf>]
-<graphics/hexagonNonCanonical2.pdf, id=202, 189.37952pt x 182.95753pt>
+[11 <./graphics/dualSmallHexagonalGrid.pdf>]) (./ch3/Vertical.tex
+<graphics/hexagonNonCanonical2.pdf, id=204, 189.37952pt x 182.95753pt>
 File: graphics/hexagonNonCanonical2.pdf Graphic file (type pdf)
 
 <use graphics/hexagonNonCanonical2.pdf>
-Package pdftex.def Info: graphics/hexagonNonCanonical2.pdf used on input line 9
-5.
+Package pdftex.def Info: graphics/hexagonNonCanonical2.pdf used on input line 4
+.
 (pdftex.def)             Requested size: 143.09538pt x 138.24515pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 93--102
-[]$[]$ 
+Overfull \hbox (111.16873pt too wide) in paragraph at lines 2--11
+ \T1/ptm/b/n/10 Ver-ti-cal Dis-place-ment $\OML/ztmcm/m/it/10 ^^N$[] $[]$ 
  []
 
-[12 <./graphics/corridorNonCanonical.pdf>]
-<graphics/smallHexagonalGridWithTwoLines.pdf, id=229, 225.02066pt x 195.84166pt
+[12 <./graphics/corridorNonCanonical.pdf> <./graphics/hexagonNonCanonical2.pdf>
+]
+<graphics/smallHexagonalGridWithTwoLines.pdf, id=254, 225.02066pt x 195.84166pt
 >
 File: graphics/smallHexagonalGridWithTwoLines.pdf Graphic file (type pdf)
  <use graphics/smallHexagonalGridWithTwoLines.pdf>
 Package pdftex.def Info: graphics/smallHexagonalGridWithTwoLines.pdf used on in
-put line 145.
+put line 52.
 (pdftex.def)             Requested size: 143.09538pt x 124.54034pt.
 
-Overfull \hbox (111.16873pt too wide) in paragraph at lines 143--151
- \T1/ptm/b/n/10 Ver-ti-cal Dis-place-ment $\OML/ztmcm/m/it/10 ^^N$[] $[]$ 
+Overfull \hbox (15.0pt too wide) in paragraph at lines 50--58
+[]$[]$
  []
 
-[13 <./graphics/hexagonNonCanonical2.pdf>])) (../pdf/Thesis.bbl [14 <./graphics
-/smallHexagonalGridWithTwoLines.pdf>])
+
+<graphics/verticalDisplacementArgument.pdf, id=255, 210.13507pt x 182.03008pt>
+File: graphics/verticalDisplacementArgument.pdf Graphic file (type pdf)
+
+<use graphics/verticalDisplacementArgument.pdf>
+Package pdftex.def Info: graphics/verticalDisplacementArgument.pdf used on inpu
+t line 61.
+(pdftex.def)             Requested size: 143.09538pt x 123.96211pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 59--65
+[]$[]$ 
+ []
+
+[13 <./graphics/smallHexagonalGridWithTwoLines.pdf>]) (./ch3/Horizontal.tex))
+(../pdf/Thesis.bbl [14 <./graphics/verticalDisplacementArgument.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 [15
 
@@ -1052,18 +1071,15 @@ WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 17501 strings out of 493089
- 319691 string characters out of 6134841
- 501597 words of memory out of 5000000
- 20529 multiletter control sequences out of 15000+600000
- 40004 words of font info for 72 fonts, out of 8000000 for 9000
+ 17529 strings out of 493089
+ 320305 string characters out of 6134841
+ 503597 words of memory out of 5000000
+ 20544 multiletter control sequences out of 15000+600000
+ 43714 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,59p,490b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,59p,490b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1077,16 +1093,17 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/sy
-mbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (19 pages, 289914 bytes).
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symb
+ol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/Thesis.pdf (19 pages, 308192 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
+ 336 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

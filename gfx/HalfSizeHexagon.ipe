@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160507153210" modified="D:20160524112220"/>
+<info created="D:20160524084256" modified="D:20160524084256"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -258,114 +258,60 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1.51962 0 0 1.51962 1741.84 680.488" stroke="black">
-336 448 m
-328 461.856 l
-312 461.856 l
-304 448 l
-312 434.144 l
-328 434.144 l
+<path layer="alpha" matrix="1 0 0 1 -335.11 -320" stroke="black" pen="ultrafat">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
 h
 </path>
-<path matrix="0.0181304 -1.51951 1.51951 0.0181304 1529.89 1860.23" stroke="black">
-304 463.52 m
-312 465.183 l
-320 463.52 l
-312 461.856 l
-304 463.52 l
+<path matrix="1 0 0 1 -582.21 -177.34" stroke="black" pen="ultrafat">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
 </path>
-<path matrix="1.51962 0 0 1.51962 1741.84 680.488" stroke="black">
-312 434.144 m
-328 434.144 l
+<path matrix="1 0 0 1 -829.315 -320" stroke="black" pen="ultrafat">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
 </path>
-<path matrix="1.51962 0 0 1.51962 1766.15 680.487" stroke="black">
-312 434.144 m
-328 434.144 l
+<path matrix="-0.42181 0 0 -0.42181 6970.42 4613.11" stroke="black" pen="ultrafat">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
 </path>
-<path matrix="1.51962 0 0 1.51962 1765.61 746.966" stroke="black">
-312 434.144 m
-328 434.144 l
+<path stroke="black" pen="ultrafat">
+4411.14 3076.06 m
+5048.26 3076.06 l
 </path>
-<path matrix="1.51962 0 0 1.51962 1741.29 746.966" stroke="black">
-312 434.144 m
-328 434.144 l
+<use name="mark/disk(sx)" pos="4479.95 3076.06" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="4990.56 3076.06" size="normal" stroke="black"/>
+<path matrix="0.153969 0 0 0.153969 3892.81 2657.67" stroke="black" fill="gray" pen="ultrafat">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
 </path>
-<path matrix="1.51962 0 0 1.51962 1716.98 746.966" stroke="black">
-312 434.144 m
-328 434.144 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1717.53 680.488" stroke="black">
-312 434.144 m
-328 434.144 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1741.84 680.488" stroke="black">
-343.64 477.89 m
-295.641 477.891 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1814.78 680.487" stroke="black">
-343.64 477.89 m
-295.641 477.891 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1815.33 614.009" stroke="black">
-343.64 477.89 m
-295.641 477.891 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1741.84 680.488" stroke="black">
-295.641 477.891 m
-391.639 477.891 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1887.72 680.488" stroke="black">
-295.641 477.891 m
-391.639 477.891 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1888.27 614.007" stroke="black">
-295.641 477.891 m
-391.639 477.891 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1741.84 680.488" stroke="black">
-487.769 461.855 m
-327.641 477.891 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1741.84 680.488" stroke="black">
-328 461.856 m
-487.769 461.855 l
-</path>
-<path matrix="1.51962 0 0 1.51962 1741.84 680.488" stroke="black">
-384 461.856 m
-103.769 0 0 -103.769 487.769 461.855 384.516 472.195 a
-</path>
-<text matrix="1.51962 0 0 1.51962 1739.39 674.813" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="8.475" height="4.297" depth="1.93" valign="baseline">$\gamma_i$</text>
-<text matrix="1.51962 0 0 1.51962 1747.27 653.698" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="19.57" height="8.422" depth="3.43" valign="baseline">$\frac{5t-1}{4}$</text>
-<path matrix="1.51962 0 0 1.51962 1741.84 680.488" stroke="black">
-327.64 477.89 m
-327.831 461.891 l
-</path>
-<text matrix="1 0 0 1 1805.23 921.992" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="53.216" height="11.431" depth="6.9" valign="baseline" size="tiny">$\sqrt{1+\left(\frac{1}{100N}\right)^2}$</text>
-<text matrix="1.51962 0 0 1.51962 1820.69 683.377" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="7.987" height="4.294" depth="1.49" valign="baseline">$s_i$</text>
-<path matrix="-0.75981 1.31603 1.31603 0.75981 2161.28 578.695" stroke="black">
-312 434.144 m
-328 434.144 l
-</path>
-<path matrix="-0.75981 -1.31603 1.31603 -0.75981 2160.73 2168.22" stroke="black">
-312 434.144 m
-328 434.144 l
-</path>
-<text transformations="translations" pos="2334.35 1329.27" stroke="black" type="label" width="10.916" height="6.812" depth="1.49" valign="baseline">$O_i$</text>
-<text matrix="1 0 0 1 -5.04068 86.9284" transformations="translations" pos="2334.35 1329.27" stroke="black" type="label" width="21.003" height="6.812" depth="2.32" valign="baseline">$O_{i+1}$</text>
-<path fill="gray">
-2482.86 1406.7 m
-2495.02 1427.75 l
-2191.1 1427.66 l
-2191.1 1406.7 l
-</path>
-<text matrix="1 0 0 1 -5.03796 86.924" transformations="translations" pos="2334.35 1329.27" stroke="black" type="label" width="21.003" height="6.812" depth="2.32" valign="baseline">$O_{i+1}$</text>
-<path fill="gray">
-2495.57 1319.16 m
-2483.41 1340.22 l
-2191.65 1340.22 l
-2191.65 1319.16 l
-2495.57 1319.16 l
-</path>
-<text matrix="1 0 0 1 -0.00411177 0.00129942" transformations="translations" pos="2334.35 1329.27" stroke="black" type="label" width="10.916" height="6.812" depth="1.49" valign="baseline">$O_i$</text>
+<use matrix="1 0 0 1 -10.2659 0" name="mark/disk(sx)" pos="4721.71 3218.72" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4479.95 3076.06" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4990.56 3076.06" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4711.29 3180.55" size="large" stroke="black"/>
 </page>
 </ipe>

@@ -1,0 +1,41 @@
+\paragraph{Angular Rotation $\alpha$.}
+First we show that the angular rotation of the obstacle hexagons with respect to canonical position is small.  
+We first look at the relative angular difference between two adjacent obstacle polygons
+$$\left\vert \alpha_i - \alpha_{i+1} \right\vert.$$
+Given an arbitrary instance of a modified auxilary construction, consider $O_i$, $O_{i+1}$, and the corridor between $O_i$ and $O_{i+1}$.
+The skinny rhombus  has length $\sqrt{1 + \lr{100N}^{-2}}$.
+
+
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical.pdf}
+\captionof{figure}{The obstacle hexagon here is in noncanonical position, and showing the side lengths adjacent to $\alpha_i$.}\label{fig:corridorNonCanonical.pdf}
+\end{center}
+\end{minipage}
+In figure \ref{fig:dualSmallHexagonalGrid.pdf}(a) we see $\ell$ in the center of the column of obstacle hexagons.  
+Our goal is show that the column of hexagons cannot tilt in the manner Figure \ref{fig:tiltedObstaclesInFrame.pdf} does where the column veers greatly into the space occupied by corridors and obstacle hexagons.
+The cross section of an arbitrary corridor must have a height of at least $\sqrt{3}$ everywhere. 
+%noncanonical corridor must be at least 
+Otherwise, a flag would overlap with an obstacle hexagon; it would no longer remain a realization since the height of a flag is $\sqrt{3}$.
+In Figure \ref{fig:corridorNonCanonical.pdf}, we illustrate an obstacle hexagon, its upper corridor with the flag that has the hinge to the skinny rhombus.  
+The rhombus is hinged at the midpoint of the upper side of the corridor.
+The length from a corridor's midpoint to one end of the corridor is $\frac{5t-1}{4}$.
+$\gamma_j$ is the angle between $s_j$ and the horizontal axis at the height of the flag ($j = 1,2,\ldots, u$).
+The bound of $\gamma_j$ is:
+\begin{equation}\label{eqn:gammaBound}
+\begin{array}{rcl}
+\gamma_j &\leq & \tan^{-1} \lr{
+								\frac{
+										\sqrt{1+ \lr{	\frac{1}{100N}	}^2}
+								}{
+										\frac{5t-1}{4}
+								}	
+							}\\
+&=& \tan^{-1} \lr{\frac{4\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}
+\end{array} 
+\end{equation}
+Inequality \ref{eqn:gammaBound} uses the first two terms Maclaurin series of $\tan^{-1}$.
+Thus the relative rotational difference between adjacent obstacle hexagons is
+$$ \vert \alpha_i - \alpha_{i+1} \vert \leq $$
+From this inequality, it is clear that as $N \rightarrow \infty$, $\gamma_j \rightarrow 0$; and so the relative difference between $\alpha_i$ and $\alpha_{i+1}$ goes to zero as well.

@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{biedl}
+T.~Biedl.
+\newblock Improved orthoganl drawings of 3-graphs.
+\newblock {\em Proc. 8th Canadian Conference on Computational Geometry,
+  International Informatics Series}, pages 295--299, 1996.
+
 \bibitem{BK+98}
 Therese Biedl and Goos Kant.
 \newblock A better heuristic for orthogonal graph drawings.
