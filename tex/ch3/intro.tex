@@ -10,7 +10,7 @@ It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph i
 Our proof is a reduction from P3SAT.
 Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$, of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
 
-We construct a polygonal linkage  in two main steps: first, we construct an auxiliary structure where some of the polygons have fixed position in the plane (called \emph{obstacles}), while other polygons are flexible, and each flexible polygon is hinged to an obstacle. 
+We construct a polygonal linkage in two main steps: first, we construct an auxiliary structure where some of the polygons have fixed position in the plane (called \emph{obstacles}), while other polygons are flexible, and each flexible polygon is hinged to an obstacle. 
 Second, we modify the auxiliary construction into a polygonal linkage by allowing the obstacles to move freely, and by adding new polygons and hinges as well as an exterior \emph{frame} that holds the obstacle polygons in place.
 All polygons in our constructions are regular hexagons or long and skinny rhombi because these are the polygons that we can ``simulate'' with disk arrangements in Section~\ref{sec:disk}.
 \paragraph{Modifying the Associated Graph of a P3SAT.}
@@ -34,10 +34,13 @@ The length of the edges are bounded above by $6 \cdot \lr{\ell_1 \lr{x_i,C_j} + 
 \end{enumerate}
 Figure \ref{fig:HoneyCombAssociatedGraphSmall} illustrates an associated graph of a P3SAT overlayed on a honeycomb.
 This type of construction emulates an \textit{orthoganal drawring} over a hexagonal grid; an orthoganal drawing where edges are drawn with alternating vertical and horizontal line segments.
-Biedle showed that for graphs maximum degree 3 can be embedded in $\ceil{\frac{n}{2}}\times \ceil{\frac{n}{2}}$ grid \cite{biedl}.
-We can extend this finding to say that our construction over the hexagonal grid can be drawn over a finite region of the plane.
-Each hexagon of $H_{A \lr{\Phi}}$ is of unit side length. 
-Let the region in which the construction lies in be determined with the polynomial $h(n,m)$ such that the region is of size $h(n,m) \times h(n,m)$ \cite{BK+98}.
+% Biedl showed that for graphs maximum degree 3 can be embedded in $\ceil{\frac{n}{2}}\times \ceil{\frac{n}{2}}$ grid \cite{biedl}.
+% We can extend this finding to say that our construction over the hexagonal grid can be drawn over a finite region of the plane.
+% Each hexagon of $H_{A \lr{\Phi}}$ is of unit side length. 
+Let the region in which the construction lies in be a regular hexagon region with polynomial side length $s(n,m)$. 
+It was shown that if $G=(V,E)$ is planar, it can be embedded in an $\vert V \vert \times \vert V \vert$ grid with $2.4\vert V\vert + 4$ bends \cite{storer1984minimal,tamassia1987efficient}.
+From this result, we can define the side length polynomial $s(n,m)$ to be something larger than $2.4(n+m) + 4$. 
+%withpolynomial $h(n,m)$ such that the region is of size $h(n,m) \times h(n,m)$ \cite{BK+98}.
 
 \begin{minipage}{\linewidth}
 \begin{center}
