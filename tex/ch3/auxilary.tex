@@ -1,10 +1,10 @@
 \section{Auxilary Construction}\label{sec:auxiliaryConstruction}
 Let $\Phi$ be a Boolean formula of P3SAT with variables $x_1,\ldots , x_n$ and clauses $C_1,\ldots ,C_m$, where $A(\Phi)$ is the associated planar graph and $\tilde{A}\lr{\Phi}$ be corresponding honeycomb graph.
 We continue to modify $\tilde{A}\lr{\Phi}$ to form the auxilary construction.   
-Consider a large (polynomial-size) regular hexagon $J$  with side length $s(n,m)$ that contains all gadgets in our construction.
-For each hexagon in $\tilde{A}\lr{\Phi}$, we scale the hexagons in the following way: first we fix the center of the hexagon and then scale (shrink) the hexagon; the hexagons in the honeycomb no longer touch each other and form corridors and junctions between the hexagons. 
+Consider a large (polynomial-size) regular hexagon $J$  with side length $s(n,m)$ that contains all gadgets in our construction and hexagonal grid.
+For each hexagon in the hexagonal grid of $\tilde{A}\lr{\Phi}$, we scale the hexagons in the following way: first we fix the center of the hexagon and then scale (shrink) the hexagon; the hexagons in the honeycomb no longer touch each other and form corridors and junctions between the hexagons. 
 Formally, let a \textit{corridor} be a channel between two adjacent hexagons and a \textit{junction} be a region where three corridors meet.
-We then finally re-scale this form of the honeycomb such that the side length of the hexagons are determined by polynomial of variable $n$ and $m$, $N(n,m)$ (as described below), while preserving the corridors formed from the first scaling.\newline
+We then finally re-scale this form of the honeycomb such that the side length of the hexagons are determined by polynomial of variable $n$ and $m$, $N(n,m)= \lr{5 s(n,m) -1}/2$, while preserving the corridors formed from the first scaling.\newline
 
 \begin{minipage}{\linewidth}
 \begin{center}
