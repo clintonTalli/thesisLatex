@@ -4,12 +4,12 @@
 \contentsline {chapter}{\numberline {1}Realizability of Polygonal Linkages with Fixed Orientation}{1}
 \contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{1}
 \contentsline {section}{\numberline {1.1}Auxilary Construction}{2}
-\contentsline {paragraph}{Variable Gadget.}{3}
-\contentsline {paragraph}{Clause Gadget.}{4}
-\contentsline {paragraph}{Transmitter Gadget.}{4}
-\contentsline {subsection}{\numberline {1.1.1}Functionality of the Auxilary Construction and Gadgets}{6}
-\contentsline {paragraph}{Modified Auxilary Construction.}{9}
-\contentsline {paragraph}{Angular Rotation $\alpha $.}{11}
-\contentsline {paragraph}{Vertical Displacement $\delta $}{12}
-\contentsline {paragraph}{Horizontal Displacement $\alpha $}{14}
+\contentsline {paragraph}{Variable Gadget.}{5}
+\contentsline {paragraph}{Clause Gadget.}{5}
+\contentsline {paragraph}{Transmitter Gadget.}{6}
+\contentsline {subsection}{\numberline {1.1.1}Functionality of the Auxilary Construction and Gadgets}{7}
+\contentsline {paragraph}{Modified Auxilary Construction.}{10}
+\contentsline {paragraph}{Angular Rotation $\alpha $.}{13}
+\contentsline {paragraph}{Vertical Displacement $\delta $}{14}
+\contentsline {paragraph}{Horizontal Displacement $\alpha $}{16}
 \contentsfinish 

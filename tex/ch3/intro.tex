@@ -32,14 +32,15 @@ The horizontal zigzagging edge segments traverse the top or bottom halves of a h
 When the edge transisitions from a vertical to horizontal traversal, the edge traverses in over 4 edges about the hexagon.
 The length of the edges are bounded above by $6 \cdot \lr{\ell_1 \lr{x_i,C_j} + D}$ where $\ell_1$ is the $L_1$ norm. 
 \end{enumerate}
+It was shown that if $G=(V,E)$ is planar, it can be embedded in an $\vert V \vert \times \vert V \vert$ grid with $2.4\vert V\vert + 4$ bends \cite{storer1984minimal,tamassia1987efficient}.
+From this result, we can define the side length polynomial $s(n,m)$ to account for the hexagons in the grid and let $s(n,m)$ to be something larger than $2.4(n+m) + 4$, e.g.:
+$$6 (n+m) + 4.$$
 Figure \ref{fig:HoneyCombAssociatedGraphSmall} illustrates an associated graph of a P3SAT overlayed on a honeycomb.
-This type of construction emulates an \textit{orthoganal drawring} over a hexagonal grid; an orthoganal drawing where edges are drawn with alternating vertical and horizontal line segments.
+This type of construction emulates an \textit{orthoganal drawning} over a hexagonal grid; an orthoganal drawing where edges are drawn with alternating vertical and horizontal line segments.
 % Biedl showed that for graphs maximum degree 3 can be embedded in $\ceil{\frac{n}{2}}\times \ceil{\frac{n}{2}}$ grid \cite{biedl}.
 % We can extend this finding to say that our construction over the hexagonal grid can be drawn over a finite region of the plane.
 % Each hexagon of $H_{A \lr{\Phi}}$ is of unit side length. 
 Let the region in which the construction lies in be a regular hexagon region with polynomial side length $s(n,m)$. 
-It was shown that if $G=(V,E)$ is planar, it can be embedded in an $\vert V \vert \times \vert V \vert$ grid with $2.4\vert V\vert + 4$ bends \cite{storer1984minimal,tamassia1987efficient}.
-From this result, we can define the side length polynomial $s(n,m)$ to be something larger than $2.4(n+m) + 4$. 
 %withpolynomial $h(n,m)$ such that the region is of size $h(n,m) \times h(n,m)$ \cite{BK+98}.
 
 % \begin{minipage}{\linewidth}
@@ -63,4 +64,5 @@ This honeycomb graph could correspond to Boolean formula $\lr{\lnot x_1 \lor \ln
 \end{minipage}
 
 The honeycomb construction will act as preliminary concept that will be refined further in the Auxilary Contruction.
-We denote the associated graph overlayed on the honeycomb as $\tilde{A}\lr{\Phi}$.
+The polynomial $s(n,m)$ will be used to construct the gadgets for the construction.
+% We denote the associated graph overlayed on the honeycomb as $\tilde{A}\lr{\Phi}$.

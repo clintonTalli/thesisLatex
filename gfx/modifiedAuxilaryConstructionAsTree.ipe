@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160526140610" modified="D:20160526140858"/>
+<info created="D:20160526140610" modified="D:20160605132733"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -1594,5 +1594,58 @@ h
 <use matrix="0.90293 0 0 0.90293 5156.35 2917.24" name="mark/fdisk(sfx)" pos="117.356 445.919" size="small" stroke="brown" fill="brown"/>
 <text matrix="-1 0 0 1 5179.53 2645.12" transformations="translations" pos="284 536" stroke="black" type="label" width="20.088" height="12.896" depth="4.29" valign="baseline" size="LARGE">(a)</text>
 <text matrix="-1 0 0 1 5515.53 2645.12" transformations="translations" pos="284 536" stroke="black" type="label" width="20.988" height="12.896" depth="4.29" valign="baseline" size="LARGE">(b)</text>
+<path matrix="1 0 0 1 64 16" stroke="black" pen="ultrafat">
+4800 3360 m
+4832.17 3327.83 l
+</path>
+<path matrix="1 0 0 1 64 16" stroke="black" pen="ultrafat">
+4800 3328 m
+4815.82 3312.18 l
+</path>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4832.17 3327.83" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4815.82 3312.18" size="large" stroke="black"/>
+<path matrix="1 0 0 1 64 16" stroke="black" pen="ultrafat">
+4815.82 3312.18 m
+4816 3200 l
+</path>
+<path matrix="1 0 0 1 64 16" stroke="black" pen="ultrafat">
+4832.17 3327.83 m
+4832 3264 l
+</path>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4816 3200" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4816 3216" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4816 3232" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4816 3248" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4816 3264" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4816 3280" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4816 3296" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4832 3264" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4832 3280" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4832 3296" size="large" stroke="black"/>
+<use matrix="1 0 0 1 64 16" name="mark/disk(sx)" pos="4832 3312" size="large" stroke="black"/>
+<path matrix="1 0 0 1 128 -16" stroke="black" pen="ultrafat">
+4736 3376 m
+4719.72 3359.72 l
+</path>
+<use matrix="1 0 0 1 128 -16" name="mark/disk(sx)" pos="4720 3360" size="large" stroke="black"/>
+<path matrix="1 0 0 1 128 -16" stroke="black" pen="ultrafat">
+4719.72 3359.72 m
+4720 3312 l
+</path>
+<use matrix="1 0 0 1 128 -16" name="mark/disk(sx)" pos="4720 3312" size="large" stroke="black"/>
+<use matrix="1 0 0 1 128 -16" name="mark/disk(sx)" pos="4720 3328" size="large" stroke="black"/>
+<use matrix="1 0 0 1 128 -16" name="mark/disk(sx)" pos="4720 3344" size="large" stroke="black"/>
+<path matrix="1 0 0 1 128 -112" stroke="black" pen="ultrafat">
+4736 3376 m
+4719.72 3359.72 l
+</path>
+<use matrix="1 0 0 1 128 -112" name="mark/disk(sx)" pos="4720 3360" size="large" stroke="black"/>
+<path matrix="1 0 0 1 128 -112" stroke="black" pen="ultrafat">
+4719.72 3359.72 m
+4720 3312 l
+</path>
+<use matrix="1 0 0 1 128 -112" name="mark/disk(sx)" pos="4720 3312" size="large" stroke="black"/>
+<use matrix="1 0 0 1 128 -112" name="mark/disk(sx)" pos="4720 3328" size="large" stroke="black"/>
+<use matrix="1 0 0 1 128 -112" name="mark/disk(sx)" pos="4720 3344" size="large" stroke="black"/>
 </page>
 </ipe>

@@ -1,4 +1,7 @@
 \paragraph{Modified Auxilary Construction.}
+
+
+
 We modify the auxiliary construction allowing all polygons to move freely, and by adding extra polygons and hinges so that the hinge graph becomes a \emph{tree}, and the size of the construction remains polynomial. 
 Recall that our auxiliary construction is based on a polynomial section of the hexagonal grid, using obstacle hexagons of side lengths $(5t-1)/2$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. 
 We modify it in 3 steps as follows.
@@ -23,6 +26,14 @@ Otherwise, the hinge is attached to a new \emph{connector} polygon: a skinny rho
 The far corner of each rhombus is hinged to the unit hexagon in the middle of the corridor at shown in Figure \ref{fig:frame}(b).
 \item The construction so far constains rows and columns of obstacle hexagons.
 Every other column of obstacle hexagons is hinged to the bottom side of the perimiter of $J$.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/modifiedAuxilaryConstructionAsTree.pdf}
+\captionof{figure}{(a) illustrates a tree corresponding to the modified auxilary construction in (b).  On the left half of the tree, we have the bottom most frame hexagons and the the hexagons in the interior of $J$ as children of the the bottom frame hexagons.  The top most frame hexagons only have the half sized hexgons attached to them. (b) is the corresponding modified auxilary construction.}\label{fig:modifiedAuxilaryConstructionAsTree.pdf}
+\end{center}
+\end{minipage}
+
 These bottom most obstacle hexagons have a hinge point on its side.
 The columns that do not have an obstacle hexagon hinged to the perimeter of $J$ has a half-sized hexgon hinged to the perimeter of $J$ and a locked flag with no state to the first obstacle hexagon above it (See Figure \ref{fig:HalfSizeHexagon.pdf}).
 

@@ -2,9 +2,51 @@
 Let $\Phi$ be a Boolean formula of P3SAT with variables $x_1,\ldots , x_n$ and clauses $C_1,\ldots ,C_m$, where $A(\Phi)$ is the associated planar graph and $\tilde{A}\lr{\Phi}$ be corresponding honeycomb graph.
 We continue to modify $\tilde{A}\lr{\Phi}$ to form the auxilary construction.   
 Consider a large (polynomial-size) regular hexagon $J$  with side length $s(n,m)$ that contains all gadgets in our construction and hexagonal grid.
-For each hexagon of the hexagonal grid contained in $J$, scale the hexagon in the following way: first we fix the center of the hexagon and then scale (shrink) the hexagon; adjacent hexagons in the honeycomb no longer touch each other and form corridors and junctions between the hexagons. 
+For each hexagon of the hexagonal grid contained in $J$, scale the hexagon in the following way: first we fix the center of the hexagon and then scale (shrink) the hexagon; adjacent hexagons in the honeycomb no longer touch each other and form corridors and junctions between the hexagons (See Figure \ref{fig:ScalingForCorridors.pdf}). 
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.4\columnwidth]{graphics/ScalingForCorridors.pdf}
+\captionof{figure}{(a) This figure shows a region of a hexagonal grid scaled in place to form corridors between adjacent hexagons(shown in (b)).}\label{fig:ScalingForCorridors.pdf}
+\end{center}
+\end{minipage}
+
 Formally, let a \textit{corridor} be a channel between two adjacent hexagons and a \textit{junction} be a region where three corridors meet.
-We then finally re-scale this form of the honeycomb such that the side length of the hexagons are determined by polynomial of variable $n$ and $m$, $N(n,m)= c_N \cdot s(n,m)$ where $c_N$ is a scaling constant of $s(n,m)$, while preserving the corridors formed from the first scaling.
+
+\textbf{Formal Decscription of the Auxilary Construction.}
+Given the side length of $J$, $s(n,m)$, we need to scale the grid of hexagons of the hexagonal grid in the interior of $J$ accordingly.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}
+\captionof{figure}{(a) shows a \textit{formal auxilary construction} with $k=2$. $k$ is the number of hexagons of the hexagonal grid in the interior of $J$ that is on the bottom most row. .  (b) shows a formal auxilary construction with $k=3$. (c) shows a formal auxilary construction with $k=4$.  Note that in each figure}\label{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}
+\end{center}
+\end{minipage}
+
+In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf} we show the three smallest possible formal constructions of $J$.  
+A \textit{formal construction} of $J$ is when six hexagons of the hexagonal grid each have two adjacent lie on the perimeter of $J$.
+We have shown informal construction earlier where this does not occur.
+Unless otherwise specified, we will assume the use formal constructions.
+Each of the figures in Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf} shows $J$ in bold and the hexagonal grid in its interior.
+Notice that in each case we six hexagons of the hexagonal grid each have two adjacent lie on the perimeter of $J$.
+
+Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(b) illustrates the side length of $J$ as $s(n,m)$ and half the height of $J$ as $s(n,m) \sqrt{3}$.
+For any $J$, there is a fixed number of hexagons from the hexagonal grid that lie on perimiter; denote this number as $k$.
+We can denote the number of hexagons in a row of the hexagonal grid in $J$ with the following sequence as follows:
+\begin{equation}\label{eqn:hexagonalGridSequence}
+\begin{array}{rcl}
+a(0) &=& k\\
+a(1) &=& k-1 \\
+a(2) &=& k\\
+a(i) &=& a(i-3)+1
+\end{array}
+\end{equation}
+The $i^\text{th}$ number of Sequence \ref{eqn:hexagonalGridSequence} indicates the number of hexagons on the $i^\text{th}$ row of the hexagonal grid in the interior of $J$ from the perimeter of $J$ up to the half height of $J$. In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) from the bottom to the mid-height of $J$, the sequence $a(i)$ (i.e. the number of hexagons in each subsequent row) is 4, 3, 4, 5, 4, 5, 6, 5, 6, 7.
+
+Denote the hexagons of the hexagonal grid in $J$ as \textit{obstacle hexagons}.
+Let the side length of the an obstacle hexagon be $N(n,m)= c_N \cdot s(n,m)$ where $c_N \in (0, .5)$.
+The scaling constant $c_N$ preserves the corridors described described earlier.  
+%We then finally re-scale this form of the honeycomb such that the side length of the hexagons are determined by polynomial of variable $n$ and $m$, $N(n,m)= c_N \cdot s(n,m)$ where $c_N \in (0, .5)$ is a scaling constant of $s(n,m)$, while preserving the corridors formed from the first scaling.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -16,12 +58,12 @@ We then finally re-scale this form of the honeycomb such that the side length of
 \end{center}
 \end{minipage}
 
-Let the hexagons of Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstacle hexagons that are fixed.
+Let the numbered hexagons of Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstacle hexagons that are fixed.
 In Figure \ref{fig:HoneycombFlixible.pdf}(b), we have smaller hexagons within some corridors and junctions.
 These hexagons are flags.
 For each edge in $\tilde{A}(\Phi)$, we insert flags into the corridor corresponding to that edge.
 Flexible hexagons are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
-Let $t=2N^3-1$ be the number of flags in a corridor (see Figure \ref{fig:variable}). 
+Let $t(n,m)=2N(n,m)^3-1$ be the number of flags in a corridor (see Figure \ref{fig:variable}). 
 Scale the honeycomb such that the obstacle hexagons become regular hexagons of side length $(5t-1)/2+\sqrt{3}$, and then scale each obstacle hexagon independently from its center to a hexagon of side length $(5t-1)/2$ (see Figure \ref{fig:honeycomb}). 
 %Let $\Phi$ be a Boolean formula in 3-CNF with variables $x_1,\ldots , x_n$ and clauses $C_1,\ldots ,C_m$, and let $A(\Phi)$ be the associated planar graph.
 %We modify $A(\Phi)$ to obtain a plane graph $\tilde{A}(\Phi)$ of maximum degree 3 as follows: replace each \emph{variable} vertex $v$ by a cycle whose length equals the degree of $v$, and distribute the edges incident to $v$ among the vertices of the cycle.
