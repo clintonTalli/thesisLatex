@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  5 JUN 2016 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  8 JUN 2016 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,7 +680,23 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 
 
 Writing index file Thesis.idx
-(../pdf/Thesis.aux)
+(../pdf/Thesis.aux
+
+LaTeX Warning: Label `lem:aux-C' multiply defined.
+
+
+LaTeX Warning: Label `fig:tiltedObstaclesInFrame.pdf' multiply defined.
+
+
+LaTeX Warning: Label `fig:corridorNonCanonical.pdf' multiply defined.
+
+
+LaTeX Warning: Label `eqn:gammaBound' multiply defined.
+
+
+LaTeX Warning: Label `fig:corridorNonCanonical.pdf' multiply defined.
+
+)
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 242.
@@ -696,8 +712,7 @@ LaTeX Font Info:    ... okay on input line 242.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 242.
 LaTeX Font Info:    ... okay on input line 242.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 242.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1096,23 +1111,73 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 59--65
  []
 
 [15 <./graphics/smallHexagonalGridWithTwoLines.pdf> <./graphics/verticalDisplac
-ementArgument.pdf>]) (./ch3/Horizontal.tex)) (../pdf/Thesis.bbl [16])
+ementArgument.pdf>]) (./ch3/Horizontal.tex
+<graphics/HexagonalGridRho.pdf, id=345, 764.4058pt x 255.54471pt>
+File: graphics/HexagonalGridRho.pdf Graphic file (type pdf)
+
+<use graphics/HexagonalGridRho.pdf>
+Package pdftex.def Info: graphics/HexagonalGridRho.pdf used on input line 7.
+(pdftex.def)             Requested size: 390.25534pt x 130.46643pt.
+
+Overfull \hbox (124.81865pt too wide) in paragraph at lines 5--12
+ \T1/ptm/b/n/10 Hor-i-zon-tal Dis-place-ment $\OML/ztmcm/m/it/10 $[] $[]$ 
+ []
+
+) (./ch3/modifiedAuxilaryPart2.tex [16 <./graphics/HexagonalGridRho.pdf>])
+(./ch3/lemma6.tex
+File: graphics/tiltedObstaclesInFrame.pdf Graphic file (type pdf)
+ <use graphics/tiltedObstaclesInFrame.pdf>
+Package pdftex.def Info: graphics/tiltedObstaclesInFrame.pdf used on input line
+ 20.
+(pdftex.def)             Requested size: 130.08731pt x 113.72789pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 18--24
+[]$[]$ 
+ []
+
+File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
+<use graphics/corridorNonCanonical.pdf>
+Package pdftex.def Info: graphics/corridorNonCanonical.pdf used on input line 3
+4.
+(pdftex.def)             Requested size: 390.25534pt x 134.99863pt.
+ [17] [18]
+<graphics/FrameObstacleHexagonCloseUp.pdf, id=364, 772.08452pt x 3789.5177pt>
+File: graphics/FrameObstacleHexagonCloseUp.pdf Graphic file (type pdf)
+
+<use graphics/FrameObstacleHexagonCloseUp.pdf>
+Package pdftex.def Info: graphics/FrameObstacleHexagonCloseUp.pdf used on input
+ line 89.
+(pdftex.def)             Requested size: 216.81pt x 1064.12239pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 87--93
+[]$[]$ 
+ []
+
+[19]
+Overfull \vbox (431.6924pt too high) has occurred while \output is active []
+
+
+[20 <./graphics/FrameObstacleHexagonCloseUp.pdf>]) (./ch3/conclusion.tex))
+(../pdf/Thesis.bbl [21])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[17
+[22
 
 ] (../pdf/Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 17548 strings out of 493089
- 321246 string characters out of 6134841
+ 17569 strings out of 493089
+ 321806 string characters out of 6134841
  502597 words of memory out of 5000000
- 20560 multiletter control sequences out of 15000+600000
+ 20570 multiletter control sequences out of 15000+600000
  43714 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,59p,571b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,59p,662b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1133,10 +1198,10 @@ ol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (21 pages, 355240 bytes).
+Output written on ../pdf/Thesis.pdf (26 pages, 373944 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
+ 424 PDF objects out of 1000 (max. 8388607)
+ 309 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
