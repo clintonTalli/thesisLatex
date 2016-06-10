@@ -11,7 +11,7 @@
 \contentsline {paragraph}{Modified Auxilary Construction.}{10}
 \contentsline {paragraph}{Angular Rotation $\alpha $.}{13}
 \contentsline {paragraph}{Vertical Displacement $\delta $}{14}
-\contentsline {paragraph}{Horizontal Displacement $\alpha $}{16}
+\contentsline {paragraph}{Horizontal Displacement $\beta $}{16}
 \contentsline {paragraph}{Bound for $\alpha $.}{17}
 \contentsline {paragraph}{Vertical Displacement Bound for $\beta $.}{19}
 \contentsline {paragraph}{Horizontal Displacement Bound for $\delta $.}{19}
