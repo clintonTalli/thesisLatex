@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160605143507" modified="D:20160605153935"/>
+<info created="D:20160605143507" modified="D:20160611121940"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -312,7 +312,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 2119.36" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 2119.36" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -321,7 +321,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 2109.59" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 2109.59" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -348,7 +348,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 2099.81" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 2099.81" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -465,7 +465,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 2060.71" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 2060.71" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -474,7 +474,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 2070.49" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 2070.49" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -483,7 +483,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 2080.26" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 2080.26" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -492,7 +492,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 2050.94" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 2050.94" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -510,7 +510,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 2090.04" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 2090.04" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -537,7 +537,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 2041.16" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 2041.16" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -744,7 +744,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 2002.06" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 2002.06" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -753,7 +753,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 2011.84" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 2011.84" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -762,7 +762,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 2021.61" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 2021.61" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -771,7 +771,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 1992.29" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 1992.29" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -789,7 +789,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 2031.39" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 2031.39" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -816,7 +816,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 1982.51" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 1982.51" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1005,7 +1005,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 1943.41" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 1943.41" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1014,7 +1014,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 1953.19" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 1953.19" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1023,7 +1023,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5025.13 1962.96" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5025.13 1962.96" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1041,7 +1041,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 5042.06 1972.74" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 5042.06 1972.74" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1557,7 +1557,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 4605.19 2021.03" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 4605.19 2021.03" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1566,7 +1566,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 4622.12 2030.81" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 4622.12 2030.81" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1584,7 +1584,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 4588.26 2030.81" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 4588.26 2030.81" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1602,7 +1602,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 4554.39 2030.81" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 4554.39 2030.81" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1611,7 +1611,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.0685207 0 0 0.0685207 4571.33 2021.03" stroke="black">
+<path matrix="-0.0685207 0 0 0.0685207 4571.33 2021.03" stroke="black" fill="lightgray">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -1652,7 +1652,7 @@ h
 </path>
 <text transformations="translations" pos="4528 2240" stroke="black" type="label" width="44.857" height="9.039" depth="2.49" valign="baseline">$s(n,m)\sqrt{3} $</text>
 <text transformations="translations" pos="4214.23 2211.23" stroke="black" type="label" width="12.73" height="7.473" depth="2.49" valign="baseline">(a)</text>
-<text matrix="1 0 0 1 203.656 -40.9464" transformations="translations" pos="4214.23 2211.23" stroke="black" type="label" width="12.73" height="7.473" depth="2.49" valign="baseline">(2)</text>
+<text matrix="1 0 0 1 203.656 -40.9464" transformations="translations" pos="4214.23 2211.23" stroke="black" type="label" width="13.284" height="7.473" depth="2.49" valign="baseline">(b)</text>
 <text matrix="1 0 0 1 492.641 -51.1276" transformations="translations" pos="4214.23 2211.23" stroke="black" type="label" width="12.177" height="7.473" depth="2.49" valign="baseline">(c)</text>
 <text matrix="1 0 0 1 -5.52776 -4.67539" transformations="translations" pos="4541.47 2273.31" stroke="black" type="label" width="34.515" height="7.473" depth="2.49" valign="baseline">$a\left( i_{max}\right)$</text>
 <text matrix="1 0 0 1 -5.5233 -68.1121" transformations="translations" pos="4541.47 2273.31" stroke="black" type="label" width="17.996" height="7.473" depth="2.49" valign="baseline">$a(0)$</text>
