@@ -3,7 +3,7 @@
 
 Recall that in Theorem \ref{thm:hinge2} we want to show that it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with counter-clockwise orientation.
 We modify the auxiliary construction allowing all polygons to move freely, and by adding extra polygons and hinges so that the hinge graph becomes a \emph{tree}, and the size of the construction remains polynomial. 
-The auxiliary construction is based on a polynomial section of the hexagonal grid, using obstacle hexagons of side lengths $(5t-1)/2$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. 
+The auxiliary construction is based on a polynomial sized area of the hexagonal grid, using obstacle hexagons of side lengths $N(n,m)$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. 
 We modify it in five steps as follows:
 
 \begin{enumerate}
@@ -19,10 +19,11 @@ We modify it in five steps as follows:
 % %\end{figure}
 % \end{minipage}
 %
-\item Connect the frame and the obstacles in $R$ into a simply connected polygonal linkage: in each obstacle hexagon, the bottom side is adjacent to the frame or to a corridor. 
+\item Connect the frame and the obstacles in $J$ into a simply connected polygonal linkage: in each obstacle
+hexagon, the bottom side is adjacent to the frame or to a corridor.
 Introduce a hinge at the midpoint of one such side in each obstacle hexagon. 
 If this side is adjacent to the frame, then attach the hinge to the frame. 
-Otherwise, the hinge is attached to a new \emph{connector} polygon: a skinny rhombus of diameter 1 and width $\frac{1}{200N}$. 
+Otherwise, the hinge is attached to a new \emph{connector} polygon: a skinny rhombus of diameter 1 and width $\frac{1}{100N}$. 
 The far corner of each rhombus is hinged to the unit hexagon in the middle of the corridor at shown in Figure \ref{fig:frame}(b).
 \item The construction so far constains rows and columns of obstacle hexagons.
 Every other column of obstacle hexagons is hinged to the bottom side of the perimiter of $J$.
@@ -46,6 +47,12 @@ The columns that do not have an obstacle hexagon hinged to the perimeter of $J$ 
 
 \end{enumerate}
 
+We obtain a simply connected polygonal linkage. 
+We now allow the obstacle hexagons to move freely, and call their original fixed position \emph{canonical}. 
+\noindent (3) We may assume without loss of generality that the frame is at its original position. 
+It is enough to show that the obstacle hexagons are still confined to an $1/N$-neighborhood of their canonical position, then it
+follows that the polygonal linkage is realizable if and only if $\Phi$ is satisfiable.
+
 \begin{minipage}{\linewidth}
 	\begin{center}
 	\includegraphics[width=0.95\columnwidth]{graphics/fig-frame-hex}
@@ -56,11 +63,6 @@ The columns that do not have an obstacle hexagon hinged to the perimeter of $J$ 
 	\label{fig:frame}
 	\end{center}
 \end{minipage}
-We obtain a simply connected polygonal linkage. 
-We now allow the obstacle hexagons to move freely, and call their original fixed position \emph{canonical}. 
-\noindent (3) We may assume without loss of generality that the frame is at its original position. 
-It is enough to show that the obstacle hexagons are still confined to an $1/N$-neighborhood of their canonical position, then it
-follows that the polygonal linkage is realizable if and only if $\Phi$ is satisfiable.
 
 % In an arbitrary realization of $P$, each obstacle hexagon's position can be 
 

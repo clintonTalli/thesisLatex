@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160608202525" modified="D:20160611111328"/>
+<info created="D:20160608202525" modified="D:20160611174904"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -267,7 +267,7 @@ h
 5191.55 3140.06 l
 h
 </path>
-<text matrix="0.7704 0 0 0.7704 571.298 -259.131" transformations="translations" pos="5169.66 3323.99" stroke="black" type="label" width="15.213" height="7.415" depth="2.58" valign="baseline" size="LARGE">$\alpha_i$</text>
+<text matrix="0.7704 0 0 0.7704 571.298 -259.131" transformations="translations" pos="5169.66 3323.99" stroke="black" type="label" width="23.98" height="7.409" depth="4.91" valign="baseline" size="LARGE">$\alpha_{i,j}$</text>
 <text matrix="1 0 0 1 35.9765 -13.2345" transformations="translations" pos="4448 2160" stroke="black" type="label" width="30.296" height="18.564" depth="6.18" valign="baseline" size="Huge">$(a)$</text>
 <text matrix="1 0 0 1 379.889 -13.2345" transformations="translations" pos="4448 2160" stroke="black" type="label" width="27.875" height="18.564" depth="6.18" valign="baseline" size="Huge">$(b)$</text>
 <use matrix="1 0 0 1 32.03 23.79" name="mark/disk(sx)" pos="4465.75 2272" size="large" stroke="black"/>

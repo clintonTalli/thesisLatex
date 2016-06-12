@@ -32,16 +32,22 @@ To help identify components of the construction for this proof, let's identify c
 
 Without loss of generality, we can identify a column of obstacle hexagons $O_i$ along a vertical line $\ell$ (See Figure \ref{fig:dualSmallHexagonalGrid.pdf}).
 In this proof, unless otherwise specified, we assume that the argument refers to a column that starts and ends with an obstacle hexagon.  
-In total there will be $u+1$ number of obstacle hexagons and $u$ corridors in a column. 
+In total there will be $u+1$ number of obstacle hexagons and $u$ corridors in a column.
+Note that:
+$$\begin{array}{rcl}
+u&=& \frac{J_h (z)}{2} - \frac{1}{2}\\
+&=& \frac{1}{2}\lr{6z + 1 - 1}\\
+&=& 3z
+\end{array}$$
 
 The length of $H(n,m)$ (and $\ell$ in Figure \ref{fig:corridorNonCanonical.pdf}(a)) can be expressed as a sum of the heights of the corridors and obstacle polygons.
 The width of a skinny rhombus in canonical position is $\frac{1}{100N}$.
-The obstacle hexagon has height of $ \frac{5t-1}{2} \cdot \sqrt{3}$, and the flag is of height $\sqrt{3}$.  
+The obstacle hexagon has height of $ 2 N(n,m) \cdot \sqrt{3}$, and the flag is of height $\sqrt{3}$.  
 \begin{equation}\label{eqn:Hnm}
-H(n,m) = (u+1) \frac{5t-1}{2} \sqrt{3} + u \lr{\frac{1}{100N} + \sqrt{3}}
+H(n,m) = (3z+1) 2 N(n,m) \sqrt{3} + 3z \lr{\frac{1}{100N} + \sqrt{3}}
 \end{equation}
 
 The cross section of the corridor must have a minimum height of $\sqrt{3}$ everywhere.
-The height of an obstacle polygon in noncanonical position is $(t+1) \cdot \sec \alpha_i \cdot \sqrt{3}$.
+The height of the $i^\text{th}$ obstacle polygon in noncanonical position is $2 N(n,m) \sec \lr{\alpha_i} \cdot \sqrt{3}$ %$(t+1) \cdot \sec \alpha_i \cdot \sqrt{3}$.
 
 
