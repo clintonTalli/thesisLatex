@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  11 JUN 2016 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  12 JUN 2016 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,24 +897,24 @@ llWithoutHalfHexagons.pdf>]
 File: graphics/FlexibleHexagons.pdf Graphic file (type pdf)
 
 <use graphics/FlexibleHexagons.pdf>
-Package pdftex.def Info: graphics/FlexibleHexagons.pdf used on input line 63.
+Package pdftex.def Info: graphics/FlexibleHexagons.pdf used on input line 70.
 (pdftex.def)             Requested size: 179.94267pt x 103.04167pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 61--70
+Overfull \hbox (15.0pt too wide) in paragraph at lines 68--77
 []$[]$ 
  []
 
 
-LaTeX Warning: Reference `fig:honeycomb' on page 4 undefined on input line 77.
+LaTeX Warning: Reference `fig:honeycomb' on page 4 undefined on input line 84.
 
 <graphics/fig-variable-hex+.pdf, id=101, 515.06215pt x 110.3061pt>
 File: graphics/fig-variable-hex+.pdf Graphic file (type pdf)
 
 <use graphics/fig-variable-hex+.pdf>
-Package pdftex.def Info: graphics/fig-variable-hex+.pdf used on input line 92.
+Package pdftex.def Info: graphics/fig-variable-hex+.pdf used on input line 99.
 (pdftex.def)             Requested size: 390.25534pt x 83.58104pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 90--101
+Overfull \hbox (15.0pt too wide) in paragraph at lines 97--108
 []$[]$ 
  []
 
@@ -923,10 +923,10 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 90--101
 File: graphics/ActiveChannel.pdf Graphic file (type pdf)
 
 <use graphics/ActiveChannel.pdf>
-Package pdftex.def Info: graphics/ActiveChannel.pdf used on input line 109.
+Package pdftex.def Info: graphics/ActiveChannel.pdf used on input line 116.
 (pdftex.def)             Requested size: 390.25534pt x 142.99228pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 107--114
+Overfull \hbox (15.0pt too wide) in paragraph at lines 114--121
 []$[]$ 
  []
 
@@ -934,11 +934,11 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 107--114
 File: graphics/VariableGadgetSmall.pdf Graphic file (type pdf)
 
 <use graphics/VariableGadgetSmall.pdf>
-Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 13
-6.
+Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 14
+3.
 (pdftex.def)             Requested size: 195.12767pt x 147.67279pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 134--140
+Overfull \hbox (15.0pt too wide) in paragraph at lines 141--147
 []$[]$ 
  []
 
@@ -947,19 +947,19 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 134--140
 File: graphics/fig-clause-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-clause-hex.pdf>
-Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 152.
+Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 159.
 (pdftex.def)             Requested size: 303.53267pt x 79.3213pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 150--158
+Overfull \hbox (15.0pt too wide) in paragraph at lines 157--165
 []$[]$ 
  []
 
 
 LaTeX Warning: Reference `fig:TransmitterGadgetSmall.pdf' on page 6 undefined o
-n input line 165.
+n input line 172.
 
 
-Overfull \hbox (56.93747pt too wide) in paragraph at lines 163--167
+Overfull \hbox (56.93747pt too wide) in paragraph at lines 170--174
 \T1/ptm/m/n/10 of edges. Sup-pose we have a vari-able ver-tex $\OML/ztmcm/m/it/
 10 x[]$ \T1/ptm/m/n/10 with counter-clockwise cyclic or-der of edges $[]$.
  []
@@ -971,10 +971,10 @@ File: graphics/VariableJunctionTransmitterSelection.pdf Graphic file (type pdf)
 
  <use graphics/VariableJunctionTransmitterSelection.pdf>
 Package pdftex.def Info: graphics/VariableJunctionTransmitterSelection.pdf used
- on input line 190.
+ on input line 197.
 (pdftex.def)             Requested size: 346.89731pt x 352.47939pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 188--195
+Overfull \hbox (15.0pt too wide) in paragraph at lines 195--202
 []$[]$ 
  []
 
@@ -983,11 +983,11 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 188--195
 File: graphics/fig-transmitter-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-transmitter-hex.pdf>
-Package pdftex.def Info: graphics/fig-transmitter-hex.pdf used on input line 20
-4.
+Package pdftex.def Info: graphics/fig-transmitter-hex.pdf used on input line 21
+1.
 (pdftex.def)             Requested size: 303.53267pt x 79.22163pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 202--212
+Overfull \hbox (15.0pt too wide) in paragraph at lines 209--219
 []$[]$ 
  []
 
@@ -995,7 +995,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 202--212
 itter-hex.pdf>]
 
 LaTeX Warning: Reference `lem:logicEngine1' on page 8 undefined on input line 3
-68.
+75.
 
 [8] [9] [10]) (./ch3/modifiedAuxilary.tex
 <graphics/modifiedAuxilaryConstructionAsTree.pdf, id=196, 621.26103pt x 253.898
@@ -1050,8 +1050,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 26--32
 []$[]$ 
  []
 
-) (./ch3/Angular.tex
-<graphics/corridorNonCanonical.pdf, id=248, 316.25153pt x 109.39871pt>
+) (./ch3/Angular.tex [13 <./graphics/dualSmallHexagonalGrid.pdf>]
+<graphics/corridorNonCanonical.pdf, id=263, 316.25153pt x 109.39871pt>
 File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
 
 <use graphics/corridorNonCanonical.pdf>
@@ -1063,8 +1063,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 8--14
 []$[]$ 
  []
 
-[13 <./graphics/dualSmallHexagonalGrid.pdf>]) (./ch3/Vertical.tex
-<graphics/hexagonNonCanonical2.pdf, id=264, 189.37952pt x 182.95753pt>
+) (./ch3/Vertical.tex [14 <./graphics/corridorNonCanonical.pdf>]
+<graphics/hexagonNonCanonical2.pdf, id=297, 189.37952pt x 182.95753pt>
 File: graphics/hexagonNonCanonical2.pdf Graphic file (type pdf)
 
 <use graphics/hexagonNonCanonical2.pdf>
@@ -1076,7 +1076,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 5--14
 []$[]$ 
  []
 
-[14 <./graphics/corridorNonCanonical.pdf>]
+
 <graphics/smallHexagonalGridWithTwoLines.pdf, id=298, 225.02066pt x 195.84166pt
 >
 File: graphics/smallHexagonalGridWithTwoLines.pdf Graphic file (type pdf)
@@ -1089,8 +1089,9 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 68--74
 []$[]$ 
  []
 
-
-<graphics/verticalDisplacementArgument.pdf, id=299, 210.13507pt x 182.03008pt>
+[15 <./graphics/hexagonNonCanonical2.pdf> <./graphics/smallHexagonalGridWithTwo
+Lines.pdf>]
+<graphics/verticalDisplacementArgument.pdf, id=327, 210.13507pt x 182.03008pt>
 File: graphics/verticalDisplacementArgument.pdf Graphic file (type pdf)
 
 <use graphics/verticalDisplacementArgument.pdf>
@@ -1102,8 +1103,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 78--84
 []$[]$ 
  []
 
-[15 <./graphics/hexagonNonCanonical2.pdf> <./graphics/smallHexagonalGridWithTwo
-Lines.pdf>]) (./ch3/Horizontal.tex
+) (./ch3/Horizontal.tex
 <graphics/HexagonalGridRho.pdf, id=328, 651.81519pt x 262.88213pt>
 File: graphics/HexagonalGridRho.pdf Graphic file (type pdf)
 
@@ -1115,8 +1115,12 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 5--12
 []$[]$ 
  []
 
-[16 <./graphics/verticalDisplacementArgument.pdf>])) (../pdf/Thesis.bbl
-[17 <./graphics/HexagonalGridRho.pdf>])
+[16 <./graphics/verticalDisplacementArgument.pdf>]
+Overfull \hbox (20.5867pt too wide) in alignment at lines 29--32
+ [][][] []
+ []
+
+)) (../pdf/Thesis.bbl [17 <./graphics/HexagonalGridRho.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 [18
 
@@ -1126,13 +1130,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17563 strings out of 493089
- 321617 string characters out of 6134841
- 500597 words of memory out of 5000000
- 20570 multiletter control sequences out of 15000+600000
+ 17565 strings out of 493089
+ 321633 string characters out of 6134841
+ 501597 words of memory out of 5000000
+ 20572 multiletter control sequences out of 15000+600000
  44492 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,59p,571b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,59p,571b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1153,7 +1157,7 @@ ol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (22 pages, 364800 bytes).
+Output written on ../pdf/Thesis.pdf (22 pages, 365197 bytes).
 PDF statistics:
  426 PDF objects out of 1000 (max. 8388607)
  315 compressed objects within 4 object streams

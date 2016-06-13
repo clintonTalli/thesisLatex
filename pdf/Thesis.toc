@@ -10,6 +10,6 @@
 \contentsline {subsection}{\numberline {1.1.1}Functionality of the Auxilary Construction and Gadgets}{8}
 \contentsline {paragraph}{Modified Auxilary Construction.}{11}
 \contentsline {paragraph}{Angular Rotation $\alpha $.}{13}
-\contentsline {paragraph}{Vertical Displacement $\delta $}{14}
+\contentsline {paragraph}{Vertical Displacement $\delta $}{15}
 \contentsline {paragraph}{Horizontal Displacement $\beta $}{16}
 \contentsfinish 

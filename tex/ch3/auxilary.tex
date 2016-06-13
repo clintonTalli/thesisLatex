@@ -33,7 +33,14 @@ Notice that in each case we have six hexagons of the hexagonal grid with each of
 The height and diamater of $J$ can be described by the number of hexagons in the grid a vertical or horizontal line may cross. 
 We'll denote these qualities as the hexagonal height and hexagonal diameter of $J$.
 Figure Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) and Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(a) show the hexagons of the hexagonal height and hexagonal diamters of $J_1$ and $J_3$ respectively.  
-The formula for calculating hexagonal height of $J_z$ is $J_h (z) = 6z+1$; the formula for calcuating the hexagonal diameter is $J_d (z) = 4z+1$.
+The formula for calculating hexagonal height of $J_z$ is 
+\begin{equation}\label{eqn:Jh}
+J_h (z) = 6z+1
+\end{equation}
+The formula for calcuating the hexagonal diameter of $J_z$ is 
+\begin{equation}\label{eqn:Jd}
+J_d (z) = 4z+1
+\end{equation}
 For sufficiently large $z$ we can encode the associated graph of any P3SAT instance into a hexagonal grid the interior of $J_z$.
 We can define $z$ as a polynomial in terms of $n$ and $m$, $z(n,m)$.
 
