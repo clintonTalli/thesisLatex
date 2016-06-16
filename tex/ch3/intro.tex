@@ -13,6 +13,18 @@ Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its ass
 We construct a polygonal linkage in two main steps: first, we construct an auxiliary structure where some of the polygons have fixed position in the plane (called \emph{obstacles}), while other polygons are flexible, and each flexible polygon is hinged to an obstacle. 
 Second, we modify the auxiliary construction into a polygonal linkage by allowing the obstacles to move freely, and by adding new polygons and hinges as well as an exterior \emph{frame} that holds the obstacle polygons in place.
 All polygons in our constructions are regular hexagons or long, skinny rhombi because these are the polygons that we can ``simulate'' with disk arrangements in Chapter \ref{chp:disk}.
+
+Here is a glossary of important formulas for this chapter:
+$$
+\begin{array}{|rcl|}
+\hline
+J_h (z) &=& 6z+1\\\hline
+J_d (z) &=& 4z+1\\\hline
+N(n,m)&=& c_N \cdot s(n,m)\\\hline
+t(n,m)&=& 2 N^3(n,m)-1\\\hline
+H(n,m) &=& (3z+1) 2 Ns\sqrt{3} + 3z \lr{\frac{1}{100N} + \sqrt{3}}\\\hline
+\end{array}
+$$
 \paragraph{Modifying the Associated Graph of a P3SAT.}
 
 Given an instance of P3SAT boolean formula $\Phi$ of $n$ variables and $m$ clauses with associated graph $A(\Phi)$, we construct a finite \textit{honeycomb} grid $H_{A \lr{\Phi}}$ of regular hexagons over the plane centered at origin.

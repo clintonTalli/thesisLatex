@@ -31,12 +31,12 @@ The bound of $\gamma_j$ is:
 										\frac{5t-1}{4}
 								}	
 							}\\
-&=& \tan^{-1} \lr{\frac{4\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
-&\leq& \frac{4\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1} - \frac{\lr{\frac{4\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}^3}{3}\\
+&=& \tan^{-1} \lr{\frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
+%&\leq& \frac{4\cdot\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
 % &=&\frac{12\sqrt{1+ \lr{	\frac{1}{100N}	}^2}}{3\lr{5t-1}} - \lr{\frac{64 \lr{1+ \frac{1}{\lr{100N}^2}\sqrt{1+ \frac{1}{\lr{100N}^2}}  }}{3(5t-1)}}\\
 % &=&\frac{-\lr{52\sqrt{1+ \frac{1}{\lr{100N}^2}} + \frac{64 \sqrt{1+ \frac{1}{\lr{100N}^2}}}{(100N)^2} }}{3(5t-1)}\\
 % &=&\frac{-\lr{52\sqrt{1+ \frac{1}{\lr{100N}^2}} + \frac{64 \sqrt{1+ \frac{1}{\lr{100N}^2}}}{(100N)^2} }}{3(5\lr{2N^3-1}-1)}\\
-&\leq& \frac{4\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
+&\leq& \frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
 &\leq& \frac{\sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
 &\leq& \frac{5}{10N^3 -6}
 \end{array} 
@@ -44,4 +44,5 @@ The bound of $\gamma_j$ is:
 Inequality \ref{eqn:gammaBound} uses the first two terms Maclaurin series of $\tan^{-1}$.
 Thus the relative rotational difference between adjacent obstacle hexagons is
 $$ \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{5}{10N^3 -6} $$
-From this inequality, it is clear that for  $N$ sufficiently large, $\gamma_j \rightarrow 0$; and so the relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
+%From this inequality, it is clear that for  $N$ sufficiently large, $\gamma_j \rightarrow 0$; and so 
+The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.

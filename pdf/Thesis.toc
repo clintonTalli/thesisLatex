@@ -5,11 +5,11 @@
 \contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{1}
 \contentsline {section}{\numberline {1.1}Auxilary Construction}{2}
 \contentsline {paragraph}{Variable Gadget.}{5}
-\contentsline {paragraph}{Clause Gadget.}{5}
+\contentsline {paragraph}{Clause Gadget.}{6}
 \contentsline {paragraph}{Transmitter Gadget.}{6}
 \contentsline {subsection}{\numberline {1.1.1}Functionality of the Auxilary Construction and Gadgets}{8}
 \contentsline {paragraph}{Modified Auxilary Construction.}{11}
-\contentsline {paragraph}{Angular Rotation $\alpha $.}{13}
+\contentsline {paragraph}{Angular Rotation $\alpha $.}{14}
 \contentsline {paragraph}{Vertical Displacement $\delta $}{15}
 \contentsline {paragraph}{Horizontal Displacement $\beta $}{16}
 \contentsfinish 
