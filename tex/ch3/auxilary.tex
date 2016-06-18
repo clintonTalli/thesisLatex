@@ -41,8 +41,7 @@ The formula for calcuating the hexagonal diameter of $J_z$ is
 \begin{equation}\label{eqn:Jd}
 J_d (z) = 4z+1
 \end{equation}
-For sufficiently large $z$ we can encode the associated graph of any P3SAT instance into a hexagonal grid the interior of $J_z$.
-We can define $z$ as a polynomial in terms of $n$ and $m$, $z(n,m)$.
+If an associated graph of a P3SAT instance can be encoded into a honeycomb grid of size $s(n,m) \times s(n,m)$, then let $z(n,m)=4\cdot s(n,m)$ to enclose the same honeycomb to be enclosed into the interior of $J_z$.
 
 Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(b) illustrates the side length of $J$ as $s(n,m)$ and half the height of $J$ as $s(n,m) \sqrt{3}$.
 For any $J$, there is a fixed number of hexagons in the hexagonal grid that lie on one side of the perimeter of $J$; denote this number as $k$.
@@ -57,8 +56,6 @@ a(i) &=& a(i-3)+1\\
 \end{array}
 \end{equation}
 The $i^\text{th}$ number of Sequence \ref{eqn:hexagonalGridSequence} indicates the number of hexagons on the $i^\text{th}$ row of the hexagonal grid in the interior of $J$ from the perimeter of $J$ up to the half height of $J$. In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) from the bottom to the mid-height of $J$, the sequence $a(i)$ (i.e. the number of hexagons in each subsequent row) is 4, 3, 4, 5, 4, 5, 6, 5, 6, 7.
-
-
 
 Denote the hexagons of the hexagonal grid in $J$ as \textit{obstacle hexagons}.
 Let the side length of the an obstacle hexagon be $N(n,m)= c_N \cdot s(n,m)$ where $c_N \in (0, .5)$.
@@ -144,8 +141,6 @@ Figure \ref{fig:VariableGadgetSmall.pdf} depicts a \textit{variable gadget} in t
 \captionof{figure}{This depicts a variable gadget with $x_1 = T$.  Carefully note that the flags around $x_1$ are in the state $R$. Corridors adjacent to two obstacles of a variable in the honeycomb do not have $t$ flags; these corridors simply have the flexible hexagons at the junctions.}\label{fig:VariableGadgetSmall.pdf}
 \end{center}
 \end{minipage}
-
-
 
 \paragraph{Clause Gadget.}
 Recall that a clause from a Boolean formula $\Phi$ in 3-CNF has three literals.  If $\Phi$ is a  'yes' instance, then at least one literal in every clause of $\Phi$ is true.  We construct the clause gadget to model this fact about Boolean formulas in 3-CNF.

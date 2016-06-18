@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160526140610" modified="D:20160605132733"/>
+<info created="D:20160526140610" modified="D:20160618125744"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -1647,5 +1647,104 @@ h
 <use matrix="1 0 0 1 128 -112" name="mark/disk(sx)" pos="4720 3312" size="large" stroke="black"/>
 <use matrix="1 0 0 1 128 -112" name="mark/disk(sx)" pos="4720 3328" size="large" stroke="black"/>
 <use matrix="1 0 0 1 128 -112" name="mark/disk(sx)" pos="4720 3344" size="large" stroke="black"/>
+<path stroke="black" pen="ultrafat">
+4880 3376 m
+4864 3392 l
+</path>
+<path stroke="black" pen="ultrafat">
+4848 3376 m
+4864 3392 l
+</path>
+<path stroke="black" pen="ultrafat">
+4816 3376 m
+4800 3392 l
+</path>
+<path stroke="black" pen="ultrafat">
+4784 3376 m
+4800 3392 l
+</path>
+<path stroke="black" pen="ultrafat">
+4752 3376 m
+4736 3392 l
+</path>
+<path stroke="black" pen="ultrafat">
+4720 3376 m
+4736 3392 l
+</path>
+<path stroke="black" pen="ultrafat">
+4704 3376 m
+4736 3392 l
+</path>
+<path stroke="black" pen="ultrafat">
+4832 3376 m
+4800 3392 l
+</path>
+<path stroke="black" pen="ultrafat">
+4896 3376 m
+4864 3392 l
+</path>
+<use name="mark/disk(sx)" pos="4704 3376" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4720 3376" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4752 3376" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4784 3376" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4816 3376" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4832 3376" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4848 3376" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4896 3376" size="large" stroke="black"/>
+<use name="mark/disk(sx)" pos="4880 3376" size="large" stroke="black"/>
+<path matrix="-0.0103621 0 0 -0.0103621 5269.18 3323.62" stroke="black">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
+</path>
+<path matrix="0.00378239 0 0 0.00378239 5193.58 3275.59" stroke="black" fill="gray">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
+</path>
+<path matrix="-0.0103621 0 0 -0.0103621 5281.55 3323.63" stroke="black">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
+</path>
+<path matrix="0.00378239 0 0 0.00378239 5205.95 3275.6" stroke="black" fill="gray">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
+</path>
+<path matrix="-0.0103621 0 0 -0.0103621 5294.2 3323.63" stroke="black">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
+</path>
+<path matrix="0.00378239 0 0 0.00378239 5218.6 3275.6" stroke="black" fill="gray">
+5455.11 3520 m
+5383.55 3643.94 l
+5240.45 3643.94 l
+5168.89 3520 l
+5240.45 3396.06 l
+5383.55 3396.06 l
+h
+</path>
 </page>
 </ipe>

@@ -1,6 +1,7 @@
 \paragraph{Vertical Displacement $\delta$}
 
-When an obstacle hexagon is rotated by $\alpha_i$, the height of the hexagon becomes $2 N(n,m) \sqrt{3} \sec \alpha_i$.
+When an obstacle hexagon is rotated by $\alpha_i$, the height of the hexagon becomes $2 s(n,m) \sqrt{3} \sec \alpha_i$.
+Figure \ref{fig:hexagonNonCanonical.pdf} shows the geometry of a rotated obstacle hexagon.%height of the obstacle hexagon is $2 N(n,m) \sqrt{3}$. 
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -13,7 +14,6 @@ This figure shows a right triangle with angle $\alpha_i$ and sides of length $h$
 \end{minipage}
 
 %The height of the cross section of an obstacle polygon and  
-Figure \ref{fig:hexagonNonCanonical.pdf} shows the geometry of a rotated obstacle hexagon.%height of the obstacle hexagon is $2 N(n,m) \sqrt{3}$. 
 
 %%%%%%%%%%% PEETS COFFEE 2016 06 15 %%%%%%%%%%
 % Using Equation \ref{eqn:Hnm} of $H(n,m)$, the length from the canonical position can also be represented as a sum of widths of corridors and cross sectional heights obstacle hexagons in arbtrary position.
@@ -29,7 +29,7 @@ Figure \ref{fig:hexagonNonCanonical.pdf} shows the geometry of a rotated obstacl
 %%%%%%%%%%% PEETS COFFEE 2016 06 15 %%%%%%%%%%
 
 
-%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY %%%%%%%%%%
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY 2016 06 11 %%%%%%%%%%
 % \begin{eqnarray*}
 % H(n,m) = (u+1) \frac{5t-1}{2} \sqrt{3} + u \lr{\frac{1}{100N} + \sqrt{3}}&=& \sum_{i=1}^{u} \sqrt{3} + \sum_{i=1}^{u+1} \frac{5t-1}{2}\sqrt{3} \sec \alpha_i \\ 
 % &\leq& u \sqrt{3} + \frac{5t-1}{2} \sqrt{3} \sum_{i = 1}^{u+1} \sec \alpha_i\\
@@ -43,7 +43,7 @@ Figure \ref{fig:hexagonNonCanonical.pdf} shows the geometry of a rotated obstacl
 % Which implies:
 % $$\sqrt{\frac{2u}{100N(t+1)\sqrt{3}}} \leq \sum_{i=1}^{u+1} \alpha_i  \leq (u+1) \lr{\frac{3N^2 - 4 - \frac{4}{(100N)^2}}{N^3}}$$
 % \begin{eqnarray*}
-%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY %%%%%%%%%%
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY 2016 06 11 %%%%%%%%%%
 
 
 % h_\text{max} = (u+1) (t+1) \sqrt{3} + u\lr{\sqrt{3}+ \frac{1}{100N}}&\geq& \sum_{i = 1}^{u+1} (t+1) \cdot \sec \alpha_i \cdot \sqrt{3} + m \sqrt{3}\\
@@ -59,22 +59,23 @@ Figure \ref{fig:hexagonNonCanonical.pdf} shows the geometry of a rotated obstacl
 % \frac{1}{100N^4 \sqrt{3}}&<& 1
 % \end{eqnarray*}
 
-For $N$ sufficiently large....
+
 %As $N \rightarrow \infty$, $(u+1) \lr{\frac{3N^2 - 4 - \frac{4}{(100N)^2}}{N^3}}\rightarrow 0$ which implies $\sum_{i = 1}^{m+1} \alpha_i^2$ is bounded.  
-%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY %%%%%%%%%%
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY 2016 06 11 %%%%%%%%%%
 % The number of obstacle hexagons is determined by a polynomial $N(m,n)$ where $a$ is the number of variables in a corresponding Boolean formula and $b$ is the number of clauses in the Boolean formula.
 % Since $\alpha_i$ is bounded above, then there is a maximal rotation of each obstacle hexagon from canonical position.
 %Thus every realization of $P$, the obstacle polygons are close to canonical position.
-%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY %%%%%%%%%%
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY 2016 06 11 %%%%%%%%%%
 
 
-
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.33\columnwidth]{graphics/smallHexagonalGridWithTwoLines.pdf}
-\captionof{figure}{}\label{fig:smallHexagonalGridWithTwoLines.pdf}
-\end{center}
-\end{minipage}
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY 2016 06 18 %%%%%%%%%%
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.33\columnwidth]{graphics/smallHexagonalGridWithTwoLines.pdf}
+% \captionof{figure}{}\label{fig:smallHexagonalGridWithTwoLines.pdf}
+% \end{center}
+% \end{minipage}
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY 2016 06 18 %%%%%%%%%%
 
 To show that the vertical displacement from canonical position is small, we first consider a column of obstacle hexagons in canonical position (see Figure \ref{fig:verticalDisplacementArgument.pdf}).  
 For canonical position, the $\text{j}^\text{th}$ obstacle has $\delta_j = 0$.
@@ -86,24 +87,43 @@ For canonical position, the $\text{j}^\text{th}$ obstacle has $\delta_j = 0$.
 \end{center}
 \end{minipage}
 
-Now suppose that we're given an arbitrary realization where $\vert \delta_j \vert > 0$ where $j = 0$, $\cdots$, $u+1$.  %(or $u$ where we argue for columns with no obstacle hexagons attached to the frame).
+Suppose we are given an arbitrary realization where $\vert \delta_j \vert > 0$ where $j = 1$, $\cdots$, $u+1$.
 From Equation \ref{eqn:Hnm}, we know the exact height of the $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.
-If $\vert \delta_j \vert > 0$, we have two cases: if $\delta_j > 0$ then the position of $O_j$ is higher than canonical, thus giving less room for the remaining corridors and obstacle hexagons:
-\begin{equation}\label{eqn:vertical1}
-\sum_{i=j+1}^u 2 N \sqrt{3}  \sec \alpha_i + \delta_i + (u - j) \sqrt{3} \leq (u-j-1) 2 N \sqrt{3}   + (u-j-1) \lr{\frac{1}{100N} + \sqrt{3}}
+If $\vert \delta_j \vert > 0$, then we have either $\delta_j > 0$ or $\delta_j <0$.  
+When $\delta_j >0$, the vertical position of $O_j$ is higher than canonical, thus giving less room for the remaining corridors and obstacle hexagons.
+\begin{equation}\label{eqn:vertical3}
+\sum_{i=1}^{j} 2 \sqrt{3} s(n,m) + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} \leq \sum_{i=1}^{j-1} 2 \sqrt{3} s(n,m) + 2 \sqrt{3} s(n,m) \sec \alpha_j + \delta_j +\sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}
 \end{equation}
+The left hand side of Inequality \ref{eqn:vertical3} shows the canonical height of $j$ obstacle hexagons and $j-1$ corridors that reside between the hexagons. 
+The right hand side of Inequality \ref{eqn:vertical3} shows the canonical height of $j-1$ obstacle hexagons, the $j^\text{th}$ obstacle hexagon in noncanonical position with respect to rotation and vertical displacement, and $j-1$ corridors that reside between the hexagons.
+Inequality \ref{eqn:vertical3} is continued in Inequality \ref{eqn:vertical4} where the right hand side is the shows the non-canonical height of $j$ obstacle hexagons with respect to rotation only and $j-1$ corridors:
+\begin{equation}\label{eqn:vertical4}
+ \sum_{i=1}^{j-1} 2 \sqrt{3} s + 2 \sqrt{3} s \sec \alpha_j + \delta_j + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}\leq\sum_{i=1}^{j} 2 \sqrt{3} s \sec \alpha_i+ \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} 
+\end{equation}
+From Inequality \ref{eqn:vertical4}, we can derive a bound on $\delta_j$:
+\begin{eqnarray*}
+ \sum_{i=1}^{j-1} 2 \sqrt{3} s + 2 \sqrt{3} s \sec \alpha_j + \delta_j + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}&\leq&\sum_{i=1}^{j} 2 \sqrt{3} s \sec \alpha_i+ \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} \\
+ \delta_j &\leq& \sum_{i=1}^{j-1} 2 \sqrt{3} s \lr{\sec \alpha_i - 1}\\
+ &\leq&  2 \sqrt{3} s  \sum_{i=1}^{j-1} \lr{1 + \frac{\alpha_i^2 }{2} - 1}\\
+ &=&\sqrt{3} s  \sum_{i=1}^{j-1}  \alpha_i^2
+\end{eqnarray*}
+This bound is fairly large.
+We used the first two terms of  Maclaurin series of secant in the inequalities above.  
+% \begin{equation}\label{eqn:vertical1}
+% \sum_{i=j+1}^u 2 N \sqrt{3}  \sec \alpha_i + \delta_j + (u - j) \sqrt{3} \leq (u-j-1) 2 N \sqrt{3}   + (u-j-1) \lr{\frac{1}{100N} + \sqrt{3}}
+% \end{equation}
 The argument is similar when $\delta_j < 0$, the position of $O_j$ is lower than vertical canonical position and reduces the total amount of room for the previous corridors and hexagons:
-\begin{equation}\label{eqn:vertical2}
-\sum_{i=j+1}^u \lr{2 N \sqrt{3} \sec \alpha_i } + \delta_i + (u - j - 1) \sqrt{3} \leq (u - j) \lr{2 N \sqrt{3} } + (u-j) \lr{\frac{1}{100N} + \sqrt{3}}
-\end{equation}
+\begin{eqnarray*}\label{eqn:vertical2}
+\delta_j &\geq& -\sqrt{3} s  \sum_{i=1}^{j-1}  \alpha_i^2
+\end{eqnarray*}
 
 % \begin{equation}\label{eqn:vertical2}
 % \sum_{i=1}^{j} (t+1) \sqrt{3} \sec \alpha_i + \delta_i + (u - j-1) \sqrt{3}  \leq (u-j) (t+1) \sqrt{3} + (u-j) \lr{\frac{1}{100N} + \sqrt{3}}
 % \end{equation}
-From Inequality \ref{eqn:vertical1}:
-\begin{eqnarray*}
-\delta_i &\leq& t+j-u+3 - \sum_{i=j+1}^{u}\frac{\alpha_i^2}{2}
-\end{eqnarray*}
+% From Inequality \ref{eqn:vertical1}:
+% \begin{eqnarray*}
+% \delta_i &\leq& t+j-u+3 - \sum_{i=j+1}^{u}\frac{\alpha_i^2}{2}
+% \end{eqnarray*}
 %%%%%%%%%% COPA VIDA COMMENT OUT ON SATURDAY %%%%%%%%%%
 % \begin{eqnarray*}
 % \sum_{i=j+1}^u (t+1) \sqrt{3} \sec \alpha_i + \delta_i + (u - j-1) \sqrt{3} &\leq& (u-j-1) (t+1) \sqrt{3} + (u-j-1) \lr{\frac{1}{100N} + \sqrt{3}}\\
