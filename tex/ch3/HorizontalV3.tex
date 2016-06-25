@@ -2,50 +2,19 @@
 
 We show the horizontal displacement of an obstacle hexagon is small.
 First we analyze the change of corridor's cross-section with respect to horizontal displacement.
-% Let $\ell_2$ be the $L_2$ norm:
-% $$\ell_2 \lr{p_1,p_2} = \sqrt{\lr{p_{1,x}-p_{2,x}}^2 + \lr{p_{1,y}-p_{2,y}}^2}.$$
-
-% \begin{minipage}{\linewidth}
-% \begin{center}
-% \includegraphics[width=.37\textwidth]{graphics/HorizontalJunctionArgument.pdf}
-% \captionof{figure}{This figure shows a junction formed by three adjacent obstacle hexagons with horizontal and vertical displacement.}\label{fig:HorizontalJunctionArgument.pdf}
-% \end{center}
-% \end{minipage}
-
-% A canonical junction has an area of $$\frac{\sqrt{3}}{2} \lr{\sqrt{3}+ \frac{1}{100N}}^2.$$
-% The coordinates shown in Figure \ref{fig:HorizontalJunctionArgument.pdf} are the relative displacement coordinatates with respect to each coordinate's canoncial position.
-% When a junction is formed by three adjacent obstacle hexagons that are displaced only vertically and horizontally, the area of the junction becomes:
-% $$ \frac{1}{2} \cdot \ell_2 \lr{\lr{x+\beta,y+\delta}_{i+1,j},\lr{x+\beta,y+\delta}_{i-1,j}} \cdot \ell_2 \lr{\lr{x+\beta,y+\delta}_{i,j-1},\lr{x+\beta,y+\delta}_{i-1,j}}$$%%\cdot \sin \lr{\corridors^{-1}\lr{\frac{a}{b}}}$$
 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.8\textwidth]{graphics/HorizontalCorridorArgument.pdf}
-\captionof{figure}{(a) A corridor and corresponding junctions in canoncial position with cross section $N(n,m) \times (\sqrt{3} + (100N)^-1)$.  (b) A corridor whose horizontal displacement is $\beta_{i+1}$ on the top, and $\beta_{i-1}$ on the bottom; its cross section is $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^-1)$}\label{fig:HorizontalCorridorArgument.pdf}
+\captionof{figure}{(a) A corridor and corresponding junctions in canoncial position with cross section $N(n,m) \times (\sqrt{3} + (100N)^-1)$.  (b) A corridor whose total horizontal displacement is $\beta_{i+1} + \beta_{i-1}$ on the top and total vertical displacement of $\delta_{i+1} + \delta_{i-1}$ on the bottom; its cross section is $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$. (c) shows the cross sectional area of a corridor with full rotational, horizontal, and vertical displacement.}\label{fig:HorizontalCorridorArgument.pdf}
 \end{center}
 \end{minipage}
 
-Figure \ref{fig:HorizontalCorridorArgument.pdf} show the same corridor and corresponding junctions in canonical position and non-canoncical position with respect to horizontal displacement only.  
-The cross sectional areas for each are $N(n,m) \times (\sqrt{3} + (100N)^-1)$ and $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^-1)$ respectively.  
-In Figure \ref{fig:HorizontalArgument.pdf} helps illustrate that in order to compute the diameter the hexagonal frame of a canonical construction, we can describe it in terms of obstacle hexagons, corridors and junctions.
-By modifying Equation \ref{eqn:Jd} of $J_d(z)$, we can compute the number of obstacle hexagons along $\ell_h$:
-$$2z+1$$
-The number of corridors is $2z$ and the number of junctions is $4z$.
-All together, for a given construction, the diameter is:
-\begin{equation}\label{eqn:diameterLh}
-(2z+1)2N(n,m) + 2z N(n,m) + 4z \frac{\sqrt{3}}{2} \lr{\sqrt{3}+\frac{1}{100N}}
-\end{equation}
-To generalize this for any row that $\ell_h$ may intersect where the row has obstacle hexagons on both ends, we use Sequence \ref{eqn:hexagonalGridSequence}:
-$$a(i)2N(n,m) + a(i-1) N(n,m) + 2a(i-1) \frac{\sqrt{3}}{2} \lr{\sqrt{3}+\frac{1}{100N}}$$
-For the other rows where this is not the case, it generalizes to:
-$$a(i) 2N(n,m) + \lr{a(i) + 1} N(n,m) + \lr{2 a(i) + 2} \lr{\sqrt{3}+\frac{1}{100N}}$$
-% \begin{minipage}{\linewidth}
-% \begin{center}
-% \includegraphics[width=.9\textwidth]{graphics/HexagonalGridRho.pdf}
-% \captionof{figure}{(a) shows the displacement of an obstacle hexagon $(\alpha, \beta, \delta)$ where $(\beta_{i,j},\delta_{i,j})$ is the displacement and $\left(\beta_{i,j_0},\delta_{i,j_0}\right)$ is the canonical position of the obstacle hexagon. (b) illustrates three rows of obstacle hexagons in canonical position.  If an obstacle hexagon in the middle row is moved, then it may affect the adjacent obstacle hexagons.
-% }\label{fig:Hexagonal.pdf}
-% \end{center}
-% \end{minipage}
+Figure \ref{fig:HorizontalCorridorArgument.pdf} show the same corridor and corresponding junctions in canonical position and non-canoncical positions.  
+The cross sectional areas for Figure \ref{fig:HorizontalCorridorArgument.pdf}(a) and Figure \ref{fig:HorizontalCorridorArgument.pdf}(b) are $N(n,m) \times (\sqrt{3} + (100N)^-1)$ and $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$ respectively.  
+Figure \ref{fig:HorizontalCorridorArgument.pdf}(c) shows the same corridor with rotational, horizontal, and vertical displacement.
 
+Figure \ref{fig:HorizontalArgument.pdf} helps illustrate that in order to compute the diameter the hexagonal frame of a canonical construction, we can describe it in terms of obstacle hexagons, corridors and junctions.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -53,14 +22,30 @@ $$a(i) 2N(n,m) + \lr{a(i) + 1} N(n,m) + \lr{2 a(i) + 2} \lr{\sqrt{3}+\frac{1}{10
 \captionof{figure}{The horizontal line $\ell_h$ intersects a row of shaded obstacle hexagons, corridors, and junctions.}\label{fig:HorizontalArgument.pdf}
 \end{center}
 \end{minipage}
+
+By modifying Equation \ref{eqn:Jd} of $J_d(z)$, we can compute the number of obstacle hexagons intersecting $\ell_h$:
+$$2z+1$$
+The number of corridors intersecting $\ell_h$ is $2z$ and the number of junctions intersecting $\ell_h$ is $4z$.
+All together, for a given construction the diameter (and length of $\ell_h$) is:
+\begin{equation}\label{eqn:diameterLh}
+(2z+1)2N(n,m) + 2z N(n,m) + 4z \frac{\sqrt{3}}{2} \lr{\sqrt{3}+\frac{1}{100N}}
+\end{equation}
+To generalize this for any row that $\ell_h$ may intersect where the row has obstacle hexagons on both ends, we use Sequence \ref{eqn:hexagonalGridSequence}:
+$$a(i)2N(n,m) + \lr{a(i)-1} N(n,m) + 2(a(i)-1) \frac{\sqrt{3}}{2} \lr{\sqrt{3}+\frac{1}{100N}}$$
+For the other rows where this is not the case, it generalizes to:
+$$a(i) 2N(n,m) + \lr{a(i) + 1} N(n,m) + \lr{2 a(i) + 2} \lr{\sqrt{3}+\frac{1}{100N}}$$
+These upper bounds will be used to show the upper bound of horizontal displacement, $\beta$.
+Now suppose we're given an instance of a modified auxilary construction with the $i^\text{th}$ row having a horizontal displacement at the $j^\text{th}$ column.
+The $\jth$ corridor will have a cross sectional length of:
+$$\left\lbrace
+\begin{array}{cl}
+N(n,m)+\beta_{i+1}+\beta_{i-1}&1<i<a(i)\\
+N(n,m)+\beta_{i+1}&i=1\\
+N(n,m)+\beta_{i-1}&i=a(i)
+\end{array}\right.$$ 
+and the $\ith$ row will have a length of either:
+$$a(i)2N(n,m) + \lr{a(i)-1} N(n,m) + 2(a(i)-1) \frac{\sqrt{3}}{2} \lr{\sqrt{3}+\frac{1}{100N}}+\beta_{i+1}+\beta_{i-1}$$
+or:
+$$a(i) 2N(n,m) + \lr{a(i) + 1} N(n,m) + \lr{2 a(i) + 2} \lr{\sqrt{3}+\frac{1}{100N}}+\beta_{i+1}+\beta_{i-1}$$
 % For bounding the horizontal displacement, draw a horizontal line across a "row" of obstacle hexagons. We can do this because the anle and the vertical displacement are already bounded. Then use the same argument as in (1.6) and (1.7), with a slightly adjusted argument. Specifically, we need to tell what the cross section of a corridor would be in the canonical position. It is (sqrt{3}+1/(100N)/sin(pi/6)  with our current parameters. If the two obstacles on the two sides of the corridor have some angle error alpha and vertical error delta, then the horizontal cross-section of the corridor may be smaller, but only a little bit smaller (use trig to approximate the cross-section).
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.9\textwidth]{graphics/HexagonalGridRho.pdf}
-\captionof{figure}{(a) shows the displacement of an obstacle hexagon $(\alpha, \beta, \delta)$ where $(\beta_{i,j},\delta_{i,j})$ is the displacement and $\left(\beta_{i,j_0},\delta_{i,j_0}\right)$ is the canonical position of the obstacle hexagon. (b) illustrates three rows of obstacle hexagons in canonical position.  If an obstacle hexagon in the middle row is moved, then it may affect the adjacent obstacle hexagons.
-}\label{fig:Hexagonal.pdf}
-\end{center}
-\end{minipage}
-
-
 \end{proof}

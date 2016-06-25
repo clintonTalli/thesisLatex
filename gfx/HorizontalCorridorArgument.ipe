@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160625125503" modified="D:20160625143610"/>
+<info created="D:20160625125503" modified="D:20160625163416"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -416,5 +416,104 @@ h
 </path>
 <text matrix="1 0 0 1 -0.358709 -12.6209" transformations="translations" pos="5104.36 3575.62" stroke="black" type="label" width="20.088" height="12.896" depth="4.29" valign="bottom" size="LARGE">(a)</text>
 <text matrix="1 0 0 1 321.215 -12.8108" transformations="translations" pos="5104.36 3575.62" stroke="black" type="label" width="20.988" height="12.896" depth="4.29" valign="bottom" size="LARGE">(b)</text>
+<text matrix="1 0 0 1 607.626 -10.3016" transformations="translations" pos="5104.36 3575.62" stroke="black" type="label" width="19.189" height="12.896" depth="4.29" valign="bottom" size="LARGE">(c)</text>
+<path matrix="0.965926 0.258819 -0.258819 0.965926 1732.73 -1181.45" stroke="black">
+5176 3661.86 m
+5064 3661.86 l
+</path>
+<path matrix="0.984808 -0.173648 0.173648 0.984808 72.2304 943.933" stroke="black">
+5176 3634.14 m
+5064 3634.14 l
+</path>
+<path matrix="1 0 0 1 608 0" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="0.965926 0.258819 -0.258819 0.965926 1752.33 -1161.85" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="0.984808 -0.173648 0.173648 0.984808 222.795 854.367" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="1 0 0 1 795.83 -48.2" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="-1 0 0 1 10848 0" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="-0.965926 -0.258819 -0.258819 0.965926 11597.05 1476.03" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="-0.984808 0.173648 0.173648 0.984808 9984.54 -866.892" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="-1 0 0 1 10660.17 -48.2" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<use matrix="0.965926 0.258819 -0.258819 0.965926 1732.73 -1181.45" name="mark/disk(sx)" pos="5064 3661.86" size="normal" stroke="black"/>
+<use matrix="0.984808 -0.173648 0.173648 0.984808 72.2304 943.933" name="mark/disk(sx)" pos="5064 3634.14" size="normal" stroke="black"/>
+<use matrix="0.984808 -0.173648 0.173648 0.984808 72.2304 943.933" name="mark/disk(sx)" pos="5176 3634.14" size="normal" stroke="black"/>
+<use matrix="0.965926 0.258819 -0.258819 0.965926 1732.73 -1181.45" name="mark/disk(sx)" pos="5176 3661.86" size="normal" stroke="black"/>
+<path matrix="0.965926 0.258819 -0.258819 0.965926 1732.73 -1181.45" fill="lightgray">
+5036.17 3710.06 m
+5064 3661.86 l
+5176 3661.86 l
+5203.83 3710.06 l
+5036.17 3710.06 l
+</path>
+<path matrix="0.984808 -0.173648 0.173648 0.984808 72.2304 943.933" fill="lightgray">
+5036.17 3585.94 m
+5064 3634.14 l
+5176 3634.14 l
+5203.83 3585.94 l
+5036.17 3585.94 l
+</path>
+<text matrix="0.965926 0.258819 -0.258819 0.965926 1735.91 -1149.1" transformations="translations" pos="5064 3661.86" stroke="black" type="label" width="72.123" height="10.759" depth="4.09" valign="baseline" size="Large">$(\alpha, \beta,\delta)_{i+1,j}$</text>
+<text matrix="1 0 0 1 647.85 -53.7424" transformations="translations" pos="5064 3661.86" stroke="black" type="label" width="72.123" height="10.759" depth="4.09" valign="baseline" size="Large">$(\alpha, \beta,\delta)_{i-1,j}$</text>
+<path matrix="1 0 0 1 608 0" fill="lightgray">
+5012.17 3599.8 m
+5012.17 3696.2 l
+5040 3648 l
+5012.17 3599.8 l
+</path>
+<path matrix="1 0 0 1 608 0" fill="lightgray">
+5227.83 3696.2 m
+5200 3648 l
+5227.83 3599.8 l
+5227.83 3696.2 l
+</path>
+<path stroke="black">
+5758.24 3631.54 m
+68.9327 0 0 68.9327 5690.36 3643.51 5759.29 3643.51 a
+</path>
+<path stroke="black">
+5753.65 3666.29 m
+77.2246 0 0 77.2246 5676.42 3666.29 5751.02 3686.28 a
+</path>
+<text matrix="1 0 0 1 -9.89213 0" transformations="translations" pos="5765.5 3679.47" stroke="black" type="label" width="18.562" height="4.294" depth="2.32" valign="baseline">$\gamma_{i+1}$</text>
+<text matrix="1 0 0 1 -4.20823 -44.6924" transformations="translations" pos="5765.5 3679.47" stroke="black" type="label" width="8.475" height="4.297" depth="1.93" valign="baseline">$\gamma_{i}$</text>
+<path stroke="black" dash="dash dotted">
+5784.61 3695.28 m
+5800.66 3699.58 l
+5800.66 3624.06 l
+</path>
+<path stroke="black">
+5784.61 3643.51 m
+5800.66 3643.51 l
+</path>
+<path stroke="black" dash="dash dotted">
+5800.66 3643.51 m
+5800.66 3666.29 l
+5676.42 3666.29 l
+5676.42 3643.51 l
+h
+</path>
 </page>
 </ipe>
