@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  18 JUN 2016 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 JUN 2016 21:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,7 +846,7 @@ LaTeX Warning: Reference `chp:disk' on page 1 undefined on input line 15.
 File: graphics/VariablesExample.pdf Graphic file (type pdf)
 
 <use graphics/VariablesExample.pdf>
-Package pdftex.def Info: graphics/VariablesExample.pdf used on input line 39.
+Package pdftex.def Info: graphics/VariablesExample.pdf used on input line 40.
 (pdftex.def)             Requested size: 306.46497pt x 65.49564pt.
  [1
 
@@ -856,10 +856,10 @@ pt>
 File: graphics/HoneyCombAssociatedGraphSideBySide.pdf Graphic file (type pdf)
  <use graphics/HoneyCombAssociatedGraphSideBySide.pdf>
 Package pdftex.def Info: graphics/HoneyCombAssociatedGraphSideBySide.pdf used o
-n input line 80.
+n input line 81.
 (pdftex.def)             Requested size: 390.25534pt x 192.97156pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 78--87
+Overfull \hbox (15.0pt too wide) in paragraph at lines 79--88
 []$[]$ 
  []
 
@@ -1088,7 +1088,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 83--89
 []$[]$ 
  []
 
-[15 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3/Horizontal.tex
+[15 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3/HorizontalV2.tex
 <graphics/HexagonalGridRho.pdf, id=317, 651.81519pt x 262.88213pt>
 File: graphics/HexagonalGridRho.pdf Graphic file (type pdf)
 
@@ -1101,13 +1101,34 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 5--12
  []
 
 [16 <./graphics/verticalDisplacementArgument.pdf>]
-Overfull \hbox (20.5867pt too wide) in alignment at lines 29--32
- [][][] []
+<graphics/HorizontalArgument.pdf, id=340, 1205.293pt x 1039.38312pt>
+File: graphics/HorizontalArgument.pdf Graphic file (type pdf)
+
+<use graphics/HorizontalArgument.pdf>
+Package pdftex.def Info: graphics/HorizontalArgument.pdf used on input line 16.
+
+(pdftex.def)             Requested size: 160.43727pt x 138.34406pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 14--20
+[]$[]$ 
  []
 
-)) (../pdf/Thesis.bbl [17 <./graphics/HexagonalGridRho.pdf>])
+<graphics/HorizontalArgument2.pdf, id=341, 305.36082pt x 195.129pt>
+File: graphics/HorizontalArgument2.pdf Graphic file (type pdf)
+
+<use graphics/HorizontalArgument2.pdf>
+Package pdftex.def Info: graphics/HorizontalArgument2.pdf used on input line 36
+.
+(pdftex.def)             Requested size: 160.43727pt x 102.51868pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 34--40
+[]$[]$ 
+ []
+
+[17 <./graphics/HexagonalGridRho.pdf> <./graphics/HorizontalArgument.pdf>]))
+(../pdf/Thesis.bbl [18 <./graphics/HorizontalArgument2.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[18
+[19
 
 ] (../pdf/Thesis.aux)
 
@@ -1115,10 +1136,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17557 strings out of 493089
- 321367 string characters out of 6134841
- 502597 words of memory out of 5000000
- 20568 multiletter control sequences out of 15000+600000
+ 17568 strings out of 493089
+ 321754 string characters out of 6134841
+ 501597 words of memory out of 5000000
+ 20577 multiletter control sequences out of 15000+600000
  43714 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,59p,821b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1142,10 +1163,10 @@ ol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (22 pages, 359198 bytes).
+Output written on ../pdf/Thesis.pdf (23 pages, 365275 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
+ 433 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

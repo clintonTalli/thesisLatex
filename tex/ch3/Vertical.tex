@@ -87,36 +87,52 @@ For canonical position, the $\text{j}^\text{th}$ obstacle has $\delta_j = 0$.
 \end{center}
 \end{minipage}
 
-Suppose we are given an arbitrary realization where $\vert \delta_j \vert > 0$ where $j = 1$, $\cdots$, $u+1$.
-From Equation \ref{eqn:Hnm}, we know the exact height of the $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.
-If $\vert \delta_j \vert > 0$, then we have either $\delta_j > 0$ or $\delta_j <0$.  
-When $\delta_j >0$, the vertical position of $O_j$ is higher than canonical, thus giving less room for the remaining corridors and obstacle hexagons.
-\begin{equation}\label{eqn:vertical3}
-\sum_{i=1}^{j} 2 \sqrt{3} s(n,m) + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} \leq \sum_{i=1}^{j-1} 2 \sqrt{3} s(n,m) + 2 \sqrt{3} s(n,m) \sec \alpha_j + \delta_j +\sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}
-\end{equation}
-The left hand side of Inequality \ref{eqn:vertical3} shows the canonical height of $j$ obstacle hexagons and $j-1$ corridors that reside between the hexagons. 
-The right hand side of Inequality \ref{eqn:vertical3} shows the canonical height of $j-1$ obstacle hexagons, the $j^\text{th}$ obstacle hexagon in noncanonical position with respect to rotation and vertical displacement, and $j-1$ corridors that reside between the hexagons.
-Inequality \ref{eqn:vertical3} is continued in Inequality \ref{eqn:vertical4} where the right hand side is the shows the non-canonical height of $j$ obstacle hexagons with respect to rotation only and $j-1$ corridors:
-\begin{equation}\label{eqn:vertical4}
- \sum_{i=1}^{j-1} 2 \sqrt{3} s + 2 \sqrt{3} s \sec \alpha_j + \delta_j + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}\leq\sum_{i=1}^{j} 2 \sqrt{3} s \sec \alpha_i+ \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} 
-\end{equation}
-From Inequality \ref{eqn:vertical4}, we can derive a bound on $\delta_j$:
-\begin{eqnarray*}
- \sum_{i=1}^{j-1} 2 \sqrt{3} s + 2 \sqrt{3} s \sec \alpha_j + \delta_j + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}&\leq&\sum_{i=1}^{j} 2 \sqrt{3} s \sec \alpha_i+ \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} \\
- \delta_j &\leq& \sum_{i=1}^{j-1} 2 \sqrt{3} s \lr{\sec \alpha_i - 1}\\
- &\leq&  2 \sqrt{3} s  \sum_{i=1}^{j-1} \lr{1 + \frac{\alpha_i^2 }{2} - 1}\\
- &=&\sqrt{3} s  \sum_{i=1}^{j-1}  \alpha_i^2
-\end{eqnarray*}
-This bound is fairly large.
-We used the first two terms of  Maclaurin series of secant in the inequalities above.  
-% \begin{equation}\label{eqn:vertical1}
-% \sum_{i=j+1}^u 2 N \sqrt{3}  \sec \alpha_i + \delta_j + (u - j) \sqrt{3} \leq (u-j-1) 2 N \sqrt{3}   + (u-j-1) \lr{\frac{1}{100N} + \sqrt{3}}
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 19 %%%%%%%%%%
+% Suppose we are given an arbitrary realization where $\vert \delta_j \vert > 0$ where $j = 1$, $\cdots$, $u+1$.
+% From Equation \ref{eqn:Hnm}, we know the exact height of the $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.
+% If $\vert \delta_j \vert > 0$, then we have either $\delta_j > 0$ or $\delta_j <0$.  
+% When $\delta_j >0$, the vertical position of $O_j$ is higher than canonical, thus giving less room for the remaining corridors and obstacle hexagons.
+% \begin{equation}\label{eqn:vertical3}
+% \sum_{i=1}^{j} 2 \sqrt{3} s(n,m) + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} \leq \sum_{i=1}^{j-1} 2 \sqrt{3} s(n,m) + 2 \sqrt{3} s(n,m) \sec \alpha_j + \delta_j +\sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}
 % \end{equation}
-The argument is similar when $\delta_j < 0$, the position of $O_j$ is lower than vertical canonical position and reduces the total amount of room for the previous corridors and hexagons:
-\begin{eqnarray*}\label{eqn:vertical2}
-\delta_j &\geq& -\sqrt{3} s  \sum_{i=1}^{j-1}  \alpha_i^2
+% The left hand side of Inequality \ref{eqn:vertical3} shows the canonical height of $j$ obstacle hexagons and $j-1$ corridors that reside between the hexagons. 
+% The right hand side of Inequality \ref{eqn:vertical3} shows the canonical height of $j-1$ obstacle hexagons, the $j^\text{th}$ obstacle hexagon in noncanonical position with respect to rotation and vertical displacement, and $j-1$ corridors that reside between the hexagons.
+% Inequality \ref{eqn:vertical3} is continued in Inequality \ref{eqn:vertical4} where the right hand side is the shows the non-canonical height of $j$ obstacle hexagons with respect to rotation and vertical displacement only and $j-1$ corridors:
+% \begin{equation}\label{eqn:vertical4}
+%  \sum_{i=1}^{j-1} 2 \sqrt{3} s + 2 \sqrt{3} s \sec \alpha_j + \delta_j + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}\leq\sum_{i=1}^{j} 2 \sqrt{3} s \sec \alpha_i+ \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} 
+% \end{equation}
+% From Inequality \ref{eqn:vertical4}, we can derive a bound on $\delta_j$:
+% \begin{eqnarray*}
+%  \sum_{i=1}^{j-1} 2 \sqrt{3} s + 2 \sqrt{3} s \sec \alpha_j + \delta_j + \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}}&\leq&\sum_{i=1}^{j} 2 \sqrt{3} s \sec \alpha_i+ \sum_{i=1}^{j-1} \lr{\sqrt{3}+\frac{1}{100N}} \\
+%  \delta_j &\leq& \sum_{i=1}^{j-1} 2 \sqrt{3} s \lr{\sec \alpha_i - 1}\\
+%  &\leq&  2 \sqrt{3} s  \sum_{i=1}^{j-1} \lr{1 + \frac{\alpha_i^2 }{2} - 1}\\
+%  &=&\sqrt{3} s  \sum_{i=1}^{j-1}  \alpha_i^2
+% \end{eqnarray*}
+% This bound is fairly large.
+% We used the first two terms of  Maclaurin series of secant in the inequalities above.  
+% % \begin{equation}\label{eqn:vertical1}
+% % \sum_{i=j+1}^u 2 N \sqrt{3}  \sec \alpha_i + \delta_j + (u - j) \sqrt{3} \leq (u-j-1) 2 N \sqrt{3}   + (u-j-1) \lr{\frac{1}{100N} + \sqrt{3}}
+% % \end{equation}
+% The argument is similar when $\delta_j < 0$, the position of $O_j$ is lower than vertical canonical position and reduces the total amount of room for the previous corridors and hexagons:
+% \begin{eqnarray*}\label{eqn:vertical2}
+% \delta_j &\geq& -\sqrt{3} s  \sum_{i=1}^{j-1}  \alpha_i^2
+% \end{eqnarray*}
+% Suppose we are given an arbitrary realization 
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 19 %%%%%%%%%%
+From Equation \ref{eqn:Hnm}, we know the exact height of $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.
+Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement given for each obstacle hexagon where $\vert \delta_j \vert > 0$ where $j = 1$, $\cdots$, $u+1$:
+\begin{eqnarray*}
+\sum_{i=1}^j \lr{2 \sqrt{3} s \sec \lr{ \alpha_i} + \delta_i } + (j-1) \lr{\frac{1}{100N}+\sqrt{3}} &\leq& j \cdot 2 s \sqrt{3} + (j-1) \cdot \lr{\frac{1}{100N}+\sqrt{3}}\\
+2 \sqrt{3} s \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_i &\leq& j \cdot 2 s \sqrt{3}  \\
+\sum_{i=1}^j \sec \lr{\alpha_i} + \delta_i &\leq& j\\
+ &\leq& j- \sum_{i=1}^j \sec \lr{\alpha_i}\\
+ \sum_{i=1}^j \delta_i &\leq& j- \lr{\sum_{i=1}^j 1 + \frac{\alpha_i^2}{2}}\\
+  \sum_{i=1}^j \delta_i &\leq& - \sum_{i=1}^j \frac{\alpha_i}{2}
 \end{eqnarray*}
 
+For any given modified auxiliary construction, the bottom most obstacle hexagon is either hinged to the bottom of the frame or hinged to a half sized hexagon shown (e.g. Figure \ref{fig:HalfSizeHexagon.pdf}).
+In either case $\alpha_i = 0$.  
+From Inequality \ref{eqn:angularBound}, we can conclude that that $\sum_{i=1}^j \frac{\alpha_i}{2}$ is small and so $\delta_i$ is small.
 % \begin{equation}\label{eqn:vertical2}
 % \sum_{i=1}^{j} (t+1) \sqrt{3} \sec \alpha_i + \delta_i + (u - j-1) \sqrt{3}  \leq (u-j) (t+1) \sqrt{3} + (u-j) \lr{\frac{1}{100N} + \sqrt{3}}
 % \end{equation}

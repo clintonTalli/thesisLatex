@@ -1,0 +1,47 @@
+\paragraph{Horizontal Displacement $\beta$}
+
+We show the horizontal displacement of an obstacle hexagon is small.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\textwidth]{graphics/HexagonalGridRho.pdf}
+\captionof{figure}{(a) shows the displacement of an obstacle hexagon $(\alpha, \beta, \delta)$ where $(\beta_{i,j},\delta_{i,j})$ is the displacement and $\left(\beta_{i,j_0},\delta_{i,j_0}\right)$ is the canonical position of the obstacle hexagon. (b) illustrates three rows of obstacle hexagons in canonical position.  If an obstacle hexagon in the middle row is moved, then it may affect the adjacent obstacle hexagons.
+}\label{fig:Hexagonal.pdf}
+\end{center}
+\end{minipage}
+
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.37\textwidth]{graphics/HorizontalArgument.pdf}
+\captionof{figure}{The horizontal line $\ell_h$ intersects a row of shaded obstacle hexagons, corridors, and junctions.}\label{fig:HorizontalArgument.pdf}
+\end{center}
+\end{minipage}
+
+In Figure \ref{fig:HorizontalArgument.pdf} helps illustrate that in order to compute the diameter the hexagonal frame of a canonical construction, we can describe it in terms of obstacle hexagons, corridors and junctions.
+By modifying Equation \ref{eqn:Jd} of $J_d(z)$, we can compute the number of obstacle hexagons along $\ell_h$:
+$$2z+1$$
+The number of corridors is $2z$ and the number of junctions is $4z$.
+All together, for a given construction, the diameter is:
+\begin{equation}\label{eqn:diameterLh}
+(2z+1)2N(n,m) + 2z N(n,m) + 4z \frac{\sqrt{3}}{2} \lr{\sqrt{3}+\frac{1}{100N}}
+\end{equation}
+To generalize this for any row that $\ell_h$ may intersect where the row has obstacle hexagons on both ends, we use Sequence \ref{eqn:hexagonalGridSequence}:
+$$a(i)2N(n,m) + a(i-1) N(n,m) + 2a(i-1) \frac{\sqrt{3}}{2} \lr{\sqrt{3}+\frac{1}{100N}}$$
+For the other rows where this is not the case, it generalizes to:
+$$a(i) 2N(n,m) + \lr{a(i) + 1} N(n,m) + \lr{2 a(i) + 2} \lr{\sqrt{3}+\frac{1}{100N}}$$
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.37\textwidth]{graphics/HorizontalArgument2.pdf}
+\captionof{figure}{Consider the two junctions with widths $x$ and $y$.  The junction with width $x$ is a canonical junction, where the junction with width $y$ has the right most obstacle hexagon displaced to the right from the canonical position.}\label{fig:HorizontalArgument2.pdf}
+\end{center}
+\end{minipage}
+
+The width of a canonical junction is $$x = \frac{\sqrt{3}\sqrt{3 + \frac{1}{100N}}}{2}$$
+whereas when the $j^\text{th}$ junction is changed by only the horizontal displacement of the $j^\text{th}$
+$$y_j = x + \beta_j = \frac{\sqrt{3}\sqrt{3 + \frac{1}{100N}}}{2} + \beta_j.$$
+Figure \ref{fig:HorizontalArgument2.pdf} shows a canoncial and non-canonical junction. 
+% For bounding the horizontal displacement, draw a horizontal line across a "row" of obstacle hexagons. We can do this because the anle and the vertical displacement are already bounded. Then use the same argument as in (1.6) and (1.7), with a slightly adjusted argument. Specifically, we need to tell what the cross section of a corridor would be in the canonical position. It is (sqrt{3}+1/(100N)/sin(pi/6)  with our current parameters. If the two obstacles on the two sides of the corridor have some angle error alpha and vertical error delta, then the horizontal cross-section of the corridor may be smaller, but only a little bit smaller (use trig to approximate the cross-section).
+
+\end{proof}
