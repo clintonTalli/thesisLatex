@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160625125503" modified="D:20160625125503"/>
+<info created="D:20160625125503" modified="D:20160625143610"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -259,24 +259,6 @@ h
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 <path layer="alpha" stroke="black">
-4912 2368 m
-4856 2464.99 l
-4744 2464.99 l
-4688 2368 l
-4744 2271.01 l
-4856 2271.01 l
-h
-</path>
-<path stroke="black">
-4928 2368 m
-4864 2478.85 l
-4736 2478.85 l
-4672 2368 l
-4736 2257.15 l
-4864 2257.15 l
-h
-</path>
-<path stroke="black">
 5176 3661.86 m
 5064 3661.86 l
 </path>
@@ -300,7 +282,7 @@ h
 5040 3648 m
 5012.17 3696.2 l
 </path>
-<path matrix="-1 0 0 1 10240 -0" stroke="black">
+<path matrix="-1 0 0 1 10240 0" stroke="black">
 5040 3648 m
 5012.17 3696.2 l
 </path>
@@ -334,8 +316,6 @@ h
 5203.83 3585.94 l
 5036.17 3585.94 l
 </path>
-<text matrix="1 0 0 1 32.5718 18.14" transformations="translations" pos="5064 3661.86" stroke="black" type="label" width="42.612" height="7.472" depth="2.85" valign="baseline">$(\beta,\delta)_{i+1,j}$</text>
-<text matrix="1 0 0 1 32.5718 -45.86" transformations="translations" pos="5064 3661.86" stroke="black" type="label" width="42.723" height="7.472" depth="2.85" valign="baseline">$(\beta,\delta)_{i-1,j}$</text>
 <path fill="lightgray">
 5012.17 3599.8 m
 5012.17 3696.2 l
@@ -348,5 +328,93 @@ h
 5227.83 3599.8 l
 5227.83 3696.2 l
 </path>
+<path matrix="1 0 0 1 289.357 0.467244" stroke="black">
+5176 3661.86 m
+5064 3661.86 l
+</path>
+<path matrix="1 0 0 1 317.323 0.00970699" stroke="black">
+5176 3634.14 m
+5064 3634.14 l
+</path>
+<path matrix="1 0 0 1 304 0" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="1 0 0 1 313.357 14.3272" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="1 0 0 1 481.153 -62.0503" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="1 0 0 1 491.83 -48.2" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="-1 0 0 1 10544 0" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="-1 0 0 1 10505.36 14.3272" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="-1 0 0 1 10393.49 -62.0503" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<path matrix="-1 0 0 1 10356.17 -48.2" stroke="black">
+5040 3648 m
+5012.17 3696.2 l
+</path>
+<use matrix="1 0 0 1 289.357 0.467244" name="mark/disk(sx)" pos="5064 3661.86" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 317.323 0.00970699" name="mark/disk(sx)" pos="5064 3634.14" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 317.323 0.00970699" name="mark/disk(sx)" pos="5176 3634.14" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 289.357 0.467244" name="mark/disk(sx)" pos="5176 3661.86" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 289.357 0.467244" fill="lightgray">
+5036.17 3710.06 m
+5064 3661.86 l
+5176 3661.86 l
+5203.83 3710.06 l
+5036.17 3710.06 l
+</path>
+<path matrix="1 0 0 1 317.323 0.00970699" fill="lightgray">
+5036.17 3585.94 m
+5064 3634.14 l
+5176 3634.14 l
+5203.83 3585.94 l
+5036.17 3585.94 l
+</path>
+<text matrix="1 0 0 1 321.928 18.6072" transformations="translations" pos="5064 3661.86" stroke="black" type="label" width="56.804" height="10.759" depth="4.09" valign="baseline" size="Large">$(\beta,\delta)_{i+1,j}$</text>
+<text matrix="1 0 0 1 349.895 -45.8503" transformations="translations" pos="5064 3661.86" stroke="black" type="label" width="56.804" height="10.759" depth="4.09" valign="baseline" size="Large">$(\beta,\delta)_{i-1,j}$</text>
+<path matrix="1 0 0 1 304 0" fill="lightgray">
+5012.17 3599.8 m
+5012.17 3696.2 l
+5040 3648 l
+5012.17 3599.8 l
+</path>
+<path matrix="1 0 0 1 304 0" fill="lightgray">
+5227.83 3696.2 m
+5200 3648 l
+5227.83 3599.8 l
+5227.83 3696.2 l
+</path>
+<path stroke="black" dash="dash dotted">
+5353.36 3662.33 m
+5353.36 3634.15 l
+5493.32 3634.15 l
+5493.32 3662.33 l
+h
+</path>
+<path stroke="black" dash="dash dotted">
+5176 3634.14 m
+5176 3661.86 l
+5064 3661.86 l
+5064 3634.14 l
+h
+</path>
+<text matrix="1 0 0 1 -0.358709 -12.6209" transformations="translations" pos="5104.36 3575.62" stroke="black" type="label" width="20.088" height="12.896" depth="4.29" valign="bottom" size="LARGE">(a)</text>
+<text matrix="1 0 0 1 321.215 -12.8108" transformations="translations" pos="5104.36 3575.62" stroke="black" type="label" width="20.988" height="12.896" depth="4.29" valign="bottom" size="LARGE">(b)</text>
 </page>
 </ipe>
