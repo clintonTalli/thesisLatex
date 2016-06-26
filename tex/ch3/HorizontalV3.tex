@@ -13,7 +13,43 @@ First we analyze the change of corridor's cross-section with respect to horizont
 Figure \ref{fig:HorizontalCorridorArgument.pdf} show the same corridor and corresponding junctions in canonical position and non-canoncical positions.  
 The cross sectional areas for Figure \ref{fig:HorizontalCorridorArgument.pdf}(a) and Figure \ref{fig:HorizontalCorridorArgument.pdf}(b) are $N(n,m) \times (\sqrt{3} + (100N)^-1)$ and $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$ respectively.  
 Figure \ref{fig:HorizontalCorridorArgument.pdf}(c) shows the same corridor with rotational, horizontal, and vertical displacement.
+To find the crosss sectional area of the corridor in Figure \ref{fig:HorizontalCorridorArgument.pdf}(c), we decompose it into three parts, the upper tringle, the reectangle, and the lower triangle.  
 
+We're given $N(n,m)$ and $(\alpha, \beta, \delta)_{i,j}$ for all $i,j = 1, \dots, u$. 
+The area of the upper triangle is 
+\begin{equation}\label{eqn:upperTriangle}
+\frac{1}{2}\lr{N+\beta_{i+1} + \beta_{i-1}}^2 \tan \lr{\alpha_{i+1,j}}.
+\end{equation}
+The area of the rectangle is 
+\begin{equation}\label{eqn:rectangle}
+\lr{N + \beta_{i+1} + \beta_{i-1}} \cdot \lr{\lr{\sqrt{3} + (100N)^{-1}} + \delta_{i+1} + \delta_{i-1}}.
+\end{equation}
+The area of the lower triangle is 
+\begin{equation}\label{eqn:lowerTriangle}
+\frac{1}{2} \lr{N \cdot \cos \lr{ \alpha_{i-1,j} } } \cdot \lr{N \cdot \sin \lr{\alpha_{i-1,j}} }= N^2 \sin \lr{2 \cdot \alpha_{i-1,j}}.
+\end{equation}
+Using the vertical and rotational bounds derived in Equations \ref{eqn:verticalBound} and \ref{eqn:angularBound},  we will bound the decomposed parts of the corridor in Equations \ref{eqn:upperTriangle}, \ref{eqn:rectangle}, and \ref{eqn:lowerTriangle}.
+
+We could have two cases: (1) where the cross sectional area of \ref{fig:HorizontalCorridorArgument.pdf}(a) is smaller than \ref{fig:HorizontalCorridorArgument.pdf}(c) and (2) where the cross sectional area of \ref{fig:HorizontalCorridorArgument.pdf}(a) is larger than \ref{fig:HorizontalCorridorArgument.pdf}(c).
+Suppose we have case (1). Using the Maclaurin series for corresponding trigonometric functions, we can bound the decomposed parts of the non-canonical corridor.
+Equation \ref{eqn:upperTriangle} can be bounded as follows:
+\begin{equation}\label{eqn:upperTriangleBound}
+\begin{array}{rcl}
+\frac{1}{2}\lr{N+\beta_{i+1} + \beta_{i-1}}^2 \tan \lr{\alpha_{i+1,j}} &\leq& \frac{1}{2}\lr{N+\beta_{i+1} + \beta_{i-1}}^2 \lr{a_{i+1,j}}\\
+&\leq& \frac{1}{2}\lr{N+\beta_{i+1} + \beta_{i-1}}^2 \lr{\frac{5 \cdot (i-1)}{10N^3 - 6}}
+\end{array}
+\end{equation}
+Equation \ref{eqn:rectangle} can be bounded as follows:
+\begin{equation}\label{eqn:rectangleBound}
+\lr{N + \beta_{i+1} + \beta_{i-1}} \cdot \lr{\lr{\sqrt{3} + (100N)^{-1}} + \delta_{i+1} + \delta_{i-1}}\leq\lr{N + \beta_{i+1} + \beta_{i-1}} \cdot \lr{\lr{\sqrt{3} + (100N)^{-1}} + \frac{25(u-1)^2}{(10N^3 - 6)^2}}
+\end{equation}
+Equation \ref{eqn:lowerTriangle} can be bounded as follows:
+\begin{equation}\label{eqn:lowerTriangleBound}
+\begin{array}{rcl}
+N^2 \sin \lr{2 \cdot \alpha_{i-1,j}}&\leq&N^2 \lr{2 \alpha_{i-1}}\\
+&\leq&N^2 \frac{10(i-1)}{10N^3 -6}
+\end{array}
+\end{equation}
 Figure \ref{fig:HorizontalArgument.pdf} helps illustrate that in order to compute the diameter the hexagonal frame of a canonical construction, we can describe it in terms of obstacle hexagons, corridors and junctions.
 
 \begin{minipage}{\linewidth}

@@ -119,20 +119,50 @@ For canonical position, the $\text{j}^\text{th}$ obstacle has $\delta_j = 0$.
 % \end{eqnarray*}
 % Suppose we are given an arbitrary realization 
 %%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 19 %%%%%%%%%%
-From Equation \ref{eqn:Hnm}, we know the exact height of $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.
-Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement given for each obstacle hexagon where $\vert \delta_j \vert > 0$ where $j = 1$, $\cdots$, $u+1$:
+
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 26 %%%%%%%%%%
+% From Equation \ref{eqn:Hnm}, we know the exact height of $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.
+% Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement given for each obstacle hexagon where $\vert \delta_j \vert > 0$ where $j = 1$, $\cdots$, $u+1$:
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 26 %%%%%%%%%%
+
+From Equation \ref{eqn:Hnm}, we know the exact height of $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.  
+Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement for \textit{one} obstacle hexogon $\vert \delta_v \vert > 0$ where $j=1$, $\cdots$, $u+1$.
 \begin{eqnarray*}
-\sum_{i=1}^j \lr{2 \sqrt{3} s \sec \lr{ \alpha_i} + \delta_i } + (j-1) \lr{\frac{1}{100N}+\sqrt{3}} &\leq& j \cdot 2 s \sqrt{3} + (j-1) \cdot \lr{\frac{1}{100N}+\sqrt{3}}\\
-2 \sqrt{3} s \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_i &\leq& j \cdot 2 s \sqrt{3}  \\
-\sum_{i=1}^j \sec \lr{\alpha_i} + \delta_i &\leq& j\\
- &\leq& j- \sum_{i=1}^j \sec \lr{\alpha_i}\\
- \sum_{i=1}^j \delta_i &\leq& j- \lr{\sum_{i=1}^j 1 + \frac{\alpha_i^2}{2}}\\
-  \sum_{i=1}^j \delta_i &\leq& - \sum_{i=1}^j \frac{\alpha_i}{2}
+\sum_{i=1}^j \lr{2 \sqrt{3} s \sec \lr{ \alpha_i}} + \delta_v  + (j-1) \lr{\frac{1}{100N}+\sqrt{3}} &\leq& j \cdot 2 s \sqrt{3} + (j-1) \cdot \lr{\frac{1}{100N}+\sqrt{3}}\\
+2 \sqrt{3} s \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_ v &\leq& j \cdot 2 s \sqrt{3}  \\
+\sum_{i=1}^j \sec \lr{\alpha_i} + \delta_v &\leq& j\\
+ \delta_v &\leq& j- \sum_{i=1}^j \sec \lr{\alpha_i}\\
+ \delta_v &\leq& j - \lr{j - \sum_{i=1}^j \frac{\alpha_i^2}{2}}\\
+\delta_v &\leq& - \sum_{i=1}^j \frac{\alpha_i^2}{2}
 \end{eqnarray*}
+
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 26 %%%%%%%%%%
+% \begin{eqnarray*}
+% \sum_{i=1}^j \lr{2 \sqrt{3} s \sec \lr{ \alpha_i} + \delta_i } + (j-1) \lr{\frac{1}{100N}+\sqrt{3}} &\leq& j \cdot 2 s \sqrt{3} + (j-1) \cdot \lr{\frac{1}{100N}+\sqrt{3}}\\
+% 2 \sqrt{3} s \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_i &\leq& j \cdot 2 s \sqrt{3}  \\
+% \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_i &\leq& j\\
+%  &\leq& j- \sum_{i=1}^j \sec \lr{\alpha_i}\\
+%  \sum_{i=1}^j \delta_i &\leq& j- \lr{\sum_{i=1}^j 1 + \frac{\alpha_i^2}{2}}\\
+%   \sum_{i=1}^j \delta_i &\leq& - \sum_{i=1}^j \frac{\alpha_i^2}{2}
+% \end{eqnarray*}
+%%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 26 %%%%%%%%%%
 
 For any given modified auxiliary construction, the bottom most obstacle hexagon is either hinged to the bottom of the frame or hinged to a half sized hexagon shown (e.g. Figure \ref{fig:HalfSizeHexagon.pdf}).
 In either case $\alpha_i = 0$.  
-From Inequality \ref{eqn:angularBound}, we can conclude that that $\sum_{i=1}^j \frac{\alpha_i}{2}$ is small and so $\delta_i$ is small.
+From Inequalities \ref{eqn:angularBound} and \ref{eqn:angularSumBound}, we can conclude that:
+$$
+\begin{array}{rcl}
+\sum_{i=1}^u \alpha_i &\leq& \frac{5(u-1)}{10N^3 -6}\\
+\sum_{i=1}^u \frac{\alpha_i}{\sqrt{2}} &\leq& \frac{5(u-1)}{\sqrt{2} \lr{10N^3 -6} }\\
+\sum_{i=1}^u \frac{\alpha_i^2}{2} + \sum_{i=1}^u \sum_{\substack{j=1\\j\neq i}^u} \frac{\alpha_i}{\sqrt{2}} \cdot \frac{\alpha_j}{\sqrt{2}} &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}\\
+\sum_{i=1}^u \frac{\alpha_i^2}{2}  &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2} -  \sum_{i=1}^u \sum_{\substack{j=1\\j\neq i}^u} \frac{\alpha_i}{\sqrt{2}} \cdot \frac{\alpha_j}{\sqrt{2}}\\
+\sum_{i=1}^u \frac{\alpha_i^2}{2}  &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}
+\end{array}$$
+Thus we finally say that the bound for $\delta_v$, for any $v$ is small:
+\begin{equation}\label{eqn:verticalBound}
+\delta_v \leq \frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}
+\end{equation}
+% \sum_{i=1}^j \frac{\alpha_i^2}{2}\leq \lr\frac{5(u-1)}{10N^3 -6}$$ 
 % \begin{equation}\label{eqn:vertical2}
 % \sum_{i=1}^{j} (t+1) \sqrt{3} \sec \alpha_i + \delta_i + (u - j-1) \sqrt{3}  \leq (u-j) (t+1) \sqrt{3} + (u-j) \lr{\frac{1}{100N} + \sqrt{3}}
 % \end{equation}

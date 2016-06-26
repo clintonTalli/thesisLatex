@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160524084256" modified="D:20160524084256"/>
+<info created="D:20160524084256" modified="D:20160626121320"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -258,7 +258,13 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 -335.11 -320" stroke="black" pen="ultrafat">
+<path layer="alpha" fill="lightgray">
+4561.98 3076.06 m
+4561.98 3053.29 l
+4362.03 3053.29 l
+4362.03 3076.06 l
+</path>
+<path matrix="0.313752 0 0 0.313752 2872.88 2010.54" stroke="black" pen="ultrafat">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -267,7 +273,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="1 0 0 1 -582.21 -177.34" stroke="black" pen="ultrafat">
+<path matrix="0.313752 0 0 0.313752 2795.35 2055.3" stroke="black" pen="ultrafat">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -276,7 +282,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="1 0 0 1 -829.315 -320" stroke="black" pen="ultrafat">
+<path matrix="0.313752 0 0 0.313752 2717.82 2010.54" stroke="black" pen="ultrafat">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -285,7 +291,7 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path matrix="-0.42181 0 0 -0.42181 6970.42 4613.11" stroke="black" pen="ultrafat">
+<path matrix="-0.132344 0 0 -0.132344 5165.01 3558.31" stroke="black" pen="ultrafat">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -294,13 +300,13 @@ h
 5383.55 3396.06 l
 h
 </path>
-<path stroke="black" pen="ultrafat">
+<path matrix="0.313752 0 0 0.313752 2978.02 2110.94" stroke="black" pen="ultrafat">
 4411.14 3076.06 m
 5048.26 3076.06 l
 </path>
-<use name="mark/disk(sx)" pos="4479.95 3076.06" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="4990.56 3076.06" size="normal" stroke="black"/>
-<path matrix="0.153969 0 0 0.153969 3892.81 2657.67" stroke="black" fill="gray" pen="ultrafat">
+<use matrix="0.313752 0 0 0.313752 2978.02 2110.94" name="mark/disk(sx)" pos="4479.95 3076.06" size="normal" stroke="black"/>
+<use matrix="0.313752 0 0 0.313752 2978.02 2110.94" name="mark/disk(sx)" pos="4990.56 3076.06" size="normal" stroke="black"/>
+<path matrix="0.0483081 0 0 0.0483081 4199.4 2944.79" stroke="black" fill="gray" pen="ultrafat">
 5455.11 3520 m
 5383.55 3643.94 l
 5240.45 3643.94 l
@@ -309,9 +315,9 @@ h
 5383.55 3396.06 l
 h
 </path>
-<use matrix="1 0 0 1 -10.2659 0" name="mark/disk(sx)" pos="4721.71 3218.72" size="large" stroke="black"/>
-<use name="mark/disk(sx)" pos="4479.95 3076.06" size="large" stroke="black"/>
-<use name="mark/disk(sx)" pos="4990.56 3076.06" size="large" stroke="black"/>
-<use name="mark/disk(sx)" pos="4711.29 3180.55" size="large" stroke="black"/>
+<use matrix="0.313752 0 0 0.313752 2978.02 2110.94" name="mark/disk(sx)" pos="4721.71 3218.72" size="large" stroke="black"/>
+<use matrix="0.313752 0 0 0.313752 2978.02 2110.94" name="mark/disk(sx)" pos="4479.95 3076.06" size="large" stroke="black"/>
+<use matrix="0.313752 0 0 0.313752 2978.02 2110.94" name="mark/disk(sx)" pos="4990.56 3076.06" size="large" stroke="black"/>
+<use matrix="0.313752 0 0 0.313752 2974.38 2110.94" name="mark/disk(sx)" pos="4711.29 3180.55" size="large" stroke="black"/>
 </page>
 </ipe>

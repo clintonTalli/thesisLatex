@@ -58,7 +58,7 @@ a(i) &=& a(i-3)+1\\
 The $i^\text{th}$ number of Sequence \ref{eqn:hexagonalGridSequence} indicates the number of hexagons on the $i^\text{th}$ row of the hexagonal grid in the interior of $J$ from the perimeter of $J$ up to the half height of $J$. In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) from the bottom to the mid-height of $J$, the sequence $a(i)$ (i.e. the number of hexagons in each subsequent row) is 4, 3, 4, 5, 4, 5, 6, 5, 6, 7.
 
 Denote the hexagons of the hexagonal grid in $J$ as \textit{obstacle hexagons}.
-Let the side length of the an obstacle hexagon be $N(n,m)= c_N \cdot s(n,m)$ where $c_N \in (0, .5)$.
+Let the side length of the an obstacle hexagon be $N(n,m)= c_N \cdot s(n,m)$ where $c_N \in \lr{0, \frac{1}{2z + 1} }$.
 The scaling constant $c_N$ preserves the corridors described described earlier.  
 %We then finally re-scale this form of the honeycomb such that the side length of the hexagons are determined by polynomial of variable $n$ and $m$, $N(n,m)= c_N \cdot s(n,m)$ where $c_N \in (0, .5)$ is a scaling constant of $s(n,m)$, while preserving the corridors formed from the first scaling.
 
@@ -78,7 +78,7 @@ These hexagons are flags.
 For each edge in $\tilde{A}(\Phi)$, we insert flags into the corridor corresponding to that edge.
 Flexible hexagons are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
 Let $t(n,m)=2N^3(n,m)-1$ be the number of flags in a corridor (see Figure \ref{fig:variable}). 
-Scale the honeycomb such that the obstacle hexagons become regular hexagons of side length $(5t-1)/2+\sqrt{3}$, and then scale each obstacle hexagon independently from its center to a hexagon of side length $(5t-1)/2$ (see Figure \ref{fig:honeycomb}). 
+Scale the honeycomb such that the obstacle hexagons become regular hexagons of side length $(5t-1)/2+\sqrt{3}$, and then scale each obstacle hexagon independently from its center to a hexagon of side length $(5t-1)/2$ (see Figure \ref{fig:ScalingForCorridors.pdf}). 
 %Let $\Phi$ be a Boolean formula in 3-CNF with variables $x_1,\ldots , x_n$ and clauses $C_1,\ldots ,C_m$, and let $A(\Phi)$ be the associated planar graph.
 %We modify $A(\Phi)$ to obtain a plane graph $\tilde{A}(\Phi)$ of maximum degree 3 as follows: replace each \emph{variable} vertex $v$ by a cycle whose length equals the degree of $v$, and distribute the edges incident to $v$ among the vertices of the cycle.
 %Embed $\tilde{A}(\Phi)$ into the section of a hexagonal tiling (e.g. see Figure \ref{fig:HoneyCombAssociatedGraphSmall} and Figure \ref{fig:assoc}, right), contained in a regular hexagon of side length $N$, where $N$ is a polynomial of $n$ and $m$~\cite{BK+98}.
