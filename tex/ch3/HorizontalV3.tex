@@ -47,7 +47,9 @@ Equation \ref{eqn:lowerTriangle} can be bounded as follows:
 \begin{equation}\label{eqn:lowerTriangleBound}
 \begin{array}{rcl}
 N^2 \sin \lr{2 \cdot \alpha_{i-1,j}}&\leq&N^2 \lr{2 \alpha_{i-1}}\\
-&\leq&N^2 \frac{10(i-1)}{10N^3 -6}
+&\leq&N^2 \lr{2 \cdot \sum_{j=1}^i \frac{5j}{10N^3-6}}\\
+&\leq&N^2 \cdot 2 \cdot \frac{5 (i^2 + i)}{2(10N^3-6)}\\
+&\leq&N^2 \frac{5 (i^2 + i)}{10N^3-6}
 \end{array}
 \end{equation}
 Figure \ref{fig:HorizontalArgument.pdf} helps illustrate that in order to compute the diameter the hexagonal frame of a canonical construction, we can describe it in terms of obstacle hexagons, corridors and junctions.

@@ -50,12 +50,15 @@ Thus the relative rotational difference between adjacent obstacle hexagons is
 The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
 From Figure \ref{fig:HalfSizeHexagon.pdf}, we know that the bottom most obstacle hexagon is hinged to the frame.  
 This implies that $\alpha_1 = 0$. 
-There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
-The sum of total displacement in a given column is bounded by:
-$$ \frac{5(u-1)}{10N^3 -6} = \frac{60s - 5}{10 (c_N s)^3 - 3}$$
 The sum of rotational displacement  is bounded by the following inequality:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^u \alpha_i \leq \frac{5(u-1)}{10N^3 -6}
+\begin{array}{rcl}
+\sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert &\leq& \frac{5(u-1)}{10N^3 -6}\\
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert &\leq& \frac{5u}{10N^3 -6}\\
+\end{array}
 \end{equation}
 The $\ith$ obstacle hexagon could have a relative rotational displacement with respect to $\alpha_1$ up to:
-$$\alpha_i \leq \frac{5i}{10N^3-6}$$
+$$\alpha_i \leq \sum_{j=1}^i\frac{5\cdot j}{10N^3-6}=\frac{5(i^2 + i)}{2(10N^3-6)}$$
+There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
+The sum of total displacement in a given column is bounded by:
+$$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{5(u-1)}{10N^3 -6} = \frac{60s - 5}{10 (c_N s)^3 - 3}$$

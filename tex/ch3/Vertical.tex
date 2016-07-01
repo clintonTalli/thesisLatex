@@ -133,7 +133,7 @@ Consider the first $j$ terms for the height of the column of obstacle hexagons a
 \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_v &\leq& j\\
  \delta_v &\leq& j- \sum_{i=1}^j \sec \lr{\alpha_i}\\
  \delta_v &\leq& j - \lr{j - \sum_{i=1}^j \frac{\alpha_i^2}{2}}\\
-\delta_v &\leq& - \sum_{i=1}^j \frac{\alpha_i^2}{2}
+\delta_v &\leq&  \sum_{i=1}^j \frac{\alpha_i^2}{2}
 \end{eqnarray*}
 
 %%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 26 %%%%%%%%%%
@@ -147,21 +147,45 @@ Consider the first $j$ terms for the height of the column of obstacle hexagons a
 % \end{eqnarray*}
 %%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 26 %%%%%%%%%%
 
-For any given modified auxiliary construction, the bottom most obstacle hexagon is either hinged to the bottom of the frame or hinged to a half sized hexagon shown (e.g. Figure \ref{fig:HalfSizeHexagon.pdf}).
-In either case $\alpha_i = 0$.  
-From Inequalities \ref{eqn:angularBound} and \ref{eqn:angularSumBound}, we can conclude that:
+
+%%%%%%%%%% BOURBON CAFE COMMENT OUT ON WEDNESDAY 2016 06 29 %%%%%%%%%%
+% For any given modified auxiliary construction, the bottom most obstacle hexagon is either hinged to the bottom of the frame or hinged to a half sized hexagon shown (e.g. Figure \ref{fig:HalfSizeHexagon.pdf}).
+% In either case $\alpha_i = 0$.  
+% From Inequalities \ref{eqn:angularBound} and \ref{eqn:angularSumBound}, we can conclude that:
+% $$
+% \begin{array}{rcl}
+% \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert  &\leq& \frac{5(u-1)}{10N^3 -6}\\
+% \end{array}
+% $$
+%%%%%%%%%% BOURBON CAFE COMMENT OUT ON WEDNESDAY 2016 06 29 %%%%%%%%%%
+
+%%%%%%%%%% UAL COMMENT OUT ON SUNDAY 2016 06 27 %%%%%%%%%%
+Using Inequalities \ref{eqn:angularSumBound}, we derive the following result:
 $$
 \begin{array}{rcl}
-\sum_{i=1}^u \alpha_i &\leq& \frac{5(u-1)}{10N^3 -6}\\
-\sum_{i=1}^u \frac{\alpha_i}{\sqrt{2}} &\leq& \frac{5(u-1)}{\sqrt{2} \lr{10N^3 -6} }\\
-\sum_{i=1}^u \frac{\alpha_i^2}{2} + \sum_{i=1}^u \sum_{\substack{j=1\\j\neq i}^u} \frac{\alpha_i}{\sqrt{2}} \cdot \frac{\alpha_j}{\sqrt{2}} &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}\\
-\sum_{i=1}^u \frac{\alpha_i^2}{2}  &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2} -  \sum_{i=1}^u \sum_{\substack{j=1\\j\neq i}^u} \frac{\alpha_i}{\sqrt{2}} \cdot \frac{\alpha_j}{\sqrt{2}}\\
-\sum_{i=1}^u \frac{\alpha_i^2}{2}  &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}
+\sum_{i=1}^u \frac{\alpha_i^2}{2} &\leq& \frac{\sum_{i=1}^u \lr{\sum_{j=1}^i \frac{5j}{10N^3-6}}^2}{2}\\
+\sum_{i=1}^u \alpha_i^2 &\leq& \sum_{i=1}^u \lr{\sum_{j=1}^i \frac{5j}{10N^3-6}}^2\\
+&\leq&\sum_{i=1}^u \lr{\sum_{j=1}^u \frac{5j}{10N^3-6}}^2\\
+&\leq&\sum_{i=1}^u \lr{\frac{5}{10N^3-6}\cdot \sum_{j=1}^u j}^2\\
+&\leq&\sum_{i=1}^u \lr{\frac{5}{10N^3-6}\cdot \frac{u^2+u}{2}}^2\\
+&\leq&\sum_{i=1}^u \lr{\frac{5(u^2+u)}{2\lr{10N^3-6}}}^2\\
+&\leq&u\cdot\lr{\frac{5(u^2+u)}{2\lr{10N^3-6}}}^2
+% \sum_{i=1}^j \alpha_{i-1} - \alpha_i &\leq& 
+% \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{5(u-1)}{10N^3 -6}\\
+% \sum_{i=1}^u \alpha_i &\leq& \frac{5(u-1)}{10N^3 -6}\\
+% \sum_{i=1}^u \frac{\alpha_i}{\sqrt{2}} &\leq& \frac{5(u-1)}{\sqrt{2} \lr{10N^3 -6} }\\
+% \sum_{i=1}^u \frac{\alpha_i^2}{2} + \sum_{i=1}^u \sum_{\substack{j=1\\j\neq i}}^u \frac{\alpha_i}{\sqrt{2}} \cdot \frac{\alpha_j}{\sqrt{2}} &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}\\
+% \sum_{i=1}^u \frac{\alpha_i^2}{2}  &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2} -  \sum_{i=1}^u \sum_{\substack{j=1\\j\neq i}^u} \frac{\alpha_i}{\sqrt{2}} \cdot \frac{\alpha_j}{\sqrt{2}}\\
+% \sum_{i=1}^u \frac{\alpha_i^2}{2}  &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}
 \end{array}$$
+%%%%%%%%%% UAL COMMENT OUT ON MONDAY 2016 06 27 %%%%%%%%%%
 Thus we finally say that the bound for $\delta_v$, for any $v$ is small:
 \begin{equation}\label{eqn:verticalBound}
-\delta_v \leq \frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}
+\delta_v \leq u\cdot\lr{\frac{5(u^2+u)}{2\lr{10N^3-6}}}^2
 \end{equation}
+
+
+
 % \sum_{i=1}^j \frac{\alpha_i^2}{2}\leq \lr\frac{5(u-1)}{10N^3 -6}$$ 
 % \begin{equation}\label{eqn:vertical2}
 % \sum_{i=1}^{j} (t+1) \sqrt{3} \sec \alpha_i + \delta_i + (u - j-1) \sqrt{3}  \leq (u-j) (t+1) \sqrt{3} + (u-j) \lr{\frac{1}{100N} + \sqrt{3}}
