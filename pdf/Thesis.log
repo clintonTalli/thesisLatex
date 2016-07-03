@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  1 JUL 2016 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  2 JUL 2016 22:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1087,7 +1087,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 83--89
  []
 
 [16 <./graphics/hexagonNonCanonical2.pdf> <./graphics/verticalDisplacementArgum
-ent.pdf>]) (./ch3/HorizontalV3.tex
+ent.pdf>]) (./ch3/HorizontalV4.tex
 <graphics/HorizontalCorridorArgument.pdf, id=339, 827.15022pt x 187.1291pt>
 File: graphics/HorizontalCorridorArgument.pdf Graphic file (type pdf)
 
@@ -1096,31 +1096,13 @@ Package pdftex.def Info: graphics/HorizontalCorridorArgument.pdf used on input
 line 8.
 (pdftex.def)             Requested size: 346.89731pt x 78.47946pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 6--12
-[]$[]$ 
+Overfull \hbox (15.0pt too wide) in paragraph at lines 6--16
+[]$[]$
  []
 
-[17]
-Overfull \hbox (23.76015pt too wide) detected at line 45
-[] \OMS/ztmcm/m/n/10 ^^A [] ^^T [] ^^A []
- []
-
-[18 <./graphics/HorizontalCorridorArgument.pdf>]
-<graphics/HorizontalArgument.pdf, id=376, 1205.293pt x 1039.38312pt>
-File: graphics/HorizontalArgument.pdf Graphic file (type pdf)
-
-<use graphics/HorizontalArgument.pdf>
-Package pdftex.def Info: graphics/HorizontalArgument.pdf used on input line 59.
-
-(pdftex.def)             Requested size: 160.43727pt x 138.34406pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 57--63
-[]$[]$ 
- []
-
-[19 <./graphics/HorizontalArgument.pdf>])) (../pdf/Thesis.bbl [20])
+[17 <./graphics/HorizontalCorridorArgument.pdf>])) (../pdf/Thesis.bbl [18])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[21
+[19
 
 ] (../pdf/Thesis.aux)
 
@@ -1128,10 +1110,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17571 strings out of 493089
- 321774 string characters out of 6134841
+ 17562 strings out of 493089
+ 321518 string characters out of 6134841
  502597 words of memory out of 5000000
- 20581 multiletter control sequences out of 15000+600000
+ 20573 multiletter control sequences out of 15000+600000
  43714 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,59p,821b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1155,10 +1137,10 @@ ol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (25 pages, 371108 bytes).
+Output written on ../pdf/Thesis.pdf (23 pages, 361670 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
+ 422 PDF objects out of 1000 (max. 8388607)
+ 313 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

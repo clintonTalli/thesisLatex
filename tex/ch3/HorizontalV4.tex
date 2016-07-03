@@ -1,0 +1,46 @@
+\paragraph{Horizontal Displacement $\beta$}
+
+We show the horizontal displacement of an obstacle hexagon is small.
+First we analyze the change of corridor's cross-section with respect to horizontal displacement.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.8\textwidth]{graphics/HorizontalCorridorArgument.pdf}
+\captionof{figure}{(a) A corridor and corresponding junctions in canoncial position with cross section $N(n,m) \times (\sqrt{3} + (100N)^-1)$.  (b) A corridor whose total horizontal displacement is $\beta_{i+1} + \beta_{i-1}$ on the top and total vertical displacement of $\delta_{i+1} + \delta_{i-1}$ on the bottom; its cross section is $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$. (c) shows the cross sectional area of a corridor with full rotational, horizontal, and vertical displacement.}\label{fig:HorizontalCorridorArgument.pdf}
+\end{center}
+\end{minipage}
+Figure \ref{fig:HorizontalCorridorArgument.pdf} show the same corridor and corresponding junctions in canonical position and non-canoncical positions.  
+The cross sectional areas for Figure \ref{fig:HorizontalCorridorArgument.pdf}(a) and Figure \ref{fig:HorizontalCorridorArgument.pdf}(b) are $N(n,m) \times (\sqrt{3} + (100N)^-1)$ and $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$ respectively.  
+Figure \ref{fig:HorizontalCorridorArgument.pdf}(c) shows the same corridor with rotational, horizontal, and vertical displacement.
+To find the crosss sectional area of the corridor in Figure \ref{fig:HorizontalCorridorArgument.pdf}(c), we decompose it into three parts, the upper tringle, the reectangle, and the lower triangle.  
+
+We're given $N(n,m)$ and $(\alpha, \beta, \delta)_{i,j}$ for all $i,j = 1, \dots, u$. 
+The area of the upper triangle is 
+\begin{equation}\label{eqn:upperTriangle}
+\frac{1}{2}\lr{N+\beta_{i+1} + \beta_{i-1}}^2 \tan \lr{\alpha_{i+1,j}}.
+\end{equation}
+The area of the rectangle is 
+\begin{equation}\label{eqn:rectangle}
+\lr{N + \beta_{i+1} + \beta_{i-1}} \cdot \lr{\lr{\sqrt{3} + (100N)^{-1}} + \delta_{i+1} + \delta_{i-1}}.
+\end{equation}
+The area of the lower triangle is 
+\begin{equation}\label{eqn:lowerTriangle}
+\frac{1}{2} \lr{N \cdot \cos \lr{ \alpha_{i-1,j} } } \cdot \lr{N \cdot \sin \lr{\alpha_{i-1,j}} }= N^2 \sin \lr{2 \cdot \alpha_{i-1,j}}.
+\end{equation}
+
+
+
+% I think the simplest argument would go by induction on the "height" of
+% the obstacle hexagon.
+% Assume that angular and vertical displacement of every obstacle hexagon
+% is small.
+% Consider one hexagon (alpha,beta,delta)_{(i,j)}, and further assume that
+% the hexagons bellow, lower-left, and lower-right have small horizontal
+% displacement
+% (here "small" can be quantified using the bounds (1.7) and (1.8)).
+% Then we need to show that beta_{(i,j)} is also "small"
+% Because of the connector between the hexagon (i,j) and the one directly
+% below (i,j-1),
+% the horizontal displacement is at most about beta_{(i,j-1)} (1-cos
+% (gamma_{(i,j)})).
+\end{proof}
