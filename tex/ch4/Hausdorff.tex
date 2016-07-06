@@ -1,12 +1,13 @@
 %\chapter{Disk Arrangement}
 \chapter{Realizability Problems for Weighted Trees}\label{chp:disk}
 \section{Properties for Weighted Trees and Polygonal Linkages}
-In order to perform our analysis for weighted trees and polygonal linkages, we'll want to use a suitable metric.  The usual Euclidian distance will not suffice for this analysis and so we turn to the Hausdorff distance.
+In order to perform our analysis for weighted trees and polygonal linkages, we'll want to use a suitable metric.  
+The usual Euclidian distance will not suffice for this analysis and so we turn to the Hausdorff distance.
 \paragraph{Hausdorff Distance}  Let $A$ and $B$ be sets in the plane. The \textit{directed Hausdorff distance} is 
 \begin{equation}\label{eqn:ContactGraphV3-1}
 d\lr{A,B} = \sup_{a \in A} \inf_{b \in B} \left\vert\left\vert a-b \right\vert \right\vert
 \end{equation}
-$h\lr{A,B}$ finds the furthest point $a in A$ from any point in $B$.  \textit{Hausdorff distance} is
+$h\lr{A,B}$ finds the furthest point $a \in A$ from any point in $B$.  \textit{Hausdorff distance} is
 \begin{equation}\label{eqn:ContactGraphV3-2}
 D\lr{A,B} = \max \left\lbrace d\lr{A,B}, d\lr{B,A} \right\rbrace
 \end{equation}

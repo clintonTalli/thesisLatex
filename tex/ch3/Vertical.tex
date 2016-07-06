@@ -126,7 +126,7 @@ For canonical position, the $\jth$ obstacle has $\delta_j = 0$.
 %%%%%%%%%% COPA VIDA COMMENT OUT ON SUNDAY 2016 06 26 %%%%%%%%%%
 
 From Equation \ref{eqn:Hnm}, we know the exact height of $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.  
-Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement for \textit{one} obstacle hexogon $\vert \delta_v \vert > 0$ where $j=1$, $\cdots$, $u+1$.
+Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement for \textit{one} obstacle hexagon $\vert \delta_v \vert > 0$, where $j=2$, $\cdots$, $u+1$ and $1 < v \leq j$.
 \begin{eqnarray*}
 \sum_{i=1}^j \lr{2 \sqrt{3} s \sec \lr{ \alpha_i}} + \delta_v  + (j-1) \lr{\frac{1}{100N}+\sqrt{3}} &\leq& j \cdot 2 s \sqrt{3} + (j-1) \cdot \lr{\frac{1}{100N}+\sqrt{3}}\\
 2 \sqrt{3} s \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_ v &\leq& j \cdot 2 s \sqrt{3}  \\
@@ -163,11 +163,11 @@ Consider the first $j$ terms for the height of the column of obstacle hexagons a
 Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
 $$
 \begin{array}{rcl}
-\sum_{i=1}^u \frac{\alpha_i^2}{2} &\leq& \frac{\sum_{i=1}^u \lr{\sum_{j=1}^i \frac{5j}{10N^3-6}}^2}{2}\\
-\sum_{i=1}^u \alpha_i^2 &\leq& \sum_{i=1}^u \lr{\sum_{j=1}^i \frac{5j}{10N^3-6}}^2\\
-&\leq&\sum_{i=1}^u  \lr{ \frac{5}{10N^3-6} \sum_{j=1}^i j}^2\\
-&\leq&\sum_{i=1}^u  \lr{ \frac{5}{10N^3-6}\cdot \frac{i^2+i}{2}}^2\\
-&\leq&\sum_{i=1}^u \lr{\frac{5i^2+5i}{20N^3-12}}^2\\
+\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{\sum_{i=1}^j \lr{\sum_{\kappa=1}^i \frac{5\kappa}{10N^3-6}}^2}{2}\\
+\sum_{i=1}^j \alpha_i^2 &\leq& \sum_{i=1}^j \lr{\sum_{\kappa=1}^i \frac{5\kappa}{10N^3-6}}^2\\
+&\leq&\sum_{i=1}^j  \lr{ \frac{5}{10N^3-6} \sum_{\kappa=1}^i \kappa}^2\\
+&\leq&\sum_{i=1}^j  \lr{ \frac{5}{10N^3-6}\cdot \frac{i^2+i}{2}}^2\\
+&\leq&\sum_{i=1}^j  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2\\
 % &\leq&\sum_{i=1}^u \lr{\frac{5 \lr{i^2+i}}{20N^2-12}}^2\\
 % &\leq&\sum_{i=1}^u \lr{\sum_{j=1}^u \frac{5j}{10N^3-6}}^2\\
 % &\leq&\sum_{i=1}^u \lr{\frac{5}{10N^3-6}\cdot \sum_{j=1}^u j}^2\\
@@ -183,9 +183,9 @@ $$
 % \sum_{i=1}^u \frac{\alpha_i^2}{2}  &\leq&\frac{25(u-1)^2}{2\lr{10N^3 - 6}^2}
 \end{array}$$
 %%%%%%%%%% UAL COMMENT OUT ON MONDAY 2016 06 27 %%%%%%%%%%
-Thus we finally say that the bound for $\delta_v$, for any $v$, is small:
+Thus we finally say that the bound for $\delta_v$, where $1<v\leq j$, is small:
 \begin{equation}\label{eqn:verticalBound}
-\delta_v \leq \frac{\sum_{i=1}^u \lr{\frac{5i^2+5i}{20N^3-12}}^2}{2}
+\delta_v \leq \frac{\sum_{i=1}^j  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2}{2}
 \end{equation}
 
 

@@ -6,10 +6,11 @@ First we analyze the change of corridor's cross-section with respect to horizont
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.8\textwidth]{graphics/HorizontalCorridorArgument.pdf}
-\captionof{figure}{(a) A corridor and corresponding junctions in canoncial position with cross section $N(n,m) \times (\sqrt{3} + (100N)^-1)$.  (b) A corridor whose total horizontal displacement is $\beta_{i+1} + \beta_{i-1}$ on the top and total vertical displacement of $\delta_{i+1} + \delta_{i-1}$ on the bottom; its cross section is $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$. (c) shows the cross sectional area of a corridor with full rotational, horizontal, and vertical displacement.}\label{fig:HorizontalCorridorArgument.pdf}
+\captionof{figure}{(a) A corridor and corresponding junctions in canoncial position with cross section $N(n,m) \times (\sqrt{3} + (100N)^{-1})$.  (b) A corridor whose total horizontal displacement is $\beta_{i+1} + \beta_{i-1}$ on the top and total vertical displacement of $\delta_{i+1} + \delta_{i-1}$ on the bottom; its cross section is $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$. (c) shows the cross sectional area of a corridor with full rotational, horizontal, and vertical displacement.}\label{fig:HorizontalCorridorArgument.pdf}
 \end{center}
 \end{minipage}
-Figure \ref{fig:HorizontalCorridorArgument.pdf} show the same corridor and corresponding junctions in canonical position and non-canoncical positions.  
+Figure \ref{fig:HorizontalCorridorArgument.pdf} shows the same corridor and corresponding junctions in canonical position and non-canoncical positions.
+This figure is of a corridor and adjacent junctions formed by obstacle hexagons in counter-clockwise order: $O_{i-1,j}$, $O_{i,j-1}$, $O_{i+1,j}$, and $O_{i,j+1}$.
 The cross sectional areas for Figure \ref{fig:HorizontalCorridorArgument.pdf}(a) and Figure \ref{fig:HorizontalCorridorArgument.pdf}(b) are $N(n,m) \times (\sqrt{3} + (100N)^-1)$ and $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$ respectively.  
 Figure \ref{fig:HorizontalCorridorArgument.pdf}(c) shows the same corridor with rotational, horizontal, and vertical displacement.
 To find the crosss sectional area of the corridor in Figure \ref{fig:HorizontalCorridorArgument.pdf}(c), we decompose it into three parts, the upper tringle, the reectangle, and the lower triangle.  
@@ -34,6 +35,22 @@ The area of the lower triangle is
 % the obstacle hexagon.
 % Assume that angular and vertical displacement of every obstacle hexagon
 % is small.
+Note that the bottom most obstacle hexagon $O_{j,1}$ is hinged to the frame or hinged to some half sized hexagon such that $\beta_{j,1} = 0$.  
+The range of motion horizontal motion that $O_{j,2}$ has is dictated by the range of possible motion from the skinny rhombus between $O_{j,1}$ and $O_{j,2}$.
+The diameter of the skinny rhombus is $\sqrt{1+(100N)^{-1}}$.  
+%An upperbound of $\beta_{j,2}$ is $\sqrt{1+(100N)^{-1}}$, however it is not a small or tight bound.  
+If $\beta_{j,2} = \pm \sqrt{1+(100N)^{-1}}$, there would be a collision a  corridor(s) adjacent to $O_{j,2}$.  
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical2.pdf}
+\captionof{figure}{The full range of motion is shown dashed half circle about the diameter of the skinny rhombus.}\label{fig:corridorNonCanonical2.pdf}
+\end{center}
+\end{minipage}
+
+Figure \ref{fig:corridorNonCanonical2.pdf} shows the range of motion of the skinny rhombus.
+The angle formed between the diameter of the rhombus and the half length of the corridor is $\omega_i$.
+The relative difference between 
 % Consider one hexagon (alpha,beta,delta)_{(i,j)}, and further assume that
 % the hexagons bellow, lower-left, and lower-right have small horizontal
 % displacement
