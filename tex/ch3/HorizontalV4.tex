@@ -29,7 +29,68 @@ The area of the lower triangle is
 \frac{1}{2} \lr{N \cdot \cos \lr{ \alpha_{i-1,j} } } \cdot \lr{N \cdot \sin \lr{\alpha_{i-1,j}} }= N^2 \sin \lr{2 \cdot \alpha_{i-1,j}}.
 \end{equation}
 
+We show by an induction argument that the horizontal displacement for any given modified construction is small.  
+Consider a column of obstacle hexagons which has an obstacle hexagon $O_1$ hinged at the bottom of the frame $J_z$.  
+The obstacle hexagon $O_1$ has no displacement; it is immobile.  
+Consider the case where the column of hexagon has a half sized hexagon attached at the the bottom of the frame, the hinge points of the half sized hexagon immobilize the the first obstacle hexagon of that column (see Figure \ref{fig:HalfSizeHexagon.pdf} for reference).  
+In either case the obstacle hexagon $O_2$ has horizontal mobility by way of the range of motion from the skinny rhombi (see Figure \ref{fig:corridorNonCanonical2.pdf} for reference) between $O_1$ and $O_2$. 
+The diameter of the skinny rhombi are $\sqrt{1 + (100N)^{-1}}$; the possible horizontal displacement $O_2$ could have is $\sqrt{1 + (100N)^{-1}}$ plus the horizontal displacement contributed by $\alpha_{i,2}$ (see Figure \ref{rangeOfMotionSkinnyRhombus.pdf}).
+% \begin{equation}\label{eqn:horizontalDisplacementBeta2}
+% \beta_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \sqrt{ 
+% 													2\cdot \lr{
+% 																3 + \lr{
+% 																		\frac{5t-1}{4} - \sqrt{1 + \lr{
+% 																										\frac{1}{100N}
+% 																										}^2
+% 																								}
+% 																		}^2
+% 																}
+% 												-  
+% 												\cos \lr{\alpha_{i,2}} \cdot 2 \cdot 
+% 												\lr{
+% 														3 + \lr{
+% 																		\frac{5t-1}{4} - \sqrt{ 1 + \lr{
+% 																										\frac{1}{100N}
+% 																										}^2
+% 																								}
+% 																}^2
+% 													}
+% 												}
+% \end{equation}
+\begin{equation}\label{eqn:horizontalDisplacementBeta2}
+\beta_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \frac{h}{2} \sin \alpha_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \frac{h\alpha_{i,2} }{2}
+\end{equation}
+The maximal horizontal displacement is shown in Inequality \ref{eqn:horizontalDisplacementBeta2} where $h$ is the height of an obstacle hexagon.  
+The maximal horizontal displacement is $\beta_{i,2} = \sqrt{1 + (100N)^{-1}} + \frac{h}{2} \sin \alpha_{i,2}$ however, this large value is infeasible.  
+We will now show what the feasible upper bound of horizontal displacement is.
+Firstly, the range of motion of the skinny rhombus is limited by the vertical displacement of an obstacle hexagon. 
+Secondly, we have bounded the angular displacement $\alpha$ of an obstacle hexagon.  
 
+%Firsty argument
+The vertical displacement of the $v^\text{th}$ obstacle hexagon is:
+$$\delta_v \leq \frac{\sum_{i=1}^v  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2}{2}$$
+Let the angular rotation of the skinny rhombus be $\omega$.  
+
+%secondly argument
+The angluar displacement of the $v^\text{th}$ obstacle hexagon is:
+$$\alpha_v \leq \frac{\lr{v^2 + v}5}{2\lr{10N^3-6}}$$
+which implies:
+$$\frac{h\alpha_2 }{2} \leq \frac{15h}{2\lr{10N^3-6}}$$
+
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.6\columnwidth]{graphics/rangeOfMotionSkinnyRhombus.pdf}
+\captionof{figure}{This figure illustrates the possible range of motion of the skinny rhombus between two obstacle hexagons and the feasible range of rotational displacement of $O_{1,2}$.}\label{fig:rangeOfMotionSkinnyRhombus.pdf}
+\end{center}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/BottomOfJ.pdf}
+\captionof{figure}{bottom}\label{fig:BottomOfJ.pdf}
+\end{center}
+\end{minipage}
 
 % I think the simplest argument would go by induction on the "height" of
 % the obstacle hexagon.
