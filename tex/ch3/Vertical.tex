@@ -163,11 +163,11 @@ Consider the first $j$ terms for the height of the column of obstacle hexagons a
 Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
 $$
 \begin{array}{rcl}
-\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{\sum_{i=1}^j \lr{\sum_{\kappa=1}^i \frac{5\kappa}{10N^3-6}}^2}{2}\\
-\sum_{i=1}^j \alpha_i^2 &\leq& \sum_{i=1}^j \lr{\sum_{\kappa=1}^i \frac{5\kappa}{10N^3-6}}^2\\
-&\leq&\sum_{i=1}^j  \lr{ \frac{5}{10N^3-6} \sum_{\kappa=1}^i \kappa}^2\\
-&\leq&\sum_{i=1}^j  \lr{ \frac{5}{10N^3-6}\cdot \frac{i^2+i}{2}}^2\\
-&\leq&\sum_{i=1}^j  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2\\
+\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{\sum_{i=1}^j \lr{\sum_{\kappa=1}^i \frac{\kappa}{2\lr{N^3-1} }}^2}{2}\\
+\sum_{i=1}^j \alpha_i^2 &\leq& \sum_{i=1}^j \lr{\sum_{\kappa=1}^i \frac{\kappa}{2 \lr{N^3 - 1}}}^2\\
+&\leq&\sum_{i=1}^j  \lr{ \frac{1}{2\lr{N^3-1}} \sum_{\kappa=1}^i \kappa}^2\\
+&\leq&\sum_{i=1}^j  \lr{ \frac{1}{2\lr{N^3-1}}\cdot \frac{i^2+i}{2}}^2\\
+&\leq&\sum_{i=1}^j  \lr{ \frac{i^2+i}{4\lr{N^3-1}}}^2\\
 % &\leq&\sum_{i=1}^u \lr{\frac{5 \lr{i^2+i}}{20N^2-12}}^2\\
 % &\leq&\sum_{i=1}^u \lr{\sum_{j=1}^u \frac{5j}{10N^3-6}}^2\\
 % &\leq&\sum_{i=1}^u \lr{\frac{5}{10N^3-6}\cdot \sum_{j=1}^u j}^2\\
@@ -185,7 +185,7 @@ $$
 %%%%%%%%%% UAL COMMENT OUT ON MONDAY 2016 06 27 %%%%%%%%%%
 Thus we finally say that the bound for $\delta_v$, where $1<v\leq j$, is small:
 \begin{equation}\label{eqn:verticalBound}
-\delta_v \leq \frac{\sum_{i=1}^j  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2}{2}
+\delta_v \leq \frac{\sum_{i=1}^j  \lr{ \frac{i^2+i}{4\lr{N^3-1}}}^2}{2}
 \end{equation}
 
 

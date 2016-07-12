@@ -75,17 +75,11 @@ In a disk arrangement of a perfect snowflake, the disks around the central disk 
 The disk arrangement from the perturbed snowflake does not have this quality.  
 Figure \ref{fig:modifiedContactGraph.pdf} shows a gap $\epsilon(\gamma)$ between adjacent disks around the central disk.  
 This gap is formed from the perturbed weight $\frac{1}{2} + \gamma$ of the central disk.  
-\begin{lem}\label{lem:cg-1}
-Given any realization of a perturbed snowflake of 7 weighted vertices, with the central vertex $v_0$ weighted $\frac{1}{2} + \gamma$ and the others weighted $\frac{1}{2}$, the total additional distance between all vertices is $6 \epsilon(\gamma)$ compared to a perfect snowflake of 7 unit weight vertices.
-\end{lem}
-\begin{proof}
-Consider a canonical disk arrangement of a perturbed snowflake of 7 weighted vertices (see Figure \ref{fig:modifiedContactGraph.pdf}).
-The side length of the sides formed between the center of the central disk and two adjacent disks around the central disk is $1 + \gamma$.  
-Let the distance between the two adjacent disks be $1 + \epsilon(\gamma)$.
-There are a total of $6 \epsilon(\gamma)$ between adjacent centers of disks. 
-The total perimeter of the hexagon formed about the centers of the disks in contact with the central disk is $6 + 6\epsilon(\gamma)$. 
-Note that 1) the total perimeter of the hexagon formed on a perfect snowflake of 7 weighted vertices is 6 and 2) the canonical disk arrangement can be transformed to any other disk arrangement corresponding to the perturbed snowflake of 7 weighted vertices by pushing the the ring of disks around the central disk together such that all adjacent disks are in contact with each other with the exception of the disks at the end.
-\end{proof}
+\begin{equation}\label{eqn:epsilonGamma}
+\epsilon(\gamma)=2\gamma + \gamma^2
+\end{equation}
+
+
 As the perturbed snowflake grows outer layers, we can begin to define parts of the snowflake and the corresponding disk arrangement.
 
 \begin{minipage}{\linewidth}
@@ -115,6 +109,17 @@ In Figure \ref{fig:PerturbedSpine.pdf}, we have a perturbed spine
 
 In Figure \ref{fig:PerturbedVertebrae.pdf}, we have four an arrangement of disks on the snowflake, off the spine and away from the central disk.  
 We call this a vertebrae.
+\begin{lem}\label{lem:cg-1}
+Given any realization of a perturbed snowflake of 7 weighted vertices, with the central vertex $v_0$ weighted $\frac{1}{2} + \gamma$ and the others weighted $\frac{1}{2}$, the total additional distance between all vertices is $6 \epsilon(\gamma)$ compared to a perfect snowflake of 7 unit weight vertices.
+\end{lem}
+\begin{proof}
+Consider a canonical disk arrangement of a perturbed snowflake of 7 weighted vertices (see Figure \ref{fig:modifiedContactGraph.pdf}).
+The side length of the sides formed between the center of the central disk and two adjacent disks around the central disk is $1 + \gamma$.  
+Let the distance between the two adjacent disks be $1 + \epsilon(\gamma)$.
+There are a total of $6 \epsilon(\gamma)$ between adjacent centers of disks. 
+The total perimeter of the hexagon formed about the centers of the disks in contact with the central disk is $6 + 6\epsilon(\gamma)$. 
+Note that 1) the total perimeter of the hexagon formed on a perfect snowflake of 7 weighted vertices is 6 and 2) the canonical disk arrangement can be transformed to any other disk arrangement corresponding to the perturbed snowflake of 7 weighted vertices by pushing the the ring of disks around the central disk together such that all adjacent disks are in contact with each other with the exception of the disks at the end.
+\end{proof}
 
 
 

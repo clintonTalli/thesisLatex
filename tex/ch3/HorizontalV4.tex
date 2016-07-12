@@ -69,13 +69,19 @@ Secondly, we have bounded the angular displacement $\alpha$ of an obstacle hexag
 %Firsty argument
 The vertical displacement of the $v^\text{th}$ obstacle hexagon is:
 $$\delta_v \leq \frac{\sum_{i=1}^v  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2}{2}$$
-Let the angular rotation of the skinny rhombus be $\omega$.  
-
+Let the angular rotation of the skinny rhombus be $\omega_v$, then corresponding horizontal dispalcement $\phi$ is:
+$$\phi = \frac{\delta_v}{\tan\lr{\omega_v}}=\frac{\delta_v}{\tan\lr{\sin^{-1} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}}}$$
+using Maclaurin series, $\phi$ simplifies to:
+\begin{eqnarray*}
+\frac{\delta_v}{\tan\lr{\sin^{-1} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}}}&\leq&\frac{\delta_v}{\tan\lr{ \frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}     + \frac{1}{6} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}^3}}\\
+&\leq& \frac{\delta_v}{ \frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}     + \frac{1}{6} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}^3}
+\end{eqnarray*}
 %secondly argument
 The angluar displacement of the $v^\text{th}$ obstacle hexagon is:
 $$\alpha_v \leq \frac{\lr{v^2 + v}5}{2\lr{10N^3-6}}$$
 which implies:
 $$\frac{h\alpha_2 }{2} \leq \frac{15h}{2\lr{10N^3-6}}$$
+
 
 
 \begin{minipage}{\linewidth}
