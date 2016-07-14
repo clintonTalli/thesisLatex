@@ -11,13 +11,13 @@
 \contentsline {paragraph}{Modified Auxilary Construction.}{11}
 \contentsline {paragraph}{Angular Rotation $\alpha $.}{14}
 \contentsline {paragraph}{Vertical Displacement $\delta $}{16}
-\contentsline {paragraph}{Horizontal Displacement $\beta $}{17}
-\contentsline {chapter}{\numberline {2}Realizability Problems for Weighted Trees}{21}
-\contentsline {section}{\numberline {2.1}Properties for Weighted Trees and Polygonal Linkages}{21}
-\contentsline {paragraph}{Hausdorff Distance}{21}
-\contentsline {paragraph}{$\epsilon $-approximation}{21}
-\contentsline {section}{\numberline {2.2}Approximating Regular Hexagons with Snowflakes}{21}
-\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{23}
-\contentsline {paragraph}{Perturbed Snowflake Tree.}{23}
-\contentsline {section}{\numberline {2.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{25}
+\contentsline {paragraph}{Horizontal Displacement $\beta $}{18}
+\contentsline {chapter}{\numberline {2}Realizability Problems for Weighted Trees}{22}
+\contentsline {section}{\numberline {2.1}Properties for Weighted Trees and Polygonal Linkages}{22}
+\contentsline {paragraph}{Hausdorff Distance}{22}
+\contentsline {paragraph}{$\epsilon $-approximation}{22}
+\contentsline {section}{\numberline {2.2}Approximating Regular Hexagons with Snowflakes}{22}
+\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{24}
+\contentsline {paragraph}{Perturbed Snowflake Tree.}{24}
+\contentsline {section}{\numberline {2.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{27}
 \contentsfinish 

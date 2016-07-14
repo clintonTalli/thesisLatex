@@ -59,6 +59,15 @@ We can derive 1) a bounded sum of rotational displacement over a column of obsta
 \sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
+\begin{eqnarray*}
+\alpha_i &\leq& \sum_{j=1}^i\frac{j}{2\lr{N^3 - 1}}\\
+&=&\frac{\lr{i^2 + i}}{4\lr{N^3-1}}\\
+&\leq& \frac{\lr{u^2 + u}}{4\lr{N^3-1}}\\
+&\leq& \frac{144s^2+12s}{4\lr{\lr{\frac{5t-1}{2}}^3-1}}\\
+&\leq& \frac{144s^2+12s}{4\lr{\lr{\frac{5s^k-1}{2}}^3-1}}\\
+&\leq& \frac{144s^2+12s}{\frac{\lr{5s^k-1}^3-2}{2}}\\
+&\leq& \frac{288s^2+12s}{\lr{5s^k-1}^3-2}
+\end{eqnarray*}
 \begin{equation}\label{eqn:angularMaxBound}
 \alpha_i \leq \sum_{j=1}^i\frac{j}{2\lr{N^3 - 1}}=\frac{\lr{i^2 + i}}{4\lr{N^3-1}}
 \end{equation}
