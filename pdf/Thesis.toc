@@ -1,23 +1,15 @@
 \contentsline {chapter}{Signature page}{ii}
 \contentsline {chapter}{Abstract}{iv}
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Realizability of Polygonal Linkages with Fixed Orientation}{1}
-\contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{1}
-\contentsline {section}{\numberline {1.1}Auxilary Construction}{2}
-\contentsline {paragraph}{Variable Gadget.}{5}
-\contentsline {paragraph}{Clause Gadget.}{6}
-\contentsline {paragraph}{Transmitter Gadget.}{6}
-\contentsline {subsection}{\numberline {1.1.1}Functionality of the Auxilary Construction and Gadgets}{8}
-\contentsline {paragraph}{Modified Auxilary Construction.}{11}
-\contentsline {paragraph}{Angular Rotation $\alpha $.}{14}
-\contentsline {paragraph}{Vertical Displacement $\delta $}{16}
-\contentsline {paragraph}{Horizontal Displacement $\beta $}{18}
-\contentsline {chapter}{\numberline {2}Realizability Problems for Weighted Trees}{22}
-\contentsline {section}{\numberline {2.1}Properties for Weighted Trees and Polygonal Linkages}{22}
-\contentsline {paragraph}{Hausdorff Distance}{22}
-\contentsline {paragraph}{$\epsilon $-approximation}{22}
-\contentsline {section}{\numberline {2.2}Approximating Regular Hexagons with Snowflakes}{22}
-\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{24}
-\contentsline {paragraph}{Perturbed Snowflake Tree.}{24}
-\contentsline {section}{\numberline {2.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{27}
+\contentsline {paragraph}{Angular Rotation $\alpha $.}{2}
+\contentsline {paragraph}{Vertical Displacement $\delta $}{3}
+\contentsline {paragraph}{Horizontal Displacement $\beta $}{5}
+\contentsline {chapter}{\numberline {1}Realizability Problems for Weighted Trees}{9}
+\contentsline {section}{\numberline {1.1}Properties for Weighted Trees and Polygonal Linkages}{9}
+\contentsline {paragraph}{Hausdorff Distance}{9}
+\contentsline {paragraph}{$\epsilon $-approximation}{9}
+\contentsline {section}{\numberline {1.2}Approximating Regular Hexagons with Snowflakes}{9}
+\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{11}
+\contentsline {paragraph}{Perturbed Snowflake Tree.}{11}
+\contentsline {section}{\numberline {1.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{14}
 \contentsfinish 

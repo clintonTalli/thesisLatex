@@ -40,36 +40,44 @@ The bound of $\gamma_i$ is:
 &\leq& \frac{\sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
 &\leq& \frac{5}{10N^3 -6}\\
 &\leq& \frac{5}{10N^3 - 10}\\
-&\leq& \frac{1}{2\lr{N^3 - 1}}
+&\leq& \frac{1}{2\lr{N^3 - 1}}\\
+&\leq& \frac{1}{2 \lr{\frac{5t-1}{2}}^3 - 1}\\
+&\leq& \frac{4}{\lr{5t-1}^3-4}\\
+&\leq& \frac{4}{\lr{5s^k-1}^3-4}
 \end{array} 
 \end{equation}
-Inequality \ref{eqn:gammaBound} uses the first two terms Maclaurin series of $\tan^{-1}$.
+Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$.
 Thus the relative rotational difference between adjacent obstacle hexagons is
 \begin{equation}\label{eqn:angularBound}
-\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{1}{2\lr{N^3 - 1}}
+\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{4}{\lr{5s^k-1}^3-4}
 \end{equation}
 %From this inequality, it is clear that for  $N$ sufficiently large, $\gamma_j \rightarrow 0$; and so 
 The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
-From Figure \ref{fig:HalfSizeHexagon.pdf}, we know that the bottom most obstacle hexagon is hinged to the frame.  
+The bottom most obstacle hexagon is hinged to the frame (see Figure \ref{fig:HalfSizeHexagon.pdf} for illustration). 
 This implies that $\alpha_1 = 0$ and
-$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{1}{2\lr{N^3 - 1}}.$$
+$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{4}{\lr{5s^k-1}^3-4}.$$
 There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
 We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{4(12s-1)}{\lr{5s^k-1}^3-4}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
 \begin{eqnarray*}
-\alpha_i &\leq& \sum_{j=1}^i\frac{j}{2\lr{N^3 - 1}}\\
-&=&\frac{\lr{i^2 + i}}{4\lr{N^3-1}}\\
-&\leq& \frac{\lr{u^2 + u}}{4\lr{N^3-1}}\\
-&\leq& \frac{144s^2+12s}{4\lr{\lr{\frac{5t-1}{2}}^3-1}}\\
-&\leq& \frac{144s^2+12s}{4\lr{\lr{\frac{5s^k-1}{2}}^3-1}}\\
-&\leq& \frac{144s^2+12s}{\frac{\lr{5s^k-1}^3-2}{2}}\\
-&\leq& \frac{288s^2+12s}{\lr{5s^k-1}^3-2}
+\alpha_i &\leq& \sum_{j=1}^i\frac{4 j}{\lr{5s^k-1}^3-4}\\
+&\leq& \frac{4}{\lr{5s^k-1}^3-4}\sum_{j=1}^i j\\
+&\leq& \frac{4}{\lr{5s^k-1}^3-4} \cdot \frac{i^2+i}{2}\\
+&\leq& \frac{4\lr{u^2+u}}{2\lr{\lr{5s^k-1}^3-4}} \\
+&\leq& \frac{4\lr{144s^2+12s}}{2\lr{\lr{5s^k-1}^3-4}}\\
+&\leq& \frac{\lr{288^2+24s}}{\lr{5s^k-1}^3-4}\\
+% &=&\frac{\lr{i^2 + i}}{4\lr{N^3-1}}\\
+% &\leq& \frac{\lr{u^2 + u}}{4\lr{N^3-1}}\\
+% &\leq& \frac{144s^2+12s}{4\lr{\lr{\frac{5t-1}{2}}^3-1}}\\
+% &\leq& \frac{144s^2+12s}{4\lr{\lr{\frac{5s^k-1}{2}}^3-1}}\\
+% &\leq& \frac{144s^2+12s}{\frac{\lr{5s^k-1}^3-2}{2}}\\
+% &\leq& \frac{288s^2+12s}{\lr{5s^k-1}^3-2}
 \end{eqnarray*}
 \begin{equation}\label{eqn:angularMaxBound}
-\alpha_i \leq \frac{288s^2+12s}{\lr{5s^k-1}^3-2}
+\alpha_i \leq \frac{\lr{288^2+24s}}{\lr{5s^k-1}^3-4}\\
 \end{equation}
-The sum of total displacement in a given column is bounded by:
-$$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}= \frac{12s - 1}{2 \lr{ (c_N s)^3 - 1}}$$
+% The sum of total displacement in a given column is bounded by:
+% $$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}= \frac{12s - 1}{2 \lr{ (c_N s)^3 - 1}}$$

@@ -1,0 +1,16 @@
+chapter3.tex 			-> chapter3.tex
+
+intro 					-> ch3Introduction.tex
+auxilary 				-> auxiliaryConstruction.tex
+modifiedAuxilary 		-> modifiedAuxiliaryConstruction.tex
+lemma6V2 				-> lemma6.tex
+Angular 				-> angularArgument.tex
+Vertical 				-> verticalArgument.tex
+HorizontalV4 			-> horizontalArgument.tex
+modifiedAuxilaryPart2 	-> |
+						   |--->	theoremConclusion.tex
+conclusion 				-> |
+
+polygonalLinkages 		->  |
+							|---> No longer used
+lemma6 					->  |
