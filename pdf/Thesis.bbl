@@ -1,3 +1,14 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{storer1984minimal}
+James~A Storer.
+\newblock On minimal-node-cost planar embeddings.
+\newblock {\em Networks}, 14(2):181--212, 1984.
+
+\bibitem{tamassia1987efficient}
+R~Tamassia and IG~Tollis.
+\newblock Efficient embedding of planar graphs in linear time.
+\newblock In {\em Proc. IEEE Int. Symp. on Circuits and Systems}, pages
+  495--498, 1987.
 
 \end{thebibliography}

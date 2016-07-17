@@ -1,0 +1,79 @@
+\paragraph{Angular Rotation $\alpha$.}
+First we show that the angular rotation of the obstacle hexagons with respect to canonical position is small.  
+We first look at the relative angular difference between two adjacent obstacle polygons
+$$\left\vert \alpha_i - \alpha_{i+1} \right\vert.$$
+Given an arbitrary instance of a modified auxilary construction, consider $O_i$, $O_{i+1}$, and the corridor between $O_i$ and $O_{i+1}$ (see Figure \ref{fig:corridorNonCanonical.pdf} for illustration).
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical.pdf}
+\captionof{figure}{The obstacle hexagon here is in noncanonical position, and showing the side lengths adjacent to $\alpha_i$.}\label{fig:corridorNonCanonical.pdf}
+\end{center}
+\end{minipage}
+
+In Figure \ref{fig:dualSmallHexagonalGrid.pdf}(a) we see $\ell$ in the center of the column of obstacle hexagons.  
+Our goal is to show that the column of hexagons cannot tilt in the manner shown in Figure \ref{fig:tiltedObstaclesInFrame.pdf} where the column veers greatly into the space occupied by other corridors and obstacle hexagons.
+The cross section of an arbitrary corridor must have a height of at least $\sqrt{3}$ everywhere. 
+%noncanonical corridor must be at least 
+Otherwise, a flag would overlap with an obstacle hexagon; it would no longer remain a realization since the height of a flag is $\sqrt{3}$.
+In Figure \ref{fig:corridorNonCanonical.pdf}, we illustrate an obstacle hexagon, its upper corridor with the flag that has the hinge to the skinny rhombus.  
+The skinny rhombus has length $\sqrt{1 + \lr{100N}^{-2}}$.
+The rhombus is hinged at the midpoint of the upper side of the corridor.
+The length from a corridor's midpoint to one end of the corridor is $\frac{5t-1}{4}$.
+$\gamma_i$ is the angle between $\zeta_i$ and the horizontal axis at the height of the flag ($i = 1,2,\ldots, u$).
+The bound of $\gamma_i$ is:
+\begin{equation}\label{eqn:gammaBound}
+\begin{array}{rcl}
+\gamma_i &\leq & \tan^{-1} \lr{
+								\frac{
+										\sqrt{1+ \lr{	\frac{1}{100N}	}^2}
+								}{
+										\frac{5t-1}{4}
+								}	
+							}\\
+&=& \tan^{-1} \lr{\frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
+%&\leq& \frac{4\cdot\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
+% &=&\frac{12\sqrt{1+ \lr{	\frac{1}{100N}	}^2}}{3\lr{5t-1}} - \lr{\frac{64 \lr{1+ \frac{1}{\lr{100N}^2}\sqrt{1+ \frac{1}{\lr{100N}^2}}  }}{3(5t-1)}}\\
+% &=&\frac{-\lr{52\sqrt{1+ \frac{1}{\lr{100N}^2}} + \frac{64 \sqrt{1+ \frac{1}{\lr{100N}^2}}}{(100N)^2} }}{3(5t-1)}\\
+% &=&\frac{-\lr{52\sqrt{1+ \frac{1}{\lr{100N}^2}} + \frac{64 \sqrt{1+ \frac{1}{\lr{100N}^2}}}{(100N)^2} }}{3(5\lr{2N^3-1}-1)}\\
+&\leq& \frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
+&\leq& \frac{\sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
+&\leq& \frac{5}{10N^3 -6}\\
+&\leq& \frac{5}{10N^3 - 10}\\
+&\leq& \frac{1}{2\lr{N^3 - 1}}\\
+&\leq& \frac{1}{2 \lr{\frac{5t-1}{2}}^3 - 1}\\
+&\leq& \frac{4}{\lr{5t-1}^3-4}\\
+&\leq& \frac{4}{\lr{5s^k-1}^3-4}\\
+&\leq& \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\end{array} 
+\end{equation}
+Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$.
+Thus the relative rotational difference between adjacent obstacle hexagons is
+\begin{equation}\label{eqn:angularBound}
+\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\end{equation}
+The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
+The bottom most obstacle hexagon is hinged to the frame (see Figure \ref{fig:HalfSizeHexagon.pdf} for illustration). 
+This implies that $\alpha_1 = 0$ and
+$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}.$$
+There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
+We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
+\begin{equation}\label{eqn:angularSumBound}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{4(12s-1)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\end{equation}
+and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
+\begin{eqnarray*}
+\alpha_i &\leq& \sum_{j=1}^i \frac{4j}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
+&\leq&\frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\sum_{j=1}^i j\\
+&\leq&\frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5} \cdot \frac{i^2+i}{2}\\
+&\leq&\frac{2(i^2+i)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
+&\leq&\frac{2(u^2+u)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
+&\leq&\frac{2(144s^2+12s)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
+&\leq&\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
+\end{eqnarray*}
+For any $i$, the bound for $\alpha_i$:
+\begin{equation}\label{eqn:angularMaxBound}
+\alpha_i \leq \frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\end{equation}
+% The sum of total displacement in a given column is bounded by:
+% $$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}= \frac{12s - 1}{2 \lr{ (c_N s)^3 - 1}}$$

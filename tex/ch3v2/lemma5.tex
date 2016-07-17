@@ -1,0 +1,57 @@
+\begin{lem}\label{lem:aux-C}
+Let P be a polygonal linkage obtained from the modified auxilary construction.  
+In every realization of $P$, the obstacle polygons are close to canonical position such that 
+\end{lem}
+
+Lemma \ref{lem:aux-C} serves as assurance that once a boolean formula of P3SAT is encoded into an arbitrary realization of the modified auxilary construction, the information of the boolean formula is preserved regardless of the positioning of the gadgets and components in the construction.
+This quality shows that the information is stable and preserved in an arbitrary realization of the modified auxilary construction.
+
+\begin{proof}
+We need to show that the modified auxilary construction could not deform in such a way that any information the construction encodes is lost or modified and the functionality of the gadgets within the construction behave as stated in the description. 
+For example, in Figure \ref{fig:tiltedObstaclesInFrame.pdf}, we have a column of obstacle hexagons veering off $\ell$.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.3\columnwidth]{graphics/tiltedObstaclesInFrame.pdf}
+\captionof{figure}{This figure depicts a column of obstacle hexagons rotated such that the obstacle hexagons veer of the vertical line $\ell$.}\label{fig:tiltedObstaclesInFrame.pdf}
+\end{center}
+\end{minipage}
+
+This is an example of extreme angular rotation that should not occur over a vertical stack of hexagons. 
+If a P3SAT boolean formula were encoded into such a realization, the information encoded could be lost by the extreme angular rotation of the obstacle hexagons.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.5\columnwidth]{graphics/dualSmallHexagonalGrid.pdf}
+\captionof{figure}{(a) depicts a column of obstacle hexagons $O_1$, $\ldots$, $O_{10}$ along the vertical line $\ell$; (b) identifies obstacle hexgons $O_1$, $\ldots$, $O_{10}$ in (a).}\label{fig:dualSmallHexagonalGrid.pdf}
+\end{center}
+\end{minipage}
+
+Without loss of generality, we can identify a column of obstacle hexagons $O_i$ along a vertical line $\ell$ (See Figure \ref{fig:dualSmallHexagonalGrid.pdf}).
+In this proof, unless otherwise specified, we assume that the argument refers to a column that starts and ends with an obstacle hexagon.  
+In total there will be $u+1$ number of obstacle hexagons and $u$ corridors in a column.
+Note that:
+$$\begin{array}{rcl}
+u&=& \frac{J_h (z)}{2} - \frac{1}{2}\\
+&=& \frac{1}{2}\lr{6z + 1 - 1}\\
+&=& 3z\\
+&=& 12s
+\end{array}$$
+where $J_h$ is defined in Equation \ref{eqn:Jh}.
+
+The width of a skinny rhombus in canonical position is $\frac{1}{100N}$.
+The obstacle hexagon has height of $ 2 N(n,m) \sqrt{3}$, and the flag is of height $\sqrt{3}$. 
+The height $H(n,m)$ (and $\ell$ in Figure \ref{fig:corridorNonCanonical.pdf}(a)) can be expressed as a sum of the heights of the corridors and obstacle polygons:
+$$(u+1) 2 N \sqrt{3} + u \lr{\sqrt{3}+ \frac{1}{100N}}$$
+which reducest to:
+\begin{eqnarray*}
+(u+1) 2 N  \sqrt{3} + u \lr{\sqrt{3}+ \frac{1}{100N}}&=&(12s+1) 2 \frac{5t-1}{2}  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{100\frac{5t-1}{2}}}\\
+&=&(12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}
+\end{eqnarray*}
+
+\begin{equation}\label{eqn:Hnm}
+	H(n,m) = (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}
+\end{equation}
+
+The cross section of the corridor must have a minimum height of $\sqrt{3}$ everywhere.
+Otherwise will result in overlapping polygons.

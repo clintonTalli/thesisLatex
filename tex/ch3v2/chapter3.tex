@@ -1,8 +1,16 @@
-\input{ch3Introduction}
-\input{auxiliaryConstruction}
-\input{modifiedAuxiliaryConstruction}
-\input{lemma6}
-\input{angularArgument}
-\input{verticalArgument}
-\input{horizontalArgument}
-\input{theoremConclusion}
+\input{ch3v2/ch3Introduction}
+\input{ch3v2/auxiliaryConstruction}
+\input{ch3v2/modifiedAuxiliaryConstruction}
+\input{ch3v2/lemma5}
+\input{ch3v2/angularArgument}
+\input{ch3v2/verticalArgument}
+\input{ch3v2/horizontalArgument}
+\input{ch3v2/theoremConclusion}
+% (0) It looks great in general. There are a few small corrections to make: in Figure 12(a), the bottom frame hexagons should have high degree (3 or 4), since each of them is incident to several columns of obstacle hexagons. The "half-size" hexagons shown in Figure 13 should also be represented in Figures 12(b) and Figure 14(a).
+% (1) The degree of a variable vertex could be up to m, the number of clause vertices (e.g., when a variable appears in all clauses).
+% Since the associated graph is bipartite and planar, Euler's formula implies that the sum of degrees of the variable vertices is at most 2m.
+% (2) 
+% Inequality (1.5) is correct. The coefficient 4 currently looks like a 4th root. Perhaps it would make sense to add a "\cdot" for multiplication. Also, when you use a Maclaurin series, the last negative term can be omitted for an upper bound. There some room for simplification. The sentence "it is clear that for N sufficiently large, gamma->0" is technically incorrect, it is true that if N goes to infinity, then gamma goes to 0; but we with to choose a polynomial size N. I would just delete that sentence, since it is clear anyways. In (1.6) and (1.7), the delta_i should be delta_j, right? That's why both of these inequalities give an upper bound for delta_j. Here sec(alpha) can be lower-bounded by 1; and the number of corridors should be (u-j) on both sides of the inequality.
+% Also at the calculations above Figure 19 are no longer needed (they would bound the angle, not the vertical displacement).
+% For bounding the horizontal displacement, draw a horizontal line across a "row" of obstacle hexagons. We can do this because the anle and the vertical displacement are already bounded. Then use the same argument as in (1.6) and (1.7), with a slightly adjusted argument. Specifically, we need to tell what the cross section of a corridor would be in the canonical position. It is (sqrt{3}+1/(100N)/sin(pi/6)  with our current parameters. If the two obstacles on the two sides of the corridor have some angle error alpha and vertical error delta, then the horizontal cross-section of the corridor may be smaller, but only a little bit smaller (use trig to approximate the cross-section).
+% (3) Yes, s(n,m) and z(m,n) are related. A square grid of size sXs can be embedded in a honeycomb in a large hexagon of side length z=ceiling(sqrt{3}) s, or simply z=4s.

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160507153210" modified="D:20160526132029"/>
+<info created="D:20160507153210" modified="D:20160716170440"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -341,7 +341,7 @@ h
 327.831 461.891 l
 </path>
 <text matrix="1 0 0 1 1805.23 921.992" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="53.216" height="11.431" depth="6.9" valign="baseline" size="tiny">$\sqrt{1+\left(\frac{1}{100N}\right)^2}$</text>
-<text matrix="1.51962 0 0 1.51962 1820.69 683.377" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="7.987" height="4.294" depth="1.49" valign="baseline">$s_i$</text>
+<text matrix="1.51962 0 0 1.51962 1820.69 683.377" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="7.676" height="6.926" depth="1.93" valign="baseline">$\zeta_i$</text>
 <path matrix="-0.75981 1.31603 1.31603 0.75981 2161.28 578.695" stroke="black">
 312 434.144 m
 328 434.144 l

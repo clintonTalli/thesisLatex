@@ -46,7 +46,12 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 
 To visualize a graph, $G$, we create a drawing $\Gamma$, of $G$.  
 The \textit{drawing} of a graph $G=(V,E)$ is an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$, $c_{u,v}(1) = \Pi(v)$ , and the curve $c_{u,v}$ does not pass through any other vertex in $V$.
-In this thesis, we will strictly work with straight line drawings where all $c_{u,v}$ are straight line segments unless specified otherwise.
+In this thesis, we will work with straight line drawings and orthogonal drawings.
+Straight line drawings have mappings $c_{u,v}$ that are straight line segments.
+Orthogonal drawings have mappings $c_{u,v}$ which are a sequence of alternating horizontal line segments and vertical line segments.
+For orthogonal drawings, the endpoint of one line segment is the starting point of the next line segment, i.e. every $c_{u,v}$ is piecewise continuous.
+The endpoints of the line segments of $c_{u,v}$ that are not $\Pi(u)$ or $\Pi(v)$ are called $\textit{bends}$.
+
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/kuratowskiExamples.pdf}
