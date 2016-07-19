@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 JUL 2016 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  18 JUL 2016 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1087,75 +1087,32 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 18--24
 
 [17 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3v2/horizontalArgument.tex
 [18 <./graphics/verticalDisplacementArgument.pdf>]
-<graphics/HorizontalCorridorArgument.pdf, id=345, 827.15022pt x 187.1291pt>
-File: graphics/HorizontalCorridorArgument.pdf Graphic file (type pdf)
+<graphics/someRangeSkinny.pdf, id=345, 534.95862pt x 167.07419pt>
+File: graphics/someRangeSkinny.pdf Graphic file (type pdf)
 
-<use graphics/HorizontalCorridorArgument.pdf>
-Package pdftex.def Info: graphics/HorizontalCorridorArgument.pdf used on input 
-line 8.
-(pdftex.def)             Requested size: 346.89731pt x 78.47946pt.
+<use graphics/someRangeSkinny.pdf>
+Package pdftex.def Info: graphics/someRangeSkinny.pdf used on input line 15.
+(pdftex.def)             Requested size: 390.25534pt x 121.8841pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 6--17
-[]$[]$
- []
-
-
-LaTeX Warning: Reference `rangeOfMotionSkinnyRhombus.pdf' on page 19 undefined 
-on input line 37.
-
-[19 <./graphics/HorizontalCorridorArgument.pdf>]
-<graphics/rangeOfMotionSkinnyRhombus.pdf, id=379, 485.82504pt x 140.0432pt>
-File: graphics/rangeOfMotionSkinnyRhombus.pdf Graphic file (type pdf)
-
-<use graphics/rangeOfMotionSkinnyRhombus.pdf>
-Package pdftex.def Info: graphics/rangeOfMotionSkinnyRhombus.pdf used on input 
-line 87.
-(pdftex.def)             Requested size: 260.17464pt x 74.99821pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 85--91
+Overfull \hbox (15.0pt too wide) in paragraph at lines 13--19
 []$[]$ 
  []
 
-<graphics/BottomOfJ.pdf, id=380, 1608.21825pt x 752.57161pt>
-File: graphics/BottomOfJ.pdf Graphic file (type pdf)
-
-<use graphics/BottomOfJ.pdf>
-Package pdftex.def Info: graphics/BottomOfJ.pdf used on input line 94.
-(pdftex.def)             Requested size: 390.25534pt x 182.61896pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 92--98
-[]$[]$ 
- []
-
-[20 <./graphics/rangeOfMotionSkinnyRhombus.pdf>]
-<graphics/corridorNonCanonical2.pdf, id=399, 306.01326pt x 109.39871pt>
-File: graphics/corridorNonCanonical2.pdf Graphic file (type pdf)
-
-<use graphics/corridorNonCanonical2.pdf>
-Package pdftex.def Info: graphics/corridorNonCanonical2.pdf used on input line 
-111.
-(pdftex.def)             Requested size: 390.25534pt x 139.51906pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 109--115
-[]$[]$ 
- []
-
-<graphics/TheOmegaFigure.pdf, id=400, 195.13904pt x 152.31906pt>
+<graphics/TheOmegaFigure.pdf, id=346, 195.13904pt x 152.31906pt>
 File: graphics/TheOmegaFigure.pdf Graphic file (type pdf)
 
 <use graphics/TheOmegaFigure.pdf>
-Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 123.
+Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 39.
 (pdftex.def)             Requested size: 260.17464pt x 203.09775pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 121--127
+Overfull \hbox (15.0pt too wide) in paragraph at lines 37--43
 []$[]$ 
  []
 
-[21 <./graphics/BottomOfJ.pdf> <./graphics/corridorNonCanonical2.pdf>])
-(./ch3v2/theoremConclusion.tex)) (../pdf/Thesis.bbl [22 <./graphics/TheOmegaFig
-ure.pdf>])
+) (./ch3v2/theoremConclusion.tex [19 <./graphics/someRangeSkinny.pdf> <./graphi
+cs/TheOmegaFigure.pdf>])) (../pdf/Thesis.bbl [20])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[23
+[21
 
 ] (../pdf/Thesis.aux)
 
@@ -1163,13 +1120,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17590 strings out of 493089
- 322586 string characters out of 6134841
+ 17567 strings out of 493089
+ 321811 string characters out of 6134841
  503597 words of memory out of 5000000
- 20594 multiletter control sequences out of 15000+600000
+ 20574 multiletter control sequences out of 15000+600000
  43714 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,59p,823b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,59p,823b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1191,10 +1148,10 @@ usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (27 pages, 392079 bytes).
+Output written on ../pdf/Thesis.pdf (25 pages, 374358 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
+ 442 PDF objects out of 1000 (max. 8388607)
+ 327 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 133 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

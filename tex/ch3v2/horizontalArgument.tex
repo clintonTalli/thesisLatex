@@ -1,120 +1,36 @@
 \paragraph{Horizontal Displacement $\beta$}
 
-We show the horizontal displacement of an obstacle hexagon is small.
-First we analyze the change of corridor's cross-section with respect to horizontal displacement.
+Next we show that the horizontal displacement of an obstacle hexagon is small.  
+Note that there is no horizontal displacement of obstacle hexagons hinged to the frame; their positions are fixed.  
+Similarly, obstacle hexagons hinged to half hexagons near the bottom of the frame do not have horizontal displacement because their positions are also fixed.  
+Without loss of generality, $\beta_{1,j}=0$ for all $j$ in a modified construction.
+
+To illustrate the range of displacement an obstacle hexagon, we consider the range of motion the obstacle hexagon's skinny rhombus, its rotational displacement, and vertical displacement:
+\textbf{Skinny Rhombus Motion.} The skinny rhombus hinged beneath an obstacle hexagon can rotate on its hinge with the flag. 
+Figure \ref{fig:someRangeSkinny.pdf}(b) illustrates some range of motion $\omega_{1,2}$ that a skinny rhombus can rotate on its hinge with a flag.
+Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects where $\omega_{1,2}=0$.
 
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=.8\textwidth]{graphics/HorizontalCorridorArgument.pdf}
-\captionof{figure}{(a) A corridor and corresponding junctions in canoncial position with cross section $N(n,m) \times (\sqrt{3} + (100N)^{-1})$.  (b) A corridor whose total horizontal displacement is $\beta_{i+1} + \beta_{i-1}$ on the top and total vertical displacement of $\delta_{i+1} + \delta_{i-1}$ on the bottom; its cross section is $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$. (c) shows the cross sectional area of a corridor with full rotational, horizontal, and vertical displacement.}\label{fig:HorizontalCorridorArgument.pdf}
-\end{center}
-\end{minipage}
-Figure \ref{fig:HorizontalCorridorArgument.pdf} shows the same corridor and corresponding junctions in canonical position and non-canoncical positions.
-This figure is of a corridor and adjacent junctions formed by obstacle hexagons in counter-clockwise order: $O_{i-1,j}$, $O_{i,j-1}$, $O_{i+1,j}$, and $O_{i,j+1}$.
-The cross sectional areas for Figure \ref{fig:HorizontalCorridorArgument.pdf}(a) and Figure \ref{fig:HorizontalCorridorArgument.pdf}(b) are $N(n,m) \times (\sqrt{3} + (100N)^-1)$ and $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$ respectively.  
-Figure \ref{fig:HorizontalCorridorArgument.pdf}(c) shows the same corridor with rotational, horizontal, and vertical displacement.
-To find the crosss sectional area of the corridor in Figure \ref{fig:HorizontalCorridorArgument.pdf}(c), we decompose it into three parts, the upper tringle, the reectangle, and the lower triangle.  
-
-We're given $N(n,m)$ and $(\alpha, \beta, \delta)_{i,j}$ for all $i,j = 1, \dots, u$. 
-The area of the upper triangle is 
-\begin{equation}\label{eqn:upperTriangle}
-\frac{1}{2}\lr{N+\beta_{i+1} + \beta_{i-1}}^2 \tan \lr{\alpha_{i+1,j}}.
-\end{equation}
-The area of the rectangle is 
-\begin{equation}\label{eqn:rectangle}
-\lr{N + \beta_{i+1} + \beta_{i-1}} \cdot \lr{\lr{\sqrt{3} + (100N)^{-1}} + \delta_{i+1} + \delta_{i-1}}.
-\end{equation}
-The area of the lower triangle is 
-\begin{equation}\label{eqn:lowerTriangle}
-\frac{1}{2} \lr{N \cdot \cos \lr{ \alpha_{i-1,j} } } \cdot \lr{N \cdot \sin \lr{\alpha_{i-1,j}} }= N^2 \sin \lr{2 \cdot \alpha_{i-1,j}}.
-\end{equation}
-
-We show by an induction argument that the horizontal displacement for any given modified construction is small.  
-Consider a column of obstacle hexagons which has an obstacle hexagon $O_1$ hinged at the bottom of the frame $J_z$.  
-The obstacle hexagon $O_1$ has no displacement; it is immobile.  
-Consider the case where the column of hexagon has a half sized hexagon attached at the the bottom of the frame, the hinge points of the half sized hexagon immobilize the the first obstacle hexagon of that column (see Figure \ref{fig:HalfSizeHexagon.pdf} for reference).  
-In either case the obstacle hexagon $O_2$ has horizontal mobility by way of the range of motion from the skinny rhombi (see Figure \ref{fig:corridorNonCanonical2.pdf} for reference) between $O_1$ and $O_2$. 
-The diameter of the skinny rhombi are $\sqrt{1 + (100N)^{-1}}$; the possible horizontal displacement $O_2$ could have is $\sqrt{1 + (100N)^{-1}}$ plus the horizontal displacement contributed by $\alpha_{i,2}$ (see Figure \ref{rangeOfMotionSkinnyRhombus.pdf}).
-% \begin{equation}\label{eqn:horizontalDisplacementBeta2}
-% \beta_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \sqrt{ 
-% 													2\cdot \lr{
-% 																3 + \lr{
-% 																		\frac{5t-1}{4} - \sqrt{1 + \lr{
-% 																										\frac{1}{100N}
-% 																										}^2
-% 																								}
-% 																		}^2
-% 																}
-% 												-  
-% 												\cos \lr{\alpha_{i,2}} \cdot 2 \cdot 
-% 												\lr{
-% 														3 + \lr{
-% 																		\frac{5t-1}{4} - \sqrt{ 1 + \lr{
-% 																										\frac{1}{100N}
-% 																										}^2
-% 																								}
-% 																}^2
-% 													}
-% 												}
-% \end{equation}
-\begin{equation}\label{eqn:horizontalDisplacementBeta2}
-\beta_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \frac{h}{2} \sin \alpha_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \frac{h\alpha_{i,2} }{2}
-\end{equation}
-The maximal horizontal displacement is shown in Inequality \ref{eqn:horizontalDisplacementBeta2} where $h$ is the height of an obstacle hexagon.  
-The maximal horizontal displacement is $\beta_{i,2} = \sqrt{1 + (100N)^{-1}} + \frac{h}{2} \sin \alpha_{i,2}$ however, this large value is infeasible.  
-We will now show what the feasible upper bound of horizontal displacement is.
-Firstly, the range of motion of the skinny rhombus is limited by the vertical displacement of an obstacle hexagon. 
-Secondly, we have bounded the angular displacement $\alpha$ of an obstacle hexagon.  
-
-%Firsty argument
-The vertical displacement of the $v^\text{th}$ obstacle hexagon is:
-$$\delta_v \leq \frac{\sum_{i=1}^v  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2}{2}$$
-Let the angular rotation of the skinny rhombus be $\omega_v$, then corresponding horizontal dispalcement $\phi$ is:
-$$\phi = \frac{\delta_v}{\tan\lr{\omega_v}}=\frac{\delta_v}{\tan\lr{\sin^{-1} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}}}$$
-using Maclaurin series, $\phi$ simplifies to:
-\begin{eqnarray*}
-\frac{\delta_v}{\tan\lr{\sin^{-1} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}}}&\leq&\frac{\delta_v}{\tan\lr{ \frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}     + \frac{1}{6} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}^3}}\\
-&\leq& \frac{\delta_v}{ \frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}     + \frac{1}{6} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}^3}
-\end{eqnarray*}
-%secondly argument
-The angluar displacement of the $v^\text{th}$ obstacle hexagon is:
-$$\alpha_v \leq \frac{\lr{v^2 + v}5}{2\lr{10N^3-6}}$$
-which implies:
-$$\frac{h\alpha_2 }{2} \leq \frac{15h}{2\lr{10N^3-6}}$$
-
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.6\columnwidth]{graphics/rangeOfMotionSkinnyRhombus.pdf}
-\captionof{figure}{This figure illustrates the possible range of motion of the skinny rhombus between two obstacle hexagons and the feasible range of rotational displacement of $O_{1,2}$.}\label{fig:rangeOfMotionSkinnyRhombus.pdf}
+\includegraphics[width=.9\columnwidth]{graphics/someRangeSkinny.pdf}
+\captionof{figure}{(a) A pair of vertically adjacent obstacle hexagons and their corresponding corridor in canonical position.  (b) shows the same obstacle hexagons and corridors with the exception that the skinny rhombus is not in cannonical position. (c) is the same as (b) with the exception that the obstacle hexagon $O_{1,2}$ has rotation displacement.}\label{fig:someRangeSkinny.pdf}
 \end{center}
 \end{minipage}
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.9\columnwidth]{graphics/BottomOfJ.pdf}
-\captionof{figure}{bottom}\label{fig:BottomOfJ.pdf}
-\end{center}
-\end{minipage}
+Note that this rotation on the flag's hinge point moves the obstacle hexagon above it with horizontal and vertical displacement.  
+The vertical displacement from the rotation $\omega$ is $\sqrt{1+\lr{100N}^{-2}}\sin \omega$.  
+% Earlier in equation \ref\label{eqn:verticalBound} we showed the total vertical displacement of the $\ith$ obstacle hexagon is:
+% $$\delta_v \leq \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}.$$
 
-% I think the simplest argument would go by induction on the "height" of
-% the obstacle hexagon.
-% Assume that angular and vertical displacement of every obstacle hexagon
-% is small.
-Note that the bottom most obstacle hexagon $O_{j,1}$ is hinged to the frame or hinged to some half sized hexagon such that $\beta_{j,1} = 0$.  
-The range of motion horizontal motion that $O_{j,2}$ has is dictated by the range of possible motion from the skinny rhombus between $O_{j,1}$ and $O_{j,2}$.
-The diameter of the skinny rhombus is $\sqrt{1+(100N)^{-1}}$.  
-%An upperbound of $\beta_{j,2}$ is $\sqrt{1+(100N)^{-1}}$, however it is not a small or tight bound.  
-If $\beta_{j,2} = \pm \sqrt{1+(100N)^{-1}}$, there would be a collision a  corridor(s) adjacent to $O_{j,2}$.  
+\textbf{Rotational Displacement.}  Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{1,2}$.  
+The rotational displacement $\alpha_{1,2}$ creates a vertical displacement of $1 - \cos \alpha$
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical2.pdf}
-\captionof{figure}{The full range of motion is shown dashed half circle about the diameter of the skinny rhombus.}\label{fig:corridorNonCanonical2.pdf}
-\end{center}
-\end{minipage}
 
-Figure \ref{fig:corridorNonCanonical2.pdf} shows the range of motion of the skinny rhombus.
-The angle formed between the diameter of the rhombus and the half length of the corridor is $\omega_i$.
+
+\textbf{Vertical Displacement.}
+
+% Figure \ref{fig:corridorNonCanonical2.pdf} shows the range of motion of the skinny rhombus.
+% The angle formed between the diameter of the rhombus and the half length of the corridor is $\omega_i$.
 
 
 
@@ -125,18 +41,151 @@ The angle formed between the diameter of the rhombus and the half length of the 
 \end{center}
 \end{minipage}
 
-\begin{equation}
-\vlr{\beta_i - \beta_{i-1}} = \left\lbrace \begin{array}{r}
-1 - \cos \frac{\omega}{2}\leq \frac{\omega}{2}\\
-2 + (1 - \cos \omega) + \frac{h}{2} (1 - \cos \alpha)
-\end{array}\right.
-\end{equation}
-% Consider one hexagon (alpha,beta,delta)_{(i,j)}, and further assume that
-% the hexagons bellow, lower-left, and lower-right have small horizontal
-% displacement
-% (here "small" can be quantified using the bounds (1.7) and (1.8)).
-% Then we need to show that beta_{(i,j)} is also "small"
-% Because of the connector between the hexagon (i,j) and the one directly
-% below (i,j-1),
-% the horizontal displacement is at most about beta_{(i,j-1)} (1-cos
-% (gamma_{(i,j)})).
+% \begin{equation}
+% \vlr{\beta_i - \beta_{i-1}} = \left\lbrace \begin{array}{r}
+% 1 - \cos \frac{\omega}{2}\leq \frac{\omega}{2}\\
+% 2 + (1 - \cos \omega) + \frac{h}{2} (1 - \cos \alpha)
+% \end{array}\right.
+% \end{equation}
+
+% We show the horizontal displacement of an obstacle hexagon is small.
+
+% First we analyze the change of corridor's cross-section with respect to horizontal displacement.
+
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.8\textwidth]{graphics/HorizontalCorridorArgument.pdf}
+% \captionof{figure}{(a) A corridor and corresponding junctions in canoncial position with cross section $N(n,m) \times (\sqrt{3} + (100N)^{-1})$.  (b) A corridor whose total horizontal displacement is $\beta_{i+1} + \beta_{i-1}$ on the top and total vertical displacement of $\delta_{i+1} + \delta_{i-1}$ on the bottom; its cross section is $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$. (c) shows the cross sectional area of a corridor with full rotational, horizontal, and vertical displacement.}\label{fig:HorizontalCorridorArgument.pdf}
+% \end{center}
+% \end{minipage}
+% Figure \ref{fig:HorizontalCorridorArgument.pdf} shows the same corridor and corresponding junctions in canonical position and non-canoncical positions.
+% This figure is of a corridor and adjacent junctions formed by obstacle hexagons in counter-clockwise order: $O_{i-1,j}$, $O_{i,j-1}$, $O_{i+1,j}$, and $O_{i,j+1}$.
+% The cross sectional areas for Figure \ref{fig:HorizontalCorridorArgument.pdf}(a) and Figure \ref{fig:HorizontalCorridorArgument.pdf}(b) are $N(n,m) \times (\sqrt{3} + (100N)^-1)$ and $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$ respectively.  
+% Figure \ref{fig:HorizontalCorridorArgument.pdf}(c) shows the same corridor with rotational, horizontal, and vertical displacement.
+% To find the crosss sectional area of the corridor in Figure \ref{fig:HorizontalCorridorArgument.pdf}(c), we decompose it into three parts, the upper tringle, the reectangle, and the lower triangle.  
+
+% We're given $N(n,m)$ and $(\alpha, \beta, \delta)_{i,j}$ for all $i,j = 1, \dots, u$. 
+% The area of the upper triangle is 
+% \begin{equation}\label{eqn:upperTriangle}
+% \frac{1}{2}\lr{N+\beta_{i+1} + \beta_{i-1}}^2 \tan \lr{\alpha_{i+1,j}}.
+% \end{equation}
+% The area of the rectangle is 
+% \begin{equation}\label{eqn:rectangle}
+% \lr{N + \beta_{i+1} + \beta_{i-1}} \cdot \lr{\lr{\sqrt{3} + (100N)^{-1}} + \delta_{i+1} + \delta_{i-1}}.
+% \end{equation}
+% The area of the lower triangle is 
+% \begin{equation}\label{eqn:lowerTriangle}
+% \frac{1}{2} \lr{N \cdot \cos \lr{ \alpha_{i-1,j} } } \cdot \lr{N \cdot \sin \lr{\alpha_{i-1,j}} }= N^2 \sin \lr{2 \cdot \alpha_{i-1,j}}.
+% \end{equation}
+
+% We show by an induction argument that the horizontal displacement for any given modified construction is small.  
+% Consider a column of obstacle hexagons which has an obstacle hexagon $O_1$ hinged at the bottom of the frame $J_z$.  
+% The obstacle hexagon $O_1$ has no displacement; it is immobile.  
+% Consider the case where the column of hexagon has a half sized hexagon attached at the the bottom of the frame, the hinge points of the half sized hexagon immobilize the the first obstacle hexagon of that column (see Figure \ref{fig:HalfSizeHexagon.pdf} for reference).  
+% In either case the obstacle hexagon $O_2$ has horizontal mobility by way of the range of motion from the skinny rhombi (see Figure \ref{fig:corridorNonCanonical2.pdf} for reference) between $O_1$ and $O_2$. 
+% The diameter of the skinny rhombi are $\sqrt{1 + (100N)^{-1}}$; the possible horizontal displacement $O_2$ could have is $\sqrt{1 + (100N)^{-1}}$ plus the horizontal displacement contributed by $\alpha_{i,2}$ (see Figure \ref{rangeOfMotionSkinnyRhombus.pdf}).
+% % \begin{equation}\label{eqn:horizontalDisplacementBeta2}
+% % \beta_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \sqrt{ 
+% % 													2\cdot \lr{
+% % 																3 + \lr{
+% % 																		\frac{5t-1}{4} - \sqrt{1 + \lr{
+% % 																										\frac{1}{100N}
+% % 																										}^2
+% % 																								}
+% % 																		}^2
+% % 																}
+% % 												-  
+% % 												\cos \lr{\alpha_{i,2}} \cdot 2 \cdot 
+% % 												\lr{
+% % 														3 + \lr{
+% % 																		\frac{5t-1}{4} - \sqrt{ 1 + \lr{
+% % 																										\frac{1}{100N}
+% % 																										}^2
+% % 																								}
+% % 																}^2
+% % 													}
+% % 												}
+% % \end{equation}
+% \begin{equation}\label{eqn:horizontalDisplacementBeta2}
+% \beta_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \frac{h}{2} \sin \alpha_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \frac{h\alpha_{i,2} }{2}
+% \end{equation}
+% The maximal horizontal displacement is shown in Inequality \ref{eqn:horizontalDisplacementBeta2} where $h$ is the height of an obstacle hexagon.  
+% The maximal horizontal displacement is $\beta_{i,2} = \sqrt{1 + (100N)^{-1}} + \frac{h}{2} \sin \alpha_{i,2}$ however, this large value is infeasible.  
+% We will now show what the feasible upper bound of horizontal displacement is.
+% Firstly, the range of motion of the skinny rhombus is limited by the vertical displacement of an obstacle hexagon. 
+% Secondly, we have bounded the angular displacement $\alpha$ of an obstacle hexagon.  
+
+% %Firsty argument
+% The vertical displacement of the $v^\text{th}$ obstacle hexagon is:
+% $$\delta_v \leq \frac{\sum_{i=1}^v  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2}{2}$$
+% Let the angular rotation of the skinny rhombus be $\omega_v$, then corresponding horizontal dispalcement $\phi$ is:
+% $$\phi = \frac{\delta_v}{\tan\lr{\omega_v}}=\frac{\delta_v}{\tan\lr{\sin^{-1} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}}}$$
+% using Maclaurin series, $\phi$ simplifies to:
+% \begin{eqnarray*}
+% \frac{\delta_v}{\tan\lr{\sin^{-1} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}}}&\leq&\frac{\delta_v}{\tan\lr{ \frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}     + \frac{1}{6} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}^3}}\\
+% &\leq& \frac{\delta_v}{ \frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}     + \frac{1}{6} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}^3}
+% \end{eqnarray*}
+% %secondly argument
+% The angluar displacement of the $v^\text{th}$ obstacle hexagon is:
+% $$\alpha_v \leq \frac{\lr{v^2 + v}5}{2\lr{10N^3-6}}$$
+% which implies:
+% $$\frac{h\alpha_2 }{2} \leq \frac{15h}{2\lr{10N^3-6}}$$
+
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.6\columnwidth]{graphics/rangeOfMotionSkinnyRhombus.pdf}
+% \captionof{figure}{This figure illustrates the possible range of motion of the skinny rhombus between two obstacle hexagons and the feasible range of rotational displacement of $O_{1,2}$.}\label{fig:rangeOfMotionSkinnyRhombus.pdf}
+% \end{center}
+% \end{minipage}
+
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.9\columnwidth]{graphics/BottomOfJ.pdf}
+% \captionof{figure}{bottom}\label{fig:BottomOfJ.pdf}
+% \end{center}
+% \end{minipage}
+
+% % I think the simplest argument would go by induction on the "height" of
+% % the obstacle hexagon.
+% % Assume that angular and vertical displacement of every obstacle hexagon
+% % is small.
+% Note that the bottom most obstacle hexagon $O_{j,1}$ is hinged to the frame or hinged to some half sized hexagon such that $\beta_{j,1} = 0$.  
+% The range of motion horizontal motion that $O_{j,2}$ has is dictated by the range of possible motion from the skinny rhombus between $O_{j,1}$ and $O_{j,2}$.
+% The diameter of the skinny rhombus is $\sqrt{1+(100N)^{-1}}$.  
+% %An upperbound of $\beta_{j,2}$ is $\sqrt{1+(100N)^{-1}}$, however it is not a small or tight bound.  
+% If $\beta_{j,2} = \pm \sqrt{1+(100N)^{-1}}$, there would be a collision a  corridor(s) adjacent to $O_{j,2}$.  
+
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical2.pdf}
+% \captionof{figure}{The full range of motion is shown dashed half circle about the diameter of the skinny rhombus.}\label{fig:corridorNonCanonical2.pdf}
+% \end{center}
+% \end{minipage}
+
+% Figure \ref{fig:corridorNonCanonical2.pdf} shows the range of motion of the skinny rhombus.
+% The angle formed between the diameter of the rhombus and the half length of the corridor is $\omega_i$.
+
+
+
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.6\columnwidth]{graphics/TheOmegaFigure.pdf}
+% \captionof{figure}{blah}\label{fig:TheOmegaFigure.pdf}
+% \end{center}
+% \end{minipage}
+
+% \begin{equation}
+% \vlr{\beta_i - \beta_{i-1}} = \left\lbrace \begin{array}{r}
+% 1 - \cos \frac{\omega}{2}\leq \frac{\omega}{2}\\
+% 2 + (1 - \cos \omega) + \frac{h}{2} (1 - \cos \alpha)
+% \end{array}\right.
+% \end{equation}
+% % Consider one hexagon (alpha,beta,delta)_{(i,j)}, and further assume that
+% % the hexagons bellow, lower-left, and lower-right have small horizontal
+% % displacement
+% % (here "small" can be quantified using the bounds (1.7) and (1.8)).
+% % Then we need to show that beta_{(i,j)} is also "small"
+% % Because of the connector between the hexagon (i,j) and the one directly
+% % below (i,j-1),
+% % the horizontal displacement is at most about beta_{(i,j-1)} (1-cos
+% % (gamma_{(i,j)})).
