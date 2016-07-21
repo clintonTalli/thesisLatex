@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160709162510" modified="D:20160718202149"/>
+<info created="D:20160709162510" modified="D:20160720185133"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -276,8 +276,8 @@ h
 </path>
 <use matrix="1 0 0 1 1508.27 50.59" name="mark/disk(sx)" pos="3942.29 3214.35" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 1508.21 50.59" name="mark/disk(sx)" pos="3959.49 3207.34" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 1500.57 150.208" transformations="translations" pos="3927.84 3056.81" stroke="black" type="label" width="43.619" height="16.927" depth="8.81" valign="baseline" size="Huge">$O_{1,1}$</text>
-<text matrix="1 0 0 1 1510.07 225.925" transformations="translations" pos="3927.84 3056.81" stroke="black" type="label" width="43.619" height="16.927" depth="8.81" valign="baseline" size="Huge">$O_{1,2}$</text>
+<text matrix="1 0 0 1 1500.57 150.208" transformations="translations" pos="3927.84 3056.81" stroke="black" type="label" width="25.948" height="16.936" depth="5.01" valign="baseline" size="Huge">$O_i$</text>
+<text matrix="1 0 0 1 1510.07 225.925" transformations="translations" pos="3927.84 3056.81" stroke="black" type="label" width="50.298" height="16.938" depth="6.32" valign="baseline" size="Huge">$O_{i+1}$</text>
 <text matrix="1 0 0 1 313.268 195.54" transformations="translations" pos="5120 2976" stroke="black" type="label" width="20.088" height="12.896" depth="4.29" valign="baseline" size="LARGE">(a)</text>
 <path matrix="1 0 0 1 316.91 2.2" stroke="black" pen="fat">
 5081.22 3262.36 m
@@ -321,8 +321,8 @@ h
 </path>
 <use matrix="1 0 0 1 1689.53 56.779" name="mark/disk(sx)" pos="3942.29 3214.35" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 1684.89 50.1891" name="mark/disk(sx)" pos="3959.49 3207.34" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 1686.45 150.202" transformations="translations" pos="3927.84 3056.81" stroke="black" type="label" width="43.619" height="16.927" depth="8.81" valign="baseline" size="Huge">$O_{1,1}$</text>
-<text matrix="0.906308 -0.422618 0.422618 0.906308 772.424 2181.89" transformations="rigid" pos="3927.84 3056.81" stroke="black" type="label" width="43.619" height="16.927" depth="8.81" valign="baseline" size="Huge">$O_{1,2}$</text>
+<text matrix="1 0 0 1 1686.45 150.202" transformations="translations" pos="3927.84 3056.81" stroke="black" type="label" width="25.948" height="16.936" depth="5.01" valign="baseline" size="Huge">$O_i$</text>
+<text matrix="0.906308 -0.422618 0.422618 0.906308 772.424 2181.89" transformations="rigid" pos="3927.84 3056.81" stroke="black" type="label" width="50.298" height="16.938" depth="6.32" valign="baseline" size="Huge">$O_{i+1}$</text>
 <text matrix="1 0 0 1 499.15 195.534" transformations="translations" pos="5120 2976" stroke="black" type="label" width="20.988" height="12.896" depth="4.29" valign="baseline" size="LARGE">(b)</text>
 <path matrix="0.906308 -0.422618 0.422618 0.906308 -400.045 2484.75" stroke="black" pen="fat">
 5081.22 3262.36 m
@@ -374,8 +374,8 @@ h
 </path>
 <use matrix="1 0 0 1 1881.53 56.779" name="mark/disk(sx)" pos="3942.29 3214.35" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 1876.89 50.1891" name="mark/disk(sx)" pos="3959.49 3207.34" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 1878.45 150.202" transformations="translations" pos="3927.84 3056.81" stroke="black" type="label" width="43.619" height="16.927" depth="8.81" valign="baseline" size="Huge">$O_{1,1}$</text>
-<text matrix="0.906308 0.422619 -0.422619 0.906308 3537.09 -1150.93" transformations="rigid" pos="3927.84 3056.81" stroke="black" type="label" width="43.619" height="16.927" depth="8.81" valign="baseline" size="Huge">$O_{1,2}$</text>
+<text matrix="1 0 0 1 1878.45 150.202" transformations="translations" pos="3927.84 3056.81" stroke="black" type="label" width="25.948" height="16.936" depth="5.01" valign="baseline" size="Huge">$O_i$</text>
+<text matrix="0.906308 0.422619 -0.422619 0.906308 3537.09 -1150.93" transformations="rigid" pos="3927.84 3056.81" stroke="black" type="label" width="50.298" height="16.938" depth="6.32" valign="baseline" size="Huge">$O_{i+1}$</text>
 <text matrix="1 0 0 1 691.15 195.534" transformations="translations" pos="5120 2976" stroke="black" type="label" width="19.189" height="12.896" depth="4.29" valign="baseline" size="LARGE">(c)</text>
 <path matrix="0.906308 0.422619 -0.422619 0.906308 2551.43 -1854.42" stroke="black" pen="fat">
 5081.22 3262.36 m
@@ -409,8 +409,8 @@ h
 5828.59 3273.35 m
 5.26475 0 0 -5.26475 5823.82 3271.13 5826.11 3266.39 a
 </path>
-<text transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="14.111" height="2.148" depth="2.46" valign="baseline" size="tiny">$\alpha_{1,2}$</text>
-<text matrix="1 0 0 1 -18.8965 -11.302" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="13.977" height="2.148" depth="2.46" valign="baseline" size="tiny">$\omega_{1,2}$</text>
-<text matrix="1 0 0 1 -210.015 -10.9337" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="13.977" height="2.148" depth="2.46" valign="baseline" size="tiny">$\omega_{1,2}$</text>
+<text matrix="1 0 0 1 0.204717 -2.32013" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="9.69" height="4.294" depth="1.49" valign="baseline">$\alpha_i$</text>
+<text matrix="1 0 0 1 -18.8965 -11.302" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="9.518" height="4.294" depth="1.49" valign="baseline">$\omega_i$</text>
+<text matrix="1 0 0 1 -210.015 -10.9337" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="9.518" height="4.294" depth="1.49" valign="baseline">$\omega_i$</text>
 </page>
 </ipe>

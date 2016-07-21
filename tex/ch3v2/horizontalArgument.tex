@@ -5,41 +5,61 @@ Note that there is no horizontal displacement of obstacle hexagons hinged to the
 Similarly, obstacle hexagons hinged to half hexagons near the bottom of the frame do not have horizontal displacement because their positions are also fixed.  
 Without loss of generality, $\beta_{1,j}=0$ for all $j$ in a modified construction.
 
-To illustrate the range of displacement an obstacle hexagon, we consider the range of motion the obstacle hexagon's skinny rhombus, its rotational displacement, and vertical displacement:
-\textbf{Skinny Rhombus Motion.} The skinny rhombus hinged beneath an obstacle hexagon can rotate on its hinge with the flag. 
-Figure \ref{fig:someRangeSkinny.pdf}(b) illustrates some range of motion $\omega_{1,2}$ that a skinny rhombus can rotate on its hinge with a flag.
-Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects where $\omega_{1,2}=0$.
+To illustrate the range of displacement an obstacle hexagon, we consider the range of motion the obstacle hexagon's skinny rhombus, its rotational displacement, and vertical displacement.  
+The bound of the horizontal displacement will be limited by the bound of the vertical displacement $\delta_i$.  
+The vertical displacement formed by the $\ith$ skinny rhombus' motion is $\delta_{\omega_i}$; the vertical displacement formed by the $\ith$ obstacle hexagon's rotational displacement is $\delta_{\alpha_i}$.
 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.9\columnwidth]{graphics/someRangeSkinny.pdf}
-\captionof{figure}{(a) A pair of vertically adjacent obstacle hexagons and their corresponding corridor in canonical position.  (b) shows the same obstacle hexagons and corridors with the exception that the skinny rhombus is not in cannonical position. (c) is the same as (b) with the exception that the obstacle hexagon $O_{1,2}$ has rotation displacement.}\label{fig:someRangeSkinny.pdf}
+\captionof{figure}{(a) A pair of vertically adjacent obstacle hexagons and their corresponding corridor in canonical position.  (b) shows the same obstacle hexagons and corridors with the exception that the skinny rhombus is not in cannonical position. (c) is the same as (b) with the exception that the obstacle hexagon $O_{i+1}$ has rotation displacement.}\label{fig:someRangeSkinny.pdf}
 \end{center}
 \end{minipage}
 
-Note that this rotation on the flag's hinge point moves the obstacle hexagon above it with horizontal and vertical displacement.  
-The vertical displacement from the rotation $\omega$ is $\sqrt{1+\lr{100N}^{-2}}\sin \omega$.  
+\textbf{Skinny Rhombus.} The skinny rhombus hinged beneath an obstacle hexagon can rotate on its hinge with the flag. 
+The angle formed between the diameter segment of the rhombus at canonical position to the position of the diameter segment in a given configuration is $\omega$.
+Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects where $\omega_i=0$.
+Figure \ref{fig:someRangeSkinny.pdf}(b) illustrates some range of motion $\omega_i$ that a skinny rhombus can rotate on its hinge with a flag.  
+Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{i+1}$.  
+The rotational displacement $\alpha_i$ creates a vertical displacement with respect to the center of its corresonding obstacle hexagon.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.37\columnwidth]{graphics/TheOmegaFigure.pdf}
+\captionof{figure}{The vertical displacement $\delta_\omega$ and horizontal displacement $\beta_\omega$ created from the skinny rhombus rotation $\omega$.}\label{fig:TheOmegaFigure.pdf}
+\end{center}
+\end{minipage}
+
+In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega$ of the skinny rhombus is shown. 
+The maximal displacement of the $\ith$ vertical displacement is $\delta_i$; thus $\delta_{\omega_i} \leq \delta_i$.  
+The right triangle formed from $\beta_\omega$ and $\delta_\omega$ has a maximal hypotenuse length of $\sqrt{2}\delta_\omega$.  
+Because this right triangle is derived from the circular segment about the skinny rhombus' hinge point and the limitation of the maximal displacement of $\delta_\omega$, the hypotenuse has a maximal feasible distance of $\sqrt{\delta_\omega^2 + \delta_\omega^2}$.
+The horizontal displacement $\beta_\omega$ is bounded as such:
+$$\beta_\omega \leq \delta_\omega \leq \delta_i \leq \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}$$
+
+Next we show an infeasible realization with horizontal displacement.  
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/maximalHorizontalDisplacement.pdf}
+\captionof{figure}{(a)A pair of obstacle hexagons, their corresponding corridor with a flag and skinny rhombus; all components are in cannonical position. (b) shows the maximal horizontal displacement from $\omega$ and no obstacle hexagon rotation. (c) shows a maximal horizontal displacement from $\omega$ and obstacle hexagon rotation.}\label{fig:TheOmegaFigure.pdf}
+\end{center}
+\end{minipage}
+% The horizontal displacement $\beta_\alpha$ formed by the rotational displacement is measured from the center of the obstacle hexagon.
+% The center height of the obstacle hexagon is $\sqrt{3}N$; the 
+% Note that this rotation on the flag's hinge point moves the obstacle hexagon above it with horizontal and vertical displacement.  
+% The vertical displacement from the rotation $\omega_i$ is $\lr{1+\lr{100N}^{-2}}^{1/2} \sin \omega$.  
 % Earlier in equation \ref\label{eqn:verticalBound} we showed the total vertical displacement of the $\ith$ obstacle hexagon is:
 % $$\delta_v \leq \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}.$$
 
-\textbf{Rotational Displacement.}  Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{1,2}$.  
-The rotational displacement $\alpha_{1,2}$ creates a vertical displacement of $1 - \cos \alpha$
 
-
-
-\textbf{Vertical Displacement.}
 
 % Figure \ref{fig:corridorNonCanonical2.pdf} shows the range of motion of the skinny rhombus.
 % The angle formed between the diameter of the rhombus and the half length of the corridor is $\omega_i$.
 
 
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.6\columnwidth]{graphics/TheOmegaFigure.pdf}
-\captionof{figure}{blah}\label{fig:TheOmegaFigure.pdf}
-\end{center}
-\end{minipage}
+
 
 % \begin{equation}
 % \vlr{\beta_i - \beta_{i-1}} = \left\lbrace \begin{array}{r}

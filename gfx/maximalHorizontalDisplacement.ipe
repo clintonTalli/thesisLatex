@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160711201316" modified="D:20160720202051"/>
+<info created="D:20160720200938" modified="D:20160720202520"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -258,42 +258,158 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" stroke="black">
-4992 3072 m
-4992 3136 l
-5120 3072 l
+<path layer="alpha" matrix="1 0 0 1 36.33 62.92" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 1 36.33 62.92" stroke="black">
+4800 3072 m
 4992 3072 l
 </path>
-<path stroke="black" dash="dashed">
-4992 3136 m
-143.108 0 0 -143.108 5120 3072 5088.96 3211.7 a
+<path matrix="-1 0 0 1 9828.33 62.92" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 -1 36.33 6270.92" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 -1 36.33 6270.92" stroke="black">
+4800 3072 m
+4992 3072 l
+</path>
+<path matrix="-1 0 0 -1 9828.33 6270.92" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 1 36.33 58.6328" stroke="black">
+4928 3104 m
+4912 3131.71 l
+4880 3131.71 l
+4864 3104 l
+4880 3076.29 l
+4912 3076.29 l
+h
+</path>
+<path matrix="1 0 0 1 36.33 62.92" stroke="black">
+4880 3136 m
+4896 3136 l
+4912 3127.43 l
+4896 3127.43 l
+4880 3136 l
+</path>
+<use matrix="1 0 0 1 36.33 62.92" name="mark/disk(sx)" pos="4912 3127.43" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 36.33 62.92" name="mark/disk(sx)" pos="4880 3136" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 36.33 62.92" fill="lightgray">
+4763.67 3009.08 m
+4800 3072 l
+4992 3072 l
+5028.33 3009.08 l
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 1 372.33 62.92" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 1 372.33 62.92" stroke="black">
+4800 3072 m
+4992 3072 l
+</path>
+<path matrix="-1 0 0 1 10164.33 62.92" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 1 372.33 58.6328" stroke="black">
+4928 3104 m
+4912 3131.71 l
+4880 3131.71 l
+4864 3104 l
+4880 3076.29 l
+4912 3076.29 l
+h
+</path>
+<use matrix="1 0 0 1 372.33 62.92" name="mark/disk(sx)" pos="4912 3127.43" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 372.33 62.92" fill="lightgray">
+4763.67 3009.08 m
+4800 3072 l
+4992 3072 l
+5028.33 3009.08 l
+4763.67 3009.08 l
+</path>
+<path matrix="-0.96819 -0.250217 0.250217 -0.96819 9257.54 7447.34" stroke="black">
+4880 3136 m
+4896 3136 l
+4912 3127.43 l
+4896 3127.43 l
+4880 3136 l
 </path>
 <path stroke="black">
-5088.96 3211.7 m
-5088.96 3136 l
+5189.59 3092.01 m
+5209.02 3162.02 l
+5394.91 3210.06 l
+5445.83 3158.23 l
 </path>
-<path stroke="black" dash="dashed">
-5088.96 3136 m
-4992 3136 l
+<use name="mark/disk(sx)" pos="5317.46 3190.04" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 740.33 62.92" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
 </path>
-<path stroke="black">
-5120 3072 m
-5088.96 3211.7 l
+<path matrix="1 0 0 1 740.33 62.92" stroke="black">
+4800 3072 m
+4992 3072 l
 </path>
-<text matrix="1 0 0 1 -8.53898 2.48499" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="22.664" height="9.846" depth="4.12" valign="baseline" size="large">$\frac{1}{100N}$</text>
-<text matrix="1 0 0 1 103.204 67.8355" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="11.234" height="8.305" depth="1.79" valign="baseline" size="large">$\delta_\omega$</text>
-<text transformations="translations" pos="5057.01 3061.05" stroke="black" type="label" width="5.853" height="7.704" depth="0" valign="baseline" size="large">1</text>
-<text matrix="1 0 0 1 -23.9151 3.94337" transformations="translations" pos="5068.23 3112.02" stroke="black" type="label" width="53.216" height="11.431" depth="6.9" valign="baseline" size="tiny">$\sqrt{1+ \left( \frac{1}{100N} \right)^2 }$</text>
-<text matrix="1 0 0 1 38.9663 38.2497" transformations="translations" pos="5068.23 3112.02" stroke="black" type="label" width="53.216" height="11.431" depth="6.9" valign="baseline" size="tiny">$\sqrt{1+ \left( \frac{1}{100N} \right)^2 }$</text>
-<path stroke="black">
-5094.99 3084.5 m
-27.9573 0 0 -27.9573 5120 3072 5113.94 3099.29 a
+<path matrix="-1 0 0 1 10532.33 62.92" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
 </path>
-<text matrix="1 0 0 1 9.58396 -16.4464" transformations="translations" pos="5094.33 3100.09" stroke="black" type="label" width="9.262" height="6.177" depth="0" valign="baseline" size="Large">$\omega$</text>
+<path matrix="1 0 0 1 740.33 58.6328" stroke="black">
+4928 3104 m
+4912 3131.71 l
+4880 3131.71 l
+4864 3104 l
+4880 3076.29 l
+4912 3076.29 l
+h
+</path>
+<use matrix="1 0 0 1 740.33 62.92" name="mark/disk(sx)" pos="4912 3127.43" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 740.33 62.92" fill="lightgray">
+4763.67 3009.08 m
+4800 3072 l
+4992 3072 l
+5028.33 3009.08 l
+4763.67 3009.08 l
+</path>
+<path matrix="-0.96819 -0.250217 0.250217 -0.96819 9625.54 7447.34" stroke="black">
+4880 3136 m
+4896 3136 l
+4912 3127.43 l
+4896 3127.43 l
+4880 3136 l
+</path>
+<path matrix="-0.430185 0.902741 -0.902741 -0.430185 10852.77 -237.091" stroke="black">
+5189.59 3092.01 m
+5209.02 3162.02 l
+5394.91 3210.06 l
+5445.83 3158.23 l
+</path>
+<use matrix="1 0 0 1 368 0" name="mark/disk(sx)" pos="5317.46 3190.04" size="normal" stroke="black"/>
+<text transformations="translations" pos="4928 3056" stroke="black" type="label" width="17.949" height="10.756" depth="3.59" valign="baseline" size="Large">(a)</text>
+<text matrix="1 0 0 1 320 0" transformations="translations" pos="4928 3056" stroke="black" type="label" width="18.73" height="10.756" depth="3.59" valign="baseline" size="Large">(b)</text>
+<text matrix="1 0 0 1 704 0" transformations="translations" pos="4928 3056" stroke="black" type="label" width="17.169" height="10.756" depth="3.59" valign="baseline" size="Large">(c)</text>
+<path stroke="black" dash="dash dot dotted">
+5272.43 3193.53 m
+12.3304 0 0 -12.3304 5284.33 3190.33 5296.66 3190.24 a
+</path>
+<text matrix="1 0 0 1 0.361341 -6.11654" transformations="translations" pos="5280 3200" stroke="black" type="label" width="9.262" height="6.177" depth="0" valign="baseline" size="Large">$\omega$</text>
+<path matrix="1 0 0 1 368 0" stroke="black" dash="dash dot dotted">
+5272.43 3193.53 m
+12.3304 0 0 -12.3304 5284.33 3190.33 5296.66 3190.24 a
+</path>
+<text matrix="1 0 0 1 368.361 -6.11654" transformations="translations" pos="5280 3200" stroke="black" type="label" width="9.262" height="6.177" depth="0" valign="baseline" size="Large">$\omega$</text>
 <path stroke="black" dash="dash dotted">
-4992 3136 m
-5088.96 3211.7 l
+5673.97 3187.07 m
+11.8592 0 0 11.8592 5685.45 3190.04 5697.31 3190.04 a
 </path>
-<text matrix="1 0 0 1 63.1009 37.5845" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="12.658" height="8.307" depth="2.32" valign="baseline" size="large">$\beta_\omega$</text>
+<text matrix="1 0 0 1 398.963 -19.7678" transformations="translations" pos="5280 3200" stroke="black" type="label" width="9.026" height="6.177" depth="0" valign="baseline" size="Large">$\alpha$</text>
 </page>
 </ipe>
