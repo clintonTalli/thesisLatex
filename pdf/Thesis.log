@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  20 JUL 2016 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 JUL 2016 18:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -680,11 +680,7 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 
 
 Writing index file Thesis.idx
-(../pdf/Thesis.aux
-
-LaTeX Warning: Label `fig:TheOmegaFigure.pdf' multiply defined.
-
-)
+(../pdf/Thesis.aux)
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 243.
@@ -700,7 +696,8 @@ LaTeX Font Info:    ... okay on input line 243.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 243.
 LaTeX Font Info:    ... okay on input line 243.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 243.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1121,28 +1118,39 @@ Package pdftex.def Info: graphics/maximalHorizontalDisplacement.pdf used on inp
 ut line 44.
 (pdftex.def)             Requested size: 390.25534pt x 101.69382pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 42--54
+Overfull \hbox (15.0pt too wide) in paragraph at lines 42--48
 []$[]$ 
  []
 
-) (./ch3v2/theoremConclusion.tex)) (../pdf/Thesis.bbl [20 <./graphics/maximalHo
-rizontalDisplacement.pdf>])
+
+<graphics/deltaAlphaHorizontalDisplacement.pdf, id=392, 231.33426pt x 170.0252p
+t>
+File: graphics/deltaAlphaHorizontalDisplacement.pdf Graphic file (type pdf)
+ <use graphics/deltaAlphaHorizontalDisplacement.pdf>
+Package pdftex.def Info: graphics/deltaAlphaHorizontalDisplacement.pdf used on 
+input line 61.
+(pdftex.def)             Requested size: 390.25534pt x 286.85454pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 59--65
+[]$[]$ 
+ []
+
+) (./ch3v2/theoremConclusion.tex [20 <./graphics/maximalHorizontalDisplacement.
+pdf>])) (../pdf/Thesis.bbl [21 <./graphics/deltaAlphaHorizontalDisplacement.pdf
+>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[21
+[22
 
 ] (../pdf/Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 17572 strings out of 493089
- 322031 string characters out of 6134841
+ 17579 strings out of 493089
+ 322347 string characters out of 6134841
  503597 words of memory out of 5000000
- 20578 multiletter control sequences out of 15000+600000
+ 20584 multiletter control sequences out of 15000+600000
  43714 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,59p,823b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1151,26 +1159,29 @@ exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/
-usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (25 pages, 379408 bytes).
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/sym
+bol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/Thesis.pdf (26 pages, 406995 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 334 compressed objects within 4 object streams
+ 501 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
