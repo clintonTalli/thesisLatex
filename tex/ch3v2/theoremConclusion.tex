@@ -1,1 +1,54 @@
+\begin{lem}\label{lem:lePieceDuResistance}
+Lemma 3. For every instance $\Phi$ of P3SAT, the corresponding modified auxiliary construction
+has the following properties: (1) it has polynomial size; (2) the hinge graph of the modified auxilary con-
+struction is a tree; (3) it admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is
+satisfiable.
+\end{lem}
+\begin{proof}
+\noindent (1) We can bound the number of obstacle hexagons to represent a variable gadget by $2 D$, where $D = \lr{ \max_{v \in V} \deg (v)}$.  
+The number of clause junctions is $n$.
+To give an upper bound on the number of flexible hexagons in the auxiliary construction, we have to account for the flexible hexagons in the transmitter gadgets, the extra hexagons found in junctions, and the flexible hexagons around the variable gadgets.
+
+Recall that that the number of flexible hexagons in a corridor are $ t = 2N(m,n)^3 + 1 $ where $N(m,n)$ is a polynomial. 
+Recall that the drawing of $A(\Phi)$ have edges drawn in vertically and horizontally and can join at some ``elbow''.  
+The distance can be measured in the $\ell_1$ norm.
+Similarly in the honeycomb construction, the flexable hexagons zig-zig vertically and horizontally through out honeycomb.  
+The number of corridors about an obstacle hexagon is $6$.
+To give a generous upper bound on the number of flexible hexagons in a transmitter gadget, is $6 \cdot t \cdot \ell_1\lr{v_i,C_j}$, assuming each obstacle hexagon is of unit height.
+
+The number of junctions in the auxiliary construction is the number of junctions to form all variable gadgets, transmitter gadgets, and clause gadgets. 
+We know there are at most $2 \cdot D$ obstacle hexagons to form each variable gadget and $6$ junctions for each obstacle hexagon.  
+Therefore an upper bound for the number of flexible hexagons around variable gadgets is $m \cdot 6 \cdot t \cdot 2 \cdot D$.
+The upper bound for the number of junctions in a transmitter gadget is $6 \ell_1 \lr{v_i, C_j}$.  
+Thus, the upper bound of all junctions in all transmitter gadgets is $$6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
+The upper bound on the total number of flexible hexagons is
+$$m \cdot 6 \cdot t \cdot 2 \cdot D + 6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
+
+For each corridor, there is one skinny rhombus attached to one flexible hexagon in the corridor.  If the number of corridors is bounded polynomially, then the number of skinny rhombi is bounded by the same bound of the corridor.
+
+\noindent (2) Recall that in the original auxilary construnction is a forest.
+each obstacle hexagon with hinged flexible hexagons (and small hexagons) is disjoint from the remainder of the the construction. 
+The skinny rhombi in the modified auxilary construction connect the disjointed trees to form one tree.
+
+\noindent (3) The final statement is to show an if and only if statement: the modified auxiliary construction admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is satisfiable.
+
+Suppose $\Phi$ is satisfiable.  % and has $m$ variables $x_1$ through $x_m$ and $n$ clauses $C_1$ through $C_n$.
+Each variable has a boolean value and we can encode a corresponding auxilary construction and then modify it as a modified auxiliary construction.
+For each variable, we encode the boolean value by the state of the flags surrounding the variable gadget to $R$ or $L$.  
+Lemma \ref{lem:aux-2} shows that the corridors and junctions around the variable gadget are realizable.
+Lemma \ref{lem:aux-3} also show that for each transmitter gadget, every corridor and junction are also realizable. 
+Lemma \ref{lem:aux-1} shows that there is at least one hexagon in the clause junction and that the clause is realizable.
+Thus all parts of the auxilary construction realizable.  
+Transforming it insto a modified auxilary construction and by Lemma \ref{lem:aux-C}, the modified auxiliary construction is realizable.
+
+Suppose the construction admits a realization such that the obstacle polygons remain fixed.
+Each variable gadget's flags are configured to state $L$ or $R$. 
+The variable's corresponding state correspond to the variable's truth value, i.e. $R$ for true and $L$ for false.
+Using Lemma \ref{lem:aux-2}, the boolean state of the variable gadget is transmitted to all transmitter gadgets associated to it.
+Each clause is realizable and so for every clause, there exists one true literal in the clause corresponding to a variable by Lemma \ref{lem:aux-1}. 
+If every clause has some true literal, then the corresponding 3-CNF boolean formula is satisfiable.
 \end{proof}
+
+At the beginning of this chapter, we stated Theorem \ref{thm:hinge2}: It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.  
+We know the P3SAT is NP-hard and by Lemma \ref{lem:lePieceDuResistance}, we can conclude that deciding whether modified auxiliary construction (a tree) of a given P3SAT Boolean formula is NP-Hard.
+

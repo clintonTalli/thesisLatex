@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160722180319" modified="D:20160723114636"/>
+<info created="D:20160723143116" modified="D:20160723143116"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -258,7 +258,19 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 740.33 58.6328" stroke="black" dash="dotted">
+<path layer="alpha" matrix="1 0 0 1 86.02 46.41" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 1 86.02 46.41" stroke="black">
+4800 3072 m
+4992 3072 l
+</path>
+<path matrix="-1 0 0 1 9878.02 46.41" stroke="black">
+4800 3072 m
+4763.67 3009.08 l
+</path>
+<path matrix="1 0 0 1 86.02 42.1228" stroke="black">
 4928 3104 m
 4912 3131.71 l
 4880 3131.71 l
@@ -267,88 +279,36 @@ h
 4912 3076.29 l
 h
 </path>
-<use matrix="1 0 0 1 740.33 62.92" name="mark/disk(sx)" pos="4912 3127.43" size="normal" stroke="black"/>
-<path matrix="-0.96819 -0.250217 0.250217 -0.96819 9625.54 7447.34" stroke="black" dash="dotted">
+<use matrix="1 0 0 1 86.02 46.41" name="mark/disk(sx)" pos="4912 3127.43" size="normal" stroke="black"/>
+<path matrix="1 0 0 1 86.02 46.41" fill="lightgray">
+4763.67 3009.08 m
+4800 3072 l
+4992 3072 l
+5028.33 3009.08 l
+4763.67 3009.08 l
+</path>
+<path matrix="-0.00389746 -0.999993 0.999993 -0.00389746 1889.78 8097.98" transformations="rigid" stroke="black">
 4880 3136 m
 4896 3136 l
 4912 3127.43 l
 4896 3127.43 l
 4880 3136 l
 </path>
-<path stroke="black">
-5652.33 3190.35 m
-5652.33 3134.92 l
+<path matrix="0.253989 0.967207 -0.967207 0.253989 6741.59 -2747.51" transformations="rigid" stroke="black">
+5189.59 3092.01 m
+5209.02 3162.02 l
+5394.91 3210.06 l
+5445.83 3158.23 l
 </path>
-<path stroke="black">
-5732.33 3134.92 m
-5652.33 3190.33 l
+<use matrix="1 0 0 1 -286.31 -16.51" name="mark/disk(sx)" pos="5317.46 3190.04" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 33.69 -16.51" transformations="translations" pos="4928 3056" stroke="black" type="label" valign="baseline" size="Large">(b)</text>
+<path matrix="1 0 0 1 -286.31 -16.51" stroke="black" dash="dash dot dotted">
+5272.43 3193.53 m
+12.3304 0 0 -12.3304 5284.33 3190.33 5296.66 3190.24 a
 </path>
-<path stroke="black">
-5652.33 3177.53 m
-12.8235 0 0 12.8235 5652.33 3190.35 5665.15 3190.22 a
-</path>
-<text matrix="1 0 0 1 -6.87711 -6.42301" transformations="translations" pos="5660.24 3176.17" stroke="black" type="label" width="7.873" height="5.535" depth="1.55" valign="baseline" size="footnote">$\zeta_2$</text>
-<text matrix="1 0 0 1 8.50161 4.16371" transformations="translations" pos="5660.24 3176.17" stroke="black" type="label" width="7.873" height="5.535" depth="1.55" valign="baseline" size="footnote">$\zeta_1$</text>
-<text matrix="1 0 0 1 -10.4594 -0.193466" transformations="translations" pos="5648.85 3161.03" stroke="black" type="label" width="13.284" height="9.041" depth="1.32" valign="baseline">$\sqrt{3}$</text>
-<text matrix="1 0 0 1 -10.7872 -7.84046" transformations="translations" pos="5685.8 3132.67" stroke="black" type="label" width="35.74" height="8.685" depth="3.49" valign="baseline">$\left( \frac{N}{2} -1 \right)$</text>
-<text matrix="1 0 0 1 1.42715 -7.97677" transformations="translations" pos="5706.79 3175.56" stroke="black" type="label" width="10.703" height="4.297" depth="1.93" valign="baseline">$\chi_1$</text>
-<path stroke="black">
-5598.93 3134.92 m
-5732.33 3134.92 l
-</path>
-<path stroke="black">
-5660.63 3220.55 m
-5757.44 3105.05 l
-5829 3117.63 l
-</path>
-<use name="mark/disk(sx)" pos="5732.33 3134.92" size="normal" stroke="black"/>
-<path stroke="black">
-5652.33 3190.33 m
-5685.97 3190.33 l
-</path>
-<use name="mark/disk(sx)" pos="5685.97 3190.33" size="normal" stroke="black"/>
-<path matrix="0 1 -1 0 8906.52 -2470.31" stroke="black">
-5685.97 3190.33 m
-5660.63 3220.55 l
-</path>
-<path matrix="0 1 -1 0 8936.74 -2444.98" stroke="black">
-5685.97 3190.33 m
-5660.63 3220.55 l
-</path>
-<path stroke="black">
-5685.97 3190.33 m
-5738.65 3190.33 l
-</path>
-<path stroke="black">
-5746.41 3240.99 m
-5746.41 3190.33 l
-</path>
-<path stroke="black">
-5685.97 3190.33 m
-5746.41 3190.33 l
-5746.41 3240.99 l
-5685.97 3190.33 l
-</path>
-<text matrix="1 0 0 1 -0.926684 -15.0298" transformations="translations" pos="5717.69 3197.46" stroke="black" type="label" width="11.313" height="6.926" depth="1.93" valign="baseline">$\beta_\alpha$</text>
-<text matrix="1 0 0 1 -16.709 -3.40586" transformations="translations" pos="5717.69 3197.46" stroke="black" type="label" width="5.439" height="5.535" depth="0" valign="baseline" size="footnote">$\hat{\alpha}$</text>
-<path stroke="black">
-5698.44 3190.33 m
-12.4794 0 0 12.4794 5685.97 3190.33 5695.53 3198.34 a
-</path>
-<text matrix="1 0 0 1 -34.6054 -17.9671" transformations="translations" pos="5717.69 3197.46" stroke="black" type="label" width="5.439" height="3.432" depth="0" valign="baseline" size="footnote">$\alpha$</text>
-<path stroke="black">
-5680.53 3188.77 m
-5.65201 0 0 5.65201 5685.97 3190.33 5689.6 3186 a
-</path>
-<text matrix="1 0 0 1 -9.07226 -0.198609" transformations="translations" pos="5711.57 3219.45" stroke="black" type="label" width="18.447" height="8.891" depth="3.12" valign="baseline" size="footnote">$\frac{N\sqrt{3}}{2} $</text>
-<path stroke="black">
-5598.93 3134.92 m
-5732.33 3134.92 l
-</path>
-<path stroke="black">
-5598.93 3134.92 m
-5732.33 3134.92 l
-5752.25 3100.42 l
+<text matrix="1 0 0 1 -285.949 -22.6265" transformations="translations" pos="5280 3200" stroke="black" type="label" valign="baseline" size="Large">$\omega$</text>
+<path matrix="0.253989 0.967207 -0.967207 0.253989 6798.34 -2466.4" transformations="rigid" stroke="black">
+164.663 0 0 164.663 4998.02 3173.84 e
 </path>
 </page>
 </ipe>
