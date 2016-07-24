@@ -1,0 +1,6 @@
+#/usr/bin/bash
+
+
+if [-e cat.aux]; then
+bibtex cat
+fi

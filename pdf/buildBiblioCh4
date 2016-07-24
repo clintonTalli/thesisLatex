@@ -1,0 +1,6 @@
+#/usr/bin/bash
+
+
+if [-e Ch4.aux]; then
+bibtex Ch4
+fi

@@ -1,0 +1,42 @@
+\contentsline {chapter}{Signature page}{ii}
+\contentsline {chapter}{Abstract}{iv}
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Background}{1}
+\contentsline {section}{\numberline {1.1}Graphs}{1}
+\contentsline {subsection}{\numberline {1.1.1}Trees}{3}
+\contentsline {section}{\numberline {1.2}Linkages}{4}
+\contentsline {section}{\numberline {1.3}Polygonal Linkages}{4}
+\contentsline {subsection}{\numberline {1.3.1}Geometric Dissections}{7}
+\contentsline {section}{\numberline {1.4}Disk Arrangements}{8}
+\contentsline {section}{\numberline {1.5}Configuration Spaces}{11}
+\contentsline {subsection}{\numberline {1.5.1}Configuration Spaces of Graph Drawings}{12}
+\contentsline {subsection}{\numberline {1.5.2}Configuration Spaces of Linkages}{12}
+\contentsline {subsection}{\numberline {1.5.3}Configuration Spaces of Polygonal Linkages}{13}
+\contentsline {subsection}{\numberline {1.5.4}Configuration Spaces of Disk Arrangements}{13}
+\contentsline {section}{\numberline {1.6}Algorithm Complexity}{13}
+\contentsline {subsection}{\numberline {1.6.1}Complexity Classes}{14}
+\contentsline {subsection}{\numberline {1.6.2}RSA Cryptosystem}{14}
+\contentsline {section}{\numberline {1.7}Satisfiability}{16}
+\contentsline {section}{\numberline {1.8}Contribution}{17}
+\contentsline {section}{\numberline {1.9}The Logic Engine}{17}
+\contentsline {subsection}{\numberline {1.9.1}Construction of the Logic Engine}{18}
+\contentsline {subsection}{\numberline {1.9.2}The mechanics of the logic engine}{19}
+\contentsline {subsubsection}{\numberline {1.9.2.1}The Relationship of the Logic Engine and NAE3SAT}{21}
+\contentsline {section}{\numberline {1.10}Logic Engines Represented as Polygonal Linkages}{23}
+\contentsline {subsection}{\numberline {1.10.1}Construction of the Polygonal Linkage Logic Engine}{23}
+\contentsline {chapter}{\numberline {2}Realizability of Polygonal Linkages with Fixed Orientation}{25}
+\contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{26}
+\contentsline {section}{\numberline {2.1}Auxilary Construction}{27}
+\contentsline {paragraph}{Variable Gadget.}{30}
+\contentsline {paragraph}{Clause Gadget.}{30}
+\contentsline {paragraph}{Transmitter Gadget.}{31}
+\contentsline {subsection}{\numberline {2.1.1}Functionality of the Auxilary Construction and Gadgets}{33}
+\contentsline {paragraph}{Modified Auxilary Construction.}{36}
+\contentsline {paragraph}{Angular Rotation $\alpha $.}{39}
+\contentsline {paragraph}{Horizontal Displacement $\beta $}{43}
+\contentsline {chapter}{\numberline {3}Realizability Problems for Weighted Trees}{47}
+\contentsline {section}{\numberline {3.1}Unit Disk Touching Graph Recongnition Problem (UDTGRP)}{47}
+\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{48}
+\contentsline {section}{\numberline {3.2}Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem (PRUDTGRP)}{49}
+\contentsline {section}{\numberline {3.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{51}
+\contentsfinish 

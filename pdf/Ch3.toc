@@ -1,0 +1,15 @@
+\contentsline {chapter}{Signature page}{ii}
+\contentsline {chapter}{Abstract}{iv}
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Realizability of Polygonal Linkages with Fixed Orientation}{1}
+\contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{2}
+\contentsline {section}{\numberline {1.1}Auxilary Construction}{3}
+\contentsline {paragraph}{Variable Gadget.}{6}
+\contentsline {paragraph}{Clause Gadget.}{6}
+\contentsline {paragraph}{Transmitter Gadget.}{7}
+\contentsline {subsection}{\numberline {1.1.1}Functionality of the Auxilary Construction and Gadgets}{9}
+\contentsline {paragraph}{Modified Auxilary Construction.}{12}
+\contentsline {paragraph}{Angular Rotation $\alpha $.}{15}
+\contentsline {paragraph}{Vertical Displacement $\delta $}{17}
+\contentsline {paragraph}{Horizontal Displacement $\beta $}{19}
+\contentsfinish 

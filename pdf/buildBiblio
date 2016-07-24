@@ -1,2 +1,4 @@
 #/usr/bin/bash
+if [-e Thesis.aux]; then
 bibtex Thesis
+fi
