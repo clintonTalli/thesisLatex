@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  23 JUL 2016 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  23 JUL 2016 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -863,117 +863,97 @@ nput line 8.
 LaTeX Warning: Reference `thm:disk' on page 1 undefined on input line 9.
 
 ) (./ch4/udtgrp.tex
-<graphics/hexagonOutline5LayerSmall.pdf, id=20, 204.32335pt x 179.61102pt>
-File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 9.
 
-<use graphics/hexagonOutline5LayerSmall.pdf>
-Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
-ine 6.
-(pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
-
-
-LaTeX Warning: Reference `problem:UnorderedContactGraph' on page 1 undefined on
- input line 14.
-
-
-LaTeX Warning: Reference `problem:OrderedContactGraph' on page 1 undefined on i
-nput line 14.
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 16.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
 
- <./graphics/hexagonOutline5LayerSmall.pdf>]
-<graphics/snowflakeOutline5LayerSmall.pdf, id=33, 189.76897pt x 166.8333pt>
+<graphics/snowflakeOutline5LayerSmall.pdf, id=20, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
- line 25.
+ line 18.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
- [2 <./graphics/snowflakeOutline5LayerSmall.pdf>]) (./ch4/prudtgrp.tex
-<graphics/modifiedContactGraph.pdf, id=42, 217.35605pt x 187.2074pt>
+ [1
+
+] [2 <./graphics/snowflakeOutline5LayerSmall.pdf>]
+<graphics/hexagonOutline5LayerSmall.pdf, id=38, 204.32335pt x 179.61102pt>
+File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
+
+<use graphics/hexagonOutline5LayerSmall.pdf>
+Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
+ine 53.
+(pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
+) (./ch4/prudtgrp.tex
+<graphics/modifiedContactGraph.pdf, id=39, 217.35605pt x 187.2074pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
 Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 1
-3.
+1.
 (pdftex.def)             Requested size: 143.09538pt x 123.2516pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 11--17
+Overfull \hbox (15.0pt too wide) in paragraph at lines 9--15
 []$[]$ 
  []
 
-[3 <./graphics/modifiedContactGraph.pdf>]
-<graphics/PerturbedContactGraphAnatomy.pdf, id=75, 452.4403pt x 230.63164pt>
-File: graphics/PerturbedContactGraphAnatomy.pdf Graphic file (type pdf)
-
-<use graphics/PerturbedContactGraphAnatomy.pdf>
-Package pdftex.def Info: graphics/PerturbedContactGraphAnatomy.pdf used on inpu
-t line 34.
-(pdftex.def)             Requested size: 286.19078pt x 145.8864pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 32--38
-[]$[]$ 
- []
-
-<graphics/PerturbedSpine.pdf, id=76, 162.00525pt x 222.93489pt>
+[3 <./graphics/hexagonOutline5LayerSmall.pdf> <./graphics/modifiedContactGraph.
+pdf>] <graphics/PerturbedSpine.pdf, id=75, 162.00525pt x 222.93489pt>
 File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedSpine.pdf>
-Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 43.
+Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 44.
 (pdftex.def)             Requested size: 143.09538pt x 196.91806pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 41--47
+Overfull \hbox (15.0pt too wide) in paragraph at lines 42--48
 []$[]$ 
  []
 
-<graphics/PerturbedVertebrae.pdf, id=77, 162.00525pt x 121.2791pt>
+<graphics/PerturbedVertebrae.pdf, id=76, 162.00525pt x 121.2791pt>
 File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedVertebrae.pdf>
-Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 52.
+Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 53.
 
 (pdftex.def)             Requested size: 195.12767pt x 146.07825pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 50--56
+Overfull \hbox (15.0pt too wide) in paragraph at lines 51--57
 []$[]$ 
  []
 
-[4 <./graphics/PerturbedContactGraphAnatomy.pdf> <./graphics/PerturbedSpine.pdf
->]
 
-LaTeX Warning: Reference `problem:UnorderedContactGraph' on page 5 undefined on
- input line 71.
+LaTeX Warning: Reference `problem:UnorderedContactGraph' on page 4 undefined on
+ input line 72.
 
-<graphics/ch4Paralellogram.pdf, id=96, 707.443pt x 170.52708pt>
+[4 <./graphics/PerturbedSpine.pdf> <./graphics/PerturbedVertebrae.pdf>]
+<graphics/ch4Paralellogram.pdf, id=98, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 89.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 90.
 (pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 87--93
+Overfull \hbox (15.0pt too wide) in paragraph at lines 88--94
 []$[]$
  []
 
-[5 <./graphics/PerturbedVertebrae.pdf>]))
+))
 No file Ch4.bbl.
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[6 <./graphics/ch4Paralellogram.pdf>] (../pdf/Ch4.aux)
+[5 <./graphics/ch4Paralellogram.pdf>] (../pdf/Ch4.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17448 strings out of 493089
- 318251 string characters out of 6134841
+ 17441 strings out of 493089
+ 317980 string characters out of 6134841
  504597 words of memory out of 5000000
- 20497 multiletter control sequences out of 15000+600000
+ 20491 multiletter control sequences out of 15000+600000
  31863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,59p,956b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -992,10 +972,10 @@ xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on ../pdf/Ch4.pdf (10 pages, 175700 bytes).
+Output written on ../pdf/Ch4.pdf (9 pages, 157765 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 150 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

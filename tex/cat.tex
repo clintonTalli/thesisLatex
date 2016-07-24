@@ -3089,24 +3089,17 @@ is the contact graph (resp., contact graph) of a disk arrangements with specifie
 
 The preliminary concepts are the Hausdorff distance, the Unit Disk Touching Graph Recongnition Problem, and the Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem.\section{Unit Disk Touching Graph Recongnition Problem (UDTGRP)}
 
-In Figure \ref{fig:hexagonOutline5LayerSmall.pdf}, we have a set of unit radius disks (circles) arranged in a manner that outlines regular, concentric hexagons.
-\begin{figure}[!htbp]
-\begin{center}
-\includegraphics{graphics/hexagonOutline5LayerSmall.pdf}
-\caption{A contact graph that resembles the shape of concentric hexagons.}\label{fig:hexagonOutline5LayerSmall.pdf}
-\end{center}
-\end{figure}
-\begin{prob}[Appoximating Polygonal Shapes with Contact Graphs]\label{problem:ApproxShapesWithContactGraphs}
-For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
-\end{prob}
+The UDTGRP is to determine when given an instance of a weighted graph (V,E) where each vertex has unit weight can be realized as a disk touching graph (a disk arrangement).  
 
-Recall problems (\ref{problem:UnorderedContactGraph}) and (\ref{problem:OrderedContactGraph}): given a positive weighted tree, $T$, is $T$ the (ordered) contact graph of some disk arrangement where the radii are equal to the vertex weights.  For now, we'll focus on a particular family of this problem space where the weighted trees can be realized as a \textit{snowflake}. For $i \in \bbN$, the construction of the snowflake tree, $S_i$, is as follows:
+In this section we describe a particular family of unit weight graphs and corresponding disk arrangements called \textit{snowflakes}.
+Note that we regard snowflakes with unit weight as a weight of $\frac{1}{2}$.
+For $i \in \bbN$, the construction of the snowflake tree, $S_i$, is as follows:
 \begin{itemize}
 \item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  Each path has $i$ vertices.
 \item For every other path $p_1$, $p_3$, and $p_5$: 
 	\begin{itemize}
 		\item 	Each vertex on that path has two paths attached, one path on each side of $p_k$.
-		\item	The number of vertices that lie on the path attached to the $j^\text{th}$ vertex of $p_k$ is $i-j$.
+		\item	The number of vertices that lie on a path attached to the $j^\text{th}$ vertex of $p_k$ is $i-j$.
 	\end{itemize}
 \end{itemize}
 \begin{figure}[!htbp]
@@ -3141,15 +3134,24 @@ p_6 &=& \set{ a\cdot \lr{1,0} - a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}}= a \
 \end{eqnarray*}
 For $S_i$ there exists $i$ vertices on each path.  We shall denote the $i^\text{th}$ vertex on the $j^\text{th}$ path as $v_{j,i}$.  For each path defined above, the paths are defined as a set of vectors, $\vec{v} = a \cdot \vec{p}$  for some $a \in \bbR^+$ and $\vec{p} \in \bbR^2$.  By setting $a = 1,2,\dots, i$, we obtain points that are contained in $V$.  For $j = 1,3,5$ and $l = 1,..., i$, there exists two paths attached to each vertex $v_{j,l}$.  For $S_i$, each path attached to the $k^\text{th}$ vertex of $p_j$, there are $i-k$ vertices.  We will need to show that each of the $i-k$ vertices on each corresponding path are also in $V$.
 
-The triangular lattice is symmetice under rotation about $v_0$ by $\frac{\pi}{3}$ radians.  For each vertex $v_{1,l}$ for $l=1,2,..., i-k$, we place two paths from it; the first path $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these paths $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  With respect to $v_{1,l}$, one unit along $p_{1,l}^+$ is a point on the triangular lattice and similarly so on $p_{1,l}^-$.  Continuing the walk along these paths, unit distance-by-unit distance, we obtain the next point corresponding point on the the triangular lattice up to $i-k$ distance away from $v_{1,l}$.  This shows that each of the $i-k$ vertices on $p_{1,l}^-$ and $p_{1,l}^+$ are in $V$.  By rotating all of the paths along $p_1$ by $\frac{2\pi}{3}$ and $\frac{4\pi}{3}$, we obtain the the paths along $p_3$ and $p_5$ respectively, completing the construction.\section{Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem (PRUDTGRP)}
+The triangular lattice is symmetice under rotation about $v_0$ by $\frac{\pi}{3}$ radians.  For each vertex $v_{1,l}$ for $l=1,2,..., i-k$, we place two paths from it; the first path $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these paths $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  With respect to $v_{1,l}$, one unit along $p_{1,l}^+$ is a point on the triangular lattice and similarly so on $p_{1,l}^-$.  Continuing the walk along these paths, unit distance-by-unit distance, we obtain the next point corresponding point on the the triangular lattice up to $i-k$ distance away from $v_{1,l}$.  This shows that each of the $i-k$ vertices on $p_{1,l}^-$ and $p_{1,l}^+$ are in $V$.  By rotating all of the paths along $p_1$ by $\frac{2\pi}{3}$ and $\frac{4\pi}{3}$, we obtain the the paths along $p_3$ and $p_5$ respectively, completing the construction.
+
+In Figure \ref{fig:hexagonOutline5LayerSmall.pdf}, we have a set of unit radius disks arranged in a manner that outlines regular, concentric hexagons.
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics{graphics/hexagonOutline5LayerSmall.pdf}
+\caption{A contact graph that resembles the shape of concentric hexagons.}\label{fig:hexagonOutline5LayerSmall.pdf}
+\end{center}
+\end{figure}
+\begin{prob}[Appoximating Polygonal Shapes with Contact Graphs]\label{problem:ApproxShapesWithContactGraphs}
+For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
+\end{prob}\section{Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem (PRUDTGRP)}
+
+The PRUDTGRP is to determine when given an instance of a weighted tree (V,E) where each vertex has unit weight with the exception of the root vertex having weight $1+\gamma$ where $\gamma>0$ can be realized as a disk touching graph (a disk arrangement).  
 
 The perturbed snowflake follows the construction of the perfect snowflake with the exception of $v_0$ having weight $\frac{1}{2} + \gamma$ where $\gamma > 0$.
 A perturbed snowflake realization has some distinct qualities from perfect snowflake realizations.  
 The angular relationships between adjacent vertices may vary; the distance between adjacent and neighboring vertices may vary as well.
-Note that we regard snowflakes with unit weight as a weight of $\frac{1}{2}$.
-
-%Consider a perturbed snowflake with six unit weight vertices having an edge to $v_0$, each unit weighted vertex lying on one distinct path $p_1, \ldots, p_6$.
-
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -3158,28 +3160,31 @@ Note that we regard snowflakes with unit weight as a weight of $\frac{1}{2}$.
 \end{center}
 \end{minipage}
 
-In Figure \ref{fig:modifiedContactGraph.pdf}, we have a realization of disk arrangement from a perturbed snowflake.
-In a disk arrangement of a perfect snowflake, the disks around the central disk contact the adjacent disks.
-The disk arrangement from the perturbed snowflake does not have this quality.  
-Figure \ref{fig:modifiedContactGraph.pdf} shows a gap $\epsilon(\gamma)$ between adjacent disks around the central disk.  
-This gap is formed from the perturbed weight $\frac{1}{2} + \gamma$ of the central disk.  
-\begin{equation}\label{eqn:epsilonGamma}
-\epsilon(\gamma)=2\gamma + \gamma^2
-\end{equation}
+Figure \ref{fig:modifiedContactGraph.pdf} shows one realization of a perturbed $S_1$.  
 
 
-As the perturbed snowflake grows outer layers, we can begin to define parts of the snowflake and the corresponding disk arrangement.  
-Let the arms extending from the center of a snowflake be \textit{dendrites} and the arms extending off of arms be \textit{metadendrites}.
-In a perturbed snowflake, the dendrites and metadendrites have some freedom to about the plane.  our
+% In Figure \ref{fig:modifiedContactGraph.pdf}, we have a realization of disk arrangement from a perturbed snowflake.
+% In a disk arrangement of a perfect snowflake, the disks around the central disk contact the adjacent disks.
+% The disk arrangement from the perturbed snowflake does not have this quality.  
+% Figure \ref{fig:modifiedContactGraph.pdf} shows a gap $\epsilon(\gamma)$ between adjacent disks around the central disk.  
+% This gap is formed from the perturbed weight $\frac{1}{2} + \gamma$ of the central disk.  
+% \begin{equation}\label{eqn:epsilonGamma}
+% \epsilon(\gamma)=2\gamma + \gamma^2
+% \end{equation}
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.66\columnwidth]{graphics/PerturbedContactGraphAnatomy.pdf}
-\captionof{figure}{}\label{fig:PerturbedContactGraphAnatomy.pdf}
-\end{center}
-\end{minipage}
 
-In Figure \ref{fig:PerturbedContactGraphAnatomy.pdf}, we show an overlay of a realization of a perturbed snowflake, a corresponding disk arrangement, and concentric hexagons about the $v_0$.
+% As the perturbed snowflake grows outer layers, we can begin to define parts of the snowflake and the corresponding disk arrangement.  
+% Let the arms extending from the center of a snowflake be \textit{dendrites} and the arms extending off of arms be \textit{metadendrites}.
+% In a perturbed snowflake, the dendrites and metadendrites have some freedom to about the plane.  our
+
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.66\columnwidth]{graphics/PerturbedContactGraphAnatomy.pdf}
+% \captionof{figure}{}\label{fig:PerturbedContactGraphAnatomy.pdf}
+% \end{center}
+% \end{minipage}
+
+% In Figure \ref{fig:PerturbedContactGraphAnatomy.pdf}, we show an overlay of a realization of a perturbed snowflake, a corresponding disk arrangement, and concentric hexagons about the $v_0$.
 
 \begin{minipage}{\linewidth}
 \begin{center}

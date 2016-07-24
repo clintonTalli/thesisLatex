@@ -39,7 +39,7 @@
 \contentsline {paragraph}{Horizontal Displacement $\beta $}{43}
 \contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{47}
 \contentsline {section}{\numberline {4.1}Unit Disk Touching Graph Recongnition Problem (UDTGRP)}{47}
-\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{48}
+\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{47}
 \contentsline {section}{\numberline {4.2}Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem (PRUDTGRP)}{49}
 \contentsline {section}{\numberline {4.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{51}
 \contentsfinish 
