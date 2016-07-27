@@ -2854,7 +2854,8 @@ When $\omega > \frac{\pi}{2}$ the height of the hinge point of the obstacle hexa
 \end{proof}
 
 By Lemma \ref{lem:Omega} we have that $\omega$ must be less than $\frac{\pi}{2}$ and thus $\beta_\alpha = 0$ and the horizontal displacement is bounded by $\beta_\omega$.    
-Earlier we've shown that $\beta_\omega$ is bounded in Inequality \ref{eqn:betaOmegaBound} and so $\beta$ is bounded by the same inequality.
+Earlier we've shown that $\beta_\omega$ is bounded in Inequality \ref{eqn:betaOmegaBound} and so $\beta$ is bounded by the same inequality.  
+By letting the integer $k=1$ in the equation $t(n,m)=s^k$, all inequalities for the rotational, vertical, and horizontal arguments hold.
 % The horizontal displacement $\beta_\alpha$ formed by the rotational displacement is measured from the center of the obstacle hexagon.
 % The center height of the obstacle hexagon is $\sqrt{3}N$; the 
 % Note that this rotation on the flag's hinge point moves the obstacle hexagon above it with horizontal and vertical displacement.  
@@ -3089,6 +3090,11 @@ is the contact graph (resp., contact graph) of a disk arrangements with specifie
 
 The preliminary concepts are the Hausdorff distance, the Unit Disk Touching Graph Recongnition Problem, and the Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem.\section{Unit Disk Touching Graph Recongnition Problem (UDTGRP)}
 
+% Lemma 3. For every instance $\Phi$ of P3SAT, the corresponding modified auxiliary construction
+% has the following properties: (1) it has polynomial size; (2) the hinge graph of the modified auxilary con-
+% struction is a tree; (3) it admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is
+% satisfiable.
+
 The UDTGRP is to determine when given an instance of a weighted graph (V,E) where each vertex has unit weight can be realized as a disk touching graph (a disk arrangement).  
 
 In this section we describe a particular family of unit weight graphs and corresponding disk arrangements called \textit{snowflakes}.
@@ -3147,11 +3153,16 @@ In Figure \ref{fig:hexagonOutline5LayerSmall.pdf}, we have a set of unit radius 
 For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
 \end{prob}\section{Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem (PRUDTGRP)}
 
-The PRUDTGRP is to determine when given an instance of a weighted tree (V,E) where each vertex has unit weight with the exception of the root vertex having weight $1+\gamma$ where $\gamma>0$ can be realized as a disk touching graph (a disk arrangement).  
+The PRUDTGRP is to determine when given an instance of a weighted tree (V,E) where each vertex has unit weight with the exception of the root vertex having weight $\frac{1}{2}+\gamma$ where $\gamma>0$ can be realized as a disk touching graph (a disk arrangement).  
 
 The perturbed snowflake follows the construction of the perfect snowflake with the exception of $v_0$ having weight $\frac{1}{2} + \gamma$ where $\gamma > 0$.
 A perturbed snowflake realization has some distinct qualities from perfect snowflake realizations.  
 The angular relationships between adjacent vertices may vary; the distance between adjacent and neighboring vertices may vary as well.
+
+
+In general, the perturbation $\gamma$ can modify the realization of a perfect snowflake $S_i$ in the following ways:
+\begin{enumerate}
+\item \textbf{Modification of $S_1$.} 
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -3161,7 +3172,28 @@ The angular relationships between adjacent vertices may vary; the distance betwe
 \end{minipage}
 
 Figure \ref{fig:modifiedContactGraph.pdf} shows one realization of a perturbed $S_1$.  
+For any realization of $S_1$, the perturbation $\gamma$ can create gaps, $\epsilon (\gamma)$ between adjacent disks that contact the root disk.  
+\item \textbf{Modification of disk placement corresponding to vertices of $p_k$.}
 
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.33\columnwidth]{graphics/PerturbedSpine.pdf}
+\captionof{figure}{?A?S}\label{fig:PerturbedSpine.pdf}
+\end{center}
+\end{minipage}
+
+\item \textbf{Modification of disk placement along corresponding to the $p_{k,j}^\text{th}$ vertex of $S_i$.}  In Figure \ref{fig:PerturbedSpine.pdf}, we have a perturbed spine
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.33\columnwidth]{graphics/PerturbedVertebrae.pdf}
+\captionof{figure}{?A?S}\label{fig:PerturbedVertebrae.pdf}
+\end{center}
+\end{minipage}
+
+In Figure \ref{fig:PerturbedVertebrae.pdf}, we have four an arrangement of disks on the snowflake, off the spine and away from the central disk.  
+We call this a vertebrae.
+\end{enumerate} 
 
 % In Figure \ref{fig:modifiedContactGraph.pdf}, we have a realization of disk arrangement from a perturbed snowflake.
 % In a disk arrangement of a perfect snowflake, the disks around the central disk contact the adjacent disks.
@@ -3171,39 +3203,20 @@ Figure \ref{fig:modifiedContactGraph.pdf} shows one realization of a perturbed $
 % \begin{equation}\label{eqn:epsilonGamma}
 % \epsilon(\gamma)=2\gamma + \gamma^2
 % \end{equation}
-
-
 % As the perturbed snowflake grows outer layers, we can begin to define parts of the snowflake and the corresponding disk arrangement.  
 % Let the arms extending from the center of a snowflake be \textit{dendrites} and the arms extending off of arms be \textit{metadendrites}.
 % In a perturbed snowflake, the dendrites and metadendrites have some freedom to about the plane.  our
-
 % \begin{minipage}{\linewidth}
 % \begin{center}
 % \includegraphics[width=.66\columnwidth]{graphics/PerturbedContactGraphAnatomy.pdf}
 % \captionof{figure}{}\label{fig:PerturbedContactGraphAnatomy.pdf}
 % \end{center}
 % \end{minipage}
-
 % In Figure \ref{fig:PerturbedContactGraphAnatomy.pdf}, we show an overlay of a realization of a perturbed snowflake, a corresponding disk arrangement, and concentric hexagons about the $v_0$.
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.33\columnwidth]{graphics/PerturbedSpine.pdf}
-\captionof{figure}{?A?S}\label{fig:PerturbedSpine.pdf}
-\end{center}
-\end{minipage}
 
-In Figure \ref{fig:PerturbedSpine.pdf}, we have a perturbed spine
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.45\columnwidth]{graphics/PerturbedVertebrae.pdf}
-\captionof{figure}{?A?S}\label{fig:PerturbedVertebrae.pdf}
-\end{center}
-\end{minipage}
 
-In Figure \ref{fig:PerturbedVertebrae.pdf}, we have four an arrangement of disks on the snowflake, off the spine and away from the central disk.  
-We call this a vertebrae.
 \begin{lem}\label{lem:cg-1}
 Given any realization of a perturbed snowflake of 7 weighted vertices, with the central vertex $v_0$ weighted $\frac{1}{2} + \gamma$ and the others weighted $\frac{1}{2}$, the total additional distance between all vertices is $6 \epsilon(\gamma)$ compared to a perfect snowflake of 7 unit weight vertices.
 \end{lem}
@@ -3324,7 +3337,40 @@ The tree $T$ decomposes into paths of collinear edges: $T$ contains two paths al
 %    \begin{prob}[Ordered Realizibility Problem for the Tree]\label{problem:OrderedTree}
 %    For a tree with positive weights for the vertices, it asks whether its corresponding graph is the 
 %    ordered contact graph of some disk arrangement where the radii equal the vertex weights.
-%    \end{prob}
+%    \end{prob}%\chapter{Disk Arrangement}
+% \chapter{Realizability Problems for Weighted Trees}\label{chp:disk}
+% \section{Properties for Weighted Trees and Polygonal Linkages}
+% In order to perform our analysis for weighted trees and polygonal linkages, we'll want to use a suitable metric.  
+% The usual Euclidian distance will not suffice for this analysis and so we turn to the Hausdorff distance.
+\section{Hausdorff Distance}  Let $A$ and $B$ be sets in the plane. The \textit{directed Hausdorff distance} is 
+\begin{equation}\label{eqn:ContactGraphV3-1}
+d\lr{A,B} = \sup_{a \in A} \inf_{b \in B} \left\vert\left\vert a-b \right\vert \right\vert
+\end{equation}
+$h\lr{A,B}$ finds the furthest point $a \in A$ from any point in $B$.  \textit{Hausdorff distance} is
+\begin{equation}\label{eqn:ContactGraphV3-2}
+D\lr{A,B} = \max \left\lbrace d\lr{A,B}, d\lr{B,A} \right\rbrace
+\end{equation}
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.33\columnwidth]{graphics/HausdorffDistanceExample1.pdf}
+\captionof{figure}{An illustrative example of $d(X,Y)$ and $d(Y,X)$ where $X$ is the inner curve, and $Y$ is the outer curve.}\label{fig:HausdorffDistanceExample1.pdf}
+\end{center}
+\end{minipage}
+
+\paragraph{$\epsilon$-approximation}
+% Modeling the logic engine with polygonal linkages requires reflected copies of the
+% rectangles. For an oriented realization, we use a different technique in Section 3. The
+% above proof can be adapted to the realization of contact trees of disks by approximating
+% rectangles with disk arrangements. In this context, we say that a weighted graph G is a
+% ε-approximation of a polygon P if G is realizable as a contact graph of disks of given
+% radii, and in every such realization, the Hausdorff distance between the union of disks
+% and a congruent copy of P is at most ε. A weighted graph G is a stable ε-approximation
+% if, in addition, for every two such realizations of G, the distance between the centers of
+% the corresponding disks is at most ε after a suitable rigid transformation.
+The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most epsilon.  
+A weighted graph $G$ is said to be a \textit{$\BigOh{f(x)}$-approximation} of a polygon P if there is a positive constant $M$ such that for all sufficiently large values of $x$ the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at $M \cdot \vert f(x)\vert$. 
+A weighted graph $G$ is said to be a \textit{stable} if it has the property that for every two such realizations of $G$, the distance between the centers of the corresponding disks is at most $\epsilon$ after a suitable rigid transformation.
 \bibliographystyle{plain}
 \bibliography{WorkCited}
 \end{document}

@@ -6,4 +6,6 @@
 \contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{1}
 \contentsline {section}{\numberline {1.2}Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem (PRUDTGRP)}{3}
 \contentsline {section}{\numberline {1.3}On the Decidability of Problem \ref {problem:UnorderedContactGraph}}{5}
+\contentsline {section}{\numberline {1.4}Hausdorff Distance}{5}
+\contentsline {paragraph}{$\epsilon $-approximation}{6}
 \contentsfinish 
