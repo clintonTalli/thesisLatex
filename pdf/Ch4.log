@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  26 JUL 2016 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -683,19 +683,19 @@ Writing index file Ch4.idx
 (../pdf/Ch4.aux)
 \openout1 = `Ch4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 243.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 244.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -713,58 +713,58 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \everyMPtoPDFconversion=\toks49
 )
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 24
-3.
+4.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 24
-3.
+4.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 24
-3.
+4.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 24
-3.
+4.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 243.
+LaTeX Font Info:    Try loading font information for U+msa on input line 244.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 243.
+LaTeX Font Info:    Try loading font information for U+msb on input line 244.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 243.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 244.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 244.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 244.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 243.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 244.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 243.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 244.
 
 
-Package mathptmx Warning: There are no bold math fonts on input line 243.
+Package mathptmx Warning: There are no bold math fonts on input line 244.
 
 (../pdf/Ch4.toc
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
@@ -889,51 +889,55 @@ Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
 ine 58.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
 ) (./ch4/prudtgrp.tex
+
+LaTeX Warning: Reference `fig:modifiedContactGraph' on page 3 undefined on inpu
+t line 15.
+
 <graphics/modifiedContactGraph.pdf, id=39, 217.35605pt x 187.2074pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
 Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 1
-6.
+9.
 (pdftex.def)             Requested size: 134.84532pt x 116.14737pt.
  [3 <./graphics/hexagonOutline5LayerSmall.pdf>] <graphics/PerturbedSpine.pdf, i
 d=47, 226.24524pt x 176.91295pt>
 File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedSpine.pdf>
-Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 27.
+Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 40.
 (pdftex.def)             Requested size: 134.84532pt x 105.44672pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 
-<graphics/PerturbedVertebrae.pdf, id=48, 162.00525pt x 121.2791pt>
+<graphics/PerturbedVertebrae.pdf, id=48, 239.34016pt x 179.00174pt>
 File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedVertebrae.pdf>
-Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 36.
+Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 55.
 
-(pdftex.def)             Requested size: 134.84532pt x 100.94846pt.
+(pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
  [4 <./graphics/modifiedContactGraph.pdf> <./graphics/PerturbedSpine.pdf> <./gr
 aphics/PerturbedVertebrae.pdf>]
 
 LaTeX Warning: Reference `problem:UnorderedContactGraph' on page 5 undefined on
- input line 79.
+ input line 97.
 
-<graphics/ch4Paralellogram.pdf, id=98, 707.443pt x 170.52708pt>
+<graphics/ch4Paralellogram.pdf, id=102, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 97.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 115.
 (pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 95--101
+Overfull \hbox (15.0pt too wide) in paragraph at lines 113--119
 []$[]$
  []
 
 ) (./ch4/Hausdorff.tex
-<graphics/HausdorffDistanceExample1.pdf, id=99, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=103, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
@@ -945,42 +949,43 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
 []$[]$ 
  []
 
-))
+[5 <./graphics/ch4Paralellogram.pdf>]))
 No file Ch4.bbl.
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[5 <./graphics/ch4Paralellogram.pdf> <./graphics/HausdorffDistanceExample1.pdf>
-] [6] (../pdf/Ch4.aux)
+[6 <./graphics/HausdorffDistanceExample1.pdf>] (../pdf/Ch4.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17461 strings out of 493089
- 318431 string characters out of 6134841
+ 17466 strings out of 493089
+ 318512 string characters out of 6134841
  504597 words of memory out of 5000000
- 20506 multiletter control sequences out of 15000+600000
+ 20511 multiletter control sequences out of 15000+600000
  36362 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,59p,956b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,59p,956b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ti
-mes/utmri8a.pfb>
-Output written on ../pdf/Ch4.pdf (10 pages, 165667 bytes).
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on ../pdf/Ch4.pdf (10 pages, 183741 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 167 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

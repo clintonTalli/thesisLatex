@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160515185605" modified="D:20160726201725"/>
+<info created="D:20160515185605" modified="D:20160730125900"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -251,6 +251,10 @@ h
 <tiling name="falling" angle="-60" step="4" width="1"/>
 <tiling name="rising" angle="30" step="4" width="1"/>
 </ipestyle>
+<ipestyle name="bigpaper">
+<layout paper="10000 6000" origin="0 0" frame="10000 6000"/>
+<titlestyle pos="10 10" size="LARGE" color="title"  valign="baseline"/>
+</ipestyle>
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
@@ -284,16 +288,16 @@ h
 199.078 652.16 m
 14.0698 0 0 -14.0698 192 640 206.07 640.063 a
 </path>
-<text matrix="1 0 0 1 -38.0275 32.4959" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="10.842" height="4.294" depth="1.49" valign="baseline">$\alpha_1$</text>
-<text matrix="1 0 0 1 -11.1811 32.4959" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="10.104" height="6.926" depth="1.93" valign="baseline">$\beta_1$</text>
+<text matrix="1 0 0 1 -40.3548 23.0106" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="8.905" height="2.148" depth="1.74" valign="baseline" size="tiny">$\alpha_k$</text>
+<text matrix="1 0 0 1 -13.5084 23.0106" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="8.294" height="3.463" depth="1.74" valign="baseline" size="tiny">$\beta_k$</text>
 <path matrix="1 0 0 1 96 32" stroke="black">
 32 0 0 32 192 640 e
 </path>
 <path matrix="1 0 0 1 128 87.426" stroke="black">
 32 0 0 32 192 640 e
 </path>
-<text matrix="1 0 0 1 27.3399 32.6073" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="10.842" height="4.294" depth="1.49" valign="baseline">$\alpha_2$</text>
-<text matrix="1 0 0 1 54.1869 32.6073" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="10.104" height="6.926" depth="1.93" valign="baseline">$\beta_2$</text>
+<text matrix="1 0 0 1 22.4652 23.8406" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="17.415" height="2.148" depth="2.57" valign="baseline" size="tiny">$\alpha_{k+1}$</text>
+<text matrix="1 0 0 1 44.561 23.8406" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="16.804" height="3.463" depth="2.57" valign="baseline" size="tiny">$\beta_{k+1}$</text>
 <path matrix="1 0 0 1 32.0041 31.9997" stroke="black">
 245.66 639.916 m
 10.3401 0 0 -10.3401 256 640 261.068 649.013 a

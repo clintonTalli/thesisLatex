@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160515185605" modified="D:20160516184215"/>
+<info created="D:20160515185605" modified="D:20160730130433"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -254,43 +254,53 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" stroke="black">
+<path layer="alpha" matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black">
 32 0 0 32 192 640 e
 </path>
-<path matrix="1 0 0 1 64 0" stroke="black">
+<path matrix="1.48154 0 0 1.48154 17.7725 -292.774" stroke="black">
 32 0 0 32 192 640 e
 </path>
-<path matrix="1 0 0 1 32 55.4256" stroke="black">
+<path matrix="1.48154 0 0 1.48154 -29.6367 -210.659" stroke="black">
 32 0 0 32 192 640 e
 </path>
-<path matrix="1 0 0 1 96.0001 55.4255" stroke="black">
+<path matrix="1.48154 0 0 1.48154 65.1818 -210.659" stroke="black">
 32 0 0 32 192 640 e
 </path>
-<path stroke="black">
+<path matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black">
 245.66 639.916 m
 10.3401 0 0 -10.3401 256 640 261.068 649.013 a
 </path>
-<path stroke="black">
+<path matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black">
 199.078 652.16 m
 14.0698 0 0 -14.0698 192 640 206.07 640.063 a
 </path>
-<text matrix="1 0 0 1 -8.92979 -4.4243" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="10.842" height="4.294" depth="1.49" valign="baseline">$\alpha_1$</text>
-<text matrix="1 0 0 1 21.0462 -2.13092" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="10.104" height="6.926" depth="1.93" valign="baseline">$\beta_1$</text>
-<path stroke="black" dash="dashed">
+<text matrix="1.48154 0 0 1.48154 -91.1838 -303.578" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="14.412" height="2.147" depth="2.71" valign="baseline" size="tiny">$\alpha_{k,j}$</text>
+<text matrix="1.48154 0 0 1.48154 -56.2475 -303.578" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="22.31" height="3.461" depth="2.71" valign="baseline" size="tiny">$\beta_{k+1,j}$</text>
+<path matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black" dash="dashed">
 224 695.426 m
 288 695.425 l
 </path>
-<path stroke="black" dash="dashed">
+<path matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black" dash="dashed">
 192 640 m
 256 640 l
 </path>
-<path stroke="black">
+<path matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black">
 288 695.426 m
 256 640 l
 </path>
-<path stroke="black">
+<path matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black">
 224 695.426 m
 192 640 l
+</path>
+<text matrix="1.48154 0 0 1.48154 -49.5209 -236.306" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="22.922" height="2.147" depth="2.71" valign="baseline" size="tiny">$\alpha_{k,j+1}$</text>
+<text matrix="1.48154 0 0 1.48154 -14.5847 -236.306" transformations="translations" pos="215.854 651.58" stroke="black" type="label" width="30.82" height="3.461" depth="2.71" valign="baseline" size="tiny">$\beta_{k+1,j+1}$</text>
+<path matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black">
+233.527 695.426 m
+9.52712 0 0 -9.52712 224 695.426 219.236 687.175 a
+</path>
+<path matrix="1.48154 0 0 1.48154 -77.0458 -292.774" stroke="black">
+285.207 690.588 m
+5.58537 0 0 -5.58537 288 695.425 282.415 695.425 a
 </path>
 </page>
 </ipe>

@@ -145,6 +145,7 @@
 %%%%%%%%custom commands
 \newcommand{\ith}{i^\text{th}}
 \newcommand{\jth}{j^\text{th}}
+\newcommand{\kth}{k^\text{th}}
 \newcommand{\NN}{\mathbb{N}} %  set of natural numbers
 \newcommand{\ZZ}{\mathbb{Z}} %  set of integer number
 \newcommand{\RR}{\mathbb{R}} %  set of real numbers
@@ -3164,6 +3165,9 @@ In general, the perturbation $\gamma$ can modify the realization of a perfect sn
 \begin{enumerate}
 \item \textbf{Modification of $S_1$.} 
 
+Given a instance of a perturbed snowflake with $v_0$ having weight $\frac{1}{2} + \gamma$ where $\gamma > 0$, vertices neighboring $v_0$ each have a range of placement on the plane when realizaed as a disk arrangement. 
+Figure \ref{fig:modifiedContactGraph} shows a realization of $S_1$ and illustrates one such example of possible gaps, $\epsilon (\gamma)$, that could be created between adjacent disks of $S_1$ in a perfect snowflake.  
+
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.33\columnwidth]{graphics/modifiedContactGraph.pdf}
@@ -3171,28 +3175,43 @@ In general, the perturbation $\gamma$ can modify the realization of a perfect sn
 \end{center}
 \end{minipage}
 
-Figure \ref{fig:modifiedContactGraph.pdf} shows one realization of a perturbed $S_1$.  
-For any realization of $S_1$, the perturbation $\gamma$ can create gaps, $\epsilon (\gamma)$ between adjacent disks that contact the root disk.  
+Note that (1) the adjacent disks in a perfect snowflake may or may not be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$.  
+
+\begin{lem}\label{lem:s1Small}
+For any realized perturbed snowflake $S_i$, the gaps created in subset $S_1 \subset S_i$ is small.
+\end{lem}
+
+% Figure \ref{fig:modifiedContactGraph.pdf} shows one realization of a perturbed $S_1$.  
+% For any realization of $S_1$, the perturbation $\gamma$ can create gaps, $\epsilon (\gamma)$ between adjacent disks that contact the root disk.  
 \item \textbf{Modification of disk placement corresponding to vertices of $p_k$.}
+We've shown how the disks can be displaced in $S_1$; for larger snowflakes, the displacement can propogate through the remaining disks of the arrangement.  
+The disks can along the paths $p_1$ through $p_6$ may also have displacement as well.  
+In canonical position, the disks along paths $p_1$ through $p_6$ will form angles $\alpha_k =\frac{\pi}{3} $ and $\beta_k=\frac{2\pi}{3}$ (see Figure \ref{fig:PerturbedSpine.pdf} for example).  
+In noncanonical position, the disks along paths $p_1$ through $p_6$ will form angles that may vary.  
 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.33\columnwidth]{graphics/PerturbedSpine.pdf}
-\captionof{figure}{?A?S}\label{fig:PerturbedSpine.pdf}
+\captionof{figure}{This figure shows a disk arrangement along a path $p_k$ in canoncical position.  Note that perturbation in a snowflake and modify the placement of the disks in such a way that $\alpha_k$ and $\beta_k$ or $\alpha_{k+1}$ and $\beta_{k+1}$ may be of a noncanonical value.}\label{fig:PerturbedSpine.pdf}
 \end{center}
 \end{minipage}
 
-\item \textbf{Modification of disk placement along corresponding to the $p_{k,j}^\text{th}$ vertex of $S_i$.}  In Figure \ref{fig:PerturbedSpine.pdf}, we have a perturbed spine
+Our goal here is to show that the change of the angular value of $\alpha_k$ and $\beta_k$ are small:
+\begin{lem}\label{lem:angularArrangement}
+For any realized perturbed snowflake $S_i$, the angular value of $\alpha_k$ and $\beta_k$ are small.
+\end{lem}
+
+\item \textbf{Modification of disk placement along corresponding to the $p_{k,j}^\text{th}$ vertex of $S_i$.}  
+For the $\jth$ disk along the $\kth$ path, perturbation can displace the postion of the disk on the plane and the angular relationship of the neighboring disks (see Figure \ref{fig:PerturbedVertebrae.pdf} for example).  
 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.33\columnwidth]{graphics/PerturbedVertebrae.pdf}
-\captionof{figure}{?A?S}\label{fig:PerturbedVertebrae.pdf}
+\captionof{figure}{}\label{fig:PerturbedVertebrae.pdf}
 \end{center}
 \end{minipage}
 
 In Figure \ref{fig:PerturbedVertebrae.pdf}, we have four an arrangement of disks on the snowflake, off the spine and away from the central disk.  
-We call this a vertebrae.
 \end{enumerate} 
 
 % In Figure \ref{fig:modifiedContactGraph.pdf}, we have a realization of disk arrangement from a perturbed snowflake.
