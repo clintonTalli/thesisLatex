@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 13:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -771,14 +771,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 []| 
  []
 
-
-LaTeX Warning: Reference `problem:UnorderedContactGraph' on page iii undefined 
-on input line 8.
-
-
-LaTeX Warning: Reference `problem:UnorderedContactGraph' on page iii undefined 
-on input line 8.
-
 )
 \tf@toc=\write5
 \openout5 = `Ch4.toc'.
@@ -876,7 +868,7 @@ File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
- line 23.
+ line 24.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
  [1
 
@@ -886,7 +878,7 @@ File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
-ine 58.
+ine 59.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
 ) (./ch4/prudtgrp.tex
 
@@ -921,19 +913,15 @@ Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 55.
 (pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
  [4 <./graphics/modifiedContactGraph.pdf> <./graphics/PerturbedSpine.pdf> <./gr
 aphics/PerturbedVertebrae.pdf>]
-
-LaTeX Warning: Reference `problem:UnorderedContactGraph' on page 5 undefined on
- input line 97.
-
 <graphics/ch4Paralellogram.pdf, id=102, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 115.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 70.
 (pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 113--119
-[]$[]$
+Overfull \hbox (15.0pt too wide) in paragraph at lines 68--92
+[]$[]$ 
  []
 
 ) (./ch4/Hausdorff.tex
@@ -949,17 +937,18 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
 []$[]$ 
  []
 
-[5 <./graphics/ch4Paralellogram.pdf>]))
+))
 No file Ch4.bbl.
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[6 <./graphics/HausdorffDistanceExample1.pdf>] (../pdf/Ch4.aux)
+[5 <./graphics/ch4Paralellogram.pdf> <./graphics/HausdorffDistanceExample1.pdf>
+] (../pdf/Ch4.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
  17466 strings out of 493089
- 318512 string characters out of 6134841
+ 318523 string characters out of 6134841
  504597 words of memory out of 5000000
  20511 multiletter control sequences out of 15000+600000
  36362 words of font info for 67 fonts, out of 8000000 for 9000
@@ -982,10 +971,10 @@ mf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on ../pdf/Ch4.pdf (10 pages, 183741 bytes).
+Output written on ../pdf/Ch4.pdf (9 pages, 180018 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 164 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

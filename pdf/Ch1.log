@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 13:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,119 +1018,133 @@ nput line 73.
 File: graphics/orderedFaces.pdf Graphic file (type pdf)
 
 <use graphics/orderedFaces.pdf>
-Package pdftex.def Info: graphics/orderedFaces.pdf used on input line 76.
-(pdftex.def)             Requested size: 205.15594pt x 86.25pt.
+Package pdftex.def Info: graphics/orderedFaces.pdf used on input line 77.
+(pdftex.def)             Requested size: 143.09538pt x 60.16284pt.
 
-
-Package caption Warning: \label without proper \caption on input line 74.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:orderedFaces.pdf' on page 6 undefined on input li
-ne 82.
+Overfull \hbox (15.0pt too wide) in paragraph at lines 75--82
+[]$[]$ 
+ []
 
 
 LaTeX Warning: Citation `aigner2010hilbert' on page 6 undefined on input line 9
-2.
+3.
 
 
-LaTeX Warning: Citation `10.23073621846' on page 6 undefined on input line 93.
+LaTeX Warning: Citation `10.23073621846' on page 6 undefined on input line 94.
+
+
+LaTeX Warning: Citation `abbott2012hinged' on page 6 undefined on input line 10
+0.
 
 [6 <./graphics/Problem1.pdf> <./graphics/collidingHingedPolygons.pdf> <./graphi
 cs/orderedFaces.pdf>]
-
-LaTeX Warning: Citation `abbott2012hinged' on page 7 undefined on input line 99
-.
-
 <graphics/HaberdasherProblem.pdf, id=142, 265.8201pt x 132.09651pt>
 File: graphics/HaberdasherProblem.pdf Graphic file (type pdf)
 
 <use graphics/HaberdasherProblem.pdf>
-Package pdftex.def Info: graphics/HaberdasherProblem.pdf used on input line 106
+Package pdftex.def Info: graphics/HaberdasherProblem.pdf used on input line 108
 .
 (pdftex.def)             Requested size: 265.81944pt x 132.09618pt.
- [7 <./graphics/HaberdasherProblem.pdf>]
-<graphics/GeometricDissectionBusschop.pdf, id=151, 276.21796pt x 112.4722pt>
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 106--113
+[]$[]$ 
+ []
+
+<graphics/GeometricDissectionBusschop.pdf, id=143, 276.21796pt x 112.4722pt>
 File: graphics/GeometricDissectionBusschop.pdf Graphic file (type pdf)
 
 <use graphics/GeometricDissectionBusschop.pdf>
 Package pdftex.def Info: graphics/GeometricDissectionBusschop.pdf used on input
- line 115.
+ line 120.
 (pdftex.def)             Requested size: 276.21727pt x 112.47191pt.
 
-<graphics/HingedHaberdasher.pdf, id=152, 478.2165pt x 118.96725pt>
+Overfull \hbox (15.0pt too wide) in paragraph at lines 119--127
+[]$[]$ 
+ []
+
+<graphics/HingedHaberdasher.pdf, id=144, 478.2165pt x 118.96725pt>
 File: graphics/HingedHaberdasher.pdf Graphic file (type pdf)
 
 <use graphics/HingedHaberdasher.pdf>
-Package pdftex.def Info: graphics/HingedHaberdasher.pdf used on input line 131.
+Package pdftex.def Info: graphics/HingedHaberdasher.pdf used on input line 133.
 
 (pdftex.def)             Requested size: 433.62pt x 107.87733pt.
 
 
-LaTeX Warning: Citation `abbott2012hinged' on page 8 undefined on input line 13
-3.
+LaTeX Warning: Citation `abbott2012hinged' on page 7 undefined on input line 13
+5.
 
 
-LaTeX Warning: Citation `abbott2012hinged' on page 8 undefined on input line 13
-3.
+LaTeX Warning: Citation `abbott2012hinged' on page 7 undefined on input line 13
+5.
 
-) (./ch1/diskarrangements.tex
-<graphics/diskPackingTheoremExample.pdf, id=153, 284.38043pt x 101.58252pt>
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 131--138
+[]$[]$ 
+ []
+
+) (./ch1/diskarrangements.tex [7 <./graphics/HaberdasherProblem.pdf> <./graphic
+s/GeometricDissectionBusschop.pdf>]
+<graphics/diskPackingTheoremExample.pdf, id=156, 284.38043pt x 101.58252pt>
 File: graphics/diskPackingTheoremExample.pdf Graphic file (type pdf)
 
 <use graphics/diskPackingTheoremExample.pdf>
 Package pdftex.def Info: graphics/diskPackingTheoremExample.pdf used on input l
 ine 40.
 (pdftex.def)             Requested size: 284.37973pt x 101.58226pt.
- [8 <./graphics/GeometricDissectionBusschop.pdf> <./graphics/HingedHaberdasher.
-pdf> <./graphics/diskPackingTheoremExample.pdf>]
 
-LaTeX Warning: Citation `koebe1936kontaktprobleme' on page 9 undefined on input
- line 52.
+Overfull \hbox (15.0pt too wide) in paragraph at lines 39--44
+[]$[]$ 
+ []
 
 
-LaTeX Warning: Reference `figure:starweel' on page 9 undefined on input line 91
+LaTeX Warning: Citation `koebe1936kontaktprobleme' on page 8 undefined on input
+ line 51.
+
+
+LaTeX Warning: Reference `figure:starweel' on page 8 undefined on input line 90
 .
 
-<graphics/BinaryTree1.pdf, id=190, 69.25874pt x 5.01875pt>
+[8 <./graphics/HingedHaberdasher.pdf> <./graphics/diskPackingTheoremExample.pdf
+>] <graphics/BinaryTree1.pdf, id=190, 69.25874pt x 5.01875pt>
 File: graphics/BinaryTree1.pdf Graphic file (type pdf)
 
 <use graphics/BinaryTree1.pdf>
-Package pdftex.def Info: graphics/BinaryTree1.pdf used on input line 103.
+Package pdftex.def Info: graphics/BinaryTree1.pdf used on input line 102.
 (pdftex.def)             Requested size: 91.0631pt x 6.59879pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 104.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 104.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 104.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
 
 <graphics/BinaryTree2.pdf, id=191, 69.25874pt x 69.25874pt>
 File: graphics/BinaryTree2.pdf Graphic file (type pdf)
 
 <use graphics/BinaryTree2.pdf>
-Package pdftex.def Info: graphics/BinaryTree2.pdf used on input line 108.
+Package pdftex.def Info: graphics/BinaryTree2.pdf used on input line 107.
 (pdftex.def)             Requested size: 91.0631pt x 91.06354pt.
 
 <graphics/BinaryTree3.pdf, id=192, 114.68848pt x 114.68848pt>
 File: graphics/BinaryTree3.pdf Graphic file (type pdf)
 
 <use graphics/BinaryTree3.pdf>
-Package pdftex.def Info: graphics/BinaryTree3.pdf used on input line 113.
+Package pdftex.def Info: graphics/BinaryTree3.pdf used on input line 112.
 (pdftex.def)             Requested size: 91.0631pt x 91.06314pt.
 
 <graphics/BinaryTree4.pdf, id=193, 114.68848pt x 114.68848pt>
 File: graphics/BinaryTree4.pdf Graphic file (type pdf)
 
 <use graphics/BinaryTree4.pdf>
-Package pdftex.def Info: graphics/BinaryTree4.pdf used on input line 118.
+Package pdftex.def Info: graphics/BinaryTree4.pdf used on input line 117.
 (pdftex.def)             Requested size: 91.0631pt x 91.06314pt.
 
 <graphics/degree2arrangement.pdf, id=194, 97.76526pt x 33.52626pt>
 File: graphics/degree2arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree2arrangement.pdf>
-Package pdftex.def Info: graphics/degree2arrangement.pdf used on input line 148
+Package pdftex.def Info: graphics/degree2arrangement.pdf used on input line 145
 .
 (pdftex.def)             Requested size: 104.07117pt x 35.69112pt.
 
@@ -1138,7 +1152,7 @@ Package pdftex.def Info: graphics/degree2arrangement.pdf used on input line 148
 File: graphics/degree3arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree3arrangement.pdf>
-Package pdftex.def Info: graphics/degree3arrangement.pdf used on input line 153
+Package pdftex.def Info: graphics/degree3arrangement.pdf used on input line 150
 .
 (pdftex.def)             Requested size: 104.07117pt x 104.07819pt.
 
@@ -1146,7 +1160,7 @@ Package pdftex.def Info: graphics/degree3arrangement.pdf used on input line 153
 File: graphics/degree4arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree4arrangement.pdf>
-Package pdftex.def Info: graphics/degree4arrangement.pdf used on input line 158
+Package pdftex.def Info: graphics/degree4arrangement.pdf used on input line 155
 .
 (pdftex.def)             Requested size: 104.07117pt x 104.07356pt.
 
@@ -1154,17 +1168,17 @@ Package pdftex.def Info: graphics/degree4arrangement.pdf used on input line 158
 File: graphics/degree5arrangement.pdf Graphic file (type pdf)
 
 <use graphics/degree5arrangement.pdf>
-Package pdftex.def Info: graphics/degree5arrangement.pdf used on input line 163
+Package pdftex.def Info: graphics/degree5arrangement.pdf used on input line 160
 .
 (pdftex.def)             Requested size: 104.07117pt x 104.0706pt.
 
 
-Package caption Warning: \label without proper \caption on input line 143.
+Package caption Warning: \label without proper \caption on input line 140.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:circlePacking-2' on page 9 undefined on input lin
-e 176.
+e 173.
 
 
 <graphics/OrderedDiskArrangementExample1.pdf, id=198, 123.93301pt x 190.29092pt
@@ -1172,104 +1186,109 @@ e 176.
 File: graphics/OrderedDiskArrangementExample1.pdf Graphic file (type pdf)
  <use graphics/OrderedDiskArrangementExample1.pdf>
 Package pdftex.def Info: graphics/OrderedDiskArrangementExample1.pdf used on in
-put line 187.
+put line 184.
 (pdftex.def)             Requested size: 111.53867pt x 171.26024pt.
 
 <graphics/OrderedDiskArrangementExample2.pdf, id=199, 123.2605pt x 132.46489pt>
 File: graphics/OrderedDiskArrangementExample2.pdf Graphic file (type pdf)
 <use graphics/OrderedDiskArrangementExample2.pdf>
 Package pdftex.def Info: graphics/OrderedDiskArrangementExample2.pdf used on in
-put line 193.
+put line 190.
 (pdftex.def)             Requested size: 110.93341pt x 119.21729pt.
 
 
-Package caption Warning: \label without proper \caption on input line 181.
+Package caption Warning: \label without proper \caption on input line 178.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:circlePacking-3' on page 9 undefined on input lin
-e 204.
+e 201.
 
 
-Package caption Warning: \label without proper \caption on input line 181.
+Package caption Warning: \label without proper \caption on input line 178.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:circlePacking-3' on page 9 undefined on input lin
-e 208.
+e 205.
+
+
+LaTeX Warning: Reference `{fig:DiskArrangement-4}' on page 9 undefined on input
+ line 209.
 
 [9 <./graphics/BinaryTree1.pdf> <./graphics/BinaryTree2.pdf> <./graphics/Binary
-Tree3.pdf> <./graphics/BinaryTree4.pdf>] [10 <./graphics/degree2arrangement.pdf
-> <./graphics/degree3arrangement.pdf> <./graphics/degree4arrangement.pdf> <./gr
-aphics/degree5arrangement.pdf> <./graphics/OrderedDiskArrangementExample1.pdf> 
-<./graphics/OrderedDiskArrangementExample2.pdf>]
-
-LaTeX Warning: Reference `{fig:DiskArrangement-4}' on page 11 undefined on inpu
-t line 212.
-
-<graphics/orderedPlaneIntersection.pdf, id=251, 219.7008pt x 222.57153pt>
+Tree3.pdf> <./graphics/BinaryTree4.pdf> <./graphics/degree2arrangement.pdf> <./
+graphics/degree3arrangement.pdf> <./graphics/degree4arrangement.pdf> <./graphic
+s/degree5arrangement.pdf>]
+<graphics/orderedPlaneIntersection.pdf, id=238, 219.7008pt x 222.57153pt>
 File: graphics/orderedPlaneIntersection.pdf Graphic file (type pdf)
 
 <use graphics/orderedPlaneIntersection.pdf>
 Package pdftex.def Info: graphics/orderedPlaneIntersection.pdf used on input li
-ne 222.
-(pdftex.def)             Requested size: 219.70026pt x 222.57097pt.
+ne 219.
+(pdftex.def)             Requested size: 173.44534pt x 175.72089pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 218--225
+[]$[]$ 
+ []
 
 
-Package caption Warning: \label without proper \caption on input line 181.
+Package caption Warning: \label without proper \caption on input line 178.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:circlePacking-3' on page 11 undefined on input li
-ne 228.
+LaTeX Warning: Reference `fig:circlePacking-3' on page 10 undefined on input li
+ne 226.
 
-) (./ch1/configurationspaces.tex [11 <./graphics/orderedPlaneIntersection.pdf>]
+) (./ch1/configurationspaces.tex [10 <./graphics/OrderedDiskArrangementExample1
+.pdf> <./graphics/OrderedDiskArrangementExample2.pdf> <./graphics/orderedPlaneI
+ntersection.pdf>]
 
-LaTeX Warning: Citation `CDR03' on page 12 undefined on input line 67.
+LaTeX Warning: Citation `CDR03' on page 11 undefined on input line 67.
 
 
-LaTeX Warning: Citation `Str05' on page 12 undefined on input line 67.
+LaTeX Warning: Citation `Str05' on page 11 undefined on input line 67.
 
-<graphics/twoEmbeddingsOfSameLinkage.pdf, id=268, 339.39998pt x 169.65584pt>
+<graphics/twoEmbeddingsOfSameLinkage.pdf, id=265, 339.39998pt x 169.65584pt>
 File: graphics/twoEmbeddingsOfSameLinkage.pdf Graphic file (type pdf)
 
 <use graphics/twoEmbeddingsOfSameLinkage.pdf>
 Package pdftex.def Info: graphics/twoEmbeddingsOfSameLinkage.pdf used on input 
 line 94.
 (pdftex.def)             Requested size: 339.39915pt x 169.65541pt.
- [12 <./graphics/twoEmbeddingsOfSameLinkage.pdf>]
-<graphics/DiskPackingReconfiguration.pdf, id=277, 322.6454pt x 202.1432pt>
+ [11]
+<graphics/DiskPackingReconfiguration.pdf, id=269, 322.6454pt x 202.1432pt>
 File: graphics/DiskPackingReconfiguration.pdf Graphic file (type pdf)
 
 <use graphics/DiskPackingReconfiguration.pdf>
 Package pdftex.def Info: graphics/DiskPackingReconfiguration.pdf used on input 
 line 121.
 (pdftex.def)             Requested size: 241.98344pt x 151.60701pt.
-) (./ch1/complexity.tex [13 <./graphics/DiskPackingReconfiguration.pdf>]) (./ch
-1/RSA.tex [14]
+) (./ch1/complexity.tex [12 <./graphics/twoEmbeddingsOfSameLinkage.pdf> <./grap
+hics/DiskPackingReconfiguration.pdf>]) (./ch1/RSA.tex [13]
 
-LaTeX Warning: Citation `rivest1978method' on page 15 undefined on input line 2
+LaTeX Warning: Citation `rivest1978method' on page 14 undefined on input line 2
 4.
 
 
-LaTeX Warning: Citation `jonsson2003public' on page 15 undefined on input line 
+LaTeX Warning: Citation `jonsson2003public' on page 14 undefined on input line 
 43.
 
-[15]
+[14]
 
-LaTeX Warning: Citation `lenstra1993number' on page 16 undefined on input line 
+LaTeX Warning: Citation `lenstra1993number' on page 15 undefined on input line 
 57.
 
 
-LaTeX Warning: Citation `menezes1996handbook' on page 16 undefined on input lin
+LaTeX Warning: Citation `menezes1996handbook' on page 15 undefined on input lin
 e 61.
 
 ) (./ch1/satisfiability.tex
 
-LaTeX Warning: Citation `skiena2009algorithm' on page 16 undefined on input lin
+LaTeX Warning: Citation `skiena2009algorithm' on page 15 undefined on input lin
 e 15.
 
-<graphics/fig-assoc-hex.pdf, id=293, 328.38896pt x 99.16548pt>
+<graphics/fig-assoc-hex.pdf, id=289, 328.38896pt x 99.16548pt>
 File: graphics/fig-assoc-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-assoc-hex.pdf>
@@ -1277,60 +1296,60 @@ Package pdftex.def Info: graphics/fig-assoc-hex.pdf used on input line 32.
 (pdftex.def)             Requested size: 303.53267pt x 91.66306pt.
 
 
-LaTeX Warning: Reference `sec:auxiliaryConstruction' on page 16 undefined on in
+LaTeX Warning: Reference `sec:auxiliaryConstruction' on page 15 undefined on in
 put line 34.
 
 
-LaTeX Warning: Reference `sec:auxiliaryConstruction' on page 16 undefined on in
+LaTeX Warning: Reference `sec:auxiliaryConstruction' on page 15 undefined on in
 put line 34.
 
-[16 <./graphics/fig-assoc-hex.pdf>]
+[15]
 
-LaTeX Warning: Citation `lichtenstein1982planar' on page 17 undefined on input 
+LaTeX Warning: Citation `lichtenstein1982planar' on page 16 undefined on input 
 line 50.
 
 
-LaTeX Warning: Citation `karp1972reducibility' on page 17 undefined on input li
+LaTeX Warning: Citation `karp1972reducibility' on page 16 undefined on input li
 ne 50.
 
 ) (./ch1/problemdefinition.tex
 
-LaTeX Warning: Citation `CDD+10' on page 17 undefined on input line 7.
+LaTeX Warning: Citation `CDD+10' on page 16 undefined on input line 7.
 
 
-LaTeX Warning: Citation `EW90' on page 17 undefined on input line 7.
+LaTeX Warning: Citation `EW90' on page 16 undefined on input line 7.
 
 
-LaTeX Warning: Citation `BK98' on page 17 undefined on input line 10.
+LaTeX Warning: Citation `BK98' on page 16 undefined on input line 10.
 
 
-LaTeX Warning: Citation `CDD+10' on page 17 undefined on input line 12.
+LaTeX Warning: Citation `CDD+10' on page 16 undefined on input line 12.
 
 
-LaTeX Warning: Citation `EW90' on page 17 undefined on input line 12.
+LaTeX Warning: Citation `EW90' on page 16 undefined on input line 12.
 
 
-LaTeX Warning: Citation `BK98' on page 17 undefined on input line 13.
+LaTeX Warning: Citation `BK98' on page 16 undefined on input line 13.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
 
-LaTeX Warning: Reference `sec:logic' on page 17 undefined on input line 46.
+LaTeX Warning: Reference `sec:logic' on page 16 undefined on input line 46.
 
 
-LaTeX Warning: Reference `sec:hinge' on page 17 undefined on input line 48.
+LaTeX Warning: Reference `sec:hinge' on page 16 undefined on input line 48.
 
 ) (./ch1/RelatedWork.tex
 
-LaTeX Warning: Citation `klemzthesis' on page 17 undefined on input line 2.
+LaTeX Warning: Citation `klemzthesis' on page 16 undefined on input line 6.
 
 
-LaTeX Warning: Citation `BK98' on page 17 undefined on input line 2.
+LaTeX Warning: Citation `BK98' on page 16 undefined on input line 6.
 
-) (./ch1/result.tex))
+))
 No file Ch1.bbl.
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[17] (../pdf/Ch1.aux)
+[16 <./graphics/fig-assoc-hex.pdf>] [17] (../pdf/Ch1.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1339,9 +1358,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17696 strings out of 493089
- 324237 string characters out of 6134841
- 504597 words of memory out of 5000000
+ 17693 strings out of 493089
+ 324201 string characters out of 6134841
+ 503597 words of memory out of 5000000
  20687 multiletter control sequences out of 15000+600000
  59525 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1365,7 +1384,7 @@ fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Ch1.pdf (21 pages, 359623 bytes).
+Output written on ../pdf/Ch1.pdf (21 pages, 359761 bytes).
 PDF statistics:
  355 PDF objects out of 1000 (max. 8388607)
  217 compressed objects within 3 object streams

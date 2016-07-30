@@ -1,0 +1,8 @@
+#/usr/bin/bash
+rm cat.tex
+cd ../pdf
+rm *.aux
+rm *.toc
+rm *.idx
+rm *.log
+cd ../tex			

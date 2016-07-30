@@ -241,8 +241,9 @@ Hinged Polygons}
 \submitted{August}{2014}
 \committee{Dr. Csaba T\'oth}{Dr. Silvia Fernandez}{Dr. John Dye}
 \abstract{ }
-\begin{document}
-\chapter{Background}
+
+
+\begin{document}\chapter{Background}
 % In this section, we cover the background subjects needed to formally pose the 
 % problems and present solutions in this thesis.  We start with two types of combinatorial structures, linkages 
 % and polygonal linkages.  We then discuss the configuration spaces of linkages and polygonal 
@@ -683,13 +684,14 @@ Figure \ref{fig:collidingHingedPolygons}, satisfies Problem \ref{problem:Unorder
   %If $B$ were not reflected we see that the only way to attach the polygons by their hinges together is if $B$ and $D$ intersect in their interiors.  
 
 Figure \ref{fig:collidingHingedPolygons} does not quite get at the heart of the challenge with Problem \ref{problem:UnorderedPolygonal} because the counter-clockwise order of the polygons around hinges is not considered.
-\begin{figure}[!htbp]\label{fig:orderedFaces.pdf}
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[scale=1]{graphics/orderedFaces.pdf}
-\caption{Here we have two realizations of a polygonal linkage with two different counter-clockwise order (C,B,A) and (B,C,A) respectively.  
-Note that the placement with ordering (B,C,A) has an overlap.}
-\end{center} 
-\end{figure}
+\includegraphics[width=.33\columnwidth]{graphics/orderedFaces.pdf}
+\end{center}
+\captionof{figure}{Here we have two realizations of a polygonal linkage with two different counter-clockwise order (C,B,A) and (B,C,A) respectively.  
+Note that the placement with ordering (B,C,A) has an overlap.}\label{fig:orderedFaces.pdf}
+\end{minipage}
 
 Figure \ref{fig:orderedFaces.pdf} shows three polygons with a common hinge.
 In the counter-clockwise order $(A,B,C)$, the polygonal linkage admits a realization whereas in the counter-clockwise order $(A,C,B)$, it does not admit a realization.
@@ -713,38 +715,39 @@ The was an outstanding problem for many years until 2007.
 
 The Haberdasher Puzzle was proposed in 1902 by Henry Dudeney: can a square and an equilateral triangle of the same area have a common dissection into four pieces? 
 %%%add story about the puzzle%%%%
-\begin{figure}[!htbp]
+
+\begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics{graphics/HaberdasherProblem.pdf}
 \end{center}
-\caption{The Haberdasher Puzzle was proposed in 1902 and solved in 1903 by Henry Dudeny.  The dissection is for polygons that forms a square and equilateral traingle
- }
+\captionof{figure}{The Haberdasher Puzzle was proposed in 1902 and solved in 1903 by Henry Dudeny.  The dissection is for polygons that forms a square and equilateral traingle.}
 \label{fig:polygonallinkage-5}
-\end{figure}
-\newpage
-\begin{figure}[!htbp]
-\begin{center}
-\includegraphics{graphics/GeometricDissectionBusschop.pdf}
-\end{center}
-\caption{Two configurations of polygonal linkage where the polygons touch on boundary segments 
-instead of hinges.  These two realizations of the polygonal linkage are invalid to our definitions. 
- }
-\label{fig:polygonallinkage-4}
-\end{figure}
+\end{minipage}
+
 Geometric dissections are closely related to polygonal linkages.  
 Figure \ref{fig:polygonallinkage-4} shows two arrangements of the same polygons to form a hexagon and a square. 
 The polygons are not hinged and are arranged in differing order.
-The polygons are merely tiled together to form the hexagon and square.    
+The polygons are merely tiled together to form the hexagon and square. 
+
+\begin{minipage}{\linewidth}\begin{center}
+\includegraphics{graphics/GeometricDissectionBusschop.pdf}
+\end{center}
+\captionof{figure}{Two configurations of polygonal linkage where the polygons touch on boundary segments 
+instead of hinges.  These two realizations of the polygonal linkage are invalid to our definitions. 
+ }
+\label{fig:polygonallinkage-4}
+\end{minipage}
+
 Figure \ref{fig:HingedHaberdasher}, shows the Haberdasher problem with hinges.  
 This makes the Haberdasher problem as a type of polygonal linkage where the polygons are free to move about their hinge points and take the form of a triangle or square.  
 
-\begin{figure}[!htbp]
+\begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=\textwidth]{graphics/HingedHaberdasher.pdf}
 \end{center}
-\caption{This shows the Haberdasher problem in the form of polygonal linkage \cite{abbott2012hinged}.  This is a classic example of two polygons of equal area that have a common hinged dissection.}
+\captionof{figure}{This shows the Haberdasher problem in the form of polygonal linkage \cite{abbott2012hinged}.  This is a classic example of two polygons of equal area that have a common hinged dissection.}
 \label{fig:HingedHaberdasher}
-\end{figure}
+\end{minipage}
 
 
 
@@ -853,14 +856,13 @@ This makes the Haberdasher problem as a type of polygonal linkage where the poly
 
  A \textit{disk arrangement} is a set of interior disjoint disks, $D$.  
  If for any pair of disks in $D$ intersect at a boundary point, they are said to be in contact (kissing).
-\begin{figure}[!hbtp]
-\begin{center}
+
+\begin{minipage}{\linewidth}
 \includegraphics[scale=1]{graphics/diskPackingTheoremExample.pdf}
-\end{center} 
-\caption{This example represents a disk arrangement and its contact graph.}
-%Figure shows a 5-cycle with a unique realization of a disk arrangement.
+\captionof{figure}{This example represents a disk arrangement and its contact graph.}
 \label{fig:DiskArrangement-1}
-\end{figure}
+\end{minipage}
+
 A \textit{contact graph} $G=(V,E)$ corresponding to a given disk arrangement where there is a bijection $b_V: V \mapsto D$ and a bijection that maps an edge $e_{i,j} \in E$ to an interior disjoint pair of disks $d_i$, $d_j \in D$ (see Figure \ref{fig:DiskArrangement-1}).
 Given a disk arrangement, the contact graph can be thought of as a linkage because the distance between two kissing disk equal the sum of radii.  
 However if the two disks don't kiss, the distance between their centers is strictly greater than the sum of their radii.
@@ -955,8 +957,6 @@ All unit disks are contained in a disk of radius $2i-1$ centered at the origin.
 The total area of the disks is at most $(2i-1)^2$.
 %Let the total area of the disks arrangement be the sum of the areas of the disks. 
 A upper bound of the total area of the disk arrangement is the area of the bounding box of the disks.
-The upper bound of the 
-
 
 \begin{figure}[!htpb]\label{fig:circlePacking-2}
 \begin{center}
@@ -1035,14 +1035,15 @@ Similarly, The possible position of tangent line between $A_2$ and $B_2$ ranges 
 In any position, the common tangent lines between $A_1$ and $B_1$ and $A_2$ and $B_2$ intersect.
 If $\frac{1}{\epsilon}$ is sufficiently large, then the disks $D_1$ and $D_2$ also intersect.
 This contradicts that there is a realization.
-\begin{figure}[!hbtp]
-\begin{center}
-\includegraphics[scale=1]{graphics/orderedPlaneIntersection.pdf}
-\end{center} 
-\caption{This example represents a disk arrangement and its contact graph.}
+
+\begin{minipage}{\linewidth}\begin{center}
+\includegraphics[width=.4\columnwidth]{graphics/orderedPlaneIntersection.pdf}
+\end{center}
+\captionof{figure}{This example represents a disk arrangement and its contact graph.}
 %Figure shows a 5-cycle with a unique realization of a disk arrangement.
 \label{fig:DiskArrangement-4}
-\end{figure}
+\end{minipage}
+
 Figure \ref{fig:circlePacking-3} shows how an ordered contact graph may not be realizable.  
 On the left, it shows a limitation on the weights of the disks that are in contact with disks A and B. 
 On the right, the figure shows the order where A and B are on opposing ends of the ring of disks and can allow of arbitrary size of wieghted disks in contact with A and B.
@@ -1833,13 +1834,11 @@ oriented realization of polygonal linkages by simulating polygons with arrangeme
 
 % \subsection{Decidability of Problem} test
 % \subsection{Hexagonal Locked Configuration}\section{Related Work and Results}
-Boris Klemz's Master's thesis ``Weighted Disk Contact Graph'' shows the Unit Disk Touching Graph Recognition problem is NP-Hard.  It also improves the Breu and Kirkpatrick result on Disk Touching Graph Recognition problem \cite{klemzthesis,BK98}.
-
- 
-
+Boris Klemz's Master's thesis ``Weighted Disk Contact Graph'' shows the Unit Disk Touching Graph Recognition problem is NP-Hard.  
 % In Chapter 2 we investigate recognition problems with uniform (and ρ-bounded) radii. In Section 2.1 we consider the Unit Disk Touching Graph Recognition (UDT) problem and strengthen the result of Breu and Kirkpatrick [BK98] by showing that the UDT problem is NP-hard even for outerplanar graphs. On the positive side, we provide a linear-time algorithm for deciding the UDT problem in caterpillars. In this section we also briefly consider ρ-bounded Disk Touching Graph Recognition and show that for spiders this problem can be solved in linear time in the Real RAM model. In Section 2.2 we extend our result from the previous section by showing that the Unit Disk Touching Graph Recognition with fixed Embedding (UDTE) problem is also NP-hard, even for outerplanar graphs.
 % In Chapter 3 we explore the more general scenario with fixed but not necessarily uniform radii. In Section 3.1 we consider the Disk Touching Graph Recognition with fixed Radii (DTR) problem and strengthen the result by Breu and Kirkpatrick [BK98] by showing that the DTR problem is NP-hard even for stars. We also show that for any cycle and a corresponding radius assignment there exists a realizing disk touching graph. In contrast, in Section 3.2 we devise a linear-time algorithm for deciding the Disk Touching Graph Recognition with fixed Radii and Embedding (DTRE) problem for stars in the Real RAM model.
-% In Chapter 4 we concern ourself with the scenario in which a seed assignment is required to be respected. In Section 4.1 we strengthen the result of Atienza et al. [AdCC+12] by showing that the Disk Touching Graph Recognition with fixed Seeds (DTS) prob- lem is NP-hard even for trees. In Section 4.2 we combine this scenario with assigning fixed radii, more specifically uniform radii. We show that the Unit Disk Touching Graph Recognition with fixed Seeds (UDTS) problem is NP-hard, even for paths, implying that the Unit Disk Touching Graph Recognition with fixed Seeds and Embedding (UDTSE) problem is also NP-hard even for paths.\chapter{Decision Problems for Hinged Polygons and Disks}\label{chapter:logicEngine}
+% In Chapter 4 we concern ourself with the scenario in which a seed assignment is required to be respected. In Section 4.1 we strengthen the result of Atienza et al. [AdCC+12] by showing that the Disk Touching Graph Recognition with fixed Seeds (DTS) prob- lem is NP-hard even for trees. In Section 4.2 we combine this scenario with assigning fixed radii, more specifically uniform radii. We show that the Unit Disk Touching Graph Recognition with fixed Seeds (UDTS) problem is NP-hard, even for paths, implying that the Unit Disk Touching Graph Recognition with fixed Seeds and Embedding (UDTSE) problem is also NP-hard even for paths.
+It also improves the Breu and Kirkpatrick result on Disk Touching Graph Recognition problem \cite{klemzthesis,BK98}.\chapter{Decision Problems for Hinged Polygons and Disks}\label{chapter:logicEngine}
 \section{The Logic Engine}
 %explain what is the connection between the title of the chapter and the technical details of the chapter.  
 %expand a bit about the gadget and how it is a decision problem for Hinged Polygons and Disks.
@@ -3109,6 +3108,7 @@ For $i \in \bbN$, the construction of the snowflake tree, $S_i$, is as follows:
 		\item	The number of vertices that lie on a path attached to the $j^\text{th}$ vertex of $p_k$ is $i-j$.
 	\end{itemize}
 \end{itemize}
+
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics{graphics/snowflakeOutline5LayerSmall.pdf}
@@ -3202,7 +3202,7 @@ For any realized perturbed snowflake $S_i$, the angular value of $\alpha_k$ and 
 \end{lem}
 
 \item \textbf{Modification of disk placement along corresponding to the $p_{k,j}^\text{th}$ vertex of $S_i$.}  
-For the $\jth$ disk along the $\kth$ path, perturbation can displace the postion of the disk on the plane and the angular relationship of the neighboring disks (see Figure \ref{fig:PerturbedVertebrae.pdf} for example).  
+For the $\jth$ disk along the $\kth$ path, perturbation can displace the postion of the disk on the plane and the angular relationship of the neighboring disks (see Figure \ref{fig:PerturbedVertebrae.pdf} for example). 
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -3211,9 +3211,20 @@ For the $\jth$ disk along the $\kth$ path, perturbation can displace the postion
 \end{center}
 \end{minipage}
 
-In Figure \ref{fig:PerturbedVertebrae.pdf}, we have four an arrangement of disks on the snowflake, off the spine and away from the central disk.  
+In this case we will show that the distances between the centers of neighboring disks are small relatively to canonical position of a perfect snowflake, i.e.
+\begin{lem}\label{lem:disksOfPathways}
+For any realized perturbed snowflake $S_i$, the distance between disks $D_{k,j}$, $D_{k+1,j}$, $D_{k+1,j+1}$, and $D_{k,j+1}$ are relatively small with respect to the relative distance in a perfect snowflake where $k = 1$, $\dots$, $6$ and $j = 2$, $\dots$, $i$.
+\end{lem}
 \end{enumerate} 
 
+We will show the proofs of Lemmas \ref{lem:s1Small} through \ref{lem:disksOfPathways} later on.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.66\columnwidth]{graphics/ch4Paralellogram.pdf}
+\captionof{figure}{}\label{fig:ch4Paralellogram.pdf}
+\end{center}
+\end{minipage}
 % In Figure \ref{fig:modifiedContactGraph.pdf}, we have a realization of disk arrangement from a perturbed snowflake.
 % In a disk arrangement of a perfect snowflake, the disks around the central disk contact the adjacent disks.
 % The disk arrangement from the perturbed snowflake does not have this quality.  
@@ -3236,41 +3247,41 @@ In Figure \ref{fig:PerturbedVertebrae.pdf}, we have four an arrangement of disks
 
 
 
-\begin{lem}\label{lem:cg-1}
-Given any realization of a perturbed snowflake of 7 weighted vertices, with the central vertex $v_0$ weighted $\frac{1}{2} + \gamma$ and the others weighted $\frac{1}{2}$, the total additional distance between all vertices is $6 \epsilon(\gamma)$ compared to a perfect snowflake of 7 unit weight vertices.
-\end{lem}
-\begin{proof}
-Consider a canonical disk arrangement of a perturbed snowflake of 7 weighted vertices (see Figure \ref{fig:modifiedContactGraph.pdf}).
-The side length of the sides formed between the center of the central disk and two adjacent disks around the central disk is $1 + \gamma$.  
-Let the distance between the two adjacent disks be $1 + \epsilon(\gamma)$.
-There are a total of $6 \epsilon(\gamma)$ between adjacent centers of disks. 
-The total perimeter of the hexagon formed about the centers of the disks in contact with the central disk is $6 + 6\epsilon(\gamma)$. 
-Note that 1) the total perimeter of the hexagon formed on a perfect snowflake of 7 weighted vertices is 6 and 2) the canonical disk arrangement can be transformed to any other disk arrangement corresponding to the perturbed snowflake of 7 weighted vertices by pushing the the ring of disks around the central disk together such that all adjacent disks are in contact with each other with the exception of the disks at the end.
-\end{proof}
+% \begin{lem}\label{lem:cg-1}
+% Given any realization of a perturbed snowflake of 7 weighted vertices, with the central vertex $v_0$ weighted $\frac{1}{2} + \gamma$ and the others weighted $\frac{1}{2}$, the total additional distance between all vertices is $6 \epsilon(\gamma)$ compared to a perfect snowflake of 7 unit weight vertices.
+% \end{lem}
+% \begin{proof}
+% Consider a canonical disk arrangement of a perturbed snowflake of 7 weighted vertices (see Figure \ref{fig:modifiedContactGraph.pdf}).
+% The side length of the sides formed between the center of the central disk and two adjacent disks around the central disk is $1 + \gamma$.  
+% Let the distance between the two adjacent disks be $1 + \epsilon(\gamma)$.
+% There are a total of $6 \epsilon(\gamma)$ between adjacent centers of disks. 
+% The total perimeter of the hexagon formed about the centers of the disks in contact with the central disk is $6 + 6\epsilon(\gamma)$. 
+% Note that 1) the total perimeter of the hexagon formed on a perfect snowflake of 7 weighted vertices is 6 and 2) the canonical disk arrangement can be transformed to any other disk arrangement corresponding to the perturbed snowflake of 7 weighted vertices by pushing the the ring of disks around the central disk together such that all adjacent disks are in contact with each other with the exception of the disks at the end.
+% \end{proof}
 
- \section{On the Decidability of Problem \ref{problem:UnorderedContactGraph}}
-\begin{proof} 
-Consider a $k \times (\sqrt{3}k)$ rectangle section of a triangular lattice, and place disks of radius 1 at each grid point as in Fig. ?????. 
-The contact graph of these disks contains 2-cycles. 
-Consider the spanning tree $T$ of the contact graph indicated in Fig. ????. 
-The tree $T$ decomposes into paths of collinear edges: $T$ contains two paths along the two main diagonals, each containing $2k - 1$ vertices; all other paths have an endpoint on a main diagonal. 
- We now modify the disk arrangement to ensure that its contact graph is $T$. 
- The disks along the main diagonal do not change. 
- We reduce the radii of all other disks by a factor of $1 - k^{-3}$ (as a result, they lose contact with other disks), and then successively translate them parallel in the direction of the shortest path in $T$ to the main diagonal until the contact with the adjacent disk is reestablished. 
- The Hausdorff distance between the union of these disks and the initial $k \times (\sqrt{3}k)$ rectangle is clearly less than 1.
- However, the contact tree $T$ with these radii no longer has a unique realization (small perturbations are possible). 
- To show stability, we argue by induction on the hop distance from the central disk. 
- There are $O(i)$ disks at i hops from the central disk, most one which have radius $(1-k^{-3}) \frac{1}{2}$.
- Since all radii are 1 or $(1-k^{-3}) \frac{1}{2}$,the six neighbors of the central disk can differ from the regular hexagon by at most $O(k )$. 
- Similarly, the disks at $i$ hops from the center be off from the triangular grid pattern by $O(i2^{k-3})$, for $i = 1,2,\dots,k$.
+%  \section{On the Decidability of Problem \ref{problem:UnorderedContactGraph}}
+% \begin{proof} 
+% Consider a $k \times (\sqrt{3}k)$ rectangle section of a triangular lattice, and place disks of radius 1 at each grid point as in Fig. ?????. 
+% The contact graph of these disks contains 2-cycles. 
+% Consider the spanning tree $T$ of the contact graph indicated in Fig. ????. 
+% The tree $T$ decomposes into paths of collinear edges: $T$ contains two paths along the two main diagonals, each containing $2k - 1$ vertices; all other paths have an endpoint on a main diagonal. 
+%  We now modify the disk arrangement to ensure that its contact graph is $T$. 
+%  The disks along the main diagonal do not change. 
+%  We reduce the radii of all other disks by a factor of $1 - k^{-3}$ (as a result, they lose contact with other disks), and then successively translate them parallel in the direction of the shortest path in $T$ to the main diagonal until the contact with the adjacent disk is reestablished. 
+%  The Hausdorff distance between the union of these disks and the initial $k \times (\sqrt{3}k)$ rectangle is clearly less than 1.
+%  However, the contact tree $T$ with these radii no longer has a unique realization (small perturbations are possible). 
+%  To show stability, we argue by induction on the hop distance from the central disk. 
+%  There are $O(i)$ disks at i hops from the central disk, most one which have radius $(1-k^{-3}) \frac{1}{2}$.
+%  Since all radii are 1 or $(1-k^{-3}) \frac{1}{2}$,the six neighbors of the central disk can differ from the regular hexagon by at most $O(k )$. 
+%  Similarly, the disks at $i$ hops from the center be off from the triangular grid pattern by $O(i2^{k-3})$, for $i = 1,2,\dots,k$.
 
- \begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.66\columnwidth]{graphics/ch4Paralellogram.pdf}
-\captionof{figure}{}\label{fig:ch4Paralellogram.pdf}
-\end{center}
-\end{minipage}
-\end{proof}
+%  \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.66\columnwidth]{graphics/ch4Paralellogram.pdf}
+% \captionof{figure}{}\label{fig:ch4Paralellogram.pdf}
+% \end{center}
+% \end{minipage}
+% \end{proof}
 
 
 % Recall that problem (\ref{problem:UnorderedTree}) states: given a positive weighted tree, $T$, is $T$ the contact graph of some disk arrangement where the radii are equal to the vertex weights?  

@@ -35,14 +35,13 @@
 
  A \textit{disk arrangement} is a set of interior disjoint disks, $D$.  
  If for any pair of disks in $D$ intersect at a boundary point, they are said to be in contact (kissing).
-\begin{figure}[!hbtp]
-\begin{center}
+
+\begin{minipage}{\linewidth}
 \includegraphics[scale=1]{graphics/diskPackingTheoremExample.pdf}
-\end{center} 
-\caption{This example represents a disk arrangement and its contact graph.}
-%Figure shows a 5-cycle with a unique realization of a disk arrangement.
+\captionof{figure}{This example represents a disk arrangement and its contact graph.}
 \label{fig:DiskArrangement-1}
-\end{figure}
+\end{minipage}
+
 A \textit{contact graph} $G=(V,E)$ corresponding to a given disk arrangement where there is a bijection $b_V: V \mapsto D$ and a bijection that maps an edge $e_{i,j} \in E$ to an interior disjoint pair of disks $d_i$, $d_j \in D$ (see Figure \ref{fig:DiskArrangement-1}).
 Given a disk arrangement, the contact graph can be thought of as a linkage because the distance between two kissing disk equal the sum of radii.  
 However if the two disks don't kiss, the distance between their centers is strictly greater than the sum of their radii.
@@ -215,14 +214,15 @@ Similarly, The possible position of tangent line between $A_2$ and $B_2$ ranges 
 In any position, the common tangent lines between $A_1$ and $B_1$ and $A_2$ and $B_2$ intersect.
 If $\frac{1}{\epsilon}$ is sufficiently large, then the disks $D_1$ and $D_2$ also intersect.
 This contradicts that there is a realization.
-\begin{minipage}
-\begin{center}
+
+\begin{minipage}{\linewidth}\begin{center}
 \includegraphics[width=.4\columnwidth]{graphics/orderedPlaneIntersection.pdf}
-\end{center} 
-\caption{figure}{This example represents a disk arrangement and its contact graph.}
+\end{center}
+\captionof{figure}{This example represents a disk arrangement and its contact graph.}
 %Figure shows a 5-cycle with a unique realization of a disk arrangement.
 \label{fig:DiskArrangement-4}
 \end{minipage}
+
 Figure \ref{fig:circlePacking-3} shows how an ordered contact graph may not be realizable.  
 On the left, it shows a limitation on the weights of the disks that are in contact with disks A and B. 
 On the right, the figure shows the order where A and B are on opposing ends of the ring of disks and can allow of arbitrary size of wieghted disks in contact with A and B.

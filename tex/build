@@ -1,7 +1,7 @@
 #/usr/bin/bash
 pdflatex --output-directory ../pdf Thesis.tex
 cd ../pdf
-bash buildBibli
+bash buildBiblio
 cd ../tex
 pdflatex --output-directory ../pdf Thesis.tex
 pdflatex --output-directory ../pdf Thesis.tex
