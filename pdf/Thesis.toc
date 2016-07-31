@@ -43,4 +43,8 @@
 \contentsline {section}{\numberline {4.2}Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem (PRUDTGRP)}{49}
 \contentsline {section}{\numberline {4.3}Hausdorff Distance}{51}
 \contentsline {paragraph}{$\epsilon $-approximation}{51}
+\contentsline {section}{\numberline {4.4}Proofs of Lemmas \ref {lem:s1Small} through \ref {lem:disksOfPathways}}{51}
+\contentsline {subsection}{\numberline {4.4.1}Proof of Lemma \ref {lem:s1Small}}{51}
+\contentsline {subsection}{\numberline {4.4.2}Proof of Lemma \ref {lem:angularArrangement}}{52}
+\contentsline {subsection}{\numberline {4.4.3}Proof of Lemma \ref {lem:disksOfPathways}}{52}
 \contentsfinish 

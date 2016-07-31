@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1845,20 +1845,9 @@ Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 55.
 
 (pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
  [50 <./graphics/modifiedContactGraph.pdf> <./graphics/PerturbedSpine.pdf> <./g
-raphics/PerturbedVertebrae.pdf>]
-<graphics/ch4Paralellogram.pdf, id=866, 707.443pt x 170.52708pt>
-File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
-
-<use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 70.
-(pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 68--92
-[]$[]$ 
- []
-
-) (./ch4/Hausdorff.tex
-<graphics/HausdorffDistanceExample1.pdf, id=867, 291.58937pt x 208.65755pt>
+raphics/PerturbedVertebrae.pdf>])
+(./ch4/Hausdorff.tex
+<graphics/HausdorffDistanceExample1.pdf, id=866, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
@@ -1870,14 +1859,25 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
 []$[]$ 
  []
 
-)) (../pdf/Thesis.bbl [51 <./graphics/ch4Paralellogram.pdf> <./graphics/Hausdor
-ffDistanceExample1.pdf>]
+) (./ch4/proofs.tex [51 <./graphics/HausdorffDistanceExample1.pdf>]
+<graphics/ch4Paralellogram.pdf, id=878, 707.443pt x 170.52708pt>
+File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
+
+<use graphics/ch4Paralellogram.pdf>
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 51.
+(pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 49--55
+[]$[]$ 
+ []
+
+[52])) (../pdf/Thesis.bbl [53 <./graphics/ch4Paralellogram.pdf>]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[52
+[54
 
 ] (../pdf/Thesis.aux)
 
@@ -1888,8 +1888,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18059 strings out of 493089
- 335126 string characters out of 6134841
+ 18062 strings out of 493089
+ 335162 string characters out of 6134841
  504597 words of memory out of 5000000
  20941 multiletter control sequences out of 15000+600000
  68796 words of font info for 118 fonts, out of 8000000 for 9000
@@ -1921,10 +1921,10 @@ symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (56 pages, 718917 bytes).
+Output written on ../pdf/Thesis.pdf (58 pages, 723943 bytes).
 PDF statistics:
- 946 PDF objects out of 1000 (max. 8388607)
- 648 compressed objects within 7 object streams
+ 952 PDF objects out of 1000 (max. 8388607)
+ 652 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

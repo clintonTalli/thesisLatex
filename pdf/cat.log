@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1838,34 +1838,35 @@ Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 320
 (pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
  [50 <./graphics/modifiedContactGraph.pdf> <./graphics/PerturbedSpine.pdf> <./g
 raphics/PerturbedVertebrae.pdf>]
-<graphics/ch4Paralellogram.pdf, id=866, 707.443pt x 170.52708pt>
-File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
-
-<use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3224.
-
-(pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3222--3246
-[]$[]$ 
- []
-
-<graphics/HausdorffDistanceExample1.pdf, id=867, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=866, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 3386.
+ine 3381.
 (pdftex.def)             Requested size: 143.09538pt x 102.39908pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3384--3390
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3379--3385
 []$[]$ 
  []
 
+[51 <./graphics/HausdorffDistanceExample1.pdf>]
+<graphics/ch4Paralellogram.pdf, id=878, 707.443pt x 170.52708pt>
+File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
+
+<use graphics/ch4Paralellogram.pdf>
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3448.
+
+(pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3446--3452
+[]$[]$ 
+ []
+
+[52]
 No file cat.bbl.
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[51 <./graphics/ch4Paralellogram.pdf> <./graphics/HausdorffDistanceExample1.pdf
->] (../pdf/cat.aux)
+[53 <./graphics/ch4Paralellogram.pdf>] (../pdf/cat.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1907,10 +1908,10 @@ symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (55 pages, 718675 bytes).
+Output written on ../pdf/cat.pdf (57 pages, 723717 bytes).
 PDF statistics:
- 943 PDF objects out of 1000 (max. 8388607)
- 646 compressed objects within 7 object streams
+ 949 PDF objects out of 1000 (max. 8388607)
+ 650 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  353 words of extra memory for PDF output out of 10000 (max. 10000000)
 
