@@ -3,6 +3,14 @@ We now prove the Lemmas \ref{lem:s1Small} through \ref{lem:disksOfPathways}.
 \subsection{Proof of Lemma \ref{lem:s1Small}}
 \begin{proof}
 Recall that we are to show that for any realized perturbed snowflake $S_i$, the gaps created in subset $S_1 \subset S_i$ are small.  
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.33\columnwidth]{graphics/modifiedContactGraph.pdf}
+\captionof{figure}{A canonical disk arrangement from a perturbed snowflake with 6 unit disks around a central disk with radius $\frac{1}{2} + \gamma$.}\label{fig:modifiedContactGraph.pdf}
+\end{center}
+\end{minipage}
+
 One way to do this is to demonstration that the sum of gaps for any realization of a contact graph of a perturbed snowflake $S_1$ is small. 
 Denote the vertices around $v_0$ as $v_1$ through $v_6$ in a clockwise pattern about $v_0$. 
 Without loss of generality, given a realization denote $\epsilon_{k, k+1} (\gamma)\geq 0$ as the gap created between adjacent disks corresponding to $v_1$ thourgh $v_6$.
@@ -31,8 +39,20 @@ Thus the perturbation about $S_1$ in and confiugration is bounded and small.
 \subsection{Proof of Lemma \ref{lem:angularArrangement}}
 \begin{proof}
 Recall that we are to show that for any realized perturbed snowflake $S_i$, the angular value of $\alpha_k$ and $\beta_k$ are small.  
-We prove this with induction.  
-First consider the changes the angles $\alpha_1$, $\beta_1$, $\alpha_2$, and $\beta_2$.  
+In canoncical position, the angle between $p_{k,j}^+$ and $p_{k,j}^-$ is $\frac{\pi}{3}$.  
+In a non-canonical position, we define the change in angle to be $f(\epsilon)$.  
+About a 
+We prove this with induction. 
+
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.66\columnwidth]{graphics/Vertebrae.pdf}
+\captionof{figure}{}\label{fig:Vertebrae.pdf}
+\end{center}
+\end{minipage}
+
+% First consider the changes the angles $\alpha_1$, $\beta_1$, $\alpha_2$, and $\beta_2$.  
 $$
 \begin{array}{rcl}
 \alpha_i +\beta_i &\leq& 120 + f(\epsilon)\\

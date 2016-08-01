@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  30 JUL 2016 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  31 JUL 2016 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1803,67 +1803,83 @@ File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
-ine 3149.
+ine 3173.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
 
 
 LaTeX Warning: Reference `fig:modifiedContactGraph' on page 49 undefined on inp
-ut line 3169.
+ut line 3190.
 
-<graphics/modifiedContactGraph.pdf, id=818, 217.35605pt x 187.2074pt>
-File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
-
-<use graphics/modifiedContactGraph.pdf>
-Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 3
-173.
-(pdftex.def)             Requested size: 134.84532pt x 116.14737pt.
- [49 <./graphics/hexagonOutline5LayerSmall.pdf>] <graphics/PerturbedSpine.pdf, 
-id=825, 226.24524pt x 176.91295pt>
+[49 <./graphics/hexagonOutline5LayerSmall.pdf>]
+<graphics/PerturbedSpine.pdf, id=824, 226.24524pt x 176.91295pt>
 File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedSpine.pdf>
-Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 3194.
+Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 3208.
 (pdftex.def)             Requested size: 134.84532pt x 105.44672pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3204.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3218.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3204.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3218.
 
-<graphics/PerturbedVertebrae.pdf, id=826, 239.34016pt x 179.00174pt>
+<graphics/PerturbedVertebrae.pdf, id=825, 239.34016pt x 179.00174pt>
 File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedVertebrae.pdf>
-Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 320
-9.
+Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 322
+3.
 (pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
- [50 <./graphics/modifiedContactGraph.pdf> <./graphics/PerturbedSpine.pdf> <./g
-raphics/PerturbedVertebrae.pdf>]
-<graphics/HausdorffDistanceExample1.pdf, id=866, 291.58937pt x 208.65755pt>
+
+<graphics/HausdorffDistanceExample1.pdf, id=826, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 3381.
+ine 3395.
 (pdftex.def)             Requested size: 143.09538pt x 102.39908pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3379--3385
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3393--3399
 []$[]$ 
  []
 
-[51 <./graphics/HausdorffDistanceExample1.pdf>]
-<graphics/ch4Paralellogram.pdf, id=878, 707.443pt x 170.52708pt>
+[50 <./graphics/PerturbedSpine.pdf> <./graphics/PerturbedVertebrae.pdf>]
+<graphics/modifiedContactGraph.pdf, id=848, 217.35605pt x 187.2074pt>
+File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
+
+<use graphics/modifiedContactGraph.pdf>
+Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 3
+424.
+(pdftex.def)             Requested size: 143.09538pt x 123.2516pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3422--3428
+[]$[]$ 
+ []
+
+[51 <./graphics/HausdorffDistanceExample1.pdf> <./graphics/modifiedContactGraph
+.pdf>] <graphics/Vertebrae.pdf, id=878, 161.0015pt x 64.6415pt>
+File: graphics/Vertebrae.pdf Graphic file (type pdf)
+
+<use graphics/Vertebrae.pdf>
+Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3465.
+(pdftex.def)             Requested size: 286.19078pt x 114.90462pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3463--3469
+[]$[]$ 
+ []
+
+[52 <./graphics/Vertebrae.pdf>]
+<graphics/ch4Paralellogram.pdf, id=894, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3448.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3486.
 
 (pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3446--3452
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3484--3490
 []$[]$ 
  []
 
-[52]
 No file cat.bbl.
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 [53 <./graphics/ch4Paralellogram.pdf>] (../pdf/cat.aux)
@@ -1875,10 +1891,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17965 strings out of 493089
- 333315 string characters out of 6134841
+ 17971 strings out of 493089
+ 333454 string characters out of 6134841
  504597 words of memory out of 5000000
- 20941 multiletter control sequences out of 15000+600000
+ 20946 multiletter control sequences out of 15000+600000
  68796 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1096b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1908,10 +1924,10 @@ symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (57 pages, 723717 bytes).
+Output written on ../pdf/cat.pdf (57 pages, 726448 bytes).
 PDF statistics:
- 949 PDF objects out of 1000 (max. 8388607)
- 650 compressed objects within 7 object streams
+ 962 PDF objects out of 1000 (max. 8388607)
+ 660 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 358 words of extra memory for PDF output out of 10000 (max. 10000000)
 
