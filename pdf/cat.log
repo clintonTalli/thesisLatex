@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  31 JUL 2016 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  1 AUG 2016 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -900,13 +900,6 @@ Package pdftex.def Info: graphics/kuratowskiExamples.pdf used on input line 319
 .
 (pdftex.def)             Requested size: 312.76372pt x 116.54512pt.
 
-
-LaTeX Warning: Citation `kuratowski1930probleme' on page 2 undefined on input l
-ine 324.
-
-
-LaTeX Warning: Citation `BET+99' on page 2 undefined on input line 328.
-
 <graphics/combinatorialEmbedding.pdf, id=37, 233.88379pt x 93.10785pt>
 File: graphics/combinatorialEmbedding.pdf Graphic file (type pdf)
 
@@ -1041,18 +1034,6 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 688--695
 []$[]$ 
  []
 
-
-LaTeX Warning: Citation `aigner2010hilbert' on page 6 undefined on input line 7
-06.
-
-
-LaTeX Warning: Citation `10.23073621846' on page 6 undefined on input line 707.
-
-
-
-LaTeX Warning: Citation `abbott2012hinged' on page 6 undefined on input line 71
-3.
-
 [6 <./graphics/Problem1.pdf> <./graphics/collidingHingedPolygons.pdf> <./graphi
 cs/orderedFaces.pdf>]
 <graphics/HaberdasherProblem.pdf, id=142, 265.8201pt x 132.09651pt>
@@ -1087,15 +1068,6 @@ Package pdftex.def Info: graphics/HingedHaberdasher.pdf used on input line 746.
 
 (pdftex.def)             Requested size: 433.62pt x 107.87733pt.
 
-
-LaTeX Warning: Citation `abbott2012hinged' on page 7 undefined on input line 74
-8.
-
-
-LaTeX Warning: Citation `abbott2012hinged' on page 7 undefined on input line 74
-8.
-
-
 Overfull \hbox (15.0pt too wide) in paragraph at lines 744--751
 []$[]$ 
  []
@@ -1113,10 +1085,6 @@ ine 861.
 Overfull \hbox (15.0pt too wide) in paragraph at lines 860--865
 []$[]$ 
  []
-
-
-LaTeX Warning: Citation `koebe1936kontaktprobleme' on page 8 undefined on input
- line 872.
 
 
 LaTeX Warning: Reference `figure:starweel' on page 8 undefined on input line 91
@@ -1259,12 +1227,6 @@ ne 1047.
 
 [10 <./graphics/OrderedDiskArrangementExample1.pdf> <./graphics/OrderedDiskArra
 ngementExample2.pdf> <./graphics/orderedPlaneIntersection.pdf>]
-
-LaTeX Warning: Citation `CDR03' on page 11 undefined on input line 1197.
-
-
-LaTeX Warning: Citation `Str05' on page 11 undefined on input line 1197.
-
 <graphics/twoEmbeddingsOfSameLinkage.pdf, id=265, 339.39998pt x 169.65584pt>
 File: graphics/twoEmbeddingsOfSameLinkage.pdf Graphic file (type pdf)
 
@@ -1281,28 +1243,7 @@ Package pdftex.def Info: graphics/DiskPackingReconfiguration.pdf used on input
 line 1251.
 (pdftex.def)             Requested size: 241.98344pt x 151.60701pt.
  [12 <./graphics/twoEmbeddingsOfSameLinkage.pdf> <./graphics/DiskPackingReconfi
-guration.pdf>] [13]
-
-LaTeX Warning: Citation `rivest1978method' on page 14 undefined on input line 1
-597.
-
-
-LaTeX Warning: Citation `jonsson2003public' on page 14 undefined on input line 
-1616.
-
-[14]
-
-LaTeX Warning: Citation `lenstra1993number' on page 15 undefined on input line 
-1630.
-
-
-LaTeX Warning: Citation `menezes1996handbook' on page 15 undefined on input lin
-e 1634.
-
-
-LaTeX Warning: Citation `skiena2009algorithm' on page 15 undefined on input lin
-e 1652.
-
+guration.pdf>] [13] [14]
 <graphics/fig-assoc-hex.pdf, id=289, 328.38896pt x 99.16548pt>
 File: graphics/fig-assoc-hex.pdf Graphic file (type pdf)
 
@@ -1310,51 +1251,17 @@ File: graphics/fig-assoc-hex.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/fig-assoc-hex.pdf used on input line 1669.
 (pdftex.def)             Requested size: 303.53267pt x 91.66306pt.
  [15]
-
-LaTeX Warning: Citation `lichtenstein1982planar' on page 16 undefined on input 
-line 1687.
-
-
-LaTeX Warning: Citation `karp1972reducibility' on page 16 undefined on input li
-ne 1687.
-
-
-LaTeX Warning: Citation `CDD+10' on page 16 undefined on input line 1789.
-
-
-LaTeX Warning: Citation `EW90' on page 16 undefined on input line 1789.
-
-
-LaTeX Warning: Citation `BK98' on page 16 undefined on input line 1792.
-
-
-LaTeX Warning: Citation `CDD+10' on page 16 undefined on input line 1794.
-
-
-LaTeX Warning: Citation `EW90' on page 16 undefined on input line 1794.
-
-
-LaTeX Warning: Citation `BK98' on page 16 undefined on input line 1795.
-
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 1808.
+
 
 LaTeX Warning: Reference `sec:logic' on page 16 undefined on input line 1828.
 
 
 LaTeX Warning: Reference `sec:hinge' on page 16 undefined on input line 1830.
 
-
-LaTeX Warning: Citation `klemzthesis' on page 16 undefined on input line 1841.
-
-
-LaTeX Warning: Citation `BK98' on page 16 undefined on input line 1841.
-
 [16 <./graphics/fig-assoc-hex.pdf>] [17]
 Chapter 2.
-
-LaTeX Warning: Citation `BC87' on page 18 undefined on input line 1845.
-
 
 <graphics/LogicEngineFrameFigure1Scaled.pdf, id=308, 233.38191pt x 282.96716pt>
 File: graphics/LogicEngineFrameFigure1Scaled.pdf Graphic file (type pdf)
@@ -1433,10 +1340,6 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 21 undefined on
  input line 2003.
 
-
-LaTeX Warning: Citation `NAE3SATisNPhard' on page 21 undefined on input line 20
-05.
-
 [21] [22 <./graphics/LogicEngineFrameFigure5Scaled.pdf>]
 <graphics/HingedLogicEngineSmall.pdf, id=372, 296.04602pt x 193.789pt>
 File: graphics/HingedLogicEngineSmall.pdf Graphic file (type pdf)
@@ -1475,14 +1378,6 @@ input line 2078.
 (pdftex.def)             Requested size: 428.06822pt x 207.11928pt.
  [24 <./graphics/HingedLogicEngineSmallEnumerated.pdf>]
 Chapter 3.
-
-LaTeX Warning: Citation `storer1984minimal' on page 25 undefined on input line 
-2127.
-
-
-LaTeX Warning: Citation `tamassia1987efficient' on page 25 undefined on input l
-ine 2127.
-
 [25
 
 ] <graphics/VariablesExample.pdf, id=402, 329.6315pt x 42.1294pt>
@@ -1772,20 +1667,15 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 2826--2832
  []
 
 [44 <./graphics/maximalHorizontalDisplacement.pdf> <./graphics/deltaAlphaHorizo
-ntalDisplacement.pdf>] [45]
-
-LaTeX Warning: Citation `lichtenstein1982planar' on page 46 undefined on input 
-line 3077.
-
-[46]
+ntalDisplacement.pdf>] [45] [46]
 Chapter 4.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 3104
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 3106
 .
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3104.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3106.
 
 
 <graphics/snowflakeOutline5LayerSmall.pdf, id=807, 189.76897pt x 166.8333pt>
@@ -1793,7 +1683,7 @@ File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
- line 3114.
+ line 3116.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
  [47
 
@@ -1803,31 +1693,31 @@ File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
-ine 3173.
+ine 3175.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
 
 
 LaTeX Warning: Reference `fig:modifiedContactGraph' on page 49 undefined on inp
-ut line 3190.
+ut line 3192.
 
 [49 <./graphics/hexagonOutline5LayerSmall.pdf>]
 <graphics/PerturbedSpine.pdf, id=824, 226.24524pt x 176.91295pt>
 File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedSpine.pdf>
-Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 3208.
+Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 3210.
 (pdftex.def)             Requested size: 134.84532pt x 105.44672pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3218.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3220.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3218.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3220.
 
 <graphics/PerturbedVertebrae.pdf, id=825, 239.34016pt x 179.00174pt>
 File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedVertebrae.pdf>
 Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 322
-3.
+5.
 (pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
 
 <graphics/HausdorffDistanceExample1.pdf, id=826, 291.58937pt x 208.65755pt>
@@ -1835,10 +1725,10 @@ File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 3395.
+ine 3397.
 (pdftex.def)             Requested size: 143.09538pt x 102.39908pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3393--3399
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3395--3401
 []$[]$ 
  []
 
@@ -1848,10 +1738,10 @@ File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
 Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 3
-424.
+426.
 (pdftex.def)             Requested size: 143.09538pt x 123.2516pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3422--3428
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3424--3430
 []$[]$ 
  []
 
@@ -1860,10 +1750,10 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3422--3428
 File: graphics/Vertebrae.pdf Graphic file (type pdf)
 
 <use graphics/Vertebrae.pdf>
-Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3465.
+Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3467.
 (pdftex.def)             Requested size: 286.19078pt x 114.90462pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3463--3469
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3465--3471
 []$[]$ 
  []
 
@@ -1872,17 +1762,19 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3463--3469
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3486.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3488.
 
 (pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3484--3490
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3486--3492
 []$[]$ 
  []
 
-No file cat.bbl.
+(../pdf/cat.bbl [53 <./graphics/ch4Paralellogram.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[53 <./graphics/ch4Paralellogram.pdf>] (../pdf/cat.aux)
+[54
+
+] (../pdf/cat.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1891,8 +1783,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 17971 strings out of 493089
- 333454 string characters out of 6134841
+ 17973 strings out of 493089
+ 333482 string characters out of 6134841
  504597 words of memory out of 5000000
  20946 multiletter control sequences out of 15000+600000
  68796 words of font info for 118 fonts, out of 8000000 for 9000
@@ -1924,10 +1816,10 @@ symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (57 pages, 726448 bytes).
+Output written on ../pdf/cat.pdf (58 pages, 730094 bytes).
 PDF statistics:
- 962 PDF objects out of 1000 (max. 8388607)
- 660 compressed objects within 7 object streams
+ 965 PDF objects out of 1000 (max. 8388607)
+ 662 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  358 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  31 JUL 2016 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  1 AUG 2016 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,9 +833,6 @@ Package caption Info: End \AtBeginDocument code.
 (./ch2/LogicEngineV3.tex
 Chapter 1.
 
-LaTeX Warning: Citation `BC87' on page 1 undefined on input line 5.
-
-
 <graphics/LogicEngineFrameFigure1Scaled.pdf, id=20, 233.38191pt x 282.96716pt>
 File: graphics/LogicEngineFrameFigure1Scaled.pdf Graphic file (type pdf)
 
@@ -915,10 +912,6 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 4 undefined on 
 input line 163.
 
-
-LaTeX Warning: Citation `NAE3SATisNPhard' on page 4 undefined on input line 165
-.
-
 ) (./ch2/HingedPolygonsV3.tex [4] [5 <./graphics/LogicEngineFrameFigure5Scaled.
 pdf>] <graphics/HingedLogicEngineSmall.pdf, id=108, 296.04602pt x 193.789pt>
 File: graphics/HingedLogicEngineSmall.pdf Graphic file (type pdf)
@@ -955,19 +948,21 @@ File: graphics/HingedLogicEngineSmallEnumerated.pdf Graphic file (type pdf)
 Package pdftex.def Info: graphics/HingedLogicEngineSmallEnumerated.pdf used on 
 input line 73.
 (pdftex.def)             Requested size: 428.06822pt x 207.11928pt.
-))
-No file Ch2.bbl.
+)) (../pdf/Ch2.bbl
+[7 <./graphics/HingedLogicEngineSmallEnumerated.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[7 <./graphics/HingedLogicEngineSmallEnumerated.pdf>] (../pdf/Ch2.aux)
+[8
+
+] (../pdf/Ch2.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17432 strings out of 493089
- 318494 string characters out of 6134841
+ 17436 strings out of 493089
+ 318545 string characters out of 6134841
  500597 words of memory out of 5000000
- 20490 multiletter control sequences out of 15000+600000
+ 20492 multiletter control sequences out of 15000+600000
  30536 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,469b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -987,10 +982,10 @@ ist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ti
 mes/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Ch2.pdf (11 pages, 174091 bytes).
+Output written on ../pdf/Ch2.pdf (12 pages, 175296 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 178 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

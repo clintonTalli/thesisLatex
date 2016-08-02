@@ -16,11 +16,6 @@ G.~Di Battista, P.~Eades, R.~Tamassia, and I.~G. Tollis.
 \newblock {\em {Graph Drawing: Algorithms for the Visualization of Graphs}}.
 \newblock Prentice Hall, 1999.
 
-\bibitem{BC87}
-Sandeep~N Bhatt and Stavros~S Cosmadakis.
-\newblock The complexity of minimizing wire lengths in vlsi layouts.
-\newblock {\em Information Processing Letters}, 25(4):263--267, 1987.
-
 \bibitem{BK98}
 H.~Breu and D.~G. Kirkpatrick.
 \newblock {Unit disk graph recognition is NP-hard}.
@@ -41,11 +36,6 @@ R.~Connelly, E.~D. Demaine, and G.~Rote.
 P.~Eades and N.~C. Wormald.
 \newblock {Fixed edge-length graph drawing is NP-hard}.
 \newblock {\em Discrete Applied Mathematics}, 28:111--134, 1990.
-
-\bibitem{NAE3SATisNPhard}
-Michael~R Garey and David~S Johnson.
-\newblock {\em Computers and Intractibility}.
-\newblock WH Freeman and company New York, 1979.
 
 \bibitem{jonsson2003public}
 J~Jonsson and B~Kaliski.
@@ -99,21 +89,10 @@ S.S. Skiena.
 \newblock {\em {The Algorithm Design Manual}}.
 \newblock Springer, 2009.
 
-\bibitem{storer1984minimal}
-James~A Storer.
-\newblock On minimal-node-cost planar embeddings.
-\newblock {\em Networks}, 14(2):181--212, 1984.
-
 \bibitem{Str05}
 I.~Streinu.
 \newblock {Pseudo-triangulations, rigidity and motion planning}.
 \newblock {\em Discrete Comput. Geom}, 34:587--635, 2005.
-
-\bibitem{tamassia1987efficient}
-R~Tamassia and IG~Tollis.
-\newblock Efficient embedding of planar graphs in linear time.
-\newblock In {\em Proc. IEEE Int. Symp. on Circuits and Systems}, pages
-  495--498, 1987.
 
 \bibitem{10.23073621846}
 E.~C. Zeeman.

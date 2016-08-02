@@ -1,12 +1,12 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: Thesis.aux
+The top-level auxiliary file: cat.aux
 The style file: plain.bst
 Database file #1: WorkCited.bib
 Warning--empty journal in klemzthesis
 You've used 23 entries,
             2118 wiz_defined-function locations,
-            642 strings with 6946 characters,
+            642 strings with 6940 characters,
 and the built_in function-call counts, 7231 in all, are:
 = -- 706
 > -- 330

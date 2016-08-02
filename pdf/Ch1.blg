@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Ch1.aux
+The style file: plain.bst
+Database file #1: WorkCited.bib
+Warning--empty journal in klemzthesis
+You've used 19 entries,
+            2118 wiz_defined-function locations,
+            615 strings with 6418 characters,
+and the built_in function-call counts, 5897 in all, are:
+= -- 570
+> -- 284
+< -- 1
++ -- 115
+- -- 94
+* -- 401
+:= -- 1015
+add.period$ -- 56
+call.type$ -- 19
+change.case$ -- 98
+chr.to.int$ -- 0
+cite$ -- 20
+duplicate$ -- 217
+empty$ -- 463
+format.name$ -- 94
+if$ -- 1201
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 24
+newline$ -- 97
+num.names$ -- 38
+pop$ -- 115
+preamble$ -- 1
+purify$ -- 85
+quote$ -- 0
+skip$ -- 140
+stack$ -- 0
+substring$ -- 358
+swap$ -- 25
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 64
+warning$ -- 1
+while$ -- 60
+width$ -- 21
+write$ -- 200
+(There was 1 warning)

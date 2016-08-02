@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{BC87}
+Sandeep~N Bhatt and Stavros~S Cosmadakis.
+\newblock The complexity of minimizing wire lengths in vlsi layouts.
+\newblock {\em Information Processing Letters}, 25(4):263--267, 1987.
+
+\bibitem{NAE3SATisNPhard}
+Michael~R Garey and David~S Johnson.
+\newblock {\em Computers and Intractibility}.
+\newblock WH Freeman and company New York, 1979.
+
+\end{thebibliography}

@@ -7,8 +7,8 @@
 
 The UDTGRP is to determine when given an instance of a weighted graph (V,E) where each vertex has unit weight can be realized as a disk touching graph (a disk arrangement).  
 
-In this section we describe a particular family of unit weight graphs and corresponding disk arrangements called \textit{snowflakes}.
-Note that we regard snowflakes with unit weight as a weight of $\frac{1}{2}$.
+In this section we describe a particular family of unit weight graphs and corresponding disk arrangements called \textit{snowflakes}.  
+Note that we regard snowflakes with unit weight as a weight of $\frac{1}{2}$.  
 For $i \in \bbN$, the construction of the snowflake tree, $S_i$, is as follows:
 \begin{itemize}
 \item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  Each path has $i$ vertices.
@@ -26,7 +26,7 @@ For $i \in \bbN$, the construction of the snowflake tree, $S_i$, is as follows:
 \end{center}
 \end{figure}
 
-A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $\frac{1}{2}$.  
+A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $\frac{1}{2}$.   
 A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $\frac{1}{2} + \gamma$.  
 For our analysis, all realizations of any snowflake, perfect or perturbed, shall have $v_0$ fixed at origin.  
 % This is said to be the canonical position under Hausdorff distance of the snowflake tree.   
@@ -51,7 +51,7 @@ Next consider the six paths attached from origin.
 Fix each consecutive path $\frac{\pi}{3}$ radians away from the next such that the following points like on the corresponding paths: $\lr{1,0} \in p_1, \lr{\frac{1}{2} ,\frac{\sqrt{2}}{3}} \in p_2,\lr{-\frac{1}{2}\p_4,\frac{\sqrt{3}}{2}} \in p_3, \lr{-1,0} \in p4, \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}\in p_5,\lr{\frac{1}{2},-\frac{\sqrt{3}}{2}}\in p_6$.  
 For $S_i$, there are $i$ vertices on each path.  
 
-We define the six paths from origin as follows:
+We define the six paths from origin as follows:      
 \begin{eqnarray*}
 p_1 &=& \set{a\cdot\lr{1,0} = \vec{v}}{a \in \bbR^+}\\
 p_2 &=& \set{a\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}} = \vec{v}}{a \in \bbR^+}\\
@@ -65,13 +65,13 @@ We shall denote the $i^\text{th}$ vertex on the $j^\text{th}$ path as $v_{j,i}$.
 For each path defined above, the paths are defined as a set of vectors, $\vec{v} = a \cdot \vec{p}$  for some $a \in \bbR^+$ and $\vec{p} \in \bbR^2$.  
 By setting $a = 1,2,\dots, i$, we obtain points that are contained in $V$.  
 For $j = 1,3,5$ and $l = 1,..., i$, there exists two paths attached to each vertex $v_{j,l}$.  
-We borrow the term \textit{petiole} from botany to describe the two paths attached to $v_{j,l}$.
-In botany, the stalk that attaches to a stem of a plant is called a petiole; petioles usually have leaves attached to their ends.
+We borrow the term \textit{petiole} from botany to describe the two paths attached to $v_{j,l}$.  
+In botany, the stalk that attaches to a stem of a plant is called a petiole; petioles usually have leaves attached to their ends.  
 For $S_i$, each petiole attached to the $k^\text{th}$ vertex of $p_j$, there are $i-k$ vertices.  
-We will need to show that each of the $i-k$ vertices on each corresponding path are also in $V$.
+We will need to show that each of the $i-k$ vertices on each corresponding path are also in $V$.  
 
 The triangular lattice is symmetric under rotation about $v_0$ by $\frac{\pi}{3}$ radians.  
-For each vertex $v_{1,l}$ for $l=1,2,..., i-k$, we place two petioles from it; the first petiole $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these petioles $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  
+For each vertex $v_{1,l}$ for $l=1,2,\dots, i-k$, we place two petioles from it; the first petiole $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these petioles $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  
 With respect to $v_{1,l}$, one unit along $p_{1,l}^+$ is a point on the triangular lattice and similarly so on $p_{1,l}^-$.  
 Continuing the walk along these paths, unit distance-by-unit distance, we obtain the next point corresponding point on the the triangular lattice up to $i-k$ distance away from $v_{1,l}$.  
 This shows that each of the $i-k$ vertices on $p_{1,l}^-$ and $p_{1,l}^+$ are in $V$.  

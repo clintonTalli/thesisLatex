@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  31 JUL 2016 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  1 AUG 2016 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -901,13 +901,6 @@ Package pdftex.def Info: graphics/kuratowskiExamples.pdf used on input line 57.
 
 (pdftex.def)             Requested size: 312.76372pt x 116.54512pt.
 
-
-LaTeX Warning: Citation `kuratowski1930probleme' on page 2 undefined on input l
-ine 62.
-
-
-LaTeX Warning: Citation `BET+99' on page 2 undefined on input line 66.
-
 <graphics/combinatorialEmbedding.pdf, id=37, 233.88379pt x 93.10785pt>
 File: graphics/combinatorialEmbedding.pdf Graphic file (type pdf)
 
@@ -1043,17 +1036,6 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 75--82
 []$[]$ 
  []
 
-
-LaTeX Warning: Citation `aigner2010hilbert' on page 6 undefined on input line 9
-3.
-
-
-LaTeX Warning: Citation `10.23073621846' on page 6 undefined on input line 94.
-
-
-LaTeX Warning: Citation `abbott2012hinged' on page 6 undefined on input line 10
-0.
-
 [6 <./graphics/Problem1.pdf> <./graphics/collidingHingedPolygons.pdf> <./graphi
 cs/orderedFaces.pdf>]
 <graphics/HaberdasherProblem.pdf, id=142, 265.8201pt x 132.09651pt>
@@ -1088,15 +1070,6 @@ Package pdftex.def Info: graphics/HingedHaberdasher.pdf used on input line 133.
 
 (pdftex.def)             Requested size: 433.62pt x 107.87733pt.
 
-
-LaTeX Warning: Citation `abbott2012hinged' on page 7 undefined on input line 13
-5.
-
-
-LaTeX Warning: Citation `abbott2012hinged' on page 7 undefined on input line 13
-5.
-
-
 Overfull \hbox (15.0pt too wide) in paragraph at lines 131--138
 []$[]$ 
  []
@@ -1114,10 +1087,6 @@ ine 40.
 Overfull \hbox (15.0pt too wide) in paragraph at lines 39--44
 []$[]$ 
  []
-
-
-LaTeX Warning: Citation `koebe1936kontaktprobleme' on page 8 undefined on input
- line 51.
 
 
 LaTeX Warning: Reference `figure:starweel' on page 8 undefined on input line 90
@@ -1261,12 +1230,6 @@ ne 226.
 ) (./ch1/configurationspaces.tex [10 <./graphics/OrderedDiskArrangementExample1
 .pdf> <./graphics/OrderedDiskArrangementExample2.pdf> <./graphics/orderedPlaneI
 ntersection.pdf>]
-
-LaTeX Warning: Citation `CDR03' on page 11 undefined on input line 67.
-
-
-LaTeX Warning: Citation `Str05' on page 11 undefined on input line 67.
-
 <graphics/twoEmbeddingsOfSameLinkage.pdf, id=265, 339.39998pt x 169.65584pt>
 File: graphics/twoEmbeddingsOfSameLinkage.pdf Graphic file (type pdf)
 
@@ -1283,84 +1246,27 @@ Package pdftex.def Info: graphics/DiskPackingReconfiguration.pdf used on input
 line 121.
 (pdftex.def)             Requested size: 241.98344pt x 151.60701pt.
 ) (./ch1/complexity.tex [12 <./graphics/twoEmbeddingsOfSameLinkage.pdf> <./grap
-hics/DiskPackingReconfiguration.pdf>]) (./ch1/RSA.tex [13]
-
-LaTeX Warning: Citation `rivest1978method' on page 14 undefined on input line 2
-4.
-
-
-LaTeX Warning: Citation `jonsson2003public' on page 14 undefined on input line 
-43.
-
-[14]
-
-LaTeX Warning: Citation `lenstra1993number' on page 15 undefined on input line 
-57.
-
-
-LaTeX Warning: Citation `menezes1996handbook' on page 15 undefined on input lin
-e 61.
-
-) (./ch1/satisfiability.tex
-
-LaTeX Warning: Citation `skiena2009algorithm' on page 15 undefined on input lin
-e 15.
-
+hics/DiskPackingReconfiguration.pdf>]) (./ch1/RSA.tex [13] [14]) (./ch1/satisfi
+ability.tex
 <graphics/fig-assoc-hex.pdf, id=289, 328.38896pt x 99.16548pt>
 File: graphics/fig-assoc-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-assoc-hex.pdf>
 Package pdftex.def Info: graphics/fig-assoc-hex.pdf used on input line 32.
 (pdftex.def)             Requested size: 303.53267pt x 91.66306pt.
- [15]
-
-LaTeX Warning: Citation `lichtenstein1982planar' on page 16 undefined on input 
-line 50.
-
-
-LaTeX Warning: Citation `karp1972reducibility' on page 16 undefined on input li
-ne 50.
-
-) (./ch1/problemdefinition.tex
-
-LaTeX Warning: Citation `CDD+10' on page 16 undefined on input line 7.
-
-
-LaTeX Warning: Citation `EW90' on page 16 undefined on input line 7.
-
-
-LaTeX Warning: Citation `BK98' on page 16 undefined on input line 10.
-
-
-LaTeX Warning: Citation `CDD+10' on page 16 undefined on input line 12.
-
-
-LaTeX Warning: Citation `EW90' on page 16 undefined on input line 12.
-
-
-LaTeX Warning: Citation `BK98' on page 16 undefined on input line 13.
-
+ [15]) (./ch1/problemdefinition.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 26.
+
 
 LaTeX Warning: Reference `sec:logic' on page 16 undefined on input line 46.
 
 
 LaTeX Warning: Reference `sec:hinge' on page 16 undefined on input line 48.
 
-) (./ch1/RelatedWork.tex
-
-LaTeX Warning: Citation `klemzthesis' on page 16 undefined on input line 6.
-
-
-LaTeX Warning: Citation `BK98' on page 16 undefined on input line 6.
-
-)) (./ch2/chapter2.tex (./ch2/LogicEngineV3.tex [16 <./graphics/fig-assoc-hex.p
-df>] [17]
+) (./ch1/RelatedWork.tex)) (./ch2/chapter2.tex (./ch2/LogicEngineV3.tex
+[16 <./graphics/fig-assoc-hex.pdf>] [17]
 Chapter 2.
-
-LaTeX Warning: Citation `BC87' on page 18 undefined on input line 5.
-
 
 <graphics/LogicEngineFrameFigure1Scaled.pdf, id=308, 233.38191pt x 282.96716pt>
 File: graphics/LogicEngineFrameFigure1Scaled.pdf Graphic file (type pdf)
@@ -1439,10 +1345,6 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 21 undefined on
  input line 163.
 
-
-LaTeX Warning: Citation `NAE3SATisNPhard' on page 21 undefined on input line 16
-5.
-
 ) (./ch2/HingedPolygonsV3.tex [21] [22 <./graphics/LogicEngineFrameFigure5Scale
 d.pdf>] <graphics/HingedLogicEngineSmall.pdf, id=372, 296.04602pt x 193.789pt>
 File: graphics/HingedLogicEngineSmall.pdf Graphic file (type pdf)
@@ -1483,14 +1385,6 @@ input line 73.
 (./ch3v2/ch3Introduction.tex [24 <./graphics/HingedLogicEngineSmallEnumerated.p
 df>]
 Chapter 3.
-
-LaTeX Warning: Citation `storer1984minimal' on page 25 undefined on input line 
-18.
-
-
-LaTeX Warning: Citation `tamassia1987efficient' on page 25 undefined on input l
-ine 18.
-
 [25
 
 ] <graphics/VariablesExample.pdf, id=402, 329.6315pt x 42.1294pt>
@@ -1780,12 +1674,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 59--65
 
 [44 <./graphics/maximalHorizontalDisplacement.pdf> <./graphics/deltaAlphaHorizo
 ntalDisplacement.pdf>]) (./ch3v2/lemma5Conclusion.tex)
-(./ch3v2/theoremConclusion.tex [45]
-
-LaTeX Warning: Citation `lichtenstein1982planar' on page 46 undefined on input 
-line 53.
-
-)) (./ch4/chapter4.tex (./ch4/chapter4Introduction.tex [46]
+(./ch3v2/theoremConclusion.tex [45])) (./ch4/chapter4.tex
+(./ch4/chapter4Introduction.tex [46]
 Chapter 4.
 ) (./ch4/udtgrp.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 14.
@@ -1888,11 +1778,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 69--75
 []$[]$ 
  []
 
-)) (../pdf/Thesis.bbl [53 <./graphics/ch4Paralellogram.pdf>]
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)
+)) (../pdf/Thesis.bbl [53 <./graphics/ch4Paralellogram.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 [54
 
@@ -1938,7 +1824,7 @@ symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (58 pages, 726689 bytes).
+Output written on ../pdf/Thesis.pdf (58 pages, 730123 bytes).
 PDF statistics:
  965 PDF objects out of 1000 (max. 8388607)
  662 compressed objects within 7 object streams
