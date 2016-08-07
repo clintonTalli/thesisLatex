@@ -18,5 +18,5 @@
 \contentsline {subsection}{\numberline {1.6.2}RSA Cryptosystem}{14}
 \contentsline {section}{\numberline {1.7}Satisfiability}{15}
 \contentsline {section}{\numberline {1.8}Contribution}{16}
-\contentsline {section}{\numberline {1.9}Related Work and Results}{17}
+\contentsline {section}{\numberline {1.9}Related Work and Results}{16}
 \contentsfinish 

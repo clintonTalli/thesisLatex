@@ -27,18 +27,18 @@ In the case that $\omega_i > \frac{\pi}{2}$ the rotational displacement $\alpha_
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.37\columnwidth]{graphics/TheOmegaFigure.pdf}
-\captionof{figure}{The vertical displacement $\delta_\omega$ and horizontal displacement $\beta_\omega$ created from the skinny rhombus rotation $\omega$.}\label{fig:TheOmegaFigure.pdf}
+\captionof{figure}{The vertical displacement $\delta_{\omega_i}$ and horizontal displacement $\beta_{\omega_i}$ created from the skinny rhombus rotation $\omega$.}\label{fig:TheOmegaFigure.pdf}
 \end{center}
 \end{minipage}
 
-First let's consider the case when $\omega \leq \frac{\pi}{2}$.
-In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega$ of the skinny rhombus is shown. 
+First let's consider the case when $\omega_i \leq \frac{\pi}{2}$.
+In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega_i$ of the skinny rhombus is shown. 
 The maximal displacement of the $\ith$ vertical displacement is $\delta_i$; thus $\delta_{\omega_i} \leq \delta_i$.  
-The right triangle formed from $\beta_\omega$ and $\delta_\omega$ has a maximal hypotenuse length of $\sqrt{2}\delta_\omega$.  
-Because this right triangle is derived from the circular segment about the skinny rhombus' hinge point and the limitation of the maximal displacement of $\delta_\omega$, the hypotenuse has a maximal feasible distance of $\sqrt{\delta_\omega^2 + \delta_\omega^2}$.
+The right triangle formed from $\beta_{\omega_i}$ and $\delta_{\omega_i}$ has a maximal hypotenuse length of $\sqrt{2}\delta_{\omega_i}$.  
+Because this right triangle is derived from the circular segment about the skinny rhombus' hinge point and the limitation of the maximal displacement of $\delta_{\omega_i}$, the hypotenuse has a maximal feasible distance of $\sqrt{\delta_{\omega_i}^2 + \delta_{\omega_i}^2}$.
 The horizontal displacement $\beta_\omega$ is bounded as such:
 \begin{equation}\label{eqn:betaOmegaBound}
-\beta_\omega \leq \delta_\omega \leq \delta_i \leq \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}
+\beta_\omega \leq \delta_{\omega_i} \leq \delta_i \leq \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
 \end{equation}
 
 \begin{minipage}{\linewidth}
@@ -52,8 +52,8 @@ For the case that $\omega_i > \frac{\pi}{2}$, we may result in some cases where 
 We illustrate some infeasible realizations with horizontal displacement to evaluate the length of $\beta_\alpha$, the horizontal displacement with respect to the rotation of an obstacle hexagon.  
 We then continue to show that $\beta_\alpha = 0$ for all feasible realizations and conclude that the bound of horizontal displacement is infact the Inequality \ref{eqn:betaOmegaBound}. 
 
-Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) shows maximal horizontal displacement with respect to $\omega$, $\beta_\omega$.  
-The corresponding skinny rhombus in Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) is rotated to lie parallel with the corridor yielding a horizontal displacement $\beta_\omega = \sqrt{1 + \lr{100N}^{-2} }$.  
+Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) shows maximal horizontal displacement with respect to $\omega_i$, $\beta_\omega$.  
+The corresponding skinny rhombus in Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) is rotated to lie parallel with the corridor yielding a horizontal displacement $\beta_{\omega_i} = \sqrt{1 + \lr{100N}^{-2} }$.  
 Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c) adds further horizontal displacement to the obstacle hexagon $O_{i+1}$ by rotating the $O_{i+1}$ by $\alpha$.  
 
 \begin{minipage}{\linewidth}
@@ -79,15 +79,15 @@ $$
 There are no possible realizations when $\omega \geq \frac{\pi}{2}$.
 \end{lem}
 \begin{proof}
-In this case the range of $\omega$ is $\frac{\pi}{2} \leq \omega \leq \lr{\frac{4 \pi}{3} - \hat{\omega}}$ where $\hat{\omega} = \tan^{-1} \lr{\frac{1}{50N}}$ is the acute angle in the interior of the skinny rhombus.  
+In this case the range of $\omega_i$ is $\frac{\pi}{2} \leq \omega \leq \lr{\frac{4 \pi}{3} - \hat{\omega}}$ where $\hat{\omega} = \tan^{-1} \lr{\frac{1}{50N}}$ is the acute angle in the interior of the skinny rhombus.  
 The upperbound $\lr{\frac{4 \pi}{3} - \hat{\omega}}$ is the case when the skinny rhombus' side is touching its flag's upper right side.  
-When $\omega = \frac{\pi}{2}$, the height of the hinge point of the obstacle hexagon and skinny rhombus from the bottom of the corridor is $1 + \sqrt{3}$ which is less than the half length of the side of the obstacle hexagon $\frac{N}{2}$.  
+When $\omega_i = \frac{\pi}{2}$, the height of the hinge point of the obstacle hexagon and skinny rhombus from the bottom of the corridor is $1 + \sqrt{3}$ which is less than the half length of the side of the obstacle hexagon $\frac{N}{2}$.  
 Thus we have an overlap of obstacle hexagons; namely an of the obstacle hexagons shown in \ref{fig:maximalHorizontalDisplacement.pdf}(a) and the obstacle hexagon to the right of the corresponding corridor or if $\alpha$ is large enough, only the obstacle hexagon to the right of the corresponding corridor.
-When $\omega > \frac{\pi}{2}$ the height of the hinge point of the obstacle hexagon and skinny rhombus is lowered and results in overlap of obstacle hexagons; namely an of the obstacle hexagons shown in \ref{fig:maximalHorizontalDisplacement.pdf}(a) and the obstacle hexagon to the right of the corresponding corridor or if $\alpha$ is large enough, only the obstacle hexagon to the right of the corresponding corridor (for example see Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c)).
+When $\omega_i > \frac{\pi}{2}$ the height of the hinge point of the obstacle hexagon and skinny rhombus is lowered and results in overlap of obstacle hexagons; namely an of the obstacle hexagons shown in \ref{fig:maximalHorizontalDisplacement.pdf}(a) and the obstacle hexagon to the right of the corresponding corridor or if $\alpha$ is large enough, only the obstacle hexagon to the right of the corresponding corridor (for example see Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c)).
 \end{proof}
 
-By Lemma \ref{lem:Omega} we have that $\omega$ must be less than $\frac{\pi}{2}$ and thus $\beta_\alpha = 0$ and the horizontal displacement is bounded by $\beta_\omega$.    
-Earlier we've shown that $\beta_\omega$ is bounded in Inequality \ref{eqn:betaOmegaBound} and so $\beta$ is bounded by the same inequality.  
+By Lemma \ref{lem:Omega} we have that $\omega_i$ must be less than $\frac{\pi}{2}$ and thus $\beta_\alpha = 0$ and the horizontal displacement is bounded by $\beta_{\omega_i}$.    
+Earlier we've shown that $\beta_{\omega_i}$ is bounded in Inequality \ref{eqn:betaOmegaBound} and so $\beta$ is bounded by the same inequality.  
 By letting the integer $k=1$ in the equation $t(n,m)=s^k$, all inequalities for the rotational, vertical, and horizontal arguments hold.
 % The horizontal displacement $\beta_\alpha$ formed by the rotational displacement is measured from the center of the obstacle hexagon.
 % The center height of the obstacle hexagon is $\sqrt{3}N$; the 

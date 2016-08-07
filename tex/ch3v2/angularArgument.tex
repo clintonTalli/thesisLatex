@@ -32,10 +32,6 @@ The bound of $\gamma_i$ is:
 								}	
 							}\\
 &=& \tan^{-1} \lr{\frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
-%&\leq& \frac{4\cdot\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
-% &=&\frac{12\sqrt{1+ \lr{	\frac{1}{100N}	}^2}}{3\lr{5t-1}} - \lr{\frac{64 \lr{1+ \frac{1}{\lr{100N}^2}\sqrt{1+ \frac{1}{\lr{100N}^2}}  }}{3(5t-1)}}\\
-% &=&\frac{-\lr{52\sqrt{1+ \frac{1}{\lr{100N}^2}} + \frac{64 \sqrt{1+ \frac{1}{\lr{100N}^2}}}{(100N)^2} }}{3(5t-1)}\\
-% &=&\frac{-\lr{52\sqrt{1+ \frac{1}{\lr{100N}^2}} + \frac{64 \sqrt{1+ \frac{1}{\lr{100N}^2}}}{(100N)^2} }}{3(5\lr{2N^3-1}-1)}\\
 &\leq& \frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
 &\leq& \frac{\sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
 &\leq& \frac{5}{10N^3 -6}\\
@@ -43,37 +39,40 @@ The bound of $\gamma_i$ is:
 &\leq& \frac{1}{2\lr{N^3 - 1}}\\
 &\leq& \frac{1}{2 \lr{\frac{5t-1}{2}}^3 - 1}\\
 &\leq& \frac{4}{\lr{5t-1}^3-4}\\
-&\leq& \frac{4}{\lr{5s^k-1}^3-4}\\
-&\leq& \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+&\leq& \frac{4}{\lr{5s^\kappa-1}^3-4}\\
+&\leq& \frac{4}{\lr{4s^\kappa}^3}\\
+&\leq& \frac{4}{64s^{3\kappa}}\\
+&\leq& \frac{1}{16s^{3\kappa}}
 \end{array} 
 \end{equation}
-Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$.
-Thus the relative rotational difference between adjacent obstacle hexagons is
+Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$ and holds for sufficiently large $s$.
+Thus the relative rotational difference between adjacent obstacle hexagons is:
 \begin{equation}\label{eqn:angularBound}
-\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{1}{16s^{3\kappa}}\\
 \end{equation}
 The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
 The bottom most obstacle hexagon is hinged to the frame (see Figure \ref{fig:HalfSizeHexagon.pdf} for illustration). 
 This implies that $\alpha_1 = 0$ and
-$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}.$$
+$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{1}{16s^{3\kappa}}.$$
 There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
 We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{4(12s-1)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{12s-1}{16s^{3\kappa}}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
 \begin{eqnarray*}
-\alpha_i &\leq& \sum_{j=1}^i \frac{4j}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
-&\leq&\frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\sum_{j=1}^i j\\
-&\leq&\frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5} \cdot \frac{i^2+i}{2}\\
-&\leq&\frac{2(i^2+i)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
-&\leq&\frac{2(u^2+u)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
-&\leq&\frac{2(144s^2+12s)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
-&\leq&\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
+\alpha_i &\leq& \sum_{j=1}^i \frac{j}{16s^{3\kappa}}\\
+&\leq&\frac{1}{16s^{3\kappa}}\sum_{j=1}^i j\\
+&\leq&\frac{1}{16s^{3\kappa}}\cdot \frac{i^2+i}{2}\\
+&\leq&\frac{i^2+i}{32s^{3\kappa}}\\
+&\leq&\frac{u^2+u}{32s^{3\kappa}}\\
+&\leq&\frac{(12s)^2+12s}{32s^{3\kappa}}\\
+&\leq&\frac{144s^2+12s}{32s^{3\kappa}}
 \end{eqnarray*}
 For any $i$, the bound for $\alpha_i$:
 \begin{equation}\label{eqn:angularMaxBound}
-\alpha_i \leq \frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\alpha_i \leq \frac{144s^2+12s}{32s^{3\kappa}}
 \end{equation}
+
 % The sum of total displacement in a given column is bounded by:
 % $$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}= \frac{12s - 1}{2 \lr{ (c_N s)^3 - 1}}$$

@@ -1,3 +1,4 @@
+
 \paragraph{Vertical Displacement $\delta$}
 
 When an obstacle hexagon is rotated by $\alpha_i$, the height of the obstacle hexagon becomes $h \sec \alpha_i$ where $h$ is the canonical height of the obstacle hexagon (see Figure \ref{fig:hexagonNonCanonical.pdf} for reference).
@@ -36,17 +37,17 @@ Consider the first $j$ terms for the height of the column of obstacle hexagons a
 Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
 $$
 \begin{array}{rcl}
-\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}}^2\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}}^2 \cdot j\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}}^2 \cdot u\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}}^2 \cdot 12s\\
-&\leq&  \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}
+\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{144s^2+12s}{32s^{3\kappa}} }^2\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot j\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot u\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot 12s\\
+&\leq&  \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
 \end{array}
 $$
 
 Thus we finally say that the bound for $\delta_v$, where $1<v\leq j\leq u$, is small:
 \begin{equation}\label{eqn:verticalBound}
-\delta_v \leq \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}
+\delta_v \leq \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
 \end{equation}
 
 

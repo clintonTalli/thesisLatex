@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160711201316" modified="D:20160720202051"/>
+<info created="D:20160711201316" modified="D:20160806172642"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -281,7 +281,7 @@ h
 5088.96 3211.7 l
 </path>
 <text matrix="1 0 0 1 -8.53898 2.48499" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="22.664" height="9.846" depth="4.12" valign="baseline" size="large">$\frac{1}{100N}$</text>
-<text matrix="1 0 0 1 103.204 67.8355" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="11.234" height="8.305" depth="1.79" valign="baseline" size="large">$\delta_\omega$</text>
+<text matrix="1 0 0 1 99.5981 67.8542" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="14.11" height="8.301" depth="3.01" valign="baseline" size="large">$\delta_{\omega_i}$</text>
 <text transformations="translations" pos="5057.01 3061.05" stroke="black" type="label" width="5.853" height="7.704" depth="0" valign="baseline" size="large">1</text>
 <text matrix="1 0 0 1 -23.9151 3.94337" transformations="translations" pos="5068.23 3112.02" stroke="black" type="label" width="53.216" height="11.431" depth="6.9" valign="baseline" size="tiny">$\sqrt{1+ \left( \frac{1}{100N} \right)^2 }$</text>
 <text matrix="1 0 0 1 38.9663 38.2497" transformations="translations" pos="5068.23 3112.02" stroke="black" type="label" width="53.216" height="11.431" depth="6.9" valign="baseline" size="tiny">$\sqrt{1+ \left( \frac{1}{100N} \right)^2 }$</text>
@@ -289,11 +289,11 @@ h
 5094.99 3084.5 m
 27.9573 0 0 -27.9573 5120 3072 5113.94 3099.29 a
 </path>
-<text matrix="1 0 0 1 9.58396 -16.4464" transformations="translations" pos="5094.33 3100.09" stroke="black" type="label" width="9.262" height="6.177" depth="0" valign="baseline" size="Large">$\omega$</text>
+<text matrix="1 0 0 1 9.58396 -16.4464" transformations="translations" pos="5094.33 3100.09" stroke="black" type="label" width="12.677" height="6.179" depth="2.15" valign="baseline" size="Large">$\omega_i$</text>
 <path stroke="black" dash="dash dotted">
 4992 3136 m
 5088.96 3211.7 l
 </path>
-<text matrix="1 0 0 1 63.1009 37.5845" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="12.658" height="8.307" depth="2.32" valign="baseline" size="large">$\beta_\omega$</text>
+<text matrix="1 0 0 1 63.1976 38.3464" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="15.534" height="8.301" depth="3.01" valign="baseline" size="large">$\beta_{\omega_i}$</text>
 </page>
 </ipe>

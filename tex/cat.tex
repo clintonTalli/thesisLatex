@@ -1422,7 +1422,7 @@ Consider the set of realizations $P$ for a given disk arrangement $\DD = \left\l
 % % 
 % % For illustrations in the remainder of this paper, free joints will be represented as crosses and 
 % pinned joints will be represented as disks.
-x%I) Algorithm Complexity
+%I) Algorithm Complexity
 %	a) Algorithm
 %		procedure of calculations
 %		has a running time
@@ -2132,18 +2132,18 @@ $$6 (n+m) + 4.$$
 The table below is a glossary of formulas that are used to throughout this chapter.
 It will serve as a useful reference for the reader.
 $$
-\begin{array}{|rcl|}
+\begin{array}{|rclcrcl|}
 \hline
-z(n,m)&=& 4 s(n,m)																  \\\hline
-J_h (z) &=& 6z(n,m)+1												= 24s(n,m)+1  \\\hline
-J_d (z) &=& 4z(n,m)+1												= 16s(n,m)+1  \\\hline
-N(n,m)&=& \frac{5t-1}{2}														= \frac{5s^\kappa-1}{2}	\\\hline
-t(n,m)&=& s^\kappa												\\\hline
-H(n,m) &=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}\\\hline
-\tan^{-1}x &\approx& x \\\hline
-\sin x &\approx& x\\\hline
-\cos x &\approx& 1-\frac{x^2}{2}\\\hline
-\sec x &\approx& 1-\frac{x^2}{2}\\\hline
+z(n,m)		&=& 4 s(n,m)																  		&&r&c&l\\\hline
+J_h (z) 	&=& 6z(n,m)+1												= 24s(n,m)+1  			&&r&c&l\\\hline
+J_d (z) 	&=& 4z(n,m)+1												= 16s(n,m)+1  			&&r&c&l\\\hline
+N(n,m)		&=& \frac{5t-1}{2}											= \frac{5s^\kappa-1}{2}	&&r&c&l\\\hline
+t(n,m)		&=& s^\kappa																		&&r&c&l\\\hline
+H(n,m) 		&=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}				&&r&c&l\\\hline
+			&& 	x - \frac{x^3}{3}\leq\tan^{-1}x\leq x											&&&&0< x < 1 \\\hline
+\sin x 		&& x 																				&&r&c&l\\\hline
+\cos x 		&& 1-\frac{x^2}{2}																	&&r&c&l\\\hline
+\sec x 		&& 1-\frac{x^2}{2}																	&&r&c&l\\\hline
 \end{array}
 $$
 The formula $t(n,m)=s^\kappa$ has an exponent $\kappa$ which is a sufficiently large integer that is chosen later on so that all arguments in this chapter are satisfied.
@@ -2668,10 +2668,6 @@ The bound of $\gamma_i$ is:
 								}	
 							}\\
 &=& \tan^{-1} \lr{\frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
-%&\leq& \frac{4\cdot\sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
-% &=&\frac{12\sqrt{1+ \lr{	\frac{1}{100N}	}^2}}{3\lr{5t-1}} - \lr{\frac{64 \lr{1+ \frac{1}{\lr{100N}^2}\sqrt{1+ \frac{1}{\lr{100N}^2}}  }}{3(5t-1)}}\\
-% &=&\frac{-\lr{52\sqrt{1+ \frac{1}{\lr{100N}^2}} + \frac{64 \sqrt{1+ \frac{1}{\lr{100N}^2}}}{(100N)^2} }}{3(5t-1)}\\
-% &=&\frac{-\lr{52\sqrt{1+ \frac{1}{\lr{100N}^2}} + \frac{64 \sqrt{1+ \frac{1}{\lr{100N}^2}}}{(100N)^2} }}{3(5\lr{2N^3-1}-1)}\\
 &\leq& \frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
 &\leq& \frac{\sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
 &\leq& \frac{5}{10N^3 -6}\\
@@ -2679,40 +2675,45 @@ The bound of $\gamma_i$ is:
 &\leq& \frac{1}{2\lr{N^3 - 1}}\\
 &\leq& \frac{1}{2 \lr{\frac{5t-1}{2}}^3 - 1}\\
 &\leq& \frac{4}{\lr{5t-1}^3-4}\\
-&\leq& \frac{4}{\lr{5s^k-1}^3-4}\\
-&\leq& \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+&\leq& \frac{4}{\lr{5s^\kappa-1}^3-4}\\
+&\leq& \frac{4}{\lr{4s^\kappa}^3}\\
+&\leq& \frac{4}{64s^{3\kappa}}\\
+&\leq& \frac{1}{16s^{3\kappa}}
 \end{array} 
 \end{equation}
-Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$.
-Thus the relative rotational difference between adjacent obstacle hexagons is
+Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$ and holds for sufficiently large $s$.
+Thus the relative rotational difference between adjacent obstacle hexagons is:
 \begin{equation}\label{eqn:angularBound}
-\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{1}{16s^{3\kappa}}\\
 \end{equation}
 The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
 The bottom most obstacle hexagon is hinged to the frame (see Figure \ref{fig:HalfSizeHexagon.pdf} for illustration). 
 This implies that $\alpha_1 = 0$ and
-$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}.$$
+$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{1}{16s^{3\kappa}}.$$
 There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
 We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{4(12s-1)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{12s-1}{16s^{3\kappa}}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
 \begin{eqnarray*}
-\alpha_i &\leq& \sum_{j=1}^i \frac{4j}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
-&\leq&\frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\sum_{j=1}^i j\\
-&\leq&\frac{4}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5} \cdot \frac{i^2+i}{2}\\
-&\leq&\frac{2(i^2+i)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
-&\leq&\frac{2(u^2+u)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
-&\leq&\frac{2(144s^2+12s)}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
-&\leq&\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}\\
+\alpha_i &\leq& \sum_{j=1}^i \frac{j}{16s^{3\kappa}}\\
+&\leq&\frac{1}{16s^{3\kappa}}\sum_{j=1}^i j\\
+&\leq&\frac{1}{16s^{3\kappa}}\cdot \frac{i^2+i}{2}\\
+&\leq&\frac{i^2+i}{32s^{3\kappa}}\\
+&\leq&\frac{u^2+u}{32s^{3\kappa}}\\
+&\leq&\frac{(12s)^2+12s}{32s^{3\kappa}}\\
+&\leq&\frac{144s^2+12s}{32s^{3\kappa}}
 \end{eqnarray*}
 For any $i$, the bound for $\alpha_i$:
 \begin{equation}\label{eqn:angularMaxBound}
-\alpha_i \leq \frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}
+\alpha_i \leq \frac{144s^2+12s}{32s^{3\kappa}}
 \end{equation}
+
 % The sum of total displacement in a given column is bounded by:
-% $$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}= \frac{12s - 1}{2 \lr{ (c_N s)^3 - 1}}$$\paragraph{Vertical Displacement $\delta$}
+% $$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}= \frac{12s - 1}{2 \lr{ (c_N s)^3 - 1}}$$
+
+\paragraph{Vertical Displacement $\delta$}
 
 When an obstacle hexagon is rotated by $\alpha_i$, the height of the obstacle hexagon becomes $h \sec \alpha_i$ where $h$ is the canonical height of the obstacle hexagon (see Figure \ref{fig:hexagonNonCanonical.pdf} for reference).
 Figure \ref{fig:hexagonNonCanonical.pdf} shows the geometry of a rotated obstacle hexagon.
@@ -2750,17 +2751,17 @@ Consider the first $j$ terms for the height of the column of obstacle hexagons a
 Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
 $$
 \begin{array}{rcl}
-\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}}^2\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}}^2 \cdot j\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}}^2 \cdot u\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{288s^2+24s}{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}}^2 \cdot 12s\\
-&\leq&  \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}
+\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{144s^2+12s}{32s^{3\kappa}} }^2\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot j\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot u\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot 12s\\
+&\leq&  \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
 \end{array}
 $$
 
 Thus we finally say that the bound for $\delta_v$, where $1<v\leq j\leq u$, is small:
 \begin{equation}\label{eqn:verticalBound}
-\delta_v \leq \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}
+\delta_v \leq \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
 \end{equation}
 
 
@@ -2794,18 +2795,18 @@ In the case that $\omega_i > \frac{\pi}{2}$ the rotational displacement $\alpha_
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.37\columnwidth]{graphics/TheOmegaFigure.pdf}
-\captionof{figure}{The vertical displacement $\delta_\omega$ and horizontal displacement $\beta_\omega$ created from the skinny rhombus rotation $\omega$.}\label{fig:TheOmegaFigure.pdf}
+\captionof{figure}{The vertical displacement $\delta_{\omega_i}$ and horizontal displacement $\beta_{\omega_i}$ created from the skinny rhombus rotation $\omega$.}\label{fig:TheOmegaFigure.pdf}
 \end{center}
 \end{minipage}
 
-First let's consider the case when $\omega \leq \frac{\pi}{2}$.
-In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega$ of the skinny rhombus is shown. 
+First let's consider the case when $\omega_i \leq \frac{\pi}{2}$.
+In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega_i$ of the skinny rhombus is shown. 
 The maximal displacement of the $\ith$ vertical displacement is $\delta_i$; thus $\delta_{\omega_i} \leq \delta_i$.  
-The right triangle formed from $\beta_\omega$ and $\delta_\omega$ has a maximal hypotenuse length of $\sqrt{2}\delta_\omega$.  
-Because this right triangle is derived from the circular segment about the skinny rhombus' hinge point and the limitation of the maximal displacement of $\delta_\omega$, the hypotenuse has a maximal feasible distance of $\sqrt{\delta_\omega^2 + \delta_\omega^2}$.
+The right triangle formed from $\beta_{\omega_i}$ and $\delta_{\omega_i}$ has a maximal hypotenuse length of $\sqrt{2}\delta_{\omega_i}$.  
+Because this right triangle is derived from the circular segment about the skinny rhombus' hinge point and the limitation of the maximal displacement of $\delta_{\omega_i}$, the hypotenuse has a maximal feasible distance of $\sqrt{\delta_{\omega_i}^2 + \delta_{\omega_i}^2}$.
 The horizontal displacement $\beta_\omega$ is bounded as such:
 \begin{equation}\label{eqn:betaOmegaBound}
-\beta_\omega \leq \delta_\omega \leq \delta_i \leq \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}
+\beta_\omega \leq \delta_{\omega_i} \leq \delta_i \leq \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
 \end{equation}
 
 \begin{minipage}{\linewidth}
@@ -2819,8 +2820,8 @@ For the case that $\omega_i > \frac{\pi}{2}$, we may result in some cases where 
 We illustrate some infeasible realizations with horizontal displacement to evaluate the length of $\beta_\alpha$, the horizontal displacement with respect to the rotation of an obstacle hexagon.  
 We then continue to show that $\beta_\alpha = 0$ for all feasible realizations and conclude that the bound of horizontal displacement is infact the Inequality \ref{eqn:betaOmegaBound}. 
 
-Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) shows maximal horizontal displacement with respect to $\omega$, $\beta_\omega$.  
-The corresponding skinny rhombus in Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) is rotated to lie parallel with the corridor yielding a horizontal displacement $\beta_\omega = \sqrt{1 + \lr{100N}^{-2} }$.  
+Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) shows maximal horizontal displacement with respect to $\omega_i$, $\beta_\omega$.  
+The corresponding skinny rhombus in Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) is rotated to lie parallel with the corridor yielding a horizontal displacement $\beta_{\omega_i} = \sqrt{1 + \lr{100N}^{-2} }$.  
 Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c) adds further horizontal displacement to the obstacle hexagon $O_{i+1}$ by rotating the $O_{i+1}$ by $\alpha$.  
 
 \begin{minipage}{\linewidth}
@@ -2846,15 +2847,15 @@ $$
 There are no possible realizations when $\omega \geq \frac{\pi}{2}$.
 \end{lem}
 \begin{proof}
-In this case the range of $\omega$ is $\frac{\pi}{2} \leq \omega \leq \lr{\frac{4 \pi}{3} - \hat{\omega}}$ where $\hat{\omega} = \tan^{-1} \lr{\frac{1}{50N}}$ is the acute angle in the interior of the skinny rhombus.  
+In this case the range of $\omega_i$ is $\frac{\pi}{2} \leq \omega \leq \lr{\frac{4 \pi}{3} - \hat{\omega}}$ where $\hat{\omega} = \tan^{-1} \lr{\frac{1}{50N}}$ is the acute angle in the interior of the skinny rhombus.  
 The upperbound $\lr{\frac{4 \pi}{3} - \hat{\omega}}$ is the case when the skinny rhombus' side is touching its flag's upper right side.  
-When $\omega = \frac{\pi}{2}$, the height of the hinge point of the obstacle hexagon and skinny rhombus from the bottom of the corridor is $1 + \sqrt{3}$ which is less than the half length of the side of the obstacle hexagon $\frac{N}{2}$.  
+When $\omega_i = \frac{\pi}{2}$, the height of the hinge point of the obstacle hexagon and skinny rhombus from the bottom of the corridor is $1 + \sqrt{3}$ which is less than the half length of the side of the obstacle hexagon $\frac{N}{2}$.  
 Thus we have an overlap of obstacle hexagons; namely an of the obstacle hexagons shown in \ref{fig:maximalHorizontalDisplacement.pdf}(a) and the obstacle hexagon to the right of the corresponding corridor or if $\alpha$ is large enough, only the obstacle hexagon to the right of the corresponding corridor.
-When $\omega > \frac{\pi}{2}$ the height of the hinge point of the obstacle hexagon and skinny rhombus is lowered and results in overlap of obstacle hexagons; namely an of the obstacle hexagons shown in \ref{fig:maximalHorizontalDisplacement.pdf}(a) and the obstacle hexagon to the right of the corresponding corridor or if $\alpha$ is large enough, only the obstacle hexagon to the right of the corresponding corridor (for example see Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c)).
+When $\omega_i > \frac{\pi}{2}$ the height of the hinge point of the obstacle hexagon and skinny rhombus is lowered and results in overlap of obstacle hexagons; namely an of the obstacle hexagons shown in \ref{fig:maximalHorizontalDisplacement.pdf}(a) and the obstacle hexagon to the right of the corresponding corridor or if $\alpha$ is large enough, only the obstacle hexagon to the right of the corresponding corridor (for example see Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c)).
 \end{proof}
 
-By Lemma \ref{lem:Omega} we have that $\omega$ must be less than $\frac{\pi}{2}$ and thus $\beta_\alpha = 0$ and the horizontal displacement is bounded by $\beta_\omega$.    
-Earlier we've shown that $\beta_\omega$ is bounded in Inequality \ref{eqn:betaOmegaBound} and so $\beta$ is bounded by the same inequality.  
+By Lemma \ref{lem:Omega} we have that $\omega_i$ must be less than $\frac{\pi}{2}$ and thus $\beta_\alpha = 0$ and the horizontal displacement is bounded by $\beta_{\omega_i}$.    
+Earlier we've shown that $\beta_{\omega_i}$ is bounded in Inequality \ref{eqn:betaOmegaBound} and so $\beta$ is bounded by the same inequality.  
 By letting the integer $k=1$ in the equation $t(n,m)=s^k$, all inequalities for the rotational, vertical, and horizontal arguments hold.
 % The horizontal displacement $\beta_\alpha$ formed by the rotational displacement is measured from the center of the obstacle hexagon.
 % The center height of the obstacle hexagon is $\sqrt{3}N$; the 

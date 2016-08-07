@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  1 AUG 2016 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  6 AUG 2016 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,11 +1070,11 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 7--13
 File: graphics/hexagonNonCanonical2.pdf Graphic file (type pdf)
 
 <use graphics/hexagonNonCanonical2.pdf>
-Package pdftex.def Info: graphics/hexagonNonCanonical2.pdf used on input line 8
+Package pdftex.def Info: graphics/hexagonNonCanonical2.pdf used on input line 9
 .
 (pdftex.def)             Requested size: 143.09538pt x 138.24515pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 6--14
+Overfull \hbox (15.0pt too wide) in paragraph at lines 7--15
 []$[]$ 
  []
 
@@ -1084,10 +1084,10 @@ File: graphics/verticalDisplacementArgument.pdf Graphic file (type pdf)
 
 <use graphics/verticalDisplacementArgument.pdf>
 Package pdftex.def Info: graphics/verticalDisplacementArgument.pdf used on inpu
-t line 20.
+t line 21.
 (pdftex.def)             Requested size: 143.09538pt x 123.96211pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 18--24
+Overfull \hbox (15.0pt too wide) in paragraph at lines 19--25
 []$[]$ 
  []
 
@@ -1116,7 +1116,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 27--33
  []
 
 [19 <./graphics/someRangeSkinny.pdf> <./graphics/TheOmegaFigure.pdf>]
-<graphics/maximalHorizontalDisplacement.pdf, id=391, 1033.26027pt x 269.25594pt
+<graphics/maximalHorizontalDisplacement.pdf, id=399, 1033.26027pt x 269.25594pt
 >
 File: graphics/maximalHorizontalDisplacement.pdf Graphic file (type pdf)
  <use graphics/maximalHorizontalDisplacement.pdf>
@@ -1129,7 +1129,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 44--50
  []
 
 
-<graphics/deltaAlphaHorizontalDisplacement.pdf, id=392, 231.33426pt x 141.49864
+<graphics/deltaAlphaHorizontalDisplacement.pdf, id=400, 231.33426pt x 141.49864
 pt>
 File: graphics/deltaAlphaHorizontalDisplacement.pdf Graphic file (type pdf)
  <use graphics/deltaAlphaHorizontalDisplacement.pdf>
@@ -1188,10 +1188,10 @@ b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Ch3.pdf (26 pages, 414495 bytes).
+Output written on ../pdf/Ch3.pdf (26 pages, 414653 bytes).
 PDF statistics:
- 501 PDF objects out of 1000 (max. 8388607)
- 376 compressed objects within 4 object streams
+ 507 PDF objects out of 1000 (max. 8388607)
+ 382 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

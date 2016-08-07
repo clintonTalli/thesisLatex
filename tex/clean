@@ -1,8 +1,5 @@
 #/usr/bin/bash
-if [! -e cat.tex]; then
-else
-	rm cat.tex
-fi
+rm cat.tex
 cd ../pdf
 rm *.aux
 rm *.toc
