@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  6 AUG 2016 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  7 AUG 2016 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -830,64 +830,54 @@ ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./ch4/chapter4.tex
-(./ch4/chapter4Introduction.tex
+(./ch4/chapter4IntroductionV2.tex
 Chapter 1.
-
-LaTeX Warning: Reference `problem:UnorderedContactGraph' on page 1 undefined on
- input line 3.
-
-
-LaTeX Warning: Reference `problem:OrderedContactGraph' on page 1 undefined on i
-nput line 3.
-
 
 LaTeX Warning: Reference `thm:disk' on page 1 undefined on input line 3.
 
 
-LaTeX Warning: Reference `problem:UnorderedContactGraph' on page 1 undefined on
- input line 7.
+LaTeX Warning: Reference `thm:disk' on page 1 undefined on input line 4.
 
 
-LaTeX Warning: Reference `problem:OrderedContactGraph' on page 1 undefined on i
-nput line 8.
-
-
-LaTeX Warning: Reference `thm:disk' on page 1 undefined on input line 9.
+LaTeX Warning: Reference `thm:disk' on page 1 undefined on input line 8.
 
 
 LaTeX Warning: Reference `chapter:polygonalLinkage' on page 1 undefined on inpu
-t line 14.
+t line 8.
+
+
+LaTeX Warning: Reference `thm:disk' on page 1 undefined on input line 11.
 
 ) (./ch4/Hausdorff.tex
-<graphics/HausdorffDistanceExample1.pdf, id=20, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=22, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 17.
+ine 14.
 (pdftex.def)             Requested size: 143.09538pt x 102.39908pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
+Overfull \hbox (15.0pt too wide) in paragraph at lines 12--18
 []$[]$ 
  []
 
-[1
+) (./ch4/WeightedTreeFamily.tex [1
 
- <./graphics/HausdorffDistanceExample1.pdf>]) (./ch4/udtgrp.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 14.
+ <./graphics/HausdorffDistanceExample1.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 6.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
 
 <graphics/snowflakeOutline5LayerSmall.pdf, id=40, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
- line 24.
+ line 16.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
  [2 <./graphics/snowflakeOutline5LayerSmall.pdf>]
 <graphics/hexagonOutline5LayerSmall.pdf, id=49, 204.32335pt x 179.61102pt>
@@ -895,33 +885,34 @@ File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
-ine 83.
+ine 75.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
-) (./ch4/prudtgrp.tex [3]
+) (./ch4/PerturbedTree.tex
 
-LaTeX Warning: Reference `fig:modifiedContactGraph' on page 4 undefined on inpu
+LaTeX Warning: Reference `fig:modifiedContactGraph' on page 3 undefined on inpu
 t line 15.
 
-<graphics/PerturbedSpine.pdf, id=55, 226.24524pt x 176.91295pt>
+[3] <graphics/PerturbedSpine.pdf, id=55, 226.24524pt x 176.91295pt>
 File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedSpine.pdf>
 Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 33.
 (pdftex.def)             Requested size: 134.84532pt x 105.44672pt.
- [4 <./graphics/hexagonOutline5LayerSmall.pdf>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 43.
- <graphics/PerturbedVertebrae.pdf, id=62, 239.34016pt x 179.00174pt>
+
+<graphics/PerturbedVertebrae.pdf, id=56, 239.34016pt x 179.00174pt>
 File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedVertebrae.pdf>
 Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 48.
 
 (pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
+ [4 <./graphics/hexagonOutline5LayerSmall.pdf> <./graphics/PerturbedSpine.pdf>]
 ) (./ch4/proofs.tex
-<graphics/modifiedContactGraph.pdf, id=63, 217.35605pt x 187.2074pt>
+<graphics/modifiedContactGraph.pdf, id=76, 217.35605pt x 187.2074pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
@@ -933,9 +924,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 7--13
 []$[]$ 
  []
 
-[5 <./graphics/PerturbedSpine.pdf> <./graphics/PerturbedVertebrae.pdf>]
-[6 <./graphics/modifiedContactGraph.pdf>]
-<graphics/Vertebrae.pdf, id=118, 161.0015pt x 64.6415pt>
+[5 <./graphics/PerturbedVertebrae.pdf> <./graphics/modifiedContactGraph.pdf>]
+<graphics/Vertebrae.pdf, id=115, 161.0015pt x 64.6415pt>
 File: graphics/Vertebrae.pdf Graphic file (type pdf)
 
 <use graphics/Vertebrae.pdf>
@@ -946,7 +936,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 48--54
 []$[]$ 
  []
 
-<graphics/ch4Paralellogram.pdf, id=119, 707.443pt x 170.52708pt>
+[6 <./graphics/Vertebrae.pdf>]
+<graphics/ch4Paralellogram.pdf, id=133, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
@@ -957,8 +948,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 69--75
 []$[]$ 
  []
 
-)) (../pdf/Ch4.bbl [7 <./graphics/Vertebrae.pdf> <./graphics/ch4Paralellogram.p
-df>]
+)) (../pdf/Ch4.bbl [7 <./graphics/ch4Paralellogram.pdf>]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
@@ -972,13 +962,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17478 strings out of 493089
- 318752 string characters out of 6134841
- 504597 words of memory out of 5000000
- 20517 multiletter control sequences out of 15000+600000
+ 17477 strings out of 493089
+ 318768 string characters out of 6134841
+ 505597 words of memory out of 5000000
+ 20516 multiletter control sequences out of 15000+600000
  36362 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,59p,480b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,59p,485b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -997,7 +987,7 @@ t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf
 /type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on ../pdf/Ch4.pdf (12 pages, 198072 bytes).
+Output written on ../pdf/Ch4.pdf (12 pages, 197557 bytes).
 PDF statistics:
  189 PDF objects out of 1000 (max. 8388607)
  132 compressed objects within 2 object streams

@@ -4,11 +4,11 @@
 \contentsline {chapter}{\numberline {1}Realizability Problems for Weighted Trees}{1}
 \contentsline {section}{\numberline {1.1}Hausdorff Distance}{1}
 \contentsline {paragraph}{$\epsilon $-approximation}{1}
-\contentsline {section}{\numberline {1.2}Unit Disk Touching Graph Recongnition Problem (UDTGRP)}{2}
+\contentsline {section}{\numberline {1.2}Weight Trees $T$}{2}
 \contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{2}
-\contentsline {section}{\numberline {1.3}Perturbed Root with Unit Disk Leaves Touching Graph Recongnition Problem (PRUDTGRP)}{4}
-\contentsline {section}{\numberline {1.4}Proofs of Lemmas \ref {lem:s1Small} through \ref {lem:disksOfPathways}}{5}
-\contentsline {subsection}{\numberline {1.4.1}Proof of Lemma \ref {lem:s1Small}}{5}
-\contentsline {subsection}{\numberline {1.4.2}Proof of Lemma \ref {lem:angularArrangement}}{6}
-\contentsline {subsection}{\numberline {1.4.3}Proof of Lemma \ref {lem:disksOfPathways}}{7}
+\contentsline {subsection}{\numberline {1.2.1}Perturbed Weighted Trees $T_\epsilon $}{3}
+\contentsline {section}{\numberline {1.3}Proofs of Lemmas \ref {lem:s1Small} through \ref {lem:disksOfPathways}}{5}
+\contentsline {subsection}{\numberline {1.3.1}Proof of Lemma \ref {lem:s1Small}}{5}
+\contentsline {subsection}{\numberline {1.3.2}Proof of Lemma \ref {lem:angularArrangement}}{6}
+\contentsline {subsection}{\numberline {1.3.3}Proof of Lemma \ref {lem:disksOfPathways}}{6}
 \contentsfinish 

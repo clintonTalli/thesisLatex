@@ -53,7 +53,7 @@ provide a few examples.
 
 Section 4.2 should define the snowflake trees. It is an infinite family
 of ordered trees, say T_k,
-where teach axis contains k vertices.
+where each axis contains k vertices.
 
 Section 4.3 should show that for every k, the snowflake tree (with
 vertex weights 1/2+delta and 1/2
