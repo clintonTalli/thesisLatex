@@ -42,9 +42,9 @@
 \contentsline {paragraph}{$\epsilon $-approximation}{46}
 \contentsline {section}{\numberline {4.2}Weight Trees $T$}{47}
 \contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{47}
-\contentsline {subsection}{\numberline {4.2.1}Perturbed Weighted Trees $T_\epsilon $}{48}
+\contentsline {subsection}{\numberline {4.2.1}Perturbed Weighted Trees $T_\epsilon $}{49}
 \contentsline {section}{\numberline {4.3}Proofs of Lemmas \ref {lem:s1Small} through \ref {lem:disksOfPathways}}{50}
 \contentsline {subsection}{\numberline {4.3.1}Proof of Lemma \ref {lem:s1Small}}{50}
 \contentsline {subsection}{\numberline {4.3.2}Proof of Lemma \ref {lem:angularArrangement}}{51}
-\contentsline {subsection}{\numberline {4.3.3}Proof of Lemma \ref {lem:disksOfPathways}}{51}
+\contentsline {subsection}{\numberline {4.3.3}Proof of Lemma \ref {lem:disksOfPathways}}{52}
 \contentsfinish 
