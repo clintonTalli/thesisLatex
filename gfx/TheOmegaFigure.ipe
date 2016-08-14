@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160711201316" modified="D:20160806172642"/>
+<info created="D:20160711201316" modified="D:20160813163036"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -295,5 +295,10 @@ h
 5088.96 3211.7 l
 </path>
 <text matrix="1 0 0 1 63.1976 38.3464" transformations="translations" pos="4974.54 3101.06" stroke="black" type="label" width="15.534" height="8.301" depth="3.01" valign="baseline" size="large">$\beta_{\omega_i}$</text>
+<text matrix="1 0 0 1 -11.0382 -25.1756" transformations="translations" pos="5094.33 3100.09" stroke="black" type="label" width="12.677" height="9.965" depth="2.15" valign="baseline" size="Large">$\hat{\omega}_i$</text>
+<path stroke="black">
+5077.47 3072 m
+42.5295 0 0 -42.5295 5120 3072 5081.96 3091.02 a
+</path>
 </page>
 </ipe>

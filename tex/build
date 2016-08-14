@@ -22,7 +22,7 @@ pdflatex --output-directory ../pdf Ch2.tex
 
 pdflatex --output-directory ../pdf Ch3.tex
 cd ../pdf
-bash buildBiblioCh1
+bash buildBiblioCh3
 cd ../tex
 pdflatex --output-directory ../pdf Ch3.tex
 pdflatex --output-directory ../pdf Ch3.tex

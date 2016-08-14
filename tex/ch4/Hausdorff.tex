@@ -1,6 +1,6 @@
 
 \section{Hausdorff Distance}  
-Let $A$ and $B$ be sets in the plane. The \textit{directed Hausdorff distance} is 
+Let $A$ and $B$ be sets in the plane. The \textit{directed Hausdorff distance} is: 
 \begin{equation}\label{eqn:ContactGraphV3-1}
 d\lr{A,B} = \sup_{a \in A} \inf_{b \in B} \left\vert\left\vert a-b \right\vert \right\vert
 \end{equation}
@@ -8,6 +8,9 @@ $d\lr{A,B}$ finds the furthest point $a \in A$ from any point in $B$.  \textit{H
 \begin{equation}\label{eqn:ContactGraphV3-2}
 D\lr{A,B} = \max \left\lbrace d\lr{A,B}, d\lr{B,A} \right\rbrace
 \end{equation}
+
+In Figure \ref{fig:HausdorffDistanceExample1.pdf}, we have two sets $X$ and $Y$ and illustrate $d(X,Y)$ and $d(Y,X)$.  
+From this, it is possible to calculate the Hausdorff distance between $X$ and $Y$.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -29,6 +32,8 @@ D\lr{A,B} = \max \left\lbrace d\lr{A,B}, d\lr{B,A} \right\rbrace
 The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most epsilon.  
 A weighted graph $G$ is said to be a \textit{$\BigOh{f(x)}$-approximation} of a polygon P if there is a positive constant $M$ such that for all sufficiently large values of $x$ the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at $M \cdot \vert f(x)\vert$. 
 A weighted graph $G$ is said to be a \textit{stable} if it has the property that for every two such realizations of $G$, the distance between the centers of the corresponding disks is at most $\epsilon$ after a suitable rigid transformation.
+
+An example of an $\epsilon$-approximation .....
 
 \begin{prob}[Appoximating Polygonal Shapes with Contact Graphs]\label{problem:ApproxShapesWithContactGraphs}
 For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$

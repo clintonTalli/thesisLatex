@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160709162510" modified="D:20160720185133"/>
+<info created="D:20160709162510" modified="D:20160813161330"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -348,14 +348,6 @@ h
 5081.22 3225.53 m
 5203.08 3225.53 l
 </path>
-<path matrix="1 0 0 1 326.369 2.40802" stroke="black">
-5136.58 3255.34 m
-5.01919 0 0 -5.01919 5141.6 3255.34 5137.69 3258.48 a
-</path>
-<path matrix="1 0 0 1 18.2914 -0.384534" stroke="black">
-5620.94 3257.92 m
-5.14867 0 0 -5.14867 5626.09 3257.91 5623.87 3262.56 a
-</path>
 <path matrix="0.141213 0 0 0.141213 5086.7 2808.82" stroke="black" pen="heavier">
 5369.85 3072 m
 5308.93 3177.53 l
@@ -401,16 +393,10 @@ h
 5081.22 3225.53 m
 5203.08 3225.53 l
 </path>
-<path matrix="1 0 0 1 210.291 -0.384534" stroke="black">
-5620.94 3257.92 m
-5.14867 0 0 -5.14867 5626.09 3257.91 5623.87 3262.56 a
-</path>
+<text matrix="1 0 0 1 0.204717 -2.32013" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="19.777" height="4.294" depth="2.32" valign="baseline">$\alpha_{i+1}$</text>
 <path stroke="black">
 5828.59 3273.35 m
-5.26475 0 0 -5.26475 5823.82 3271.13 5826.11 3266.39 a
+5.26172 0 0 -5.26172 5823.82 3271.13 5828.59 3268.9 a
 </path>
-<text matrix="1 0 0 1 0.204717 -2.32013" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="9.69" height="4.294" depth="1.49" valign="baseline">$\alpha_i$</text>
-<text matrix="1 0 0 1 -18.8965 -11.302" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="9.518" height="4.294" depth="1.49" valign="baseline">$\omega_i$</text>
-<text matrix="1 0 0 1 -210.015 -10.9337" transformations="translations" pos="5831.94 3271.41" stroke="black" type="label" width="9.518" height="4.294" depth="1.49" valign="baseline">$\omega_i$</text>
 </page>
 </ipe>

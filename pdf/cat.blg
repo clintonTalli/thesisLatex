@@ -4,45 +4,45 @@ The top-level auxiliary file: cat.aux
 The style file: plain.bst
 Database file #1: WorkCited.bib
 Warning--empty journal in klemzthesis
-You've used 23 entries,
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            642 strings with 6940 characters,
-and the built_in function-call counts, 7231 in all, are:
-= -- 706
-> -- 330
+            649 strings with 7086 characters,
+and the built_in function-call counts, 7472 in all, are:
+= -- 731
+> -- 343
 < -- 2
-+ -- 134
-- -- 108
-* -- 485
-:= -- 1224
-add.period$ -- 68
-call.type$ -- 23
-change.case$ -- 116
++ -- 139
+- -- 112
+* -- 496
+:= -- 1268
+add.period$ -- 72
+call.type$ -- 24
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 274
-empty$ -- 580
-format.name$ -- 108
-if$ -- 1489
+cite$ -- 25
+duplicate$ -- 283
+empty$ -- 598
+format.name$ -- 112
+if$ -- 1539
 int.to.chr$ -- 0
-int.to.str$ -- 23
+int.to.str$ -- 24
 missing$ -- 29
-newline$ -- 117
-num.names$ -- 46
-pop$ -- 137
+newline$ -- 123
+num.names$ -- 48
+pop$ -- 141
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 103
 quote$ -- 0
-skip$ -- 183
+skip$ -- 190
 stack$ -- 0
-substring$ -- 461
-swap$ -- 39
+substring$ -- 466
+swap$ -- 41
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
+type$ -- 82
 warning$ -- 1
-while$ -- 75
-width$ -- 25
-write$ -- 243
+while$ -- 77
+width$ -- 26
+write$ -- 255
 (There was 1 warning)
