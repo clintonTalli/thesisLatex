@@ -1,15 +1,26 @@
-\input{ch3v2/ch3Introduction}
-\input{ch3v2/auxiliaryConstruction}
-\input{ch3v2/modifiedAuxiliaryConstruction}
-\input{ch3v2/lemma5}
-\input{ch3v2/angularArgument}
-\input{ch3v2/verticalArgument}
-\input{ch3v2/horizontalArgument}
-\input{ch3v2/lemma5Conclusion}
-\input{ch3v2/theoremConclusion}
+% \input{ch3/placeholder}
+% \input{ch3/temp}
+%\input{ch3/polygonalLinkages}
+%\input{ch3/intro}
+%\input{ch3/auxilary}
+%\input{ch3/modifiedAuxilary}
+\input{ch3/lemma6V2}
+\input{ch3/Angular}
+\input{ch3/Vertical}
+\input{ch3/HorizontalV4}
+% \input{ch3/modifiedAuxilaryPart2}
+% \input{ch3/lemma6}
+% \input{ch3/conclusion}
+
+
+
+
 % (0) It looks great in general. There are a few small corrections to make: in Figure 12(a), the bottom frame hexagons should have high degree (3 or 4), since each of them is incident to several columns of obstacle hexagons. The "half-size" hexagons shown in Figure 13 should also be represented in Figures 12(b) and Figure 14(a).
+ 
+
 % (1) The degree of a variable vertex could be up to m, the number of clause vertices (e.g., when a variable appears in all clauses).
 % Since the associated graph is bipartite and planar, Euler's formula implies that the sum of degrees of the variable vertices is at most 2m.
+
 % (2) 
 % Inequality (1.5) is correct. The coefficient 4 currently looks like a 4th root. Perhaps it would make sense to add a "\cdot" for multiplication. Also, when you use a Maclaurin series, the last negative term can be omitted for an upper bound. There some room for simplification. The sentence "it is clear that for N sufficiently large, gamma->0" is technically incorrect, it is true that if N goes to infinity, then gamma goes to 0; but we with to choose a polynomial size N. I would just delete that sentence, since it is clear anyways. In (1.6) and (1.7), the delta_i should be delta_j, right? That's why both of these inequalities give an upper bound for delta_j. Here sec(alpha) can be lower-bounded by 1; and the number of corridors should be (u-j) on both sides of the inequality.
 % Also at the calculations above Figure 19 are no longer needed (they would bound the angle, not the vertical displacement).

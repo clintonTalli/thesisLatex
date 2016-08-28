@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  13 AUG 2016 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  28 AUG 2016 13:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -654,6 +654,14 @@ Package: complexity 11/24/06  v0.77
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/complexity/mycomplexity.sty))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen178
+\extrarowheight=\dimen179
+\NC@list=\toks48
+\extratabsurround=\skip53
+\backup@length=\skip54
+)
 \c@thm=\count139
 \c@prop=\count140
 \c@pf=\count141
@@ -682,88 +690,88 @@ Writing index file Ch3.idx
 (../pdf/Ch3.aux)
 \openout1 = `Ch3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 245.
-LaTeX Font Info:    ... okay on input line 245.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 245.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 251.
+LaTeX Font Info:    ... okay on input line 251.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 251.
+LaTeX Font Info:    ... okay on input line 251.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 251.
+LaTeX Font Info:    ... okay on input line 251.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 251.
+LaTeX Font Info:    ... okay on input line 251.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 251.
+LaTeX Font Info:    ... okay on input line 251.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 251.
+LaTeX Font Info:    ... okay on input line 251.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 251.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count149
-\scratchdimen=\dimen178
+\scratchdimen=\dimen180
 \scratchbox=\box47
 \nofMPsegments=\count150
 \nofMParguments=\count151
-\everyMPshowfont=\toks48
+\everyMPshowfont=\toks49
 \MPscratchCnt=\count152
-\MPscratchDim=\dimen179
+\MPscratchDim=\dimen181
 \MPnumerator=\count153
 \makeMPintoPDFobject=\count154
-\everyMPtoPDFconversion=\toks49
+\everyMPtoPDFconversion=\toks50
 )
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 24
-5.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 25
+1.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 24
-5.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 25
+1.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 24
-5.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 25
+1.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 24
-5.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 25
+1.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 245.
+LaTeX Font Info:    Try loading font information for U+msa on input line 251.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 245.
+LaTeX Font Info:    Try loading font information for U+msb on input line 251.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 245.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 251.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 245.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 251.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 245.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 251.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 245.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 251.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 245.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 251.
 
 
-Package mathptmx Warning: There are no bold math fonts on input line 245.
+Package mathptmx Warning: There are no bold math fonts on input line 251.
 
 (../pdf/Ch3.toc
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
@@ -777,7 +785,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
  [3
 
 ]
-\oldbaselineskip=\skip53
+\oldbaselineskip=\skip55
  [4]
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -828,17 +836,23 @@ e
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./ch3v2/chapter3.tex
-(./ch3v2/ch3Introduction.tex
+ (./ch3/chapter3.tex
+(./ch3/ch3Introduction.tex
 Chapter 1.
 
 LaTeX Warning: Reference `chapter:logicEngine' on page 1 undefined on input lin
 e 4.
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 8.
 
-LaTeX Warning: Reference `chp:disk' on page 1 undefined on input line 16.
+LaTeX Warning: Reference `thm:hinge2' on page 1 undefined on input line 6.
+
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 6.
+
+LaTeX Warning: Reference `chp:disk' on page 1 undefined on input line 14.
+
+
+LaTeX Warning: Reference `thm:hinge2' on page 1 undefined on input line 18.
 
 [1
 
@@ -846,7 +860,7 @@ LaTeX Warning: Reference `chp:disk' on page 1 undefined on input line 16.
 File: graphics/VariablesExample.pdf Graphic file (type pdf)
 
 <use graphics/VariablesExample.pdf>
-Package pdftex.def Info: graphics/VariablesExample.pdf used on input line 70.
+Package pdftex.def Info: graphics/VariablesExample.pdf used on input line 54.
 (pdftex.def)             Requested size: 306.46497pt x 39.16899pt.
 
 <graphics/HoneyCombAssociatedGraphSideBySide.pdf, id=33, 1501.4093pt x 742.4337
@@ -854,14 +868,14 @@ pt>
 File: graphics/HoneyCombAssociatedGraphSideBySide.pdf Graphic file (type pdf)
  <use graphics/HoneyCombAssociatedGraphSideBySide.pdf>
 Package pdftex.def Info: graphics/HoneyCombAssociatedGraphSideBySide.pdf used o
-n input line 93.
+n input line 77.
 (pdftex.def)             Requested size: 390.25534pt x 192.97156pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 91--100
+Overfull \hbox (15.0pt too wide) in paragraph at lines 75--84
 []$[]$ 
  []
 
-[2 <./graphics/VariablesExample.pdf>]) (./ch3v2/auxiliaryConstruction.tex
+[2 <./graphics/VariablesExample.pdf>]) (./ch3/auxiliaryConstruction.tex
 <graphics/ScalingForCorridors.pdf, id=40, 405.97672pt x 224.7095pt>
 File: graphics/ScalingForCorridors.pdf Graphic file (type pdf)
 
@@ -989,7 +1003,11 @@ itter-hex.pdf>]
 LaTeX Warning: Reference `lem:logicEngine1' on page 9 undefined on input line 2
 04.
 
-[9] [10] [11]) (./ch3v2/modifiedAuxiliaryConstruction.tex
+[9] [10] [11]) (./ch3/modifiedAuxiliaryConstruction.tex
+
+LaTeX Warning: Reference `thm:hinge2' on page 12 undefined on input line 4.
+
+
 <graphics/modifiedAuxilaryConstructionAsTree.pdf, id=199, 637.32103pt x 253.898
 56pt>
 File: graphics/modifiedAuxilaryConstructionAsTree.pdf Graphic file (type pdf)
@@ -1016,7 +1034,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 47--57
 []$[]$ 
  []
 
-) (./ch3v2/lemma5.tex
+) (./ch3/lemma5.tex
 <graphics/tiltedObstaclesInFrame.pdf, id=219, 184.51936pt x 161.31267pt>
 File: graphics/tiltedObstaclesInFrame.pdf Graphic file (type pdf)
 
@@ -1043,7 +1061,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 23--29
  []
 
 [14 <./graphics/tiltedObstaclesInFrame.pdf> <./graphics/dualSmallHexagonalGrid.
-pdf>]) (./ch3v2/angularArgument.tex
+pdf>]) (./ch3/angularArgument.tex
 <graphics/corridorNonCanonical.pdf, id=266, 316.25153pt x 109.39871pt>
 File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
 
@@ -1056,7 +1074,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 7--13
 []$[]$ 
  []
 
-[15 <./graphics/corridorNonCanonical.pdf>] [16]) (./ch3v2/verticalArgument.tex
+[15 <./graphics/corridorNonCanonical.pdf>] [16]) (./ch3/verticalArgument.tex
 <graphics/hexagonNonCanonical2.pdf, id=304, 189.37952pt x 182.95753pt>
 File: graphics/hexagonNonCanonical2.pdf Graphic file (type pdf)
 
@@ -1082,7 +1100,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 19--25
 []$[]$ 
  []
 
-[17 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3v2/horizontalArgument.tex
+[17 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3/horizontalArgument2.tex
 [18 <./graphics/verticalDisplacementArgument.pdf>]
 <graphics/someRangeSkinny.pdf, id=345, 534.95862pt x 167.07419pt>
 File: graphics/someRangeSkinny.pdf Graphic file (type pdf)
@@ -1099,62 +1117,38 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 12--18
 File: graphics/TheOmegaFigure.pdf Graphic file (type pdf)
 
 <use graphics/TheOmegaFigure.pdf>
-Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 30.
+Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 31.
 (pdftex.def)             Requested size: 160.43727pt x 124.90932pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 28--34
+Overfull \hbox (15.0pt too wide) in paragraph at lines 29--35
 []$[]$ 
  []
 
-[19 <./graphics/someRangeSkinny.pdf> <./graphics/TheOmegaFigure.pdf>] [20]
-[21
+[19 <./graphics/someRangeSkinny.pdf> <./graphics/TheOmegaFigure.pdf>]
 
-]
-<graphics/maximalHorizontalDisplacement.pdf, id=409, 1033.26027pt x 269.25594pt
->
-File: graphics/maximalHorizontalDisplacement.pdf Graphic file (type pdf)
- <use graphics/maximalHorizontalDisplacement.pdf>
-Package pdftex.def Info: graphics/maximalHorizontalDisplacement.pdf used on inp
-ut line 163.
-(pdftex.def)             Requested size: 390.25534pt x 101.69382pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 161--167
-[]$[]$ 
- []
+Package caption Warning: \label without proper \caption on input line 102.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `eqn:betaOmegaBound' on page 22 undefined on input lin
-e 170.
+LaTeX Warning: Reference `table:ci' on page 20 undefined on input line 87.
 
+[20]) (./ch3/lemma5Conclusion.tex) (./ch3/theoremConclusion.tex [21]
 
-<graphics/deltaAlphaHorizontalDisplacement.pdf, id=410, 231.33426pt x 141.49864
-pt>
-File: graphics/deltaAlphaHorizontalDisplacement.pdf Graphic file (type pdf)
- <use graphics/deltaAlphaHorizontalDisplacement.pdf>
-Package pdftex.def Info: graphics/deltaAlphaHorizontalDisplacement.pdf used on 
-input line 178.
-(pdftex.def)             Requested size: 390.25534pt x 238.72652pt.
+LaTeX Warning: Reference `thm:hinge2' on page 22 undefined on input line 52.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 176--182
-[]$[]$ 
- []
+)) (./appendixA/appendixA.tex [22] [23
 
-[22
+] [24
 
- <./graphics/maximalHorizontalDisplacement.pdf>]
-
-LaTeX Warning: Reference `eqn:betaOmegaBound' on page 23 undefined on input lin
-e 207.
-
-) (./ch3v2/lemma5Conclusion.tex [23 <./graphics/deltaAlphaHorizontalDisplacemen
-t.pdf>]) (./ch3v2/theoremConclusion.tex [24])) (../pdf/Ch3.bbl [25]
+]) (../pdf/Ch3.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 12.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[26
+[25
+
 
 ] (../pdf/Ch3.aux)
 
@@ -1162,13 +1156,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17619 strings out of 493089
- 322905 string characters out of 6134841
- 512597 words of memory out of 5000000
- 20616 multiletter control sequences out of 15000+600000
+ 17661 strings out of 493089
+ 322994 string characters out of 6134841
+ 512870 words of memory out of 5000000
+ 20654 multiletter control sequences out of 15000+600000
  44335 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,59p,820b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,59p,818b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1181,23 +1175,21 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/cou
-rier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr
-.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Ch3.pdf (30 pages, 430993 bytes).
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol
+/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/Ch3.pdf (29 pages, 405957 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
+ 470 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

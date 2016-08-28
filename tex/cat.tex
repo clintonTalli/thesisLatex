@@ -9,6 +9,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{amstext}
 \usepackage[section]{placeins}
 \usepackage{listings}%R Code
  \usepackage{color}%R code
@@ -42,6 +43,7 @@
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{complexity}
+\usepackage{array}
 %%CSUN Stuff%%%
 \titlecontents{chapter}
   [0em]
@@ -207,6 +209,10 @@ X_2\right)^{-1}
 \newcommand{\vlr}[1]{\left\vert #1 \right\vert}
 \newcommand{\curlybraces}[1]{\left\lbrace #1 \right\rbrace}
 \newcommand{\BigOh}[1]{O\left( #1 \right)}
+
+\newcolumntype{L}{>{$}l<{$}} 
+\newcolumntype{C}{>{$}c<{$}} 
+\newcolumntype{R}{>{$}r<{$}} 
 %\newcommand{\deg}{\textrm{deg}}
 %\renewcommand{\baselinestretch}{1.0}
 % 1.0 is for one line space, 2.0 is for double-line space, etc
@@ -242,8 +248,6 @@ Hinged Polygons}
 \submitted{August}{2014}
 \committee{Dr. Csaba T\'oth}{Dr. Silvia Fernandez}{Dr. John Dye}
 \abstract{ }
-
-
 \begin{document}\chapter{Background}
 % In this section, we cover the background subjects needed to formally pose the 
 % problems and present solutions in this thesis.  We start with two types of combinatorial structures, linkages 
@@ -984,7 +988,7 @@ A upper bound of the total area of the disk arrangement is the area of the bound
 	  \label{fig:circlePacking2-4}
   \end{subfigure}
 \end{center} 
-\caption{For $i=2,3,4,5$ the tree $T_i$ is a contact graph of unit disks.}\label{fig:circlePacking-1}
+\caption{For $i=2,3,4,5$ the tree $T_i$ is a contact graph of unit disks.}
 \end{figure}
 % The first round has one unit disk.  
 % The next round, two unit radii disk are in contact with the first, i.e. Figure \ref{fig:circlePacking1-1}.
@@ -1225,7 +1229,7 @@ In other words, the realization space of such a linkage is always path-connected
 \includegraphics{graphics/twoEmbeddingsOfSameLinkage.pdf}
 \end{center} 
 \caption{(a) and (b) show a linkage in two embeddings.  Any realization of a path can be continuously moved without self-intersection to any other realizations.}
-\label{fig:configuration-3}
+\label{fig:twoEmbeddingsOfSameLinkage.pdf}
 \end{figure}
 
 \subsection{Configuration Spaces of Polygonal Linkages}
@@ -2113,10 +2117,8 @@ false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
 We begin the chapter with describing several gadgets that translates the associated graph $A(\Phi)$ of a P3SAT boolean formula.  
 These gadgets will be used together to form a special hexagonal tiling that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.
 Together the gadgets will form what is called the auxilary construction.
-A hexagonal tiling and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove the following theorem:
-\begin{thm}\label{thm:hinge2}
-It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.
-\end{thm}
+A hexagonal tiling and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge2}: \textit{it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.}
+
 Our proof is a reduction from P3SAT.
 Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$, of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
 
@@ -2141,28 +2143,14 @@ J_d (z) 	&=& 4z(n,m)+1												= 16s(n,m)+1  			\\\hline
 N(n,m)		&=& \frac{5t-1}{2}											= \frac{5s^\kappa-1}{2}	\\\hline
 t(n,m)		&=& s^\kappa																		\\\hline
 H(n,m) 		&=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}				\\\hline
+&& x \leq \sin^{-1} x \leq x + \frac{x^3}{6} \qquad 0<x<1 \\\hline
 &&x - \frac{x^3}{3}\leq\tan^{-1}x\leq x \qquad	 0< x < 1\\\hline
-&&\leq x - \frac{x^3}{6}\sin x \leq x \quad\qquad 0< x < 1\\\hline
+&& x - \frac{x^3}{6}\leq \sin x \leq x \quad\qquad 0< x < 1\\\hline
 &&\cos x \leq 1-\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
 &&\sec x \leq 1+\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
 \end{array}
 $$
-% blhlakjdlaj
-% $$
-% \begin{array}{|rclcrcl|}
-% \hline
-% z(n,m)		&=& 4 s(n,m)																  		&&r&c&l\\\hline
-% J_h (z) 	&=& 6z(n,m)+1												= 24s(n,m)+1  			&&r&c&l\\\hline
-% J_d (z) 	&=& 4z(n,m)+1												= 16s(n,m)+1  			&&r&c&l\\\hline
-% N(n,m)		&=& \frac{5t-1}{2}											= \frac{5s^\kappa-1}{2}	&&r&c&l\\\hline
-% t(n,m)		&=& s^\kappa																		&&r&c&l\\\hline
-% H(n,m) 		&=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}				&&r&c&l\\\hline
-% 			&& 	x - \frac{x^3}{3}\leq\tan^{-1}x\leq x											&&&&0< x < 1 \\\hline
-% \sin x 		&& x 																				&&r&c&l\\\hline
-% \cos x 		&& 1-\frac{x^2}{2}																	&&r&c&l\\\hline
-% \sec x 		&& 1-\frac{x^2}{2}																	&&r&c&l\\\hline
-% \end{array}
-% $$
+
 The formula $t(n,m)=s^\kappa$ has an exponent $\kappa$ which is a sufficiently large integer that is chosen later on so that all arguments in this chapter are satisfied.
 The trigonmetric functions in the table above each are expressed as either the first term or the first and second term of their Maclaurin Series expansion.
 
@@ -2804,7 +2792,8 @@ The vertical displacement formed by the $\ith$ skinny rhombus' motion is $\delta
 The skinny rhombus hinged beneath an obstacle hexagon can rotate on its hinge with the flag. 
 %The angle formed between the diameter segment of the rhombus at canonical position to the position of the diameter segment in a given configuration is $\omega$.
 The angle in the interior of the rhombus from the diameter of the rhombus to the bottom side of the rhombus is a constant $\hat{\omega}_i = \arctan \lr{\frac{1}{100N}}$.  
-For non-canonical positions, let $\omega_i$ be the angular displacement between a copy of the diameter of the skinny rhombus in canonical position and the diameter of the skinny rhombus in non-canonnical position.  
+For non-canonical positions, let $\omega_i$ be the angular displacement between a copy of the diameter of the skinny rhombus in canonical position and the diameter of the skinny rhombus in non-canonnical position.
+The range of $\omega_i$ is $\lr{0, \frac{4 \pi}{3} - 2 \hat{\omega}_i}$.
 Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects.  
 Figure \ref{fig:someRangeSkinny.pdf}(b) illustrates some range of angular motion $\omega_i$ that a skinny rhombus can rotate on its hinge with a flag.  
 Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{i+1}$ with the skinny rhombus' angular displacement.
@@ -2860,301 +2849,120 @@ $$\begin{array}{rcl}
 										\sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} 
 										}
 \end{array}$$
-Using SAGE \cite{sage}, we compute $\omega_i$ as:
-\begin{landscape}
-
-\begin{equation}
-\resizebox{\textwidth}{!} 
-{
-$
-\omega_i = -\hat{\omega}_i + \arcsin\left(-\frac{243 \, s^{4}}{2 \,
-{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} - \frac{81 \, s^{3}}{4 \, {\left(5
-\, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \,
-\kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \,
-\kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2
-\, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} - \frac{27 \, s^{2}}{32 \, {\left(5
-\, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \,
-\kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \,
-\kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2
-\, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} + \frac{s^{5 \, \kappa}}{50 \,
-{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} + \frac{1215 \, s^{\kappa + 4}}{2
-\, {\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} + \frac{405 \, s^{\kappa + 3}}{4 \,
-{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} + \frac{135 \, s^{\kappa + 2}}{32
-\, {\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}}\right)$
-}
-\end{equation}
-\end{landscape}
-
-Solving for $\omega_i$, and using the law of cosines, we can then derive the length of the hyptenuse $h_{\beta \delta}$ of the right triangle of $\beta_{\omega_i}$ and $\delta_{\omega_i}$:
-$$h_{\beta \delta} = \sqrt{2\lr{1 + \lr{ \frac{1}{50 \lr{5s^\kappa -1 }} }^2 } \lr{1 -  \cos \omega_i } }$$
-and thus the upper bound of $\beta_{\omega_i}$ is:
-$$\beta_{\omega_i} \leq \sqrt{h_{\beta \delta}^2 - \lr{\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}  }^2} $$
-
-So we've shown the upper bounds of $\delta_{\omega_i}$ and $\beta_{\omega_i}$ are small.    
-Next, we'll show $\beta_{\alpha}$ must be zero.  
-
-% The right triangle formed from $\beta_{\omega_i}$ and $\delta_{\omega_i}$ has a maximal hypotenuse length of $\sqrt{2}\delta_{\omega_i}$.  
-% Because this right triangle is derived from the circular segment about the skinny rhombus' hinge point and the limitation of the maximal displacement of $\delta_{\omega_i}$, the hypotenuse has a maximal feasible distance of $\sqrt{\delta_{\omega_i}^2 + \delta_{\omega_i}^2}$.
-% The horizontal displacement $\beta_\omega$ is bounded as such:
-% \begin{equation}\label{eqn:betaOmegaBound}
-% \beta_\omega \leq \delta_{\omega_i} \leq \delta_i \leq \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
-% \end{equation}
-
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.9\columnwidth]{graphics/maximalHorizontalDisplacement.pdf}
-\captionof{figure}{(a)A pair of obstacle hexagons, their corresponding corridor with a flag and skinny rhombus; all components are in cannonical position. (b) shows the maximal horizontal displacement from $\omega$ and no obstacle hexagon rotation. (c) shows a maximal horizontal displacement from $\omega$ and obstacle hexagon rotation $\alpha$.}\label{fig:maximalHorizontalDisplacement.pdf}
-\end{center}
-\end{minipage}
-
-For the case that $\omega_i > \frac{\pi}{2}-2 \tan^{-1} \lr{\frac{1}{100N}}$, we may result in some cases where polygons may overlap in their interiors. 
-We illustrate some infeasible realizations with horizontal displacement to evaluate the length of $\beta_\alpha$, the horizontal displacement with respect to the rotation of an obstacle hexagon.  
-We then continue to show that $\beta_\alpha = 0$ for all feasible realizations and conclude that the bound of horizontal displacement is infact the Inequality \ref{eqn:betaOmegaBound}. 
-
-Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) shows maximal horizontal displacement with respect to $\omega_i$, $\beta_\omega$.  
-The corresponding skinny rhombus in Figure \ref{fig:maximalHorizontalDisplacement.pdf}(b) is rotated to lie parallel with the corridor yielding a horizontal displacement $\beta_{\omega_i} = \sqrt{1 + \lr{100N}^{-2} }$.  
-Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c) adds further horizontal displacement to the obstacle hexagon $O_{i+1}$ by rotating the $O_{i+1}$ by $\alpha$.  
-
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.9\columnwidth]{graphics/deltaAlphaHorizontalDisplacement.pdf}
-\captionof{figure}{A more detailed illustration of Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c).}\label{fig:deltaAlphaHorizontalDisplacement.pdf}
-\end{center}
-\end{minipage}
-
-Figure \ref{fig:deltaAlphaHorizontalDisplacement.pdf} illustrates Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c) in more detail.  
-The equations below serve as an aid to the reader to derive the maximal horizontal displacement of $\beta_\alpha$:
-$$
-\begin{array}{rcl}
-\zeta_2 &=& \tan^{-1} \lr{\frac{\frac{N}{2}-1}{\sqrt{3}}}\\
-\zeta_1 &=& \frac{\pi}{2} - \zeta_1\\
-\chi_1 &=& \sqrt{\lr{1+(100N)^{-2}} + \lr{\lr{\frac{N}{2}-1}^2 + 3} - 2 \cdot \lr{\lr{\frac{N}{2}-1}^2 + 3}\cdot \lr{1+(100N)^{-2}}  \cdot \cos \zeta_1       }\\
-\hat{\alpha} &=& \alpha - \frac{\pi}{2}\\
-\beta_\alpha &=& \frac{N\sqrt{3}}{2} \cos \hat{\alpha}
+Using SAGE \cite{sage}, we compute $\omega_i$ as shown in Appendix A.  
+The equation in appendix A can be simplified as such:
+\begin{equation}\label{eqn:structure}
+\begin{array}{lll}
+\omega_i&=& \hat{\omega}_i \\
+&+& \sum_{i=1}^7 \frac{c_i \cdot a_i}{800 d}
 \end{array}
-$$
+\end{equation}
+where $a_1 = 400$, $a_2 = 200$, $a_3 = 25$, $a_4 = 16$, $a_5 = a_1$, $a_6 = a_2$, $a_7 = a_3$ and $c_i$ are shown Table \ref{table:ci}:
 
-\begin{lem}\label{lem:Omega}
-There are no possible realizations when $\omega \geq \frac{\pi}{2}$.
-\end{lem}
-\begin{proof}
-In this case the range of $\omega_i$ is $\frac{\pi}{2} \leq \omega \leq \lr{\frac{4 \pi}{3} - \hat{\omega}}$ where $\hat{\omega} = \tan^{-1} \lr{\frac{1}{50N}}$ is the acute angle in the interior of the skinny rhombus.  
-The upperbound $\lr{\frac{4 \pi}{3} - \hat{\omega}}$ is the case when the skinny rhombus' side is touching its flag's upper right side.  
-When $\omega_i = \frac{\pi}{2}$, the height of the hinge point of the obstacle hexagon and skinny rhombus from the bottom of the corridor is $1 + \sqrt{3}$ which is less than the half length of the side of the obstacle hexagon $\frac{N}{2}$.  
-Thus we have an overlap of obstacle hexagons; namely an of the obstacle hexagons shown in \ref{fig:maximalHorizontalDisplacement.pdf}(a) and the obstacle hexagon to the right of the corresponding corridor or if $\alpha$ is large enough, only the obstacle hexagon to the right of the corresponding corridor.
-When $\omega_i > \frac{\pi}{2}$ the height of the hinge point of the obstacle hexagon and skinny rhombus is lowered and results in overlap of obstacle hexagons; namely an of the obstacle hexagons shown in \ref{fig:maximalHorizontalDisplacement.pdf}(a) and the obstacle hexagon to the right of the corresponding corridor or if $\alpha$ is large enough, only the obstacle hexagon to the right of the corresponding corridor (for example see Figure \ref{fig:maximalHorizontalDisplacement.pdf}(c)).
-\end{proof}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|R|L|}
+\hline
+c_1&-243s^4 \\\hline
+c_2&-81s^3\\\hline
+c_3&-27s^2\\\hline
+c_4&5s^{5\kappa}\\\hline
+c_5&1215s^{4+\kappa}\\\hline
+c_6&405s^{3+\kappa}\\\hline
+c_7&135s^{2+\kappa}\\\hline
+\end{tabular}
+\end{center}
+\label{table:ci}
+\caption{The $c_i$ values in Equation \ref{eqn:structure}.}
+\end{table}
 
-By Lemma \ref{lem:Omega} we have that $\omega_i$ must be less than $\frac{\pi}{2}$ and thus $\beta_\alpha = 0$ and the horizontal displacement is bounded by $\beta_{\omega_i}$.    
-Earlier we've shown that $\beta_{\omega_i}$ is bounded in Inequality \ref{eqn:betaOmegaBound} and so $\beta$ is bounded by the same inequality.  
-By letting the integer $k=1$ in the equation $t(n,m)=s^k$, all inequalities for the rotational, vertical, and horizontal arguments hold.
-% The horizontal displacement $\beta_\alpha$ formed by the rotational displacement is measured from the center of the obstacle hexagon.
-% The center height of the obstacle hexagon is $\sqrt{3}N$; the 
-% Note that this rotation on the flag's hinge point moves the obstacle hexagon above it with horizontal and vertical displacement.  
-% The vertical displacement from the rotation $\omega_i$ is $\lr{1+\lr{100N}^{-2}}^{1/2} \sin \omega$.  
-% Earlier in equation \ref\label{eqn:verticalBound} we showed the total vertical displacement of the $\ith$ obstacle hexagon is:
-% $$\delta_v \leq \frac{6s\lr{288s^2+24s}^2}{\lr{125 s^{3\kappa}-75 s^{2\kappa}+15 s^\kappa-5}^2}.$$
+Equation \ref{eqn:structure} can be relaxed for sufficiently large $\kappa$ and $s$ as follows:
+ \begin{equation}\label{eqn:relaxedStructure}
+ \begin{array}{rcl}
+ \omega_i &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				\frac{62500 s^{2\kappa} - 25000 s^\kappa + 2501}{2500\lr{5s^\kappa - 1}^2}
+			 }
+ }
+}\\
+ &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				\frac{62500 s^{2\kappa} - 25000 s^\kappa + 2501}{62500 s^{2\kappa}-25000 s^\kappa +2500}
+			 }
+ }
+}\\
+ &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				1+ \frac{1}{2500 \lr{1-5s^\kappa}^2}
+			 }
+ }
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{2\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				1+ \frac{1}{2500 \lr{1-5s^\kappa}^2}
+			 }
+ }
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				4+ \frac{4}{2500 \lr{1-5s^\kappa}^2}
+			 }
+ }
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{3\lr{ 5  s^{6 \kappa} - s^{5 \kappa} } } 
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{
+97200s^5
+16200s^5
+675s^5+
+80s^{5\kappa}+
+486000s^{5\kappa}+
+81000s^{5\kappa}+
+3375s^{5\kappa}}{ 5  s^{6 \kappa} } 
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{684530s^{5\kappa}}{ 5  s^{6 \kappa} } 
+}\\
+&\leq& -\frac{1}{100N} + \frac{684530s^{5\kappa}}{ 5  s^{6 \kappa} } + \frac{\lr{\frac{684530s^{5\kappa}}{5  s^{6 \kappa}}}^3}{6}\\
+&\leq& \frac{-2}{100 \lr{5 s^\kappa - 1}} + \frac{684530^3s^{5\kappa}}{ 5  s^{6 \kappa}} + \frac{684530s^{15\kappa}}{ 30  s^{18 \kappa}}
+\end{array}
+\end{equation}
 
-
-
-% Figure \ref{fig:corridorNonCanonical2.pdf} shows the range of motion of the skinny rhombus.
-% The angle formed between the diameter of the rhombus and the half length of the corridor is $\omega_i$.
-
-
-
-
-
-% \begin{equation}
-% \vlr{\beta_i - \beta_{i-1}} = \left\lbrace \begin{array}{r}
-% 1 - \cos \frac{\omega}{2}\leq \frac{\omega}{2}\\
-% 2 + (1 - \cos \omega) + \frac{h}{2} (1 - \cos \alpha)
-% \end{array}\right.
-% \end{equation}
-
-% We show the horizontal displacement of an obstacle hexagon is small.
-
-% First we analyze the change of corridor's cross-section with respect to horizontal displacement.
-
-% \begin{minipage}{\linewidth}
-% \begin{center}
-% \includegraphics[width=.8\textwidth]{graphics/HorizontalCorridorArgument.pdf}
-% \captionof{figure}{(a) A corridor and corresponding junctions in canoncial position with cross section $N(n,m) \times (\sqrt{3} + (100N)^{-1})$.  (b) A corridor whose total horizontal displacement is $\beta_{i+1} + \beta_{i-1}$ on the top and total vertical displacement of $\delta_{i+1} + \delta_{i-1}$ on the bottom; its cross section is $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$. (c) shows the cross sectional area of a corridor with full rotational, horizontal, and vertical displacement.}\label{fig:HorizontalCorridorArgument.pdf}
-% \end{center}
-% \end{minipage}
-% Figure \ref{fig:HorizontalCorridorArgument.pdf} shows the same corridor and corresponding junctions in canonical position and non-canoncical positions.
-% This figure is of a corridor and adjacent junctions formed by obstacle hexagons in counter-clockwise order: $O_{i-1,j}$, $O_{i,j-1}$, $O_{i+1,j}$, and $O_{i,j+1}$.
-% The cross sectional areas for Figure \ref{fig:HorizontalCorridorArgument.pdf}(a) and Figure \ref{fig:HorizontalCorridorArgument.pdf}(b) are $N(n,m) \times (\sqrt{3} + (100N)^-1)$ and $(N(n,m) + \beta_{i+1} + \beta_{i-1}) \times (\sqrt{3} + (100N)^{-1}) + \delta_{i+1} + \delta_{i-1}$ respectively.  
-% Figure \ref{fig:HorizontalCorridorArgument.pdf}(c) shows the same corridor with rotational, horizontal, and vertical displacement.
-% To find the crosss sectional area of the corridor in Figure \ref{fig:HorizontalCorridorArgument.pdf}(c), we decompose it into three parts, the upper tringle, the reectangle, and the lower triangle.  
-
-% We're given $N(n,m)$ and $(\alpha, \beta, \delta)_{i,j}$ for all $i,j = 1, \dots, u$. 
-% The area of the upper triangle is 
-% \begin{equation}\label{eqn:upperTriangle}
-% \frac{1}{2}\lr{N+\beta_{i+1} + \beta_{i-1}}^2 \tan \lr{\alpha_{i+1,j}}.
-% \end{equation}
-% The area of the rectangle is 
-% \begin{equation}\label{eqn:rectangle}
-% \lr{N + \beta_{i+1} + \beta_{i-1}} \cdot \lr{\lr{\sqrt{3} + (100N)^{-1}} + \delta_{i+1} + \delta_{i-1}}.
-% \end{equation}
-% The area of the lower triangle is 
-% \begin{equation}\label{eqn:lowerTriangle}
-% \frac{1}{2} \lr{N \cdot \cos \lr{ \alpha_{i-1,j} } } \cdot \lr{N \cdot \sin \lr{\alpha_{i-1,j}} }= N^2 \sin \lr{2 \cdot \alpha_{i-1,j}}.
-% \end{equation}
-
-% We show by an induction argument that the horizontal displacement for any given modified construction is small.  
-% Consider a column of obstacle hexagons which has an obstacle hexagon $O_1$ hinged at the bottom of the frame $J_z$.  
-% The obstacle hexagon $O_1$ has no displacement; it is immobile.  
-% Consider the case where the column of hexagon has a half sized hexagon attached at the the bottom of the frame, the hinge points of the half sized hexagon immobilize the the first obstacle hexagon of that column (see Figure \ref{fig:HalfSizeHexagon.pdf} for reference).  
-% In either case the obstacle hexagon $O_2$ has horizontal mobility by way of the range of motion from the skinny rhombi (see Figure \ref{fig:corridorNonCanonical2.pdf} for reference) between $O_1$ and $O_2$. 
-% The diameter of the skinny rhombi are $\sqrt{1 + (100N)^{-1}}$; the possible horizontal displacement $O_2$ could have is $\sqrt{1 + (100N)^{-1}}$ plus the horizontal displacement contributed by $\alpha_{i,2}$ (see Figure \ref{rangeOfMotionSkinnyRhombus.pdf}).
-% % \begin{equation}\label{eqn:horizontalDisplacementBeta2}
-% % \beta_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \sqrt{ 
-% % 													2\cdot \lr{
-% % 																3 + \lr{
-% % 																		\frac{5t-1}{4} - \sqrt{1 + \lr{
-% % 																										\frac{1}{100N}
-% % 																										}^2
-% % 																								}
-% % 																		}^2
-% % 																}
-% % 												-  
-% % 												\cos \lr{\alpha_{i,2}} \cdot 2 \cdot 
-% % 												\lr{
-% % 														3 + \lr{
-% % 																		\frac{5t-1}{4} - \sqrt{ 1 + \lr{
-% % 																										\frac{1}{100N}
-% % 																										}^2
-% % 																								}
-% % 																}^2
-% % 													}
-% % 												}
-% % \end{equation}
-% \begin{equation}\label{eqn:horizontalDisplacementBeta2}
-% \beta_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \frac{h}{2} \sin \alpha_{i,2} \leq \sqrt{1 + (100N)^{-1}} + \frac{h\alpha_{i,2} }{2}
-% \end{equation}
-% The maximal horizontal displacement is shown in Inequality \ref{eqn:horizontalDisplacementBeta2} where $h$ is the height of an obstacle hexagon.  
-% The maximal horizontal displacement is $\beta_{i,2} = \sqrt{1 + (100N)^{-1}} + \frac{h}{2} \sin \alpha_{i,2}$ however, this large value is infeasible.  
-% We will now show what the feasible upper bound of horizontal displacement is.
-% Firstly, the range of motion of the skinny rhombus is limited by the vertical displacement of an obstacle hexagon. 
-% Secondly, we have bounded the angular displacement $\alpha$ of an obstacle hexagon.  
-
-% %Firsty argument
-% The vertical displacement of the $v^\text{th}$ obstacle hexagon is:
-% $$\delta_v \leq \frac{\sum_{i=1}^v  \lr{ \frac{5\lr{i^2+i}}{20N^3-12}}^2}{2}$$
-% Let the angular rotation of the skinny rhombus be $\omega_v$, then corresponding horizontal dispalcement $\phi$ is:
-% $$\phi = \frac{\delta_v}{\tan\lr{\omega_v}}=\frac{\delta_v}{\tan\lr{\sin^{-1} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}}}$$
-% using Maclaurin series, $\phi$ simplifies to:
-% \begin{eqnarray*}
-% \frac{\delta_v}{\tan\lr{\sin^{-1} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}}}&\leq&\frac{\delta_v}{\tan\lr{ \frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}     + \frac{1}{6} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}^3}}\\
-% &\leq& \frac{\delta_v}{ \frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}     + \frac{1}{6} \lr{\frac{\delta_v}{\sqrt{1+ \lr{\frac{1}{100N}}^2}}}^3}
-% \end{eqnarray*}
-% %secondly argument
-% The angluar displacement of the $v^\text{th}$ obstacle hexagon is:
-% $$\alpha_v \leq \frac{\lr{v^2 + v}5}{2\lr{10N^3-6}}$$
-% which implies:
-% $$\frac{h\alpha_2 }{2} \leq \frac{15h}{2\lr{10N^3-6}}$$
-
-% \begin{minipage}{\linewidth}
-% \begin{center}
-% \includegraphics[width=.6\columnwidth]{graphics/rangeOfMotionSkinnyRhombus.pdf}
-% \captionof{figure}{This figure illustrates the possible range of motion of the skinny rhombus between two obstacle hexagons and the feasible range of rotational displacement of $O_{1,2}$.}\label{fig:rangeOfMotionSkinnyRhombus.pdf}
-% \end{center}
-% \end{minipage}
-
-% \begin{minipage}{\linewidth}
-% \begin{center}
-% \includegraphics[width=.9\columnwidth]{graphics/BottomOfJ.pdf}
-% \captionof{figure}{bottom}\label{fig:BottomOfJ.pdf}
-% \end{center}
-% \end{minipage}
-
-% % I think the simplest argument would go by induction on the "height" of
-% % the obstacle hexagon.
-% % Assume that angular and vertical displacement of every obstacle hexagon
-% % is small.
-% Note that the bottom most obstacle hexagon $O_{j,1}$ is hinged to the frame or hinged to some half sized hexagon such that $\beta_{j,1} = 0$.  
-% The range of motion horizontal motion that $O_{j,2}$ has is dictated by the range of possible motion from the skinny rhombus between $O_{j,1}$ and $O_{j,2}$.
-% The diameter of the skinny rhombus is $\sqrt{1+(100N)^{-1}}$.  
-% %An upperbound of $\beta_{j,2}$ is $\sqrt{1+(100N)^{-1}}$, however it is not a small or tight bound.  
-% If $\beta_{j,2} = \pm \sqrt{1+(100N)^{-1}}$, there would be a collision a  corridor(s) adjacent to $O_{j,2}$.  
-
-% \begin{minipage}{\linewidth}
-% \begin{center}
-% \includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical2.pdf}
-% \captionof{figure}{The full range of motion is shown dashed half circle about the diameter of the skinny rhombus.}\label{fig:corridorNonCanonical2.pdf}
-% \end{center}
-% \end{minipage}
-
-% Figure \ref{fig:corridorNonCanonical2.pdf} shows the range of motion of the skinny rhombus.
-% The angle formed between the diameter of the rhombus and the half length of the corridor is $\omega_i$.
-
-
-
-% \begin{minipage}{\linewidth}
-% \begin{center}
-% \includegraphics[width=.6\columnwidth]{graphics/TheOmegaFigure.pdf}
-% \captionof{figure}{blah}\label{fig:TheOmegaFigure.pdf}
-% \end{center}
-% \end{minipage}
-
-% \begin{equation}
-% \vlr{\beta_i - \beta_{i-1}} = \left\lbrace \begin{array}{r}
-% 1 - \cos \frac{\omega}{2}\leq \frac{\omega}{2}\\
-% 2 + (1 - \cos \omega) + \frac{h}{2} (1 - \cos \alpha)
-% \end{array}\right.
-% \end{equation}
-% % Consider one hexagon (alpha,beta,delta)_{(i,j)}, and further assume that
-% % the hexagons bellow, lower-left, and lower-right have small horizontal
-% % displacement
-% % (here "small" can be quantified using the bounds (1.7) and (1.8)).
-% % Then we need to show that beta_{(i,j)} is also "small"
-% % Because of the connector between the hexagon (i,j) and the one directly
-% % below (i,j-1),
-% % the horizontal displacement is at most about beta_{(i,j-1)} (1-cos
-% % (gamma_{(i,j)})).
 \textbf{Lemma \ref{lem:aux-C} Conclusion.} We have thus shown that the triple $(\alpha, \beta, \delta)$ for any obstacle hexagon is small and bounded.  
 Therefore the entire modified auxiliary construction in any realization is canonical or close to canonical where the encoded P3SAT information is stable.
 \end{proof}\begin{lem}\label{lem:lePieceDuResistance}
@@ -3415,7 +3223,73 @@ Recall that we are to show that for any realized perturbed snowflake $S_i$, the 
 \end{minipage}
 
 
-\end{proof}
+\end{proof}\chapter*{Appendix A}
+The following formula is the solution derived from Sage and reduced to Equation \ref{eqn:structure}.
+\begin{landscape}
+\begin{equation}
+\resizebox{\textwidth}{!} 
+{
+$
+\omega_i = -\hat{\omega}_i + \arcsin\left(-\frac{243 \, s^{4}}{2 \,
+{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
+\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
+\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
+\, s^{\kappa} + 1\right)}}}\right)}} - \frac{81 \, s^{3}}{4 \, {\left(5
+\, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \,
+\kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \,
+\kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2
+\, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
+\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
+\, s^{\kappa} + 1\right)}}}\right)}} - \frac{27 \, s^{2}}{32 \, {\left(5
+\, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \,
+\kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \,
+\kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2
+\, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
+\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
+\, s^{\kappa} + 1\right)}}}\right)}} + \frac{s^{5 \, \kappa}}{50 \,
+{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
+\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
+\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
+\, s^{\kappa} + 1\right)}}}\right)}} + \frac{1215 \, s^{\kappa + 4}}{2
+\, {\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
+\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
+\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
+\, s^{\kappa} + 1\right)}}}\right)}} + \frac{405 \, s^{\kappa + 3}}{4 \,
+{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
+\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
+\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
+\, s^{\kappa} + 1\right)}}}\right)}} + \frac{135 \, s^{\kappa + 2}}{32
+\, {\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
+s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
+\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
+\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
+s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
+\, s^{\kappa} + 1\right)}}}\right)}}\right)$
+}
+\end{equation}
+\end{landscape}
 \bibliographystyle{plain}
 \bibliography{WorkCited}
 \end{document}

@@ -3,10 +3,8 @@
 We begin the chapter with describing several gadgets that translates the associated graph $A(\Phi)$ of a P3SAT boolean formula.  
 These gadgets will be used together to form a special hexagonal tiling that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.
 Together the gadgets will form what is called the auxilary construction.
-A hexagonal tiling and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove the following theorem:
-\begin{thm}\label{thm:hinge2}
-It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.
-\end{thm}
+A hexagonal tiling and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge2}: \textit{it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.}
+
 Our proof is a reduction from P3SAT.
 Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$, of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
 
@@ -31,28 +29,14 @@ J_d (z) 	&=& 4z(n,m)+1												= 16s(n,m)+1  			\\\hline
 N(n,m)		&=& \frac{5t-1}{2}											= \frac{5s^\kappa-1}{2}	\\\hline
 t(n,m)		&=& s^\kappa																		\\\hline
 H(n,m) 		&=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}				\\\hline
+&& x \leq \sin^{-1} x \leq x + \frac{x^3}{6} \qquad 0<x<1 \\\hline
 &&x - \frac{x^3}{3}\leq\tan^{-1}x\leq x \qquad	 0< x < 1\\\hline
-&&\leq x - \frac{x^3}{6}\sin x \leq x \quad\qquad 0< x < 1\\\hline
+&& x - \frac{x^3}{6}\leq \sin x \leq x \quad\qquad 0< x < 1\\\hline
 &&\cos x \leq 1-\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
 &&\sec x \leq 1+\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
 \end{array}
 $$
-% blhlakjdlaj
-% $$
-% \begin{array}{|rclcrcl|}
-% \hline
-% z(n,m)		&=& 4 s(n,m)																  		&&r&c&l\\\hline
-% J_h (z) 	&=& 6z(n,m)+1												= 24s(n,m)+1  			&&r&c&l\\\hline
-% J_d (z) 	&=& 4z(n,m)+1												= 16s(n,m)+1  			&&r&c&l\\\hline
-% N(n,m)		&=& \frac{5t-1}{2}											= \frac{5s^\kappa-1}{2}	&&r&c&l\\\hline
-% t(n,m)		&=& s^\kappa																		&&r&c&l\\\hline
-% H(n,m) 		&=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}				&&r&c&l\\\hline
-% 			&& 	x - \frac{x^3}{3}\leq\tan^{-1}x\leq x											&&&&0< x < 1 \\\hline
-% \sin x 		&& x 																				&&r&c&l\\\hline
-% \cos x 		&& 1-\frac{x^2}{2}																	&&r&c&l\\\hline
-% \sec x 		&& 1-\frac{x^2}{2}																	&&r&c&l\\\hline
-% \end{array}
-% $$
+
 The formula $t(n,m)=s^\kappa$ has an exponent $\kappa$ which is a sufficiently large integer that is chosen later on so that all arguments in this chapter are satisfied.
 The trigonmetric functions in the table above each are expressed as either the first term or the first and second term of their Maclaurin Series expansion.
 

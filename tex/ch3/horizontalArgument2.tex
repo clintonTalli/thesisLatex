@@ -1,0 +1,192 @@
+\paragraph{Horizontal Displacement $\beta$}
+
+Next we show that the horizontal displacement of an obstacle hexagon is small.  
+Note that there is no horizontal displacement of obstacle hexagons hinged to the frame; their positions are fixed.  
+Similarly, obstacle hexagons hinged to half hexagons near the bottom of the frame do not have horizontal displacement because their positions are also fixed.  
+Without loss of generality, $\beta_{1,j}=0$ for all $j$ in a modified construction.
+
+To illustrate the range of displacement an obstacle hexagon, we consider the range of motion the obstacle hexagon's skinny rhombus, its rotational displacement, and vertical displacement.  
+The bound of the horizontal displacement will be limited by the bound of the vertical displacement $\delta_i$.  
+The vertical displacement formed by the $\ith$ skinny rhombus' motion is $\delta_{\omega_i}$; the vertical displacement formed by the $\ith$ obstacle hexagon's rotational displacement is $\delta_{\alpha_i}$.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.9\columnwidth]{graphics/someRangeSkinny.pdf}
+\captionof{figure}{(a) A pair of vertically adjacent obstacle hexagons and their corresponding corridor in canonical position.  (b) shows the same obstacle hexagons and corridors with the exception that the skinny rhombus is not in cannonical position. (c) is the same as (b) with the exception that the obstacle hexagon $O_{i+1}$ has rotation displacement.}\label{fig:someRangeSkinny.pdf}
+\end{center}
+\end{minipage}
+
+The skinny rhombus hinged beneath an obstacle hexagon can rotate on its hinge with the flag. 
+%The angle formed between the diameter segment of the rhombus at canonical position to the position of the diameter segment in a given configuration is $\omega$.
+The angle in the interior of the rhombus from the diameter of the rhombus to the bottom side of the rhombus is a constant $\hat{\omega}_i = \arctan \lr{\frac{1}{100N}}$.  
+For non-canonical positions, let $\omega_i$ be the angular displacement between a copy of the diameter of the skinny rhombus in canonical position and the diameter of the skinny rhombus in non-canonnical position.
+The range of $\omega_i$ is $\lr{0, \frac{4 \pi}{3} - 2 \hat{\omega}_i}$.
+Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects.  
+Figure \ref{fig:someRangeSkinny.pdf}(b) illustrates some range of angular motion $\omega_i$ that a skinny rhombus can rotate on its hinge with a flag.  
+Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{i+1}$ with the skinny rhombus' angular displacement.
+%In the case that $\alpha_i > \frac{\pi}{2}$ the rotational displacement $\alpha_i$ creates a positive vertical displacement $\beta_{\alpha_i}$ with respect to the center of its corresonding obstacle hexagon.
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.37\columnwidth]{graphics/TheOmegaFigure.pdf}
+\captionof{figure}{The vertical displacement $\delta_{\omega_i}$ and horizontal displacement $\beta_{\omega_i}$ created from the skinny rhombus rotation $\omega$.}\label{fig:TheOmegaFigure.pdf}
+\end{center}
+\end{minipage}
+
+%First let's consider the case when $\omega_i \leq \frac{\pi}{2}$.
+In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega_i$ of the skinny rhombus is shown, $\delta_{\omega_i}$ and $\beta_{\omega_i}$ respectively. 
+The maximal displacement of the $\ith$ vertical displacement is $\delta_i$; thus $\delta_{\omega_i} \leq \delta_i$.  
+When considering the full range of motion of the skinny rhombus (ignoring the upper bound $\delta_i$ for the moment), the maximal length of vertical displacement by $\omega_i$ is when the diamater of the skinny rhombus is vertical:
+$$\begin{array}{rcl}
+\delta_{\omega_i} &=& \sqrt{1 + \lr{\frac{1}{100N}}^2 } - \frac{1}{100N}\\
+&=& \sqrt{1 + \lr{\frac{1}{100 \lr{\frac{5t-1}{2}}}}^2} - \frac{1}{100 \lr{\frac{5t-1}{2}}}\\
+&=& \sqrt{1 + \lr{\frac{1}{50 (5t-1)}}^2} - \frac{1}{50 (5t-1)}\\
+&=& \sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} - \frac{1}{50 \lr{5s^\kappa-1}}
+\end{array}$$
+For sufficiently large $s$ the upper bound of $\delta_i$ is smaller than the maximal length of $\delta_{\omega_i}$:
+$$\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}\leq \sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} - \frac{1}{50 \lr{5s^\kappa-1}}$$
+Thus, we use the bound of $\delta_i$ in Inequality \ref{eqn:verticalBound} as the maximal value for $\delta_{\omega_i}$.  
+To find the value of $\omega_i$ for when the height of $\delta_{\omega_i}$ equals $\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}$, we solve for $\omega_i$ in the following formula:
+$$\begin{array}{rcl}
+\sin \lr{\hat{\omega}_i + \omega_i} &=& \frac{\frac{1}{100N} + \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}}{\sqrt{1 + \lr{\frac{1}{100N}}^2 }}\\
+\sin \lr{\arctan \lr{\frac{1}{50\lr{5s^\kappa - 1}}} + \omega_i} &=& \frac{\frac{1}{50 \lr{5s^\kappa-1}} + \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}}{\sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} }\\
+\sin \lr{
+			\arctan \lr{
+							\frac{1}{50\lr{
+											5s^\kappa - 1
+										   }
+								     }
+					    }
+	    } \cos \lr{\omega_i} + 
+\cos \lr{
+		\arctan \lr{
+					\frac{1}{50\lr{
+									5s^\kappa - 1
+									}
+							}
+					}
+		}  \sin \lr{\omega_i} &=& \frac{
+											\frac{
+													1024 s^{6\kappa} + 300 s\lr{144s^2+12s}^2  \lr{5s^\kappa-1}
+													}{
+													51200 s^{6\kappa} \lr{5s^\kappa-1}
+													} 
+				
+										}{
+										\sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} 
+										}
+\end{array}$$
+Using SAGE \cite{sage}, we compute $\omega_i$ as shown in Appendix A.  
+The equation in appendix A can be simplified as such:
+\begin{equation}\label{eqn:structure}
+\begin{array}{lll}
+\omega_i&=& \hat{\omega}_i \\
+&+& \sum_{i=1}^7 \frac{c_i \cdot a_i}{800 d}
+\end{array}
+\end{equation}
+where $a_1 = 400$, $a_2 = 200$, $a_3 = 25$, $a_4 = 16$, $a_5 = a_1$, $a_6 = a_2$, $a_7 = a_3$ and $c_i$ are shown Table \ref{table:ci}:
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|R|L|}
+\hline
+c_1&-243s^4 \\\hline
+c_2&-81s^3\\\hline
+c_3&-27s^2\\\hline
+c_4&5s^{5\kappa}\\\hline
+c_5&1215s^{4+\kappa}\\\hline
+c_6&405s^{3+\kappa}\\\hline
+c_7&135s^{2+\kappa}\\\hline
+\end{tabular}
+\end{center}
+\label{table:ci}
+\caption{The $c_i$ values in Equation \ref{eqn:structure}.}
+\end{table}
+
+Equation \ref{eqn:structure} can be relaxed for sufficiently large $\kappa$ and $s$ as follows:
+ \begin{equation}\label{eqn:relaxedStructure}
+ \begin{array}{rcl}
+ \omega_i &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				\frac{62500 s^{2\kappa} - 25000 s^\kappa + 2501}{2500\lr{5s^\kappa - 1}^2}
+			 }
+ }
+}\\
+ &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				\frac{62500 s^{2\kappa} - 25000 s^\kappa + 2501}{62500 s^{2\kappa}-25000 s^\kappa +2500}
+			 }
+ }
+}\\
+ &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				1+ \frac{1}{2500 \lr{1-5s^\kappa}^2}
+			 }
+ }
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{2\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				1+ \frac{1}{2500 \lr{1-5s^\kappa}^2}
+			 }
+ }
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
+			\sqrt{
+				4+ \frac{4}{2500 \lr{1-5s^\kappa}^2}
+			 }
+ }
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
+-16200s^3
+-675s^2+
+80s^{5\kappa}+
+486000s^{4+\kappa}+
+81000s^{3+\kappa}+
+3375s^{2+\kappa}}{3\lr{ 5  s^{6 \kappa} - s^{5 \kappa} } } 
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{
+97200s^5
+16200s^5
+675s^5+
+80s^{5\kappa}+
+486000s^{5\kappa}+
+81000s^{5\kappa}+
+3375s^{5\kappa}}{ 5  s^{6 \kappa} } 
+}\\
+ &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{684530s^{5\kappa}}{ 5  s^{6 \kappa} } 
+}\\
+&\leq& -\frac{1}{100N} + \frac{684530s^{5\kappa}}{ 5  s^{6 \kappa} } + \frac{\lr{\frac{684530s^{5\kappa}}{5  s^{6 \kappa}}}^3}{6}\\
+&\leq& \frac{-2}{100 \lr{5 s^\kappa - 1}} + \frac{684530^3s^{5\kappa}}{ 5  s^{6 \kappa}} + \frac{684530s^{15\kappa}}{ 30  s^{18 \kappa}}
+\end{array}
+\end{equation}
+
