@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  28 AUG 2016 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  28 AUG 2016 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1100,16 +1100,16 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 19--25
 []$[]$ 
  []
 
-[17 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3/horizontalArgument2.tex
+[17 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3/horizontalArgument3.tex
 [18 <./graphics/verticalDisplacementArgument.pdf>]
 <graphics/someRangeSkinny.pdf, id=345, 534.95862pt x 167.07419pt>
 File: graphics/someRangeSkinny.pdf Graphic file (type pdf)
 
 <use graphics/someRangeSkinny.pdf>
-Package pdftex.def Info: graphics/someRangeSkinny.pdf used on input line 14.
+Package pdftex.def Info: graphics/someRangeSkinny.pdf used on input line 13.
 (pdftex.def)             Requested size: 390.25534pt x 121.8841pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 12--18
+Overfull \hbox (15.0pt too wide) in paragraph at lines 11--17
 []$[]$ 
  []
 
@@ -1117,28 +1117,32 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 12--18
 File: graphics/TheOmegaFigure.pdf Graphic file (type pdf)
 
 <use graphics/TheOmegaFigure.pdf>
-Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 31.
+Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 47.
 (pdftex.def)             Requested size: 160.43727pt x 124.90932pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 29--35
+Overfull \hbox (15.0pt too wide) in paragraph at lines 45--51
 []$[]$ 
  []
 
-[19 <./graphics/someRangeSkinny.pdf> <./graphics/TheOmegaFigure.pdf>]
+[19 <./graphics/someRangeSkinny.pdf>]
 
-Package caption Warning: \label without proper \caption on input line 102.
+Package caption Warning: \label without proper \caption on input line 118.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table:ci' on page 20 undefined on input line 87.
+LaTeX Warning: Reference `table:ci' on page 20 undefined on input line 103.
 
-[20]) (./ch3/lemma5Conclusion.tex) (./ch3/theoremConclusion.tex [21]
 
-LaTeX Warning: Reference `thm:hinge2' on page 22 undefined on input line 52.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) (./appendixA/appendixA.tex [22] [23
+[20 <./graphics/TheOmegaFigure.pdf>] [21]) (./ch3/lemma5Conclusion.tex)
+(./ch3/theoremConclusion.tex [22]
 
-] [24
+LaTeX Warning: Reference `thm:hinge2' on page 23 undefined on input line 52.
+
+)) (./appendixA/appendixA.tex [23] [24
+
+] [25
 
 ]) (../pdf/Ch3.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 12.
@@ -1147,7 +1151,7 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 12.
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[25
+[26
 
 
 ] (../pdf/Ch3.aux)
@@ -1156,10 +1160,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17661 strings out of 493089
- 322994 string characters out of 6134841
+ 17662 strings out of 493089
+ 323014 string characters out of 6134841
  512870 words of memory out of 5000000
- 20654 multiletter control sequences out of 15000+600000
+ 20655 multiletter control sequences out of 15000+600000
  44335 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,59p,818b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1186,10 +1190,10 @@ w/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/symbol
 /texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Ch3.pdf (29 pages, 405957 bytes).
+Output written on ../pdf/Ch3.pdf (30 pages, 410028 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 349 compressed objects within 4 object streams
+ 473 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2773,14 +2773,13 @@ Thus we finally say that the bound for $\delta_v$, where $1<v\leq j\leq u$, is s
 
 \paragraph{Horizontal Displacement $\beta$}
 
-Next we show that the horizontal displacement of an obstacle hexagon is small.  
-Note that there is no horizontal displacement of obstacle hexagons hinged to the frame; their positions are fixed.  
-Similarly, obstacle hexagons hinged to half hexagons near the bottom of the frame do not have horizontal displacement because their positions are also fixed.  
-Without loss of generality, $\beta_{1,j}=0$ for all $j$ in a modified construction.
-
-To illustrate the range of displacement an obstacle hexagon, we consider the range of motion the obstacle hexagon's skinny rhombus, its rotational displacement, and vertical displacement.  
-The bound of the horizontal displacement will be limited by the bound of the vertical displacement $\delta_i$.  
-The vertical displacement formed by the $\ith$ skinny rhombus' motion is $\delta_{\omega_i}$; the vertical displacement formed by the $\ith$ obstacle hexagon's rotational displacement is $\delta_{\alpha_i}$.
+There are two components of the modified auxiliary construction whose range of motion can create horizontal displacement, i.e. the skinny rhombi and the angular rotation of obstacle hexagons.  
+Denote the horizontal displacement created by a skinny rhombi and rotational displacement as $\beta_\omega$ and $\beta_\alpha$ respectively.  
+The skinny rhombi has a range of motion from the hinge of the center flag of the corridor.  
+From canonical position, skinny rhombi can rotate clockwise about its hinge on the central flag.  
+Without loss of generality, the $\ith$ skinny rhombus' non-canonical placement displaces the $\lr{i+1}^\text{st}$ obstacle hexagon.  
+An obstacle hexagon's rotational displacement allows the hexagon to rotate about its hinge point with the skinny rhombus below it in an counter-clockwise manner about the skinny rhombus.  
+Figure \ref{fig:someRangeSkinny.pdf} illustrates the two motions that generate $\beta_\omega$ and $\beta_\alpha$.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -2789,15 +2788,32 @@ The vertical displacement formed by the $\ith$ skinny rhombus' motion is $\delta
 \end{center}
 \end{minipage}
 
-The skinny rhombus hinged beneath an obstacle hexagon can rotate on its hinge with the flag. 
-%The angle formed between the diameter segment of the rhombus at canonical position to the position of the diameter segment in a given configuration is $\omega$.
 The angle in the interior of the rhombus from the diameter of the rhombus to the bottom side of the rhombus is a constant $\hat{\omega}_i = \arctan \lr{\frac{1}{100N}}$.  
 For non-canonical positions, let $\omega_i$ be the angular displacement between a copy of the diameter of the skinny rhombus in canonical position and the diameter of the skinny rhombus in non-canonnical position.
 The range of $\omega_i$ is $\lr{0, \frac{4 \pi}{3} - 2 \hat{\omega}_i}$.
 Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects.  
 Figure \ref{fig:someRangeSkinny.pdf}(b) illustrates some range of angular motion $\omega_i$ that a skinny rhombus can rotate on its hinge with a flag.  
 Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{i+1}$ with the skinny rhombus' angular displacement.
-%In the case that $\alpha_i > \frac{\pi}{2}$ the rotational displacement $\alpha_i$ creates a positive vertical displacement $\beta_{\alpha_i}$ with respect to the center of its corresonding obstacle hexagon.
+
+Formally, the horizontal displacement of obstacle hexagon $O_{i,j}$ is the sum $\beta_{i,j} = \beta_{\omega_{i-1,j}} + \beta_{\alpha_{i,j}}$.  
+To show that for any $i$ and $j$ that $\beta_{i,j}$ is small, we will show that (1) $\beta_{\omega_{i-1,j}}$ is polynomial and small with Lemma \ref{lem:betaOmegaSmall} and (2) from Lemma \ref{lem:betaOmegaSmall} we will also show that it is infeasible for $\beta_{\alpha_{i,j}} > 0$.  
+
+\begin{lem}\label{lem:betaOmegaSmall}
+For any integers $i$ and $j$: 
+$$\beta_{\omega_{i-1,j}} \leq \sqrt{C^2 - \delta_{\omega_{i-1}}}$$
+where 
+$$C^2 \leq 2 \lr{1 + \lr{\frac{1}{100N}}^2} \lr{1 - \cos\omega_{i-1}}$$
+and
+$$\delta_{\omega_{i-1}} \leq \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}}^2 $$
+and 
+$$
+\omega_{i-1,j} \leq \frac{-2}{100 \lr{5 s^\kappa - 1}} + \frac{684530^3s^{5\kappa}}{ 5  s^{6 \kappa}} + \frac{684530s^{15\kappa}}{ 30  s^{18 \kappa}}
+$$
+\end{lem}
+
+\begin{proof}
+
+In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega_i$ of the skinny rhombus is shown, $\delta_{\omega_i}$ and $\beta_{\omega_i}$ respectively. 
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -2806,8 +2822,6 @@ Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{i
 \end{center}
 \end{minipage}
 
-%First let's consider the case when $\omega_i \leq \frac{\pi}{2}$.
-In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega_i$ of the skinny rhombus is shown, $\delta_{\omega_i}$ and $\beta_{\omega_i}$ respectively. 
 The maximal displacement of the $\ith$ vertical displacement is $\delta_i$; thus $\delta_{\omega_i} \leq \delta_i$.  
 When considering the full range of motion of the skinny rhombus (ignoring the upper bound $\delta_i$ for the moment), the maximal length of vertical displacement by $\omega_i$ is when the diamater of the skinny rhombus is vertical:
 $$\begin{array}{rcl}
@@ -2817,7 +2831,9 @@ $$\begin{array}{rcl}
 &=& \sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} - \frac{1}{50 \lr{5s^\kappa-1}}
 \end{array}$$
 For sufficiently large $s$ the upper bound of $\delta_i$ is smaller than the maximal length of $\delta_{\omega_i}$:
-$$\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}\leq \sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} - \frac{1}{50 \lr{5s^\kappa-1}}$$
+$$
+\sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} - \frac{1}{50 \lr{5s^\kappa-1}} \leq 
+\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}$$
 Thus, we use the bound of $\delta_i$ in Inequality \ref{eqn:verticalBound} as the maximal value for $\delta_{\omega_i}$.  
 To find the value of $\omega_i$ for when the height of $\delta_{\omega_i}$ equals $\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}$, we solve for $\omega_i$ in the following formula:
 $$\begin{array}{rcl}
@@ -2948,9 +2964,9 @@ Equation \ref{eqn:structure} can be relaxed for sufficiently large $\kappa$ and 
 3375s^{2+\kappa}}{3\lr{ 5  s^{6 \kappa} - s^{5 \kappa} } } 
 }\\
  &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{
-97200s^5
-16200s^5
-675s^5+
+97200s^{5\kappa}
+16200s^{5\kappa}
+675s^{5\kappa}+
 80s^{5\kappa}+
 486000s^{5\kappa}+
 81000s^{5\kappa}+
@@ -2963,7 +2979,25 @@ Equation \ref{eqn:structure} can be relaxed for sufficiently large $\kappa$ and 
 \end{array}
 \end{equation}
 
-\textbf{Lemma \ref{lem:aux-C} Conclusion.} We have thus shown that the triple $(\alpha, \beta, \delta)$ for any obstacle hexagon is small and bounded.  
+Using the law of cosines, we establish:
+$$C^2 \leq 2 \lr{1 + \lr{\frac{1}{100N}}^2} \lr{1 - \cos\omega_{i-1}}.$$
+Finally, we can conclude:
+$$\beta_{\omega_{i-1,j}} \leq \sqrt{C^2 - \delta_{\omega_{i-1}}^2}$$
+\end{proof}
+
+In order to show that $\beta_{\alpha_{i,j}}$ to be greated than zero, $\omega_{i-1,j}$ must be greater than $\frac{pi}{2} - \hat{\omega}_i$.  
+There are two cases when this this happens.  
+The first case is when $$\delta_{\omega_{i-1,j}} = \sqrt{1 + lr{\frac{1}{100N}}^2} - \frac{1}{100N}$$.  
+The second case is when we the following:
+$$\left\lbrace\begin{array}{rcl}
+\delta_{\omega_{i-1,j}} &=& \sqrt{1 + lr{\frac{1}{100N}}^2}\\
+\beta_{\omega_{i-1,j}} &>& \sqrt{C^2 - \delta_{\omega_{i-1}}^2}
+\end{array}\right\rbrace				
+$$.  
+Lemma \ref{lem:betaOmegaSmall} rules out case 2.  
+The first case is ruled out if we show:
+$$\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2} < \sqrt{1 + lr{\frac{1}{100N}}^2} - \frac{1}{100N}$$
+(proof goes here) \textbf{Lemma \ref{lem:aux-C} Conclusion.} We have thus shown that the triple $(\alpha, \beta, \delta)$ for any obstacle hexagon is small and bounded.  
 Therefore the entire modified auxiliary construction in any realization is canonical or close to canonical where the encoded P3SAT information is stable.
 \end{proof}\begin{lem}\label{lem:lePieceDuResistance}
 Lemma 3. For every instance $\Phi$ of P3SAT, the corresponding modified auxiliary construction

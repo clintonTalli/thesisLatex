@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  28 AUG 2016 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  28 AUG 2016 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1668,10 +1668,10 @@ Argument.pdf>]
 File: graphics/someRangeSkinny.pdf Graphic file (type pdf)
 
 <use graphics/someRangeSkinny.pdf>
-Package pdftex.def Info: graphics/someRangeSkinny.pdf used on input line 2787.
+Package pdftex.def Info: graphics/someRangeSkinny.pdf used on input line 2786.
 (pdftex.def)             Requested size: 390.25534pt x 121.8841pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 2785--2791
+Overfull \hbox (15.0pt too wide) in paragraph at lines 2784--2790
 []$[]$ 
  []
 
@@ -1679,159 +1679,162 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 2785--2791
 File: graphics/TheOmegaFigure.pdf Graphic file (type pdf)
 
 <use graphics/TheOmegaFigure.pdf>
-Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 2804.
+Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 2820.
 (pdftex.def)             Requested size: 160.43727pt x 124.90932pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 2802--2808
+Overfull \hbox (15.0pt too wide) in paragraph at lines 2818--2824
 []$[]$ 
  []
 
-[42 <./graphics/someRangeSkinny.pdf> <./graphics/TheOmegaFigure.pdf>]
+[42 <./graphics/someRangeSkinny.pdf>]
 
-Package caption Warning: \label without proper \caption on input line 2875.
+Package caption Warning: \label without proper \caption on input line 2891.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table:ci' on page 43 undefined on input line 2860.
+LaTeX Warning: Reference `table:ci' on page 43 undefined on input line 2876.
 
-[43] [44] [45]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[43 <./graphics/TheOmegaFigure.pdf>] [44] [45] [46]
 Chapter 4.
-<graphics/HausdorffDistanceExample1.pdf, id=761, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=764, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 3048.
+ine 3082.
 (pdftex.def)             Requested size: 143.09538pt x 102.39908pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3046--3052
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3080--3086
 []$[]$ 
  []
 
-[46
+[47
 
  <./graphics/HausdorffDistanceExample1.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 3076
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 3110
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3076.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3110.
 
 
-<graphics/snowflakeOutline5LayerSmall.pdf, id=772, 189.76897pt x 166.8333pt>
+<graphics/snowflakeOutline5LayerSmall.pdf, id=775, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
- line 3086.
+ line 3120.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
- [47 <./graphics/snowflakeOutline5LayerSmall.pdf>]
-<graphics/hexagonOutline5LayerSmall.pdf, id=779, 204.32335pt x 179.61102pt>
+ [48 <./graphics/snowflakeOutline5LayerSmall.pdf>]
+<graphics/hexagonOutline5LayerSmall.pdf, id=782, 204.32335pt x 179.61102pt>
 File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
-ine 3146.
+ine 3180.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3144--3150
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3178--3184
 []$[]$ 
  []
 
-[48]
+[49]
 
-LaTeX Warning: Reference `lem:s1Small' on page 49 undefined on input line 3150.
-
-
-
-LaTeX Warning: Reference `lem:disksOfPathways' on page 49 undefined on input li
-ne 3150.
-
-
-LaTeX Warning: Reference `lem:s1Small' on page 49 undefined on input line 3151.
+LaTeX Warning: Reference `lem:s1Small' on page 50 undefined on input line 3184.
 
 
 
-LaTeX Warning: Reference `lem:disksOfPathways' on page 49 undefined on input li
-ne 3151.
+LaTeX Warning: Reference `lem:disksOfPathways' on page 50 undefined on input li
+ne 3184.
 
 
-LaTeX Warning: Reference `lem:s1Small' on page 49 undefined on input line 3152.
+LaTeX Warning: Reference `lem:s1Small' on page 50 undefined on input line 3185.
 
 
-<graphics/modifiedContactGraph.pdf, id=783, 217.35605pt x 187.2074pt>
+
+LaTeX Warning: Reference `lem:disksOfPathways' on page 50 undefined on input li
+ne 3185.
+
+
+LaTeX Warning: Reference `lem:s1Small' on page 50 undefined on input line 3186.
+
+
+<graphics/modifiedContactGraph.pdf, id=786, 217.35605pt x 187.2074pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
 Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 3
-158.
+192.
 (pdftex.def)             Requested size: 143.09538pt x 123.2516pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3156--3162
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3190--3196
 []$[]$ 
  []
 
-[49 <./graphics/hexagonOutline5LayerSmall.pdf> <./graphics/modifiedContactGraph
+[50 <./graphics/hexagonOutline5LayerSmall.pdf> <./graphics/modifiedContactGraph
 .pdf>]
 
-LaTeX Warning: Reference `lem:angularArrangement' on page 50 undefined on input
- line 3188.
+LaTeX Warning: Reference `lem:angularArrangement' on page 51 undefined on input
+ line 3222.
 
-<graphics/Vertebrae.pdf, id=809, 161.0015pt x 64.6415pt>
+<graphics/Vertebrae.pdf, id=812, 161.0015pt x 64.6415pt>
 File: graphics/Vertebrae.pdf Graphic file (type pdf)
 
 <use graphics/Vertebrae.pdf>
-Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3199.
+Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3233.
 (pdftex.def)             Requested size: 286.19078pt x 114.90462pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3197--3203
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3231--3237
 []$[]$ 
  []
 
 
-LaTeX Warning: Reference `lem:disksOfPathways' on page 50 undefined on input li
-ne 3214.
+LaTeX Warning: Reference `lem:disksOfPathways' on page 51 undefined on input li
+ne 3248.
 
-[50 <./graphics/Vertebrae.pdf>]
-<graphics/ch4Paralellogram.pdf, id=825, 707.443pt x 170.52708pt>
+[51 <./graphics/Vertebrae.pdf>]
+<graphics/ch4Paralellogram.pdf, id=829, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3220.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3254.
 
 (pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3218--3224
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3252--3258
 []$[]$ 
  []
 
-[51 <./graphics/ch4Paralellogram.pdf>] [52
+[52 <./graphics/ch4Paralellogram.pdf>] [53
 
-] [53
+] [54
 
 ] (../pdf/cat.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 106.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [54
+) [55
 
 
 ])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[55] (../pdf/cat.aux)
+[56] (../pdf/cat.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18025 strings out of 493089
- 333562 string characters out of 6134841
+ 18026 strings out of 493089
+ 333582 string characters out of 6134841
  512870 words of memory out of 5000000
- 20996 multiletter control sequences out of 15000+600000
+ 20997 multiletter control sequences out of 15000+600000
  64918 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1096b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1860,10 +1863,10 @@ b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (59 pages, 711057 bytes).
+Output written on ../pdf/cat.pdf (60 pages, 715192 bytes).
 PDF statistics:
- 908 PDF objects out of 1000 (max. 8388607)
- 617 compressed objects within 7 object streams
+ 911 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
