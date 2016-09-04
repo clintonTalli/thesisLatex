@@ -2146,8 +2146,8 @@ H(n,m) 		&=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}		
 && x \leq \sin^{-1} x \leq x + \frac{x^3}{6} \qquad 0<x<1 \\\hline
 &&x - \frac{x^3}{3}\leq\tan^{-1}x\leq x \qquad	 0< x < 1\\\hline
 && x - \frac{x^3}{6}\leq \sin x \leq x \quad\qquad 0< x < 1\\\hline
-&&\cos x \leq 1-\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
-&&\sec x \leq 1+\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
+&&1 - \frac{x^2}{2}\leq \cos x \leq 1-\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
+&& 1 \leq \sec x \leq 1+\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
 \end{array}
 $$
 
@@ -2773,231 +2773,32 @@ Thus we finally say that the bound for $\delta_v$, where $1<v\leq j\leq u$, is s
 
 \paragraph{Horizontal Displacement $\beta$}
 
-There are two components of the modified auxiliary construction whose range of motion can create horizontal displacement, i.e. the skinny rhombi and the angular rotation of obstacle hexagons.  
-Denote the horizontal displacement created by a skinny rhombi and rotational displacement as $\beta_\omega$ and $\beta_\alpha$ respectively.  
-The skinny rhombi has a range of motion from the hinge of the center flag of the corridor.  
-From canonical position, skinny rhombi can rotate clockwise about its hinge on the central flag.  
-Without loss of generality, the $\ith$ skinny rhombus' non-canonical placement displaces the $\lr{i+1}^\text{st}$ obstacle hexagon.  
-An obstacle hexagon's rotational displacement allows the hexagon to rotate about its hinge point with the skinny rhombus below it in an counter-clockwise manner about the skinny rhombus.  
-Figure \ref{fig:someRangeSkinny.pdf} illustrates the two motions that generate $\beta_\omega$ and $\beta_\alpha$.
+We show that the relative horizontal displacement between two vertically adjacent obstacle hexagons is small and polynomial size.
+We first identify where horizontal displacement can occur in the modified auxiliary construction.  
 
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=.9\columnwidth]{graphics/someRangeSkinny.pdf}
-\captionof{figure}{(a) A pair of vertically adjacent obstacle hexagons and their corresponding corridor in canonical position.  (b) shows the same obstacle hexagons and corridors with the exception that the skinny rhombus is not in cannonical position. (c) is the same as (b) with the exception that the obstacle hexagon $O_{i+1}$ has rotation displacement.}\label{fig:someRangeSkinny.pdf}
+\includegraphics[width=.99\columnwidth]{graphics/someRangeSkinny.pdf}
+\captionof{figure}{(a) A pair of vertically adjacent obstacle hexagons and their corresponding corridor in canonical position.  (b) shows the same obstacle hexagons and corridors with the exception that the skinny rhombus is not in cannonical position. (c) is the same as (b) with the exception that the obstacle hexagon $O_{i+1}$ has rotation displacement.  (d) shows the rotation that is between the central flag and $O_i$.}\label{fig:someRangeSkinny.pdf}
 \end{center}
 \end{minipage}
 
-The angle in the interior of the rhombus from the diameter of the rhombus to the bottom side of the rhombus is a constant $\hat{\omega}_i = \arctan \lr{\frac{1}{100N}}$.  
-For non-canonical positions, let $\omega_i$ be the angular displacement between a copy of the diameter of the skinny rhombus in canonical position and the diameter of the skinny rhombus in non-canonnical position.
-The range of $\omega_i$ is $\lr{0, \frac{4 \pi}{3} - 2 \hat{\omega}_i}$.
+The central flag and the skinny rhombus have three degrees of freedom.  
 Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects.  
 Figure \ref{fig:someRangeSkinny.pdf}(b) illustrates some range of angular motion $\omega_i$ that a skinny rhombus can rotate on its hinge with a flag.  
 Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{i+1}$ with the skinny rhombus' angular displacement.
-
-Formally, the horizontal displacement of obstacle hexagon $O_{i,j}$ is the sum $\beta_{i,j} = \beta_{\omega_{i-1,j}} + \beta_{\alpha_{i,j}}$.  
-To show that for any $i$ and $j$ that $\beta_{i,j}$ is small, we will show that (1) $\beta_{\omega_{i-1,j}}$ is polynomial and small with Lemma \ref{lem:betaOmegaSmall} and (2) from Lemma \ref{lem:betaOmegaSmall} we will also show that it is infeasible for $\beta_{\alpha_{i,j}} > 0$.  
-
-\begin{lem}\label{lem:betaOmegaSmall}
-For any integers $i$ and $j$: 
-$$\beta_{\omega_{i-1,j}} \leq \sqrt{C^2 - \delta_{\omega_{i-1}}}$$
-where 
-$$C^2 \leq 2 \lr{1 + \lr{\frac{1}{100N}}^2} \lr{1 - \cos\omega_{i-1}}$$
-and
-$$\delta_{\omega_{i-1}} \leq \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}}^2 $$
-and 
-$$
-\omega_{i-1,j} \leq \frac{-2}{100 \lr{5 s^\kappa - 1}} + \frac{684530^3s^{5\kappa}}{ 5  s^{6 \kappa}} + \frac{684530s^{15\kappa}}{ 30  s^{18 \kappa}}
-$$
-\end{lem}
-
-\begin{proof}
-
-In \ref{fig:TheOmegaFigure.pdf}, the vertical and horizontal displacement formed by the angular rotation $\omega_i$ of the skinny rhombus is shown, $\delta_{\omega_i}$ and $\beta_{\omega_i}$ respectively. 
+Figure \ref{fig:someRangeSkinny.pdf}(d) is the same as (c) with the exception of an addtional rotation $\phi_i$ that is between the central flag and $O_i$.  
+Each of these rotations can create horizontal displacement.  
+Let $\beta_{\alpha_i}$ be the horizontal displacement generated by the rotational displacement of $O_i$.  
+Let $\beta_{\omega_i}$ be the horizontal displacement generated by the rotational displacement between the skinny rhombus and the central flag.  
+Lastly, let $\beta_{\phi_i}$ be the horizontal displacement generated by the rotational displacement between the central flag and $O_i$.
 
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=.37\columnwidth]{graphics/TheOmegaFigure.pdf}
-\captionof{figure}{The vertical displacement $\delta_{\omega_i}$ and horizontal displacement $\beta_{\omega_i}$ created from the skinny rhombus rotation $\omega$.}\label{fig:TheOmegaFigure.pdf}
+\includegraphics[width=.99\columnwidth]{graphics/phiFigure.pdf}
+\captionof{figure}{}\label{fig:phiFigure.pdf}
 \end{center}
-\end{minipage}
-
-The maximal displacement of the $\ith$ vertical displacement is $\delta_i$; thus $\delta_{\omega_i} \leq \delta_i$.  
-When considering the full range of motion of the skinny rhombus (ignoring the upper bound $\delta_i$ for the moment), the maximal length of vertical displacement by $\omega_i$ is when the diamater of the skinny rhombus is vertical:
-$$\begin{array}{rcl}
-\delta_{\omega_i} &=& \sqrt{1 + \lr{\frac{1}{100N}}^2 } - \frac{1}{100N}\\
-&=& \sqrt{1 + \lr{\frac{1}{100 \lr{\frac{5t-1}{2}}}}^2} - \frac{1}{100 \lr{\frac{5t-1}{2}}}\\
-&=& \sqrt{1 + \lr{\frac{1}{50 (5t-1)}}^2} - \frac{1}{50 (5t-1)}\\
-&=& \sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} - \frac{1}{50 \lr{5s^\kappa-1}}
-\end{array}$$
-For sufficiently large $s$ the upper bound of $\delta_i$ is smaller than the maximal length of $\delta_{\omega_i}$:
-$$
-\sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} - \frac{1}{50 \lr{5s^\kappa-1}} \leq 
-\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}$$
-Thus, we use the bound of $\delta_i$ in Inequality \ref{eqn:verticalBound} as the maximal value for $\delta_{\omega_i}$.  
-To find the value of $\omega_i$ for when the height of $\delta_{\omega_i}$ equals $\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}$, we solve for $\omega_i$ in the following formula:
-$$\begin{array}{rcl}
-\sin \lr{\hat{\omega}_i + \omega_i} &=& \frac{\frac{1}{100N} + \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}}{\sqrt{1 + \lr{\frac{1}{100N}}^2 }}\\
-\sin \lr{\arctan \lr{\frac{1}{50\lr{5s^\kappa - 1}}} + \omega_i} &=& \frac{\frac{1}{50 \lr{5s^\kappa-1}} + \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}}{\sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} }\\
-\sin \lr{
-			\arctan \lr{
-							\frac{1}{50\lr{
-											5s^\kappa - 1
-										   }
-								     }
-					    }
-	    } \cos \lr{\omega_i} + 
-\cos \lr{
-		\arctan \lr{
-					\frac{1}{50\lr{
-									5s^\kappa - 1
-									}
-							}
-					}
-		}  \sin \lr{\omega_i} &=& \frac{
-											\frac{
-													1024 s^{6\kappa} + 300 s\lr{144s^2+12s}^2  \lr{5s^\kappa-1}
-													}{
-													51200 s^{6\kappa} \lr{5s^\kappa-1}
-													} 
-				
-										}{
-										\sqrt{1 + \lr{\frac{1}{50 \lr{5s^\kappa-1}}}^2} 
-										}
-\end{array}$$
-Using SAGE \cite{sage}, we compute $\omega_i$ as shown in Appendix A.  
-The equation in appendix A can be simplified as such:
-\begin{equation}\label{eqn:structure}
-\begin{array}{lll}
-\omega_i&=& \hat{\omega}_i \\
-&+& \sum_{i=1}^7 \frac{c_i \cdot a_i}{800 d}
-\end{array}
-\end{equation}
-where $a_1 = 400$, $a_2 = 200$, $a_3 = 25$, $a_4 = 16$, $a_5 = a_1$, $a_6 = a_2$, $a_7 = a_3$ and $c_i$ are shown Table \ref{table:ci}:
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{|R|L|}
-\hline
-c_1&-243s^4 \\\hline
-c_2&-81s^3\\\hline
-c_3&-27s^2\\\hline
-c_4&5s^{5\kappa}\\\hline
-c_5&1215s^{4+\kappa}\\\hline
-c_6&405s^{3+\kappa}\\\hline
-c_7&135s^{2+\kappa}\\\hline
-\end{tabular}
-\end{center}
-\label{table:ci}
-\caption{The $c_i$ values in Equation \ref{eqn:structure}.}
-\end{table}
-
-Equation \ref{eqn:structure} can be relaxed for sufficiently large $\kappa$ and $s$ as follows:
- \begin{equation}\label{eqn:relaxedStructure}
- \begin{array}{rcl}
- \omega_i &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
--16200s^3
--675s^2+
-80s^{5\kappa}+
-486000s^{4+\kappa}+
-81000s^{3+\kappa}+
-3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
-			\sqrt{
-				\frac{62500 s^{2\kappa} - 25000 s^\kappa + 2501}{2500\lr{5s^\kappa - 1}^2}
-			 }
- }
-}\\
- &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
--16200s^3
--675s^2+
-80s^{5\kappa}+
-486000s^{4+\kappa}+
-81000s^{3+\kappa}+
-3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
-			\sqrt{
-				\frac{62500 s^{2\kappa} - 25000 s^\kappa + 2501}{62500 s^{2\kappa}-25000 s^\kappa +2500}
-			 }
- }
-}\\
- &=& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
--16200s^3
--675s^2+
-80s^{5\kappa}+
-486000s^{4+\kappa}+
-81000s^{3+\kappa}+
-3375s^{2+\kappa}}{800\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
-			\sqrt{
-				1+ \frac{1}{2500 \lr{1-5s^\kappa}^2}
-			 }
- }
-}\\
- &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
--16200s^3
--675s^2+
-80s^{5\kappa}+
-486000s^{4+\kappa}+
-81000s^{3+\kappa}+
-3375s^{2+\kappa}}{2\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
-			\sqrt{
-				1+ \frac{1}{2500 \lr{1-5s^\kappa}^2}
-			 }
- }
-}\\
- &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
--16200s^3
--675s^2+
-80s^{5\kappa}+
-486000s^{4+\kappa}+
-81000s^{3+\kappa}+
-3375s^{2+\kappa}}{\left(5  s^{6  \kappa} - s^{5  \kappa}\right)
-			\sqrt{
-				4+ \frac{4}{2500 \lr{1-5s^\kappa}^2}
-			 }
- }
-}\\
- &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{-97200s^4
--16200s^3
--675s^2+
-80s^{5\kappa}+
-486000s^{4+\kappa}+
-81000s^{3+\kappa}+
-3375s^{2+\kappa}}{3\lr{ 5  s^{6 \kappa} - s^{5 \kappa} } } 
-}\\
- &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{
-97200s^{5\kappa}
-16200s^{5\kappa}
-675s^{5\kappa}+
-80s^{5\kappa}+
-486000s^{5\kappa}+
-81000s^{5\kappa}+
-3375s^{5\kappa}}{ 5  s^{6 \kappa} } 
-}\\
- &\leq& -\hat{\omega}_i + \arcsin \lr{ \frac{684530s^{5\kappa}}{ 5  s^{6 \kappa} } 
-}\\
-&\leq& -\frac{1}{100N} + \frac{684530s^{5\kappa}}{ 5  s^{6 \kappa} } + \frac{\lr{\frac{684530s^{5\kappa}}{5  s^{6 \kappa}}}^3}{6}\\
-&\leq& \frac{-2}{100 \lr{5 s^\kappa - 1}} + \frac{684530^3s^{5\kappa}}{ 5  s^{6 \kappa}} + \frac{684530s^{15\kappa}}{ 30  s^{18 \kappa}}
-\end{array}
-\end{equation}
-
-Using the law of cosines, we establish:
-$$C^2 \leq 2 \lr{1 + \lr{\frac{1}{100N}}^2} \lr{1 - \cos\omega_{i-1}}.$$
-Finally, we can conclude:
-$$\beta_{\omega_{i-1,j}} \leq \sqrt{C^2 - \delta_{\omega_{i-1}}^2}$$
-\end{proof}
-
-In order to show that $\beta_{\alpha_{i,j}}$ to be greated than zero, $\omega_{i-1,j}$ must be greater than $\frac{pi}{2} - \hat{\omega}_i$.  
-There are two cases when this this happens.  
-The first case is when $$\delta_{\omega_{i-1,j}} = \sqrt{1 + lr{\frac{1}{100N}}^2} - \frac{1}{100N}$$.  
-The second case is when we the following:
-$$\left\lbrace\begin{array}{rcl}
-\delta_{\omega_{i-1,j}} &=& \sqrt{1 + lr{\frac{1}{100N}}^2}\\
-\beta_{\omega_{i-1,j}} &>& \sqrt{C^2 - \delta_{\omega_{i-1}}^2}
-\end{array}\right\rbrace				
-$$.  
-Lemma \ref{lem:betaOmegaSmall} rules out case 2.  
-The first case is ruled out if we show:
-$$\frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2} < \sqrt{1 + lr{\frac{1}{100N}}^2} - \frac{1}{100N}$$
-(proof goes here) \textbf{Lemma \ref{lem:aux-C} Conclusion.} We have thus shown that the triple $(\alpha, \beta, \delta)$ for any obstacle hexagon is small and bounded.  
+\end{minipage}\textbf{Lemma \ref{lem:aux-C} Conclusion.} We have thus shown that the triple $(\alpha, \beta, \delta)$ for any obstacle hexagon is small and bounded.  
 Therefore the entire modified auxiliary construction in any realization is canonical or close to canonical where the encoded P3SAT information is stable.
 \end{proof}\begin{lem}\label{lem:lePieceDuResistance}
 Lemma 3. For every instance $\Phi$ of P3SAT, the corresponding modified auxiliary construction
@@ -3257,73 +3058,7 @@ Recall that we are to show that for any realized perturbed snowflake $S_i$, the 
 \end{minipage}
 
 
-\end{proof}\chapter*{Appendix A}
-The following formula is the solution derived from Sage and reduced to Equation \ref{eqn:structure}.
-\begin{landscape}
-\begin{equation}
-\resizebox{\textwidth}{!} 
-{
-$
-\omega_i = -\hat{\omega}_i + \arcsin\left(-\frac{243 \, s^{4}}{2 \,
-{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} - \frac{81 \, s^{3}}{4 \, {\left(5
-\, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \,
-\kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \,
-\kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2
-\, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} - \frac{27 \, s^{2}}{32 \, {\left(5
-\, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \,
-\kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \,
-\kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2
-\, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} + \frac{s^{5 \, \kappa}}{50 \,
-{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} + \frac{1215 \, s^{\kappa + 4}}{2
-\, {\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} + \frac{405 \, s^{\kappa + 3}}{4 \,
-{\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}} + \frac{135 \, s^{\kappa + 2}}{32
-\, {\left(5 \, s^{6 \, \kappa} \sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \,
-s^{2 \, \kappa} - 10 \, s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25
-\, s^{2 \, \kappa} - 10 \, s^{\kappa} + 1\right)}}} - s^{5 \, \kappa}
-\sqrt{\frac{25 \, s^{2 \, \kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} - \frac{10 \, s^{\kappa}}{25 \, s^{2 \, \kappa} - 10 \,
-s^{\kappa} + 1} + \frac{2501}{2500 \, {\left(25 \, s^{2 \, \kappa} - 10
-\, s^{\kappa} + 1\right)}}}\right)}}\right)$
-}
-\end{equation}
-\end{landscape}
+\end{proof}
 \bibliographystyle{plain}
 \bibliography{WorkCited}
 \end{document}

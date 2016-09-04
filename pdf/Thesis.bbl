@@ -99,12 +99,6 @@ S.S. Skiena.
 \newblock {\em {The Algorithm Design Manual}}.
 \newblock Springer, 2009.
 
-\bibitem{sage}
-W.\thinspace{}A. Stein et~al.
-\newblock {\em {S}age {M}athematics {S}oftware ({V}ersion 7.2)}.
-\newblock The Sage Development Team, 2016.
-\newblock {\tt http://www.sagemath.org}.
-
 \bibitem{storer1984minimal}
 James~A Storer.
 \newblock On minimal-node-cost planar embeddings.

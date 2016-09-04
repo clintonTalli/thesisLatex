@@ -5,12 +5,6 @@ David Lichtenstein.
 \newblock Planar formulae and their uses.
 \newblock {\em SIAM journal on computing}, 11(2):329--343, 1982.
 
-\bibitem{sage}
-W.\thinspace{}A. Stein et~al.
-\newblock {\em {S}age {M}athematics {S}oftware ({V}ersion 7.2)}.
-\newblock The Sage Development Team, 2016.
-\newblock {\tt http://www.sagemath.org}.
-
 \bibitem{storer1984minimal}
 James~A Storer.
 \newblock On minimal-node-cost planar embeddings.

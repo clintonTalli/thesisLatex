@@ -36,13 +36,13 @@
 \contentsline {paragraph}{Angular Rotation $\alpha $.}{38}
 \contentsline {paragraph}{Vertical Displacement $\delta $}{40}
 \contentsline {paragraph}{Horizontal Displacement $\beta $}{42}
-\contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{47}
-\contentsline {section}{\numberline {4.1}Hausdorff Distance}{47}
-\contentsline {paragraph}{$\epsilon $-approximation}{47}
-\contentsline {section}{\numberline {4.2}Weight Trees $T_k$}{48}
-\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{48}
-\contentsline {section}{\numberline {4.3}Proofs of Lemmas \ref {lem:s1Small} through \ref {lem:disksOfPathways}}{50}
-\contentsline {subsection}{\numberline {4.3.1}Proof of Lemma \ref {lem:s1Small}}{50}
-\contentsline {subsection}{\numberline {4.3.2}Proof of Lemma \ref {lem:angularArrangement}}{51}
-\contentsline {subsection}{\numberline {4.3.3}Proof of Lemma \ref {lem:disksOfPathways}}{51}
+\contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{44}
+\contentsline {section}{\numberline {4.1}Hausdorff Distance}{44}
+\contentsline {paragraph}{$\epsilon $-approximation}{44}
+\contentsline {section}{\numberline {4.2}Weight Trees $T_k$}{45}
+\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{45}
+\contentsline {section}{\numberline {4.3}Proofs of Lemmas \ref {lem:s1Small} through \ref {lem:disksOfPathways}}{47}
+\contentsline {subsection}{\numberline {4.3.1}Proof of Lemma \ref {lem:s1Small}}{47}
+\contentsline {subsection}{\numberline {4.3.2}Proof of Lemma \ref {lem:angularArrangement}}{48}
+\contentsline {subsection}{\numberline {4.3.3}Proof of Lemma \ref {lem:disksOfPathways}}{48}
 \contentsfinish 
