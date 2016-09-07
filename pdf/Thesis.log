@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  3 SEP 2016 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  5 SEP 2016 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1595,22 +1595,26 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 23--29
 []$[]$ 
  []
 
+
+LaTeX Warning: Reference `fig:corridorNonCanonical.pdf' on page 37 undefined on
+ input line 44.
+
 [37 <./graphics/tiltedObstaclesInFrame.pdf> <./graphics/dualSmallHexagonalGrid.
 pdf>]) (./ch3/angularArgument.tex
-<graphics/corridorNonCanonical.pdf, id=617, 316.25153pt x 109.39871pt>
-File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
+<graphics/corridorNonCanonical2.pdf, id=617, 337.50089pt x 115.88293pt>
+File: graphics/corridorNonCanonical2.pdf Graphic file (type pdf)
 
-<use graphics/corridorNonCanonical.pdf>
-Package pdftex.def Info: graphics/corridorNonCanonical.pdf used on input line 9
-.
-(pdftex.def)             Requested size: 390.25534pt x 134.99863pt.
+<use graphics/corridorNonCanonical2.pdf>
+Package pdftex.def Info: graphics/corridorNonCanonical2.pdf used on input line 
+9.
+(pdftex.def)             Requested size: 390.25534pt x 133.99635pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 7--13
 []$[]$ 
  []
 
-[38 <./graphics/corridorNonCanonical.pdf>] [39]) (./ch3/verticalArgument.tex
-<graphics/hexagonNonCanonical2.pdf, id=655, 189.37952pt x 182.95753pt>
+[38 <./graphics/corridorNonCanonical2.pdf>] [39]) (./ch3/verticalArgument.tex
+<graphics/hexagonNonCanonical2.pdf, id=648, 189.37952pt x 182.95753pt>
 File: graphics/hexagonNonCanonical2.pdf Graphic file (type pdf)
 
 <use graphics/hexagonNonCanonical2.pdf>
@@ -1623,7 +1627,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 7--15
  []
 
 
-<graphics/verticalDisplacementArgument.pdf, id=656, 210.13507pt x 182.03008pt>
+<graphics/verticalDisplacementArgument.pdf, id=649, 210.13507pt x 182.03008pt>
 File: graphics/verticalDisplacementArgument.pdf Graphic file (type pdf)
 
 <use graphics/verticalDisplacementArgument.pdf>
@@ -1637,7 +1641,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 19--25
 
 [40 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3/horizontalArgument4.tex
 [41 <./graphics/verticalDisplacementArgument.pdf>]
-<graphics/someRangeSkinny.pdf, id=696, 715.39267pt x 188.07263pt>
+<graphics/someRangeSkinny.pdf, id=689, 715.39267pt x 188.07263pt>
 File: graphics/someRangeSkinny.pdf Graphic file (type pdf)
 
 <use graphics/someRangeSkinny.pdf>
@@ -1648,7 +1652,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 6--12
 []$[]$ 
  []
 
-<graphics/phiFigure.pdf, id=697, 643.49411pt x 215.13374pt>
+<graphics/phiFigure.pdf, id=690, 643.49411pt x 215.13374pt>
 File: graphics/phiFigure.pdf Graphic file (type pdf)
 
 <use graphics/phiFigure.pdf>
@@ -1664,7 +1668,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 23--3
 [43]
 Chapter 4.
 ) (./ch4/Hausdorff.tex
-<graphics/HausdorffDistanceExample1.pdf, id=731, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=724, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
@@ -1687,7 +1691,7 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
 
-<graphics/snowflakeOutline5LayerSmall.pdf, id=742, 189.76897pt x 166.8333pt>
+<graphics/snowflakeOutline5LayerSmall.pdf, id=735, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
@@ -1695,7 +1699,7 @@ Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
  line 16.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
  [45 <./graphics/snowflakeOutline5LayerSmall.pdf>]
-<graphics/hexagonOutline5LayerSmall.pdf, id=750, 204.32335pt x 179.61102pt>
+<graphics/hexagonOutline5LayerSmall.pdf, id=743, 204.32335pt x 179.61102pt>
 File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
@@ -1717,7 +1721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--10
 LaTeX Warning: Reference `fig:modifiedContactGraph' on page 47 undefined on inp
 ut line 24.
 
-<graphics/PerturbedSpine.pdf, id=754, 226.24524pt x 176.91295pt>
+<graphics/PerturbedSpine.pdf, id=747, 226.24524pt x 176.91295pt>
 File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedSpine.pdf>
@@ -1728,7 +1732,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
- <graphics/PerturbedVertebrae.pdf, id=761, 239.34016pt x 179.00174pt>
+ <graphics/PerturbedVertebrae.pdf, id=754, 239.34016pt x 179.00174pt>
 File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedVertebrae.pdf>
@@ -1736,7 +1740,7 @@ Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 57.
 
 (pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
 ) (./ch4/proofs.tex
-<graphics/modifiedContactGraph.pdf, id=762, 217.35605pt x 187.2074pt>
+<graphics/modifiedContactGraph.pdf, id=755, 217.35605pt x 187.2074pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
@@ -1750,7 +1754,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 7--13
 
 [48 <./graphics/PerturbedSpine.pdf> <./graphics/PerturbedVertebrae.pdf>]
 [49 <./graphics/modifiedContactGraph.pdf>]
-<graphics/Vertebrae.pdf, id=805, 161.0015pt x 64.6415pt>
+<graphics/Vertebrae.pdf, id=802, 161.0015pt x 64.6415pt>
 File: graphics/Vertebrae.pdf Graphic file (type pdf)
 
 <use graphics/Vertebrae.pdf>
@@ -1761,7 +1765,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 48--54
 []$[]$ 
  []
 
-<graphics/ch4Paralellogram.pdf, id=806, 707.443pt x 170.52708pt>
+<graphics/ch4Paralellogram.pdf, id=803, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
@@ -1783,10 +1787,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18104 strings out of 493089
- 335341 string characters out of 6134841
+ 18105 strings out of 493089
+ 335377 string characters out of 6134841
  503870 words of memory out of 5000000
- 20982 multiletter control sequences out of 15000+600000
+ 20983 multiletter control sequences out of 15000+600000
  68796 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1813,10 +1817,10 @@ ol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (55 pages, 692851 bytes).
+Output written on ../pdf/Thesis.pdf (55 pages, 692738 bytes).
 PDF statistics:
- 887 PDF objects out of 1000 (max. 8388607)
- 597 compressed objects within 6 object streams
+ 884 PDF objects out of 1000 (max. 8388607)
+ 594 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  348 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2643,12 +2643,12 @@ Otherwise will result in overlapping polygons.\paragraph{Angular Rotation $\alph
 First we show that the angular rotation of the obstacle hexagons with respect to canonical position is small.  
 We first look at the relative angular difference between two adjacent obstacle polygons
 $$\left\vert \alpha_i - \alpha_{i+1} \right\vert.$$
-Given an arbitrary instance of a modified auxilary construction, consider $O_i$, $O_{i+1}$, and the corridor between $O_i$ and $O_{i+1}$ (see Figure \ref{fig:corridorNonCanonical.pdf} for illustration).
+Given an arbitrary instance of a modified auxilary construction, consider $O_i$, $O_{i+1}$, and the corridor between $O_i$ and $O_{i+1}$ (see Figure \ref{fig:corridorNonCanonical2.pdf} for illustration).
 
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical.pdf}
-\captionof{figure}{The obstacle hexagon here is in noncanonical position, and showing the side lengths adjacent to $\alpha_i$.}\label{fig:corridorNonCanonical.pdf}
+\includegraphics[width=.9\columnwidth]{graphics/corridorNonCanonical2.pdf}
+\captionof{figure}{The obstacle hexagon here is in noncanonical position, and showing the side lengths adjacent to $\alpha_i$.}\label{fig:corridorNonCanonical2.pdf}
 \end{center}
 \end{minipage}
 
@@ -2657,7 +2657,7 @@ Our goal is to show that the column of hexagons cannot tilt in the manner shown 
 The cross section of an arbitrary corridor must have a height of at least $\sqrt{3}$ everywhere. 
 %noncanonical corridor must be at least 
 Otherwise, a flag would overlap with an obstacle hexagon; it would no longer remain a realization since the height of a flag is $\sqrt{3}$.
-In Figure \ref{fig:corridorNonCanonical.pdf}, we illustrate an obstacle hexagon, its upper corridor with the flag that has the hinge to the skinny rhombus.  
+In Figure \ref{fig:corridorNonCanonical2.pdf}, we illustrate an obstacle hexagon, its upper corridor with the flag that has the hinge to the skinny rhombus.  
 The skinny rhombus has length $\sqrt{1 + \lr{100N}^{-2}}$.
 The rhombus is hinged at the midpoint of the upper side of the corridor.
 The length from a corridor's midpoint to one end of the corridor is $\frac{5t-1}{4}$.
@@ -2667,20 +2667,30 @@ The bound of $\gamma_i$ is:
 \begin{array}{rcl}
 \gamma_i &\leq & \tan^{-1} \lr{
 								\frac{
-										\sqrt{1+ \lr{	\frac{1}{100N}	}^2}
+										\lr{2 - \sqrt{3}} + \sqrt{1+ \lr{	\frac{1}{100N}	}^2}
 								}{
 										\frac{5t-1}{4}
 								}	
 							}\\
-&=& \tan^{-1} \lr{\frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
-&\leq& \frac{4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
-&\leq& \frac{\sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
-&\leq& \frac{5}{10N^3 -6}\\
-&\leq& \frac{5}{10N^3 - 10}\\
-&\leq& \frac{1}{2\lr{N^3 - 1}}\\
-&\leq& \frac{1}{2 \lr{\frac{5t-1}{2}}^3 - 1}\\
-&\leq& \frac{4}{\lr{5t-1}^3-4}\\
-&\leq& \frac{4}{\lr{5s^\kappa-1}^3-4}\\
+&=& \tan^{-1} \lr{\frac{ 4\lr{2 - \sqrt{3}} + 4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
+&\leq& \frac{\lr{8 - 4\sqrt{3}} +4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
+&\leq& \frac{\lr{8 - 4\sqrt{3}} + \sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
+&\leq& \frac{\lr{8 - 4\sqrt{3}} + 5}{10N^3 -6}\\
+&\leq& \frac{
+				\lr{13 - 4\sqrt{3}} 
+			}{
+				10N^3 - \lr{13 - 4\sqrt{3}} 
+			}\\
+&\leq& \frac{
+				\lr{13 - 4\sqrt{3}} 
+			}{
+				10N^3 - 10 
+			}\\
+&\leq& \frac{10}{10N^3 - 10 }\\
+&\leq& \frac{1}{N^3 - 1 }\\
+&\leq& \frac{1}{\lr{\frac{5t-1}{2}}^3 - 1 }\\
+&\leq& \frac{8}{\lr{5t-1}^3 - 8 }\\
+&\leq& \frac{8}{\lr{5s^\kappa-1}^3 - 8 }\\
 &\leq& \frac{4}{\lr{4s^\kappa}^3}\\
 &\leq& \frac{4}{64s^{3\kappa}}\\
 &\leq& \frac{1}{16s^{3\kappa}}
