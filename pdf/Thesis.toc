@@ -36,7 +36,7 @@
 \contentsline {paragraph}{Modified Auxilary Construction.}{35}
 \contentsline {paragraph}{Angular Rotation $\alpha $.}{38}
 \contentsline {paragraph}{Vertical Displacement $\delta $}{40}
-\contentsline {paragraph}{Horizontal Displacement $\beta $}{42}
+\contentsline {paragraph}{Horizontal Displacement $\beta $}{41}
 \contentsline {chapter}{\numberline {4}Realizability Problems for Weighted Trees}{44}
 \contentsline {section}{\numberline {4.1}Hausdorff Distance}{44}
 \contentsline {paragraph}{$\epsilon $-approximation}{44}

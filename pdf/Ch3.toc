@@ -11,5 +11,5 @@
 \contentsline {paragraph}{Modified Auxilary Construction.}{12}
 \contentsline {paragraph}{Angular Rotation $\alpha $.}{15}
 \contentsline {paragraph}{Vertical Displacement $\delta $}{17}
-\contentsline {paragraph}{Horizontal Displacement $\beta $}{19}
+\contentsline {paragraph}{Horizontal Displacement $\beta $}{18}
 \contentsfinish 

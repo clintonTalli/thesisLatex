@@ -2672,34 +2672,84 @@ The bound of $\gamma_i$ is:
 										\frac{5t-1}{4}
 								}	
 							}\\
-&=& \tan^{-1} \lr{\frac{ 4\lr{2 - \sqrt{3}} + 4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
-&\leq& \frac{\lr{8 - 4\sqrt{3}} +4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
-&\leq& \frac{\lr{8 - 4\sqrt{3}} + \sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
-&\leq& \frac{\lr{8 - 4\sqrt{3}} + 5}{10N^3 -6}\\
-&\leq& \frac{
-				\lr{13 - 4\sqrt{3}} 
+&\leq & \tan^{-1} \lr{
+								\frac{
+										4 \lr{ \frac{1}{3} + \sqrt{1+ \lr{	\frac{1}{100N}	}^2} }
+								}{
+										5t-1
+								}	
+							}\\
+&\leq & \tan^{-1} \lr{
+								\frac{
+										\frac{4}{3} + \sqrt{16+ \lr{	\frac{4}{100N}	}^2} 
+								}{
+										5t-1
+								}	
+							}\\
+&\leq & \tan^{-1} \lr{
+								\frac{
+										\frac{4}{3} + \sqrt{16+ 	\frac{1}{625 \lr{\frac{5t-1}{2}}^2}} 
+								}{
+										5t-1
+								}	
+							}\\
+&\leq & \tan^{-1} \lr{
+								\frac{
+										\frac{4}{3} + \sqrt{16+ 9} 
+								}{
+										5t-1
+								}	
+							}\\
+&\leq & \tan^{-1} \lr{
+								\frac{
+										\frac{4}{3} + 5
+								}{
+										5t-1
+								}	
+							}\\
+&\leq&\frac{
+					19
 			}{
-				10N^3 - \lr{13 - 4\sqrt{3}} 
+					 \lr{15s^\kappa-3}
 			}\\
-&\leq& \frac{
-				\lr{13 - 4\sqrt{3}} 
+&\leq&\frac{
+					19
 			}{
-				10N^3 - 10 
+					 14s^\kappa
 			}\\
-&\leq& \frac{10}{10N^3 - 10 }\\
-&\leq& \frac{1}{N^3 - 1 }\\
-&\leq& \frac{1}{\lr{\frac{5t-1}{2}}^3 - 1 }\\
-&\leq& \frac{8}{\lr{5t-1}^3 - 8 }\\
-&\leq& \frac{8}{\lr{5s^\kappa-1}^3 - 8 }\\
-&\leq& \frac{4}{\lr{4s^\kappa}^3}\\
-&\leq& \frac{4}{64s^{3\kappa}}\\
-&\leq& \frac{1}{16s^{3\kappa}}
-\end{array} 
+			&\leq&\frac{
+					3
+			}{
+					 2s^\kappa
+			}
+\end{array}
+% &=& \tan^{-1} \\\lr{\frac{ 4\lr{2 - \sqrt{3}} + 4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
+% &\leq& \frac{\lr{8 - 4\sqrt{3}} +4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
+% &\leq& \frac{\lr{8 - 4\sqrt{3}} + \sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
+% &\leq& \frac{\lr{8 - 4\sqrt{3}} + 5}{10N^3 -6}\\
+% &\leq& \frac{
+% 				\lr{13 - 4\sqrt{3}} 
+% 			}{
+% 				10N^3 - \lr{13 - 4\sqrt{3}} 
+% 			}\\
+% &\leq& \frac{
+% 				\lr{13 - 4\sqrt{3}} 
+% 			}{
+% 				10N^3 - 10 
+% 			}\\
+% &\leq& \frac{10}{10N^3 - 10 }\\
+% &\leq& \frac{1}{N^3 - 1 }\\
+% &\leq& \frac{1}{\lr{\frac{5t-1}{2}}^3 - 1 }\\
+% &\leq& \frac{8}{\lr{5t-1}^3 - 8 }\\
+% &\leq& \frac{8}{\lr{5s^\kappa-1}^3 - 8 }\\
+% &\leq& \frac{4}{\lr{4s^\kappa}^3}\\
+% &\leq& \frac{4}{64s^{3\kappa}}\\
+% &\leq& \frac{1}{16s^{3\kappa}} 
 \end{equation}
 Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$ and holds for sufficiently large $s$.
 Thus the relative rotational difference between adjacent obstacle hexagons is:
 \begin{equation}\label{eqn:angularBound}
-\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{1}{16s^{3\kappa}}\\
+\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{3}{2s^{\kappa}}\\
 \end{equation}
 The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
 The bottom most obstacle hexagon is hinged to the frame (see Figure \ref{fig:HalfSizeHexagon.pdf} for illustration). 
@@ -2708,17 +2758,14 @@ $$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{1}{16s^{3\kappa}}.$$
 There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
 We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{12s-1}{16s^{3\kappa}}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{(12s-1)3}{2s^{\kappa}}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
 \begin{eqnarray*}
-\alpha_i &\leq& \sum_{j=1}^i \frac{j}{16s^{3\kappa}}\\
-&\leq&\frac{1}{16s^{3\kappa}}\sum_{j=1}^i j\\
-&\leq&\frac{1}{16s^{3\kappa}}\cdot \frac{i^2+i}{2}\\
-&\leq&\frac{i^2+i}{32s^{3\kappa}}\\
-&\leq&\frac{u^2+u}{32s^{3\kappa}}\\
-&\leq&\frac{(12s)^2+12s}{32s^{3\kappa}}\\
-&\leq&\frac{144s^2+12s}{32s^{3\kappa}}
+\alpha_i &\leq& \frac{3}{2s^\kappa} \sum_{j=1}^i j\\
+		 &\leq& \frac{3}{2s^\kappa}  \frac{i^2+i}{2}\\
+		 &\leq& \frac{3}{2s^\kappa}  i^2\\
+		 &\leq& \frac{3 u^2}{2s^\kappa}
 \end{eqnarray*}
 For any $i$, the bound for $\alpha_i$:
 \begin{equation}\label{eqn:angularMaxBound}
@@ -2729,7 +2776,7 @@ For any $i$, the bound for $\alpha_i$:
 % $$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}= \frac{12s - 1}{2 \lr{ (c_N s)^3 - 1}}$$
 
 \paragraph{Vertical Displacement $\delta$}
-test
+
 When an obstacle hexagon is rotated by $\alpha_i$, the height of the obstacle hexagon becomes $h \sec \alpha_i$ where $h$ is the canonical height of the obstacle hexagon (see Figure \ref{fig:hexagonNonCanonical.pdf} for reference).
 Figure \ref{fig:hexagonNonCanonical.pdf} shows the geometry of a rotated obstacle hexagon.
 
@@ -2793,7 +2840,9 @@ We first identify where horizontal displacement can occur in the modified auxili
 \end{center}
 \end{minipage}
 
-The central flag and the skinny rhombus have three degrees of freedom.  
+Refer to the illustrations in Figure \ref{fig:someRangeSkinny.pdf}.  
+If $O_i$ is fixed, then $O_{i+1}$ has three degrees of freedom.  
+Together, the central flag and the skinny rhombus below $O_{i+1}$ have three hinges upon which these elements can move and ultimately, move $O_{i+1}$.  
 Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects.  
 Figure \ref{fig:someRangeSkinny.pdf}(b) illustrates some range of angular motion $\omega_i$ that a skinny rhombus can rotate on its hinge with a flag.  
 Figure \ref{fig:someRangeSkinny.pdf}(c) shows a rotational displacement of $O_{i+1}$ with the skinny rhombus' angular displacement.
