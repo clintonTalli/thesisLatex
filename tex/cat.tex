@@ -2665,64 +2665,107 @@ $\gamma_i$ is the angle between $\zeta_i$ and the horizontal axis at the height 
 The bound of $\gamma_i$ is:
 \begin{equation}\label{eqn:gammaBound}
 \begin{array}{rcl}
-\gamma_i &\leq & \tan^{-1} \lr{
-								\frac{
-										\lr{2 - \sqrt{3}} + \sqrt{1+ \lr{	\frac{1}{100N}	}^2}
-								}{
-										\frac{5t-1}{4}
-								}	
-							}\\
-&\leq & \tan^{-1} \lr{
-								\frac{
-										4 \lr{ \frac{1}{3} + \sqrt{1+ \lr{	\frac{1}{100N}	}^2} }
-								}{
-										5t-1
-								}	
-							}\\
-&\leq & \tan^{-1} \lr{
-								\frac{
-										\frac{4}{3} + \sqrt{16+ \lr{	\frac{4}{100N}	}^2} 
-								}{
-										5t-1
-								}	
-							}\\
-&\leq & \tan^{-1} \lr{
-								\frac{
-										\frac{4}{3} + \sqrt{16+ 	\frac{1}{625 \lr{\frac{5t-1}{2}}^2}} 
-								}{
-										5t-1
-								}	
-							}\\
-&\leq & \tan^{-1} \lr{
-								\frac{
-										\frac{4}{3} + \sqrt{16+ 9} 
-								}{
-										5t-1
-								}	
-							}\\
-&\leq & \tan^{-1} \lr{
-								\frac{
-										\frac{4}{3} + 5
-								}{
-										5t-1
-								}	
-							}\\
-&\leq&\frac{
-					19
-			}{
-					 \lr{15s^\kappa-3}
-			}\\
-&\leq&\frac{
-					19
-			}{
-					 14s^\kappa
-			}\\
-			&\leq&\frac{
-					3
-			}{
-					 2s^\kappa
-			}
+\gamma_i & \leq & \tan^{-1} \lr{
+								\frac{\lr{2 - \sqrt{3}} + \sqrt{1 + \lr{\frac{1}{100N}}^2}	}
+									 {	\frac{5t -1}{4}	}
+								}\\
+		& \leq & \underbrace{\frac{
+						4 \lr{2 - \sqrt{3}} + 4\sqrt{1 + \lr{\frac{1}{100N}}^2}	}
+					  {	
+					  	5t -1	
+					  } - \frac{1}{3} \lr{
+										  	\frac{
+											4 \lr{2 - \sqrt{3}} + 4\sqrt{1 + \lr{\frac{1}{100N}}^2}	}
+										  {	
+										  	5t -1	
+										  }
+							  			}^3}_{\text{This inequality is an issue with the table of equations at the beginning of the chapter.}}\\
+	  & \leq & \frac{
+						\frac{4}{3} + \sqrt{16 + 9}	}
+					  {	
+					  	5t -1	
+					  } - \frac{1}{3} \lr{
+										  	\frac{
+													\frac{4}{3} + \sqrt{16 + 9}	}
+												  {	
+												  	5t -1	
+												  }
+										  }^3\\
+
+	  & \leq & \frac{19	}
+					  {	
+					  	3 (5t -1)	
+					  } - \frac{1}{3} \lr{
+										  	\frac{
+													19	}
+												  {	
+												  	3(5t -1)	
+												  }
+										  }^3\\
+& \leq & \frac{3(15t-3)^2}{3(15t-3)^2}\frac{19}{	 (15t -3)	} -  \frac{19}{	3(15t -3)^3	}\\
+& \leq & \frac{57}{	 3(15t -3)^3	} -  \frac{19}{	3(15t -3)^3	}\\
+& \leq & \frac{19}{	 2592 s^{3\kappa}	} \\
+& \leq &\frac{1}{	 100 s^{3\kappa}	} \\
 \end{array}
+% \begin{array}{rcl}
+% \gamma_i &\leq & \tan^{-1} \lr{
+% 								\frac{
+% 										\lr{2 - \sqrt{3}} + \sqrt{1+ \lr{	\frac{1}{100N}	}^2}
+% 								}{
+% 										\frac{5t-1}{4}
+% 								}	
+% 							}\\
+% &\leq & \tan^{-1} \lr{
+% 								\frac{
+% 										4 \lr{ \frac{1}{3} + \sqrt{1+ \lr{	\frac{1}{100N}	}^2} }
+% 								}{
+% 										5t-1
+% 								}	
+% 							}\\
+% &\leq & \tan^{-1} \lr{
+% 								\frac{
+% 										\frac{4}{3} + \sqrt{16+ \lr{	\frac{4}{100N}	}^2} 
+% 								}{
+% 										5t-1
+% 								}	
+% 							}\\
+% &\leq & \tan^{-1} \lr{
+% 								\frac{
+% 										\frac{4}{3} + \sqrt{16+ 	\frac{1}{625 \lr{\frac{5t-1}{2}}^2}} 
+% 								}{
+% 										5t-1
+% 								}	
+% 							}\\
+% &\leq & \tan^{-1} \lr{
+% 								\frac{
+% 										\frac{4}{3} + \sqrt{16+ 9} 
+% 								}{
+% 										5t-1
+% 								}	
+% 							}\\
+% &\leq & \tan^{-1} \lr{
+% 								\frac{
+% 										\frac{4}{3} + 5
+% 								}{
+% 										5t-1
+% 								}	
+% 							}\\
+% &\leq&\frac{
+% 					19
+% 			}{
+% 					 \lr{15s^\kappa-3}
+% 			}\\
+% &\leq&\frac{
+% 					19
+% 			}{
+% 					 14s^\kappa
+% 			}\\
+% 			&\leq&\frac{
+% 					3
+% 			}{
+% 					 2s^\kappa
+% 			}
+% \end{array}
 % &=& \tan^{-1} \\\lr{\frac{ 4\lr{2 - \sqrt{3}} + 4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
 % &\leq& \frac{\lr{8 - 4\sqrt{3}} +4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
 % &\leq& \frac{\lr{8 - 4\sqrt{3}} + \sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
@@ -2749,27 +2792,31 @@ The bound of $\gamma_i$ is:
 Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$ and holds for sufficiently large $s$.
 Thus the relative rotational difference between adjacent obstacle hexagons is:
 \begin{equation}\label{eqn:angularBound}
-\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{3}{2s^{\kappa}}\\
+\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{1}{	 100 s^{3\kappa}	}\\
 \end{equation}
 The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
 The bottom most obstacle hexagon is hinged to the frame (see Figure \ref{fig:HalfSizeHexagon.pdf} for illustration). 
 This implies that $\alpha_1 = 0$ and
-$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{1}{16s^{3\kappa}}.$$
+$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{1}{	 100 s^{3\kappa}	}.$$
 There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
 We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{(12s-1)3}{2s^{\kappa}}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{(12s-1)1}{100s^{3\kappa}}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
 \begin{eqnarray*}
-\alpha_i &\leq& \frac{3}{2s^\kappa} \sum_{j=1}^i j\\
-		 &\leq& \frac{3}{2s^\kappa}  \frac{i^2+i}{2}\\
-		 &\leq& \frac{3}{2s^\kappa}  i^2\\
-		 &\leq& \frac{3 u^2}{2s^\kappa}
+\alpha_i &\leq& \frac{1}{100s^{3\kappa}} \sum_{j=1}^i j\\
+		 &\leq& \frac{1}{100s^{3\kappa}}  \frac{i^2+i}{2}\\
+		 &\leq& \frac{i^2}{100s^{3\kappa}}  i^2\\
+		 &\leq& \frac{u^2}{100s^{3\kappa}}\\
+		 &\leq& \frac{144s^2}{100s^{3\kappa}}\\
+		 &\leq& \frac{36}{25} s^{2 - 3\kappa} \\
+		 &\leq& \frac{36}{25s^{2\kappa}}\\
+		 &\leq& \frac{3}{2 s^{2\kappa}}
 \end{eqnarray*}
 For any $i$, the bound for $\alpha_i$:
 \begin{equation}\label{eqn:angularMaxBound}
-\alpha_i \leq \frac{144s^2+12s}{32s^{3\kappa}}
+\alpha_i \leq \frac{3}{2 s^{2\kappa}}
 \end{equation}
 
 % The sum of total displacement in a given column is bounded by:
@@ -2813,17 +2860,17 @@ Consider the first $j$ terms for the height of the column of obstacle hexagons a
 Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
 $$
 \begin{array}{rcl}
-\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{144s^2+12s}{32s^{3\kappa}} }^2\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot j\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot u\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{144s^2+12s}{32s^{3\kappa}}}^2 \cdot 12s\\
-&\leq&  \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
+\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{3}{2 s^{2\kappa}} }^2\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{3}{2s^{2\kappa}}}^2 \cdot j\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{3}{2s^{2\kappa}}}^2 \cdot u\\
+&\leq&\frac{108s}{8s^{2\kappa}}\\
+&\leq&\frac{14}{s^{\kappa}}\\  
 \end{array}
 $$
 
 Thus we finally say that the bound for $\delta_v$, where $1<v\leq j\leq u$, is small:
 \begin{equation}\label{eqn:verticalBound}
-\delta_v \leq \frac{6s\lr{144s^2+12s}^2}{\lr{32s^{3\kappa}}^2}
+\delta_v \leq \frac{14}{s^{\kappa}}
 \end{equation}
 
 
@@ -2841,6 +2888,7 @@ We first identify where horizontal displacement can occur in the modified auxili
 \end{minipage}
 
 Refer to the illustrations in Figure \ref{fig:someRangeSkinny.pdf}.  
+Without loss of generality, the horizontal argument does not consider prior displacements with respect to the $\ith$ obstacle hexagon and focuses on the relative displacement between $O_{i}$ and $O_{i+1}$.  
 If $O_i$ is fixed, then $O_{i+1}$ has three degrees of freedom.  
 Together, the central flag and the skinny rhombus below $O_{i+1}$ have three hinges upon which these elements can move and ultimately, move $O_{i+1}$.  
 Figure \ref{fig:someRangeSkinny.pdf}(a) shows the cannonical position of all objects.  
@@ -2851,6 +2899,12 @@ Each of these rotations can create horizontal displacement.
 Let $\beta_{\alpha_i}$ be the horizontal displacement generated by the rotational displacement of $O_i$.  
 Let $\beta_{\omega_i}$ be the horizontal displacement generated by the rotational displacement between the skinny rhombus and the central flag.  
 Lastly, let $\beta_{\phi_i}$ be the horizontal displacement generated by the rotational displacement between the central flag and $O_i$.
+\paragraph{\textit{Horizontal Displacement Generated by Rotational Displacement} $\beta_{\alpha_{i+1}}$}
+
+
+\paragraph{\textit{Horizontal Displacement Generated by} $\omega_i$}
+
+\paragraph{\textit{Horizontal Displacement Generated by Central Flag Rotation} $\phi_i$}
 
 \begin{minipage}{\linewidth}
 \begin{center}
