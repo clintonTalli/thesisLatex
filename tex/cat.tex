@@ -2337,7 +2337,7 @@ But if at most two unit hexagons enter the junction (i.e., one of the literals i
 \paragraph{Transmitter Gadget.}\label{transmitterGadget}
 
 In the planar 3-SAT graph $A(\Phi)$, every variable vertex has an associated cyclic order of edges.
-Suppose we have a variable vertex $x_i$ with counter-clockwise cyclic order of edges $\lr{\left\lbrace x_i,C_1\right\rbrace,\left\lbrace x_i,C_2\right\rbrace, \dots, \left\lbrace x_i,C_k\right\rbrace }$.
+Suppose we have a variable vertex $x_i$ with counter-clockwise cyclic order of edges $\left(\left\lbrace x_i,C_1\right\rbrace\right.$, $\left\lbrace x_i,C_2\right\rbrace$, $\dots$, $\left.\left\lbrace x_i,C_k\right\rbrace\right) $.  
 Assign distinct junctions of the variable cycle of $x_i$ to the edges $\left\lbrace x_i,C_j\right\rbrace$ in the same cyclic order (refer to Figure \ref{fig:VariableJunctionTransmitterSelection.pdf} for an example).
 
  A {\bf transmitter gadget} is constructed for each edge $\left\lbrace x_i,C_j\right\rbrace$ of the graph $A(\Phi)$; it consists of a sequence of junctions and corridors from a variable gadget's junction to a clause junction.
@@ -2534,14 +2534,14 @@ We modify it in five steps as follows:
 
 \begin{enumerate}
 \item Move the obstacle hexagons apart such that the width of each corridor increases from $\sqrt{3}$ to $\sqrt{3}+1/(100N)$.
-\item Replace the unit segment in each clause gadget by a skinny rhombus of diameter $\sqrt{1 + \lr{100N}^{-2}}$ and width $1/(100N)$.
+\item Replace the unit segment in each clause gadget by a skinny rhombus of diameter $\sqrt{1 + \lr{100N}^{-2}}$ and width $1/(200N)$.
 \item Enclose the regular hexagon region $J$ containing all gadgets by a \emph{frame} of 6 congruent regular hexagons, as shown in Fig.~\ref{fig:frame}(a), hinged together in a path.
 
 \item Connect the frame and the obstacles in $J$ into a simply connected polygonal linkage: in each obstacle
 hexagon, the bottom side is adjacent to the frame or to a corridor.
 Introduce a hinge at the midpoint of one such side in each obstacle hexagon. 
 If this side is adjacent to the frame, then attach the hinge to the frame. 
-Otherwise, the hinge is attached to a new \emph{connector} polygon: a skinny rhombus of diameter 1 and width $\frac{1}{100N}$. 
+Otherwise, the hinge is attached to a new \emph{connector} polygon: a skinny rhombus of diameter 1 and width $\frac{1}{200N}$. 
 The far corner of each rhombus is hinged to the unit hexagon in the middle of the corridor at shown in Figure \ref{fig:frame}(b).
 \item The construction so far constains rows and columns of obstacle hexagons.
 Every other column of obstacle hexagons is hinged to the bottom side of the perimiter of $J$.
@@ -2628,7 +2628,7 @@ The width of a skinny rhombus in canonical position is $\frac{1}{100N}$.
 The obstacle hexagon has height of $ 2 N(n,m) \sqrt{3}$, and the flag is of height $\sqrt{3}$. 
 The height $H(n,m)$ (and $\ell$ in Figure \ref{fig:corridorNonCanonical.pdf}(a)) can be expressed as a sum of the heights of the corridors and obstacle polygons:
 $$(u+1) 2 N \sqrt{3} + u \lr{\sqrt{3}+ \frac{1}{100N}}$$
-which reducest to:
+which reduces to:
 \begin{eqnarray*}
 (u+1) 2 N  \sqrt{3} + u \lr{\sqrt{3}+ \frac{1}{100N}}&=&(12s+1) 2 \frac{5t-1}{2}  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{100\frac{5t-1}{2}}}\\
 &=&(12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250s^\kappa-50}}
@@ -2669,154 +2669,48 @@ The bound of $\gamma_i$ is:
 								\frac{\lr{2 - \sqrt{3}} + \sqrt{1 + \lr{\frac{1}{100N}}^2}	}
 									 {	\frac{5t -1}{4}	}
 								}\\
-		& \leq & \underbrace{\frac{
-						4 \lr{2 - \sqrt{3}} + 4\sqrt{1 + \lr{\frac{1}{100N}}^2}	}
-					  {	
-					  	5t -1	
-					  } - \frac{1}{3} \lr{
-										  	\frac{
-											4 \lr{2 - \sqrt{3}} + 4\sqrt{1 + \lr{\frac{1}{100N}}^2}	}
-										  {	
-										  	5t -1	
-										  }
-							  			}^3}_{\text{This inequality is an issue with the table of equations at the beginning of the chapter.}}\\
-	  & \leq & \frac{
-						\frac{4}{3} + \sqrt{16 + 9}	}
-					  {	
-					  	5t -1	
-					  } - \frac{1}{3} \lr{
-										  	\frac{
-													\frac{4}{3} + \sqrt{16 + 9}	}
-												  {	
-												  	5t -1	
-												  }
-										  }^3\\
+& \leq & \frac{
+				4 \lr{2 - \sqrt{3}} + 4\sqrt{1 + \lr{\frac{1}{100N}}^2}	}
+			  {	
+			  	5t -1	
+			  }\\
+& \leq & \frac{
+				\frac{4}{3} + \sqrt{16 + 9}	}
+			  {	
+			  	5t -1	
+			  } \\
 
-	  & \leq & \frac{19	}
-					  {	
-					  	3 (5t -1)	
-					  } - \frac{1}{3} \lr{
-										  	\frac{
-													19	}
-												  {	
-												  	3(5t -1)	
-												  }
-										  }^3\\
-& \leq & \frac{3(15t-3)^2}{3(15t-3)^2}\frac{19}{	 (15t -3)	} -  \frac{19}{	3(15t -3)^3	}\\
-& \leq & \frac{57}{	 3(15t -3)^3	} -  \frac{19}{	3(15t -3)^3	}\\
-& \leq & \frac{19}{	 2592 s^{3\kappa}	} \\
-& \leq &\frac{1}{	 100 s^{3\kappa}	} \\
-\end{array}
-% \begin{array}{rcl}
-% \gamma_i &\leq & \tan^{-1} \lr{
-% 								\frac{
-% 										\lr{2 - \sqrt{3}} + \sqrt{1+ \lr{	\frac{1}{100N}	}^2}
-% 								}{
-% 										\frac{5t-1}{4}
-% 								}	
-% 							}\\
-% &\leq & \tan^{-1} \lr{
-% 								\frac{
-% 										4 \lr{ \frac{1}{3} + \sqrt{1+ \lr{	\frac{1}{100N}	}^2} }
-% 								}{
-% 										5t-1
-% 								}	
-% 							}\\
-% &\leq & \tan^{-1} \lr{
-% 								\frac{
-% 										\frac{4}{3} + \sqrt{16+ \lr{	\frac{4}{100N}	}^2} 
-% 								}{
-% 										5t-1
-% 								}	
-% 							}\\
-% &\leq & \tan^{-1} \lr{
-% 								\frac{
-% 										\frac{4}{3} + \sqrt{16+ 	\frac{1}{625 \lr{\frac{5t-1}{2}}^2}} 
-% 								}{
-% 										5t-1
-% 								}	
-% 							}\\
-% &\leq & \tan^{-1} \lr{
-% 								\frac{
-% 										\frac{4}{3} + \sqrt{16+ 9} 
-% 								}{
-% 										5t-1
-% 								}	
-% 							}\\
-% &\leq & \tan^{-1} \lr{
-% 								\frac{
-% 										\frac{4}{3} + 5
-% 								}{
-% 										5t-1
-% 								}	
-% 							}\\
-% &\leq&\frac{
-% 					19
-% 			}{
-% 					 \lr{15s^\kappa-3}
-% 			}\\
-% &\leq&\frac{
-% 					19
-% 			}{
-% 					 14s^\kappa
-% 			}\\
-% 			&\leq&\frac{
-% 					3
-% 			}{
-% 					 2s^\kappa
-% 			}
-% \end{array}
-% &=& \tan^{-1} \\\lr{\frac{ 4\lr{2 - \sqrt{3}} + 4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}}\\
-% &\leq& \frac{\lr{8 - 4\sqrt{3}} +4\cdot \sqrt{1 + \frac{1}{(100N)^2}}}{5t-1}\\
-% &\leq& \frac{\lr{8 - 4\sqrt{3}} + \sqrt{16 + \frac{16}{(100N)^2}}}{10N^3 -6}\\
-% &\leq& \frac{\lr{8 - 4\sqrt{3}} + 5}{10N^3 -6}\\
-% &\leq& \frac{
-% 				\lr{13 - 4\sqrt{3}} 
-% 			}{
-% 				10N^3 - \lr{13 - 4\sqrt{3}} 
-% 			}\\
-% &\leq& \frac{
-% 				\lr{13 - 4\sqrt{3}} 
-% 			}{
-% 				10N^3 - 10 
-% 			}\\
-% &\leq& \frac{10}{10N^3 - 10 }\\
-% &\leq& \frac{1}{N^3 - 1 }\\
-% &\leq& \frac{1}{\lr{\frac{5t-1}{2}}^3 - 1 }\\
-% &\leq& \frac{8}{\lr{5t-1}^3 - 8 }\\
-% &\leq& \frac{8}{\lr{5s^\kappa-1}^3 - 8 }\\
-% &\leq& \frac{4}{\lr{4s^\kappa}^3}\\
-% &\leq& \frac{4}{64s^{3\kappa}}\\
-% &\leq& \frac{1}{16s^{3\kappa}} 
+& \leq & \frac{\frac{19}{3}}{5t -1} \\
+& \leq & \frac{\frac{24}{3}}{4s^\kappa} \\
+&\leq& \frac{2}{s^\kappa}
+\end{array} 
 \end{equation}
-Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$ and holds for sufficiently large $s$.
+Inequality \ref{eqn:gammaBound} uses the first term Maclaurin series of $\tan^{-1}$ and holds for sufficiently large $s$ and $\kappa$.  
 Thus the relative rotational difference between adjacent obstacle hexagons is:
 \begin{equation}\label{eqn:angularBound}
-\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq \frac{1}{	 100 s^{3\kappa}	}\\
+\left\vert \alpha_i - \alpha_{i+1} \right\vert \leq\frac{2}{s^\kappa}
 \end{equation}
 The relative difference between $\alpha_i$ and $\alpha_{i+1}$ is small.
 The bottom most obstacle hexagon is hinged to the frame (see Figure \ref{fig:HalfSizeHexagon.pdf} for illustration). 
 This implies that $\alpha_1 = 0$ and
-$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{1}{	 100 s^{3\kappa}	}.$$
+$$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{2}{s^\kappa}.$$
 There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
 We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{(12s-1)1}{100s^{3\kappa}}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{2(12s-1)}{s^\kappa} \leq \frac{24}{s^{1-\kappa}}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
 \begin{eqnarray*}
-\alpha_i &\leq& \frac{1}{100s^{3\kappa}} \sum_{j=1}^i j\\
-		 &\leq& \frac{1}{100s^{3\kappa}}  \frac{i^2+i}{2}\\
-		 &\leq& \frac{i^2}{100s^{3\kappa}}  i^2\\
-		 &\leq& \frac{u^2}{100s^{3\kappa}}\\
-		 &\leq& \frac{144s^2}{100s^{3\kappa}}\\
-		 &\leq& \frac{36}{25} s^{2 - 3\kappa} \\
-		 &\leq& \frac{36}{25s^{2\kappa}}\\
-		 &\leq& \frac{3}{2 s^{2\kappa}}
+\alpha_i &\leq& \frac{2}{s^\kappa} \sum_{j=1}^i j\\
+		 &\leq& \frac{2}{s^\kappa}  \frac{i^2+i}{2}\\
+		 &\leq& \frac{2}{s^\kappa}  i^2\\
+		 &\leq& \frac{2u^2}{s^\kappa}\\
+		 &\leq& \frac{288s^2}{s^{\kappa}}\\
+		 &\leq& \frac{288}{s^{2-\kappa}} \\
 \end{eqnarray*}
 For any $i$, the bound for $\alpha_i$:
 \begin{equation}\label{eqn:angularMaxBound}
-\alpha_i \leq \frac{3}{2 s^{2\kappa}}
+\alpha_i \leq \frac{288}{s^{2-\kappa}}
 \end{equation}
 
 % The sum of total displacement in a given column is bounded by:
@@ -2860,17 +2754,17 @@ Consider the first $j$ terms for the height of the column of obstacle hexagons a
 Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
 $$
 \begin{array}{rcl}
-\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{3}{2 s^{2\kappa}} }^2\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{3}{2s^{2\kappa}}}^2 \cdot j\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{3}{2s^{2\kappa}}}^2 \cdot u\\
-&\leq&\frac{108s}{8s^{2\kappa}}\\
-&\leq&\frac{14}{s^{\kappa}}\\  
+\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{2}{s^\kappa} }^2\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{2}{s^{\kappa}}}^2 \cdot j\\
+&\leq&\frac{1}{2}\cdot  \lr{\frac{2}{s^{\kappa}}}^2 \cdot u\\
+&\leq&\frac{48s}{2s^{2\kappa}}\\
+&\leq&\frac{24}{s^{2\kappa-1}}\\  
 \end{array}
 $$
 
 Thus we finally say that the bound for $\delta_v$, where $1<v\leq j\leq u$, is small:
 \begin{equation}\label{eqn:verticalBound}
-\delta_v \leq \frac{14}{s^{\kappa}}
+\delta_v \leq \frac{24}{s^{2\kappa-1}}
 \end{equation}
 
 
@@ -2900,16 +2794,34 @@ Let $\beta_{\alpha_i}$ be the horizontal displacement generated by the rotationa
 Let $\beta_{\omega_i}$ be the horizontal displacement generated by the rotational displacement between the skinny rhombus and the central flag.  
 Lastly, let $\beta_{\phi_i}$ be the horizontal displacement generated by the rotational displacement between the central flag and $O_i$.
 \paragraph{\textit{Horizontal Displacement Generated by Rotational Displacement} $\beta_{\alpha_{i+1}}$}
-
-
+The obstacle hexagon above a corridor can rotate with respect the center of the hexagon.  
+The half diameter of the hexagon is $\sqrt{3} \frac{5t-1}{2}$.  
+The rotation of the hexagon can generate a horizontal distance of travel by:
+\begin{equation}
+\begin{array}{rcl}
+\sqrt{3} \frac{5t-1}{2} \sin \alpha_{i+1} &\leq&\sqrt{3} \frac{5t-1}{2}  \alpha_{i+1} \\
+&\leq& \sqrt{3} \frac{5t-1}{2} \alpha_{i+1}\\
+&\leq& \sqrt{3} \frac{5s^\kappa-1}{2} \frac{2}{s^\kappa}\\
+&\leq& 2 \frac{5s^\kappa}{2} \frac{2}{s^\kappa}\\
+&\leq& 10\\
+\end{array}
+\end{equation}
 \paragraph{\textit{Horizontal Displacement Generated by} $\omega_i$}
-
-\paragraph{\textit{Horizontal Displacement Generated by Central Flag Rotation} $\phi_i$}
 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.99\columnwidth]{graphics/phiFigure.pdf}
 \captionof{figure}{}\label{fig:phiFigure.pdf}
+\end{center}
+\end{minipage}
+
+\paragraph{\textit{Horizontal Displacement Generated by Central Flag Rotation} $\phi_i$}
+
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.46\columnwidth]{graphics/betaOmegaFigure.pdf}
+\captionof{figure}{}\label{fig:betaOmegaFigure.pdf}
 \end{center}
 \end{minipage}\textbf{Lemma \ref{lem:aux-C} Conclusion.} We have thus shown that the triple $(\alpha, \beta, \delta)$ for any obstacle hexagon is small and bounded.  
 Therefore the entire modified auxiliary construction in any realization is canonical or close to canonical where the encoded P3SAT information is stable.

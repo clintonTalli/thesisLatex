@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  10 SEP 2016 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  11 SEP 2016 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,12 +965,6 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 128--136
  []
 
 
-Overfull \hbox (56.93747pt too wide) in paragraph at lines 141--144
-\T1/ptm/m/n/10 of edges. Sup-pose we have a vari-able ver-tex $\OML/ztmcm/m/it/
-10 x[]$ \T1/ptm/m/n/10 with counter-clockwise cyclic or-der of edges $[]$.
- []
-
-
 <graphics/VariableJunctionTransmitterSelection.pdf, id=147, 964.13202pt x 979.6
 4995pt>
 File: graphics/VariableJunctionTransmitterSelection.pdf Graphic file (type pdf)
@@ -1078,8 +1072,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 7--13
 []$[]$ 
  []
 
-[15 <./graphics/corridorNonCanonical2.pdf>] [16]) (./ch3/verticalArgument.tex
-<graphics/hexagonNonCanonical2.pdf, id=297, 189.37952pt x 182.95753pt>
+[15 <./graphics/corridorNonCanonical2.pdf>]) (./ch3/verticalArgument.tex
+<graphics/hexagonNonCanonical2.pdf, id=294, 189.37952pt x 182.95753pt>
 File: graphics/hexagonNonCanonical2.pdf Graphic file (type pdf)
 
 <use graphics/hexagonNonCanonical2.pdf>
@@ -1091,8 +1085,8 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 7--15
 []$[]$ 
  []
 
-
-<graphics/verticalDisplacementArgument.pdf, id=298, 210.13507pt x 182.03008pt>
+[16 <./graphics/hexagonNonCanonical2.pdf>]
+<graphics/verticalDisplacementArgument.pdf, id=312, 210.13507pt x 182.03008pt>
 File: graphics/verticalDisplacementArgument.pdf Graphic file (type pdf)
 
 <use graphics/verticalDisplacementArgument.pdf>
@@ -1104,9 +1098,9 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 19--25
 []$[]$ 
  []
 
-[17 <./graphics/hexagonNonCanonical2.pdf>]) (./ch3/horizontalArgument4.tex
-[18 <./graphics/verticalDisplacementArgument.pdf>]
-<graphics/someRangeSkinny.pdf, id=338, 715.39267pt x 188.07263pt>
+[17 <./graphics/verticalDisplacementArgument.pdf>])
+(./ch3/horizontalArgument4.tex
+<graphics/someRangeSkinny.pdf, id=335, 715.39267pt x 188.07263pt>
 File: graphics/someRangeSkinny.pdf Graphic file (type pdf)
 
 <use graphics/someRangeSkinny.pdf>
@@ -1117,26 +1111,39 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 6--12
 []$[]$ 
  []
 
-<graphics/phiFigure.pdf, id=339, 643.49411pt x 215.13374pt>
+<graphics/phiFigure.pdf, id=336, 643.49411pt x 215.13374pt>
 File: graphics/phiFigure.pdf Graphic file (type pdf)
 
 <use graphics/phiFigure.pdf>
-Package pdftex.def Info: graphics/phiFigure.pdf used on input line 34.
+Package pdftex.def Info: graphics/phiFigure.pdf used on input line 42.
 (pdftex.def)             Requested size: 429.28616pt x 143.52171pt.
+
+Overfull \hbox (179.79514pt too wide) in paragraph at lines 40--46
+ \T1/ptm/b/it/10 Hor-i-zon-tal Dis-place-ment Gen-er-ated by $\OML/ztmcm/m/it/1
+0 ![]$[] $[]$ 
+ []
+
+[18 <./graphics/someRangeSkinny.pdf>]
+<graphics/betaOmegaFigure.pdf, id=358, 751.9292pt x 309.3156pt>
+File: graphics/betaOmegaFigure.pdf Graphic file (type pdf)
+
+<use graphics/betaOmegaFigure.pdf>
+Package pdftex.def Info: graphics/betaOmegaFigure.pdf used on input line 52.
+(pdftex.def)             Requested size: 199.4681pt x 82.05319pt.
 ) (./ch3/lemma5Conclusion.tex
-Overfull \hbox (269.98401pt too wide) in paragraph at lines 32--3
+Overfull \hbox (269.98401pt too wide) in paragraph at lines 50--3
  \T1/ptm/b/it/10 Hor-i-zon-tal Dis-place-ment Gen-er-ated by Cen-tral Flag Ro-t
 a-tion $\OML/ztmcm/m/it/10 ^^^[]$[] $[]$
  []
 
-[19 <./graphics/someRangeSkinny.pdf> <./graphics/phiFigure.pdf>])
-(./ch3/theoremConclusion.tex [20]
+) (./ch3/theoremConclusion.tex [19 <./graphics/phiFigure.pdf> <./graphics/betaO
+megaFigure.pdf>]
 
-LaTeX Warning: Reference `thm:hinge2' on page 21 undefined on input line 52.
+LaTeX Warning: Reference `thm:hinge2' on page 20 undefined on input line 52.
 
-)) (../pdf/Ch3.bbl [21])
+)) (../pdf/Ch3.bbl [20])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[22
+[21
 
 ] (../pdf/Ch3.aux)
 
@@ -1144,13 +1151,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17622 strings out of 493089
- 322425 string characters out of 6134841
- 502870 words of memory out of 5000000
- 20624 multiletter control sequences out of 15000+600000
+ 17628 strings out of 493089
+ 322600 string characters out of 6134841
+ 501870 words of memory out of 5000000
+ 20629 multiletter control sequences out of 15000+600000
  43714 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,17n,59p,818b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,10n,59p,818b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1169,10 +1176,10 @@ s/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Ch3.pdf (26 pages, 361190 bytes).
+Output written on ../pdf/Ch3.pdf (25 pages, 362202 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 308 compressed objects within 4 object streams
+ 425 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
