@@ -1,4 +1,3 @@
-
 \paragraph{Vertical Displacement $\delta$}
 
 When an obstacle hexagon is rotated by $\alpha_i$, the height of the obstacle hexagon becomes $h \sec \alpha_i$ where $h$ is the canonical height of the obstacle hexagon (see Figure \ref{fig:hexagonNonCanonical.pdf} for reference).
@@ -51,4 +50,32 @@ Thus we finally say that the bound for $\delta_v$, where $1<v\leq j\leq u$, is s
 \end{equation}
 
 
+\paragraph{\textit{A Refinement of the Angular Rotation Bound on $\alpha$}}
+An obstacle hexagon can have at most a vertical displacement of $\delta_i$.  
+A corridor's height can grow by $2 \delta_i$ should the obstacle below the corridor shift down by $-\delta_i$ and the obstacle above the corridor shift up $\delta_i$.  
+We infer from our vertical bound Inequality \ref{eqn:verticalBound}:
+$$\delta_i \leq \frac{12}{s^{2\kappa-1}}$$
+By incorportating the new vertical bound, we extend the height of the corridor in Inequality \ref{eqn:alphaBound} to refine the bound on $\alpha$ as such:
+\begin{equation}\label{eqn:alphaBoundRefined}
+\begin{array}{rcl}
+\gamma_i & \leq & \tan^{-1} \lr{
+								\frac{\lr{2 - \sqrt{3}} + \sqrt{1 + \lr{\frac{1}{100N}}^2}	+ 2 \delta_i}
+									 {	\frac{5t -1}{4}	}
+								}\\
+& \leq & \frac{
+				4 \lr{2 - \sqrt{3}} + 4\sqrt{1 + \lr{\frac{1}{100N}}^2} + 8 \frac{24}{s^{2\kappa-1}}	}
+			  {	
+			  	5s^\kappa -1	
+			  }\\
+& \leq & \frac{
+				\frac{4}{3} + \sqrt{16 + 9}	+  \frac{192}{s^{2\kappa-1}} }
+			  {	
+			  	5s^\kappa -1	
+			  } \\
 
+& \leq & \frac{\frac{19}{3}+\frac{192}{s^{2\kappa-1}}}{5 s^\kappa-1} \\
+& \leq & \frac{200s^{2\kappa-1}}{4 s^\kappa \cdot s^{2\kappa-1}} \\
+& \leq & \frac{50s^{2\kappa-1}}{ s^{3\kappa-1}} \\
+&\leq& \frac{50}{s^{\kappa}}\\
+\end{array} 
+\end{equation}

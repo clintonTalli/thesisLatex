@@ -41,7 +41,7 @@ This extrema position is formed when the displacement of the skinny rhombus is v
 $\gamma_i$ represents the maximal angular difference between two adjacent obstacle hexagons.  
 $\gamma_j$ is the angle between $s_j$ and the horizontal axis at the height of the flag ($j = 1,2,\ldots, m$).
 The bound of $\gamma_j$ is:
-\begin{equation}\label{eqn:gammaBound}
+\begin{equation}\label{eqn:alphaBound}
 \begin{array}{rcl}
 \gamma_j &\leq & \tan^{-1} \lr{
 								\frac{
@@ -55,7 +55,7 @@ The bound of $\gamma_j$ is:
 &=&\frac{\lr{6N^2 - 8 - \frac{8}{(100N)^2}}\cdot \sqrt{1 + \frac{1}{(100N)^2}} }{3N^3}
 \end{array} 
 \end{equation}
-Inequality \ref{eqn:gammaBound} uses the first two terms Maclaurin series of $\tan^{-1}$.
+Inequality \ref{eqn:alphaBound} uses the first two terms Maclaurin series of $\tan^{-1}$.
 From this inequality, it is clear that as $N \rightarrow \infty$, $\gamma_j \rightarrow 0$.
 The sum of maximal relative differences between adjacent obstacle hexagons is
 $$\sum_{i=1}^{h(n,m)-1} \left\vert \alpha_i - \alpha_{i+1} \right\vert < \sum_{i=1}^{h(n,m)-1} \gamma_i$$
