@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.18)  12 SEP 2016 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.18)  12 SEP 2016 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1126,11 +1126,11 @@ a-tion $\OML/ztmcm/m/it/10 ^^^[]$[] $[]$
  []
 
 ) (./ch3/lemma5Conclusion.tex) (./ch3/theoremConclusion.tex [19 <./graphics/phi
-Figure.pdf> <./graphics/betaOmegaFigure.pdf>]
+Figure.pdf> <./graphics/betaOmegaFigure.pdf>] [20]
 
-LaTeX Warning: Reference `thm:hinge2' on page 20 undefined on input line 52.
+LaTeX Warning: Reference `thm:hinge2' on page 21 undefined on input line 52.
 
-[20])) (../pdf/Ch3.bbl [21])
+)) (../pdf/Ch3.bbl [21])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 [22
 
@@ -1164,7 +1164,7 @@ dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Ch3.pdf (26 pages, 365454 bytes).
+Output written on ../pdf/Ch3.pdf (26 pages, 365490 bytes).
 PDF statistics:
  428 PDF objects out of 1000 (max. 8388607)
  312 compressed objects within 4 object streams
