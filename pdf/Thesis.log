@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  13 SEP 2016 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 SEP 2016 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1646,33 +1646,38 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 6--12
 []$[]$ 
  []
 
-[41 <./graphics/someRangeSkinny.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 22.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+ [41 <./graphics/someRangeSkinny.pdf>]
 <graphics/betaOmegaFigure.pdf, id=708, 751.93924pt x 309.3156pt>
 File: graphics/betaOmegaFigure.pdf Graphic file (type pdf)
 
 <use graphics/betaOmegaFigure.pdf>
-Package pdftex.def Info: graphics/betaOmegaFigure.pdf used on input line 48.
+Package pdftex.def Info: graphics/betaOmegaFigure.pdf used on input line 54.
 (pdftex.def)             Requested size: 199.4681pt x 82.05319pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 46--52
+Overfull \hbox (15.0pt too wide) in paragraph at lines 52--58
 []$[]$ 
  []
 
-<graphics/phiFigure.pdf, id=709, 643.49411pt x 215.13374pt>
+[42 <./graphics/betaOmegaFigure.pdf>]
+<graphics/phiFigure.pdf, id=721, 643.49411pt x 215.13374pt>
 File: graphics/phiFigure.pdf Graphic file (type pdf)
 
 <use graphics/phiFigure.pdf>
-Package pdftex.def Info: graphics/phiFigure.pdf used on input line 57.
+Package pdftex.def Info: graphics/phiFigure.pdf used on input line 79.
 (pdftex.def)             Requested size: 429.28616pt x 143.52171pt.
 
-Overfull \hbox (179.79514pt too wide) in paragraph at lines 55--61
- \T1/ptm/b/it/10 Hor-i-zon-tal Dis-place-ment Gen-er-ated by $\OML/ztmcm/m/it/1
-0 ![]$[] $[]$ 
+Overfull \hbox (15.0pt too wide) in paragraph at lines 77--83
+[]$[]$ 
  []
 
-) (./ch3/lemma5Conclusion.tex) (./ch3/theoremConclusion.tex [42 <./graphics/bet
-aOmegaFigure.pdf> <./graphics/phiFigure.pdf>] [43])) (./ch4/chapter4.tex
-(./ch4/chapter4IntroductionV2.tex [44]
+) (./ch3/lemma5Conclusion.tex) (./ch3/theoremConclusion.tex [43 <./graphics/phi
+Figure.pdf>])) (./ch4/chapter4.tex (./ch4/chapter4IntroductionV2.tex [44]
 Chapter 4.
 ) (./ch4/Hausdorff.tex
 <graphics/HausdorffDistanceExample1.pdf, id=737, 291.58937pt x 208.65755pt>
@@ -1690,14 +1695,6 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
 [45
 
  <./graphics/HausdorffDistanceExample1.pdf>]) (./ch4/WeightedTreeFamily.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 6.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
-
 <graphics/snowflakeOutline5LayerSmall.pdf, id=749, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
@@ -1824,7 +1821,7 @@ ol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (56 pages, 702491 bytes).
+Output written on ../pdf/Thesis.pdf (56 pages, 704771 bytes).
 PDF statistics:
  898 PDF objects out of 1000 (max. 8388607)
  603 compressed objects within 7 object streams
