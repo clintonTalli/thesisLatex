@@ -18,7 +18,7 @@ Note that this result implies that a planar graph can be embedded in a grid of s
 We can define a \textit{bend polynomial}, $s(n,m)$ that will be used to construct our gadgets which will be used to prove Theorem \ref{thm:hinge2}.
 For our constructions, our bend polynomial can be any polynomial strictly greater than $S(G)$, e.g.:
 $$6 (n+m) + 4.$$
-The table below is a glossary of formulas that are used to throughout this chapter.
+The tables below are a glossary of formulas and Maclaurin series that are used to throughout this chapter.
 It will serve as a useful reference for the reader.
 $$
 \begin{array}{|rcl|}
@@ -29,14 +29,20 @@ J_d (z) 	&=& 4z(n,m)+1												= 16s(n,m)+1  			\\\hline
 N(n,m)		&=& \frac{5t-1}{2}											= \frac{5s^\kappa-1}{2}	\\\hline
 t(n,m)		&=& s^\kappa																		\\\hline
 H(n,m) 		&=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}				\\\hline
-&& x \leq \sin^{-1} x \leq x + \frac{x^3}{6} \qquad 0<x<1 \\\hline
-&&x - \frac{x^3}{3}\leq\tan^{-1}x\leq x \qquad	 0< x < 1\\\hline
-&& x - \frac{x^3}{6}\leq \sin x \leq x \quad\qquad 0< x < 1\\\hline
-&&1 - \frac{x^2}{2}\leq \cos x \leq 1-\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
-&& 1 \leq \sec x \leq 1+\frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
 \end{array}
 $$
 
+
+$$
+\begin{array}{|rcl|}
+\hline
+&& x 				\leq \sin^{-1} x \leq x + \frac{x^3}{6} \qquad 0<x<1 \\\hline
+&& x - \frac{x^3}{3}\leq \tan^{-1} x \leq x 				\qquad	 0< x < 1\\\hline
+&& x - \frac{x^3}{6}\leq \sin x 	 \leq x 				\qquad\qquad 0< x < 1\\\hline
+&& 1 - \frac{x^2}{2}\leq \cos x 	 \leq 1 				\qquad\qquad 0< x < 1\\\hline
+&& 1 				\leq \sec x 	 \leq 1 + \frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
+\end{array}
+$$
 The formula $t(n,m)=s^\kappa$ has an exponent $\kappa$ which is a sufficiently large integer that is chosen later on so that all arguments in this chapter are satisfied.
 The trigonmetric functions in the table above each are expressed as either the first term or the first and second term of their Maclaurin Series expansion.
 

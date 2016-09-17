@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 SEP 2016 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  17 SEP 2016 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,7 +791,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--29
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 []| 
  []
 
@@ -1404,7 +1404,7 @@ Chapter 3.
 File: graphics/VariablesExample.pdf Graphic file (type pdf)
 
 <use graphics/VariablesExample.pdf>
-Package pdftex.def Info: graphics/VariablesExample.pdf used on input line 54.
+Package pdftex.def Info: graphics/VariablesExample.pdf used on input line 60.
 (pdftex.def)             Requested size: 306.46497pt x 39.16899pt.
 
 <graphics/HoneyCombAssociatedGraphSideBySide.pdf, id=400, 1501.4093pt x 742.433
@@ -1412,10 +1412,10 @@ Package pdftex.def Info: graphics/VariablesExample.pdf used on input line 54.
 File: graphics/HoneyCombAssociatedGraphSideBySide.pdf Graphic file (type pdf)
  <use graphics/HoneyCombAssociatedGraphSideBySide.pdf>
 Package pdftex.def Info: graphics/HoneyCombAssociatedGraphSideBySide.pdf used o
-n input line 77.
+n input line 83.
 (pdftex.def)             Requested size: 390.25534pt x 192.97156pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 75--84
+Overfull \hbox (15.0pt too wide) in paragraph at lines 81--90
 []$[]$ 
  []
 
@@ -1634,7 +1634,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 18--24
  []
 
 [40 <./graphics/verticalDisplacementArgument.pdf>])
-(./ch3/horizontalArgument4.tex
+(./ch3/horizontalArgument5.tex
 <graphics/someRangeSkinny.pdf, id=686, 715.39267pt x 188.07263pt>
 File: graphics/someRangeSkinny.pdf Graphic file (type pdf)
 
@@ -1646,41 +1646,24 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 6--12
 []$[]$ 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 22.
+
+LaTeX Warning: Reference `fig:betaOmegaFigure.pdf' on page 41 undefined on inpu
+t line 25.
+
+[41 <./graphics/someRangeSkinny.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 27.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
- [41 <./graphics/someRangeSkinny.pdf>]
-<graphics/betaOmegaFigure.pdf, id=708, 751.93924pt x 309.3156pt>
-File: graphics/betaOmegaFigure.pdf Graphic file (type pdf)
-
-<use graphics/betaOmegaFigure.pdf>
-Package pdftex.def Info: graphics/betaOmegaFigure.pdf used on input line 54.
-(pdftex.def)             Requested size: 199.4681pt x 82.05319pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 52--58
-[]$[]$ 
- []
-
-[42 <./graphics/betaOmegaFigure.pdf>]
-<graphics/phiFigure.pdf, id=721, 643.49411pt x 215.13374pt>
-File: graphics/phiFigure.pdf Graphic file (type pdf)
-
-<use graphics/phiFigure.pdf>
-Package pdftex.def Info: graphics/phiFigure.pdf used on input line 79.
-(pdftex.def)             Requested size: 429.28616pt x 143.52171pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 77--83
-[]$[]$ 
- []
-
-) (./ch3/lemma5Conclusion.tex) (./ch3/theoremConclusion.tex [43 <./graphics/phi
-Figure.pdf>])) (./ch4/chapter4.tex (./ch4/chapter4IntroductionV2.tex [44]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+ [42])
+(./ch3/lemma5Conclusion.tex) (./ch3/theoremConclusion.tex [43]))
+(./ch4/chapter4.tex (./ch4/chapter4IntroductionV2.tex [44]
 Chapter 4.
 ) (./ch4/Hausdorff.tex
-<graphics/HausdorffDistanceExample1.pdf, id=737, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=717, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
@@ -1695,7 +1678,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
 [45
 
  <./graphics/HausdorffDistanceExample1.pdf>]) (./ch4/WeightedTreeFamily.tex
-<graphics/snowflakeOutline5LayerSmall.pdf, id=749, 189.76897pt x 166.8333pt>
+<graphics/snowflakeOutline5LayerSmall.pdf, id=729, 189.76897pt x 166.8333pt>
 File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
@@ -1703,7 +1686,7 @@ Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
  line 16.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
  [46 <./graphics/snowflakeOutline5LayerSmall.pdf>]
-<graphics/hexagonOutline5LayerSmall.pdf, id=756, 204.32335pt x 179.61102pt>
+<graphics/hexagonOutline5LayerSmall.pdf, id=736, 204.32335pt x 179.61102pt>
 File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutline5LayerSmall.pdf>
@@ -1725,7 +1708,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--10
 LaTeX Warning: Reference `fig:modifiedContactGraph' on page 48 undefined on inp
 ut line 24.
 
-<graphics/PerturbedSpine.pdf, id=760, 226.24524pt x 176.91295pt>
+<graphics/PerturbedSpine.pdf, id=740, 226.24524pt x 176.91295pt>
 File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedSpine.pdf>
@@ -1736,7 +1719,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
- <graphics/PerturbedVertebrae.pdf, id=767, 239.34016pt x 179.00174pt>
+ <graphics/PerturbedVertebrae.pdf, id=747, 239.34016pt x 179.00174pt>
 File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
 
 <use graphics/PerturbedVertebrae.pdf>
@@ -1744,7 +1727,7 @@ Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 57.
 
 (pdftex.def)             Requested size: 134.84532pt x 100.85483pt.
 ) (./ch4/proofs.tex
-<graphics/modifiedContactGraph.pdf, id=768, 217.35605pt x 187.2074pt>
+<graphics/modifiedContactGraph.pdf, id=748, 217.35605pt x 187.2074pt>
 File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
 
 <use graphics/modifiedContactGraph.pdf>
@@ -1758,7 +1741,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 7--13
 
 [49 <./graphics/PerturbedSpine.pdf> <./graphics/PerturbedVertebrae.pdf>]
 [50 <./graphics/modifiedContactGraph.pdf>]
-<graphics/Vertebrae.pdf, id=816, 161.0015pt x 64.6415pt>
+<graphics/Vertebrae.pdf, id=795, 161.0015pt x 64.6415pt>
 File: graphics/Vertebrae.pdf Graphic file (type pdf)
 
 <use graphics/Vertebrae.pdf>
@@ -1769,7 +1752,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 48--54
 []$[]$ 
  []
 
-<graphics/ch4Paralellogram.pdf, id=817, 707.443pt x 170.52708pt>
+<graphics/ch4Paralellogram.pdf, id=796, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
@@ -1791,10 +1774,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18112 strings out of 493089
- 335575 string characters out of 6134841
- 503870 words of memory out of 5000000
- 20989 multiletter control sequences out of 15000+600000
+ 18101 strings out of 493089
+ 335286 string characters out of 6134841
+ 504870 words of memory out of 5000000
+ 20980 multiletter control sequences out of 15000+600000
  68796 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1821,10 +1804,10 @@ ol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (56 pages, 704771 bytes).
+Output written on ../pdf/Thesis.pdf (56 pages, 701967 bytes).
 PDF statistics:
- 898 PDF objects out of 1000 (max. 8388607)
- 603 compressed objects within 7 object streams
+ 877 PDF objects out of 1000 (max. 8388607)
+ 589 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 
