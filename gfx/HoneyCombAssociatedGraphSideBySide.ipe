@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160531192850" modified="D:20160602195115"/>
+<info created="D:20160531192850" modified="D:20161001171801"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -258,7 +258,7 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="0.362567 0 0 0.362567 -195.033 216.963" stroke="black">
+<path layer="alpha" matrix="0.284486 0 0 0.284486 426.844 483.255" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -267,7 +267,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.872 56.1928" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 262.98 357.108" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -276,7 +276,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.065 36.0975" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.291 341.34" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -285,7 +285,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 36.0989" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 341.342" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -294,7 +294,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.872 16" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.98 325.571" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -303,7 +303,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.065 -4.09559" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.291 309.803" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -312,7 +312,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 -4.09196" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 309.806" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -321,7 +321,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.872 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.98 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -330,7 +330,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.065 -44.2898" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.291 278.265" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -339,7 +339,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 -44.2861" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 278.268" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -348,7 +348,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.872 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.98 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -357,7 +357,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.453 36.0953" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.911 341.339" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -366,7 +366,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.646 15.9997" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.223 325.571" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -375,7 +375,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.259 16.0011" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.601 325.572" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -384,7 +384,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.453 -4.09559" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.911 309.803" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -393,7 +393,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.646 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.223 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -402,7 +402,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.259 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.601 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -411,7 +411,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.453 -44.2898" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.911 278.265" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -420,7 +420,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.646 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.223 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -429,7 +429,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.259 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.601 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -438,7 +438,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -508.291 -44.2898" stroke="black">
+<path matrix="0.284486 0 0 0.284486 181.048 278.265" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -447,7 +447,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.358 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -456,7 +456,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -508.291 -4.09559" stroke="black">
+<path matrix="0.284486 0 0 0.284486 181.048 309.803" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -465,7 +465,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.358 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -474,7 +474,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -508.291 36.0964" stroke="black">
+<path matrix="0.284486 0 0 0.284486 181.048 341.34" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -483,7 +483,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 16.0011" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.358 325.572" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -492,7 +492,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -508.291 76.2906" stroke="black">
+<path matrix="0.284486 0 0 0.284486 181.048 372.878" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -501,7 +501,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 56.1953" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 208.358 357.11" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -510,7 +510,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.453 76.2873" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 344.911 372.875" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -519,7 +519,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.646 56.192" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 372.223 357.107" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -528,7 +528,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.259 56.1935" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 317.601 357.109" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -537,7 +537,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.872 216.966" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.98 483.258" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -546,7 +546,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.065 196.871" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.291 467.49" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -555,7 +555,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.872" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 467.491" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -564,7 +564,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.872 176.773" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.98 451.721" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -573,7 +573,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.065 156.678" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.291 435.953" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -582,7 +582,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 156.681" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 435.955" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -591,7 +591,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.872 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.98 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -600,7 +600,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.065 116.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.291 404.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -609,7 +609,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 116.487" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 404.418" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -618,7 +618,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.872 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.98 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -627,7 +627,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.065 76.2895" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.291 372.877" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -636,7 +636,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 76.2931" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 235.67 372.88" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -645,7 +645,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.453 196.869" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.911 467.489" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -654,7 +654,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.646 176.773" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.223 451.721" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -663,7 +663,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.259 176.775" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.601 451.722" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -672,7 +672,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.453 156.678" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.911 435.953" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -681,7 +681,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.646 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.223 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -690,7 +690,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.259 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.601 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -699,7 +699,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.453 116.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.911 404.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -708,7 +708,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.646 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.223 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -717,7 +717,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.259 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.601 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -726,7 +726,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -508.291 116.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 181.048 404.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -735,7 +735,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.358 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -744,7 +744,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -508.291 156.678" stroke="black">
+<path matrix="0.284486 0 0 0.284486 181.048 435.953" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -753,7 +753,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.358 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -762,7 +762,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -508.291 196.87" stroke="black">
+<path matrix="0.284486 0 0 0.284486 181.048 467.49" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -771,7 +771,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 176.775" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.358 451.722" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -780,7 +780,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 216.969" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.358 483.26" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -789,7 +789,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.646 216.965" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.223 483.257" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -798,7 +798,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.259 216.967" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.601 483.258" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -807,7 +807,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.614 36.0921" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.776 341.336" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -816,7 +816,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8076 15.9968" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.086 325.569" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -825,7 +825,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.42 15.9982" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.465 325.57" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -834,7 +834,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.614 -4.10066" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.776 309.799" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -843,7 +843,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8076 -24.1963" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.086 294.031" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -852,7 +852,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.42 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.465 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -861,7 +861,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.614 -44.2934" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.776 278.262" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -870,7 +870,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8076 -64.3905" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.086 262.493" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -879,7 +879,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.42 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.465 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -888,7 +888,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8052 15.9946" stroke="black">
+<path matrix="0.284486 0 0 0.284486 590.707 325.567" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -897,7 +897,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 48.6117 -4.10102" stroke="black">
+<path matrix="0.284486 0 0 0.284486 618.018 309.799" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -906,7 +906,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0012 -4.09957" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 309.8" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -915,7 +915,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8052 -24.1963" stroke="black">
+<path matrix="0.284486 0 0 0.284486 590.707 294.031" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -924,7 +924,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 48.6117 -44.2934" stroke="black">
+<path matrix="0.284486 0 0 0.284486 618.018 278.262" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -933,7 +933,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0012 -44.2934" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 278.262" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -942,7 +942,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8052 -64.3905" stroke="black">
+<path matrix="0.284486 0 0 0.284486 590.707 262.493" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -951,7 +951,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.033 -64.3905" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.844 262.493" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -960,7 +960,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.033 -24.1963" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.844 294.031" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -969,7 +969,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.227 -44.2934" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.154 278.262" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -978,7 +978,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.84 -44.2898" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.533 278.265" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -987,7 +987,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.033 15.9957" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.844 325.568" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -996,7 +996,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.227 -4.09957" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.154 309.8" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1005,7 +1005,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.84 -4.09812" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.533 309.801" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1014,7 +1014,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.033 56.1899" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 426.844 357.106" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1023,7 +1023,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.227 36.0946" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.154 341.338" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1032,7 +1032,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.84 36.096" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.533 341.339" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1041,7 +1041,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8052 56.1866" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 590.707 357.103" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1050,7 +1050,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 48.6117 36.0913" stroke="black">
+<path matrix="0.284486 0 0 0.284486 618.018 341.336" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1059,7 +1059,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0012 36.0928" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 341.337" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1068,7 +1068,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.614 196.865" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.776 467.486" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1077,7 +1077,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8076 176.77" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.086 451.718" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1086,7 +1086,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.42 176.772" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.465 451.72" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1095,7 +1095,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.614 156.673" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.776 435.949" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1104,7 +1104,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8076 136.577" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.086 420.181" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1113,7 +1113,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.42 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.465 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1122,7 +1122,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.614 116.48" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.776 404.412" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1131,7 +1131,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8076 96.3829" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.086 388.643" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1140,7 +1140,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.42 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.465 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1149,7 +1149,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.614 76.2859" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.776 372.874" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1158,7 +1158,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8076 56.1888" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 536.086 357.105" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1167,7 +1167,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.42 56.1924" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 481.465 357.108" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1176,7 +1176,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8052 176.768" stroke="black">
+<path matrix="0.284486 0 0 0.284486 590.707 451.717" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1185,7 +1185,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 48.6117 156.672" stroke="black">
+<path matrix="0.284486 0 0 0.284486 618.018 435.948" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1194,7 +1194,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0012 156.674" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 435.95" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1203,7 +1203,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8052 136.577" stroke="black">
+<path matrix="0.284486 0 0 0.284486 590.707 420.181" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1212,7 +1212,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 48.6117 116.48" stroke="black">
+<path matrix="0.284486 0 0 0.284486 618.018 404.412" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1221,7 +1221,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0012 116.48" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 404.412" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1230,7 +1230,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8052 96.3829" stroke="black">
+<path matrix="0.284486 0 0 0.284486 590.707 388.643" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1239,7 +1239,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 48.6117 76.2859" stroke="black">
+<path matrix="0.284486 0 0 0.284486 618.018 372.874" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1248,7 +1248,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0012 76.2859" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 563.397 372.874" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1257,7 +1257,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.033 96.3829" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.844 388.643" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1266,7 +1266,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.227 76.2859" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 454.154 372.874" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1275,7 +1275,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.84 76.2895" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.533 372.877" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1284,7 +1284,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.033 136.577" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.844 420.181" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1293,7 +1293,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.227 116.48" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.154 404.412" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1302,7 +1302,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.84 116.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.533 404.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1311,7 +1311,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.033 176.769" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.844 451.717" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1320,7 +1320,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.227 156.674" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.154 435.95" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1329,7 +1329,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.84 156.675" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.533 435.951" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1338,7 +1338,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.227 196.868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.154 467.488" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1347,7 +1347,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.84 196.869" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.533 467.489" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1356,7 +1356,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0012 196.866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 467.486" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1365,7 +1365,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.42 216.967" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.465 483.258" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1374,7 +1374,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8076 216.966" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.086 483.258" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1383,7 +1383,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8052 216.965" stroke="black">
+<path matrix="0.284486 0 0 0.284486 590.707 483.257" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1392,18 +1392,18 @@ h
 5024 2824.57 l
 h
 </path>
-<text matrix="0.362567 0 0 0.362567 -435.673 196.619" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_1$
+<text matrix="0.284486 0 0 0.284486 234.203 467.293" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_1$
 </text>
-<text matrix="0.362567 0 0 0.362567 -294.022 196.619" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_2$
+<text matrix="0.284486 0 0 0.284486 345.349 467.293" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_2$
 </text>
-<text matrix="0.362567 0 0 0.362567 -159.601 196.619" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_3$
+<text matrix="0.284486 0 0 0.284486 450.821 467.293" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_3$
 </text>
-<text matrix="0.362567 0 0 0.362567 -20.6308 196.619" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_4$
+<text matrix="0.284486 0 0 0.284486 559.863 467.293" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_4$
 </text>
-<path matrix="0.362567 0 0 0.362567 -229.84 -4.09849" stroke="black" fill="black">
+<path matrix="0.284486 0 0 0.284486 399.533 309.801" stroke="black" fill="black">
 12.7765 0 0 12.7765 5312 2769.15 e
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 4864 2547.43 m
 4832 2602.86 l
 4864 2658.29 l
@@ -1421,7 +1421,7 @@ h
 5248 2880 l
 5312 2880.01 l
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 6272 2547.42 m
 6304 2602.85 l
 6272 2658.28 l
@@ -1450,7 +1450,7 @@ h
 5344 2824.58 l
 5312 2880 l
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 5248 2547.43 m
 5216 2602.86 l
 5248 2658.29 l
@@ -1458,13 +1458,13 @@ h
 5248 2769.15 l
 5216 2824.58 l
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.485 216.965" stroke="black" fill="black">
+<path matrix="0.284486 0 0 0.284486 208.358 483.257" stroke="black" fill="black">
 12.7765 0 0 12.7765 5312 2769.15 e
 </path>
-<path matrix="0.362567 0 0 0.362567 -322.657 156.676" stroke="black" fill="black">
+<path matrix="0.284486 0 0 0.284486 326.705 435.952" stroke="black" fill="black">
 12.7765 0 0 12.7765 5312 2769.15 e
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 5504 2547.43 m
 5536 2602.86 l
 5504 2658.29 l
@@ -1472,12 +1472,12 @@ h
 5600 2713.71 l
 5632 2658.29 l
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 5632 2547.42 m
 5600 2602.85 l
 5632 2658.28 l
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 6176 2602.85 m
 6208 2658.28 l
 6176 2713.71 l
@@ -1493,7 +1493,7 @@ h
 5696 2658.28 l
 5632 2658.29 l
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 5056 2436.58 m
 5024 2381.14 l
 5056 2325.71 l
@@ -1517,14 +1517,14 @@ h
 5824 2214.86 l
 5888 2214.86 l
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 5888 2436.56 m
 5920 2381.13 l
 5888 2325.72 l
 5920 2270.29 l
 5888 2214.86 l
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 235.67 467.489" stroke="black" pen="ultrafat">
 6080 2436.56 m
 6112 2381.14 l
 6080 2325.71 l
@@ -1534,13 +1534,13 @@ h
 5984 2270.27 l
 5920 2270.29 l
 </path>
-<text matrix="0.362567 0 0 0.362567 -367.204 313.857" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_1$
+<text matrix="0.284486 0 0 0.284486 287.927 559.283" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_1$
 </text>
-<text matrix="0.362567 0 0 0.362567 -193.28 255.988" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_2$
+<text matrix="0.284486 0 0 0.284486 424.395 513.876" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_2$
 </text>
-<text matrix="0.362567 0 0 0.362567 -124.286 94.0559" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_3$
+<text matrix="0.284486 0 0 0.284486 482.355 386.817" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_3$
 </text>
-<path matrix="0.362567 0 0 0.362567 -543.1 -24.1926" stroke="black">
+<path matrix="0.284486 0 0 0.284486 153.736 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1549,7 +1549,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -543.1 16.0017" stroke="black">
+<path matrix="0.284486 0 0 0.284486 153.736 325.572" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1558,7 +1558,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -543.1 56.1936" stroke="black">
+<path matrix="0.284486 0 0 0.284486 153.736 357.109" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1567,7 +1567,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -543.1 96.3878" stroke="black">
+<path matrix="0.284486 0 0 0.284486 153.736 388.647" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1576,7 +1576,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -543.1 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 153.736 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1585,7 +1585,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -577.908 36.0989" stroke="black">
+<path matrix="0.284486 0 0 0.284486 126.424 341.342" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1594,7 +1594,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -577.908 76.2909" stroke="black">
+<path matrix="0.284486 0 0 0.284486 126.424 372.878" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1603,7 +1603,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 83.4143 56.1884" stroke="black">
+<path matrix="0.284486 0 0 0.284486 645.326 357.105" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1612,7 +1612,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 83.4143 96.3827" stroke="black">
+<path matrix="0.284486 0 0 0.284486 645.326 388.643" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1621,7 +1621,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 83.4123 15.9903" stroke="black">
+<path matrix="0.284486 0 0 0.284486 645.324 325.564" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1630,7 +1630,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -508.299 -84.4874" stroke="black">
+<path matrix="0.284486 0 0 0.284486 181.042 246.724" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1639,7 +1639,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.49 -144.778" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.355 199.418" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1648,7 +1648,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.49 -104.585" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.355 230.955" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1657,7 +1657,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.682 -205.069" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.666 152.111" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1666,7 +1666,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.682 -164.875" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.666 183.649" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1675,7 +1675,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.682 -124.682" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.666 215.186" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1684,7 +1684,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.682 -84.4879" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.666 246.724" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1693,7 +1693,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.873 -225.166" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.979 136.342" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1702,7 +1702,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.873 -184.972" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.979 167.88" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1711,7 +1711,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.873 -144.779" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.979 199.417" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1720,7 +1720,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.873 -104.585" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.979 230.955" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1729,7 +1729,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.064 -245.264" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.292 120.572" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1738,7 +1738,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.064 -205.07" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.292 152.11" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1747,7 +1747,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.064 -164.877" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.292 183.647" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1756,7 +1756,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.064 -124.683" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.292 215.185" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1765,7 +1765,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.064 -84.4904" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.292 246.722" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1774,7 +1774,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.456 -245.257" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.909 120.578" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1783,7 +1783,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.456 -205.063" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.909 152.116" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1792,7 +1792,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.456 -164.871" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.909 183.652" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1801,7 +1801,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.456 -124.677" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.909 215.19" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1810,7 +1810,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.456 -84.4835" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.909 246.727" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1819,7 +1819,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.647 -225.16" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.222 136.347" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1828,7 +1828,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.647 -184.968" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.222 167.883" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1837,7 +1837,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.647 -144.774" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.222 199.421" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1846,7 +1846,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.647 -104.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.222 230.958" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1855,7 +1855,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.839 -245.257" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.534 120.578" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1864,7 +1864,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.839 -205.065" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.534 152.114" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1873,7 +1873,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.839 -164.871" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.534 183.652" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1882,7 +1882,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.839 -124.678" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.534 215.189" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1891,7 +1891,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.839 -84.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.534 246.727" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1900,7 +1900,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.03 -225.162" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.846 136.345" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1909,7 +1909,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.03 -184.968" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.846 167.883" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1918,7 +1918,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.03 -144.775" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.846 199.42" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1927,7 +1927,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.03 -104.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.846 230.958" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1936,7 +1936,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.221 -245.26" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.159 120.575" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1945,7 +1945,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.221 -205.066" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.159 152.113" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1954,7 +1954,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.221 -164.873" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.159 183.65" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1963,7 +1963,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.221 -124.679" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.159 215.188" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1972,7 +1972,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.221 -84.4865" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.159 246.725" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1981,7 +1981,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6177 -245.261" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.773 120.574" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1990,7 +1990,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6177 -205.067" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.773 152.112" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -1999,7 +1999,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6177 -164.875" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.773 183.649" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2008,7 +2008,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6177 -124.681" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.773 215.187" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2017,7 +2017,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6177 -84.4872" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.773 246.725" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2026,7 +2026,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8087 -225.164" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.085 136.343" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2035,7 +2035,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8087 -184.972" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.085 167.88" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2044,7 +2044,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8087 -144.778" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.085 199.418" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2053,7 +2053,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.8087 -104.584" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.085 230.956" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2062,7 +2062,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0007 -164.875" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 183.649" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2071,7 +2071,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0007 -124.682" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 215.186" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2080,7 +2080,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -21.0007 -84.4877" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.397 246.724" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2089,7 +2089,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 13.8083 -104.585" stroke="black">
+<path matrix="0.284486 0 0 0.284486 590.71 230.955" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2098,7 +2098,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.417 -184.971" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.468 167.881" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2107,7 +2107,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.417 -144.777" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.468 199.419" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2116,7 +2116,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.417 -104.585" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.468 230.955" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2125,7 +2125,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.418 -225.169" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.467 136.34" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2134,7 +2134,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6165 -245.265" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.774 120.571" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2143,7 +2143,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6135 -245.266" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.776 120.571" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2152,7 +2152,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.26 -184.975" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.6 167.877" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2161,7 +2161,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.26 -144.781" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.6 199.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2170,7 +2170,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.26 -104.589" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.6 230.952" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2179,7 +2179,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.261 -225.173" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.6 136.336" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2188,7 +2188,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.459 -245.269" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.907 120.568" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2197,7 +2197,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.456 -245.27" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.909 120.567" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2206,7 +2206,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -473.486 257.159" stroke="black">
+<path matrix="0.284486 0 0 0.284486 208.358 514.795" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2215,7 +2215,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 237.062" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 499.026" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2224,7 +2224,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 277.256" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 530.564" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2233,7 +2233,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -438.678 317.449" stroke="black">
+<path matrix="0.284486 0 0 0.284486 235.67 562.101" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2242,7 +2242,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.869 257.159" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.982 514.795" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2251,7 +2251,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -403.869 297.352" stroke="black">
+<path matrix="0.284486 0 0 0.284486 262.982 546.332" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2260,7 +2260,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.06 237.061" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.295 499.025" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2269,7 +2269,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.06 277.254" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.295 530.562" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2278,7 +2278,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.06 317.448" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.295 562.1" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2287,7 +2287,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.258 257.156" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.602 514.793" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2296,7 +2296,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.258 297.35" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.602 546.33" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2305,7 +2305,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.449 237.059" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.915 499.024" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2314,7 +2314,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.449 277.253" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.915 530.561" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2323,7 +2323,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.449 317.446" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.915 562.099" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2332,7 +2332,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.641 257.156" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.226 514.793" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2341,7 +2341,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.641 297.349" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.226 546.33" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2350,7 +2350,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.832 237.059" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.539 499.024" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2359,7 +2359,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.832 277.252" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.539 530.561" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2368,7 +2368,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.832 317.446" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.539 562.099" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2377,7 +2377,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.023 257.154" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.852 514.791" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2386,7 +2386,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.023 297.348" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.852 546.329" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2395,7 +2395,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.415 257.16" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.469 514.796" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2404,7 +2404,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.415 297.354" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.469 546.334" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2413,7 +2413,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6057 237.063" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.782 499.027" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2422,7 +2422,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6057 277.257" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.782 530.565" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2431,7 +2431,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6057 317.45" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.782 562.102" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2440,7 +2440,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.7977 257.16" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.094 514.796" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2449,7 +2449,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.7977 297.353" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.094 546.333" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2458,7 +2458,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -20.9887 237.063" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.407 499.027" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2467,7 +2467,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -20.9887 277.256" stroke="black">
+<path matrix="0.284486 0 0 0.284486 563.407 530.564" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2476,7 +2476,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.219 237.056" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.16 499.021" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2485,7 +2485,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.219 277.25" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.16 530.559" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2494,7 +2494,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.219 317.442" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.16 562.095" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2503,7 +2503,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -369.063 357.641" stroke="black">
+<path matrix="0.284486 0 0 0.284486 290.292 593.637" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2512,7 +2512,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -299.452 357.639" stroke="black">
+<path matrix="0.284486 0 0 0.284486 344.912 593.636" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2521,7 +2521,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -229.835 357.639" stroke="black">
+<path matrix="0.284486 0 0 0.284486 399.537 593.636" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2530,7 +2530,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -90.6094 357.643" stroke="black">
+<path matrix="0.284486 0 0 0.284486 508.779 593.639" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2539,7 +2539,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -160.222 357.636" stroke="black">
+<path matrix="0.284486 0 0 0.284486 454.158 593.633" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2548,7 +2548,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="1 0 0 1 -46.4137 0.00247762" stroke="black">
+<path matrix="0.784643 0 0 0.784643 543.457 313.019" stroke="black">
 1986.17 1100.38 m
 1800.54 1421.91 l
 1429.27 1421.91 l
@@ -2557,7 +2557,7 @@ h
 1800.54 778.855 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 615.84 216.963" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1063.09 483.255" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2566,7 +2566,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 407.001 56.1928" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 899.226 357.108" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2575,7 +2575,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 441.808 36.0975" stroke="black">
+<path matrix="0.284486 0 0 0.284486 926.537 341.34" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2584,7 +2584,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 36.0989" stroke="black">
+<path matrix="0.284486 0 0 0.284486 871.915 341.342" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2593,7 +2593,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 407.001 16" stroke="black">
+<path matrix="0.284486 0 0 0.284486 899.226 325.571" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2602,7 +2602,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 441.808 -4.09559" stroke="black">
+<path matrix="0.284486 0 0 0.284486 926.537 309.803" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2611,7 +2611,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 -4.09196" stroke="black">
+<path matrix="0.284486 0 0 0.284486 871.915 309.806" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2620,7 +2620,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 407.001 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 899.226 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2629,7 +2629,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 441.808 -44.2898" stroke="black">
+<path matrix="0.284486 0 0 0.284486 926.537 278.265" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2638,7 +2638,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 -44.2861" stroke="black">
+<path matrix="0.284486 0 0 0.284486 871.915 278.268" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2647,7 +2647,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 407.001 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 899.226 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2656,7 +2656,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 511.42 36.0953" stroke="black">
+<path matrix="0.284486 0 0 0.284486 981.157 341.339" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2665,7 +2665,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 546.227 15.9997" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1008.47 325.571" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2674,7 +2674,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 476.614 16.0011" stroke="black">
+<path matrix="0.284486 0 0 0.284486 953.847 325.572" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2683,7 +2683,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 511.42 -4.09559" stroke="black">
+<path matrix="0.284486 0 0 0.284486 981.157 309.803" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2692,7 +2692,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 546.227 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1008.47 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2701,7 +2701,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 476.614 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 953.847 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2710,7 +2710,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 511.42 -44.2898" stroke="black">
+<path matrix="0.284486 0 0 0.284486 981.157 278.265" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2719,7 +2719,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 546.227 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1008.47 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2728,7 +2728,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 476.614 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 953.847 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2737,7 +2737,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 302.582 -44.2898" stroke="black">
+<path matrix="0.284486 0 0 0.284486 817.294 278.265" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2746,7 +2746,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 844.604 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2755,7 +2755,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 302.582 -4.09559" stroke="black">
+<path matrix="0.284486 0 0 0.284486 817.294 309.803" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2764,7 +2764,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 844.604 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2773,7 +2773,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 302.582 36.0964" stroke="black">
+<path matrix="0.284486 0 0 0.284486 817.294 341.34" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2782,7 +2782,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 16.0011" stroke="black">
+<path matrix="0.284486 0 0 0.284486 844.604 325.572" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2791,7 +2791,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 302.582 76.2906" stroke="black">
+<path matrix="0.284486 0 0 0.284486 817.294 372.878" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2800,7 +2800,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 56.1953" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 844.604 357.11" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2809,7 +2809,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 511.42 76.2873" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 981.157 372.875" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2818,7 +2818,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 546.227 56.192" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 1008.47 357.107" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2827,7 +2827,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 476.614 56.1935" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 953.847 357.109" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2836,7 +2836,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 407.001 216.966" stroke="black">
+<path matrix="0.284486 0 0 0.284486 899.226 483.258" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2845,7 +2845,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 441.808 196.871" stroke="black">
+<path matrix="0.284486 0 0 0.284486 926.537 467.49" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2854,7 +2854,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.872" stroke="black">
+<path matrix="0.284486 0 0 0.284486 871.915 467.491" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2863,7 +2863,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 407.001 176.773" stroke="black">
+<path matrix="0.284486 0 0 0.284486 899.226 451.721" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2872,7 +2872,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 441.808 156.678" stroke="black">
+<path matrix="0.284486 0 0 0.284486 926.537 435.953" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2881,7 +2881,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 156.681" stroke="black">
+<path matrix="0.284486 0 0 0.284486 871.915 435.955" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2890,7 +2890,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 407.001 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 899.226 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2899,7 +2899,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 441.808 116.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 926.537 404.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2908,7 +2908,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 116.487" stroke="black">
+<path matrix="0.284486 0 0 0.284486 871.915 404.418" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2917,7 +2917,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 407.001 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 899.226 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2926,7 +2926,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 441.808 76.2895" stroke="black">
+<path matrix="0.284486 0 0 0.284486 926.537 372.877" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2935,7 +2935,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 76.2931" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 871.915 372.88" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2944,7 +2944,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 511.42 196.869" stroke="black">
+<path matrix="0.284486 0 0 0.284486 981.157 467.489" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2953,7 +2953,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 546.227 176.773" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1008.47 451.721" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2962,7 +2962,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 476.614 176.775" stroke="black">
+<path matrix="0.284486 0 0 0.284486 953.847 451.722" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2971,7 +2971,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 511.42 156.678" stroke="black">
+<path matrix="0.284486 0 0 0.284486 981.157 435.953" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2980,7 +2980,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 546.227 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1008.47 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2989,7 +2989,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 476.614 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 953.847 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -2998,7 +2998,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 511.42 116.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 981.157 404.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3007,7 +3007,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 546.227 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1008.47 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3016,7 +3016,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 476.614 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 953.847 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3025,7 +3025,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 302.582 116.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 817.294 404.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3034,7 +3034,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 844.604 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3043,7 +3043,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 302.582 156.678" stroke="black">
+<path matrix="0.284486 0 0 0.284486 817.294 435.953" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3052,7 +3052,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 844.604 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3061,7 +3061,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 302.582 196.87" stroke="black">
+<path matrix="0.284486 0 0 0.284486 817.294 467.49" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3070,7 +3070,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 176.775" stroke="black">
+<path matrix="0.284486 0 0 0.284486 844.604 451.722" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3079,7 +3079,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 216.969" stroke="black">
+<path matrix="0.284486 0 0 0.284486 844.604 483.26" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3088,7 +3088,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 546.227 216.965" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1008.47 483.257" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3097,7 +3097,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 476.614 216.967" stroke="black">
+<path matrix="0.284486 0 0 0.284486 953.847 483.258" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3106,7 +3106,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 720.259 36.0921" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1145.02 341.336" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3115,7 +3115,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 755.066 15.9968" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1172.33 325.569" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3124,7 +3124,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 685.453 15.9982" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1117.71 325.57" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3133,7 +3133,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 720.259 -4.10066" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1145.02 309.799" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3142,7 +3142,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 755.066 -24.1963" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1172.33 294.031" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3151,7 +3151,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 685.453 -24.1927" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1117.71 294.034" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3160,7 +3160,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 720.259 -44.2934" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1145.02 278.262" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3169,7 +3169,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 755.066 -64.3905" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1172.33 262.493" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3178,7 +3178,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 685.453 -64.3868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1117.71 262.496" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3187,7 +3187,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 824.678 15.9946" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1226.95 325.567" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3196,7 +3196,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 859.485 -4.10102" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1254.26 309.799" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3205,7 +3205,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 789.872 -4.09957" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1199.64 309.8" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3214,7 +3214,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 824.678 -24.1963" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1226.95 294.031" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3223,7 +3223,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 859.485 -44.2934" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1254.26 278.262" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3232,7 +3232,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 789.872 -44.2934" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1199.64 278.262" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3241,7 +3241,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 824.678 -64.3905" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1226.95 262.493" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3250,7 +3250,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 615.84 -64.3905" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1063.09 262.493" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3259,7 +3259,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 615.84 -24.1963" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1063.09 294.031" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3268,7 +3268,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 650.646 -44.2934" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1090.4 278.262" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3277,7 +3277,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 581.033 -44.2898" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1035.78 278.265" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3286,7 +3286,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 615.84 15.9957" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1063.09 325.568" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3295,7 +3295,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 650.646 -4.09957" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1090.4 309.8" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3304,7 +3304,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 581.033 -4.09812" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1035.78 309.801" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3313,7 +3313,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 615.84 56.1899" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 1063.09 357.106" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3322,7 +3322,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 650.646 36.0946" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1090.4 341.338" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3331,7 +3331,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 581.033 36.096" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1035.78 341.339" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3340,7 +3340,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 824.678 56.1866" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 1226.95 357.103" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3349,7 +3349,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 859.485 36.0913" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1254.26 341.336" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3358,7 +3358,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 789.872 36.0928" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1199.64 341.337" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3367,7 +3367,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 720.259 196.865" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1145.02 467.486" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3376,7 +3376,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 755.066 176.77" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1172.33 451.718" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3385,7 +3385,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 685.453 176.772" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1117.71 451.72" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3394,7 +3394,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 720.259 156.673" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1145.02 435.949" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3403,7 +3403,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 755.066 136.577" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1172.33 420.181" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3412,7 +3412,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 685.453 136.581" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1117.71 420.184" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3421,7 +3421,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 720.259 116.48" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1145.02 404.412" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3430,7 +3430,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 755.066 96.3829" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1172.33 388.643" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3439,7 +3439,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 685.453 96.3866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1117.71 388.646" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3448,7 +3448,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 720.259 76.2859" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1145.02 372.874" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3457,7 +3457,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 755.066 56.1888" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 1172.33 357.105" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3466,7 +3466,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 685.453 56.1924" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 1117.71 357.108" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3475,7 +3475,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 824.678 176.768" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1226.95 451.717" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3484,7 +3484,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 859.485 156.672" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1254.26 435.948" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3493,7 +3493,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 789.872 156.674" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1199.64 435.95" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3502,7 +3502,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 824.678 136.577" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1226.95 420.181" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3511,7 +3511,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 859.485 116.48" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1254.26 404.412" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3520,7 +3520,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 789.872 116.48" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1199.64 404.412" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3529,7 +3529,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 824.678 96.3829" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1226.95 388.643" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3538,7 +3538,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 859.485 76.2859" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1254.26 372.874" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3547,7 +3547,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 789.872 76.2859" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 1199.64 372.874" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3556,7 +3556,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 615.84 96.3829" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1063.09 388.643" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3565,7 +3565,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 650.646 76.2859" stroke="black" fill="lightgray">
+<path matrix="0.284486 0 0 0.284486 1090.4 372.874" stroke="black" fill="lightgray">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3574,7 +3574,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 581.033 76.2895" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1035.78 372.877" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3583,7 +3583,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 615.84 136.577" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1063.09 420.181" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3592,7 +3592,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 650.646 116.48" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1090.4 404.412" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3601,7 +3601,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 581.033 116.484" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1035.78 404.415" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3610,7 +3610,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 615.84 176.769" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1063.09 451.717" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3619,7 +3619,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 650.646 156.674" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1090.4 435.95" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3628,7 +3628,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 581.033 156.675" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1035.78 435.951" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3637,7 +3637,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 650.646 196.868" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1090.4 467.488" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3646,7 +3646,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 581.033 196.869" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1035.78 467.489" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3655,7 +3655,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 859.485 196.865" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1254.26 467.486" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3664,7 +3664,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 789.872 196.866" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1199.64 467.486" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3673,7 +3673,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 685.453 216.967" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1117.71 483.258" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3682,7 +3682,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 755.066 216.966" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1172.33 483.258" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3691,7 +3691,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 824.678 216.965" stroke="black">
+<path matrix="0.284486 0 0 0.284486 1226.95 483.257" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3700,18 +3700,18 @@ h
 5024 2824.57 l
 h
 </path>
-<text matrix="0.362567 0 0 0.362567 375.2 196.619" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_1$
+<text matrix="0.284486 0 0 0.284486 870.449 467.293" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_1$
 </text>
-<text matrix="0.362567 0 0 0.362567 516.851 196.619" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_2$
+<text matrix="0.284486 0 0 0.284486 981.595 467.293" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_2$
 </text>
-<text matrix="0.362567 0 0 0.362567 651.272 196.619" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_3$
+<text matrix="0.284486 0 0 0.284486 1087.07 467.293" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_3$
 </text>
-<text matrix="0.362567 0 0 0.362567 790.242 196.619" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_4$
+<text matrix="0.284486 0 0 0.284486 1196.11 467.293" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="31.249" height="10.674" depth="4.78" valign="baseline" size="Huge">$x_4$
 </text>
-<path matrix="0.362567 0 0 0.362567 581.033 -4.09849" stroke="black" fill="black">
+<path matrix="0.284486 0 0 0.284486 1035.78 309.801" stroke="black" fill="black">
 12.7765 0 0 12.7765 5312 2769.15 e
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 4864 2547.43 m
 4832 2602.86 l
 4864 2658.29 l
@@ -3729,7 +3729,7 @@ h
 5248 2880 l
 5312 2880.01 l
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 6272 2547.42 m
 6304 2602.85 l
 6272 2658.28 l
@@ -3758,7 +3758,7 @@ h
 5344 2824.58 l
 5312 2880 l
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 5248 2547.43 m
 5216 2602.86 l
 5248 2658.29 l
@@ -3766,13 +3766,13 @@ h
 5248 2769.15 l
 5216 2824.58 l
 </path>
-<path matrix="0.362567 0 0 0.362567 337.388 216.965" stroke="black" fill="black">
+<path matrix="0.284486 0 0 0.284486 844.604 483.257" stroke="black" fill="black">
 12.7765 0 0 12.7765 5312 2769.15 e
 </path>
-<path matrix="0.362567 0 0 0.362567 488.216 156.676" stroke="black" fill="black">
+<path matrix="0.284486 0 0 0.284486 962.951 435.952" stroke="black" fill="black">
 12.7765 0 0 12.7765 5312 2769.15 e
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 5504 2547.43 m
 5536 2602.86 l
 5504 2658.29 l
@@ -3780,12 +3780,12 @@ h
 5600 2713.71 l
 5632 2658.29 l
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 5632 2547.42 m
 5600 2602.85 l
 5632 2658.28 l
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 6176 2602.85 m
 6208 2658.28 l
 6176 2713.71 l
@@ -3801,7 +3801,7 @@ h
 5696 2658.28 l
 5632 2658.29 l
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 5056 2436.58 m
 5024 2381.14 l
 5056 2325.71 l
@@ -3825,14 +3825,14 @@ h
 5824 2214.86 l
 5888 2214.86 l
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 5888 2436.56 m
 5920 2381.13 l
 5888 2325.72 l
 5920 2270.29 l
 5888 2214.86 l
 </path>
-<path matrix="0.362567 0 0 0.362567 372.195 196.869" stroke="black" pen="ultrafat">
+<path matrix="0.284486 0 0 0.284486 871.915 467.489" stroke="black" pen="ultrafat">
 6080 2436.56 m
 6112 2381.14 l
 6080 2325.71 l
@@ -3842,15 +3842,15 @@ h
 5984 2270.27 l
 5920 2270.29 l
 </path>
-<text matrix="0.362567 0 0 0.362567 443.669 313.857" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_1$
+<text matrix="0.284486 0 0 0.284486 924.173 559.283" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_1$
 </text>
-<text matrix="0.362567 0 0 0.362567 617.593 255.988" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_2$
+<text matrix="0.284486 0 0 0.284486 1060.64 513.876" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_2$
 </text>
-<text matrix="0.362567 0 0 0.362567 686.587 94.0559" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_3$
+<text matrix="0.284486 0 0 0.284486 1114.78 386.817" transformations="translations" pos="4950.88 2537.44" stroke="black" type="label" width="34.821" height="16.939" depth="4.78" valign="baseline" size="Huge">$C_3$
 </text>
-<text transformations="translations" pos="1568 720" stroke="black" type="label" width="28.923" height="18.564" depth="6.18" valign="baseline" size="Huge">(a)</text>
-<text matrix="1 0 0 1 832 0" transformations="translations" pos="1568 720" stroke="black" type="label" width="30.218" height="18.564" depth="6.18" valign="baseline" size="Huge">(b)</text>
-<path matrix="0.362567 0 0 0.362567 -403.865 337.543" stroke="black">
+<text matrix="0.784643 0 0 0.784643 579.875 313.017" transformations="translations" pos="1568 720" stroke="black" type="label" width="28.923" height="18.564" depth="6.18" valign="baseline" size="Huge">(a)</text>
+<text matrix="0.784643 0 0 0.784643 1232.7 313.017" transformations="translations" pos="1568 720" stroke="black" type="label" width="30.218" height="18.564" depth="6.18" valign="baseline" size="Huge">(b)</text>
+<path matrix="0.284486 0 0 0.284486 262.985 577.868" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3859,7 +3859,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -334.254 337.541" stroke="black">
+<path matrix="0.284486 0 0 0.284486 317.605 577.866" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3868,7 +3868,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -264.637 337.541" stroke="black">
+<path matrix="0.284486 0 0 0.284486 372.23 577.866" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3877,7 +3877,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -195.024 337.538" stroke="black">
+<path matrix="0.284486 0 0 0.284486 426.851 577.864" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3886,7 +3886,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -125.411 337.545" stroke="black">
+<path matrix="0.284486 0 0 0.284486 481.472 577.869" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3895,7 +3895,7 @@ h
 5024 2824.57 l
 h
 </path>
-<path matrix="0.362567 0 0 0.362567 -55.7968 337.545" stroke="black">
+<path matrix="0.284486 0 0 0.284486 536.095 577.869" stroke="black">
 5056 2880 m
 5024 2935.43 l
 4960 2935.43 l
@@ -3904,18 +3904,18 @@ h
 5024 2824.57 l
 h
 </path>
-<path stroke="black">
+<path matrix="0.784643 0 0 0.784643 579.875 313.017" stroke="black">
 1394.47 1401.83 m
 1382.86 1421.91 l
 </path>
-<path stroke="black">
+<path matrix="0.784643 0 0 0.784643 579.875 313.017" stroke="black">
 1916.55 1100.38 m
 1939.76 1100.38 l
 </path>
-<path stroke="black">
+<path matrix="0.784643 0 0 0.784643 579.875 313.017" stroke="black">
 1394.46 798.93 m
 1382.86 778.857 l
 </path>
-<text matrix="1 0 0 1 -157.979 -52.4538" transformations="translations" pos="1540.87 1476.03" stroke="black" type="label" width="370.8" height="29.903" depth="0" valign="baseline" size="Huge">$\overbrace{\hspace{5.15in}}^{s(n,m)}$</text>
+<text matrix="0.784643 0 0 0.784643 455.918 271.859" transformations="translations" pos="1540.87 1476.03" stroke="black" type="label" width="295.2" height="29.903" depth="0" valign="baseline" size="Huge">$\overbrace{\hspace{4.1in}}^{s(n,m)}$</text>
 </page>
 </ipe>

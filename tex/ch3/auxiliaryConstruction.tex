@@ -24,15 +24,15 @@ Given the side length of $J$, $s(n,m)$, we need to scale the grid of hexagons of
 \end{minipage}
 
 In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}, we show the three smallest possible formal constructions of $J$, $J_1, J_2, J_3$.  
-A \textit{formal construction} of $J$ is when six hexagons of the hexagonal grid each have two adjacent lie on the perimeter of $J$.
+A formal construction of $J$ is when six hexagons of the hexagonal grid each have two adjacent sides lie on the perimeter of $J$.
 We have shown informal construction earlier where this does not occur.
 Unless otherwise specified, we will assume the use formal constructions.
 Each of the figures in Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf} shows $J$ in bold and the hexagonal grid in its interior.
 Notice that in each case we have six hexagons of the hexagonal grid with each of the six hexgaons having two adjacent sides that lie on the perimeter of $J$.
 
-The height and diamater of $J$ can be described by the number of hexagons in the grid a vertical or horizontal line may cross. 
-We'll denote these qualities as the hexagonal height and hexagonal diameter of $J$.
-Figure Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) and Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(a) show the hexagons of the hexagonal height and hexagonal diamters of $J_1$ and $J_3$ respectively.  
+The height and diamater of $J$ can be described in terms of hexagons in the grid a vertical or horizontal line may cross. 
+We'll denote these qualities as the hexagonal height and hexagonal diameter of $J$.  
+Figures \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) and \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(a) show the hexagons of the hexagonal height and hexagonal diamters of $J_1$ and $J_3$ respectively.  
 The formula for calculating hexagonal height of $J_z$ is 
 \begin{equation}\label{eqn:Jh}
 J_h (z) = 6z+1
@@ -41,22 +41,22 @@ The formula for calcuating the hexagonal diameter of $J_z$ is
 \begin{equation}\label{eqn:Jd}
 J_d (z) = 4z+1
 \end{equation}
-If an associated graph of a P3SAT instance can be encoded into a honeycomb grid of size $s(n,m) \times s(n,m)$, then let $z(n,m)=4\cdot s(n,m)$ to enclose the same honeycomb to be enclosed into the interior of $J_z$.
+Since the associated graph of a P3SAT instance can be encoded into a honeycomb grid of size $s(n,m) \times s(n,m)$, then let $z(n,m)=4\cdot s(n,m)$ to enclose the same honeycomb to be enclosed into the interior of $J_z$.
 
-Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(b) illustrates the side length of $J$ as $s(n,m)$ and half the height of $J$ as $s(n,m) \sqrt{3}$.
-For any $J$, there is a fixed number of hexagons in the hexagonal grid that lie on one side of the perimeter of $J$; denote this number as $k$.
-We can denote the number of hexagons in a row of the hexagonal grid in $J_z$ with the following sequence as follows:
-\begin{equation}\label{eqn:hexagonalGridSequence}
-\begin{array}{rcl}
-a(0) &=& k\\
-a(1) &=& k-1 \\
-a(2) &=& k\\
-a(i) &=& a(i-3)+1\\
-0\leq&i&\leq \ceil{\frac{J_h (z)}{2}}
-\end{array}
-\end{equation}
-The $i^\text{th}$ number of Sequence \ref{eqn:hexagonalGridSequence} indicates the number of hexagons on the $i^\text{th}$ row of the hexagonal grid in the interior of $J$ from the perimeter of $J$ up to the half height of $J$. In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) from the bottom to the mid-height of $J$, the sequence $a(i)$ (i.e. the number of hexagons in each subsequent row) is 4, 3, 4, 5, 4, 5, 6, 5, 6, 7.
-Denote the hexagons of the hexagonal grid in $J$ as \textit{obstacle hexagons}.
+% Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(b) illustrates the side length of $J$ as $s(n,m)$ and half the height of $J$ as $s(n,m) \sqrt{3}$.
+% For any $J$, there is a fixed number of hexagons in the hexagonal grid that lie on one side of the perimeter of $J$; denote this number as $k$.
+% We can denote the number of hexagons in a row of the hexagonal grid in $J_z$ with the following sequence as follows:
+% \begin{equation}\label{eqn:hexagonalGridSequence}
+% \begin{array}{rcl}
+% a(0) &=& k\\
+% a(1) &=& k-1 \\
+% a(2) &=& k\\
+% a(i) &=& a(i-3)+1\\
+% 0\leq&i&\leq \ceil{\frac{J_h (z)}{2}}
+% \end{array}
+% \end{equation}
+% The $i^\text{th}$ number of Sequence \ref{eqn:hexagonalGridSequence} indicates the number of hexagons on the $i^\text{th}$ row of the hexagonal grid in the interior of $J$ from the perimeter of $J$ up to the half height of $J$. In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) from the bottom to the mid-height of $J$, the sequence $a(i)$ (i.e. the number of hexagons in each subsequent row) is 4, 3, 4, 5, 4, 5, 6, 5, 6, 7.
+% Denote the hexagons of the hexagonal grid in $J$ as \textit{obstacle hexagons}.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -72,7 +72,7 @@ Let the numbered hexagons of Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstac
 In Figure \ref{fig:HoneycombFlixible.pdf}(b), we have smaller hexagons within some corridors and junctions.
 These hexagons are flags.
 For each edge in $\tilde{A}(\Phi)$, we insert flags into the corridor corresponding to that edge.
-Flexible hexagons are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
+Flags are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
 Let $t(n,m)=s^\kappa$ be the number of flags in a corridor (see Figure \ref{fig:variable}). 
 Scale $J$ and the obstacle hexagons in the interior of $J$ independently from their centers (see Figure \ref{fig:ScalingForCorridors.pdf}) such that each obstacle hexagon has side length: $$N(n,m)=\frac{5t(n,m)-1}{2}.$$ 
 
@@ -114,7 +114,7 @@ Figure \ref{fig:VariableGadgetSmall.pdf} depicts a \textit{variable gadget} in t
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=0.45\columnwidth]{graphics/VariableGadgetSmall.pdf}
-\captionof{figure}{This depicts a variable gadget with $x_1 = T$.  Carefully note that the flags around $x_1$ are in the state $R$. Corridors adjacent to two obstacles of a variable in the honeycomb do not have $t$ flags; these corridors simply have the flexible hexagons at the junctions.}\label{fig:VariableGadgetSmall.pdf}
+\captionof{figure}{This depicts a variable gadget with $x_1 = T$.  Carefully note that the flags around $x_1$ are in the state $R$. Corridors adjacent to two obstacles of a variable in the honeycomb do not have $t$ flags; these corridors simply have the flags at the junctions.}\label{fig:VariableGadgetSmall.pdf}
 \end{center}
 \end{minipage}
 
@@ -238,7 +238,7 @@ This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexag
 
 Suppose there is an edge $\left\lbrace x_i, C_j \right\rbrace$ in the graph $A(\Phi)$.
 \begin{lem}\label{lem:aux-3}
-If $x_i = T$ and its negated literal is in $C_j$, then a flag enters into the clause gadget of $C_j$, otherwise it need not enter; if $x_i = F$ and its non-negated literal is in $C_j$, then a flexible hexagon enters into the clause gadget of $C_j$, otherwise it need not enter.
+If $x_i = T$ and its negated literal is in $C_j$, then a flag enters into the clause gadget of $C_j$, otherwise it need not enter; if $x_i = F$ and its non-negated literal is in $C_j$, then a flag enters into the clause gadget of $C_j$, otherwise it need not enter.
 \end{lem}
 \begin{proof}
 The transmitter gadget for each literal is placed on an active junction of the variable gadget. 
@@ -265,7 +265,7 @@ There allows for the small hexagon in the clause junction to move into the area 
 For a variable gadget $x_i$, place horizontal axis $h$ at mid-height of the gadget.
 Then we have the following lemma:
 \begin{lem}\label{lem:aux-2}
-If variable $x_i = T$, then all flags above $h$ are in state $R$ and all flags below $h$ are in state $L$; if variable $x_i = L$, then all flexible hexagons above $h$ are in state $L$ and all flexible hexagons below $h$ are in state $R$.    
+If variable $x_i = T$, then all flags above $h$ are in state $R$ and all flags below $h$ are in state $L$; if variable $x_i = L$, then all flags above $h$ are in state $L$ and all flags below $h$ are in state $R$.    
 \end{lem}
 \begin{proof}
 Suppose we have two adjacent corridors $k_i$ and $k_{i+1}$ sharing junction $J_i$ and without loss of generality, $k_i$ is the left most corridor.
@@ -287,7 +287,7 @@ For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible an
 
 \noindent (1) We can bound the number of obstacle hexagons to represent a variable gadget by $2 D$, where $D = \lr{ \max_{v \in V} \deg (v)}$.  
 The number of clause junctions is $n$.
-To give an upper bound on the number of flags in the auxiliary construction, we have to account for the flags in the transmitter gadgets, the extra hexagons found in junctions, and the flexible hexagons around the variable gadgets.
+To give an upper bound on the number of flags in the auxiliary construction, we have to account for the flags in the transmitter gadgets, the extra hexagons found in junctions, and the flags around the variable gadgets.
 
 Recall that that the number of flags in a corridor are $ t = 2N(m,n)^3 + 1 $ where $N(m,n)$ is a polynomial. 
 Recall that the drawing of $A(\Phi)$ have edges drawn in vertically and horizontally and can join at some ``elbow''.  

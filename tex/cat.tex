@@ -1665,9 +1665,9 @@ Given a boolean formula in 3-CNF, is it satisfiable?
 \end{prob}
 The problems we focus on in this thesis have a geometry.  
 A special geometric 3-SAT problem is that Planar 3-SAT Problem.   
-Given a 3-CNF boolean formula, $\Phi$, with $n$ variables and $m$ clauses.
-  We define the \textit{associated graph} $A(\Phi)$ as follows: the vertices correspond to the variables and clauses in $\Phi$.  
-  We place an edge in the graph if variable $x_i$ appears in clause $C_j$.
+Given a 3-CNF boolean formula, $\Phi$, with $n$ variables and $m$ clauses, 
+we define the \textit{associated graph} $A(\Phi)$ as follows: the vertices correspond to the variables and clauses in $\Phi$.   
+We place an edge in the graph if variable $x_i$ appears in clause $C_j$.
 
   \begin{figure}[htbp]
 	\centering
@@ -2114,25 +2114,26 @@ literals reside above the shaft.  All together we have that every clause has a t
 false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
 \end{proof}\chapter{Realizability of Polygonal Linkages with Fixed Orientation\label{chapter:polygonalLinkage}}
 
-We begin the chapter with describing several gadgets that translates the associated graph $A(\Phi)$ of a P3SAT boolean formula.  
-These gadgets will be used together to form a special hexagonal tiling that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.
+We begin the chapter with describing several gadgets that translate the associated graph $A(\Phi)$ of a P3SAT boolean formula into a hexagonal polygonal linkage.  
+These gadgets will be used together to form a special hexagonal linkage that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.
 Together the gadgets will form what is called the auxilary construction.
-A hexagonal tiling and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge2}: \textit{it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.}
+A hexagonal polygonal linkage and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge2}: \textit{it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.}
 
 Our proof is a reduction from P3SAT.
-Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$, of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
+Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$ of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
 
 We construct a polygonal linkage in two main steps: first, we construct an auxiliary structure where some of the polygons have fixed position in the plane (called \emph{obstacles}), while other polygons are flexible, and each flexible polygon is hinged to an obstacle. 
 Second, we modify the auxiliary construction into a polygonal linkage by allowing the obstacles to move freely, and by adding new polygons and hinges as well as an exterior \emph{frame} that holds the obstacle polygons in place.
 All polygons in our constructions are regular hexagons or long, skinny rhombi.
 In Chapter \ref{chp:disk} we can ``simulate'' these shapes with disk arrangements to show related results.
 
-Storer, Tamassia, and Tollis showed that if $G=(V,E)$ is planar, it can be embedded in an $\vert V \vert \times \vert V \vert$ grid with $S(G)=2.4\vert V\vert + 4$ bends \cite{storer1984minimal,tamassia1987efficient}.
-Note that this result implies that a planar graph can be embedded in a grid of size $S(G) \times S(G)$; and this allows $S(G)$ to act as a fundamental polynomial problems with planar graphs defined in a embedding in a grid.
-We can define a \textit{bend polynomial}, $s(n,m)$ that will be used to construct our gadgets which will be used to prove Theorem \ref{thm:hinge2}.
-For our constructions, our bend polynomial can be any polynomial strictly greater than $S(G)$, e.g.:
-$$6 (n+m) + 4.$$
-The tables below are a glossary of formulas and Maclaurin series that are used to throughout this chapter.
+% In this paper we study the problem of orthogonal drawings,i.e., the drawing of a graph G = (V, E) where vertices are drawn as points and each edge is represented by a sequence of alternating horizontal and vertical segments. Such a representation is possible only when every vertex has at most four incident edges. Unless otherwise specified, we assume from now on that all graphs satisfy this condition. Then any graph G has an orthogonal drawing. In [11,16] it was shown that deciding whether G can be embedded in a grid of prescribed area is NP-complete. Sch~iffter showed that any graph can be embedded in a 2n x 2n-grid with at most two bends per edge [22]. For graphs with maximum degree 3, a very recent paper showed that they can be embedded in an rn/2~ x In/2] -grid with In/21 +2 bends [3]. If G is planar, it can be embedded in an n x n grid with 2n + 4 bends if it is biconnected, and 2.4n + 2 bends otherwise [23,25]. The number of bends along each edge is at most 4.
+Storer, Tamassia, and Tollis \cite{storer1984minimal,tamassia1987efficient} showed that if $G=(V,E)$ is planar where $\vlr{V}=n$ and $\vlr{E} = m$, it can be embedded into a $\vert V \vert \times \vert V \vert$ integer grid where vertices are grid points and an edge are a sequence of alternating horizontal and vertical line segments and bounding total number of bends in an embedding by a bend polynomial $S(n,m)=2.4 \vert V\vert + 4$.  
+Now suppose we're given a 3-CNF boolean formula, $\Phi$, with $i$ variables and $j$ clauses, the associated graph $A(\Phi)$ has $i+j$ vertices.  
+We can then define a \textit{fundamental polynomial} $s(n,m)$ that describes the size of the embedding into the plane, $s(n,m) \times s(n,m)$, gives an upper bound on the total number of bends, and accounts for the translation of the associated graph of a P3SAT into a hexagonal polyonal linkage:
+$$s(n,m) = 6\lr{3 (n+m) + 4} = 18 (n+m) + 24$$
+
+The tables below are a glossary of formulas and Maclaurin series that are used throughout this chapter.
 It will serve as a useful reference for the reader.
 $$
 \begin{array}{|rcl|}
@@ -2142,7 +2143,7 @@ J_h (z) 	&=& 6z(n,m)+1 = 24s(n,m)+1 \\\hline
 J_d (z) 	&=& 4z(n,m)+1												= 16s(n,m)+1  			\\\hline
 N(n,m)		&=& \frac{5t-1}{2}											= \frac{5s^\kappa-1}{2}	\\\hline
 t(n,m)		&=& s^\kappa																		\\\hline
-H(n,m) 		&=&  (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250t-50}}				\\\hline
+H(n,m) 		&=&  (12s+1)  \lr{5s^\kappa -1}  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250s^\kappa -50}}				\\\hline
 \end{array}
 $$
 
@@ -2157,13 +2158,13 @@ $$
 && 1 				\leq \sec x 	 \leq 1 + \frac{x^2}{2} \qquad\qquad 0< x < 1\\\hline
 \end{array}
 $$
-The formula $t(n,m)=s^\kappa$ has an exponent $\kappa$ which is a sufficiently large integer that is chosen later on so that all arguments in this chapter are satisfied.
+The formula $t(n,m)=s^\kappa$ has an exponent $\kappa$ which is a sufficiently large integer chosen later on so that all conditions in this chapter are satisfied.
 The trigonmetric functions in the table above each are expressed as either the first term or the first and second term of their Maclaurin Series expansion.
 
 \paragraph{Modifying the Associated Graph of a P3SAT.}
 
-Given an instance of P3SAT boolean formula $\Phi$ of $n$ variables and $m$ clauses with associated graph $A(\Phi)$, we construct a finite \textit{honeycomb} grid $H_{A \lr{\Phi}}$ of regular hexagons over the plane centered at origin.
-We modify the associated graph drawing $A\lr{\Phi}$ by overlaying it onto a honeycomb in the following way:
+Given an instance of P3SAT boolean formula $\Phi$ of $n$ variables and $m$ clauses with associated graph $A(\Phi)$, we construct a finite \textit{honeycomb} grid $H_{A \lr{\Phi}}$ of regular hexagons over the plane.
+We modify the associated graph $A\lr{\Phi}$ by embedding it into honeycomb integer grid in the following way:
 
 \begin{enumerate}
 %variables represent cycles of 2m 
@@ -2185,12 +2186,8 @@ Edges traverse a hexagon in two edges vertically, three edges horizontally.
 The vertical zigzagging edge segments traverse the left or right sides of a hexagon(s).
 The horizontal zigzagging edge segments traverse the top or bottom halves of a hexagon(s).
 When the edge transisitions from a vertical to horizontal traversal, the edge traverses in over 4 edges about the hexagon.
-The length of the edges are bounded above by $6 \cdot \lr{\ell_1 \lr{x_i,C_j} + D}$ where $\ell_1$ is the $L_1$ norm. 
+The length of the edges are bounded above by $6 \cdot \lr{\ell_1 \lr{x_i,C_j} + D}$ where $\ell_1$ is the $L_1$ norm and $x_i$ and $C_j$ are points in the grid plane. 
 \end{enumerate}
-
-Figure \ref{fig:HoneyCombAssociatedGraphSmall} illustrates an associated graph of a P3SAT overlayed on a honeycomb.
-This type of construction emulates an \textit{orthoganal drawing} over a hexagonal grid; an orthoganal drawing where edges are drawn with alternating vertical and horizontal line segments.
-Let the region in which the construction lies in be a regular hexagon region with polynomial side length $s(n,m)$. 
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -2202,6 +2199,8 @@ This honeycomb graph could correspond to Boolean formula $\lr{\lnot x_1 \lor \ln
 \end{center}
 \end{minipage}
 
+Figure \ref{fig:HoneyCombAssociatedGraphSmall} illustrates an associated graph of a P3SAT overlayed on a honeycomb.
+Let the region in which the construction lies in be a regular hexagon region with polynomial side length $s(n,m)$. 
 The honeycomb construction will act as preliminary concept that will be refined further in the Auxilary Contruction.\section{Auxilary Construction}\label{sec:auxiliaryConstruction}
 Let $\Phi$ be a Boolean formula of P3SAT with variables $x_1,\ldots , x_n$ and clauses $C_1,\ldots ,C_m$, where $A(\Phi)$ is the associated planar graph and $\tilde{A}\lr{\Phi}$ be corresponding honeycomb graph.
 We continue to modify $\tilde{A}\lr{\Phi}$ to form the auxilary construction.   
@@ -2228,15 +2227,15 @@ Given the side length of $J$, $s(n,m)$, we need to scale the grid of hexagons of
 \end{minipage}
 
 In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}, we show the three smallest possible formal constructions of $J$, $J_1, J_2, J_3$.  
-A \textit{formal construction} of $J$ is when six hexagons of the hexagonal grid each have two adjacent lie on the perimeter of $J$.
+A formal construction of $J$ is when six hexagons of the hexagonal grid each have two adjacent sides lie on the perimeter of $J$.
 We have shown informal construction earlier where this does not occur.
 Unless otherwise specified, we will assume the use formal constructions.
 Each of the figures in Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf} shows $J$ in bold and the hexagonal grid in its interior.
 Notice that in each case we have six hexagons of the hexagonal grid with each of the six hexgaons having two adjacent sides that lie on the perimeter of $J$.
 
-The height and diamater of $J$ can be described by the number of hexagons in the grid a vertical or horizontal line may cross. 
-We'll denote these qualities as the hexagonal height and hexagonal diameter of $J$.
-Figure Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) and Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(a) show the hexagons of the hexagonal height and hexagonal diamters of $J_1$ and $J_3$ respectively.  
+The height and diamater of $J$ can be described in terms of hexagons in the grid a vertical or horizontal line may cross. 
+We'll denote these qualities as the hexagonal height and hexagonal diameter of $J$.  
+Figures \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) and \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(a) show the hexagons of the hexagonal height and hexagonal diamters of $J_1$ and $J_3$ respectively.  
 The formula for calculating hexagonal height of $J_z$ is 
 \begin{equation}\label{eqn:Jh}
 J_h (z) = 6z+1
@@ -2245,22 +2244,22 @@ The formula for calcuating the hexagonal diameter of $J_z$ is
 \begin{equation}\label{eqn:Jd}
 J_d (z) = 4z+1
 \end{equation}
-If an associated graph of a P3SAT instance can be encoded into a honeycomb grid of size $s(n,m) \times s(n,m)$, then let $z(n,m)=4\cdot s(n,m)$ to enclose the same honeycomb to be enclosed into the interior of $J_z$.
+Since the associated graph of a P3SAT instance can be encoded into a honeycomb grid of size $s(n,m) \times s(n,m)$, then let $z(n,m)=4\cdot s(n,m)$ to enclose the same honeycomb to be enclosed into the interior of $J_z$.
 
-Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(b) illustrates the side length of $J$ as $s(n,m)$ and half the height of $J$ as $s(n,m) \sqrt{3}$.
-For any $J$, there is a fixed number of hexagons in the hexagonal grid that lie on one side of the perimeter of $J$; denote this number as $k$.
-We can denote the number of hexagons in a row of the hexagonal grid in $J_z$ with the following sequence as follows:
-\begin{equation}\label{eqn:hexagonalGridSequence}
-\begin{array}{rcl}
-a(0) &=& k\\
-a(1) &=& k-1 \\
-a(2) &=& k\\
-a(i) &=& a(i-3)+1\\
-0\leq&i&\leq \ceil{\frac{J_h (z)}{2}}
-\end{array}
-\end{equation}
-The $i^\text{th}$ number of Sequence \ref{eqn:hexagonalGridSequence} indicates the number of hexagons on the $i^\text{th}$ row of the hexagonal grid in the interior of $J$ from the perimeter of $J$ up to the half height of $J$. In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) from the bottom to the mid-height of $J$, the sequence $a(i)$ (i.e. the number of hexagons in each subsequent row) is 4, 3, 4, 5, 4, 5, 6, 5, 6, 7.
-Denote the hexagons of the hexagonal grid in $J$ as \textit{obstacle hexagons}.
+% Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(b) illustrates the side length of $J$ as $s(n,m)$ and half the height of $J$ as $s(n,m) \sqrt{3}$.
+% For any $J$, there is a fixed number of hexagons in the hexagonal grid that lie on one side of the perimeter of $J$; denote this number as $k$.
+% We can denote the number of hexagons in a row of the hexagonal grid in $J_z$ with the following sequence as follows:
+% \begin{equation}\label{eqn:hexagonalGridSequence}
+% \begin{array}{rcl}
+% a(0) &=& k\\
+% a(1) &=& k-1 \\
+% a(2) &=& k\\
+% a(i) &=& a(i-3)+1\\
+% 0\leq&i&\leq \ceil{\frac{J_h (z)}{2}}
+% \end{array}
+% \end{equation}
+% The $i^\text{th}$ number of Sequence \ref{eqn:hexagonalGridSequence} indicates the number of hexagons on the $i^\text{th}$ row of the hexagonal grid in the interior of $J$ from the perimeter of $J$ up to the half height of $J$. In Figure \ref{fig:hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf}(c) from the bottom to the mid-height of $J$, the sequence $a(i)$ (i.e. the number of hexagons in each subsequent row) is 4, 3, 4, 5, 4, 5, 6, 5, 6, 7.
+% Denote the hexagons of the hexagonal grid in $J$ as \textit{obstacle hexagons}.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -2276,7 +2275,7 @@ Let the numbered hexagons of Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstac
 In Figure \ref{fig:HoneycombFlixible.pdf}(b), we have smaller hexagons within some corridors and junctions.
 These hexagons are flags.
 For each edge in $\tilde{A}(\Phi)$, we insert flags into the corridor corresponding to that edge.
-Flexible hexagons are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
+Flags are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
 Let $t(n,m)=s^\kappa$ be the number of flags in a corridor (see Figure \ref{fig:variable}). 
 Scale $J$ and the obstacle hexagons in the interior of $J$ independently from their centers (see Figure \ref{fig:ScalingForCorridors.pdf}) such that each obstacle hexagon has side length: $$N(n,m)=\frac{5t(n,m)-1}{2}.$$ 
 
@@ -2318,7 +2317,7 @@ Figure \ref{fig:VariableGadgetSmall.pdf} depicts a \textit{variable gadget} in t
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=0.45\columnwidth]{graphics/VariableGadgetSmall.pdf}
-\captionof{figure}{This depicts a variable gadget with $x_1 = T$.  Carefully note that the flags around $x_1$ are in the state $R$. Corridors adjacent to two obstacles of a variable in the honeycomb do not have $t$ flags; these corridors simply have the flexible hexagons at the junctions.}\label{fig:VariableGadgetSmall.pdf}
+\captionof{figure}{This depicts a variable gadget with $x_1 = T$.  Carefully note that the flags around $x_1$ are in the state $R$. Corridors adjacent to two obstacles of a variable in the honeycomb do not have $t$ flags; these corridors simply have the flags at the junctions.}\label{fig:VariableGadgetSmall.pdf}
 \end{center}
 \end{minipage}
 
@@ -2442,7 +2441,7 @@ This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexag
 
 Suppose there is an edge $\left\lbrace x_i, C_j \right\rbrace$ in the graph $A(\Phi)$.
 \begin{lem}\label{lem:aux-3}
-If $x_i = T$ and its negated literal is in $C_j$, then a flag enters into the clause gadget of $C_j$, otherwise it need not enter; if $x_i = F$ and its non-negated literal is in $C_j$, then a flexible hexagon enters into the clause gadget of $C_j$, otherwise it need not enter.
+If $x_i = T$ and its negated literal is in $C_j$, then a flag enters into the clause gadget of $C_j$, otherwise it need not enter; if $x_i = F$ and its non-negated literal is in $C_j$, then a flag enters into the clause gadget of $C_j$, otherwise it need not enter.
 \end{lem}
 \begin{proof}
 The transmitter gadget for each literal is placed on an active junction of the variable gadget. 
@@ -2469,7 +2468,7 @@ There allows for the small hexagon in the clause junction to move into the area 
 For a variable gadget $x_i$, place horizontal axis $h$ at mid-height of the gadget.
 Then we have the following lemma:
 \begin{lem}\label{lem:aux-2}
-If variable $x_i = T$, then all flags above $h$ are in state $R$ and all flags below $h$ are in state $L$; if variable $x_i = L$, then all flexible hexagons above $h$ are in state $L$ and all flexible hexagons below $h$ are in state $R$.    
+If variable $x_i = T$, then all flags above $h$ are in state $R$ and all flags below $h$ are in state $L$; if variable $x_i = L$, then all flags above $h$ are in state $L$ and all flags below $h$ are in state $R$.    
 \end{lem}
 \begin{proof}
 Suppose we have two adjacent corridors $k_i$ and $k_{i+1}$ sharing junction $J_i$ and without loss of generality, $k_i$ is the left most corridor.
@@ -2491,7 +2490,7 @@ For every instance $\Phi$ of P3SAT, the above polygonal linkage with flexible an
 
 \noindent (1) We can bound the number of obstacle hexagons to represent a variable gadget by $2 D$, where $D = \lr{ \max_{v \in V} \deg (v)}$.  
 The number of clause junctions is $n$.
-To give an upper bound on the number of flags in the auxiliary construction, we have to account for the flags in the transmitter gadgets, the extra hexagons found in junctions, and the flexible hexagons around the variable gadgets.
+To give an upper bound on the number of flags in the auxiliary construction, we have to account for the flags in the transmitter gadgets, the extra hexagons found in junctions, and the flags around the variable gadgets.
 
 Recall that that the number of flags in a corridor are $ t = 2N(m,n)^3 + 1 $ where $N(m,n)$ is a polynomial. 
 Recall that the drawing of $A(\Phi)$ have edges drawn in vertically and horizontally and can join at some ``elbow''.  
@@ -2572,9 +2571,8 @@ The columns that do not have an obstacle hexagon hinged to the perimeter of $J$ 
 
 We obtain a simply connected polygonal linkage. 
 We now allow the obstacle hexagons to move freely, and call their original fixed position \emph{canonical}. 
-\noindent (3) We may assume without loss of generality that the frame is at its original position. 
-It is enough to show that the obstacle hexagons are still confined to an $1/N$-neighborhood of their canonical position, then it
-follows that the polygonal linkage is realizable if and only if $\Phi$ is satisfiable.
+We may assume without loss of generality that the frame is at its original position. 
+It is enough to show that the obstacle hexagons are still confined to an $1/N$-neighborhood of their canonical position, then it follows that the polygonal linkage is realizable if and only if $\Phi$ is satisfiable.
 
 \begin{minipage}{\linewidth}
 	\begin{center}
@@ -2641,7 +2639,7 @@ which reduces to:
 \end{eqnarray*}
 
 \begin{equation}\label{eqn:Hnm}
-	H(n,m) = (12s+1)  (5t-1)  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250s^\kappa-50}}
+	H(n,m) = (12s+1)  \lr{5s^\kappa -1}  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250s^\kappa -50}}				
 \end{equation}
 
 The cross section of the corridor must have a minimum height of $\sqrt{3}$ everywhere.
@@ -2938,27 +2936,27 @@ satisfiable.
 \begin{proof}
 \noindent (1) We can bound the number of obstacle hexagons to represent a variable gadget by $2 D$, where $D = \lr{ \max_{v \in V} \deg (v)}$.  
 The number of clause junctions is $n$.
-To give an upper bound on the number of flexible hexagons in the auxiliary construction, we have to account for the flexible hexagons in the transmitter gadgets, the extra hexagons found in junctions, and the flexible hexagons around the variable gadgets.
+To give an upper bound on the number of flags in the auxiliary construction, we have to account for the flags in the transmitter gadgets, the extra hexagons found in junctions, and the flags around the variable gadgets.
 
-Recall that that the number of flexible hexagons in a corridor are $ t = 2N(m,n)^3 + 1 $ where $N(m,n)$ is a polynomial. 
+Recall that that the number of flags in a corridor are $ t = 2N(m,n)^3 + 1 $ where $N(m,n)$ is a polynomial. 
 Recall that the drawing of $A(\Phi)$ have edges drawn in vertically and horizontally and can join at some ``elbow''.  
 The distance can be measured in the $\ell_1$ norm.
 Similarly in the honeycomb construction, the flexable hexagons zig-zig vertically and horizontally through out honeycomb.  
 The number of corridors about an obstacle hexagon is $6$.
-To give a generous upper bound on the number of flexible hexagons in a transmitter gadget, is $6 \cdot t \cdot \ell_1\lr{v_i,C_j}$, assuming each obstacle hexagon is of unit height.
+To give a generous upper bound on the number of flags in a transmitter gadget, is $6 \cdot t \cdot \ell_1\lr{v_i,C_j}$, assuming each obstacle hexagon is of unit height.
 
 The number of junctions in the auxiliary construction is the number of junctions to form all variable gadgets, transmitter gadgets, and clause gadgets. 
 We know there are at most $2 \cdot D$ obstacle hexagons to form each variable gadget and $6$ junctions for each obstacle hexagon.  
-Therefore an upper bound for the number of flexible hexagons around variable gadgets is $m \cdot 6 \cdot t \cdot 2 \cdot D$.
+Therefore an upper bound for the number of flags around variable gadgets is $m \cdot 6 \cdot t \cdot 2 \cdot D$.
 The upper bound for the number of junctions in a transmitter gadget is $6 \ell_1 \lr{v_i, C_j}$.  
 Thus, the upper bound of all junctions in all transmitter gadgets is $$6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
-The upper bound on the total number of flexible hexagons is
+The upper bound on the total number of flags is
 $$m \cdot 6 \cdot t \cdot 2 \cdot D + 6 \cdot \sum_{\left\lbrace v_i, C_j \right\rbrace \in E} \ell_1 \lr{v_i, C_j}.$$
 
-For each corridor, there is one skinny rhombus attached to one flexible hexagon in the corridor.  If the number of corridors is bounded polynomially, then the number of skinny rhombi is bounded by the same bound of the corridor.
+For each corridor, there is one skinny rhombus attached to one flag in the corridor.  If the number of corridors is bounded polynomially, then the number of skinny rhombi is bounded by the same bound of the corridor.
 
 \noindent (2) Recall that in the original auxilary construnction is a forest.
-each obstacle hexagon with hinged flexible hexagons (and small hexagons) is disjoint from the remainder of the the construction. 
+each obstacle hexagon with hinged flags (and small hexagons) is disjoint from the remainder of the the construction. 
 The skinny rhombi in the modified auxilary construction connect the disjointed trees to form one tree.
 
 \noindent (3) The final statement is to show an if and only if statement: the modified auxiliary construction admits a realization such that the obstacle polygons remain fixed if and only if $\Phi$ is satisfiable.
