@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70107" creator="Ipe 7.2.2">
-<info created="D:20160507153210" modified="D:20160905165555"/>
+<info created="D:20160507153210" modified="D:20161008172051"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -323,11 +323,7 @@ h
 391.639 477.891 l
 </path>
 <text matrix="1.51962 0 0 1.51962 1734.45 678.348" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="8.475" height="4.297" depth="1.93" valign="baseline">$\gamma_i$</text>
-<text matrix="1.51962 0 0 1.51962 1723.22 660.156" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="19.57" height="8.422" depth="3.43" valign="baseline">$\frac{5t-1}{4}$</text>
-<path matrix="1.51962 0 0 1.51962 1717.79 686.946" stroke="black">
-327.64 477.89 m
-327.831 461.891 l
-</path>
+<text matrix="1.51962 0 0 1.51962 1726.47 657.507" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="37.67" height="8.422" depth="3.43" valign="baseline">$\xi= \frac{5t-1}{4}$</text>
 <text matrix="1.51962 0 0 1.51962 1787.38 687.072" transformations="translations" pos="375.465 469.801" stroke="black" type="label" width="7.676" height="6.926" depth="1.93" valign="baseline">$\zeta_i$</text>
 <path matrix="-0.75981 1.31603 1.31603 0.75981 2161.28 578.695" stroke="black">
 312 434.144 m
@@ -356,10 +352,6 @@ h
 <text matrix="1 0 0 1 -0.00411177 0.00129942" transformations="translations" pos="2334.35 1329.27" stroke="black" type="label" width="10.916" height="6.812" depth="1.49" valign="baseline">$O_i$</text>
 <use matrix="1 0 0 1 -24.0503 6.45807" name="mark/disk(sx)" pos="2239.73 1406.7" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 -24.0503 6.45807" name="mark/disk(sx)" pos="2240.02 1382.39" size="normal" stroke="black"/>
-<path matrix="1 0 0 1 -24.0503 6.45807" stroke="black">
-2237.34 1394.52 m
-2242.4 1394.58 l
-</path>
 <text matrix="1 0 0 1 -30.7844 4.81579" transformations="translations" pos="2248.33 1386.26" stroke="black" type="label" width="9.518" height="4.294" depth="1.49" valign="baseline">$\omega_i$</text>
 <use name="mark/disk(sx)" pos="2215.96 1340.22" size="normal" stroke="black"/>
 <path stroke="black" arrow="normal/normal" rarrow="normal/normal">
@@ -379,5 +371,10 @@ h
 167.038 0 0 -167.038 2483.41 1382.29 2317.47 1401.42 a
 </path>
 <text transformations="translations" pos="2489.8 1365.06" stroke="black" type="label" width="13.284" height="9.041" depth="1.32" valign="baseline">$\sqrt{3}$</text>
+<path stroke="black">
+2225.34 1345.63 m
+10.8239 0 0 -10.8239 2215.96 1340.22 2226.78 1340.22 a
+</path>
+<text matrix="1 0 0 1 -17.127 -44.0961" transformations="translations" pos="2248.33 1386.26" stroke="black" type="label" width="9.253" height="6.926" depth="1.93" valign="baseline">$\phi_i$</text>
 </page>
 </ipe>

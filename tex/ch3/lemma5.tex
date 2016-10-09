@@ -5,9 +5,6 @@ In every realization of $P$, the obstacle polygons are close to canonical positi
 
 Lemma \ref{lem:aux-C} serves as assurance that once a boolean formula of P3SAT is encoded into an arbitrary realization of the modified auxilary construction, the information of the boolean formula is preserved regardless of the positioning of the gadgets and components in the construction.
 This quality shows that the information is stable and preserved in an arbitrary realization of the modified auxilary construction.
-
-\begin{proof}
-We need to show that the modified auxilary construction could not deform in such a way that any information the construction encodes is lost or modified and the functionality of the gadgets within the construction behave as stated in the description. 
 For example, in Figure \ref{fig:tiltedObstaclesInFrame.pdf}, we have a column of obstacle hexagons veering off $\ell$.
 
 \begin{minipage}{\linewidth}
@@ -19,6 +16,10 @@ For example, in Figure \ref{fig:tiltedObstaclesInFrame.pdf}, we have a column of
 
 This is an example of extreme angular rotation that should not occur over a vertical stack of hexagons. 
 If a P3SAT boolean formula were encoded into such a realization, the information encoded could be lost by the extreme angular rotation of the obstacle hexagons.
+
+\begin{proof}
+We need to show that the modified auxilary construction could not deform in such a way that any information the construction encodes is lost or modified and the functionality of the gadgets within the construction behave as stated in the description.  
+Using the central flag and rhombus, we can indentify a column of obstacle hexagons if there is a horizontal corridor between hexagons in canonical position.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -52,6 +53,3 @@ which reduces to:
 \begin{equation}\label{eqn:Hnm}
 	H(n,m) = (12s+1)  \lr{5s^\kappa -1}  \sqrt{3} + 12s \lr{\sqrt{3}+ \frac{1}{250s^\kappa -50}}				
 \end{equation}
-
-The cross section of the corridor must have a minimum height of $\sqrt{3}$ everywhere.
-Otherwise will result in overlapping polygons.

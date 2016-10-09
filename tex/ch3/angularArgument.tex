@@ -2,7 +2,8 @@
 First we show that the angular rotation of the obstacle hexagons with respect to canonical position is small.  
 We first look at the relative angular difference between two adjacent obstacle polygons
 $$\left\vert \alpha_i - \alpha_{i+1} \right\vert.$$
-Given an arbitrary instance of a modified auxilary construction, consider $O_i$, $O_{i+1}$, and the corridor between $O_i$ and $O_{i+1}$ (see Figure \ref{fig:corridorNonCanonical2.pdf} for illustration).
+Given an arbitrary instance of a modified auxilary construction, consider $O_i$, $O_{i+1}$, and the corridor between $O_i$ and $O_{i+1}$ (see Figure \ref{fig:corridorNonCanonical2.pdf} for illustration).  
+For this argument, we assume that $O_i$ is horizontal and consider the relative position of other objects with respect to $O_{i}$.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -10,6 +11,15 @@ Given an arbitrary instance of a modified auxilary construction, consider $O_i$,
 \captionof{figure}{The obstacle hexagon here is in noncanonical position, and showing the side lengths adjacent to $\alpha_i$.}\label{fig:corridorNonCanonical2.pdf}
 \end{center}
 \end{minipage}
+
+Figure \ref{fig:corridorNonCanonical2.pdf} $O_{i+1}$ is in a non-canonical position.  We describe the paramaters of the figure:
+\begin{itemize}
+	\item[$\xi$] the half length of the corridor,
+	\item[$\omega_i$] the angle between the rhombus and central flag, 
+	\item[$\gamma_i$] The angle formed between the horizontal plane that is $\sqrt{3}$ above $O_i$ and $O_{i+1}$ when rotated to the maximal possible extent before causing possible collision with other flags. 
+	\item[$\zeta_i$] 
+	\item[$\phi_i$]
+\end{itemize}
 
 In Figure \ref{fig:dualSmallHexagonalGrid.pdf}(a) we see $\ell$ in the center of the column of obstacle hexagons.  
 Our goal is to show that the column of hexagons cannot tilt in the manner shown in Figure \ref{fig:tiltedObstaclesInFrame.pdf} where the column veers greatly into the space occupied by other corridors and obstacle hexagons.
