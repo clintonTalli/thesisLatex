@@ -68,11 +68,16 @@ Since the associated graph of a P3SAT instance can be encoded into a honeycomb g
 \end{center}
 \end{minipage}
 
-Let the numbered hexagons of Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstacle hexagons that are fixed.
+
+
+The obstacle hex Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstacle hexagons that are fixed.
 In Figure \ref{fig:HoneycombFlixible.pdf}(b), we have smaller hexagons within some corridors and junctions.
 These hexagons are flags.
 For each edge in $\tilde{A}(\Phi)$, we insert flags into the corridor corresponding to that edge.
-Flags are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
+%Flags are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
+Flags are regular hexagons that reside in the corridors and junctions; each flag is hinged to a obstacle hexagon (see Figure \ref{fig:HoneycombFlixible.pdf}(b)).  
+For any of these corridors, we attach hinges to the boundary of the corridor; pick an arbitrary side for all hinges.  
+The first and last hinge are one unit from the obstacle hexagon corners, the hinges between the first and last hinge are 2.5 units apart.  
 Let $t(n,m)=s^\kappa$ be the number of flags in a corridor (see Figure \ref{fig:variable}). 
 Scale $J$ and the obstacle hexagons in the interior of $J$ independently from their centers (see Figure \ref{fig:ScalingForCorridors.pdf}) such that each obstacle hexagon has side length: $$N(n,m)=\frac{5t(n,m)-1}{2}.$$ 
 

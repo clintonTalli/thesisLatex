@@ -2113,14 +2113,30 @@ corresponding to negated literals reside below the shaft and flags corresponding
 literals reside above the shaft.  All together we have that every clause has a true literal and a 
 false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
 \end{proof}\chapter{Realizability of Polygonal Linkages with Fixed Orientation\label{chapter:polygonalLinkage}}
+% On 10/1/2016 3:39 PM, clinton bowen wrote:
+% > 1)  Do I have some confusion in my text on P3SAT and what the values of n and m are that I want to resolve.  In chapter 1 I have: 
+% >
+% > "We define the \textit{associated graph} $A(\Phi)$ as follows: the vertices correspond to the variables and clauses in $\Phi$.  We place an edge in the graph if variable $x_i$ appears in clause $C_j$."  
+% >
+% > In chapter 1, if A(\Phi) = (V,E), |V| = # of variables + # of clauses and |E| = the quantity of "if variable $x_i$ appears in clause $C_j$" for all i and j.
+% >
+% > In chapter 3's introduction i show s(n,m) where n is the number of vertices and m is the number of edges of a graph; throughout the remainder of the chapter, I state something to the effect of 
+% > "Given an instance of P3SAT boolean formula Φ of n variables and m clauses with associated graph A(Φ)".  
+% >
+% > Effectively I would have s(n+m, f(Φ)) where f() is the function  "the quantity of "if variable $x_i$ appears in clause $C_j$" for all i and j", if I use the definition in chapter 1 literally.  
+% >
+% > Is there a nice way of resolving this confusion of n and m?
+% You are perfectly right. I would keep the meaning of n and m throughout the chapter. After stating planar 3SAT at the beginning of the chapter, add a remark that a planar bipartite graph on K>2 vertices has at most 2K-4 edges by Euler's theorem. (This is a classical result, that appears in all undergraduate textbooks on discrete math, as an easy exercise). When you define s(n,m), then define it as the size of the grid that can accommodate A(Phi). Them s(n,m) is still polynomial in n and m. 
 
 We begin the chapter with describing several gadgets that translate the associated graph $A(\Phi)$ of a P3SAT boolean formula into a hexagonal polygonal linkage.  
-These gadgets will be used together to form a special hexagonal linkage that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.
+These gadgets will be used together to form a special hexagonal linkage that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.  
+Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, 
 Together the gadgets will form what is called the auxilary construction.
 A hexagonal polygonal linkage and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge2}: \textit{it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.}
 
 Our proof is a reduction from P3SAT.
 Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$ of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
+
 
 We construct a polygonal linkage in two main steps: first, we construct an auxiliary structure where some of the polygons have fixed position in the plane (called \emph{obstacles}), while other polygons are flexible, and each flexible polygon is hinged to an obstacle. 
 Second, we modify the auxiliary construction into a polygonal linkage by allowing the obstacles to move freely, and by adding new polygons and hinges as well as an exterior \emph{frame} that holds the obstacle polygons in place.
@@ -2132,7 +2148,7 @@ Storer, Tamassia, and Tollis \cite{storer1984minimal,tamassia1987efficient} show
 Now suppose we're given a 3-CNF boolean formula, $\Phi$, with $i$ variables and $j$ clauses, the associated graph $A(\Phi)$ has $i+j$ vertices.  
 We can then define a \textit{fundamental polynomial} $s(n,m)$ that describes the size of the embedding into the plane, $s(n,m) \times s(n,m)$, gives an upper bound on the total number of bends, and accounts for the translation of the associated graph of a P3SAT into a hexagonal polyonal linkage:
 $$s(n,m) = 6\lr{3 (n+m) + 4} = 18 (n+m) + 24$$
-
+Note that a planar bipartite graph has at most $2k-4$ by Euler's theorem where $k>2$.  
 The tables below are a glossary of formulas and Maclaurin series that are used throughout this chapter.
 It will serve as a useful reference for the reader.
 $$
@@ -2271,11 +2287,16 @@ Since the associated graph of a P3SAT instance can be encoded into a honeycomb g
 \end{center}
 \end{minipage}
 
-Let the numbered hexagons of Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstacle hexagons that are fixed.
+
+
+The obstacle hex Figure \ref{fig:HoneycombFlixible.pdf}(a) be obstacle hexagons that are fixed.
 In Figure \ref{fig:HoneycombFlixible.pdf}(b), we have smaller hexagons within some corridors and junctions.
 These hexagons are flags.
 For each edge in $\tilde{A}(\Phi)$, we insert flags into the corridor corresponding to that edge.
-Flags are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
+%Flags are hinged at the vertex closest to origin and the side of the corridor (See Figure \ref{fig:variable}).
+Flags are regular hexagons that reside in the corridors and junctions; each flag is hinged to a obstacle hexagon (see Figure \ref{fig:HoneycombFlixible.pdf}(b)).  
+For any of these corridors, we attach hinges to the boundary of the corridor; pick an arbitrary side for all hinges.  
+The first and last hinge are one unit from the obstacle hexagon corners, the hinges between the first and last hinge are 2.5 units apart.  
 Let $t(n,m)=s^\kappa$ be the number of flags in a corridor (see Figure \ref{fig:variable}). 
 Scale $J$ and the obstacle hexagons in the interior of $J$ independently from their centers (see Figure \ref{fig:ScalingForCorridors.pdf}) such that each obstacle hexagon has side length: $$N(n,m)=\frac{5t(n,m)-1}{2}.$$ 
 
