@@ -13,12 +13,12 @@ For this argument, we assume that $O_i$ is horizontal and consider the relative 
 \end{minipage}
 
 Figure \ref{fig:corridorNonCanonical2.pdf} $O_{i+1}$ is in a non-canonical position.  We describe the paramaters of the figure:
-\begin{itemize}
-	\item[$\xi$] the half length of the corridor,
-	\item[$\omega_i$] the angle between the rhombus and central flag, 
-	\item[$\gamma_i$] The angle formed between the horizontal plane that is $\sqrt{3}$ above $O_i$ and $O_{i+1}$ when rotated to the maximal possible extent before causing possible collision with other flags. 
-	\item[$\zeta_i$] 
-	\item[$\phi_i$]
+\begin{itemize}[leftmargin=.75in, rightmargin=.75in]
+	\item[$\xi$:] the half length of the corridor,
+	\item[$\omega_i$:] the angle between the rhombus and central flag, 
+	\item[$\gamma_i$:] The angle formed between the horizontal plane that is $\sqrt{3}$ above $O_i$ and $O_{i+1}$ when rotated to the maximal possible extent before causing possible collision with other flags. 
+	\item[$\zeta_i$:]  is the length from the hinge point of $O_{i+1}$ and the rhombus to the point that vertical to corner of $O_i$ that is to the right over the central flag on the horizontal plane that is $\sqrt{3}$ above $O_i$.
+	\item[$\phi_i$:] is the angle formed between the central flag and $O_i$.
 \end{itemize}
 
 In Figure \ref{fig:dualSmallHexagonalGrid.pdf}(a) we see $\ell$ in the center of the column of obstacle hexagons.  
@@ -54,7 +54,7 @@ The bound of $\gamma_i$ is:
 &\leq& \frac{2}{s^\kappa}
 \end{array} 
 \end{equation}
-Inequality \ref{eqn:alphaBound} uses the first term Maclaurin series of $\tan^{-1}$ and holds for sufficiently large $s$ and $\kappa$.  
+Inequality \ref{eqn:alphaBound} uses the first term Maclaurin series of $\tan^{-1}$ (for reference, see table of Maclaurin series equations at the beginning of this chapter) and holds for sufficiently large $s$ and $\kappa$.  
 Thus the relative rotational difference between adjacent obstacle hexagons is:
 \begin{equation}\label{eqn:angularBound}
 \left\vert \alpha_i - \alpha_{i+1} \right\vert \leq\frac{2}{s^\kappa}
@@ -66,7 +66,7 @@ $$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{2}{s^\kappa}.$$
 There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
 We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{2(12s-1)}{s^\kappa} \leq \frac{24}{s^{1-\kappa}}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{2(12s-1)}{s^\kappa} \leq \frac{24}{s^{\kappa-1}}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
 \begin{eqnarray*}
@@ -75,11 +75,11 @@ and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon
 		 &\leq& \frac{2}{s^\kappa}  i^2\\
 		 &\leq& \frac{2u^2}{s^\kappa}\\
 		 &\leq& \frac{288s^2}{s^{\kappa}}\\
-		 &\leq& \frac{288}{s^{2-\kappa}} \\
+		 &\leq& \frac{288}{s^{\kappa-2}} \\
 \end{eqnarray*}
 For any $i$, the bound for $\alpha_i$:
 \begin{equation}\label{eqn:angularMaxBound}
-\alpha_i \leq \frac{288}{s^{2-\kappa}}
+\alpha_i \leq \frac{288}{s^{\kappa-2}}
 \end{equation}
 
 % The sum of total displacement in a given column is bounded by:

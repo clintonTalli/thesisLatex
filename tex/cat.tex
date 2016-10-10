@@ -44,6 +44,9 @@
 \usepackage{float}
 \usepackage{complexity}
 \usepackage{array}
+\newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
 %%CSUN Stuff%%%
 \titlecontents{chapter}
   [0em]
@@ -208,11 +211,7 @@ X_2\right)^{-1}
 \newcommand{\lr}[1]{\left( #1 \right)}
 \newcommand{\vlr}[1]{\left\vert #1 \right\vert}
 \newcommand{\curlybraces}[1]{\left\lbrace #1 \right\rbrace}
-\newcommand{\BigOh}[1]{O\left( #1 \right)}
-
-\newcolumntype{L}{>{$}l<{$}} 
-\newcolumntype{C}{>{$}c<{$}} 
-\newcolumntype{R}{>{$}r<{$}} 
+\newcommand{\BigOh}[1]{O\left( #1 \right)} 
 %\newcommand{\deg}{\textrm{deg}}
 %\renewcommand{\baselinestretch}{1.0}
 % 1.0 is for one line space, 2.0 is for double-line space, etc
@@ -2151,6 +2150,7 @@ $$s(n,m) = 6\lr{3 (n+m) + 4} = 18 (n+m) + 24$$
 Note that a planar bipartite graph has at most $2k-4$ by Euler's theorem where $k>2$.  
 The tables below are a glossary of formulas and Maclaurin series that are used throughout this chapter.
 It will serve as a useful reference for the reader.
+
 $$
 \begin{array}{|rcl|}
 \hline
@@ -2359,7 +2359,7 @@ If unit hexagons enter the junction from all three corridors (i.e., all three li
 
 %But if at most two unit hexagons enter the junction (i.e., one of the literals is true), then the unit segment and the small hexagon are realizable.
 
-\paragraph{Transmitter Gadget.}\label{transmitterGadget}
+\paragraph{Transmitter Gadget.\newline }\label{transmitterGadget}
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -2465,7 +2465,7 @@ This is a contradiction with the total angular sum of a vertex on the plane to b
 \end{proof}
 
 The flags of the auxilary construction help communicate the boolean value of a variable gadget to the rest of the auxilary construction.
-This communication property of the flags in a corridor is analagous to the flags in a row of a logic engine.
+This property of the flags in a corridor is analagous to the flags in a row of a logic engine.
 
 Observations \ref{obs:corridor} and \ref{obs:junction} ensure that the state of any unit hexagon along the cycle determines the state of all other unit hexagons in the cycle. 
 This property defines the binary variable $x_i$: If $x_i=T$, then all unit hexagons in the top horizontal corridors are in state R; and if $x_i=F$, they are all in state L.
@@ -2695,12 +2695,12 @@ For this argument, we assume that $O_i$ is horizontal and consider the relative 
 \end{minipage}
 
 Figure \ref{fig:corridorNonCanonical2.pdf} $O_{i+1}$ is in a non-canonical position.  We describe the paramaters of the figure:
-\begin{itemize}
-	\item[$\xi$] the half length of the corridor,
-	\item[$\omega_i$] the angle between the rhombus and central flag, 
-	\item[$\gamma_i$] The angle formed between the horizontal plane that is $\sqrt{3}$ above $O_i$ and $O_{i+1}$ when rotated to the maximal possible extent before causing possible collision with other flags. 
-	\item[$\zeta_i$] 
-	\item[$\phi_i$]
+\begin{itemize}[leftmargin=.75in, rightmargin=.75in]
+	\item[$\xi$:] the half length of the corridor,
+	\item[$\omega_i$:] the angle between the rhombus and central flag, 
+	\item[$\gamma_i$:] The angle formed between the horizontal plane that is $\sqrt{3}$ above $O_i$ and $O_{i+1}$ when rotated to the maximal possible extent before causing possible collision with other flags. 
+	\item[$\zeta_i$:]  is the length from the hinge point of $O_{i+1}$ and the rhombus to the point that vertical to corner of $O_i$ that is to the right over the central flag on the horizontal plane that is $\sqrt{3}$ above $O_i$.
+	\item[$\phi_i$:] is the angle formed between the central flag and $O_i$.
 \end{itemize}
 
 In Figure \ref{fig:dualSmallHexagonalGrid.pdf}(a) we see $\ell$ in the center of the column of obstacle hexagons.  
@@ -2736,7 +2736,7 @@ The bound of $\gamma_i$ is:
 &\leq& \frac{2}{s^\kappa}
 \end{array} 
 \end{equation}
-Inequality \ref{eqn:alphaBound} uses the first term Maclaurin series of $\tan^{-1}$ and holds for sufficiently large $s$ and $\kappa$.  
+Inequality \ref{eqn:alphaBound} uses the first term Maclaurin series of $\tan^{-1}$ (for reference, see table of Maclaurin series equations at the beginning of this chapter) and holds for sufficiently large $s$ and $\kappa$.  
 Thus the relative rotational difference between adjacent obstacle hexagons is:
 \begin{equation}\label{eqn:angularBound}
 \left\vert \alpha_i - \alpha_{i+1} \right\vert \leq\frac{2}{s^\kappa}
@@ -2748,7 +2748,7 @@ $$\vlr{\alpha_1 - \alpha_2}=\vlr{\alpha_2}\leq \frac{2}{s^\kappa}.$$
 There are a total of $u$ obstacle hexagons in a column with possibly up to $u-1$ nonzero obstcle hexagons rotations.
 We can derive 1) a bounded sum of rotational displacement over a column of obstacle hexagons:
 \begin{equation}\label{eqn:angularSumBound}
-\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{2(12s-1)}{s^\kappa} \leq \frac{24}{s^{1-\kappa}}
+\sum_{i=1}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{2(12s-1)}{s^\kappa} \leq \frac{24}{s^{\kappa-1}}
 \end{equation}
 and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon:
 \begin{eqnarray*}
@@ -2757,16 +2757,16 @@ and 2) derive the maximum rotational displacement at the $\ith$ obstacle hexagon
 		 &\leq& \frac{2}{s^\kappa}  i^2\\
 		 &\leq& \frac{2u^2}{s^\kappa}\\
 		 &\leq& \frac{288s^2}{s^{\kappa}}\\
-		 &\leq& \frac{288}{s^{2-\kappa}} \\
+		 &\leq& \frac{288}{s^{\kappa-2}} \\
 \end{eqnarray*}
 For any $i$, the bound for $\alpha_i$:
 \begin{equation}\label{eqn:angularMaxBound}
-\alpha_i \leq \frac{288}{s^{2-\kappa}}
+\alpha_i \leq \frac{288}{s^{\kappa-2}}
 \end{equation}
 
 % The sum of total displacement in a given column is bounded by:
 % $$ \vert \alpha_u \vert \leq \sum_{i=2}^{u-1} \vert \alpha_i - \alpha_{i+1} \vert \leq \frac{u-1}{2\lr{N^3 - 1}}= \frac{12s - 1}{2 \lr{ (c_N s)^3 - 1}}$$
-\paragraph{Vertical Displacement $\delta$}
+\paragraph{Vertical Displacement $\delta$.}
 
 When an obstacle hexagon is rotated by $\alpha_i$, the height of the obstacle hexagon becomes $h \sec \alpha_i$ where $h$ is the canonical height of the obstacle hexagon (see Figure \ref{fig:hexagonNonCanonical.pdf} for reference).
 Figure \ref{fig:hexagonNonCanonical.pdf} shows the geometry of a rotated obstacle hexagon.
@@ -2790,31 +2790,48 @@ For canonical position, the $\jth$ obstacle has $\delta_j = 0$.
 \end{center}
 \end{minipage}
 
-From Equation \ref{eqn:Hnm}, we know the exact height of $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.  
-Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement for \textit{one} obstacle hexagon $\vert \delta_v \vert > 0$, where $j=2$, $\cdots$, $u+1$ and $1 < v \leq j$.
+From Equation \ref{eqn:Hnm}, we know the exact height of $\ell$ in terms of the heights of the corridors and obstacle hexagons in canonical position.
+In Figure \ref{fig:verticalDisplacementArgument.pdf}, line segment $\ell$ is a vertical line segment passing through  the midpoint hinge of the lowestobstacle hexagon  because the rotational displacement is sufficiently small such that $\ell$ instersects \textit{all} obstacle hexagons in a column.  
+Consider the entire column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement for \textit{one} obstacle hexagon $\vert \delta_v \vert > 0$, where $j=2$, $\cdots$, $u+1$ and $1 < v \leq u+1$.
+% Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement for \textit{one} obstacle hexagon $\vert \delta_v \vert > 0$, where $j=2$, $\cdots$, $u+1$ and $1 < v \leq j$.
 \begin{eqnarray*}
-\sum_{i=1}^j \lr{2 \sqrt{3} N \sec \lr{ \alpha_i}} + \delta_v  + (j-1) \lr{\frac{1}{100N}+\sqrt{3}} &\leq& j \cdot 2 N \sqrt{3} + (j-1) \cdot \lr{\frac{1}{100N}+\sqrt{3}}\\
-2 \sqrt{3} N \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_ v &\leq& j \cdot 2 \sqrt{3} N \\
-\sum_{i=1}^j \sec \lr{\alpha_i} + \delta_v &\leq& j\\
- \delta_v &\leq& j- \sum_{i=1}^j \sec \lr{\alpha_i}\\
- \delta_v &\leq& j - \lr{j - \sum_{i=1}^j \frac{\alpha_i^2}{2}}\\
-\delta_v &\leq&  \sum_{i=1}^j \frac{\alpha_i^2}{2}
+\sum_{i=1}^{u+1} \lr{2 \sqrt{3} N \sec \lr{ \alpha_i}} + \vlr{\delta_i - \delta_{i+1}} + u \lr{\frac{1}{100N}+\sqrt{3}} &\leq& (u+1) 2 N \sqrt{3} + u  \lr{\frac{1}{100N}+\sqrt{3}}\\
+2 \sqrt{3} N \sum_{i=1}^{u+1} \sec \lr{ \alpha_i} +  \vlr{\delta_i - \delta_{i+1}} &\leq& (u+1) 2 \sqrt{3} N \\
+\vlr{\delta_i - \delta_{i+1}} &\leq&  2 \sqrt{3} N \lr{(u+1) - \sum_{i=1}^{u+1} \sec \lr{ \alpha_i}}\\
+&\leq& 2 \sqrt{3} N \sum_{i=1}^{u+1} \lr{\frac{\alpha_i}{2}}^2\\
+&\leq&  \sqrt{3} \frac{5s^\kappa - 1}{2} \lr{\frac{286}{s^{2-\kappa}}}^2 (u+1)\\ 
+&\leq& \frac{6 \cdot 286^2 \cdot 13}{s^{4-2\kappa - \lr{\kappa + 1}}}\\
+&\leq&\frac{6380088}{s^{3-\kappa}}
 \end{eqnarray*}
+	% \begin{eqnarray*}
+	% \sum_{i=1}^j \lr{2 \sqrt{3} N \sec \lr{ \alpha_i}} + \delta_v  + (j-1) \lr{\frac{1}{100N}+\sqrt{3}} &\leq& j \cdot 2 N \sqrt{3} + (j-1) \cdot \lr{\frac{1}{100N}+\sqrt{3}}\\
+	% 2 \sqrt{3} N \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_ v &\leq& j \cdot 2 \sqrt{3} N \\
+	% \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_v &\leq& j\\
+	%  \delta_v &\leq& j- \sum_{i=1}^j \sec \lr{\alpha_i}\\
+	%  \delta_v &\leq& j - \lr{j - \sum_{i=1}^j \frac{\alpha_i^2}{2}}\\
+	% \delta_v &\leq&  \sum_{i=1}^j \frac{\alpha_i^2}{2}
+	% \end{eqnarray*}
 
-Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
-$$
-\begin{array}{rcl}
-\sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{2}{s^\kappa} }^2\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{2}{s^{\kappa}}}^2 \cdot j\\
-&\leq&\frac{1}{2}\cdot  \lr{\frac{2}{s^{\kappa}}}^2 \cdot u\\
-&\leq&\frac{48s}{2s^{2\kappa}}\\
-&\leq&\frac{24}{s^{2\kappa-1}}\\  
-\end{array}
-$$
+% Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
+% $$
+% \begin{array}{rcl}
+% \sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{2}{s^\kappa} }^2\\
+% &\leq&\frac{1}{2}\cdot  \lr{\frac{2}{s^{\kappa}}}^2 \cdot j\\
+% &\leq&\frac{1}{2}\cdot  \lr{\frac{2}{s^{\kappa}}}^2 \cdot u\\
+% &\leq&\frac{48s}{2s^{2\kappa}}\\
+% &\leq&\frac{24}{s^{2\kappa-1}}\\  
+% \end{array}
+For when $1< j\leq u$, we have the following result:
+\begin{eqnarray*}
+\delta_j &=& \sum_i=1^{j} \lr{\delta_i - \delta_{i+1}}\\
+&\leq&\sum_i=1^{j} \vlr{\delta_i - \delta_{i+1}}\\
+&\leq& \sum_i=1^{u} \vlr{\delta_i - \delta_{i+1}}\\
+&\leq&  \frac{82941144}{s^{2-\kappa}}
+\end{eqnarray*}
+Thus we finally say that the bound for $\delta_j$:
 
-Thus we finally say that the bound for $\delta_v$, where $1<v\leq j\leq u$, is small:
 \begin{equation}\label{eqn:verticalBound}
-\delta_v \leq \frac{24}{s^{2\kappa-1}}
+\delta_j \leq \frac{82941144}{s^{2-\kappa}}\
 \end{equation}
 
 
@@ -2875,7 +2892,7 @@ We now show that each of these horizontal displacements are small.
 % Lastly, let $\beta_{\phi_i}$ be the horizontal displacement generated by the rotational displacement between the central flag and $O_i$.
 \paragraph{\textit{Horizontal Displacement Generated by Rotational Displacement of the Obstacle Hexagon} $\beta_{\alpha_{i+1}}$}
 We first show that the horizontal displacement generation by the rotational displacement of obstacle hexagon $O_{i+1}$.  
-The obstacle hexagon above a corridor can rotate with respect the center of the hexagon.  
+The obstacle hexagon above a corridor can rotate from canonical position.  
 The half diameter of the obstacle hexagon is $ \frac{(5t-1)\sqrt{3}}{2}$.  
 The rotation of the hexagon can generate a horizontal distance of travel by:
 \begin{equation}
@@ -2890,34 +2907,34 @@ The rotation of the hexagon can generate a horizontal distance of travel by:
 Next we show the horizontal displacement generated by the rotation of the central flag.
 \paragraph{\textit{Horizontal Displacement Generated by Rotational Displacement of the Central Flag} $\beta_{\phi_{i}}$}
 Let $\phi$ be the anglular displacement of the central flag.  
-This argument assumes the position of $O_i$ is in a relatively fixed, canonical position.  
+This argument assumes the position of $O_i$ is in a relatively fixed  position.  
 Thus for any realization, we assume that placement of all other objects are relative to $O_i$.  
 
-The maximum vertical displacement between $O_i$ and $O_{i+1}$ is $2 \delta_i$.  
+The maximum vertical displacement between $O_i$ and $O_{i+1}$ is $\vert \delta_i \vert + \vert \delta_{i+1} \vert$.  
 Including the vertical displacement generated by the rotation of $O_{i+1}$, an upper bound on the vertical height of a corridor is:
 %$$\frac{5t-1}{2} \lr{sin \lr{\frac{\pi}{3} + alpha_i}  - \frac{pi}{3} }$$
 %$$v_\text{max}=\sqrt{3} + \frac{1}{100N} + 2 \delta_i + \sqrt{3}- 2 \sin \lr{\frac{\pi}{3} + \alpha_{i+1}}.$
-$$v_\text{max}=\sqrt{3} + \frac{1}{100N} + 2 \delta_i + \frac{5t-1}{4}  \lr{ \sin \alpha_{i+1} +  \sin \alpha_{i} }$$
+$$v_\text{max}=\sqrt{3} + \frac{1}{100N} + \vert \delta_i \vert + \vert \delta_{i+1} \vert + \frac{5t-1}{4}  \lr{ \sin \alpha_{i+1} +  \sin \alpha_{i} }$$
 The central flag can rotate upto the height of the polygonal diameter of $v_\text{max}$.  
 Using the Taylor series of sine and the following substitution $x = \frac{\pi}{3} + \phi_i$:
 %sin(x) = \sin a + \cos a (x-a) - \frac{1}{2} \sin a (x-a)^2 - \frac{1}{6} \cos a (x-a)^3
 \begin{eqnarray*}
 2 \sin x &\geq&  2 \left( \sin \frac{\pi}{3} + \cos \frac{\pi}{3} \lr{x - \frac{\pi}{3}}\right.\\
-&& \left.- \frac{1}{2} \sin \frac{\pi}{3} \lr{x - \frac{\pi}{3}}^2 - \frac{1}{6} \cos \frac{\pi}{3} \lr{x - \frac{\pi}{3}}^3\right. \\
-&\geq&2 \lr{ \sin \frac{\pi}{3} + \cos \frac{\pi}{3} \lr{x - \frac{\pi}{3}}}\\
-2 \lr{ \sin \frac{\pi}{3} + \cos \frac{\pi}{3} \lr{x - \frac{\pi}{3}}} &=& \sqrt{3} + \phi_i 
+&& \left.- \frac{1}{2} \sin \frac{\pi}{3} \lr{x - \frac{\pi}{3}}^2 - \frac{1}{6} \cos \frac{\pi}{3} \lr{x - \frac{\pi}{3}}^3\right)\\
+&\geq&2 \sin \frac{\pi}{3} + \cos \frac{\pi}{3} \lr{x - \frac{\pi}{3}}\\
+2  \sin \frac{\pi}{3} + \cos \frac{\pi}{3} \lr{x - \frac{\pi}{3}} &=& \sqrt{3} + \frac{\phi_i}{2} 
 \end{eqnarray*}
 In the inequality above, we bound $2 \sin  \lr{\frac{\pi}{3} + \phi_i}$ from below. 
 We bound $\phi_i$ as follows: 
 \begin{eqnarray*}
-\sqrt{3} + \phi_i  &\leq & 2\sin \lr{ \frac{\pi}{3} + \phi_i }\\
-2\sin \lr{ \frac{\pi}{3} + \phi_i } &\leq&\sqrt{3} + \frac{1}{100N} + 2 \delta_i + \frac{5t-1}{4}  \lr{ \sin \alpha_{i+1} +  \sin \alpha_{i} }\\
+\sqrt{3} + \frac{\phi_i}{2}  &\leq & 2\sin \lr{ \frac{\pi}{3} + \phi_i }\\
+&\leq&\sqrt{3} + \frac{1}{100N} + 2 \delta_i + \frac{5t-1}{4}  \lr{ \sin \alpha_{i+1} +  \sin \alpha_{i} }\\
 &\leq& \sqrt{3} + \frac{1}{100 \frac{5s^\kappa - 1}{2}} + 2 \frac{24}{s^{2\kappa-1}} + \frac{5s^\kappa-1}{2}  \sin \lr{\frac{48}{s^{3\kappa-1}}}\\
 &\iff&\\
-\phi_i &\leq&  \frac{1}{250s^\kappa - 50} +  \frac{48}{s^{2\kappa-1}} + \frac{5s^\kappa-1}{2} \frac{48}{s^{3\kappa-1}} \\
-\phi_i &\leq& \frac{1}{200 s^\kappa} + \frac{48}{s^{2\kappa-1}} + \frac{24\lr{5s^\kappa - 1}}{s^{3\kappa-1}}\\
-\phi_i &\leq& \frac{s^{2\kappa - 1} + 48s^{\kappa - 1}+ 120 s^\kappa}{s^{3\kappa-1}}\\
-\phi_i &\leq& \frac{169}{s^{3\kappa - 1}}
+\phi_i &\leq& 2 \lr{ \frac{1}{250s^\kappa - 50} +  \frac{48}{s^{2\kappa-1}} + \frac{5s^\kappa-1}{2} \frac{48}{s^{3\kappa-1}} }\\
+&\leq& 2 \lr{ \frac{1}{200 s^\kappa} + \frac{48}{s^{2\kappa-1}} + \frac{24\lr{5s^\kappa - 1}}{s^{3\kappa-1}}}\\
+ &\leq& 2 \lr{ \frac{s^{2\kappa - 1} + 48s^{\kappa - 1}+ 120 s^\kappa}{s^{3\kappa-1}}}\\
+&\leq& \frac{338}{s^{3\kappa - 1}}
 \end{eqnarray*}
 Lastly, we show that the horizontal displacement generated by the angle formed, $\omega_i$, by the hinge between the skinny rhombus and the central flag is small.
 \paragraph{\textit{Horizontal Displacement Generated by Rotational Displacement of $\omega_i$}, $\beta_{\alpha_{i+1}}$}
@@ -2952,9 +2969,9 @@ This cannot be, because the adjacent corridors that is left (or right) of $O_{i+
 For small $\omega_i$, i.e. the case where the central flag \textit{is} beneath the skinny rhombus, we bound $\omega_i$ as follows:
 \begin{eqnarray*}
 \frac{\omega_i}{2}&\leq& \omega_i - \frac{\omega_i^3}{6} \\
-\omega_i - \frac{\omega_i^3}{6} &\leq& \sin \omega_i\\
-\sin \omega_i &\leq& \omega_i \\
-\omega_i &\leq& \frac{1}{100N} + 2 \delta_i + \sqrt{3}- 2 \sin \lr{\frac{\pi}{3} + \alpha_{i+1}}\\
+&\leq& \sin \omega_i\\
+&\leq& \omega_i \\
+&\leq& \frac{1}{100N} + 2 \delta_i + \sqrt{3}- 2 \sin \lr{\frac{\pi}{3} + \alpha_{i+1}}\\
 &\leq&+ \frac{1}{5s^\kappa - 1} + \frac{48}{s^{2\kappa - 1}} +\sqrt{3} - 2 \lr{\sin \frac{\pi}{3} + \cos \frac{\pi}{3} \lr{\alpha_{i+1} - \frac{\pi}{3} } }\\
 &\leq&  \frac{s^{\kappa-1} + 192}{4 s^{2\kappa-1}} - \alpha_{i+1} - \frac{\pi}{3} + \frac{\pi}{3}\\
 &\leq& \frac{48}{s^\kappa}
@@ -2971,7 +2988,7 @@ The total absolute displacement caused by $\alpha_{i+1}$, $\phi_i$, and $\omega_
 &\leq& \frac{560 s^{2\kappa - 1} }{s^{3\kappa - 1}}\\
 &\leq& \frac{560  }{s^\kappa }
 \end{eqnarray*}\textbf{Lemma \ref{lem:aux-C} Conclusion.} 
-Reviewing the bounds in the proof of Lemma \ref{lem:aux-C}, the proof suffices by letting $\kappa = 1$.  
+Reviewing the bounds in the proof of Lemma \ref{lem:aux-C}, the proof suffices by letting $\kappa = 3$.  
 We have thus shown that the triple $(\alpha, \beta, \delta)$ for any obstacle hexagon is small and bounded.  
 Therefore the entire modified auxiliary construction in any realization is canonical or close to canonical where the encoded P3SAT information is stable.
 \end{proof}\begin{lem}\label{lem:lePieceDuResistance}

@@ -44,6 +44,9 @@
 \usepackage{float}
 \usepackage{complexity}
 \usepackage{array}
+\newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
 %%CSUN Stuff%%%
 \titlecontents{chapter}
   [0em]
@@ -209,10 +212,6 @@ X_2\right)^{-1}
 \newcommand{\vlr}[1]{\left\vert #1 \right\vert}
 \newcommand{\curlybraces}[1]{\left\lbrace #1 \right\rbrace}
 \newcommand{\BigOh}[1]{O\left( #1 \right)}
-
-\newcolumntype{L}{>{$}l<{$}} 
-\newcolumntype{C}{>{$}c<{$}} 
-\newcolumntype{R}{>{$}r<{$}} 
 %\newcommand{\deg}{\textrm{deg}}
 %\renewcommand{\baselinestretch}{1.0}
 % 1.0 is for one line space, 2.0 is for double-line space, etc
