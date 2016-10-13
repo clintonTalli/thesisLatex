@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  10 OCT 2016 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  11 OCT 2016 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -792,42 +792,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--28
 Underfull \hbox (badness 10000) in paragraph at lines 44--44
 []| 
  []
-
-
-LaTeX Warning: Reference `lem:s1Small' on page iii undefined on input line 49.
-
-
-LaTeX Warning: Reference `lem:disksOfPathways' on page iii undefined on input l
-ine 49.
-
-
-LaTeX Warning: Reference `lem:s1Small' on page iii undefined on input line 49.
-
-
-LaTeX Warning: Reference `lem:disksOfPathways' on page iii undefined on input l
-ine 49.
-
-
-LaTeX Warning: Reference `lem:s1Small' on page iii undefined on input line 50.
-
-
-LaTeX Warning: Reference `lem:s1Small' on page iii undefined on input line 50.
-
-
-LaTeX Warning: Reference `lem:angularArrangement' on page iii undefined on inpu
-t line 51.
-
-
-LaTeX Warning: Reference `lem:angularArrangement' on page iii undefined on inpu
-t line 51.
-
-
-LaTeX Warning: Reference `lem:disksOfPathways' on page iii undefined on input l
-ine 52.
-
-
-LaTeX Warning: Reference `lem:disksOfPathways' on page iii undefined on input l
-ine 52.
 
 )
 \tf@toc=\write5
@@ -1738,78 +1702,40 @@ Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
 ine 3172.
 (pdftex.def)             Requested size: 204.32283pt x 179.61058pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3170--3176
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3170--3181
 []$[]$ 
  []
 
-[48]
+[48] <graphics/part1ch4.pdf, id=753, 133.49875pt x 133.49875pt>
+File: graphics/part1ch4.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `lem:s1Small' on page 49 undefined on input line 3176.
+<use graphics/part1ch4.pdf>
+Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3248.
+(pdftex.def)             Requested size: 286.19078pt x 286.25278pt.
 
-
-
-LaTeX Warning: Reference `lem:disksOfPathways' on page 49 undefined on input li
-ne 3176.
-
-
-LaTeX Warning: Reference `lem:s1Small' on page 49 undefined on input line 3177.
-
-
-
-LaTeX Warning: Reference `lem:disksOfPathways' on page 49 undefined on input li
-ne 3177.
-
-
-LaTeX Warning: Reference `lem:s1Small' on page 49 undefined on input line 3178.
-
-
-<graphics/modifiedContactGraph.pdf, id=753, 217.35605pt x 187.2074pt>
-File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
-
-<use graphics/modifiedContactGraph.pdf>
-Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 3
-184.
-(pdftex.def)             Requested size: 143.09538pt x 123.2516pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3182--3188
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3246--3252
 []$[]$ 
  []
 
-[49 <./graphics/hexagonOutline5LayerSmall.pdf> <./graphics/modifiedContactGraph
-.pdf>]
-
-LaTeX Warning: Reference `lem:angularArrangement' on page 50 undefined on input
- line 3214.
-
-<graphics/Vertebrae.pdf, id=778, 161.0015pt x 64.6415pt>
-File: graphics/Vertebrae.pdf Graphic file (type pdf)
-
-<use graphics/Vertebrae.pdf>
-Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3225.
-(pdftex.def)             Requested size: 286.19078pt x 114.90462pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3223--3229
-[]$[]$ 
- []
-
-
-LaTeX Warning: Reference `lem:disksOfPathways' on page 50 undefined on input li
-ne 3240.
-
-[50 <./graphics/Vertebrae.pdf>]
-<graphics/ch4Paralellogram.pdf, id=794, 707.443pt x 170.52708pt>
+[49 <./graphics/hexagonOutline5LayerSmall.pdf>]
+<graphics/ch4Paralellogram.pdf, id=760, 707.443pt x 170.52708pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3246.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3267.
 
 (pdftex.def)             Requested size: 286.19078pt x 68.98502pt.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3244--3250
-[]$[]$ 
+ (../pdf/cat.bbl
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3265--1
+[]$[]$
  []
 
-(../pdf/cat.bbl [51 <./graphics/ch4Paralellogram.pdf>])
+
+Underfull \hbox (badness 10000) in paragraph at lines 3265--1
+
+ []
+
+[50 <./graphics/part1ch4.pdf>] [51 <./graphics/ch4Paralellogram.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 [52
 
@@ -1819,10 +1745,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17996 strings out of 493089
- 333260 string characters out of 6134841
+ 17987 strings out of 493089
+ 332991 string characters out of 6134841
  507948 words of memory out of 5000000
- 20972 multiletter control sequences out of 15000+600000
+ 20964 multiletter control sequences out of 15000+600000
  64297 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1096b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1847,10 +1773,10 @@ s/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (56 pages, 677499 bytes).
+Output written on ../pdf/cat.pdf (56 pages, 670793 bytes).
 PDF statistics:
- 861 PDF objects out of 1000 (max. 8388607)
- 578 compressed objects within 6 object streams
+ 845 PDF objects out of 1000 (max. 8388607)
+ 565 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 
