@@ -27,62 +27,44 @@ In Figure \ref{fig:verticalDisplacementArgument.pdf}, line segment $\ell$ is a v
 Consider the entire column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement for \textit{one} obstacle hexagon $\vert \delta_v \vert > 0$, where $j=2$, $\cdots$, $u+1$ and $1 < v \leq u+1$.
 % Consider the first $j$ terms for the height of the column of obstacle hexagons and corridors for an arbitrary construction with angular rotation and vertical displacement for \textit{one} obstacle hexagon $\vert \delta_v \vert > 0$, where $j=2$, $\cdots$, $u+1$ and $1 < v \leq j$.
 \begin{eqnarray*}
-\sum_{i=1}^{u+1} \lr{2 \sqrt{3} N \sec \lr{ \alpha_i}} + \vlr{\delta_i - \delta_{i+1}} + u \lr{\frac{1}{100N}+\sqrt{3}} &\leq& (u+1) 2 N \sqrt{3} + u  \lr{\frac{1}{100N}+\sqrt{3}}\\
-2 \sqrt{3} N \sum_{i=1}^{u+1} \sec \lr{ \alpha_i} +  \vlr{\delta_i - \delta_{i+1}} &\leq& (u+1) 2 \sqrt{3} N \\
-\vlr{\delta_i - \delta_{i+1}} &\leq&  2 \sqrt{3} N \lr{(u+1) - \sum_{i=1}^{u+1} \sec \lr{ \alpha_i}}\\
-&\leq& 2 \sqrt{3} N \sum_{i=1}^{u+1} \lr{\frac{\alpha_i}{2}}^2\\
-&\leq&  \sqrt{3} \frac{5s^\kappa - 1}{2} \lr{\frac{286}{s^{2-\kappa}}}^2 (u+1)\\ 
-&\leq& \frac{6 \cdot 286^2 \cdot 13}{s^{4-2\kappa - \lr{\kappa + 1}}}\\
-&\leq&\frac{6380088}{s^{3-\kappa}}
+\sum_{i=1}^{u+1} \left[ \lr{2 \sqrt{3} N \sec \lr{ \alpha_i}} + \vlr{\delta_i - \delta_{i+1}} \right] + u \lr{\frac{1}{100N}+\sqrt{3}} &\leq& (u+1) 2 N \sqrt{3} + u  \lr{\frac{1}{100N}+\sqrt{3}}\\
+2 \sqrt{3} N \sum_{i=1}^{u+1} \sec \lr{ \alpha_i} + \sum_{i=1}^{u+1} \vlr{\delta_i - \delta_{i+1}} &\leq& (u+1) 2 \sqrt{3} N \\
+\vlr{\delta_i - \delta_{i+1}}\leq \sum_{i=1}^{u+1}\vlr{\delta_i - \delta_{i+1}} &\leq&  2 \sqrt{3} N \lr{(u+1) - \sum_{i=1}^{u+1} \sec \lr{ \alpha_i}}\\
+&\leq& 2 \sqrt{3} N \sum_{i=1}^{u+1} \frac{\alpha_i^2}{2}\\
+&\leq&  \sqrt{3} \frac{5s^\kappa - 1}{2} \lr{\frac{288}{s^{2-\kappa}}}^2 (u+1)\\ 
+&\leq& \frac{6 \cdot 288^2 \cdot 13}{s^{-4+2\kappa + \lr{\kappa + 1}}}\\
+&\leq&\frac{6469632}{s^{\kappa-3}}
 \end{eqnarray*}
-	% \begin{eqnarray*}
-	% \sum_{i=1}^j \lr{2 \sqrt{3} N \sec \lr{ \alpha_i}} + \delta_v  + (j-1) \lr{\frac{1}{100N}+\sqrt{3}} &\leq& j \cdot 2 N \sqrt{3} + (j-1) \cdot \lr{\frac{1}{100N}+\sqrt{3}}\\
-	% 2 \sqrt{3} N \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_ v &\leq& j \cdot 2 \sqrt{3} N \\
-	% \sum_{i=1}^j \sec \lr{\alpha_i} + \delta_v &\leq& j\\
-	%  \delta_v &\leq& j- \sum_{i=1}^j \sec \lr{\alpha_i}\\
-	%  \delta_v &\leq& j - \lr{j - \sum_{i=1}^j \frac{\alpha_i^2}{2}}\\
-	% \delta_v &\leq&  \sum_{i=1}^j \frac{\alpha_i^2}{2}
-	% \end{eqnarray*}
-
-% Using Inequalities \ref{eqn:angularSumBound} and \ref{eqn:angularMaxBound}, we derive the following result:
-% $$
-% \begin{array}{rcl}
-% \sum_{i=1}^j \frac{\alpha_i^2}{2} &\leq& \frac{1}{2}\sum_{i=1}^j  \lr{ \frac{2}{s^\kappa} }^2\\
-% &\leq&\frac{1}{2}\cdot  \lr{\frac{2}{s^{\kappa}}}^2 \cdot j\\
-% &\leq&\frac{1}{2}\cdot  \lr{\frac{2}{s^{\kappa}}}^2 \cdot u\\
-% &\leq&\frac{48s}{2s^{2\kappa}}\\
-% &\leq&\frac{24}{s^{2\kappa-1}}\\  
-% \end{array}
 For when $1< j\leq u$, we have the following result:
 \begin{eqnarray*}
-\delta_j &=& \sum_i=1^{j} \lr{\delta_i - \delta_{i+1}}\\
-&\leq&\sum_i=1^{j} \vlr{\delta_i - \delta_{i+1}}\\
-&\leq& \sum_i=1^{u} \vlr{\delta_i - \delta_{i+1}}\\
-&\leq&  \frac{82941144}{s^{2-\kappa}}
+\delta_j &=& \sum_{i=1}^{j} \lr{\delta_i - \delta_{i+1}}\\
+&\leq&\sum_{i=1}^{j} \vlr{\delta_i - \delta_{i+1}}\\
+&\leq& \sum_{i=1}^{u} \vlr{\delta_i - \delta_{i+1}}\\
+&\leq&  \frac{84105216}{s^{\kappa-4}}
 \end{eqnarray*}
 Thus we finally say that the bound for $\delta_j$:
 
 \begin{equation}\label{eqn:verticalBound}
-\delta_j \leq \frac{82941144}{s^{2-\kappa}}\
+\delta_j \leq \frac{84105216}{s^{\kappa-4}}
 \end{equation}
 
 
 \paragraph{\textit{A Refinement of the Angular Rotation Bound on $\alpha$}}
 An obstacle hexagon can have at most a vertical displacement of $\delta_i$.  
-A corridor's height can grow by $2 \delta_i$ should the obstacle below the corridor shift down by $-\delta_i$ and the obstacle above the corridor shift up $\delta_i$.  
+A corridor's height can grow by $\vlr{\delta_i} + \vlr{\delta_{i+1}}$ should the obstacle below the corridor shift down by $-\delta_i$ and the obstacle above the corridor shift up $\delta_{i+1}$.  
 We infer that the largest vertical displacement in any corridor from our vertical bound Inequality \ref{eqn:verticalBound} is:
-$$\delta_i \leq \frac{12}{s^{2\kappa-1}}$$
+$$\vlr{\delta_i} + \vlr{\delta_{i+1}} \leq \frac{168210432}{s^{\kappa-4}}$$
 By incorportating the new vertical bound, we extend the height of the corridor in Inequality \ref{eqn:alphaBound} to refine the bound on $\gamma_i$ and therefore $\alpha$ as such:
 \begin{equation}\label{eqn:alphaBoundRefined}
 \begin{array}{rcl}
-\gamma_i & \leq & \tan^{-1} \lr{\frac{2 \delta_i}
+\gamma_i & \leq & \tan^{-1} \lr{\frac{\vlr{\delta_i - \delta_{i+1}}}
 									 {	\frac{5t -1}{4}	}
 								}\\
-&\leq& \frac{8 \frac{24}{s^{2\kappa-1}}	}
+&\leq& \frac{4 \frac{\frac{6469632}{s^{\kappa-3}}sage}{s^{2\kappa-1}}	}
 			  {	5s^\kappa -1}\\
-&\leq& \frac{ 192 }
-			  {	4s^\kappa	s^{2\kappa-1}} \\
-&\leq& \frac{48}{s^{3\kappa-1}}\\
+&\leq& \frac{ 25878528 }
+			  {	4s^\kappa	s^{\kappa-3}} \\
+&\leq& \frac{6469632}{s^{2\kappa-3}}\\
 \end{array} 
 \end{equation}
 
