@@ -17,55 +17,55 @@ The angular relationships between adjacent vertices may vary; the distance betwe
 
 
 In general, the perturbation $\epsilon$ can modify the realization of a perfect snowflake $S_i$ in the following ways:
-\begin{enumerate}
-\item \textbf{Modification of $S_1$.} 
+
+\textbf{Modification of $S_1$.} 
 
 Given a instance of a perturbed snowflake with $v_0$ having weight $\frac{1}{2} + \epsilon$ where $\epsilon > 0$, vertices neighboring $v_0$ each have a range of placement on the plane when realizaed as a disk arrangement. 
 Figure \ref{fig:modifiedContactGraph} shows a realization of $S_1$ and illustrates one such example of possible gaps, $\epsilon$, that could be created between adjacent disks of $S_1$ in a perfect snowflake.  
 
 Note that (1) the adjacent disks in a perfect snowflake may or may not be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$.  
 
-\begin{lem}\label{lem:s1Small}
-For any realized perturbed snowflake $S_i$, the gaps created in subset $S_1 \subset S_i$ are small.
-\end{lem}
+% \begin{lem}\label{lem:s1Small}
+% For any realized perturbed snowflake $S_i$, the gaps created in subset $S_1 \subset S_i$ are small.
+% \end{lem}
 
-% Figure \ref{fig:modifiedContactGraph.pdf} shows one realization of a perturbed $S_1$.  
-% For any realization of $S_1$, the perturbation $\gamma$ can create gaps, $\epsilon (\gamma)$ between adjacent disks that contact the root disk.  
-\item \textbf{Modification of disk placement corresponding to vertices of $p_k$.}
-We've shown how the disks can be displaced in $S_1$; for larger snowflakes, the displacement can propogate through the remaining disks of the arrangement.  
-The disks can along the paths $p_1$ through $p_6$ may also have displacement as well.  
-In canonical position, the disks along paths $p_1$ through $p_6$ will form angles $\alpha_k =\frac{\pi}{3} $ and $\beta_k=\frac{2\pi}{3}$ (see Figure \ref{fig:PerturbedSpine.pdf} for example).  
-In noncanonical position, the disks along paths $p_1$ through $p_6$ will form angles that may vary.  
+% % Figure \ref{fig:modifiedContactGraph.pdf} shows one realization of a perturbed $S_1$.  
+% % For any realization of $S_1$, the perturbation $\gamma$ can create gaps, $\epsilon (\gamma)$ between adjacent disks that contact the root disk.  
+% \item \textbf{Modification of disk placement corresponding to vertices of $p_k$.}
+% We've shown how the disks can be displaced in $S_1$; for larger snowflakes, the displacement can propogate through the remaining disks of the arrangement.  
+% The disks can along the paths $p_1$ through $p_6$ may also have displacement as well.  
+% In canonical position, the disks along paths $p_1$ through $p_6$ will form angles $\alpha_k =\frac{\pi}{3} $ and $\beta_k=\frac{2\pi}{3}$ (see Figure \ref{fig:PerturbedSpine.pdf} for example).  
+% In noncanonical position, the disks along paths $p_1$ through $p_6$ will form angles that may vary.  
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.33\columnwidth]{graphics/PerturbedSpine.pdf}
-\captionof{figure}{This figure shows a disk arrangement along a path $p_k$ in canoncical position.  Note that perturbation in a snowflake and modify the placement of the disks in such a way that $\alpha_k$ and $\beta_k$ or $\alpha_{k+1}$ and $\beta_{k+1}$ may be of a noncanonical value.}\label{fig:PerturbedSpine.pdf}
-\end{center}
-\end{minipage}
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.33\columnwidth]{graphics/PerturbedSpine.pdf}
+% \captionof{figure}{This figure shows a disk arrangement along a path $p_k$ in canoncical position.  Note that perturbation in a snowflake and modify the placement of the disks in such a way that $\alpha_k$ and $\beta_k$ or $\alpha_{k+1}$ and $\beta_{k+1}$ may be of a noncanonical value.}\label{fig:PerturbedSpine.pdf}
+% \end{center}
+% \end{minipage}
 
-Our goal here is to show that the change of the angular value of $\alpha_k$ and $\beta_k$ are small:
-\begin{lem}\label{lem:angularArrangement}
-For any realized perturbed snowflake $S_i$, the angular value of $\alpha_k$ and $\beta_k$ are small.
-\end{lem}
+% Our goal here is to show that the change of the angular value of $\alpha_k$ and $\beta_k$ are small:
+% \begin{lem}\label{lem:angularArrangement}
+% For any realized perturbed snowflake $S_i$, the angular value of $\alpha_k$ and $\beta_k$ are small.
+% \end{lem}
 
-\item \textbf{Modification of disk placement along corresponding to the $p_{k,j}^\text{th}$ vertex of $S_i$.}  
-For the $\jth$ disk along the $\kth$ path $p_{k,j}^+$ or $p_{k,j}^-$, perturbation can displace the postion of the disk on the plane and the angular relationship of the neighboring disks (see Figure \ref{fig:PerturbedVertebrae.pdf} for example). 
+% \item \textbf{Modification of disk placement along corresponding to the $p_{k,j}^\text{th}$ vertex of $S_i$.}  
+% For the $\jth$ disk along the $\kth$ path $p_{k,j}^+$ or $p_{k,j}^-$, perturbation can displace the postion of the disk on the plane and the angular relationship of the neighboring disks (see Figure \ref{fig:PerturbedVertebrae.pdf} for example). 
 
-\begin{minipage}{\linewidth}
-\begin{center}
-\includegraphics[width=.33\columnwidth]{graphics/PerturbedVertebrae.pdf}
-\captionof{figure}{This illustration the relationship angular relationships between neighboring disks $D_{k,j}$, $D_{k+1,j}$, $D_{k+1,j+1}$, and $D_{k,j+1}$.}\label{fig:PerturbedVertebrae.pdf}
-\end{center}
-\end{minipage}
+% \begin{minipage}{\linewidth}
+% \begin{center}
+% \includegraphics[width=.33\columnwidth]{graphics/PerturbedVertebrae.pdf}
+% \captionof{figure}{This illustration the relationship angular relationships between neighboring disks $D_{k,j}$, $D_{k+1,j}$, $D_{k+1,j+1}$, and $D_{k,j+1}$.}\label{fig:PerturbedVertebrae.pdf}
+% \end{center}
+% \end{minipage}
 
-In this case we will show that the distances between the centers of neighboring disks are small relatively to canonical position of a perfect snowflake, i.e.
-\begin{lem}\label{lem:disksOfPathways}
-For any realized perturbed snowflake $S_i$, the distance between disks $D_{k,j}$, $D_{k+1,j}$, $D_{k+1,j+1}$, and $D_{k,j+1}$ are relatively small with respect to the relative distance in a perfect snowflake where $k = 1$, $\dots$, $6$ and $j = 2$, $\dots$, $i$.
-\end{lem}
-\end{enumerate} 
+% In this case we will show that the distances between the centers of neighboring disks are small relatively to canonical position of a perfect snowflake, i.e.
+% \begin{lem}\label{lem:disksOfPathways}
+% For any realized perturbed snowflake $S_i$, the distance between disks $D_{k,j}$, $D_{k+1,j}$, $D_{k+1,j+1}$, and $D_{k,j+1}$ are relatively small with respect to the relative distance in a perfect snowflake where $k = 1$, $\dots$, $6$ and $j = 2$, $\dots$, $i$.
+% \end{lem}
+% \end{enumerate} 
 
-We will show the proofs of Lemmas \ref{lem:s1Small} through \ref{lem:disksOfPathways} later on.
+% We will show the proofs of Lemmas \ref{lem:s1Small} through \ref{lem:disksOfPathways} later on.
 
 
 % In Figure \ref{fig:modifiedContactGraph.pdf}, we have a realization of disk arrangement from a perturbed snowflake.
