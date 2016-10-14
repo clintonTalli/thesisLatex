@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.18)  12 OCT 2016 20:23
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  11 OCT 2016 17:50
->>>>>>> f4558193f8cfce30124ee2579baa41fa31428b0f
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.18)  14 OCT 2016 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1114,15 +1110,16 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 6--12
 []$[]$ 
  []
 
-[18]
+[18 <./graphics/someRangeSkinny.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 27.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
- [19 <./graphics/someRangeSkinny.pdf>] [20]
-<graphics/betaOmegaFigure.pdf, id=371, 751.93924pt x 309.3156pt>
+ [19]
+<graphics/betaOmegaFigure.pdf, id=368, 751.93924pt x 309.3156pt>
 File: graphics/betaOmegaFigure.pdf Graphic file (type pdf)
 
 <use graphics/betaOmegaFigure.pdf>
@@ -1133,14 +1130,14 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 102--108
 []$[]$ 
  []
 
-[21 <./graphics/betaOmegaFigure.pdf>]) (./ch3/lemma5Conclusion.tex)
-(./ch3/theoremConclusion.tex [22]
+[20 <./graphics/betaOmegaFigure.pdf>]) (./ch3/lemma5Conclusion.tex)
+(./ch3/theoremConclusion.tex [21]
 
-LaTeX Warning: Reference `thm:hinge2' on page 23 undefined on input line 52.
+LaTeX Warning: Reference `thm:hinge2' on page 22 undefined on input line 52.
 
-)) (../pdf/Ch3.bbl [23])
+)) (../pdf/Ch3.bbl [22])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[24
+[23
 
 ] (../pdf/Ch3.aux)
 
@@ -1150,7 +1147,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  17769 strings out of 493029
  324120 string characters out of 6136234
- 507498 words of memory out of 5000000
+ 506498 words of memory out of 5000000
  20818 multiletter control sequences out of 15000+600000
  43714 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1172,10 +1169,10 @@ dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Ch3.pdf (28 pages, 372660 bytes).
+Output written on ../pdf/Ch3.pdf (27 pages, 372545 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
+ 432 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
