@@ -3029,15 +3029,9 @@ We know the P3SAT is NP-hard \cite{lichtenstein1982planar} and by Lemma \ref{lem
 
 \chapter{Realizability Problems for Weighted Trees}\label{chp:disk}
 
-In this chapter our goal is to prove Theorem \ref{thm:disk} which states: ``It is NP-Hard to decide whether a given tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.''  
+In this chapter our goal is to prove Theorem \ref{thm:disk}: It is NP-Hard to decide whether a given tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.   
 This chapter's approach to proving Theorem \ref{thm:disk} introduces an ordered weighted tree $T$ and perturbed ordered weight tree $T_\epsilon$, the Hausdorff distance, and then prove the following lemma:
-\begin{lem}\label{lem:ch4IntroLemma}
-for ever $\epsilon > 0$, there exists an ordered weighted tree $T_\epsilon$ such that every realization of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights.
-\end{lem} 
-Using Lemma \ref{lem:ch4IntroLemma}, we prove Theorem \ref{thm:disk} by extending the modified auxiliary construction in Chapter \ref{chapter:polygonalLinkage}.  
 
-We first cover the preliminary concepts of Hausdorff distance and the ordered weighted tree families of $T$ and $T_\epsilon$.  
-We then continue with the proof of Lemma \ref{lem:ch4IntroLemma} and Theorem \ref{thm:disk}.  
 \section{Hausdorff Distance}  
 Let $A$ and $B$ be sets in the plane. The \textit{directed Hausdorff distance} is: 
 \begin{equation}\label{eqn:ContactGraphV3-1}
@@ -3059,24 +3053,30 @@ From this, it is possible to calculate the Hausdorff distance between $X$ and $Y
 \end{minipage}
 
 \paragraph{$\epsilon$-approximation}
-% Modeling the logic engine with polygonal linkages requires reflected copies of the
-% rectangles. For an oriented realization, we use a different technique in Section 3. The
-% above proof can be adapted to the realization of contact trees of disks by approximating
-% rectangles with disk arrangements. In this context, we say that a weighted graph G is a
-% ε-approximation of a polygon P if G is realizable as a contact graph of disks of given
-% radii, and in every such realization, the Hausdorff distance between the union of disks
-% and a congruent copy of P is at most ε. A weighted graph G is a stable ε-approximation
-% if, in addition, for every two such realizations of G, the distance between the centers of
-% the corresponding disks is at most ε after a suitable rigid transformation.
 The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most epsilon.  
 A weighted graph $G$ is said to be a \textit{$\BigOh{f(x)}$-approximation} of a polygon P if there is a positive constant $M$ such that for all sufficiently large values of $x$ the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at $M \cdot \vert f(x)\vert$. 
 A weighted graph $G$ is said to be a \textit{stable} if it has the property that for every two such realizations of $G$, the distance between the centers of the corresponding disks is at most $\epsilon$ after a suitable rigid transformation.
 
-An example of an $\epsilon$-approximation .....
+Suppose we have a unit disk $U$ and we have a grid overlayed on the disk with side length $\delta$.  
+Let $S_1(\delta)$ be the the union of squares formed by the grid found completely in the interior of the disk $U$.  
+Let $S_2(\delta)$ be the union of squares formed by the grid with some point of the boundary of the square contained in the interior of disk $U$.  
+The Hausdorff distance of $U$ and $S_1(\delta)$ is at most $H\lr{S_1(\delta), U}=\sqrt{2}\delta$.  
+Similarly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}=\sqrt{2}\delta$.
+Thus for any $\epsilon>0$  choose a $\delta$ such that $\sqrt{2}\delta \leq \epsilon$.  
+Similiaryly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}=\sqrt{2}\delta$.
 
 \begin{prob}[Appoximating Polygonal Shapes with Contact Graphs]\label{problem:ApproxShapesWithContactGraphs}
 For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
-\end{prob}\section{Weight Trees $T_k$}
+\end{prob}
+
+
+\begin{lem}\label{lem:ch4IntroLemma}
+for ever $\epsilon > 0$, there exists an ordered weighted tree $T_\epsilon$ such that every realization of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights.
+\end{lem} 
+Using Lemma \ref{lem:ch4IntroLemma}, we prove Theorem \ref{thm:disk} by extending the modified auxiliary construction in Chapter \ref{chapter:polygonalLinkage}.  
+
+We first cover the preliminary concepts of Hausdorff distance and the ordered weighted tree families of $T$ and $T_\epsilon$.  
+We then continue with the proof of Lemma \ref{lem:ch4IntroLemma} and Theorem \ref{thm:disk}.  \section{Weight Trees $T_k$}
 In this section we describe a particular family of unit weight trees and corresponding contact graphs disk arrangements called \textit{snowflakes}.  
 Note that we regard snowflakes with unit weight as a weight of $\frac{1}{2}$.  
 For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
@@ -3130,78 +3130,131 @@ p_4 &=& \set{a \cdot \lr{-1,0} = \vec{v}}{a \in \bbR^+}\\
 p_5 &=& \set{a \cdot \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}  = \vec{v}}{a \in \bbR^+}\\
 p_6 &=& \set{ a\cdot \lr{1,0} - a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}}= a \cdot \lr{\frac{1}{2}, -\frac{\sqrt{3}}{2}}}{a \in \bbR^+} 
 \end{eqnarray*}
-For $S_i$ there exists $i$ vertices on each path.  
-We shall denote the $i^\text{th}$ vertex on the $j^\text{th}$ path as $v_{j,i}$.  
+For $S_i$ there exists $i$ vertices on each path.  We shall denote the $\ith$ vertex on the $\jth$ path as $v_{j,i}$.  
 For each path defined above, the paths are defined as a set of vectors, $\vec{v} = a \cdot \vec{p}$  for some $a \in \bbR^+$ and $\vec{p} \in \bbR^2$.  
 By setting $a = 1,2,\dots, i$, we obtain points that are contained in $V$.  
-For $j = 1,3,5$ and $l = 1,..., i$, there exists two paths attached to each vertex $v_{j,l}$.  
+For $j = 1$, $3$, $5$ and $l = 3 b \leq i$ where $b \in \bbN$,  there exists two paths attached to each vertex $v_{j,l}$.  
 We borrow the term \textit{petiole} from botany to describe the two paths attached to $v_{j,l}$.  
 In botany, the stalk that attaches to a stem of a plant is called a petiole; petioles usually have leaves attached to their ends.  
-For $S_i$, each petiole attached to the $k^\text{th}$ vertex of $p_j$, there are $i-k$ vertices.  
-We will need to show that each of the $i-k$ vertices on each corresponding path are also in $V$.  
+For $S_i$, each petiole attached to the $k^\text{th}$ vertex of $p_j$, there are $i-k$ vertices. 
+For each vertex $v$ on a petiole, which is not in the paths $p_1$, $p_3$, or $p_5$, there are two \textit{leafs} on either side of the vertex; each leaf is a vertex that has an edge with $v$.  
+The one exception to the two leafs rule is on the first vertex of the petiole off of $p_1$, $p_3$, or $p_5$.  
+In this exception, attach one leaf to the side of the vertex that is closest to center vertex $v_0$.
 
 The triangular lattice is symmetric under rotation about $v_0$ by $\frac{\pi}{3}$ radians.  
-For each vertex $v_{1,l}$ for $l=1,2,\dots, i-k$, we place two petioles from it; the first petiole $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these petioles $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  
+For each vertex $v_{1,l}$ and $l = 3 b \leq i$ where $b \in \bbN$, we place two petioles from it; the first petiole $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these petioles $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  
 With respect to $v_{1,l}$, one unit along $p_{1,l}^+$ is a point on the triangular lattice and similarly so on $p_{1,l}^-$.  
 Continuing the walk along these paths, unit distance-by-unit distance, we obtain the next point corresponding point on the the triangular lattice up to $i-k$ distance away from $v_{1,l}$.  
-This shows that each of the $i-k$ vertices on $p_{1,l}^-$ and $p_{1,l}^+$ are in $V$.  
+Without loss of generality, for each each vertex $v$ of the petiole which are not in $p_1$ have two associated leaf nodes $v^+$ and $v^-$; $v^+$ is placed $\frac{\pi}{3}$ and one unit above $v$ and $v^-$ is placed $\frac{-\pi}{3}$ and one unit below $v$.  
+Thus all leaf nodes are in the triangular lattics.
+This shows that each of the $i-k$ vertices on $p_{1,l}^-$, $p_{1,l}^+$, and leafs are in $V$.
 By rotating all of the paths along $p_1$ by $\frac{2\pi}{3}$ and $\frac{4\pi}{3}$, we obtain the the paths along $p_3$ and $p_5$ respectively, completing the construction.
 
-In Figure \ref{fig:hexagonOutline5LayerSmall.pdf}, we have a set of unit radius disks arranged in a manner that outlines regular, concentric hexagons.
+In Figure \ref{fig:hexagonPetiolesLeafs9Layers.pdf}, we have a set of unit radii disks arranged in a manner that outlines the perfectly weighted snowflake description above.
 
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/hexagonOutline5LayerSmall.pdf}
-\captionof{figure}{A contact graph that resembles the shape of concentric hexagons.}\label{fig:hexagonOutline5LayerSmall.pdf}
+\includegraphics{graphics/hexagonPetiolesLeafs9Layers.pdf}
+\captionof{figure}{A contact graph that resembles the shape of concentric hexagons.}\label{fig:hexagonPetiolesLeafs9Layers.pdf}
 \end{center}
 \end{minipage}
-
+Given a snowflake in arbirary position with $n$ unit segments per arm, the arms of the snowflake has a maximal length of $n$, end to end, if in canonical position; otherwise, the arm will have an end to end length less than $n$ (See Figure \ref{fig:LineSegmentDelta.pdf}).  
+The arm of a snowflake in arbitrary position corresponds to a compression and shift of vertices.  
 
 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.95\columnwidth]{graphics/LineSegmentDelta.pdf}
-\captionof{figure}{}\label{fig:LineSegmentDelta.pdf}
+\captionof{figure}{The polyline at the bottom represents a snowflake arm in canonical position.  The polyline above represents a snowflake arm in non-canonical position.}\label{fig:LineSegmentDelta.pdf}
 \end{center}
 \end{minipage}
+
+We will show for any $\epsilon >0$ and arbitrary position of vertices, the placement of vertices is close to canonical position.  
+In order to show this, we show the components of a perturbed snowflake in arbitrary position  are close to canonical position.  
+The argument comprises of three parts: (1) Showing that the pertubation of $S_1$ is small, (2) show that the displacement along the arms for all $S_i$ for $i \geq 1$ is small, and (3) show that the displacement along the petioles is small.  
+
+\paragraph{Displacement on $S_1$ is small.}
+Suppose we are given an ordered weighted tree $T_\epsilon$ such that the corresponding disk arrangement is a perturbed $S_1$.  
+In a perfect snowflake of $S_1$ the six disks around the central disk kiss each other.  
+The angle formed from the center of the central disk to the centers of any two adjacent disks is $\frac{\pi}{3}$.  
+The side lengths of the equalateral triangle formed by the centers of three adjacent disks, one of which is the central disk, is $2r$.  
+For a perturbed $S_1$ the the central disk is weighted $r+ \epsilon$.  
+This can yield a change of angular displacement from $\frac{\pi}{3}$ to $\frac{\pi}{3} + 2\chi$.  
+To find the bounds of how large or small $\chi$ can be, we show the trigonometric relation of the half angle of the triangle corresponding to three adjacent disks (See Figure \ref{fig:part1ch4.pdf}):
 \begin{eqnarray*}
-\sin \lr{\frac{\pi}{6} - \chi} &=& \frac{1}{2+\psi}\\
-\sin \frac{\pi}{6} \cos \chi &=& \frac{1}{2+\psi} + \cos \frac{\pi}{6} \sin \chi\\
+\sin \lr{\frac{\pi}{6} - \chi} &=& \frac{1}{2r+\epsilon}\\
+\sin \frac{\pi}{6} \cos \chi &=& \frac{1}{2r+\epsilon} + \cos \frac{\pi}{6} \sin \chi\\
 &\iff&\\
 \frac{1}{2} &\geq& \frac{1}{2} \cos \chi \\
-&=& \frac{1}{2+\psi} + \frac{\sqrt{3}}{2} \sin \chi\\
-&\geq& \frac{1}{2+\psi} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}\\
+&=& \frac{1}{2r+\epsilon} + \frac{\sqrt{3}}{2} \sin \chi\\
+&\geq& \frac{1}{2r+\epsilon} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}\\
 &\iff&\\
-\frac{1}{2}-\frac{1}{2+\psi} &\geq& \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} \qquad \text{if }\chi < 1\\
-\frac{\psi}{2 ( 2 + \psi)} &\geq&  \frac{5\sqrt{3}}{12} \chi\\
-\frac{3 \psi}{5\sqrt{3}}=\frac{12}{5\sqrt{3}} \frac{\psi}{4} &\geq& \chi
+\frac{1}{2}-\frac{1}{2r+\epsilon} &\geq& \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} \qquad \text{if }\chi < 1\\
+\frac{2r + \epsilon - 2}{2 ( 2 + \epsilon)} &\geq&  \frac{5\sqrt{3}}{12} \chi\\
+&&\text{for $r=1$}\\
+\frac{3 \epsilon}{5\sqrt{3}}=\frac{12}{5\sqrt{3}} \frac{\epsilon}{4} &\geq& \chi
 \end{eqnarray*}
 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.20\columnwidth]{graphics/part1ch4.pdf}
-\captionof{figure}{}\label{fig:part1ch4.pdf}
+\captionof{figure}{This figure depicts a triangle corresponding to the center of the central disk and two adjacent disks.}\label{fig:part1ch4.pdf}
 \end{center}
 \end{minipage}
-\begin{eqnarray*}
-\sin \lr{\frac{\pi}{6}- \chi} &=& \frac{1}{2+ \psi}\\
-\sin \frac{\pi}{6} \cos \chi - \cos \frac{\pi}{6} \sin \chi &=& = \frac{1}{2+\psi}\\
-\frac{1}{2} \cos \chi - \frac{\sqrt{3}}{2} \sin \chi &=& \frac{1}{2+\psi}\\
-&\geq& \frac{1}{2+\psi} + \frac{\sqrt{3}}{2} \chi - \frac{\sqrt{3}}{12} \chi^3 \\
-\frac{1}{2} &\geq&  \frac{1}{2+\psi} + \frac{\sqrt{3}}{4} \chi\\
-\end{eqnarray*}
 
-$$\frac{\psi}{4} \geq \frac{\psi}{2 (2 + \psi)}\geq \frac{\sqrt{3}}{4} \chi\iff \frac{\psi}{\sqrt{3}} \geq \chi$$
-
-$$\frac{\pi}{3} - 2 \chi = \lambda_\text{min} \leq \lambda \leq \lambda_\text{max} = \frac{\pi}{3} + 10 \chi$$
-
+For any $\epsilon > 0$, the bounds for angular displacement formed at the center of the central disk and two adjacent disks is:
+$$ \frac{\pi}{3} - \frac{6 \epsilon}{5\sqrt{3}} \leq \frac{\pi}{3} - 2 \chi = \lambda_\text{min} \leq \lambda \leq \lambda_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{6 \epsilon}{5\sqrt{3}}$$
+\paragraph{Displacement on the arms is small.}
+To show that the angluar displacement along the arm is small, we extend the angular argument on the perturbed $S_1$ and by induction, show that it is small for all $i$.  
 
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=.66\columnwidth]{graphics/ch4Paralellogram.pdf}
-\captionof{figure}{}\label{fig:ch4Paralellogram.pdf}
+\includegraphics[width=.5\columnwidth]{graphics/Vertebrae.pdf}
+\captionof{figure}{An arm depicted at the $\ith$ and $(i+1)^\text{st}$ vertex.}\label{fig:Vertebrae.pdf}
 \end{center}
 \end{minipage}
+
+Denote the angles on the concave side of the $\ith$ vertex as $\alpha_i$ and $\beta_i$ and the convex side of the $(i+1)^\text{st}$ vertex as $\gamma_i$ and $\delta_i$ respectively (see Figure \ref{fig:Vertebrae.pdf} for reference). 
+
+For any vertex, the sum of angles about the vertex is $2 \pi$, e.g.:
+$$\gamma_i + \delta_i + \alpha_{i+1} + \beta_{i+1} = 2 \pi$$ 
+
+Suppose we numbered the the disks about the central disk 1 through 6.  
+Without loss of generality, the angles $\alpha_0$ and $\beta_0$ correspond to the angles formed between the central angle, disks $i$ and $i+1$ and disks $i+1$ and $i+2$ respectively, for $i = 1,2,3$.  
+The bounds for $\alpha_0$ and $\beta_0$ are the same as $\lambda$ in the earlier argument, i.e.:
+$$
+\begin{array}{rcccl}
+\frac{\pi}{3} - \frac{6 \epsilon}{5\sqrt{3}} &\leq& \alpha_0 &\leq& \frac{\pi}{3} + \frac{6 \epsilon}{5\sqrt{3}}\\
+\frac{\pi}{3} - \frac{6 \epsilon}{5\sqrt{3}} &\leq& \beta_0 &\leq& \frac{\pi}{3} + \frac{6 \epsilon}{5\sqrt{3}}\\
+\end{array}
+$$
+
+We know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{12\epsilon}{5\sqrt{3}}.$
+We also know that in canonical position:
+$$ 
+\begin{array}{rcl}
+\pi &=& \alpha_0 + \gamma_0 \\
+\pi &=& \beta_0 + \delta_0
+\end{array}
+$$
+Together, we have the following result:
+\begin{eqnarray*}{rcl}
+2\pi &=& \alpha_0 + \gamma_0 + \beta_0 + \delta_0\\
+2\pi &=& \alpha_0 + \gamma_0 + \lr{2\pi - \alpha_1 - \beta_1}\\
+\alpha_1 + \beta_1&=&\alpha_0 + \gamma_0 \\
+&\leq& \frac{2\pi}{3} + \frac{12\epsilon}{5\sqrt{3}}\\
+\end{eqnarray*}
+\paragraph{Displacement on the petioles is small.}
+
+
+
+
+
+
+
+
+
+
 \bibliographystyle{plain}
 \bibliography{WorkCited}
 \end{document}

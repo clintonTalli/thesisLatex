@@ -20,21 +20,27 @@ From this, it is possible to calculate the Hausdorff distance between $X$ and $Y
 \end{minipage}
 
 \paragraph{$\epsilon$-approximation}
-% Modeling the logic engine with polygonal linkages requires reflected copies of the
-% rectangles. For an oriented realization, we use a different technique in Section 3. The
-% above proof can be adapted to the realization of contact trees of disks by approximating
-% rectangles with disk arrangements. In this context, we say that a weighted graph G is a
-% ε-approximation of a polygon P if G is realizable as a contact graph of disks of given
-% radii, and in every such realization, the Hausdorff distance between the union of disks
-% and a congruent copy of P is at most ε. A weighted graph G is a stable ε-approximation
-% if, in addition, for every two such realizations of G, the distance between the centers of
-% the corresponding disks is at most ε after a suitable rigid transformation.
 The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most epsilon.  
 A weighted graph $G$ is said to be a \textit{$\BigOh{f(x)}$-approximation} of a polygon P if there is a positive constant $M$ such that for all sufficiently large values of $x$ the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at $M \cdot \vert f(x)\vert$. 
 A weighted graph $G$ is said to be a \textit{stable} if it has the property that for every two such realizations of $G$, the distance between the centers of the corresponding disks is at most $\epsilon$ after a suitable rigid transformation.
 
-An example of an $\epsilon$-approximation .....
+Suppose we have a unit disk $U$ and we have a grid overlayed on the disk with side length $\delta$.  
+Let $S_1(\delta)$ be the the union of squares formed by the grid found completely in the interior of the disk $U$.  
+Let $S_2(\delta)$ be the union of squares formed by the grid with some point of the boundary of the square contained in the interior of disk $U$.  
+The Hausdorff distance of $U$ and $S_1(\delta)$ is at most $H\lr{S_1(\delta), U}=\sqrt{2}\delta$.  
+Similarly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}=\sqrt{2}\delta$.
+Thus for any $\epsilon>0$  choose a $\delta$ such that $\sqrt{2}\delta \leq \epsilon$.  
+Similiaryly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}=\sqrt{2}\delta$.
 
 \begin{prob}[Appoximating Polygonal Shapes with Contact Graphs]\label{problem:ApproxShapesWithContactGraphs}
 For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
 \end{prob}
+
+
+\begin{lem}\label{lem:ch4IntroLemma}
+for ever $\epsilon > 0$, there exists an ordered weighted tree $T_\epsilon$ such that every realization of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights.
+\end{lem} 
+Using Lemma \ref{lem:ch4IntroLemma}, we prove Theorem \ref{thm:disk} by extending the modified auxiliary construction in Chapter \ref{chapter:polygonalLinkage}.  
+
+We first cover the preliminary concepts of Hausdorff distance and the ordered weighted tree families of $T$ and $T_\epsilon$.  
+We then continue with the proof of Lemma \ref{lem:ch4IntroLemma} and Theorem \ref{thm:disk}.  

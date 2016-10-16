@@ -7,4 +7,7 @@
 \contentsline {section}{\numberline {1.2}Weight Trees $T_k$}{2}
 \contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{2}
 \contentsline {subsection}{\numberline {1.2.1}Perturbed Weighted Trees $T_\epsilon $}{4}
+\contentsline {paragraph}{Displacement on $S_1$ is small.}{5}
+\contentsline {paragraph}{Displacement on the arms is small.}{6}
+\contentsline {paragraph}{Displacement on the petioles is small.}{7}
 \contentsfinish 

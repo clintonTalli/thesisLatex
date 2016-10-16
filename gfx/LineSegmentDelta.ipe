@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.6">
-<info created="D:20161014074406" modified="D:20161014074410"/>
+<info created="D:20161014074406" modified="D:20161016132139"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -310,10 +310,6 @@ h
 4672 2640 m
 4701.52 2652.34 l
 </path>
-<path matrix="1 0 0 1 344.493 -42.8159" stroke="black">
-4672 2640 m
-4701.52 2652.34 l
-</path>
 <use matrix="1 0 0 1 0 -48" name="mark/disk(sx)" pos="4672 2640" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 0 -48" name="mark/disk(sx)" pos="4701.52 2652.34" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 0 -48" name="mark/disk(sx)" pos="4729.09 2636.1" size="normal" stroke="black"/>
@@ -327,7 +323,6 @@ h
 <use matrix="1 0 0 1 0 -48" name="mark/disk(sx)" pos="4957.45 2620.5" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 0 -48" name="mark/disk(sx)" pos="4986.97 2632.84" size="normal" stroke="black"/>
 <use matrix="1 0 0 1 0 -48" name="mark/disk(sx)" pos="5016.49 2645.18" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 0 -48" name="mark/disk(sx)" pos="5046.01 2657.52" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="4672 2560" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="4704 2560" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="4736 2560" size="normal" stroke="black"/>
@@ -341,5 +336,57 @@ h
 <use name="mark/disk(sx)" pos="4992 2560" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="5024 2560" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="5056 2560" size="normal" stroke="black"/>
+<path stroke="black" dash="dashed">
+4672 2592 m
+4672 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4701.52 2604.34 m
+4704 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4729.09 2588.1 m
+4736 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4756.66 2571.86 m
+4768 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4786.18 2584.2 m
+4800 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4813.75 2567.96 m
+4832 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4843.27 2580.3 m
+4864 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4872.79 2592.64 m
+4896 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4902.31 2604.98 m
+4928 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4929.88 2588.74 m
+4960 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4957.45 2572.5 m
+4992 2560 l
+</path>
+<path stroke="black" dash="dashed">
+4986.97 2584.84 m
+5024 2560 l
+</path>
+<path stroke="black" dash="dashed">
+5016.49 2597.18 m
+5056 2560 l
+</path>
 </page>
 </ipe>
