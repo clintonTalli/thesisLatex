@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 OCT 2016 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 OCT 2016 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1691,16 +1691,16 @@ File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/snowflakeOutline5LayerSmall.pdf>
 Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
- line 3094.
+ line 3095.
 (pdftex.def)             Requested size: 189.7685pt x 166.83287pt.
 
 
 LaTeX Warning: Reference `fig:hexagonOutline5LayerSmall.pdf' on page 47 undefin
-ed on input line 3095.
+ed on input line 3096.
 
 
 LaTeX Warning: Reference `fig:hexagonOutline5LayerSmall.pdf' on page 47 undefin
-ed on input line 3095.
+ed on input line 3096.
 
 [47 <./graphics/snowflakeOutline5LayerSmall.pdf>]
 <graphics/hexagonPetiolesLeafs9Layers.pdf, id=749, 388.79253pt x 339.79948pt>
@@ -1708,10 +1708,10 @@ File: graphics/hexagonPetiolesLeafs9Layers.pdf Graphic file (type pdf)
 
 <use graphics/hexagonPetiolesLeafs9Layers.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9Layers.pdf used on input
- line 3157.
+ line 3158.
 (pdftex.def)             Requested size: 388.79156pt x 339.79865pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3155--3163
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3156--3164
 []$[]$
  []
 
@@ -1719,11 +1719,11 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3155--3163
 File: graphics/LineSegmentDelta.pdf Graphic file (type pdf)
 
 <use graphics/LineSegmentDelta.pdf>
-Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 3167.
+Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 3168.
 
 (pdftex.def)             Requested size: 411.93767pt x 52.92917pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3165--3171
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3166--3172
 []$[]$ 
  []
 
@@ -1732,10 +1732,10 @@ df>] <graphics/part1ch4.pdf, id=763, 133.49875pt x 133.49875pt>
 File: graphics/part1ch4.pdf Graphic file (type pdf)
 
 <use graphics/part1ch4.pdf>
-Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3200.
+Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3201.
 (pdftex.def)             Requested size: 86.72267pt x 86.72629pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3198--3204
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3199--3205
 []$[]$ 
  []
 
@@ -1743,16 +1743,17 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3198--3204
 File: graphics/Vertebrae.pdf Graphic file (type pdf)
 
 <use graphics/Vertebrae.pdf>
-Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3212.
+Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3213.
 (pdftex.def)             Requested size: 216.81pt x 87.04817pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3210--3216
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3211--3217
 []$[]$ 
  []
 
-[50 <./graphics/part1ch4.pdf>] (../pdf/cat.bbl [51 <./graphics/Vertebrae.pdf>])
+[50 <./graphics/part1ch4.pdf>] [51 <./graphics/Vertebrae.pdf>] (../pdf/cat.bbl
+[52])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[52
+[53
 
 ] (../pdf/cat.aux)
 
@@ -1764,10 +1765,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18015 strings out of 493089
- 333578 string characters out of 6134841
+ 18014 strings out of 493089
+ 333539 string characters out of 6134841
  506948 words of memory out of 5000000
- 20991 multiletter control sequences out of 15000+600000
+ 20990 multiletter control sequences out of 15000+600000
  70533 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1096b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1792,10 +1793,10 @@ s/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (56 pages, 723377 bytes).
+Output written on ../pdf/cat.pdf (57 pages, 725728 bytes).
 PDF statistics:
- 859 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
+ 862 PDF objects out of 1000 (max. 8388607)
+ 571 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

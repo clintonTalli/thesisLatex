@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 OCT 2016 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  16 OCT 2016 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -860,18 +860,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
 
 [1
 
- <./graphics/HausdorffDistanceExample1.pdf>]
-
-LaTeX Warning: Reference `thm:disk' on page 2 undefined on input line 43.
-
-
-LaTeX Warning: Reference `chapter:polygonalLinkage' on page 2 undefined on inpu
-t line 43.
-
-
-LaTeX Warning: Reference `thm:disk' on page 2 undefined on input line 46.
-
-) (./ch4/WeightedTreeFamily.tex
+ <./graphics/HausdorffDistanceExample1.pdf>]) (./ch4/WeightedTreeFamily.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 6.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -954,8 +943,14 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 50--56
 []$[]$ 
  []
 
-[6 <./graphics/part1ch4.pdf> <./graphics/Vertebrae.pdf>])) (../pdf/Ch4.bbl
-[7]
+[6 <./graphics/part1ch4.pdf> <./graphics/Vertebrae.pdf>]) (./ch4/finale.tex
+
+LaTeX Warning: Reference `thm:disk' on page 7 undefined on input line 14.
+
+
+LaTeX Warning: Reference `thm:disk' on page 7 undefined on input line 19.
+
+)) (../pdf/Ch4.bbl [7]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
@@ -973,10 +968,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17532 strings out of 493089
- 319284 string characters out of 6134841
+ 17537 strings out of 493089
+ 319322 string characters out of 6134841
  505948 words of memory out of 5000000
- 20572 multiletter control sequences out of 15000+600000
+ 20574 multiletter control sequences out of 15000+600000
  41517 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,59p,434b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -995,7 +990,7 @@ mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015
 /fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on ../pdf/Ch4.pdf (12 pages, 212242 bytes).
+Output written on ../pdf/Ch4.pdf (12 pages, 214793 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  102 compressed objects within 2 object streams

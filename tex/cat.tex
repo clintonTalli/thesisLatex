@@ -3030,7 +3030,7 @@ We know the P3SAT is NP-hard \cite{lichtenstein1982planar} and by Lemma \ref{lem
 \chapter{Realizability Problems for Weighted Trees}\label{chp:disk}
 
 In this chapter our goal is to prove Theorem \ref{thm:disk}: It is NP-Hard to decide whether a given tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.   
-This chapter's approach to proving Theorem \ref{thm:disk} introduces an ordered weighted tree $T$ and perturbed ordered weight tree $T_\epsilon$, the Hausdorff distance, and then prove the following lemma:
+This chapter's approach to proving Theorem \ref{thm:disk} introduces an ordered weighted tree $T$ and perturbed ordered weight tree $T_\epsilon$, the Hausdorff distance, and then prove a lemma which shows that hexagons can be approximated by an ordered disk contact graph corresponding to the weighted tree $T_\epsilon$.
 
 \section{Hausdorff Distance}  
 Let $A$ and $B$ be sets in the plane. The \textit{directed Hausdorff distance} is: 
@@ -3065,20 +3065,21 @@ Similarly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(
 Thus for any $\epsilon>0$  choose a $\delta$ such that $\sqrt{2}\delta \leq \epsilon$.  
 Similiaryly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}=\sqrt{2}\delta$.
 
-\begin{prob}[Appoximating Polygonal Shapes with Contact Graphs]\label{problem:ApproxShapesWithContactGraphs}
-For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
-\end{prob}
+% \begin{prob}[Appoximating Polygonal Shapes with Contact Graphs]\label{problem:ApproxShapesWithContactGraphs}
+% For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
+% \end{prob}
 
 
 \begin{lem}\label{lem:ch4IntroLemma}
-for ever $\epsilon > 0$, there exists an ordered weighted tree $T_\epsilon$ such that every realization of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights.
+For every $\epsilon > 0$, there exists an ordered weighted tree $T_\epsilon$ and regular hexagon such that every realization of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon such that the Hausdorff distance is less than $\epsilon$.
 \end{lem} 
-Using Lemma \ref{lem:ch4IntroLemma}, we prove Theorem \ref{thm:disk} by extending the modified auxiliary construction in Chapter \ref{chapter:polygonalLinkage}.  
+% Using Lemma \ref{lem:ch4IntroLemma}, we prove Theorem \ref{thm:disk} by extending the modified auxiliary construction in Chapter \ref{chapter:polygonalLinkage}.  
 
-We first cover the preliminary concepts of Hausdorff distance and the ordered weighted tree families of $T$ and $T_\epsilon$.  
-We then continue with the proof of Lemma \ref{lem:ch4IntroLemma} and Theorem \ref{thm:disk}.  \section{Weight Trees $T_k$}
+\textbf{Lemma \ref{lem:ch4IntroLemma} can be generalized in three different ways: (1) if all weights are equal, order does not matter, (2)
+if $\dots$, and (3) $\dots$.}
+\section{Weighted Trees $T_k$}
 In this section we describe a particular family of unit weight trees and corresponding contact graphs disk arrangements called \textit{snowflakes}.  
-Note that we regard snowflakes with unit weight as a weight of $\frac{1}{2}$.  
+Note that we regard snowflakes with unit weight as a weight of $r$.  
 For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
 \begin{itemize}
 \item Let $v_0$ be a dvertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  Each path has $i$ vertices.
@@ -3096,8 +3097,8 @@ For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
 \end{center}
 \end{figure}
 
-A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $\frac{1}{2}$.   
-A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $\frac{1}{2} + \gamma$.  
+A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $r$.   
+A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $r + \epsilon$.  
 For our analysis, all realizations of any snowflake, perfect or perturbed, shall have $v_0$ fixed at origin.  
 % This is said to be the canonical position under Hausdorff distance of the snowflake tree.   
 
@@ -3238,13 +3239,19 @@ $$
 \end{array}
 $$
 Together, we have the following result:
-\begin{eqnarray*}{rcl}
+\begin{eqnarray*}
 2\pi &=& \alpha_0 + \gamma_0 + \beta_0 + \delta_0\\
 2\pi &=& \alpha_0 + \gamma_0 + \lr{2\pi - \alpha_1 - \beta_1}\\
 \alpha_1 + \beta_1&=&\alpha_0 + \gamma_0 \\
 &\leq& \frac{2\pi}{3} + \frac{12\epsilon}{5\sqrt{3}}\\
 \end{eqnarray*}
+And so the error bounds on $\lambda$ hold in general for $\alpha_i$ and $\beta_i$ for all $i$.  
 \paragraph{Displacement on the petioles is small.}
+Note that the petioles have the same geometric structure as the arms; the exception is the number of leafs on each side of the petioles. 
+Since we've shown that the geometric shape in arbirary position is already close to canonical position for any $\epsilon>0$, the same argument applies here for the petioles.
+
+We have shown the displacements of all components of the perturbed snowflake are small for any $\epsilon > 0$.  
+This shows that the structure has stability in preserving any information encoded with it.
 
 
 
@@ -3254,6 +3261,27 @@ Together, we have the following result:
 
 
 
+
+\paragraph{Proof of Lemma \ref{lem:ch4IntroLemma}}
+\begin{proof}
+Given an $\epsilon$, we can construct an ordered weighted tree $T_\epsilon$ and hexagon such the Hausdorff distance of the ordered disk contact graph corresponding to $T_\epsilon$ of equal radii and the hexagon is less than $\epsilon$ in the following manner:
+\begin{enumerate}
+	\item Let the radii of the of equally weighted disks be $\frac{1}{kd}$ where $d$ is the diameter of the hexagon and $k$ is a multiple of 6, i.e. $k = 6 j$.  
+	\item The snowflake $S_j$ is centered at the center of the hexagon.
+	\item The Hausdorff distance is at most $\sqrt{3}\epsilon$.
+\end{enumerate}	
+\end{proof}
+
+\paragraph{Proof of Theorem \ref{thm:disk}}
+
+\begin{proof}
+Given an instance of a P3SAT boolean formula, we can use the snowflake reduction of the modified auxiliary construction.  
+Using Lemma \ref{lem:ch4IntroLemma}, we can approximate any hexagon with a tree $T_\epsilon$.  In the modified auxiliary construction in Chapter 3, we had four different hexagons and the skinny rhombus.  
+We can scale the weights (radii) of the corresponding ordered weighted disk contact graph corresponding to $T_\epsilon$ to the rigid frame, obstacle, flag, and half sized hexagons in a modified auxiliary contruction accordingly.  
+The rhombus can be approximated by a chain of obstacle hexagons.
+
+By approximating the polygons in the modified auxiliary construction with the snowflake, we show that Theorem \ref{thm:disk} is a corollary by applying Lemma \ref{lem:ch4IntroLemma}.  
+\end{proof}
 
 \bibliographystyle{plain}
 \bibliography{WorkCited}
