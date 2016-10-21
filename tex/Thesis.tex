@@ -47,48 +47,7 @@
 \newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
 \newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
 \newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
-%%CSUN Stuff%%%
-\titlecontents{chapter}
-  [0em]
-   {\bfseries \addvspace{\baselineskip}}
-  {\linebreak \rmfamily \chaptername\hspace{.1em} \thecontentslabel\quad \newline  }
-  {\rmfamily}
-  {\titlerule*[1pc]{.}\contentspage}
-
-\titlecontents{section}
-[1em]
-   {}
-  {\thecontentslabel \hspace{1em}}
-   {}
-    {\titlerule*[1pc]{.}\contentspage}
-
-\titlecontents{subsection}
-[3.3em]
-   {}
-  {\thecontentslabel \hspace{1.3em}}
-   {}
-    {\titlerule*[1pc]{.}\contentspage}
-
-% for bibliography, abstract etc
-
-\titlecontents{part}
-  [0em]
-   {\rmfamily \addvspace{\baselineskip}}
-  {\linebreak \rmfamily \chaptername\hspace{.1em} \thecontentslabel\quad \newline  }
-  {\rmfamily}
-  {\titlerule*[1pc]{.}\contentspage}
-
-
-\titlecontents{subsubsection}
-[0em]
-   {{\rmfamily \addvspace{\baselineskip}}}
-  {\thecontentslabel \hspace{1em}}
-   {}
-    {\titlerule*[1pc]{}}
-
-\newcommand{\exedout}{%
-  \rule{0.8\textwidth}{0.5\textwidth}%
-}
+%%CSUN Stuff%%
 %%%END OF CSUN STUFF%%%
 %%%theoerms, etc%%%%
 \theoremstyle{plain}% default

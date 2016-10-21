@@ -47,49 +47,7 @@
 \newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
 \newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
 \newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
-%%CSUN Stuff%%%
-\titlecontents{chapter}
-  [0em]
-   {\bfseries \addvspace{\baselineskip}}
-  {\linebreak \rmfamily \chaptername\hspace{.1em} \thecontentslabel\quad \newline  }
-  {\rmfamily}
-  {\titlerule*[1pc]{.}\contentspage}
 
-\titlecontents{section}
-[1em]
-   {}
-  {\thecontentslabel \hspace{1em}}
-   {}
-    {\titlerule*[1pc]{.}\contentspage}
-
-\titlecontents{subsection}
-[3.3em]
-   {}
-  {\thecontentslabel \hspace{1.3em}}
-   {}
-    {\titlerule*[1pc]{.}\contentspage}
-
-% for bibliography, abstract etc
-
-\titlecontents{part}
-  [0em]
-   {\rmfamily \addvspace{\baselineskip}}
-  {\linebreak \rmfamily \chaptername\hspace{.1em} \thecontentslabel\quad \newline  }
-  {\rmfamily}
-  {\titlerule*[1pc]{.}\contentspage}
-
-
-\titlecontents{subsubsection}
-[0em]
-   {{\rmfamily \addvspace{\baselineskip}}}
-  {\thecontentslabel \hspace{1em}}
-   {}
-    {\titlerule*[1pc]{}}
-
-\newcommand{\exedout}{%
-  \rule{0.8\textwidth}{0.5\textwidth}%
-}
-%%%END OF CSUN STUFF%%%
 %%%theoerms, etc%%%%
 \theoremstyle{plain}% default
 \newtheorem{thm}{Theorem}
@@ -3071,9 +3029,14 @@ Similiaryly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_
 
 
 \begin{lem}\label{lem:ch4IntroLemma}
-For every $\epsilon > 0$, there exists an ordered weighted tree $T_\epsilon$ and regular hexagon such that every realization of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon such that the Hausdorff distance is less than $\epsilon$.
+For every $\epsilon > 0$, there exists an ordered weighted tree $T_\epsilon$ and regular hexagon of side length $x$ such that:
+\begin{enumerate}
+\item Every realization of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon such that the Hausdorff distance is less than $\epsilon$.
+\item The regular hexagon the approximate convex hull of the of any realization of $T_\epsilon$ as an ordered disk contact graph.
+\item There are polynomial number of disks in the ordered disk contact graph of $T_\epsilon$.
+\end{enumerate}
 \end{lem} 
-% Using Lemma \ref{lem:ch4IntroLemma}, we prove Theorem \ref{thm:disk} by extending the modified auxiliary construction in Chapter \ref{chapter:polygonalLinkage}.  
+ 
 
 \textbf{Lemma \ref{lem:ch4IntroLemma} can be generalized in three different ways: (1) if all weights are equal, order does not matter, (2)
 if $\dots$, and (3) $\dots$.}
