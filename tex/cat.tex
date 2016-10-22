@@ -3029,23 +3029,24 @@ $$H\lr{r\lr{T_\epsilon},h}=\epsilon$$
 \end{lem} 
  
 
-Lemma \ref{lem:ch4IntroLemma} can be generalized in three different ways: (1) if all weights are equal, (2) order does not matter, and (3) if we relax the regular hexagon to any arbitrary polygon.  
+\textbf{Lemma \ref{lem:ch4IntroLemma} can be generalized in three different ways: (1) if all weights are equal, (2) order does not matter, and (3) if we relax the regular hexagon to any arbitrary polygon.  
 If all weights are equal, then every realization of the ordered weighted tree $T_\epsilon$ in Lemma \ref{lem:ch4IntroLemma}....
 If order is removed from the weighted tree $T_\epsilon$, then ...
-If the regular hexagon is relaxed to an arbitrary polygon, then .. \section{Weighted Trees $T_k$}
+If the regular hexagon is relaxed to an arbitrary polygon, then .. }\section{Weighted Trees $T_k$}
 In this section we describe a particular family of unit weight trees and corresponding contact graphs disk arrangements called \textit{snowflakes}.  
 Note that we regard snowflakes with unit weight as a weight of $r$.  
 For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
 \begin{itemize}
 \item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  Each path has $i$ vertices.
-\item In botany, the stalk that attaches to a stem of a plant is called a \textit{petiole}; petioles usually have leaves attached to their ends.  We will now attach paths (petioles) onto every other path $p_1$, $p_3$, and $p_5$: 
+\item In botany, the stalk that attaches to a stem of a plant is called a \textit{petiole}; petioles usually have leaves attached to their ends. Our snowflake will incorporate these concepts by incorporating petioles and leaves.  Petioles will be paths that extend off the arms.  \textit{Leaves} will be paths of one vertex that extend of the petioles and arms. We will now attach paths (petioles) onto every other path $p_1$, $p_3$, and $p_5$: 
 	\begin{itemize}
-		\item 	Every third vertex on that path has two petioles attached, one petiole on each side of $p_k$. 
+		\item 	Every third vertex on that path has two petioles attached, one petiole on each side of $p_k$; otherwise the vertex on $p_k$ will have two leaves, one on either side.
 		\item	The number of vertices that lie on a petiole attached to the $\jth$ vertex of  $p_k$ is $i-j$.
 		\item The first vertex of the $i-j$ vertices has one petiole attached; the remaining $i-j-1$ vertices contain two paths. Each of these paths contain only one vertex.  These paths are called \textit{leaves}. 
 	\end{itemize}
+\item Attach leaves to the vertices on paths $p_2$, $p_4$, and $p_6$.
 \end{itemize}
-
+An drawaing example of this snowflake description is shown in Figure \ref{fig:hexagonPetiolesLeafs9Layers.pdf}
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -3111,13 +3112,14 @@ Thus all leaf nodes are in the triangular lattice.
 This shows that each of the $i-k$ vertices on $p_{1,l}^-$, $p_{1,l}^+$, and leaves are in $V$.
 By rotating all of the paths along $p_1$ by $\frac{2\pi}{3}$ and $\frac{4\pi}{3}$, we obtain the paths $p_3$ and $p_5$ respectively, completing the construction.
 
-In Figure \ref{fig:hexagonPetiolesleaves9Layers.pdf}, we have a set of unit radii disks arranged in a manner that outlines the perfectly weighted snowflake description above.
+In Figure \ref{fig:hexagonPetiolesLeafs9Layers.pdf}, we have a set of unit radii disks arranged in a manner that outlines the perfectly weighted snowflake description above.
 
 \paragraph{Displacement on $S_1$ is small.}
 Note that (1) the adjacent disks in a perfect snowflake may or may not be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$.  
 Given a snowflake in arbirary position with $n$ unit segments per arm, the arms of the snowflake has a maximal length of $n$, end to end, if in canonical position; otherwise, the arm will have an end to end length less than $n$.  
-Figure \ref{fig:LineSegmentDelta.pdf} shows an arm of a snowflake in arbitrary position corresponds to a compression and shift of vertices.  
+Figure \ref{fig:LineSegmentDelta.pdf} shows an arm of a tree in arbitrary position corresponds to a compression and shift of vertices.  
 The arm realized in arbitrary position in Figure \ref{fig:LineSegmentDelta.pdf} is analgous to a tree realized in arbitrary position where vertices are in a different position than canonical.  
+Our goal is to show that for any $\epsilon >0$ and $x >0$, the position of the center $v$ of any disk in the disk arrangement in any arbitrary realization corresponding to $T_\epsilon$ has a small displacement, i.e. $v$ is found in an open ball referenced at the canonical position of $v$, $v_c$: $$v \in b_{\chi(\epsilon,x)}(v_c).$$ 
 
 
 \begin{minipage}{\linewidth}
@@ -3130,27 +3132,10 @@ The arm realized in arbitrary position in Figure \ref{fig:LineSegmentDelta.pdf} 
 Suppose we are given an ordered weighted tree $T_\epsilon$ such that the corresponding disk arrangement is a perturbed $S_1$.  
 In a perfect snowflake of $S_1$ the six disks around the central disk kiss each other.  
 The angle formed from the center of the central disk to the centers of any two adjacent disks is $\frac{\pi}{3}$.  
-The side lengths of the equalateral triangle formed by the centers of three adjacent disks, one of which is the central disk, is $2r$.  
-For a perturbed $S_1$ the the central disk is weighted $r+ \zeta(\epsilon)$.  
-This can yield a change of angular displacement $\frac{\pi}{3}$ to $\frac{\pi}{3} - 2\chi$.  
-To find the bounds of how large or small $\chi$ can be, we show the trigonometric relation of the half angle of the triangle corresponding to three adjacent disks (See Figure \ref{fig:part1ch4.pdf}):
-\begin{eqnarray*}
-\sin \lr{\frac{\pi}{6} - \chi} &=& \frac{1}{2r+\zeta(\epsilon)}\\
-\frac{1}{2}\cos \chi = \sin \frac{\pi}{6} \cos \chi &=& \frac{1}{2r+\zeta(\epsilon)} + \cos \frac{\pi}{6} \sin \chi = \frac{1}{2r+\zeta(\epsilon)} +\frac{\sqrt{3}}{2} \sin \chi \\
-&\iff&\\
-\frac{1}{2r+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} &\leq& \frac{1}{2r+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \sin \chi =\frac{1}{2} \cos \chi\\
-% \frac{1}{2} &\geq& \frac{1}{2} \cos \chi \\
-% &=& \frac{1}{2r+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \sin \chi\\
-% &\geq& \frac{1}{2r+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}\\
-&\iff&\\
-\frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}&\leq& \frac{1}{2}-\frac{1}{2r+\zeta(\epsilon)}  \qquad \text{if }\chi < 1 \\
-\frac{5\sqrt{3}}{12} \chi &\leq&\frac{2r + \zeta(\epsilon) - 2}{2 ( 2 + \zeta(\epsilon)} \\
-&&\text{for $r=1$}\\
-\chi &\leq& \frac{3 \zeta(\epsilon)}{5\sqrt{3}}=\frac{12}{5\sqrt{3}} \frac{\zeta(\epsilon)}{4} 
-\end{eqnarray*}
-
-The coordinates of the centers of the disks of the construction are close to cannonical position following the angular displacement argument above.  
-That is if $u$ is a center of a disk in a disk arrangement corresponding to $T_\epsilon$, $u$ lies in a ball $b_{\chi(\epsilon)}\lr{u_c}$ where $u_c$ is the cannonical position of the $u$.  
+The side lengths of the equalateral triangle formed by the centers of three adjacent disks, one of which is the central disk, is $2\epsilon$.  
+For a perturbed $S_1$ the the central disk is weighted $\epsilon+ \zeta(\epsilon)$.  
+This can yield a change of angular displacement $\frac{\pi}{3}$ to $\frac{\pi}{3} \pm 2\chi$.  
+To find the bounds of how large or small $\chi$ can be, we show the trigonometric relation of the half angle of the triangle corresponding to three adjacent disks (See Figure \ref{fig:part1ch4.pdf}).
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -3159,20 +3144,37 @@ That is if $u$ is a center of a disk in a disk arrangement corresponding to $T_\
 \end{center}
 \end{minipage}
 
+\begin{eqnarray*}
+\sin \lr{\frac{\pi}{6} - \chi} &=& \frac{\epsilon}{2\epsilon+\zeta(\epsilon)}\\
+\frac{1}{2}\cos \chi = \sin \frac{\pi}{6} \cos \chi &=& \frac{\epsilon}{2\epsilon+\zeta(\epsilon)} + \cos \frac{\pi}{6} \sin \chi = \frac{\epsilon}{2\epsilon+\zeta(\epsilon)} +\frac{\sqrt{3}}{2} \sin \chi \\
+&\iff&\\
+\frac{\epsilon}{2\epsilon+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} &\leq& \frac{\epsilon}{2\epsilon+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \sin \chi =\frac{1}{2} \cos \chi\\
+&\iff&\\
+\frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}&\leq& \frac{1}{2}-\frac{\epsilon}{2\epsilon+\zeta(\epsilon)}  \qquad \text{if }\chi < 1 \\
+\frac{5\sqrt{3}}{12} \chi &\leq&\frac{2\epsilon + \zeta(\epsilon) - 2\epsilon}{2 ( 2 + \zeta(\epsilon))} \\
+\chi &\leq& \frac{6}{5 \sqrt{3}}\frac{\zeta(\epsilon)}{ 2 + \zeta(\epsilon)} 
+\end{eqnarray*}
+
+The coordinates of the centers of the disks of the construction are close to cannonical position following the angular displacement argument above.  
+That is if $u$ is a center of a disk in a disk arrangement corresponding to $T_\epsilon$, $u$ lies in a ball $b_{\chi(\epsilon)}\lr{u_c}$ where $u_c$ is the cannonical position of the $u$.  
+
 For any $\epsilon > 0$, the bounds for angular displacement formed at the center of the central disk and two adjacent disks is:
-$$ \frac{\pi}{3} - \frac{6 \zeta(\epsilon)}{5\sqrt{3}} \leq \frac{\pi}{3} - 2 \chi = 2\chi_\text{min} \leq 2\chi \leq 2\chi_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{6 \zeta(\epsilon)}{5\sqrt{3}}$$
+$$ \frac{\pi}{3} - \frac{12 \zeta(\epsilon)}{5\sqrt{3}} \leq \frac{\pi}{3} - 2 \chi = 2\chi_\text{min} \leq 2\chi \leq 2\chi_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{12 \zeta(\epsilon)}{5\sqrt{3}}$$
 \paragraph{Displacement on the arms is small.}
-To show that the angluar displacement along the arm is small, we extend the angular argument on the perturbed $S_1$ and by induction, show that it is small for all $i$.  
+
+In Figure \ref{fig:ch4Paralellogram.pdf}(a), we have a parallelogram with four unit disks centered, one on each of the vertices of the parallelogram.  
+If $\alpha_i + \gamma_{i+1} < \pi$, One of the disks will overlap with another.  
+For any arbitrary realization of a perturbed snowflake, any two consecutive angles formed between two adjacent vertices along a path must satisfy the following constraint $$\alpha_i + \gamma_{i+1} \geq \pi.$$
 
 \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[width=.5\columnwidth]{graphics/Vertebrae.pdf}
-\captionof{figure}{An arm depicted at the $\ith$ and $(i+1)^\text{st}$ vertex.}\label{fig:Vertebrae.pdf}
+\includegraphics[width=.75\columnwidth]{graphics/ch4Paralellogram.pdf}
+\captionof{figure}{(a)Four disks of the snowflake shown where the top two disks can either be leaves off petioles or off the arms. (b)An arm depicted at the $\ith$ and $(i+1)^\text{st}$ vertex.}\label{fig:Vertebrae.pdf}\label{fig:ch4Paralellogram.pdf}
 \end{center}
 \end{minipage}
 
-Denote the angles on the concave side of the $\ith$ vertex as $\alpha_i$ and $\beta_i$ and the convex side of the $(i+1)^\text{st}$ vertex as $\gamma_i$ and $\delta_i$ respectively (see Figure \ref{fig:Vertebrae.pdf} for reference). 
-
+To show that the angluar displacement along the arm is small, we extend the angular argument on the perturbed $S_1$ and by induction, show that it is small for all $i$.  
+Denote the angles on the concave side of the $\ith$ vertex as $\alpha_i$ and $\beta_i$ and the convex side of the $(i+1)^\text{st}$ vertex as $\gamma_i$ and $\delta_i$ respectively (see Figure \ref{fig:ch4Paralellogram.pdf}(b) for reference). 
 For any vertex, the sum of angles about the vertex is $2 \pi$, e.g.:
 $$\gamma_i + \delta_i + \alpha_{i+1} + \beta_{i+1} = 2 \pi$$ 
 
@@ -3181,12 +3183,12 @@ Without loss of generality, the angles $\alpha_0$ and $\beta_0$ correspond to th
 The bounds for $\alpha_0$ and $\beta_0$ are the same as $2\chi$ in the earlier argument, i.e.:
 $$
 \begin{array}{rcccl}
-\frac{\pi}{3} - \frac{6 \zeta(\epsilon)}{5\sqrt{3}} &\leq& \alpha_0 &\leq& \frac{\pi}{3} + \frac{6 \zeta(\epsilon)}{5\sqrt{3}}\\
-\frac{\pi}{3} - \frac{6 \zeta(\epsilon)}{5\sqrt{3}} &\leq& \beta_0 &\leq& \frac{\pi}{3} + \frac{6 \zeta(\epsilon)}{5\sqrt{3}}\\
+\frac{\pi}{3} - \frac{12 \zeta(\epsilon)}{5\sqrt{3}} &\leq& \alpha_0 &\leq& \frac{\pi}{3} + \frac{12 \zeta(\epsilon)}{5\sqrt{3}}\\
+\frac{\pi}{3} - \frac{12 \zeta(\epsilon)}{5\sqrt{3}} &\leq& \beta_0 &\leq& \frac{\pi}{3} + \frac{12 \zeta(\epsilon)}{5\sqrt{3}}\\
 \end{array}
 $$
 
-We know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{12 \zeta(\epsilon)}{5\sqrt{3}}.$
+We know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{24 \zeta(\epsilon)}{5\sqrt{3}}.$
 We also know that in canonical position:
 $$ 
 \begin{array}{rcl}
@@ -3199,10 +3201,10 @@ Together, we have the following result:
 2\pi &=& \alpha_0 + \gamma_0 + \beta_0 + \delta_0\\
 2\pi &=& \alpha_0 + \gamma_0 + \lr{2\pi - \alpha_1 - \beta_1}\\
 \alpha_1 + \beta_1&=&\alpha_0 + \gamma_0 \\
-&\leq& \frac{2\pi}{3} + \frac{12\zeta(\epsilon)}{5\sqrt{3}}\\
+&\leq& \frac{2\pi}{3} + \frac{24\zeta(\epsilon)}{5\sqrt{3}}\\
 \end{eqnarray*}
-And so the error bounds on $2\chi$ hold in general for $\alpha_i$ and $\beta_i$ for all $i$.  
-$$\alpha_i + \beta_i \leq \frac{2\pi}{3} + \frac{12\zeta(\epsilon)}{5\sqrt{3}}$$
+And so the error bounds on $\frac{\pi}{3}+2\chi$ hold in general for $\alpha_i$ and $\beta_i$ for all $i$.  
+$$\alpha_i + \beta_i \leq \frac{2\pi}{3} + \frac{24\zeta(\epsilon)}{5\sqrt{3}}$$
 \paragraph{Displacement on the petioles is small.}
 Note that the petioles have the same geometric structure as the arms; the exception is the number of leaves on each side of the petioles. 
 Since we've shown that the geometric shape in arbirary position is already close to canonical position for any $\epsilon>0$, the same argument applies here for the petioles.
@@ -3223,7 +3225,7 @@ This shows that the structure has stability in preserving any information encode
 \begin{proof}
 For any $\epsilon>0$, we construct an ordered weighted tree $T_\epsilon$ and regular hexagon of side length $x$. 
 
-In order to show that every realization $r$ of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon such that the Hausdorff distance is $\epsilon$,  let the radii of all disks besides the perturbed center of corresponding to $T_\epsilon$ be $r = \epsilon$.  
+% In order to show that every realization $r$ of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon such that the Hausdorff distance is $\epsilon$,  let the radii of all disks besides the perturbed center of corresponding to $T_\epsilon$ be $r = \epsilon$.  
 Let the corresponding disk arrangement for $T_\epsilon$ be $S_j$ where $$j=\frac{x}{2 \epsilon + 1}.$$  
 The Hausdorff distance between the regular hexagon that is the convex hull for the centers of the disks in the disk arrangement and the union of the disks themselves is $$H\lr{r(T_\epsilon),h} = \lr{\frac{2}{\sqrt{3}} - 1} \zeta(\epsilon)$$
 The number of disk in the contact graph corresponding is a polynomial $d(x,\epsilon) \leq \frac{4x}{\epsilon}$.  

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 OCT 2016 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 OCT 2016 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1671,85 +1671,78 @@ File: graphics/hexagonPetiolesLeafs9Layers.pdf Graphic file (type pdf)
 
 <use graphics/hexagonPetiolesLeafs9Layers.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9Layers.pdf used on input
- line 3052.
+ line 3053.
 (pdftex.def)             Requested size: 173.44534pt x 151.59137pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3050--3056
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3051--3057
 []$[]$ 
  []
 
-[47 <./graphics/hexagonPetiolesLeafs9Layers.pdf>]
-
-LaTeX Warning: Reference `fig:hexagonPetiolesleaves9Layers.pdf' on page 48 unde
-fined on input line 3114.
-
-[48] <graphics/LineSegmentDelta.pdf, id=752, 390.45876pt x 50.16742pt>
+[47 <./graphics/hexagonPetiolesLeafs9Layers.pdf>] [48]
+<graphics/LineSegmentDelta.pdf, id=752, 390.45876pt x 50.16742pt>
 File: graphics/LineSegmentDelta.pdf Graphic file (type pdf)
 
 <use graphics/LineSegmentDelta.pdf>
-Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 3125.
+Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 3127.
 
 (pdftex.def)             Requested size: 411.93767pt x 52.92917pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3123--3129
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3125--3131
 []$[]$ 
  []
 
-<graphics/part1ch4.pdf, id=753, 133.49875pt x 133.49875pt>
+<graphics/part1ch4.pdf, id=753, 143.96887pt x 133.49875pt>
 File: graphics/part1ch4.pdf Graphic file (type pdf)
 
 <use graphics/part1ch4.pdf>
-Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3157.
-(pdftex.def)             Requested size: 86.72267pt x 86.72629pt.
+Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3142.
+(pdftex.def)             Requested size: 86.72267pt x 80.41966pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3155--3161
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3140--3146
 []$[]$ 
  []
 
-[49 <./graphics/LineSegmentDelta.pdf>]
-<graphics/Vertebrae.pdf, id=760, 161.0015pt x 64.6415pt>
-File: graphics/Vertebrae.pdf Graphic file (type pdf)
+[49 <./graphics/LineSegmentDelta.pdf> <./graphics/part1ch4.pdf>]
+<graphics/ch4Paralellogram.pdf, id=788, 810.32736pt x 286.81151pt>
+File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
-<use graphics/Vertebrae.pdf>
-Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3169.
-(pdftex.def)             Requested size: 216.81pt x 87.04817pt.
+<use graphics/ch4Paralellogram.pdf>
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3171.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3167--3173
+(pdftex.def)             Requested size: 325.215pt x 115.10768pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3169--3175
 []$[]$ 
  []
 
-[50 <./graphics/part1ch4.pdf> <./graphics/Vertebrae.pdf>]
-<graphics/hexagonOutlineLayerSmall.pdf, id=802, 204.32335pt x 192.29843pt>
+[50 <./graphics/ch4Paralellogram.pdf>] [51]
+<graphics/hexagonOutlineLayerSmall.pdf, id=831, 204.32335pt x 192.29843pt>
 File: graphics/hexagonOutlineLayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutlineLayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutlineLayerSmall.pdf used on input li
-ne 3233.
+ne 3235.
 (pdftex.def)             Requested size: 216.81pt x 204.05835pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3231--3237
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3233--3239
 []$[]$
  []
 
-[51] (../pdf/cat.bbl [52 <./graphics/hexagonOutlineLayerSmall.pdf>])
+(../pdf/cat.bbl [52 <./graphics/hexagonOutlineLayerSmall.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 [53
 
 ] (../pdf/cat.aux)
 
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.55997pt have occurred.
-
-
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17998 strings out of 493089
- 333319 string characters out of 6134841
- 506693 words of memory out of 5000000
- 20974 multiletter control sequences out of 15000+600000
- 70533 words of font info for 131 fonts, out of 8000000 for 9000
+ 17977 strings out of 493089
+ 332941 string characters out of 6134841
+ 507693 words of memory out of 5000000
+ 20953 multiletter control sequences out of 15000+600000
+ 64297 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1096b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -1773,10 +1766,10 @@ s/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (57 pages, 750235 bytes).
+Output written on ../pdf/cat.pdf (57 pages, 795052 bytes).
 PDF statistics:
- 875 PDF objects out of 1000 (max. 8388607)
- 580 compressed objects within 6 object streams
+ 900 PDF objects out of 1000 (max. 8388607)
+ 586 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

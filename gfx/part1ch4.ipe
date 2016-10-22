@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.6">
-<info created="D:20161011170958" modified="D:20161022134355"/>
+<info created="D:20161011170958" modified="D:20161022151345"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -273,5 +273,7 @@ h
 235.474 725.737 m
 48.6054 0 0 -48.6054 192 704 240.605 704 a
 </path>
+<text transformations="translations" pos="325.841 733.923" stroke="black" type="label" width="6.806" height="7.412" depth="0" valign="baseline" size="LARGE">$\epsilon$</text>
+<text matrix="1 0 0 1 0.283794 -68.321" transformations="translations" pos="325.841 733.923" stroke="black" type="label" width="6.806" height="7.412" depth="0" valign="baseline" size="LARGE" style="math">\epsilon</text>
 </page>
 </ipe>

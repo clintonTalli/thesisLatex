@@ -4,14 +4,15 @@ Note that we regard snowflakes with unit weight as a weight of $r$.
 For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
 \begin{itemize}
 \item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  Each path has $i$ vertices.
-\item In botany, the stalk that attaches to a stem of a plant is called a \textit{petiole}; petioles usually have leaves attached to their ends.  We will now attach paths (petioles) onto every other path $p_1$, $p_3$, and $p_5$: 
+\item In botany, the stalk that attaches to a stem of a plant is called a \textit{petiole}; petioles usually have leaves attached to their ends. Our snowflake will incorporate these concepts by incorporating petioles and leaves.  Petioles will be paths that extend off the arms.  \textit{Leaves} will be paths of one vertex that extend of the petioles and arms. We will now attach paths (petioles) onto every other path $p_1$, $p_3$, and $p_5$: 
 	\begin{itemize}
-		\item 	Every third vertex on that path has two petioles attached, one petiole on each side of $p_k$. 
+		\item 	Every third vertex on that path has two petioles attached, one petiole on each side of $p_k$; otherwise the vertex on $p_k$ will have two leaves, one on either side.
 		\item	The number of vertices that lie on a petiole attached to the $\jth$ vertex of  $p_k$ is $i-j$.
 		\item The first vertex of the $i-j$ vertices has one petiole attached; the remaining $i-j-1$ vertices contain two paths. Each of these paths contain only one vertex.  These paths are called \textit{leaves}. 
 	\end{itemize}
+\item Attach leaves to the vertices on paths $p_2$, $p_4$, and $p_6$.
 \end{itemize}
-
+An drawaing example of this snowflake description is shown in Figure \ref{fig:hexagonPetiolesLeafs9Layers.pdf}
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -77,4 +78,4 @@ Thus all leaf nodes are in the triangular lattice.
 This shows that each of the $i-k$ vertices on $p_{1,l}^-$, $p_{1,l}^+$, and leaves are in $V$.
 By rotating all of the paths along $p_1$ by $\frac{2\pi}{3}$ and $\frac{4\pi}{3}$, we obtain the paths $p_3$ and $p_5$ respectively, completing the construction.
 
-In Figure \ref{fig:hexagonPetiolesleaves9Layers.pdf}, we have a set of unit radii disks arranged in a manner that outlines the perfectly weighted snowflake description above.
+In Figure \ref{fig:hexagonPetiolesLeafs9Layers.pdf}, we have a set of unit radii disks arranged in a manner that outlines the perfectly weighted snowflake description above.

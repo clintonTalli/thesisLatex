@@ -10,6 +10,6 @@
 \contentsline {paragraph}{Displacement on $S_1$ is small.}{4}
 \contentsline {paragraph}{Displacement on the arms is small.}{5}
 \contentsline {paragraph}{Displacement on the petioles is small.}{6}
-\contentsline {paragraph}{Proof of Lemma \ref {lem:ch4IntroLemma}}{6}
+\contentsline {paragraph}{Proof of Lemma \ref {lem:ch4IntroLemma}}{7}
 \contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{7}
 \contentsfinish 

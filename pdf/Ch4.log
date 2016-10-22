@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 OCT 2016 13:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 OCT 2016 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -869,19 +869,14 @@ File: graphics/hexagonPetiolesLeafs9Layers.pdf Graphic file (type pdf)
 
 <use graphics/hexagonPetiolesLeafs9Layers.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9Layers.pdf used on input
- line 18.
+ line 19.
 (pdftex.def)             Requested size: 173.44534pt x 151.59137pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 16--22
+Overfull \hbox (15.0pt too wide) in paragraph at lines 17--23
 []$[]$ 
  []
 
-[2 <./graphics/hexagonPetiolesLeafs9Layers.pdf>]
-
-LaTeX Warning: Reference `fig:hexagonPetiolesleaves9Layers.pdf' on page 3 undef
-ined on input line 80.
-
-) (./ch4/PerturbedTree.tex [3]
+[2 <./graphics/hexagonPetiolesLeafs9Layers.pdf>] [3]) (./ch4/PerturbedTree.tex
 
 LaTeX Warning: Reference `fig:modifiedContactGraph' on page 4 undefined on inpu
 t line 14.
@@ -891,38 +886,39 @@ t line 14.
 File: graphics/LineSegmentDelta.pdf Graphic file (type pdf)
 
 <use graphics/LineSegmentDelta.pdf>
-Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 11.
+Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 12.
 (pdftex.def)             Requested size: 411.93767pt x 52.92917pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 9--15
+Overfull \hbox (15.0pt too wide) in paragraph at lines 10--16
 []$[]$ 
  []
 
 [4 <./graphics/LineSegmentDelta.pdf>]
-<graphics/part1ch4.pdf, id=61, 133.49875pt x 133.49875pt>
+<graphics/part1ch4.pdf, id=61, 143.96887pt x 133.49875pt>
 File: graphics/part1ch4.pdf Graphic file (type pdf)
 
 <use graphics/part1ch4.pdf>
-Package pdftex.def Info: graphics/part1ch4.pdf used on input line 43.
-(pdftex.def)             Requested size: 86.72267pt x 86.72629pt.
+Package pdftex.def Info: graphics/part1ch4.pdf used on input line 27.
+(pdftex.def)             Requested size: 86.72267pt x 80.41966pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 41--47
+Overfull \hbox (15.0pt too wide) in paragraph at lines 25--31
 []$[]$ 
  []
 
-<graphics/Vertebrae.pdf, id=62, 161.0015pt x 64.6415pt>
-File: graphics/Vertebrae.pdf Graphic file (type pdf)
+<graphics/ch4Paralellogram.pdf, id=62, 810.32736pt x 286.81151pt>
+File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
-<use graphics/Vertebrae.pdf>
-Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 55.
-(pdftex.def)             Requested size: 216.81pt x 87.04817pt.
+<use graphics/ch4Paralellogram.pdf>
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 56.
+(pdftex.def)             Requested size: 325.215pt x 115.10768pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 53--59
+Overfull \hbox (15.0pt too wide) in paragraph at lines 54--60
 []$[]$ 
  []
 
-[5 <./graphics/part1ch4.pdf> <./graphics/Vertebrae.pdf>]) (./ch4/finale.tex
-[6] <graphics/hexagonOutlineLayerSmall.pdf, id=113, 204.32335pt x 192.29843pt>
+[5 <./graphics/part1ch4.pdf>] [6 <./graphics/ch4Paralellogram.pdf>])
+(./ch4/finale.tex
+<graphics/hexagonOutlineLayerSmall.pdf, id=132, 204.32335pt x 192.29843pt>
 File: graphics/hexagonOutlineLayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutlineLayerSmall.pdf>
@@ -940,50 +936,44 @@ LaTeX Warning: Reference `thm:disk' on page 7 undefined on input line 21.
 
 LaTeX Warning: Reference `thm:disk' on page 7 undefined on input line 28.
 
-)) (../pdf/Ch4.bbl [7 <./graphics/hexagonOutlineLayerSmall.pdf>]
+[7 <./graphics/hexagonOutlineLayerSmall.pdf>])) (../pdf/Ch4.bbl [8]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[8
+[9
 
 ] (../pdf/Ch4.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.55997pt have occurred.
-
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17521 strings out of 493089
- 319102 string characters out of 6134841
- 506693 words of memory out of 5000000
- 20558 multiletter control sequences out of 15000+600000
- 41517 words of font info for 89 fonts, out of 8000000 for 9000
+ 17490 strings out of 493089
+ 318586 string characters out of 6134841
+ 507693 words of memory out of 5000000
+ 20527 multiletter control sequences out of 15000+600000
+ 31863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,59p,434b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,59p,521b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on ../pdf/Ch4.pdf (12 pages, 239333 bytes).
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on ../pdf/Ch4.pdf (13 pages, 270798 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
+ 192 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
