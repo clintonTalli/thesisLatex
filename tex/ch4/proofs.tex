@@ -1,5 +1,9 @@
-Given a snowflake in arbirary position with $n$ unit segments per arm, the arms of the snowflake has a maximal length of $n$, end to end, if in canonical position; otherwise, the arm will have an end to end length less than $n$ (See Figure \ref{fig:LineSegmentDelta.pdf}).  
-The arm of a snowflake in arbitrary position corresponds to a compression and shift of vertices.  
+
+\paragraph{Displacement on $S_1$ is small.}
+Note that (1) the adjacent disks in a perfect snowflake may or may not be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$.  
+Given a snowflake in arbirary position with $n$ unit segments per arm, the arms of the snowflake has a maximal length of $n$, end to end, if in canonical position; otherwise, the arm will have an end to end length less than $n$.  
+Figure \ref{fig:LineSegmentDelta.pdf} shows an arm of a snowflake in arbitrary position corresponds to a compression and shift of vertices.  
+The arm realized in arbitrary position in Figure \ref{fig:LineSegmentDelta.pdf} is analgous to a tree realized in arbitrary position where vertices are in a different position than canonical.  
 
 
 \begin{minipage}{\linewidth}
@@ -9,31 +13,30 @@ The arm of a snowflake in arbitrary position corresponds to a compression and sh
 \end{center}
 \end{minipage}
 
-We will show for any $\epsilon >0$ and arbitrary position of vertices, the placement of vertices is close to canonical position.  
-In order to show this, we show the components of a perturbed snowflake in arbitrary position  are close to canonical position.  
-The argument comprises of three parts: (1) Showing that the pertubation of $S_1$ is small, (2) show that the displacement along the arms for all $S_i$ for $i \geq 1$ is small, and (3) show that the displacement along the petioles is small.  
-
-\paragraph{Displacement on $S_1$ is small.}
 Suppose we are given an ordered weighted tree $T_\epsilon$ such that the corresponding disk arrangement is a perturbed $S_1$.  
 In a perfect snowflake of $S_1$ the six disks around the central disk kiss each other.  
 The angle formed from the center of the central disk to the centers of any two adjacent disks is $\frac{\pi}{3}$.  
 The side lengths of the equalateral triangle formed by the centers of three adjacent disks, one of which is the central disk, is $2r$.  
-For a perturbed $S_1$ the the central disk is weighted $r+ \epsilon$.  
-This can yield a change of angular displacement from $\frac{\pi}{3}$ to $\frac{\pi}{3} + 2\chi$.  
+For a perturbed $S_1$ the the central disk is weighted $r+ \zeta(\epsilon)$.  
+This can yield a change of angular displacement $\frac{\pi}{3}$ to $\frac{\pi}{3} - 2\chi$.  
 To find the bounds of how large or small $\chi$ can be, we show the trigonometric relation of the half angle of the triangle corresponding to three adjacent disks (See Figure \ref{fig:part1ch4.pdf}):
 \begin{eqnarray*}
-\sin \lr{\frac{\pi}{6} - \chi} &=& \frac{1}{2r+\epsilon}\\
-\sin \frac{\pi}{6} \cos \chi &=& \frac{1}{2r+\epsilon} + \cos \frac{\pi}{6} \sin \chi\\
+\sin \lr{\frac{\pi}{6} - \chi} &=& \frac{1}{2r+\zeta(\epsilon)}\\
+\frac{1}{2}\cos \chi = \sin \frac{\pi}{6} \cos \chi &=& \frac{1}{2r+\zeta(\epsilon)} + \cos \frac{\pi}{6} \sin \chi = \frac{1}{2r+\zeta(\epsilon)} +\frac{\sqrt{3}}{2} \sin \chi \\
 &\iff&\\
-\frac{1}{2} &\geq& \frac{1}{2} \cos \chi \\
-&=& \frac{1}{2r+\epsilon} + \frac{\sqrt{3}}{2} \sin \chi\\
-&\geq& \frac{1}{2r+\epsilon} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}\\
+\frac{1}{2r+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} &\leq& \frac{1}{2r+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \sin \chi =\frac{1}{2} \cos \chi\\
+% \frac{1}{2} &\geq& \frac{1}{2} \cos \chi \\
+% &=& \frac{1}{2r+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \sin \chi\\
+% &\geq& \frac{1}{2r+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}\\
 &\iff&\\
-\frac{1}{2}-\frac{1}{2r+\epsilon} &\geq& \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} \qquad \text{if }\chi < 1\\
-\frac{2r + \epsilon - 2}{2 ( 2 + \epsilon)} &\geq&  \frac{5\sqrt{3}}{12} \chi\\
+\frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}&\leq& \frac{1}{2}-\frac{1}{2r+\zeta(\epsilon)}  \qquad \text{if }\chi < 1 \\
+\frac{5\sqrt{3}}{12} \chi &\leq&\frac{2r + \zeta(\epsilon) - 2}{2 ( 2 + \zeta(\epsilon)} \\
 &&\text{for $r=1$}\\
-\frac{3 \epsilon}{5\sqrt{3}}=\frac{12}{5\sqrt{3}} \frac{\epsilon}{4} &\geq& \chi
+\chi &\leq& \frac{3 \zeta(\epsilon)}{5\sqrt{3}}=\frac{12}{5\sqrt{3}} \frac{\zeta(\epsilon)}{4} 
 \end{eqnarray*}
+
+The coordinates of the centers of the disks of the construction are close to cannonical position following the angular displacement argument above.  
+That is if $u$ is a center of a disk in a disk arrangement corresponding to $T_\epsilon$, $u$ lies in a ball $b_{\chi(\epsilon)}\lr{u_c}$ where $u_c$ is the cannonical position of the $u$.  
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -43,7 +46,7 @@ To find the bounds of how large or small $\chi$ can be, we show the trigonometri
 \end{minipage}
 
 For any $\epsilon > 0$, the bounds for angular displacement formed at the center of the central disk and two adjacent disks is:
-$$ \frac{\pi}{3} - \frac{6 \epsilon}{5\sqrt{3}} \leq \frac{\pi}{3} - 2 \chi = \lambda_\text{min} \leq \lambda \leq \lambda_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{6 \epsilon}{5\sqrt{3}}$$
+$$ \frac{\pi}{3} - \frac{6 \zeta(\epsilon)}{5\sqrt{3}} \leq \frac{\pi}{3} - 2 \chi = 2\chi_\text{min} \leq 2\chi \leq 2\chi_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{6 \zeta(\epsilon)}{5\sqrt{3}}$$
 \paragraph{Displacement on the arms is small.}
 To show that the angluar displacement along the arm is small, we extend the angular argument on the perturbed $S_1$ and by induction, show that it is small for all $i$.  
 
@@ -61,15 +64,15 @@ $$\gamma_i + \delta_i + \alpha_{i+1} + \beta_{i+1} = 2 \pi$$
 
 Suppose we numbered the the disks about the central disk 1 through 6.  
 Without loss of generality, the angles $\alpha_0$ and $\beta_0$ correspond to the angles formed between the central angle, disks $i$ and $i+1$ and disks $i+1$ and $i+2$ respectively, for $i = 1,2,3$.  
-The bounds for $\alpha_0$ and $\beta_0$ are the same as $\lambda$ in the earlier argument, i.e.:
+The bounds for $\alpha_0$ and $\beta_0$ are the same as $2\chi$ in the earlier argument, i.e.:
 $$
 \begin{array}{rcccl}
-\frac{\pi}{3} - \frac{6 \epsilon}{5\sqrt{3}} &\leq& \alpha_0 &\leq& \frac{\pi}{3} + \frac{6 \epsilon}{5\sqrt{3}}\\
-\frac{\pi}{3} - \frac{6 \epsilon}{5\sqrt{3}} &\leq& \beta_0 &\leq& \frac{\pi}{3} + \frac{6 \epsilon}{5\sqrt{3}}\\
+\frac{\pi}{3} - \frac{6 \zeta(\epsilon)}{5\sqrt{3}} &\leq& \alpha_0 &\leq& \frac{\pi}{3} + \frac{6 \zeta(\epsilon)}{5\sqrt{3}}\\
+\frac{\pi}{3} - \frac{6 \zeta(\epsilon)}{5\sqrt{3}} &\leq& \beta_0 &\leq& \frac{\pi}{3} + \frac{6 \zeta(\epsilon)}{5\sqrt{3}}\\
 \end{array}
 $$
 
-We know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{12\epsilon}{5\sqrt{3}}.$
+We know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{12 \zeta(\epsilon)}{5\sqrt{3}}.$
 We also know that in canonical position:
 $$ 
 \begin{array}{rcl}
@@ -82,11 +85,12 @@ Together, we have the following result:
 2\pi &=& \alpha_0 + \gamma_0 + \beta_0 + \delta_0\\
 2\pi &=& \alpha_0 + \gamma_0 + \lr{2\pi - \alpha_1 - \beta_1}\\
 \alpha_1 + \beta_1&=&\alpha_0 + \gamma_0 \\
-&\leq& \frac{2\pi}{3} + \frac{12\epsilon}{5\sqrt{3}}\\
+&\leq& \frac{2\pi}{3} + \frac{12\zeta(\epsilon)}{5\sqrt{3}}\\
 \end{eqnarray*}
-And so the error bounds on $\lambda$ hold in general for $\alpha_i$ and $\beta_i$ for all $i$.  
+And so the error bounds on $2\chi$ hold in general for $\alpha_i$ and $\beta_i$ for all $i$.  
+$$\alpha_i + \beta_i \leq \frac{2\pi}{3} + \frac{12\zeta(\epsilon)}{5\sqrt{3}}$$
 \paragraph{Displacement on the petioles is small.}
-Note that the petioles have the same geometric structure as the arms; the exception is the number of leafs on each side of the petioles. 
+Note that the petioles have the same geometric structure as the arms; the exception is the number of leaves on each side of the petioles. 
 Since we've shown that the geometric shape in arbirary position is already close to canonical position for any $\epsilon>0$, the same argument applies here for the petioles.
 
 We have shown the displacements of all components of the perturbed snowflake are small for any $\epsilon > 0$.  

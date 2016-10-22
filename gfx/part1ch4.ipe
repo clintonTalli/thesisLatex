@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.6">
-<info created="D:20161011170958" modified="D:20161016155427"/>
+<info created="D:20161011170958" modified="D:20161022134355"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -266,9 +266,9 @@ h
 <use name="mark/disk(sx)" pos="320 704" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="320 768" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="320 640" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 -21.8552 7.06448" transformations="translations" pos="272 704" stroke="black" type="label" width="8.203" height="12.564" depth="4.95" valign="baseline" size="Large" style="math">\frac{\lambda}{2}</text>
-<text matrix="1 0 0 1 -38.3787 39.0555" transformations="translations" pos="272 704" stroke="black" type="label" width="36.718" height="9.251" depth="1.09" valign="baseline" size="Large" style="math">2r+\epsilon</text>
-<text matrix="1 0 0 1 -38.424 -52.3753" transformations="translations" pos="272 704" stroke="black" type="label" width="36.718" height="9.251" depth="1.09" valign="baseline" size="Large" style="math">2r+\epsilon</text>
+<text matrix="1 0 0 1 -29.7275 11.7468" transformations="translations" pos="272 704" stroke="black" type="label" width="34.762" height="9.935" depth="4.95" valign="baseline" size="Large" style="math">\frac{\pi}{6} - \chi</text>
+<text matrix="1 0 0 1 -70.3787 39.0555" transformations="translations" pos="272 704" stroke="black" type="label" width="53.813" height="10.756" depth="3.59" valign="baseline" size="Large" style="math">2\epsilon+\zeta(\epsilon)</text>
+<text matrix="1 0 0 1 -70.424 -52.3753" transformations="translations" pos="272 704" stroke="black" type="label" width="53.813" height="10.756" depth="3.59" valign="baseline" size="Large" style="math">2\epsilon+\zeta(\epsilon)</text>
 <path stroke="black">
 235.474 725.737 m
 48.6054 0 0 -48.6054 192 704 240.605 704 a
