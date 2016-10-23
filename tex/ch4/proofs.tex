@@ -46,6 +46,32 @@ That is if $u$ is a center of a disk in a disk arrangement corresponding to $T_\
 For any $\epsilon > 0$, the bounds for angular displacement formed at the center of the central disk and two adjacent disks is:
 $$ \frac{\pi}{3} - \frac{12 \zeta(\epsilon)}{5\sqrt{3}} \leq \frac{\pi}{3} - 2 \chi = 2\chi_\text{min} \leq 2\chi \leq 2\chi_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{12 \zeta(\epsilon)}{5\sqrt{3}}$$
 \paragraph{Displacement on the arms is small.}
+Without loss of generality, consider a path of vertices along a distinct arm, petiole, or leaf $\lr{v_1, v_2, \ldots, v_n}$.  
+In the case that there are two paths attached to each vertex, four different angles about the vertex are formed.  
+For the $\ith$ vertex, the counter clockwise order of the angles are $\lr{\alpha_{i+1}, \gamma_i, \delta_i, \beta_{i+1}}$ (See Figure \ref{fig:ch4Paralellogram.pdf} for reference).  
+We want to establish an angular relationship between two consecutive vertices in a path.
+\begin{lem}\label{lem:hingedPolygon27}
+Let $\lr{a,b,c,d}$ be a polygonal path in the plane such that the unit disks centered at $a$, $b$, $c$, and $d$ are interior-disjoint.  Then the sum of the two angles on each side at the two interioir vertices is greater than $\pi$. Then the sum of the two angles on each side at the two interior vertices is greater than $\pi$.
+\end{lem}
+\begin{proof}
+Without loss of generality, consider the two angles on the left side  at the two interioir vertices, $\angle abc$ and $\angle bcd$.  We have $\vlr{ab} = \vlr{bc} = \vlr{cd} = 2$, since we have a disk arrangement of unit disks.  If $\lr{a,b,c,d}$ is a rhombus, then $\vlr{ad}=2$ and $\angle abc + \angle bcd = \pi$.  Hence $\vlr{ad}>2$ implies $\angle abc + \angle bcd > \pi$. 
+\end{proof}
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.75\columnwidth]{graphics/lemmaHingedPolygon2.pdf}
+\captionof{figure}{(a)Four disks centered along a polygonal path $\lr{a,b,c,d}$ in various drawings.}\label{fig:lemmaHingedPolygon2.pdf}
+\end{center}
+\end{minipage}
+
+We can now say that for any two consecutive vertices $\lr{v_i, v_{i+1}}$ along a path, the following angular relationship from Lemma \ref{lem:hingedPolygon27}:
+$$ 
+\begin{array}{rcl}
+\pi &<& \alpha_i + \gamma_i \\
+\pi &<& \beta_i + \delta_i
+\end{array}
+$$
+This result shows that a perturbed snowflake removes the issue of having unintended constacts that do not reflect a give tree's edge relations that a perfect snowflake has.  
 
 In Figure \ref{fig:ch4Paralellogram.pdf}(a), we have a parallelogram with four unit disks centered, one on each of the vertices of the parallelogram.  
 If $\alpha_i + \gamma_{i+1} < \pi$, One of the disks will overlap with another.  
@@ -75,12 +101,7 @@ $$
 
 We know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{24 \zeta(\epsilon)}{5\sqrt{3}}.$
 We also know that in canonical position:
-$$ 
-\begin{array}{rcl}
-\pi &=& \alpha_0 + \gamma_0 \\
-\pi &=& \beta_0 + \delta_0
-\end{array}
-$$
+
 Together, we have the following result:
 \begin{eqnarray*}
 2\pi &=& \alpha_0 + \gamma_0 + \beta_0 + \delta_0\\
@@ -96,13 +117,3 @@ Since we've shown that the geometric shape in arbirary position is already close
 
 We have shown the displacements of all components of the perturbed snowflake are small for any $\epsilon > 0$.  
 This shows that the structure has stability in preserving any information encoded with it.
-
-
-
-
-
-
-
-
-
-

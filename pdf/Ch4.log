@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 OCT 2016 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  23 OCT 2016 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,10 +846,10 @@ File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 17.
+ine 16.
 (pdftex.def)             Requested size: 143.09538pt x 102.39908pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
+Overfull \hbox (15.0pt too wide) in paragraph at lines 14--20
 []$[]$ 
  []
 
@@ -879,7 +879,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 17--23
 [2 <./graphics/hexagonPetiolesLeafs9Layers.pdf>] [3]) (./ch4/PerturbedTree.tex
 
 LaTeX Warning: Reference `fig:modifiedContactGraph' on page 4 undefined on inpu
-t line 14.
+t line 18.
 
 ) (./ch4/proofs.tex
 <graphics/LineSegmentDelta.pdf, id=54, 390.45876pt x 50.16742pt>
@@ -893,8 +893,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 10--16
 []$[]$ 
  []
 
-[4 <./graphics/LineSegmentDelta.pdf>]
-<graphics/part1ch4.pdf, id=61, 143.96887pt x 133.49875pt>
+[4] <graphics/part1ch4.pdf, id=58, 143.96887pt x 133.49875pt>
 File: graphics/part1ch4.pdf Graphic file (type pdf)
 
 <use graphics/part1ch4.pdf>
@@ -905,38 +904,52 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 25--31
 []$[]$ 
  []
 
-<graphics/ch4Paralellogram.pdf, id=62, 810.32736pt x 286.81151pt>
-File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
+[5 <./graphics/LineSegmentDelta.pdf> <./graphics/part1ch4.pdf>]
+<graphics/lemmaHingedPolygon2.pdf, id=93, 1382.56528pt x 306.92667pt>
+File: graphics/lemmaHingedPolygon2.pdf Graphic file (type pdf)
 
-<use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 56.
-(pdftex.def)             Requested size: 325.215pt x 115.10768pt.
+<use graphics/lemmaHingedPolygon2.pdf>
+Package pdftex.def Info: graphics/lemmaHingedPolygon2.pdf used on input line 62
+.
+(pdftex.def)             Requested size: 325.215pt x 72.19801pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 54--60
+Overfull \hbox (15.0pt too wide) in paragraph at lines 60--66
 []$[]$ 
  []
 
-[5 <./graphics/part1ch4.pdf>] [6 <./graphics/ch4Paralellogram.pdf>])
+<graphics/ch4Paralellogram.pdf, id=94, 810.32736pt x 286.81151pt>
+File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
+
+<use graphics/ch4Paralellogram.pdf>
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 82.
+(pdftex.def)             Requested size: 325.215pt x 115.10768pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 80--86
+[]$[]$ 
+ []
+
+[6 <./graphics/lemmaHingedPolygon2.pdf> <./graphics/ch4Paralellogram.pdf>])
 (./ch4/finale.tex
-<graphics/hexagonOutlineLayerSmall.pdf, id=132, 204.32335pt x 192.29843pt>
+<graphics/hexagonOutlineLayerSmall.pdf, id=157, 204.32335pt x 192.29843pt>
 File: graphics/hexagonOutlineLayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutlineLayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutlineLayerSmall.pdf used on input li
-ne 12.
+ne 11.
 (pdftex.def)             Requested size: 216.81pt x 204.05835pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 10--16
+Overfull \hbox (15.0pt too wide) in paragraph at lines 9--15
 []$[]$
  []
 
+[7]
 
-LaTeX Warning: Reference `thm:disk' on page 7 undefined on input line 21.
+LaTeX Warning: Reference `thm:disk' on page 8 undefined on input line 20.
 
 
-LaTeX Warning: Reference `thm:disk' on page 7 undefined on input line 28.
+LaTeX Warning: Reference `thm:disk' on page 8 undefined on input line 27.
 
-[7 <./graphics/hexagonOutlineLayerSmall.pdf>])) (../pdf/Ch4.bbl [8]
+)) (../pdf/Ch4.bbl [8 <./graphics/hexagonOutlineLayerSmall.pdf>]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
@@ -950,10 +963,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17490 strings out of 493089
- 318586 string characters out of 6134841
+ 17497 strings out of 493089
+ 318806 string characters out of 6134841
  507693 words of memory out of 5000000
- 20527 multiletter control sequences out of 15000+600000
+ 20533 multiletter control sequences out of 15000+600000
  31863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,59p,521b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -965,15 +978,16 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on ../pdf/Ch4.pdf (13 pages, 270798 bytes).
+5/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on ../pdf/Ch4.pdf (13 pages, 296192 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
+ 220 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  22 OCT 2016 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  23 OCT 2016 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1260,7 +1260,7 @@ Chapter 2.
 File: graphics/LogicEngineFrameFigure1Scaled.pdf Graphic file (type pdf)
 <use graphics/LogicEngineFrameFigure1Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure1Scaled.pdf used on inp
-ut line 10.
+ut line 8.
 (pdftex.def)             Requested size: 233.38133pt x 282.96648pt.
 
 <graphics/LogicEngineFrameFigure1halfScaled.pdf, id=306, 153.45331pt x 178.6875
@@ -1268,7 +1268,7 @@ ut line 10.
 File: graphics/LogicEngineFrameFigure1halfScaled.pdf Graphic file (type pdf)
  <use graphics/LogicEngineFrameFigure1halfScaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure1halfScaled.pdf used on
- input line 25.
+ input line 23.
 (pdftex.def)             Requested size: 153.45291pt x 178.68713pt.
 
 
@@ -1279,12 +1279,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: graphics/LogicEngineFrameFigure2Scaled.pdf Graphic file (type pdf)
 <use graphics/LogicEngineFrameFigure2Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure2Scaled.pdf used on inp
-ut line 41.
+ut line 38.
 (pdftex.def)             Requested size: 252.4425pt x 142.492pt.
  [17
 
  <./graphics/LogicEngineFrameFigure1Scaled.pdf>]
-Overfull \hbox (1.41667pt too wide) in paragraph at lines 55--63
+Overfull \hbox (1.41667pt too wide) in paragraph at lines 52--60
 [][] 
  []
 
@@ -1295,7 +1295,7 @@ File: graphics/logicEngineCollisions.pdf Graphic file (type pdf)
 
 <use graphics/logicEngineCollisions.pdf>
 Package pdftex.def Info: graphics/logicEngineCollisions.pdf used on input line 
-77.
+74.
 (pdftex.def)             Requested size: 161.63547pt x 128.81142pt.
 
 <graphics/logicEngineValidConfigurations.pdf, id=334, 308.6983pt x 97.74919pt>
@@ -1303,7 +1303,7 @@ File: graphics/logicEngineValidConfigurations.pdf Graphic file (type pdf)
 
 <use graphics/logicEngineValidConfigurations.pdf>
 Package pdftex.def Info: graphics/logicEngineValidConfigurations.pdf used on in
-put line 86.
+put line 83.
 (pdftex.def)             Requested size: 308.69754pt x 97.74895pt.
  [19 <./graphics/logicEngineCollisions.pdf> <./graphics/logicEngineValidConfigu
 rations.pdf>]
@@ -1312,31 +1312,31 @@ t>
 File: graphics/LogicEngineFrameFigure5Scaled.pdf Graphic file (type pdf)
  <use graphics/LogicEngineFrameFigure5Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure5Scaled.pdf used on inp
-ut line 123.
+ut line 120.
 (pdftex.def)             Requested size: 2967.4542pt x 3038.79257pt.
 
-Overfull \hbox (2533.8342pt too wide) in paragraph at lines 123--124
+Overfull \hbox (2533.8342pt too wide) in paragraph at lines 120--121
  [] 
  []
 
 
 LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 20 undefined
- on input line 124.
+ on input line 121.
 
 
 LaTeX Warning: Reference `fig:LogicEngineFrameFigure2.pdf' on page 20 undefined
- on input line 124.
+ on input line 121.
 
 
-LaTeX Warning: Float too large for page by 2421.36258pt on input line 126.
+LaTeX Warning: Float too large for page by 2421.36258pt on input line 123.
 
 
-Package caption Warning: \label without proper \caption on input line 54.
+Package caption Warning: \label without proper \caption on input line 51.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 20 undefined on
- input line 163.
+ input line 160.
 
 ) (./ch2/HingedPolygonsV3.tex [20] [21 <./graphics/LogicEngineFrameFigure5Scale
 d.pdf>] <graphics/HingedLogicEngineSmall.pdf, id=369, 296.04602pt x 193.789pt>
@@ -1348,7 +1348,7 @@ Package pdftex.def Info: graphics/HingedLogicEngineSmall.pdf used on input line
 (pdftex.def)             Requested size: 296.04529pt x 193.78851pt.
 
 
-Package caption Warning: \label without proper \caption on input line 39.
+Package caption Warning: \label without proper \caption on input line 22.
 See the caption package documentation for explanation.
 
 
@@ -1356,13 +1356,13 @@ LaTeX Warning: Reference `tbl:hingedPolygonsv3-1a' on page 22 undefined on inpu
 t line 19.
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 37--54
+Overfull \hbox (15.0pt too wide) in paragraph at lines 21--37
 []$[]$ 
  []
 
 
 LaTeX Warning: Reference `TBL:HingedPolygonsV3-1' on page 22 undefined on input
- line 62.
+ line 45.
 
 [22
 
@@ -1372,7 +1372,7 @@ t>
 File: graphics/HingedLogicEngineSmallEnumerated.pdf Graphic file (type pdf)
  <use graphics/HingedLogicEngineSmallEnumerated.pdf>
 Package pdftex.def Info: graphics/HingedLogicEngineSmallEnumerated.pdf used on 
-input line 73.
+input line 56.
 (pdftex.def)             Requested size: 428.06822pt x 207.11928pt.
 )) (./ch3/chapter3.tex
 (./ch3/ch3Introduction.tex [23 <./graphics/HingedLogicEngineSmallEnumerated.pdf
@@ -1667,10 +1667,10 @@ File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 17.
+ine 16.
 (pdftex.def)             Requested size: 143.09538pt x 102.39908pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 15--21
+Overfull \hbox (15.0pt too wide) in paragraph at lines 14--20
 []$[]$ 
  []
 
@@ -1693,7 +1693,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 17--23
 (./ch4/PerturbedTree.tex
 
 LaTeX Warning: Reference `fig:modifiedContactGraph' on page 49 undefined on inp
-ut line 14.
+ut line 18.
 
 ) (./ch4/proofs.tex
 <graphics/LineSegmentDelta.pdf, id=752, 390.45876pt x 50.16742pt>
@@ -1707,8 +1707,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 10--16
 []$[]$ 
  []
 
-[49 <./graphics/LineSegmentDelta.pdf>]
-<graphics/part1ch4.pdf, id=759, 143.96887pt x 133.49875pt>
+[49] <graphics/part1ch4.pdf, id=756, 143.96887pt x 133.49875pt>
 File: graphics/part1ch4.pdf Graphic file (type pdf)
 
 <use graphics/part1ch4.pdf>
@@ -1719,32 +1718,45 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 25--31
 []$[]$ 
  []
 
-<graphics/ch4Paralellogram.pdf, id=760, 810.32736pt x 286.81151pt>
-File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
+[50 <./graphics/LineSegmentDelta.pdf> <./graphics/part1ch4.pdf>]
+<graphics/lemmaHingedPolygon2.pdf, id=791, 1382.56528pt x 306.92667pt>
+File: graphics/lemmaHingedPolygon2.pdf Graphic file (type pdf)
 
-<use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 56.
-(pdftex.def)             Requested size: 325.215pt x 115.10768pt.
+<use graphics/lemmaHingedPolygon2.pdf>
+Package pdftex.def Info: graphics/lemmaHingedPolygon2.pdf used on input line 62
+.
+(pdftex.def)             Requested size: 325.215pt x 72.19801pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 54--60
+Overfull \hbox (15.0pt too wide) in paragraph at lines 60--66
 []$[]$ 
  []
 
-[50 <./graphics/part1ch4.pdf>] [51 <./graphics/ch4Paralellogram.pdf>])
+<graphics/ch4Paralellogram.pdf, id=792, 810.32736pt x 286.81151pt>
+File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
+
+<use graphics/ch4Paralellogram.pdf>
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 82.
+(pdftex.def)             Requested size: 325.215pt x 115.10768pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 80--86
+[]$[]$ 
+ []
+
+[51 <./graphics/lemmaHingedPolygon2.pdf> <./graphics/ch4Paralellogram.pdf>])
 (./ch4/finale.tex
-<graphics/hexagonOutlineLayerSmall.pdf, id=831, 204.32335pt x 192.29843pt>
+<graphics/hexagonOutlineLayerSmall.pdf, id=857, 204.32335pt x 192.29843pt>
 File: graphics/hexagonOutlineLayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutlineLayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutlineLayerSmall.pdf used on input li
-ne 12.
+ne 11.
 (pdftex.def)             Requested size: 216.81pt x 204.05835pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 10--16
+Overfull \hbox (15.0pt too wide) in paragraph at lines 9--15
 []$[]$
  []
 
-[52 <./graphics/hexagonOutlineLayerSmall.pdf>])) (../pdf/Thesis.bbl [53])
+[52])) (../pdf/Thesis.bbl [53 <./graphics/hexagonOutlineLayerSmall.pdf>])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
 [54
 
@@ -1754,10 +1766,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18076 strings out of 493089
- 334840 string characters out of 6134841
+ 18083 strings out of 493089
+ 335060 string characters out of 6134841
  507688 words of memory out of 5000000
- 20954 multiletter control sequences out of 15000+600000
+ 20960 multiletter control sequences out of 15000+600000
  64297 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1149b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1775,17 +1787,18 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2015/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw
-/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb
-8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (58 pages, 797142 bytes).
+fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/
+utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/Thesis.pdf (58 pages, 823079 bytes).
 PDF statistics:
- 903 PDF objects out of 1000 (max. 8388607)
- 588 compressed objects within 6 object streams
+ 931 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 

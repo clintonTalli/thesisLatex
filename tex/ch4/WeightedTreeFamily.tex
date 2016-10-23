@@ -24,8 +24,8 @@ An drawaing example of this snowflake description is shown in Figure \ref{fig:he
 A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $r$.   
 A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $r + \zeta(\epsilon)$.  
 The value of $\zeta (\epsilon)$ will be determined later on in the proof of the Lemma \ref{lem:ch4IntroLemma}.  
-For our analysis, all realizations of any snowflake, perfect or perturbed, shall have the disk corresponding to $v_0$ is centered at the origin.  We can assume one of the paths is on the x-axis.  
-% This is said to be the canonical position under Hausdorff distance of the snowflake tree.   
+For our analysis, all realizations of any snowflake, perfect or perturbed, shall have the disk corresponding to $v_0$ is centered at the origin.  
+We can assume that a neighbor of $v_0$ is on the positive x-axis.     
 
 \paragraph{Perfectly Weighted Snowflake Tree.}
 
@@ -34,13 +34,12 @@ Consider the graph of the triangular lattice with unit distant edges:
 V &=& \left\lbrace a\cdot (1,0) + b \cdot \left(\frac{1}{2},\frac{\sqrt{3}}{2}\right) : a,b \in \bbZ \right\rbrace\\
 E &=& \left\lbrace \left\lbrace u,v \right\rbrace : \vert\vert u-v \vert\vert = 1 \text{ and } u,v \in V\right\rbrace
 \end{eqnarray*}
-The following graph, $G=(V,E)$ is said to be the \textit{unit distance graph} of the triangular lattice.  
-We can show that no two distinct edges of this graph are non-crossing.  
-First suppose that there were two distinct edges that crossed, $\left\lbrace u_1,v_1 \right\rbrace $ and $\left\lbrace u_2,v_2 \right\rbrace$.  
-With respect to $u_1$, there are 6 possible edges corresponding to it, with each edge $\frac{\pi}{3}$ radians away from the next.  
-No two edges cross.
-% Neither edge crosses another; and so we have a contradiction that there are no edge crossings with $\left\lbrace u_1,v_1 \right\rbrace $.  
-
+The graph, $G=(V,E)$ is said to be the \textit{unit distance graph} of the triangular lattice.  
+We can show that no two distinct edges cross.  
+First suppose that there were two distinct edges that crossed, $\left\lbrace u_1,v_1 \right\rbrace $ and $\left\lbrace u_2,v_2 \right\rbrace$. 
+By strict triangle inequality of the sides and diagonals of the quadrilateral $\lr{u_1, u_2, v_1, v_2}$, we have the following result:
+$$\vlr{u_1,u_2} + \vlr{u_2,v_1} + \vlr{v_1,v_2} + \vlr{u_1,v_2}< 4 < 2 \lr{\vlr{u_1,u_2} + \vlr{u_1,u_2 }}=4$$ 
+which is a contradiction.
 
 The perfectly weighted snowflake tree that is a subgraph over the \textit{unit distance graph}, $G=(V,E)$, of the triangular lattice.  
 For the remainder of the thesis, a \textit{snowflake}, $S_i$ is a realization of a weighted tree $T_i$.  
@@ -51,12 +50,12 @@ For $S_i$, there are $i$ vertices on each path.
 
 We define the six paths from origin as follows:      
 \begin{eqnarray*}
-p_1 &=& \set{a\cdot\lr{1,0} = \vec{v}}{a = 1,2,\dots, i}\\
-p_2 &=& \set{a\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}} = \vec{v}}{a = 1,2,\dots, i}\\
-p_3 &=& \set{-a\cdot \lr{1,0} + a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}} = a\lr{-\frac{1}{2},\frac{\sqrt{3}}{2}} = \vec{v}}{a = 1,2,\dots, i}\\
-p_4 &=& \set{a \cdot \lr{-1,0} = \vec{v}}{a = 1,2,\dots, i}\\
-p_5 &=& \set{a \cdot \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}  = \vec{v}}{a = 1,2,\dots, i}\\
-p_6 &=& \set{ a\cdot \lr{1,0} - a \cdot \lr{\frac{1}{2},\frac{\sqrt{3}}{2}}= a \cdot \lr{\frac{1}{2}, -\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}
+p_1 &=& \set{a\cdot\lr{1,0}}{a = 1,2,\dots, i}\\
+p_2 &=& \set{a\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}\\
+p_3 &=& \set{a\lr{-\frac{1}{2},\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}\\
+p_4 &=& \set{a \cdot \lr{-1,0}}{a = 1,2,\dots, i}\\
+p_5 &=& \set{a \cdot \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}\\
+p_6 &=& \set{a \cdot \lr{\frac{1}{2}, -\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}
 \end{eqnarray*}
 For $S_i$ there exists $i$ vertices on each path.  We shall denote the $\ith$ vertex on the $\jth$ path as $v_{j,i}$.  
 For each path defined above, the paths are defined as a set of vectors, $\vec{v} = a \cdot \vec{p}$  for some $a \in \bbN$ and $\vec{p} \in \bbR^2$.  
@@ -72,7 +71,6 @@ In these exception, attach one leaf to the side of the vertex that is closest to
 The triangular lattice is symmetric under rotation about $v_0$ by $\frac{\pi}{3}$ radians.  
 For each vertex $v_{1,l}$ and $l = 3 b \leq i$ where $b \in \bbN$, we place two petioles from it; the first petiole $\frac{\pi}{3}$ above $p_1$ at $v_{1,l}$ and $\frac{-\pi}{3}$ below $p_1$ at $v_{1,l}$ and call these petioles $p_{1,l}^+$ and $p_{1,l}^-$ respectively.  
 With respect to $v_{1,l}$, one unit along $p_{1,l}^+$ is a point on the triangular lattice and similarly so on $p_{1,l}^-$.  
-Continuing the walk along these paths, unit distance-by-unit distance, we obtain the next point on the triangular lattice up to $i-k$ distance away from $v_{1,l}$.  
 Without loss of generality, for each vertex $v$ of the petiole which are not in $p_1$ has two associated leaf nodes $v^+$ and $v^-$; $v^+$ is placed $\frac{\pi}{3}$ and one unit above $v$ and $v^-$ is placed $\frac{-\pi}{3}$ and one unit below $v$.  
 Thus all leaf nodes are in the triangular lattice.
 This shows that each of the $i-k$ vertices on $p_{1,l}^-$, $p_{1,l}^+$, and leaves are in $V$.

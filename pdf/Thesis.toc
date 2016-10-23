@@ -49,8 +49,8 @@
 \contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{48}
 \contentsline {subsection}{\numberline {4.2.1}Perturbed Weighted Trees $T_\epsilon $}{49}
 \contentsline {paragraph}{Displacement on $S_1$ is small.}{49}
-\contentsline {paragraph}{Displacement on the arms is small.}{50}
-\contentsline {paragraph}{Displacement on the petioles is small.}{51}
+\contentsline {paragraph}{Displacement on the arms is small.}{51}
+\contentsline {paragraph}{Displacement on the petioles is small.}{52}
 \contentsline {paragraph}{Proof of Lemma \ref {lem:ch4IntroLemma}}{52}
-\contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{52}
+\contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{53}
 \contentsfinish 

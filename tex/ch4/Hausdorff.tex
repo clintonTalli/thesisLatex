@@ -1,4 +1,3 @@
-
 \section{Hausdorff Distance}  
 Let $A$ and $B$ be sets in the plane. The \textit{directed Hausdorff distance} is: 
 \begin{equation}\label{eqn:ContactGraphV3-1}
@@ -26,28 +25,25 @@ A weighted graph $G$ is said to be a \textit{stable} if it has the property that
 
 Suppose we have a unit disk $U$ and we have a grid overlayed on the disk with side length $\delta$.  
 Let $S_1(\delta)$ be the union of grid squares completely in the interior of $U$.  
-Let $S_2(\delta)$ be the union of squares with some point of the boundary of the square contained in the interior of disk $U$.  
-The Hausdorff distance of $U$ and $S_1(\delta)$ is at most $H\lr{S_1(\delta), U}=\sqrt{2}\delta$.  
-Similarly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}=\sqrt{2}\delta$.
-Thus if for any $\epsilon>0$, choose a $\delta$ such that $\sqrt{2}\delta \leq \epsilon$, the Hausdorff distance between $U$ and $S_1(\delta)$, $U$ and $S_2(\delta)$ is $$H\lr{S_1(\delta), U}=\sqrt{2}\delta=H\lr{S_2(\delta), U}.$$  
+Let $S_2(\delta)$ be the union of squares that intersect $U$.  
+The Hausdorff distance of $U$ and $S_1(\delta)$ is at most $H\lr{S_1(\delta), U}\leq\sqrt{2}\delta$.  
+Similarly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}\leq\sqrt{2}\delta$.
+For any $\epsilon>0$, choose a $\delta$ such that $\sqrt{2}\delta \leq \epsilon$. Then the Hausdorff distance between $U$ and $S_1(\delta)$, $U$ and $S_2(\delta)$ is: 
+$$
+\begin{array}{rcl}
+H\lr{S_1(\delta), U}&\leq&\sqrt{2}\delta\\
+H\lr{S_2(\delta), U}&\leq&\sqrt{2}\delta
+\end{array}
+$$  
 Similiaryly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}=\sqrt{2}\delta$.
 
-% \begin{prob}[Appoximating Polygonal Shapes with Contact Graphs]\label{problem:ApproxShapesWithContactGraphs}
-% For every $\epsilon >0$ and polygon $P$, there exists a contact graph $G = (V,E)$  such that the Hausdorff distance $d(P,G) < \epsilon$
-% \end{prob}
-
-
 \begin{lem}\label{lem:ch4IntroLemma}
-For every $\epsilon > 0$ and $x>0$, there exists an ordered weighted tree $T_\epsilon$ and regular hexagon $h$ of side length $x$ as an ordered disk contact graph such that:
+For every $\epsilon > 0$ and $x>0$, there exists an ordered weighted tree $T_\epsilon$ and regular hexagon $h$ of side length $x$ such that:
 \begin{enumerate}
 \item Every realization $r$ of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon in the sense that:
 $$H\lr{r\lr{T_\epsilon},h}=\epsilon$$
 \item The number of nodes in $T_\epsilon$ and the weights are polynomial in $\epsilon$ and $x$.
 \end{enumerate}
 \end{lem} 
- 
 
-\textbf{Lemma \ref{lem:ch4IntroLemma} can be generalized in three different ways: (1) if all weights are equal, (2) order does not matter, and (3) if we relax the regular hexagon to any arbitrary polygon.  
-If all weights are equal, then every realization of the ordered weighted tree $T_\epsilon$ in Lemma \ref{lem:ch4IntroLemma}....
-If order is removed from the weighted tree $T_\epsilon$, then ...
-If the regular hexagon is relaxed to an arbitrary polygon, then .. }
+Lemma \ref{lem:ch4IntroLemma} is rather restrictive; it begs the question of whether it can be generalized. Some ways this lemma could be generalized are: (1) if all weights are equal, (2) order does not matter, and (3) if we relax the regular hexagon to any arbitrary polygon. 

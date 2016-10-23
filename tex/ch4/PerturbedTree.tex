@@ -1,9 +1,13 @@
 \subsection{Perturbed Weighted Trees $T_\epsilon$}
-Given $\epsilon > 0$ and $x >0$, we define $T_\epsilon$ as follows: the tree $T_i$ with weight $\epsilon$ for every vertex except $v_0$; $v_0$ has a weight $\epsilon + \zeta(\epsilon)$ for some $\zeta(\epsilon)>0$ that is specified later.  
-Let the corresponding disk arrangement for $T_\epsilon$ be $S_j$ where $$j=\frac{x}{2 \epsilon} + 1.$$  
+In a perfect snowflake there are contacts in the disk arrangement that do not reflect the the corresponding edge set of the tree.  
+By modifying the weight of the center disk corresponding to $v_0$ to differ from all others weights in a snowflake, the disks around the central disk will have additional area of realization and removes the issue of having unintended constacts that do not reflect a give tree's edge relations.  
+This claim is shown as a result of Lemma \ref{lem:hingedPolygon27} later. 
+
+Given $\epsilon > 0$ and $x >0$, we define $T_\epsilon$ as follows: the tree $T_i$ with weight $\epsilon$ for every vertex except $v_0$; $v_0$ has a weight $\epsilon + \zeta(\epsilon)$ for some $\zeta(\epsilon)>0$ that is specified later.  For $T_i$, let $$i = \ceil{\frac{x}{\epsilon}} .$$ 
+% Let the corresponding disk arrangement for $T_\epsilon$ be $S_j$ where $$j=\frac{x}{2 \epsilon} + 1.$$  
 A perturbed weighted tree $T_\epsilon$ can be realized as a disk touching graph (a disk arrangement).  
 A perturbed snowflake realization has some distinct qualities from perfect snowflake realizations.  
-The angular relationships between adjacent vertices may vary, the distance between adjacent and neighboring vertices may vary as well.
+The angular relationships between adjacent vertices may vary.
 
 \textbf{Modification of $S_1$.}
 We will show for any $\epsilon >0$ and arbitrary position of vertices, the placement of vertices is close to canonical position.  
