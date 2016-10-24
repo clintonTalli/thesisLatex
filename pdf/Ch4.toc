@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {1.2.1}Perturbed Weighted Trees $T_\epsilon $}{4}
 \contentsline {paragraph}{Displacement on $S_1$ is small.}{4}
 \contentsline {paragraph}{Displacement on the arms is small.}{6}
-\contentsline {paragraph}{Displacement on the petioles is small.}{7}
-\contentsline {paragraph}{Proof of Lemma \ref {lem:ch4IntroLemma}}{7}
-\contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{8}
+\contentsline {paragraph}{Displacement on the petioles is small.}{8}
+\contentsline {paragraph}{Proof of Lemma \ref {lem:ch4IntroLemma}}{9}
+\contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{10}
 \contentsfinish 

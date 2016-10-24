@@ -1,10 +1,11 @@
 
 \paragraph{Displacement on $S_1$ is small.}
-Note that (1) the adjacent disks in a perfect snowflake may or may not be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$.  
+Note that (1) the adjacent disks in a perfect snowflake cannot be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$ because every contact is encoded in the tree.  
 Given a snowflake in arbirary position with $n$ unit segments per arm, the arms of the snowflake has a maximal length of $n$, end to end, if in canonical position; otherwise, the arm will have an end to end length less than $n$.  
 Figure \ref{fig:LineSegmentDelta.pdf} shows an arm of a tree in arbitrary position corresponds to a compression and shift of vertices.  
 The arm realized in arbitrary position in Figure \ref{fig:LineSegmentDelta.pdf} is analgous to a tree realized in arbitrary position where vertices are in a different position than canonical.  
-Our goal is to show that for any $\epsilon >0$ and $x >0$, the position of the center $v$ of any disk in the disk arrangement in any arbitrary realization corresponding to $T_\epsilon$ has a small displacement, i.e. $v$ is found in an open ball referenced at the canonical position of $v$, $v_c$: $$v \in b_{\chi(\epsilon,x)}(v_c).$$ 
+Our goal is to show that for any $\epsilon >0$ and $x >0$, the position of the center $v$ of any disk in the disk arrangement in any arbitrary realization corresponding to $T_\epsilon$ has a small displacement, i.e. $v$ is found in an open ball referenced at the canonical position of $v$, $v_c$: $$v \in b_{\psi_1(\epsilon}(v_c).$$ 
+The definition of $\psi_1(\epsilon)$ is shown later on.
 
 
 \begin{minipage}{\linewidth}
@@ -13,8 +14,7 @@ Our goal is to show that for any $\epsilon >0$ and $x >0$, the position of the c
 \captionof{figure}{The polyline at the bottom represents a snowflake arm in canonical position.  The polyline above represents a snowflake arm in non-canonical position.}\label{fig:LineSegmentDelta.pdf}
 \end{center}
 \end{minipage}
-
-Suppose we are given an ordered weighted tree $T_\epsilon$ such that the corresponding disk arrangement is a perturbed $S_1$.  
+ 
 In a perfect snowflake of $S_1$ the six disks around the central disk kiss each other.  
 The angle formed from the center of the central disk to the centers of any two adjacent disks is $\frac{\pi}{3}$.  
 The side lengths of the equalateral triangle formed by the centers of three adjacent disks, one of which is the central disk, is $2\epsilon$.  
@@ -36,15 +36,25 @@ To find the bounds of how large or small $\chi$ can be, we show the trigonometri
 \frac{\epsilon}{2\epsilon+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} &\leq& \frac{\epsilon}{2\epsilon+\zeta(\epsilon)} + \frac{\sqrt{3}}{2} \sin \chi =\frac{1}{2} \cos \chi\\
 &\iff&\\
 \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}&\leq& \frac{1}{2}-\frac{\epsilon}{2\epsilon+\zeta(\epsilon)}  \qquad \text{if }\chi < 1 \\
-\frac{5\sqrt{3}}{12} \chi &\leq&\frac{2\epsilon + \zeta(\epsilon) - 2\epsilon}{2 ( 2 + \zeta(\epsilon))} \\
-\chi &\leq& \frac{6}{5 \sqrt{3}}\frac{\zeta(\epsilon)}{ 2 + \zeta(\epsilon)} 
+\frac{5\sqrt{3}}{12} \chi &\leq&\frac{2\epsilon + \zeta(\epsilon) - 2\epsilon}{2 ( 2\epsilon + \zeta(\epsilon))} \\
+\chi &\leq& \frac{6}{5 \sqrt{3}}\frac{\zeta(\epsilon)}{ 2\epsilon + \zeta(\epsilon)} 
 \end{eqnarray*}
-
-The coordinates of the centers of the disks of the construction are close to cannonical position following the angular displacement argument above.  
-That is if $u$ is a center of a disk in a disk arrangement corresponding to $T_\epsilon$, $u$ lies in a ball $b_{\chi(\epsilon)}\lr{u_c}$ where $u_c$ is the cannonical position of the $u$.  
-
 For any $\epsilon > 0$, the bounds for angular displacement formed at the center of the central disk and two adjacent disks is:
 $$ \frac{\pi}{3} - \frac{12 \zeta(\epsilon)}{5\sqrt{3}} \leq \frac{\pi}{3} - 2 \chi = 2\chi_\text{min} \leq 2\chi \leq 2\chi_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{12 \zeta(\epsilon)}{5\sqrt{3}}$$
+This shows the bounds of the angular displacement around the central disk.  
+To translate this to an coordinate displacement of the centers of the disks around the central disk, we compute a the radius of the ball of radius $\psi$ in which the centers may lie. 
+$$\psi(\epsilon) = \lr{2 \epsilon + \zeta(\epsilon)} \sin \chi$$
+Using the Maclaurin series of $\sin \chi$:
+$$
+\begin{array}{rcl}
+\psi_i(\epsilon) &=& \lr{2 \epsilon + \zeta(\epsilon)} \sin \chi\\
+&\leq& \lr{2 \epsilon + \zeta(\epsilon)} \frac{6}{5 \sqrt{3}}\frac{\zeta(\epsilon)}{ 2\epsilon+ \zeta(\epsilon)} \\
+&=& \frac{6\zeta(\epsilon)}{5 \sqrt{3}}
+\end{array}
+$$
+The coordinates of the centers of the disks of the construction are close to cannonical position following the angular displacement argument above.  
+That is, if $u$ is a center of a disk in a realization to $T_\epsilon$, $u$ lies in a ball $b_{\psi_1(\epsilon)}\lr{u_c}$ where $u_c$ is the cannonical position of the $u$.  
+
 \paragraph{Displacement on the arms is small.}
 Without loss of generality, consider a path of vertices along a distinct arm, petiole, or leaf $\lr{v_1, v_2, \ldots, v_n}$.  
 In the case that there are two paths attached to each vertex, four different angles about the vertex are formed.  
@@ -80,7 +90,7 @@ For any arbitrary realization of a perturbed snowflake, any two consecutive angl
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.75\columnwidth]{graphics/ch4Paralellogram.pdf}
-\captionof{figure}{(a)Four disks of the snowflake shown where the top two disks can either be leaves off petioles or off the arms. (b)An arm depicted at the $\ith$ and $(i+1)^\text{st}$ vertex.}\label{fig:Vertebrae.pdf}\label{fig:ch4Paralellogram.pdf}
+\captionof{figure}{(a)Four disks of the snowflake shown where the top two disks can either be leaves off petioles or off the arms. (b)An arm depicted at the $\ith$ and $(i+1)^\text{st}$ vertex.}\label{fig:ch4Paralellogram.pdf}
 \end{center}
 \end{minipage}
 
@@ -89,7 +99,7 @@ Denote the angles on the concave side of the $\ith$ vertex as $\alpha_i$ and $\b
 For any vertex, the sum of angles about the vertex is $2 \pi$, e.g.:
 $$\gamma_i + \delta_i + \alpha_{i+1} + \beta_{i+1} = 2 \pi$$ 
 
-Suppose we numbered the the disks about the central disk 1 through 6.  
+Suppose we numbered the disks about the central disk 1 through 6.  
 Without loss of generality, the angles $\alpha_0$ and $\beta_0$ correspond to the angles formed between the central angle, disks $i$ and $i+1$ and disks $i+1$ and $i+2$ respectively, for $i = 1,2,3$.  
 The bounds for $\alpha_0$ and $\beta_0$ are the same as $2\chi$ in the earlier argument, i.e.:
 $$
@@ -100,17 +110,68 @@ $$
 $$
 
 We know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{24 \zeta(\epsilon)}{5\sqrt{3}}.$
-We also know that in canonical position:
+By induction: 
+$$
+\begin{array}{rcl}
+\alpha_i +\beta_i &\leq& \frac{2 \pi}{3} + \frac{24 \zeta(\epsilon)}{5\sqrt3}\\
+\pi &\leq& \alpha_i + \gamma_i \\
+\pi &\leq& \beta_i + \delta_i
+\end{array}
+$$
 
 Together, we have the following result:
 \begin{eqnarray*}
-2\pi &=& \alpha_0 + \gamma_0 + \beta_0 + \delta_0\\
-2\pi &=& \alpha_0 + \gamma_0 + \lr{2\pi - \alpha_1 - \beta_1}\\
-\alpha_1 + \beta_1&=&\alpha_0 + \gamma_0 \\
+2\pi &=& \alpha_i + \gamma_i + \beta_i + \delta_i\\
+ &=& \alpha_i + \gamma_i + \lr{2\pi - \alpha_{i+1} - \beta_{i+1}}\\
+ &\iff&\\
+\alpha_{i+1} + \beta_{i+1}&=&\alpha_i + \gamma_i \\
 &\leq& \frac{2\pi}{3} + \frac{24\zeta(\epsilon)}{5\sqrt{3}}\\
 \end{eqnarray*}
 And so the error bounds on $\frac{\pi}{3}+2\chi$ hold in general for $\alpha_i$ and $\beta_i$ for all $i$.  
 $$\alpha_i + \beta_i \leq \frac{2\pi}{3} + \frac{24\zeta(\epsilon)}{5\sqrt{3}}$$
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.75\columnwidth]{graphics/psiSegmentChange.pdf}
+\captionof{figure}{This figure illustrates the change of position of the centers of a disk in an arbitrary positin and in a straight, canoncial position. }\label{fig:psiSegmentChange.pdf}
+\end{center}
+\end{minipage}
+
+A perturbed snowflake is a realization of some tree $T_\epsilon$.  
+For the $\jth$ vertex along some path from $v_0$ to $v_j$ (see Figure \ref{fig:psiSegmentChange.pdf} for reference), we can compute the bound of coordinate displacement $\psi_i$ of the disk corresponding to $v_j$ using our inductive argument on the angular displacement above.  
+Without loss of generality, to translate the $\jth$ coordinate displacement, we compute the radius of the ball of radius $\psi_i$ in which the $\jth$ center may lie. 
+$$\psi_j(\epsilon) = \lr{j \epsilon + \zeta(\epsilon)} \sin \chi$$
+Using the Maclaurin series of $\sin \chi$:
+$$
+\begin{array}{rcl}
+\psi_j(\epsilon) &=& \lr{j \epsilon + \zeta(\epsilon)} \sin \chi\\
+&\leq& \lr{j \epsilon + \zeta(\epsilon)} \frac{6}{5 \sqrt{3}}\frac{\zeta(\epsilon)}{ 2\epsilon + \zeta(\epsilon)} \\
+&=& \frac{6}{5}\frac{\zeta(\epsilon)\lr{j \epsilon + \zeta(\epsilon)}}{2 \epsilon + \zeta(\epsilon)}\\
+\end{array}
+$$
+We need to find $\zeta(\epsilon)$ such that:
+$$ 
+\begin{array}{rcl}
+\frac{6}{5}\frac{\zeta(\epsilon)\lr{j \epsilon + \zeta(\epsilon)}}{2 \epsilon + \zeta(\epsilon)} &\leq& \epsilon\\
+6j\epsilon \zeta(\epsilon) + 6 \zeta^2 (\epsilon) &\leq& 10 \epsilon^2 + 5 \epsilon \zeta(\epsilon)\\
+\frac{(6j-5) \epsilon \zeta(\epsilon)}{2}\leq (6j-5)\epsilon \zeta(\epsilon) + 6 \zeta^2 (\epsilon) &\leq& 10 \epsilon^2 \\
+\zeta(\epsilon)&\leq& \frac{20\epsilon}{6j-5}\\
+&\leq& \frac{10 \epsilon}{3j}
+\end{array}
+$$
+Since $j\leq i$, let $\zeta(\epsilon)= 2i\epsilon$ and we can bound $\psi_i(\epsilon)$:
+$$
+\begin{array}{rcl}
+\psi_i(\epsilon) &=& \frac{6}{5}\frac{\zeta(\epsilon)\lr{j \epsilon + \zeta(\epsilon)}}{2 \epsilon + \zeta(\epsilon)}\\
+&=& \frac{12 i\epsilon \lr{ \epsilon + 2i\epsilon}}{5\lr{2 \epsilon + 2i\epsilon}}\\
+&=&\frac{12 i \epsilon^2 + 24 i^2 \epsilon }{10 (i+1) \epsilon}\\
+&=&\frac{12i\epsilon + 24i^2}{10(i+1)}\\
+&\leq& \frac{36(i+1)^2 \epsilon}{10(i+1)}\\
+&\leq& 4(i+1)\epsilon
+\end{array}
+$$
+We now relax $\psi_i(\epsilon) = 4(i+1)\epsilon$. Finally we can say that the displacement of the $\jth$ center denoted as $v^j$ of a disk lies in the ball $b_{\psi_i(\epsilon)}(v^j_c)$ around the canonical position $v_c^j$.
+
 \paragraph{Displacement on the petioles is small.}
 Note that the petioles have the same geometric structure as the arms; the exception is the number of leaves on each side of the petioles. 
 Since we've shown that the geometric shape in arbirary position is already close to canonical position for any $\epsilon>0$, the same argument applies here for the petioles.
