@@ -5,9 +5,9 @@ By modifying the weight of the center disk corresponding to $v_0$ to differ from
 This claim is shown as a result of Lemma \ref{lem:hingedPolygon27} later.
 We refer to the positions of the disks of $S_i$ as the \textit{canonical arrangement} of $S_i$.
 
-Given $\epsilon > 0$ and $x >0$, we define $T_\epsilon$ as follows: the tree $T_i$ with weight $\epsilon$ for every vertex except $v_0$; $v_0$ has a weight $\epsilon + \zeta(\epsilon)$ for some $\zeta(\epsilon)>0$ that is specified later.  For $T_i$, let $$i = \ceil{\frac{x}{\epsilon}} .$$ 
-A perturbed weighted tree $T_\epsilon$ can be realized as a disk touching graph (a disk arrangement).  
-A perturbed snowflake realization has some distinct qualities from perfect snowflake realizations.  
+Given $\epsilon > 0$ and $x >0$, we define $T_\epsilon$ as follows: the tree $T_i$ with weight $\epsilon$ for every vertex except $v_0$; $v_0$ has a weight $\epsilon + \zeta$ for some $\zeta>0$ that is specified later.  For $T_i$, let $$i = \ceil{\frac{x}{\epsilon}} .$$ 
+A perturbed weighted tree $T_\epsilon$ can be realized as a disk contact graph (a disk arrangement).  
+A perturbed snowflake realization has some distinct qualities from the perfect snowflake ordered contact graph of $S_i$.    
 The angular relationships between adjacent vertices may vary.
 
 \textbf{Modification of $S_1$.}
@@ -16,6 +16,18 @@ We show that for any realization of the ordered tree $T_\epsilon$
 In order to show this, we show the components of a perturbed snowflake in arbitrary position  are close to canonical position.  
 The argument comprises of three parts: (1) Showing that the pertubation of the central disk and the six neighboring disks is small, (2) show that the displacement along the arms for all $S_i$ for $i \geq 1$ is small, and (3) show that the displacement along the petioles is small.  
 
-Given a instance of a perturbed snowflake with $v_0$ having weight $\epsilon + \zeta(\epsilon)$ where $\epsilon > 0$, vertices neighboring $v_0$ each have a range of placement on the plane when realizaed as a disk arrangement. 
-Figure \ref{fig:modifiedContactGraph} shows a realization of $S_1$ and illustrates one such example of possible gaps, $\zeta(\epsilon)$, that could be created between adjacent disks of $S_1$ in a perfect snowflake.  
+Given a instance of a perturbed snowflake with $v_0$ having weight $\epsilon + \zeta$ where $\epsilon > 0$, vertices neighboring $v_0$ each have a range of placement on the plane when realizaed as a disk arrangement. 
+Figure \ref{fig:modifiedContactGraph} shows a realization of $S_1$ and illustrates one such example of possible gaps, $\zeta$, that could be created between adjacent disks of $S_1$ in a perfect snowflake.
+
+\begin{lem}\label{lem:ch4IntroLemma}
+For every $\epsilon > 0$ and $x>0$, there exists an ordered weighted tree $T_\epsilon$ and regular hexagon $h$ of side length $x$ such that:
+\begin{enumerate}
+\item Every realization $p$ of $T_\epsilon$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon in the sense that:
+$$H\lr{p\lr{T_\epsilon},h}=\epsilon$$
+\item The number of nodes in $T_\epsilon$ and the weights are polynomial in $\epsilon$ and $x$.
+\end{enumerate}
+\end{lem} 
+
+Lemma \ref{lem:ch4IntroLemma} is rather restrictive; it begs the question of whether it can be generalized. Some ways this lemma could be generalized are: (1) if all weights are equal, (2) order does not matter, and (3) if we relax the regular hexagon to any arbitrary polygon. 
+  
  

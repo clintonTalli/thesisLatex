@@ -1,4 +1,4 @@
-\section{Weighted Trees $T_k$}
+\section{Weighted Trees $T_i$}
 In this section we describe a particular family of unit weight trees and corresponding contact graphs disk arrangements called \textit{snowflakes}.  
 Note that we regard snowflakes with unit weight as a weight of $r$.  
 For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
@@ -12,7 +12,7 @@ For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
 	\end{itemize}
 \item Attach leaves to the vertices on paths $p_2$, $p_4$, and $p_6$.
 \end{itemize}
-An drawaing example of this snowflake description is shown in Figure \ref{fig:hexagonPetiolesLeafs9Layers.pdf}
+A drawaing example of this snowflake description is shown in Figure \ref{fig:hexagonPetiolesLeafs9Layers.pdf}
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -22,8 +22,8 @@ An drawaing example of this snowflake description is shown in Figure \ref{fig:he
 \end{minipage}
 
 A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $r$.   
-A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $r + \zeta(\epsilon)$.  
-The value of $\zeta (\epsilon)$ will be determined later on in the proof of the Lemma \ref{lem:ch4IntroLemma}.  
+A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $r + \zeta$.  
+The value of $\zeta $ will be determined later on in the proof of the Lemma \ref{lem:ch4IntroLemma}.  
 For our analysis, all realizations of any snowflake, perfect or perturbed, shall have the disk corresponding to $v_0$ is centered at the origin.  
 We can assume that a neighbor of $v_0$ is on the positive x-axis.     
 
@@ -37,12 +37,14 @@ E &=& \left\lbrace \left\lbrace u,v \right\rbrace : \vert\vert u-v \vert\vert = 
 The graph, $G=(V,E)$ is said to be the \textit{unit distance graph} of the triangular lattice.  
 We can show that no two distinct edges cross.  
 First suppose that there were two distinct edges that crossed, $\left\lbrace u_1,v_1 \right\rbrace $ and $\left\lbrace u_2,v_2 \right\rbrace$. 
-By strict triangle inequality of the sides and diagonals of the quadrilateral $\lr{u_1, u_2, v_1, v_2}$, we have the following result:
-$$\vlr{u_1,u_2} + \vlr{u_2,v_1} + \vlr{v_1,v_2} + \vlr{u_1,v_2}< 4 < 2 \lr{\vlr{u_1,u_2} + \vlr{u_1,u_2 }}=4$$ 
-which is a contradiction.
+By strict triangle inequality of the sides and diagonals of the convex quadrilateral $\lr{u_1, u_2, v_1, v_2}$, we have the following result:
+$$\vlr{u_1,u_2} + \vlr{u_2,v_1} + \vlr{v_1,v_2} + \vlr{u_1,v_2}< 4 < 2 \lr{\vlr{u_1,u_2} + \vlr{u_1,u_2 }}=4.$$ 
+% The inequality implies that one of the four terms on the left side is less than 1. However, no two points of the triangular lattice are less than unit distance apart---contradiction. 
+On the lefthand side, one of the four terms is less than 1.  
+No two points of the triangular lattice is less than 1 which is a contradiction.
 
 The perfectly weighted snowflake tree that is a subgraph over the \textit{unit distance graph}, $G=(V,E)$, of the triangular lattice.  
-For the remainder of the thesis, a \textit{snowflake}, $S_i$ is a realization of a weighted tree $T_i$.  
+For the remainder of the thesis, a \textit{snowflake}, the ordered contact graph of $S_i$ contains the tree $T_i$.  
 To show this, for any $S_i$, fix $v_0 = 0 \cdot (1,0) + 0 \cdot \left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)=\lr{0,0} \in V$ at origin.  
 Next consider the six paths attached from origin.  
 Fix each consecutive path $\frac{\pi}{3}$ radians away from the next such that the following points like on the corresponding paths: $\lr{1,0} \in p_1, \lr{\frac{1}{2} ,\frac{\sqrt{2}}{3}} \in p_2,\lr{-\frac{1}{2}\p_4,\frac{\sqrt{3}}{2}} \in p_3, \lr{-1,0} \in p4, \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}\in p_5,\lr{\frac{1}{2},-\frac{\sqrt{3}}{2}}\in p_6$.  

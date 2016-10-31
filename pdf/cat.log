@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  23 OCT 2016 18:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  31 OCT 2016 05:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1671,23 +1671,27 @@ File: graphics/hexagonPetiolesLeafs9Layers.pdf Graphic file (type pdf)
 
 <use graphics/hexagonPetiolesLeafs9Layers.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9Layers.pdf used on input
- line 3030.
+ line 3018.
 (pdftex.def)             Requested size: 173.44534pt x 151.59137pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3028--3034
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3016--3022
 []$[]$ 
  []
+
+
+LaTeX Warning: Reference `lem:ch4IntroLemma' on page 47 undefined on input line
+ 3025.
 
 [47 <./graphics/hexagonPetiolesLeafs9Layers.pdf>] [48]
 <graphics/LineSegmentDelta.pdf, id=752, 390.45876pt x 50.16742pt>
 File: graphics/LineSegmentDelta.pdf Graphic file (type pdf)
 
 <use graphics/LineSegmentDelta.pdf>
-Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 3103.
+Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 3093.
 
 (pdftex.def)             Requested size: 411.93767pt x 52.92917pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3101--3107
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3091--3097
 []$[]$ 
  []
 
@@ -1695,10 +1699,10 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3101--3107
 File: graphics/part1ch4.pdf Graphic file (type pdf)
 
 <use graphics/part1ch4.pdf>
-Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3117.
+Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3107.
 (pdftex.def)             Requested size: 86.72267pt x 80.41966pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3115--3121
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3105--3111
 []$[]$ 
  []
 
@@ -1708,10 +1712,10 @@ File: graphics/lemmaHingedPolygon2.pdf Graphic file (type pdf)
 
 <use graphics/lemmaHingedPolygon2.pdf>
 Package pdftex.def Info: graphics/lemmaHingedPolygon2.pdf used on input line 31
-62.
+52.
 (pdftex.def)             Requested size: 325.215pt x 72.19801pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3160--3166
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3150--3156
 []$[]$ 
  []
 
@@ -1719,11 +1723,11 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3160--3166
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3182.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3172.
 
 (pdftex.def)             Requested size: 325.215pt x 115.10768pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3180--3186
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3170--3176
 []$[]$ 
  []
 
@@ -1732,27 +1736,36 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3180--3186
 File: graphics/psiSegmentChange.pdf Graphic file (type pdf)
 
 <use graphics/psiSegmentChange.pdf>
-Package pdftex.def Info: graphics/psiSegmentChange.pdf used on input line 3225.
+Package pdftex.def Info: graphics/psiSegmentChange.pdf used on input line 3224.
 
 (pdftex.def)             Requested size: 325.215pt x 86.00638pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3223--3229
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3222--3228
 []$[]$ 
  []
 
 [52 <./graphics/psiSegmentChange.pdf>]
+
+LaTeX Warning: Reference `lem:ch4IntroLemma' on page 53 undefined on input line
+ 3271.
+
+
 <graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf, id=880, 878.25111pt x 
 376.69734pt>
 File: graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf Graphic file (type
  pdf)
  <use graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf
- used on input line 3277.
+ used on input line 3275.
 (pdftex.def)             Requested size: 216.81pt x 92.99002pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3275--3281
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3273--3279
 []$[]$ 
  []
+
+
+LaTeX Warning: Reference `lem:ch4IntroLemma' on page 53 undefined on input line
+ 3280.
 
 [53 <./graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf>]
 <graphics/hexagonOutlineLayerSmall.pdf, id=887, 204.32335pt x 192.29843pt>
@@ -1760,16 +1773,25 @@ File: graphics/hexagonOutlineLayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutlineLayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutlineLayerSmall.pdf used on input li
-ne 3292.
+ne 3323.
 (pdftex.def)             Requested size: 216.81pt x 204.05835pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3290--3296
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3321--3327
 []$[]$
  []
 
-(../pdf/cat.bbl [54 <./graphics/hexagonOutlineLayerSmall.pdf>])
+[54 <./graphics/hexagonOutlineLayerSmall.pdf>]
+
+LaTeX Warning: Reference `lem:ch4IntroLemma' on page 55 undefined on input line
+ 3334.
+
+
+LaTeX Warning: Reference `lem:ch4IntroLemma' on page 55 undefined on input line
+ 3339.
+
+(../pdf/cat.bbl [55])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[55
+[56
 
 ] (../pdf/cat.aux)
 
@@ -1779,7 +1801,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  17995 strings out of 493089
  333654 string characters out of 6134841
- 507693 words of memory out of 5000000
+ 506692 words of memory out of 5000000
  20968 multiletter control sequences out of 15000+600000
  64297 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1800,16 +1822,17 @@ st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (59 pages, 890313 bytes).
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ../pdf/cat.pdf (60 pages, 894396 bytes).
 PDF statistics:
- 959 PDF objects out of 1000 (max. 8388607)
- 608 compressed objects within 7 object streams
+ 966 PDF objects out of 1000 (max. 8388607)
+ 613 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

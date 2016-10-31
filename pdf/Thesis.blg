@@ -1,47 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Thesis.aux
-I found no \bibdata command---while reading file Thesis.aux
-I found no \bibstyle command---while reading file Thesis.aux
+The style file: plain.bst
+Database file #1: WorkCited.bib
+Warning--empty journal in klemzthesis
 You've used 23 entries,
-            0 wiz_defined-function locations,
-            114 strings with 856 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            2118 wiz_defined-function locations,
+            642 strings with 6946 characters,
+and the built_in function-call counts, 7231 in all, are:
+= -- 706
+> -- 330
+< -- 2
++ -- 134
+- -- 108
+* -- 485
+:= -- 1224
+add.period$ -- 68
+call.type$ -- 23
+change.case$ -- 116
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 24
+duplicate$ -- 274
+empty$ -- 580
+format.name$ -- 108
+if$ -- 1489
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 23
+missing$ -- 29
+newline$ -- 117
+num.names$ -- 46
+pop$ -- 137
+preamble$ -- 1
+purify$ -- 100
 quote$ -- 0
-skip$ -- 0
+skip$ -- 183
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 461
+swap$ -- 39
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+type$ -- 78
+warning$ -- 1
+while$ -- 75
+width$ -- 25
+write$ -- 243
+(There was 1 warning)

@@ -1,7 +1,6 @@
 \paragraph{Proof of Lemma \ref{lem:ch4IntroLemma}}
 
 We should note that the last leaves of the petioles have a freedom of motion (see Figure \ref{fig:hexagonPetiolesLeafs9LayersRotatedOutward.pdf}).  
-The Hausdorff distance between the convex hulls of the centers in FINISH ME!!!!!.
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -13,10 +12,14 @@ The Hausdorff distance between the convex hulls of the centers in FINISH ME!!!!!
 We now begin the proof of Lemma \ref{lem:ch4IntroLemma}.
 
 \begin{proof}
-For any $\epsilon>0$, we construct an ordered weighted tree $T_\epsilon$ and regular hexagon of side length $x$. 
-   
-The Hausdorff distance between the regular hexagon that is the convex hull for the centers of the disks in the disk arrangement and the union of the disks themselves is $$H\lr{r(T_\epsilon),h} = \lr{\frac{2}{\sqrt{3}} - 1} \zeta(\epsilon)$$
-The number of disk in the contact graph corresponding is a polynomial $d(x,\epsilon) \leq \frac{4x}{\epsilon}$.  
+Given $\epsilon > 0$ and $x>0$,  we construct $T_\epsilon$ in the following manner: define $i$ and the perturbed weight of the central disk for $T_\epsilon$ as:
+$$
+\begin{array}{rcl}
+i &=& \ceil{\frac{x}{\epsilon}}\\
+r &=& \frac{x}{2i}.
+\end{array}
+$$
+For any realization as an ordered disk contact graph where the radii of the disks equal the vertex weights, overlay the hexagon as the convex hull of the centers of the disks in the canonical arrangement (see Figure \ref{fig:hexagonOutlineLayerSmall.pdf} for reference).  
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -26,15 +29,47 @@ The number of disk in the contact graph corresponding is a polynomial $d(x,\epsi
 \end{minipage}
 \end{proof}
 
+With the exception of the last leaves of the petioles, the $\jth$ center of the disk can be found in a ball of $\psi_i$.  
+The bound of the Hausdorff distance is the distance of a vertex of the regular hexagon and a boundary point of a disk corresponding to some last leaf of a petiole and $\psi_i$:
+$$\begin{array}{rcl}
+3 \frac{2}{xi} + \frac{6 \zeta}{5 \sqrt{3}}&=& \frac{3 \epsilon}{2}+ \frac{6 \frac{10\epsilon}{3i}}{5 \sqrt{3}}\\
+&&\frac{3 \epsilon}{2}+\frac{4 \epsilon^2 }{x \sqrt{3}}
+\end{array}
+$$
+Thus the bound for the Hausdorff distance of the regular hexagon and any realization as an ordered disk contact graph where the radii of the disks equal the vertex weights is $$\frac{3 \epsilon}{2}+\frac{4 \epsilon^2 }{x \sqrt{3}}.$$
+
+We now show that the number of nodes in $T_\epsilon$ is polynomial in $\epsilon$ and $x$.  
+The number of nodes in $T_\epsilon$ along an arm is at most $i=\ceil{\frac{x}{\epsilon}} \leq \frac{x+1}{\epsilon}$.  There are 6 arms.
+Every third node, call this node $k$, along the arm has two petioles, each petiole with $i-k$ nodes; otherwise, the node on the arm has two leaves.  
+Each node of a petiole has two leaves with the except of the first and last node of the petiole; the first and last node each have one leaf.   
+$$\frac{4i}{3}  + \sum_{\set{j \in \bbN}{j \leq i \text{ ; } j \in 3\bbZ}} 4(i - j) - 2$$
+The total number of nodes on $T_\epsilon$ is at most:
+$$6 \lr{\frac{x+1}{\epsilon} + \frac{4i}{3}   + \sum_{\set{j \in \bbN}{j \leq i \text{ ; } j \in 3\bbZ}} 4(i - j) - 2}.$$
+
+
+
+
+
+
+
+
+
+% For any $\epsilon>0$, we construct an ordered weighted tree $T_\epsilon$ and regular hexagon of side length $x$. 
+   
+% The Hausdorff distance between the regular hexagon that is the convex hull for the centers of the disks in the disk arrangement and the union of the disks themselves is $$H\lr{r(T_\epsilon),h} = \lr{\frac{2}{\sqrt{3}} - 1} \zeta$$
+% The number of disk in the contact graph corresponding is a polynomial $d(x,\epsilon) \leq \frac{4x}{\epsilon}$.  
+
+
+
 \paragraph{Proof of Theorem \ref{thm:disk}}
 
 \begin{proof}
 Given an instance of a P3SAT boolean formula, we can use the snowflake reduction of the modified auxiliary construction.  
-For any center of a disk in any realization the displacement of the center is in an open ball $b_{\zeta(\epsilon)}(c)$ where $c$ is the position of the center in canonical position.  
+For any center of a disk in any realization the displacement of the center is in an open ball $b_{\zeta}(c)$ where $c$ is the position of the center in canonical position.  
 Using Lemma \ref{lem:ch4IntroLemma}, we can approximate any hexagon with a tree $T_\epsilon$.  
 In the modified auxiliary construction in Chapter 3, we had four types of hexagons with different side lengths and the skinny rhombus.  
 We can scale the weights (radii) of the corresponding ordered weighted disk contact graph corresponding to $T_\epsilon$ to the rigid frame, obstacle, flag, and half sized hexagons in a modified auxiliary contruction accordingly.  
-The rhombus can be approximated by a chain of obstacle hexagons.
+The rhombus can be approximated by a chain of disks.
 
 By approximating the polygons in the modified auxiliary construction with the snowflake, we show that Theorem \ref{thm:disk} is a corollary by applying Lemma \ref{lem:ch4IntroLemma}.  
 \end{proof}
