@@ -45,9 +45,9 @@
 \contentsline {section}{\numberline {4.1}Hausdorff Distance}{46}
 \contentsline {paragraph}{$\epsilon $-approximation}{46}
 \contentsline {section}{\numberline {4.2}Weighted Trees $T_i$}{47}
-\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{47}
-\contentsline {paragraph}{Displacement on $S_1$ is small.}{49}
-\contentsline {paragraph}{Displacement on the arms is small.}{50}
+\contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{48}
+\contentsline {paragraph}{Displacement on $\sigma _1$ is small.}{49}
+\contentsline {paragraph}{Displacement on the stems is small.}{51}
 \contentsline {paragraph}{Displacement on the petioles is small.}{53}
 \contentsline {paragraph}{Proof of Lemma \ref {lem:ch4IntroLemma}}{53}
 \contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{55}

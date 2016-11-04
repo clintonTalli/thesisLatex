@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  31 OCT 2016 05:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  4 NOV 2016 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -844,7 +844,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `table:ch1-graph-1' on page 1 undefined on input line 
 23.
 
-<graphics/graphIsomorphismExample.pdf, id=21, 278.06987pt x 87.81107pt>
+<graphics/graphIsomorphismExample.pdf, id=20, 278.06987pt x 87.81107pt>
 File: graphics/graphIsomorphismExample.pdf Graphic file (type pdf)
 
 <use graphics/graphIsomorphismExample.pdf>
@@ -871,7 +871,7 @@ LaTeX Warning: Reference `table:ch1-graph-1' on page 1 undefined on input line
 [1
 
  <./graphics/graphIsomorphismExample.pdf>]
-<graphics/kuratowskiExamples.pdf, id=37, 312.7645pt x 116.54541pt>
+<graphics/kuratowskiExamples.pdf, id=36, 312.7645pt x 116.54541pt>
 File: graphics/kuratowskiExamples.pdf Graphic file (type pdf)
 
 <use graphics/kuratowskiExamples.pdf>
@@ -879,7 +879,7 @@ Package pdftex.def Info: graphics/kuratowskiExamples.pdf used on input line 57.
 
 (pdftex.def)             Requested size: 312.76372pt x 116.54512pt.
 
-<graphics/combinatorialEmbedding.pdf, id=38, 233.88379pt x 93.10785pt>
+<graphics/combinatorialEmbedding.pdf, id=37, 233.88379pt x 93.10785pt>
 File: graphics/combinatorialEmbedding.pdf Graphic file (type pdf)
 
 <use graphics/combinatorialEmbedding.pdf>
@@ -895,7 +895,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `table:combinatorialEmbedding' on page 2 undefined on 
 input line 104.
 
-<graphics/PetersonGraphWithPath.pdf, id=39, 299.7348pt x 121.21887pt>
+<graphics/PetersonGraphWithPath.pdf, id=38, 299.7348pt x 121.21887pt>
 File: graphics/PetersonGraphWithPath.pdf Graphic file (type pdf)
 
 <use graphics/PetersonGraphWithPath.pdf>
@@ -903,7 +903,7 @@ Package pdftex.def Info: graphics/PetersonGraphWithPath.pdf used on input line
 181.
 (pdftex.def)             Requested size: 299.73405pt x 121.21857pt.
 
-<graphics/RandomTree.pdf, id=40, 110.23926pt x 110.23886pt>
+<graphics/RandomTree.pdf, id=39, 110.23926pt x 110.23886pt>
 File: graphics/RandomTree.pdf Graphic file (type pdf)
 
 <use graphics/RandomTree.pdf>
@@ -911,7 +911,7 @@ Package pdftex.def Info: graphics/RandomTree.pdf used on input line 196.
 (pdftex.def)             Requested size: 110.23898pt x 110.23859pt.
  [2 <./graphics/kuratowskiExamples.pdf> <./graphics/combinatorialEmbedding.pdf>
 ]
-<graphics/OrderedTreesExample.pdf, id=68, 392.7483pt x 135.69997pt>
+<graphics/OrderedTreesExample.pdf, id=67, 392.7483pt x 135.69997pt>
 File: graphics/OrderedTreesExample.pdf Graphic file (type pdf)
 
 <use graphics/OrderedTreesExample.pdf>
@@ -920,7 +920,7 @@ Package pdftex.def Info: graphics/OrderedTreesExample.pdf used on input line 20
 (pdftex.def)             Requested size: 392.74733pt x 135.69962pt.
  [3 <./graphics/PetersonGraphWithPath.pdf> <./graphics/RandomTree.pdf>]) (./ch1
 /linkages.tex
-<graphics/HumanTurkeyLinkage.pdf, id=81, 255.56679pt x 151.56123pt>
+<graphics/HumanTurkeyLinkage.pdf, id=80, 255.56679pt x 151.56123pt>
 File: graphics/HumanTurkeyLinkage.pdf Graphic file (type pdf)
 
 <use graphics/HumanTurkeyLinkage.pdf>
@@ -935,7 +935,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:turkey' on page 4 undefined on input line 17.
 
 ) (./ch1/polygonallinkages.tex
-<graphics/hingeOnThreeDistinctPolygons.pdf, id=82, 297.0608pt x 129.93243pt>
+<graphics/hingeOnThreeDistinctPolygons.pdf, id=81, 297.0608pt x 129.93243pt>
 File: graphics/hingeOnThreeDistinctPolygons.pdf Graphic file (type pdf)
 
 <use graphics/hingeOnThreeDistinctPolygons.pdf>
@@ -951,14 +951,14 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:orderedLinkages' on page 4 undefined on input lin
 e 14.
 
-<graphics/orderedLinkages.pdf, id=83, 315.16145pt x 100.14615pt>
+<graphics/orderedLinkages.pdf, id=82, 315.16145pt x 100.14615pt>
 File: graphics/orderedLinkages.pdf Graphic file (type pdf)
 
 <use graphics/orderedLinkages.pdf>
 Package pdftex.def Info: graphics/orderedLinkages.pdf used on input line 19.
 (pdftex.def)             Requested size: 315.16068pt x 100.14589pt.
  [4 <./graphics/OrderedTreesExample.pdf> <./graphics/HumanTurkeyLinkage.pdf>]
-<graphics/Problem1.pdf, id=104, 233.03532pt x 50.01184pt>
+<graphics/Problem1.pdf, id=103, 233.03532pt x 50.01184pt>
 File: graphics/Problem1.pdf Graphic file (type pdf)
 
 <use graphics/Problem1.pdf>
@@ -973,7 +973,7 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:collidingHingedPolygons' on page 5 undefined on i
 nput line 56.
 
-<graphics/collidingHingedPolygons.pdf, id=105, 451.557pt x 94.60344pt>
+<graphics/collidingHingedPolygons.pdf, id=104, 451.557pt x 94.60344pt>
 File: graphics/collidingHingedPolygons.pdf Graphic file (type pdf)
 
 <use graphics/collidingHingedPolygons.pdf>
@@ -1674,28 +1674,28 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 14--20
 []$[]$ 
  []
 
-) (./ch4/WeightedTreeFamily.tex [46
+[46
 
- <./graphics/HausdorffDistanceExample1.pdf>] <graphics/hexagonPetiolesLeafs9Lay
-ers.pdf, id=742, 388.79253pt x 339.79948pt>
+ <./graphics/HausdorffDistanceExample1.pdf>]) (./ch4/WeightedTreeFamily.tex
+<graphics/hexagonPetiolesLeafs9Layers.pdf, id=742, 388.79253pt x 339.79948pt>
 File: graphics/hexagonPetiolesLeafs9Layers.pdf Graphic file (type pdf)
 
 <use graphics/hexagonPetiolesLeafs9Layers.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9Layers.pdf used on input
- line 19.
+ line 25.
 (pdftex.def)             Requested size: 173.44534pt x 151.59137pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 17--23
+Overfull \hbox (15.0pt too wide) in paragraph at lines 23--29
 []$[]$ 
  []
 
-[47 <./graphics/hexagonPetiolesLeafs9Layers.pdf>]) (./ch4/PerturbedTree.tex
-[48]
+[47] [48 <./graphics/hexagonPetiolesLeafs9Layers.pdf>])
+(./ch4/PerturbedTree.tex [49]
 
-LaTeX Warning: Reference `fig:modifiedContactGraph' on page 49 undefined on inp
-ut line 20.
+LaTeX Warning: Reference `fig:modifiedContactGraph.pdf' on page 50 undefined on
+ input line 23.
 
-) (./ch4/proofs.tex [49]
+) (./ch4/proofs.tex
 <graphics/LineSegmentDelta.pdf, id=755, 390.45876pt x 50.16742pt>
 File: graphics/LineSegmentDelta.pdf Graphic file (type pdf)
 
@@ -1707,12 +1707,12 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 11--17
 []$[]$ 
  []
 
-<graphics/part1ch4.pdf, id=756, 143.96887pt x 133.49875pt>
+<graphics/part1ch4.pdf, id=756, 145.41226pt x 133.49875pt>
 File: graphics/part1ch4.pdf Graphic file (type pdf)
 
 <use graphics/part1ch4.pdf>
 Package pdftex.def Info: graphics/part1ch4.pdf used on input line 27.
-(pdftex.def)             Requested size: 86.72267pt x 80.41966pt.
+(pdftex.def)             Requested size: 86.72267pt x 79.61911pt.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 25--31
 []$[]$ 
@@ -1731,7 +1731,7 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 70--76
 []$[]$ 
  []
 
-<graphics/ch4Paralellogram.pdf, id=792, 810.32736pt x 286.81151pt>
+[51] <graphics/ch4Paralellogram.pdf, id=797, 810.32736pt x 286.81151pt>
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
@@ -1742,15 +1742,15 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 90--96
 []$[]$ 
  []
 
-[51 <./graphics/lemmaHingedPolygon2.pdf>] [52 <./graphics/ch4Paralellogram.pdf>
-] <graphics/psiSegmentChange.pdf, id=860, 418.96524pt x 110.79391pt>
+[52 <./graphics/lemmaHingedPolygon2.pdf> <./graphics/ch4Paralellogram.pdf>]
+<graphics/psiSegmentChange.pdf, id=860, 418.96524pt x 110.79391pt>
 File: graphics/psiSegmentChange.pdf Graphic file (type pdf)
 
 <use graphics/psiSegmentChange.pdf>
-Package pdftex.def Info: graphics/psiSegmentChange.pdf used on input line 144.
+Package pdftex.def Info: graphics/psiSegmentChange.pdf used on input line 143.
 (pdftex.def)             Requested size: 325.215pt x 86.00638pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 142--148
+Overfull \hbox (15.0pt too wide) in paragraph at lines 141--147
 []$[]$ 
  []
 
@@ -1768,22 +1768,22 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 5--11
 []$[]$ 
  []
 
-[54 <./graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf>]
-<graphics/hexagonOutlineLayerSmall.pdf, id=891, 204.32335pt x 192.29843pt>
+<graphics/hexagonOutlineLayerSmall.pdf, id=884, 204.32335pt x 192.29843pt>
 File: graphics/hexagonOutlineLayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutlineLayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutlineLayerSmall.pdf used on input li
-ne 55.
+ne 26.
 (pdftex.def)             Requested size: 216.81pt x 204.05835pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 53--59
+Overfull \hbox (15.0pt too wide) in paragraph at lines 24--30
 []$[]$
  []
 
-)) (../pdf/Thesis.bbl [55 <./graphics/hexagonOutlineLayerSmall.pdf>])
+[54 <./graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf>] [55 <./graphics
+/hexagonOutlineLayerSmall.pdf>])) (../pdf/Thesis.bbl [56])
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[56
+[57
 
 ] (../pdf/Thesis.aux)
 
@@ -1792,8 +1792,8 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  18094 strings out of 493089
- 335553 string characters out of 6134841
- 506687 words of memory out of 5000000
+ 335557 string characters out of 6134841
+ 505688 words of memory out of 5000000
  20969 multiletter control sequences out of 15000+600000
  64297 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1821,10 +1821,10 @@ pe1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a
 .pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/Thesis.pdf (60 pages, 897612 bytes).
+Output written on ../pdf/Thesis.pdf (61 pages, 899168 bytes).
 PDF statistics:
- 966 PDF objects out of 1000 (max. 8388607)
- 613 compressed objects within 7 object streams
+ 970 PDF objects out of 1000 (max. 8388607)
+ 616 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

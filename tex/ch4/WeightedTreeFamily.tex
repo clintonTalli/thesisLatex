@@ -1,14 +1,20 @@
 \section{Weighted Trees $T_i$}
-In this section we describe a particular family of unit weight trees and corresponding contact graphs disk arrangements called \textit{snowflakes}.  
-Note that we regard snowflakes with unit weight as a weight of $r$.  
+In this section we describe a particular family of unit weight trees and corresponding ordered weight contact graphs called \textit{snowflakes}.  
+The disks of a snowflake have weight $r$.  
 For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
 \begin{itemize}
-\item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  Each path has $i$ vertices.
-\item In botany, the stalk that attaches to a stem of a plant is called a \textit{petiole}; petioles usually have leaves attached to their ends. Our snowflake will incorporate these concepts by incorporating petioles and leaves.  Petioles will be paths that extend off the arms.  \textit{Leaves} will be paths of one vertex that extend of the petioles and arms. We will now attach paths (petioles) onto every other path $p_1$, $p_3$, and $p_5$: 
+\item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  
+Each path has $i$ vertices. 
+These paths are called \textit{stems}.
+\item In botany, the stalk that attaches to a stem of a plant is called a \textit{petiole}; petioles usually have leaves attached to their ends.  
+Our snowflake will borrow the nomenclature from botany as the snowflake structure is analogous to a plant-like structure.  
+Petioles will be paths that extend off the stems.  
+\textit{Leaves} will be paths of one vertex that extend off the petioles and stems.  
+We will now attach paths (petioles) onto every other stem $p_1$, $p_3$, and $p_5$: 
 	\begin{itemize}
-		\item 	Every third vertex on that path has two petioles attached, one petiole on each side of $p_k$; otherwise the vertex on $p_k$ will have two leaves, one on either side.
+		\item 	Every third vertex on that path has two petioles attached, one petiole on each side of $p_k$; otherwise the vertex on $p_k$ will have two leaves, one on either side.  The last node has no petioles.
 		\item	The number of vertices that lie on a petiole attached to the $\jth$ vertex of  $p_k$ is $i-j$.
-		\item The first vertex of the $i-j$ vertices has one petiole attached; the remaining $i-j-1$ vertices contain two paths. Each of these paths contain only one vertex.  These paths are called \textit{leaves}. 
+		\item The first and last vertices of the $i-j$ vertices has one leaf attached; the remaining $i-j-2$ vertices has two leaves. %Each of these paths has only one vertex.  These paths are called \textit{leaves}. 
 	\end{itemize}
 \item Attach leaves to the vertices on paths $p_2$, $p_4$, and $p_6$.
 \end{itemize}
@@ -22,23 +28,24 @@ A drawaing example of this snowflake description is shown in Figure \ref{fig:hex
 \end{minipage}
 
 A \textit{perfectly weighted snowflake tree} is a snowflake tree with all vertices having weight $r$.   
-A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of 1 with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $r + \zeta$.  
+A \textit{perturbed snowflake tree} is a snowflake tree with all vertices having weight of $r$ with the exception of $v_0$;  in a perturbed snowflake tree, $v_0$ will have a weight of $r + \zeta$.  
 The value of $\zeta $ will be determined later on in the proof of the Lemma \ref{lem:ch4IntroLemma}.  
-For our analysis, all realizations of any snowflake, perfect or perturbed, shall have the disk corresponding to $v_0$ is centered at the origin.  
+For our analysis, all realizations of any snowflake, perfect or perturbed, shall have the disk corresponding to $v_0$ centered at the origin.  
 We can assume that a neighbor of $v_0$ is on the positive x-axis.     
+For the remainder of the thesis, denote $S_i$ as the canonical realization of $T_i$ and $\sigma_i$ as an arbitrary realization of $T_i$. 
 
 \paragraph{Perfectly Weighted Snowflake Tree.}
 
 Consider the graph of the triangular lattice with unit distant edges:
 \begin{eqnarray*}
-V &=& \left\lbrace a\cdot (1,0) + b \cdot \left(\frac{1}{2},\frac{\sqrt{3}}{2}\right) : a,b \in \bbZ \right\rbrace\\
+V &=& \left\lbrace a \cdot (1,0) + b \cdot \left(\frac{1}{2},\frac{\sqrt{3}}{2}\right) : a,b \in \bbZ \right\rbrace\\
 E &=& \left\lbrace \left\lbrace u,v \right\rbrace : \vert\vert u-v \vert\vert = 1 \text{ and } u,v \in V\right\rbrace
 \end{eqnarray*}
 The graph, $G=(V,E)$ is said to be the \textit{unit distance graph} of the triangular lattice.  
 We can show that no two distinct edges cross.  
 First suppose that there were two distinct edges that crossed, $\left\lbrace u_1,v_1 \right\rbrace $ and $\left\lbrace u_2,v_2 \right\rbrace$. 
 By strict triangle inequality of the sides and diagonals of the convex quadrilateral $\lr{u_1, u_2, v_1, v_2}$, we have the following result:
-$$\vlr{u_1,u_2} + \vlr{u_2,v_1} + \vlr{v_1,v_2} + \vlr{u_1,v_2}< 4 < 2 \lr{\vlr{u_1,u_2} + \vlr{u_1,u_2 }}=4.$$ 
+$$\vlr{u_1,u_2} + \vlr{u_2,v_1} + \vlr{v_1,v_2} + \vlr{u_1,v_2} < 2 \lr{\vlr{u_1,u_2} + \vlr{u_1,u_2 }}=4.$$ 
 % The inequality implies that one of the four terms on the left side is less than 1. However, no two points of the triangular lattice are less than unit distance apart---contradiction. 
 On the lefthand side, one of the four terms is less than 1.  
 No two points of the triangular lattice is less than 1 which is a contradiction.
@@ -52,15 +59,15 @@ For $S_i$, there are $i$ vertices on each path.
 
 We define the six paths from origin as follows:      
 \begin{eqnarray*}
-p_1 &=& \set{a\cdot\lr{1,0}}{a = 1,2,\dots, i}\\
-p_2 &=& \set{a\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}\\
-p_3 &=& \set{a\lr{-\frac{1}{2},\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}\\
-p_4 &=& \set{a \cdot \lr{-1,0}}{a = 1,2,\dots, i}\\
-p_5 &=& \set{a \cdot \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}\\
-p_6 &=& \set{a \cdot \lr{\frac{1}{2}, -\frac{\sqrt{3}}{2}}}{a = 1,2,\dots, i}
+p_1 &=& \set{r\cdot\lr{1,0}}{r = 1,2,\dots, i}\\
+p_2 &=& \set{r\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{r = 1,2,\dots, i}\\
+p_3 &=& \set{r\lr{-\frac{1}{2},\frac{\sqrt{3}}{2}}}{r = 1,2,\dots, i}\\
+p_4 &=& \set{r \cdot \lr{-1,0}}{r = 1,2,\dots, i}\\
+p_5 &=& \set{r \cdot \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}}{r = 1,2,\dots, i}\\
+p_6 &=& \set{r \cdot \lr{\frac{1}{2}, -\frac{\sqrt{3}}{2}}}{r = 1,2,\dots, i}
 \end{eqnarray*}
 For $S_i$ there exists $i$ vertices on each path.  We shall denote the $\ith$ vertex on the $\jth$ path as $v_{j,i}$.  
-For each path defined above, the paths are defined as a set of vectors, $\vec{v} = a \cdot \vec{p}$  for some $a \in \bbN$ and $\vec{p} \in \bbR^2$.  
+For each path defined above, the paths are defined as a set of vectors, $\vec{v} = r \cdot \vec{p}$  for some $r \in \bbN$ and $\vec{p} \in \bbR^2$.  
 By setting $a = 1,2,\dots, i$, we obtain points that are contained in $V$.  
 For $j = 1$, $3$, $5$ and $\ell = 3 b \leq i$ where $b \in \bbN$,  there exists two paths attached to each vertex $v_{j,\ell}$.  
 % We borrow the term \textit{petiole} from botany to describe the two paths attached to $v_{j,l}$.  

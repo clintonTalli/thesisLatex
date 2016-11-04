@@ -1,24 +1,24 @@
 
-\paragraph{Displacement on $S_1$ is small.}
+\paragraph{Displacement on $\sigma_1$ is small.}
 Note that (1) the adjacent disks in a perfect snowflake cannot be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$ because every contact is encoded in the tree.  
-Given a snowflake in arbirary position with $i$ nodes per arm; the edge length of each segment is $2r$ except the edges having node $v_0$, these edges are length $2r+ \zeta$.  
-The arm has a length of at most $2ri+\zeta$.
-Figure \ref{fig:LineSegmentDelta.pdf} shows an arm of a tree in arbitrary position corresponds to a compression and shift of vertices.  
-The arm realized in arbitrary position in Figure \ref{fig:LineSegmentDelta.pdf} is analgous to a tree realized in arbitrary position where vertices are in a different position than canonical.  
-Our goal is to show that for any $\epsilon >0$ and $x >0$, the position of the center $v$ of any disk in the disk arrangement in any arbitrary realization corresponding to $T_\epsilon$ has a small displacement, i.e. $v$ is found in an open ball referenced at the canonical position of $v$, $v_c$: $$v \in b_{\psi_1}(v_c).$$ 
+Given a snowflake in arbirary position with $i$ nodes per stem; the edge length of each segment is $2r$ except the edges having node $v_0$, these edges are length $2r+ \zeta$.  
+The stem has a length of at most $2ri+\zeta$.
+Figure \ref{fig:LineSegmentDelta.pdf} shows an stem of a tree in arbitrary position corresponds to a compression and shift of vertices.  
+The stem realized in arbitrary position in Figure \ref{fig:LineSegmentDelta.pdf} is analgous to a tree realized in arbitrary position where vertices are in a different position than canonical.  
+Our goal is to show that for any $\epsilon >0$ and $x >0$, the position of the center $v$ of any disk in the disk arrangement in any arbitrary realization corresponding to $T$ has a small displacement, i.e. $v$ is found in an open ball referenced at the canonical position of $v$, $v_c$: $$v \in b_{\psi_1}(v_c).$$ 
 The definition of $\psi_1$ is shown later on.
 
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.95\columnwidth]{graphics/LineSegmentDelta.pdf}
-\captionof{figure}{The polyline at the bottom represents a snowflake arm in canonical position.  The polyline above represents a snowflake arm in non-canonical position.}\label{fig:LineSegmentDelta.pdf}
+\captionof{figure}{The polyline at the bottom represents a snowflake stem in canonical position.  The polyline above represents a snowflake stem in non-canonical position.}\label{fig:LineSegmentDelta.pdf}
 \end{center}
 \end{minipage}
  
-In a perfect snowflake of $S_1$ the six disks around the central disk kiss.  
+In $S_1$ the six disks around the central disk kiss.  
 The angle formed from the center of the central disk to the centers of any two adjacent disks is $\frac{\pi}{3}$.  
-The side lengths of the equalateral triangle formed by the centers of three adjacent disks, one of which is the central disk, is $2\epsilon$.  
-For a perturbed $S_1$ the the central disk is weighted $\epsilon+ \zeta$.  
+The side lengths of the equalateral triangle formed by the centers of three adjacent disks, one of which is the central disk, is $\frac{\epsilon}{2}$.  
+For a perturbed $S_1$, the the central disk is weighted $\frac{\epsilon}{4} + \zeta$.  
 This can yield a change of angular displacement $\frac{\pi}{3}$ to $\frac{\pi}{3} \pm 2\chi$.  
 To find the bounds of how large or small $\chi$ can be, we show a trigonometric relation of the half angle of the triangle corresponding to three adjacent disks (See Figure \ref{fig:part1ch4.pdf}).
 
@@ -30,33 +30,33 @@ To find the bounds of how large or small $\chi$ can be, we show a trigonometric 
 \end{minipage}
 
 \begin{eqnarray*}
-\sin \lr{\frac{\pi}{6} - \chi} &=& \frac{\epsilon}{2\epsilon+\zeta}\\
-\frac{1}{2}\cos \chi = \sin \frac{\pi}{6} \cos \chi &=& \frac{\epsilon}{2\epsilon+\zeta} + \cos \frac{\pi}{6} \sin \chi = \frac{\epsilon}{2\epsilon+\zeta} +\frac{\sqrt{3}}{2} \sin \chi \\
+\sin \lr{\frac{\pi}{6} - \chi} &=& \frac{\frac{\epsilon}{4}}{\frac{\epsilon}{2}+\zeta}\\
+\frac{1}{2}\cos \chi = \sin \frac{\pi}{6} \cos \chi &=& \frac{\frac{\epsilon}{4}}{\frac{\epsilon}{2}+\zeta} + \cos \frac{\pi}{6} \sin \chi = \frac{\frac{\epsilon}{4}}{\frac{\epsilon}{2}+\zeta} +\frac{\sqrt{3}}{2} \sin \chi \\
 &\Rightarrow&\\
-\frac{\epsilon}{2\epsilon+\zeta} + \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} &\leq& \frac{\epsilon}{2\epsilon+\zeta} + \frac{\sqrt{3}}{2} \sin \chi =\frac{1}{2} \cos \chi\\
+\frac{\frac{\epsilon}{4}}{\frac{\epsilon}{2}+\zeta}+ \frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}} &\leq& \frac{\frac{\epsilon}{4}}{\frac{\epsilon}{2}+\zeta} + \frac{\sqrt{3}}{2} \sin \chi =\frac{1}{2} \cos \chi\\
 &\Rightarrow&\\
-\frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}&\leq& \frac{1}{2}-\frac{\epsilon}{2\epsilon+\zeta}  \qquad \text{if }\chi < 1 \\
-\frac{5\sqrt{3}}{12} \chi &\leq&\frac{2\epsilon + \zeta - 2\epsilon}{2 ( 2\epsilon + \zeta)} \\
-\chi &\leq& \frac{6}{5 \sqrt{3}}\frac{\zeta}{ 2\epsilon + \zeta} 
+\frac{\sqrt{3}}{2} \lr{ \chi - \frac{\chi^3}{6}}&\leq& \frac{1}{2}-\frac{\frac{\epsilon}{4}}{\frac{\epsilon}{2}+\zeta}  \qquad \text{if }\chi < 1 \\
+\frac{5\sqrt{3}}{12} \chi &\leq& \frac{  \zeta }{ \epsilon + 2\zeta } \\
+\chi&\leq& \frac{12}{5\sqrt{3}}\frac{ \zeta }{ \epsilon + 2\zeta } 
 \end{eqnarray*}
 For any $\epsilon > 0$, the bounds for angular displacement formed at the center of the central disk and two adjacent disks is:
-$$ \frac{\pi}{3} - \frac{12 \zeta}{5\sqrt{3}} \leq \frac{\pi}{3} - 2 \chi = 2\chi_\text{min} \leq 2\chi \leq 2\chi_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{12 \zeta}{5\sqrt{3}}$$
+$$ \frac{\pi}{3} - \frac{24 \zeta}{5\sqrt{3}\lr{\epsilon + 2\zeta}} \leq \frac{\pi}{3} - 2 \chi = 2\chi_\text{min} \leq 2\chi \leq 2\chi_\text{max} = \frac{\pi}{3} + 2 \chi \leq \frac{\pi}{3} + \frac{24 \zeta}{5\sqrt{3}\lr{\epsilon + 2\zeta}}$$
 This shows the bounds of the angular displacement around the central disk.  
 To translate this to a coordinate displacement of the centers of the disks around the central disk, we compute a the radius of the ball of radius $\psi$ in which the centers may lie. 
 $$\psi = \lr{2 r + \zeta} \sin \chi$$
 Using the Maclaurin series of $\sin \chi$:
 $$
 \begin{array}{rcl}
-\psi_i &=& \lr{2 \epsilon + \zeta} \sin \chi\\
-&\leq& \lr{2 \epsilon + \zeta} \frac{6}{5 \sqrt{3}}\frac{\zeta}{ 2\epsilon+ \zeta} \\
-&=& \frac{6\zeta}{5 \sqrt{3}}
+\psi_i &=& \lr{ \frac{\epsilon}{2} + \zeta} \sin \chi\\
+&\leq& \lr{ \frac{\epsilon}{2} + \zeta} \frac{12}{5 \sqrt{3}}\frac{  \zeta }{ \epsilon + 2\zeta } \\
+&=& \frac{12\zeta}{5 \sqrt{3}\lr{ \epsilon + 2\zeta }}
 \end{array}
 $$
 The coordinates of the centers of the disks are close to cannonical position following the angular displacement argument above.  
-That is, if $u$ is a center of a disk in a realization to $T_\epsilon$, $u$ lies in a ball $b_{\psi_1}\lr{u_c}$ where $u_c$ is the cannonical position of the $u$.  
+That is, if $u$ is a center of a disk in a realization to $T$, $u$ lies in a ball $b_{\psi_1}\lr{u_c}$ where $u_c$ is the cannonical position of the $u$.  
 
-\paragraph{Displacement on the arms is small.}
-Without loss of generality, consider a path of vertices along a distinct arm, petiole, or leaf $\lr{v_1, v_2, \ldots, v_n}$.  
+\paragraph{Displacement on the stems is small.}
+Without loss of generality, consider a path of vertices along a distinct stem, petiole, or leaf $\lr{v_1, v_2, \ldots, v_n}$.  
 In the case that there are two paths attached to each vertex, four different angles about the vertex are formed.  
 For the $\ith$ vertex, the counter clockwise order of the angles are $\lr{\alpha_{i+1}, \gamma_i, \delta_i, \beta_{i+1}}$ (See Figure \ref{fig:ch4Paralellogram.pdf} for reference).  
 We want to establish an angular relationship between two consecutive vertices in a path.
@@ -90,11 +90,11 @@ For any arbitrary realization of a perturbed snowflake, any two consecutive angl
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=.75\columnwidth]{graphics/ch4Paralellogram.pdf}
-\captionof{figure}{(a)Four disks of the snowflake shown where the top two disks can either be leaves off petioles or off the arms. (b)An arm depicted at the $\ith$ and $(i+1)^\text{st}$ vertex.}\label{fig:ch4Paralellogram.pdf}
+\captionof{figure}{(a)Four disks of the snowflake shown where the top two disks can either be leaves off petioles or off the stems. (b)An stem depicted at the $\ith$ and $(i+1)^\text{st}$ vertex.}\label{fig:ch4Paralellogram.pdf}
 \end{center}
 \end{minipage}
 
-To show that the angluar displacement along the arm is small, we extend the angular argument on the perturbed $S_1$ and by induction, show that it is small for all $i$.  
+To show that the angluar displacement along the stem is small, we extend the angular argument on the perturbed $S_1$ and by induction, show that it is small for all $i$.  
 Denote the angles on the concave side of the $\ith$ vertex as $\alpha_i$ and $\beta_i$ and the convex side of the $(i+1)^\text{st}$ vertex as $\gamma_i$ and $\delta_i$ respectively (see Figure \ref{fig:ch4Paralellogram.pdf}(b) for reference). 
 For any vertex, the sum of angles about the vertex is $2 \pi$, e.g.:
 $$\gamma_i + \delta_i + \alpha_{i+1} + \beta_{i+1} = 2 \pi$$ 
@@ -104,25 +104,24 @@ Without loss of generality, the angles $\alpha_0$ and $\beta_0$ correspond to th
 The bounds for $\alpha_0$ and $\beta_0$ are the same as $2\chi$ in the earlier argument, i.e.:
 $$
 \begin{array}{rcccl}
-\frac{\pi}{3} - \frac{12 \zeta}{5\sqrt{3}} &\leq& \alpha_0 &\leq& \frac{\pi}{3} + \frac{12 \zeta}{5\sqrt{3}}\\
-\frac{\pi}{3} - \frac{12 \zeta}{5\sqrt{3}} &\leq& \beta_0 &\leq& \frac{\pi}{3} + \frac{12 \zeta}{5\sqrt{3}}\\
+\frac{\pi}{3} - \frac{24 \zeta}{5\sqrt{3}} &\leq& \alpha_0 &\leq& \frac{\pi}{3} + \frac{24 \zeta}{5\sqrt{3}}\\
+\frac{\pi}{3} - \frac{24 \zeta}{5\sqrt{3}} &\leq& \beta_0  &\leq& \frac{\pi}{3} + \frac{24 \zeta}{5\sqrt{3}}\\
 \end{array}
 $$
 
-For $i=0$ we know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{24 \zeta}{5\sqrt{3}}.$
+For $i=0$ we know that $\alpha_0 + \beta_0 \leq \frac{2\pi}{3} + \frac{48 \zeta}{5\sqrt{3}}.$
 For the inductive step, suppose the following:
 $$
 \begin{array}{rcl}
-\alpha_i +\beta_i &\leq& \frac{2 \pi}{3} + \frac{24 \zeta}{5\sqrt3}\\
+\alpha_i +\beta_i &\leq& \frac{2 \pi}{3} + \frac{48 \zeta}{5\sqrt3}\\
 \pi &\leq& \alpha_i + \gamma_i \\
 \pi &\leq& \beta_i + \delta_i
 \end{array}
 $$ 
-% State up-front that this is the inequality that you prove by induction. This inequality is true in the base case, i=0, and then you show the induction step
 
 $$
 \begin{array}{rcl}
-\alpha_i +\beta_i &\leq& \frac{2 \pi}{3} + \frac{24 \zeta}{5\sqrt3}\\
+\alpha_i +\beta_i &\leq& \frac{2 \pi}{3} + \frac{48 \zeta}{5\sqrt3}\\
 \pi &\leq& \alpha_i + \gamma_i \\
 \pi &\leq& \beta_i + \delta_i
 \end{array}
@@ -134,7 +133,7 @@ Together, we have the following result:
  &=& \alpha_i + \gamma_i + \lr{2\pi - \alpha_{i+1} - \beta_{i+1}}\\
  &\iff&\\
 \alpha_{i+1} + \beta_{i+1}&=&\alpha_i + \gamma_i \\
-&\leq& \frac{2\pi}{3} + \frac{24\zeta}{5\sqrt{3}}\\
+&\leq& \frac{2\pi}{3} + \frac{48\zeta}{5\sqrt{3}}\\
 \end{eqnarray*}
 And so the error bounds on $\frac{\pi}{3}+2\chi$ hold in general for $\alpha_i$ and $\beta_i$ for all $i$.  
 $$\alpha_i + \beta_i \leq \frac{2\pi}{3} + \frac{24\zeta}{5\sqrt{3}}$$
@@ -146,43 +145,47 @@ $$\alpha_i + \beta_i \leq \frac{2\pi}{3} + \frac{24\zeta}{5\sqrt{3}}$$
 \end{center}
 \end{minipage}
 
-A perturbed snowflake is a realization of some tree $T_\epsilon$.  
+A perturbed snowflake is a realization of some tree $T$.  
 For the $\jth$ vertex along some path from $v_0$ to $v_j$ (see Figure \ref{fig:psiSegmentChange.pdf} for reference), we can compute the bound of coordinate displacement $\psi_i$ of the disk corresponding to $v_j$ using our inductive argument on the angular displacement above.  
 Without loss of generality, to translate the $\jth$ coordinate displacement, we compute the radius of the ball of radius $\psi_i$ in which the $\jth$ center may lie. 
-$$\psi_j = \lr{j \epsilon + \zeta} \sin \chi$$
+$$\psi_j = (2j+1) \lr{\frac{\epsilon}{4} + \zeta} \sin \chi$$
+Let $\zeta \leq \frac{\epsilon^2-\epsilon}{2}$.  
 Using the Maclaurin series of $\sin \chi$:
 $$
 \begin{array}{rcl}
-\psi_j &=& \lr{j \epsilon + \zeta} \sin \chi\\
-&\leq& \lr{j \epsilon + \zeta} \frac{6}{5 \sqrt{3}}\frac{\zeta}{ 2\epsilon + \zeta} \\
-&=& \frac{6}{5}\frac{\zeta\lr{j \epsilon + \zeta}}{2 \epsilon + \zeta}\\
+\psi_j &=& \lr{(2j-1)  \frac{\epsilon}{4} + \zeta} \sin \chi\\
+&\leq&\lr{(2j-1)  \frac{\epsilon}{4} + \zeta} \frac{12}{5 \sqrt{3}}\frac{  \zeta }{ \epsilon + 2\zeta } \\
+&\leq&\lr{(2j-1)  \frac{\epsilon}{4} + \epsilon} \frac{12}{5 \sqrt{3}}\frac{  \epsilon }{ \epsilon + 2\zeta } \\
+&\leq&\lr{\lr{2j \frac{\epsilon}{4}-\frac{\epsilon}{4}} + \epsilon} \frac{12}{5 \sqrt{3}}\frac{  \epsilon }{ \epsilon + 2\zeta } \\
+&\leq& \lr{2j \frac{\epsilon}{4}  \frac{12}{5 \sqrt{3}}\frac{  \epsilon }{ \epsilon + 2\zeta }-\frac{\epsilon}{4} \frac{12}{5 \sqrt{3}}\frac{  \epsilon }{ \epsilon + 2\zeta }  + \epsilon\frac{12}{5 \sqrt{3}}\frac{  \epsilon }{ \epsilon + 2\zeta } } \\
+&\leq& \lr{  \frac{6j}{5}\frac{  \epsilon^2 }{ \epsilon + 2\zeta }- \frac{3}{10}\frac{  \epsilon^2 }{ \epsilon + 2\zeta }  + \frac{12}{5} \frac{  \epsilon^2 }{ \epsilon + 2\zeta } } \\
+&\leq& \lr{  \frac{\lr{6j+12}\epsilon^2}{5\lr{ \epsilon + 2\zeta}}- \frac{3}{10}\frac{  \epsilon^2 }{ \epsilon + 2\zeta } } \\
+&\leq& \lr{  \frac{\lr{12j+21}\epsilon^2}{10\lr{ \epsilon + 2\zeta}} } \\
+&\leq& \lr{  \frac{\lr{12i+21}\epsilon^2}{10\lr{ \epsilon + 2\zeta}} } \\
 \end{array}
 $$
-We need to find $\zeta$ such that:
-$$ 
-\begin{array}{rcl}
-\frac{6}{5}\frac{\zeta\lr{j \epsilon + \zeta}}{2 \epsilon + \zeta} &\leq& \epsilon\\
-6j\epsilon \zeta + 6 \zeta^2  &\leq& 10 \epsilon^2 + 5 \epsilon \zeta\\
-\frac{(6j-5) \epsilon \zeta}{2}\leq (6j-5)\epsilon \zeta + 6 \zeta^2  &\leq& 10 \epsilon^2 \\
-\zeta&\leq& \frac{20\epsilon}{6j-5}\\
-&\leq& \frac{10 \epsilon}{3j}
-\end{array}
-$$
-Since $j\leq i$, let $\zeta= 2i\epsilon$ and we can bound $\psi_i$:
-$$
-\begin{array}{rcl}
-\psi_i &=& \frac{6}{5}\frac{\zeta\lr{j \epsilon + \zeta}}{2 \epsilon + \zeta}\\
-&=& \frac{12 i\epsilon \lr{ \epsilon + 2i\epsilon}}{5\lr{2 \epsilon + 2i\epsilon}}\\
-&=&\frac{12 i \epsilon^2 + 24 i^2 \epsilon }{10 (i+1) \epsilon}\\
-&=&\frac{12i\epsilon + 24i^2}{10(i+1)}\\
-&\leq& \frac{36(i+1)^2 \epsilon}{10(i+1)}\\
-&\leq& 4(i+1)\epsilon
-\end{array}
-$$
-We now relax $\psi_i = 4(i+1)\epsilon$. Finally we can say that the displacement of the $\jth$ center denoted as $v^j$ of a disk lies in the ball $b_{\psi_i}(v^j_c)$ around the canonical position $v_c^j$.
+% We need to find $\zeta$ such that:
+% $$ 
+% \begin{array}{rcl}
+% (i+1) \frac{2}{\sqrt{3}} &\leq& \frac{\epsilon}{4}\\
+% (i+1) \frac{8}{\sqrt{3}} &\leq& \epsilon
+% \end{array}
+% $$
+% Since $j\leq i$, let $\zeta= 2i\epsilon$ and we can bound $\psi_i$:
+% $$
+% \begin{array}{rcl}
+% \psi_i &=& \frac{6}{5}\frac{\zeta\lr{j \epsilon + \zeta}}{2 \epsilon + \zeta}\\
+% &=& \frac{12 i\epsilon \lr{ \epsilon + 2i\epsilon}}{5\lr{2 \epsilon + 2i\epsilon}}\\
+% &=&\frac{12 i \epsilon^2 + 24 i^2 \epsilon }{10 (i+1) \epsilon}\\
+% &=&\frac{12i\epsilon + 24i^2}{10(i+1)}\\
+% &\leq& \frac{36(i+1)^2 \epsilon}{10(i+1)}\\
+% &\leq& 4(i+1)\epsilon
+% \end{array}
+% $$
+% We now relax $\psi_i = 4(i+1)\epsilon$. Finally we can say that the displacement of the $\jth$ center denoted as $v^j$ of a disk lies in the ball $b_{\psi_i}(v^j_c)$ around the canonical position $v_c^j$.
 
 \paragraph{Displacement on the petioles is small.}
-Note that the petioles have the same geometric structure as the arms; the exception is the number of leaves on each side of the petioles. 
+Note that the petioles have the same geometric structure as the stems; the exception is the number of leaves on each side of the petioles. 
 Since we've shown that the geometric shape in arbirary position is already close to canonical position for any $\epsilon>0$, the same argument applies here for the petioles.
 
 We have shown the displacements of all components of the perturbed snowflake are small for any $\epsilon > 0$.  

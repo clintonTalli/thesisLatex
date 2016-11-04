@@ -36,3 +36,15 @@ H\lr{S_2(\delta), U}&\leq&\sqrt{2}\delta
 \end{array}
 $$  
 Similiaryly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_2(\delta), U}=\sqrt{2}\delta$.
+
+\begin{lem}\label{lem:ch4IntroLemma}
+For every $\epsilon > 0$ and $x>0$, there exists an ordered weighted tree $T$ and regular hexagon $h$ of side length $x$ such that:
+\begin{enumerate}
+\item Every realization $\sigma$ of $T$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon in the sense that:
+$$H\lr{\sigma_i,h}\leq\epsilon$$
+\item The number of nodes in $T$ and the weights are polynomial in $\epsilon$ and $x$, the weights $\frac{\epsilon}{4}$ and $\frac{\epsilon}{4} + \zeta$ are polynomial.
+\end{enumerate}
+\end{lem} 
+
+
+Lemma \ref{lem:ch4IntroLemma} is rather restrictive; it begs the question of whether it can be generalized. Some ways this lemma could be generalized are: (1) if all weights are equal, (2) order does not matter, and (3) if we replace the regular hexagon to an arbitrary polygon. 
