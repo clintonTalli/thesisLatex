@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  4 NOV 2016 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  5 NOV 2016 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1679,26 +1679,30 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3034--3040
  []
 
 [47] [48 <./graphics/hexagonPetiolesLeafs9Layers.pdf>]
-<graphics/LineSegmentDelta.pdf, id=752, 390.45876pt x 50.16742pt>
+
+LaTeX Warning: Reference `fig:modifiedContactGraph.pdf' on page 49 undefined on
+ input line 3107.
+
+[49] <graphics/LineSegmentDelta.pdf, id=755, 390.45876pt x 50.16742pt>
 File: graphics/LineSegmentDelta.pdf Graphic file (type pdf)
 
 <use graphics/LineSegmentDelta.pdf>
-Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 3112.
+Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 3120.
 
 (pdftex.def)             Requested size: 411.93767pt x 52.92917pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3110--3116
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3118--3124
 []$[]$ 
  []
 
-[49] <graphics/part1ch4.pdf, id=756, 145.41226pt x 133.49875pt>
+<graphics/part1ch4.pdf, id=756, 151.2872pt x 133.49875pt>
 File: graphics/part1ch4.pdf Graphic file (type pdf)
 
 <use graphics/part1ch4.pdf>
-Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3126.
-(pdftex.def)             Requested size: 86.72267pt x 79.61911pt.
+Package pdftex.def Info: graphics/part1ch4.pdf used on input line 3134.
+(pdftex.def)             Requested size: 86.72267pt x 76.5269pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3124--3130
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3132--3138
 []$[]$ 
  []
 
@@ -1708,10 +1712,10 @@ File: graphics/lemmaHingedPolygon2.pdf Graphic file (type pdf)
 
 <use graphics/lemmaHingedPolygon2.pdf>
 Package pdftex.def Info: graphics/lemmaHingedPolygon2.pdf used on input line 31
-71.
+79.
 (pdftex.def)             Requested size: 325.215pt x 72.19801pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3169--3175
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3177--3183
 []$[]$ 
  []
 
@@ -1719,11 +1723,11 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3169--3175
 File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
 
 <use graphics/ch4Paralellogram.pdf>
-Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3191.
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 3199.
 
 (pdftex.def)             Requested size: 325.215pt x 115.10768pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3189--3195
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3197--3203
 []$[]$ 
  []
 
@@ -1732,11 +1736,11 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 3189--3195
 File: graphics/psiSegmentChange.pdf Graphic file (type pdf)
 
 <use graphics/psiSegmentChange.pdf>
-Package pdftex.def Info: graphics/psiSegmentChange.pdf used on input line 3242.
+Package pdftex.def Info: graphics/psiSegmentChange.pdf used on input line 3250.
 
 (pdftex.def)             Requested size: 325.215pt x 86.00638pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3240--3246
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3248--3254
 []$[]$ 
  []
 
@@ -1747,10 +1751,10 @@ File: graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf Graphic file (type
  pdf)
  <use graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf
- used on input line 3297.
+ used on input line 3290.
 (pdftex.def)             Requested size: 216.81pt x 92.99002pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3295--3301
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3288--3294
 []$[]$ 
  []
 
@@ -1760,11 +1764,11 @@ File: graphics/hexagonOutlineLayerSmall.pdf Graphic file (type pdf)
 
 <use graphics/hexagonOutlineLayerSmall.pdf>
 Package pdftex.def Info: graphics/hexagonOutlineLayerSmall.pdf used on input li
-ne 3316.
+ne 3309.
 (pdftex.def)             Requested size: 216.81pt x 204.05835pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 3314--3320
-[]$[]$
+Overfull \hbox (15.0pt too wide) in paragraph at lines 3307--3313
+[]$[]$ 
  []
 
 [54 <./graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf> <./graphics/hexa
@@ -1778,10 +1782,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17995 strings out of 493089
- 333654 string characters out of 6134841
+ 17996 strings out of 493089
+ 333684 string characters out of 6134841
  504693 words of memory out of 5000000
- 20968 multiletter control sequences out of 15000+600000
+ 20969 multiletter control sequences out of 15000+600000
  64297 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,59p,1096b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1808,7 +1812,7 @@ pe1/urw/symbol/usyr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a
 .pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ../pdf/cat.pdf (60 pages, 896616 bytes).
+Output written on ../pdf/cat.pdf (60 pages, 898303 bytes).
 PDF statistics:
  966 PDF objects out of 1000 (max. 8388607)
  613 compressed objects within 7 object streams

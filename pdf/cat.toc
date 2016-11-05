@@ -49,6 +49,5 @@
 \contentsline {paragraph}{Displacement on $\sigma _1$ is small.}{49}
 \contentsline {paragraph}{Displacement on the stems is small.}{51}
 \contentsline {paragraph}{Displacement on the petioles is small.}{53}
-\contentsline {paragraph}{Proof of Lemma \ref {lem:ch4IntroLemma}}{53}
 \contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{55}
 \contentsfinish 

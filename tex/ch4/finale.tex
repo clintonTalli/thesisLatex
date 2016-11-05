@@ -1,4 +1,4 @@
-\paragraph{Proof of Lemma \ref{lem:ch4IntroLemma}}
+% \paragraph{Proof of Lemma \ref{lem:ch4IntroLemma}}
 
 We should note that the last leaves of the petioles have a freedom of motion (see Figure \ref{fig:hexagonPetiolesLeafs9LayersRotatedOutward.pdf}).  
 
@@ -11,12 +11,12 @@ We should note that the last leaves of the petioles have a freedom of motion (se
 
 We now begin the proof of Lemma \ref{lem:ch4IntroLemma}.
 
-\begin{proof}
-Given $\epsilon > 0$ and $x>0$,  we construct $T$ in the following manner: define $i$ and the perturbed weight of the central disk for $T$ as:
+\begin{proof}[Proof of Lemma \ref{lem:ch4IntroLemma}]
+Given $\epsilon > 0$ and $x>0$, we construct $T$ in the following manner: define $i$ and the perturbed weight of the central disk for $T$ as:
 $$
 \begin{array}{rcl}
 i &=& \ceil{\frac{4x}{\epsilon}}\\
-r &=& \frac{\epsilon}{4}.
+r &=& \frac{\epsilon}{10}.
 \end{array}
 $$
 For any $\sigma$, overlay the hexagon $h$ as the convex hull of the centers of the disks in the canonical arrangement (see Figure \ref{fig:hexagonOutlineLayerSmall.pdf} for reference).  
@@ -27,15 +27,18 @@ For any $\sigma$, overlay the hexagon $h$ as the convex hull of the centers of t
 \captionof{figure}{A regular hexagon of side length $x$ as the convex hull of the centers of a disk arrangement in canonical position.}\label{fig:hexagonOutlineLayerSmall.pdf}
 \end{center}
 \end{minipage}
-\end{proof}
 
-With the exception of the last leaves of the petioles, the $\jth$ center of the disk can be found in a ball of $\psi_i$.  
+
+With the exception of the last leaves of the petioles, the center of the $\jth$ disk can be found in a ball of $\psi_i$.  
 The bound of the Hausdorff distance is the distance of a vertex of the regular hexagon and a boundary point of a disk corresponding to some last leaf of a petiole and $\psi_i$:
 $$\begin{array}{rcl}
 3 \frac{2}{xi} + \frac{6 \zeta}{5 \sqrt{3}}&=& \frac{3 \epsilon}{2}+ \frac{6 \frac{10\epsilon}{3i}}{5 \sqrt{3}}\\
 &&\frac{3 \epsilon}{2}+\frac{4 \epsilon^2 }{x \sqrt{3}}
 \end{array}
 $$
+
+By triangle inequality, the Hausdorff distance $H(h, \sigma_i) \leq H(h, S_i) + H(S_i, \sigma)$.  For $H(h,S_i)$, we can compute $d(h,S_i)=r\sin \frac{\pi}{6} - r$ and $d(S_i,h)= \frac{\epsilon}{10	}$.  
+For $H(S_i,\sigma_i)$ we can compute $d(S_i,\sigma_i)=\psi_i$ and $d(\sigma_i, S_i)=\psi_i + 3r$. 
 Thus the bound for the Hausdorff distance of the regular hexagon and any realization as an ordered disk contact graph where the radii of the disks equal the vertex weights is $$\frac{3 \epsilon}{2}+\frac{4 \epsilon^2 }{x \sqrt{3}}.$$
 
 We now show that the number of nodes in $T$ is polynomial in $\epsilon$ and $x$.  
@@ -46,20 +49,7 @@ $$\frac{4i}{3}  + \sum_{\set{j \in \bbN}{j \leq i \text{ ; } j \in 3\bbZ}} 4(i -
 The total number of nodes on $T$ is at most:
 $$6 \lr{\frac{x+1}{\epsilon} + \frac{4i}{3}   + \sum_{\set{j \in \bbN}{j \leq i \text{ ; } j \in 3\bbZ}} 4(i - j) - 2}.$$
 
-
-
-
-
-
-
-
-
-% For any $\epsilon>0$, we construct an ordered weighted tree $T$ and regular hexagon of side length $x$. 
-   
-% The Hausdorff distance between the regular hexagon that is the convex hull for the centers of the disks in the disk arrangement and the union of the disks themselves is $$H\lr{r(T),h} = \lr{\frac{2}{\sqrt{3}} - 1} \zeta$$
-% The number of disk in the contact graph corresponding is a polynomial $d(x,\epsilon) \leq \frac{4x}{\epsilon}$.  
-
-
+\end{proof}
 
 \paragraph{Proof of Theorem \ref{thm:disk}}
 

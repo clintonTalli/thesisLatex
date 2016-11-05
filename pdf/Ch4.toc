@@ -10,6 +10,5 @@
 \contentsline {paragraph}{Displacement on $\sigma _1$ is small.}{5}
 \contentsline {paragraph}{Displacement on the stems is small.}{6}
 \contentsline {paragraph}{Displacement on the petioles is small.}{9}
-\contentsline {paragraph}{Proof of Lemma \ref {lem:ch4IntroLemma}}{9}
-\contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{10}
+\contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{11}
 \contentsfinish 

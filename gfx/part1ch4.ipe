@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70206" creator="Ipe 7.2.6">
-<info created="D:20161011170958" modified="D:20161104142840"/>
+<info created="D:20161011170958" modified="D:20161105104911"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -267,13 +267,13 @@ h
 <use name="mark/disk(sx)" pos="320 768" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="320 640" size="normal" stroke="black"/>
 <text matrix="1 0 0 1 -29.7275 11.7468" transformations="translations" pos="272 704" stroke="black" type="label" width="34.762" height="9.935" depth="4.95" valign="baseline" size="Large" style="math">\frac{\pi}{6} - \chi</text>
-<text matrix="1 0 0 1 -70.3787 39.0555" transformations="translations" pos="272 704" stroke="black" type="label" width="48.49" height="10.757" depth="4.95" valign="baseline" size="Large" style="math">\frac{\epsilon}{2}+\zeta(\epsilon)</text>
-<text matrix="1 0 0 1 -70.424 -52.3753" transformations="translations" pos="272 704" stroke="black" type="label" width="48.49" height="10.757" depth="4.95" valign="baseline" size="Large" style="math">\frac{\epsilon}{2}+\zeta(\epsilon)</text>
+<text matrix="1 0 0 1 -70.3787 39.0555" transformations="translations" pos="272 704" stroke="black" type="label" width="48.49" height="10.757" depth="4.95" valign="baseline" size="Large" style="math">\frac{\epsilon}{5}+\zeta(\epsilon)</text>
+<text matrix="1 0 0 1 -70.424 -52.3753" transformations="translations" pos="272 704" stroke="black" type="label" width="48.49" height="10.757" depth="4.95" valign="baseline" size="Large" style="math">\frac{\epsilon}{5}+\zeta(\epsilon)</text>
 <path stroke="black">
 235.474 725.737 m
 48.6054 0 0 -48.6054 192 704 240.605 704 a
 </path>
-<text transformations="translations" pos="325.841 733.923" stroke="black" type="label" width="8.244" height="11.922" depth="5.94" valign="baseline" size="LARGE" style="math">\frac{\epsilon}{4}</text>
-<text matrix="1 0 0 1 0.283794 -68.321" transformations="translations" pos="325.841 733.923" stroke="black" type="label" width="8.244" height="11.922" depth="5.94" valign="baseline" size="LARGE" style="math">\frac{\epsilon}{4}</text>
+<text transformations="translations" pos="325.841 733.923" stroke="black" type="label" width="14.097" height="11.922" depth="5.94" valign="baseline" size="LARGE" style="math">\frac{\epsilon}{10}</text>
+<text matrix="1 0 0 1 0.283794 -68.321" transformations="translations" pos="325.841 733.923" stroke="black" type="label" width="14.097" height="11.922" depth="5.94" valign="baseline" size="LARGE" style="math">\frac{\epsilon}{10}</text>
 </page>
 </ipe>
