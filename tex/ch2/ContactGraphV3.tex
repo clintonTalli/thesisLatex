@@ -1,32 +1,5 @@
 
 
-
-
-
-
-
-%%%COMMENTS FROM first MEeting
-%Introduction:recall contact tree of disks with radii is hard.  
-%tool to prove is approx hexagonal tiling with disks.  Find NP Hardness Reduction via arrangement of hexagons with disks
-%modelling the hexagons with the arrangement of disks; r_0 = 1  r_i = 1 + \epsilon
-%state it intuitively with examples
-%stability: every realization is close to the hexagon graph with weights on vertices.  the disnce between the centers of hexagonal lattice and contact graph are close
-%property of a vertex weighted graph if for any two realizations has a \ldots let G be an ordered tree with any two realizations R_1, R_2.  G is \epsilon stable with any two realizations the vertices are close.  there exists a rigid transformation \gamma such that the vertices\left(\gamma\left(R_1 \right)\right) - vertices\left(\gamma\left(R_2\right)\right) < \epsilon
-%1) state goal of theorem
-%2) state theorem: Hexagon of side length 1, for any \epsilon > 0, there exists an oriented vertex weighted tree that satisfies the following:
-%	a) |V| is defined polynomially as a function of epsilon
-%	b) all weights are bounded by some polynomial as a function of epsilon
-%3) prove step by step:
-%	a) define the tree
-%	b) show that any realization of the tree is close to T_i, i.e. for any realization of a tree there exists a T_i such that H(T_i,P)<\epsilon
-%4) proof by induction
-%	a) one for the angles
-%	b) one for the centers
-%	c) fuzzy hexagons approximate regular hexagons are approximal from the same proof
-%Define tree by i^{th} layer
-%try defining without realization abstract
-%NTS T_{i,\epsilon} there exists a realization R\left(T_{i,\epsilon}\right) hint lattice -> introduce \epsilon  start with
-
 \section{Contact Graphs and Disk Arrangements}
 
 \begin{figure}[!htbp]
@@ -61,12 +34,20 @@ Let $\epsilon > 0$.  Given $D_i$ and $S_i$ such that the disk centered at the or
 \end{minipage}
 \end{figure}
 In order to answer this question be must define some terminology.  \textit{Stability} is the condition that every realization of $D_{i,\epsilon}$ is close to the hexagonal graph with weights on vertices.  Let $G$ be an ordered tree. With any two realizations $R_1$, $R_2$.  $G$ is \textit{$\epsilon$-stable} with any two realizations the vertices are close.
-\begin{figure}[!htbp]
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/epsilonCenterWithHexagon.pdf}
-\caption{$D_{1,\epsilon}$ with a hexagon whose vertices are the centers of the disks about the center disk.}\label{fig:epsilonCenterWithHexagon}
+\includegraphics[width=.9\columnwidth]{graphics/epsilonCenterWithHexagon.pdf}
+\captionof{figure}{$D_{1,\epsilon}$ with a hexagon whose vertices are the centers of the disks about the center disk.}\label{fig:epsilonCenterWithHexagon}
 \end{center}
-\end{figure}
+\end{minipage}
+
+% \begin{figure}[!htbp]
+% \begin{center}
+% \includegraphics{graphics/epsilonCenterWithHexagon.pdf}
+% \caption{$D_{1,\epsilon}$ with a hexagon whose vertices are the centers of the disks about the center disk.}\label{fig:epsilonCenterWithHexagon}
+% \end{center}
+% \end{figure}
 
 \begin{thm}\label{thm:ContactGraphV3-1}
 It is NP-complete to decide whether a polygonal linkage whose hinge graph is a tree can be realized.

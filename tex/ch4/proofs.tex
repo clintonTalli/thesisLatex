@@ -1,11 +1,10 @@
-\textbf{Modification of $\sigma_1$.}
+
+\paragraph{Modification of $\sigma_1$.}
 We show that for any realization of the ordered tree $T$
  the placement of vertices is close to canonical position.  
 In order to show this, we show the components of a perturbed snowflake in arbitrary position  are close to canonical position.  
 The argument comprises of three parts: (1) Showing that the pertubation of the central disk and the six neighboring disks is small, (2) show that the displacement along the stems for all $S_i$ is small, and (3) show that the displacement along the petioles is small.  
-
 Given a instance of a perturbed snowflake with $v_0$ having weight $\epsilon + \zeta$ where $\epsilon > 0$, vertices neighboring $v_0$ each have a range of placement on the plane when realizaed as a disk arrangement. 
-Figure \ref{fig:modifiedContactGraph.pdf} shows a realization of $S_1$ and illustrates one such example of possible gaps, $\zeta$, that could be created between adjacent disks of $S_1$ in a perfect snowflake.
 
 \paragraph{Displacement on $\sigma_1$ is small.}
 Note that (1) the adjacent disks in a perfect snowflake cannot be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$ because every contact is encoded in the tree.  
@@ -159,12 +158,9 @@ There exists a unique path consisting of $j$ edges from $v_0$ to $v$.
 We can compute a bound of coordinate displacement $\psi_i$.  
 We want to establish a bound of coordinate displacement for every vertex in $T$.  
 We extablish a bound for the path from $v_0$ to $v$ by induction on $j$, the number of edges on the path from $v_0$ to $v$.  
-The base case is $v_0$ which the displacement is zero suppose $\psi_j$ is true.
-% A perturbed snowflake is a realization of some tree $T$.  
-% For the $\jth$ vertex along some path from $v_0$ to $v_j$ (see Figure \ref{fig:psiSegmentChange.pdf} for reference), we can compute the bound of coordinate displacement $\psi_i$ of the disk corresponding to $v_j$ using our inductive argument on the angular displacement above.  
-% Without loss of generality, to translate the $\jth$ coordinate displacement, we compute the radius of the ball of radius $\psi_i$ in which the $\jth$ center may lie. 
+The base case is $v_0$ which the displacement is zero suppose $\psi_j$ is true.  
 $$\psi_j = (2j-2) \lr{\frac{\epsilon}{10} + \zeta} \sin \chi$$
-Let $\zeta \leq \frac{\epsilon^2-\epsilon}{2}$.  
+Let $\zeta \leq \epsilon$.  
 Using the Maclaurin series of $\sin \chi$:
 $$
 \begin{array}{rcl}
@@ -176,7 +172,7 @@ $$
 $$
 
 $\phi_i$ bound is true for almost all vertices but the outermost leaves of the petioles with additional freedom of movement (see Figure \ref{fig:hexagonPetiolesLeafs9LayersRotatedOutward.pdf} for reference).  
-By choosing $\zeta = \frac{5\epsilon  \sqrt{3}}{(6i-29)}$, we have that $\zeta$ is polynomial in $x$ and $\epsilon$ since $i$ is polynomial in $x$ and $\epsilon$.
+By choosing $\zeta = \frac{5\epsilon  \sqrt{3}}{2(6i-29)}$, we have that $\zeta$ is polynomial in $x$ and $\epsilon$ since $i$ is polynomial in $x$ and $\epsilon$.
 \paragraph{Displacement on the petioles is small.}
 Note that the petioles have the same geometric structure as the stems; the exception is the number of leaves on each side of the petioles. 
 Since we've shown that the geometric shape in arbirary position is already close to canonical position for any $\epsilon>0$, the same argument applies here for the petioles.

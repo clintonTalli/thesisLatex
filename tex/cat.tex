@@ -3,42 +3,20 @@
 \usepackage{setspace}
 \doublespacing
 \usepackage[latin1]{inputenc}
-\usepackage{pdflscape}
-\usepackage{verbatim}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{amstext}
-\usepackage[section]{placeins}
-\usepackage{listings}%R Code
- \usepackage{color}%R code
-\usepackage{tikz}
-\usepackage{here}
-\usetikzlibrary{patterns}
-\usepackage{setspace}
-\usepackage{pdflscape}
-\usepackage[english]{babel}
-\usepackage{times}
-\usepackage[T1]{fontenc}
-\usepackage{multirow}
-\usepackage{mathptmx}
-\usepackage{lipsum}
-\usepackage{titletoc}
-\usepackage[toc,page]{appendix}
-\usepackage{appendix}
-\usepackage{enumerate}
-\usepackage{enumitem}
+\usepackage{complexity}
 \usepackage{caption}
 \usepackage{subcaption}
-\usepackage{float}
-\usepackage{complexity}
-\usepackage{array}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
 \newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
 \newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
-\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
-
 %%%theoerms, etc%%%%
 \theoremstyle{plain}% default
 \newtheorem{thm}{Theorem}
@@ -53,50 +31,7 @@
 \newtheorem{case}{Case}
 \newtheorem{prob}{Problem}
 \newtheorem{observation}{Observation}
-%%%% R Code%%%%
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
-\lstset{frame=tb,
-  language=R,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true,
-  breakatwhitespace=true
-  tabsize=3
-}
 
-%%%%%%%%TikZ Commands
-
-\def\hexagonsize{1cm}
-\pgfdeclarepatternformonly
-  {hexagons}% name
-  {\pgfpointorigin}% lower left
-  {\pgfpoint{3*\hexagonsize}{0.866025*2*\hexagonsize}}%  upper right
-  {\pgfpoint{3*\hexagonsize}{0.866025*2*\hexagonsize}}%  tile size
-  {% shape description
-   \pgfsetlinewidth{0.4pt}
-   \pgftransformshift{\pgfpoint{0mm}{0.866025*\hexagonsize}}
-   \pgfpathmoveto{\pgfpoint{0mm}{0mm}}
-   \pgfpathlineto{\pgfpoint{0.5*\hexagonsize}{0mm}}
-   \pgfpathlineto{\pgfpoint{\hexagonsize}{-0.866025*\hexagonsize}}
-   \pgfpathlineto{\pgfpoint{2*\hexagonsize}{-0.866025*\hexagonsize}}
-   \pgfpathlineto{\pgfpoint{2.5*\hexagonsize}{0mm}}
-   \pgfpathlineto{\pgfpoint{3*\hexagonsize+0.2mm}{0mm}}
-   \pgfpathmoveto{\pgfpoint{0.5*\hexagonsize}{0mm}}
-   \pgfpathlineto{\pgfpoint{\hexagonsize}{0.866025*\hexagonsize}}
-   \pgfpathlineto{\pgfpoint{2*\hexagonsize}{0.866025*\hexagonsize}}
-   \pgfpathlineto{\pgfpoint{2.5*\hexagonsize}{0mm}}
-   \pgfusepath{stroke}
-  }
 %%%%%%%%custom commands
 \newcommand{\ith}{i^\text{th}}
 \newcommand{\jth}{j^\text{th}}
@@ -105,11 +40,11 @@
 \newcommand{\ZZ}{\mathbb{Z}} %  set of integer number
 \newcommand{\RR}{\mathbb{R}} %  set of real numbers
 \newcommand{\SH}{\mathbb{S}} %  set of unit vectors
-\newcommand{\HH}{{\cal H}} %  Calligraphic H
-\renewcommand{\PP}{{\cal P}} %  Calligraphic P
-\newcommand{\DD}{{\cal D}} %  Calligraphic D
-\newcommand{\QQ}{{\cal Q}} %  Calligraphic D
-\newcommand{\FF}{{\cal F}} %  Calligraphic D
+\newcommand{\HH}{{\mathcal{H}}} %  Calligraphic H
+% \renewcommand{\PP}{{\mathcal{P}}} %  Calligraphic P
+\newcommand{\DD}{{\mathcal{D}}} %  Calligraphic D
+\newcommand{\QQ}{{\mathcal{Q}}} %  Calligraphic D
+\newcommand{\FF}{{\mathcal{F}}} %  Calligraphic D
 \newcommand{\bbH}{{\mathbb{H}}}
 \newcommand{\bbR}{{\mathbb{R}}}
 \newcommand{\bbP}{{\mathbb{P}}}
@@ -161,8 +96,6 @@ X_2\right)^{-1}
 \newcommand{\vlr}[1]{\left\vert #1 \right\vert}
 \newcommand{\curlybraces}[1]{\left\lbrace #1 \right\rbrace}
 \newcommand{\BigOh}[1]{O\left( #1 \right)} 
-%\newcommand{\deg}{\textrm{deg}}
-%\renewcommand{\baselinestretch}{2.0}
 % 1.0 is for one line space, 2.0 is for double-line space, etc
 %%%%Spacing commands %%%%%
 
@@ -174,18 +107,6 @@ X_2\right)^{-1}
 \setlength{\textwidth}{6.0in}
 %%Please refer to http://en.wikibooks.org/wiki/LaTeX/Page_Layout
 %%The parameters below are described pictorally on this webpage.  Tinker with the settins as needed.
-%\setlength{\evensidemargin}{0cm}
-%\setlength{\oddsidemargin}{0pt}
-%\setlength{\topmargin}{.5in}
-% \setlength{\hoffset}{0in}
-% \setlength{\voffset}{0in}
-% \setlength{\headheight}{0pt}
-% \setlength{\headsep}{0in}%should be 1 inch from header titles
-%\setlength{\textheight}{21cm}
-%\setlength{\textwidth}{15.5cm}
-% \setlength{\marginparsep}{0pt}
-% \setlength{\marginparwidth}{0pt}
-% \setlength{\footskip}{0pt}
 %%%%Margins%%%%%% - Clinton Bowen
 \author{Clinton Bowen}
 \title{Protein Folding: Planar Configuration Spaces of Disc Arrangements and
@@ -197,16 +118,7 @@ Hinged Polygons}
 \committee{Dr. Csaba T\'oth}{Dr. Silvia Fernandez}{Dr. John Dye}
 \abstract{ }
 \begin{document}\chapter{Background}
-% In this section, we cover the background subjects needed to formally pose the 
-% problems and present solutions in this thesis.  We start with two types of combinatorial structures, linkages 
-% and polygonal linkages.  We then discuss the configuration spaces of linkages and polygonal 
-% linkages.   We then look into an alternate representation of linkages, disk arrangements and state 
-% the disk arrangement theorem.  Next we look at satisfiability problems and then review a framework, the 
-% logic engine, which can encode a type of satisfiability problem.  Finally, we cover the basic 
-% definitions of algorithm complexity for $\textbf{P}$ and $\textbf{NP}$.
-%
-%Decidability problems study whether there exists a way to determine whether an element is a member of a set.  
-%
+
 We consider four decision problems surrounding graph theory and geometry. 
 The graph theory based problems involve polygonal linkages and the geometry based problems involve something called a contact graph of disks.  
 In each problem, we decide whether a polygonal linkage or contact graph has a certain realization in the plane.
@@ -217,15 +129,11 @@ We show that all four problems are intractable, or $\NP$ hard (see definition be
 A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices $V$ and a set of edges $E$.  
 An edge is a two element subset of $V$.
 Note that with this definition of an edge it is not possible to have one element subset of $V$ as an edge (sometimes referred to as a self-adjacent edge or loop).
-The \textit{degree} of a vertex $v$ is the number of edges that $v$ is an element of.
-% and is denoted as ``V choose two'', ${V \choose 2}$.
-% Each edge $e \in E$ is an unordered pair of vertices $\curlybraces{u,v} \in E$.  
+The \textit{degree} of a vertex $v$ is the number of edges that $v$ is an element of.   
 Vertices are said to be \textit{adjacent} if they form an edge in $E$.  
-\textit{Neighbors} of a vertex $v$ are the vertices adjecent to $v$.
-%Vertices that are adjacent to themselves are \textit{self-adjacent}, i.e. $u = v$ for $\curlybraces{u,v} \in E$.  
+\textit{Neighbors} of a vertex $v$ are the vertices adjecent to $v$.  
 Edges are said to be adjacent if they share a vertex.  
 
-%When an edge is a member of $E$ multiple times,  then we say that the graph is a \textit{multigraph}.   
 A \textit{simple graph} has no self-adjacent vertices.
 In this thesis every graph is a simple graph.
 Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two vertices in $S$ are joined by an edge. 
@@ -233,21 +141,20 @@ A \textit{vertex cover} of a graph $G = (V,E)$  is a set of vertices $S \subset 
 If $G' = (V',E')$ is a graph such that $V' \subset V$ and $E' \subset E$, then $G'$ is a \textit{subgraph} of $G$.
 
 To formally show when two graphs are the same, we use the concept of graph isomorphism.
-%For graph equivalency, we need to define an isomorphism for graphs.  
 Two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $ are \textit{isomorphic} if there exists a bijective function $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$ if and only if $(f(u),f(v)) \in E_2$. 
 See an example in Table \ref{table:ch1-graph-1} and Figure \ref{fig:configuration-3}.
-%Given two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} is a bijective function $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
-\begin{table}[!htbp]\label{table:ch1-graph-1}
+
+\begin{table}[!htbp]
 \begin{center}
-$$\begin{array}{|c|c|c|}\hline
+\begin{tabular}{|C|C|C|}\hline
 \text{Graph}&\text{Vertices}&\text{Edges}\\\hline
 G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
 \\\hline
 G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
 \\\hline
-\end{array} $$
+\end{tabular} 
 \caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
-= 3$, $f(d)=4$, $f(e)=5$.}
+= 3$, $f(d)=4$, $f(e)=5$.}\label{table:ch1-graph-1}
 \end{center} 
 \end{table}
 
@@ -293,9 +200,9 @@ Reflections reverse the counter-clockwise order around each vertex.
 
 Figure \ref{fig:combinatorialEmbedding.pdf} depicts two different drawings of the wheel graph $W_5$.%, one on the left and one on the right. 
 The drawings have the followings counterclockwise order of neighbors for each vertex:
-\begin{table}[!htbp]\label{table:combinatorialEmbedding}
+\begin{table}[!htbp]
 \begin{center}
-$$\begin{array}{|c|c|c|}\hline
+\begin{tabular}{|C|C|C|}\hline
 \text{Vertex}&\text{Left \& Middle Drawing}&\text{Right Drawing}\\\hline
 1&(2,5,4)& (4,5,2) 
 \\\hline
@@ -307,8 +214,8 @@ $$\begin{array}{|c|c|c|}\hline
 \\\hline
 5&(2,3,4,1)& (4,3,2,1) 
 \\\hline
-\end{array} $$
-\caption{A table showing the counter-clockwise circular ordering of neighbors for the left and right drawing in Figure \ref{fig:combinatorialEmbedding.pdf}.  Note that the permutation cycles are equivalent for the right and left drawings.}
+\end{tabular} 
+\caption{A table showing the counter-clockwise circular ordering of neighbors for the left and right drawing in Figure \ref{fig:combinatorialEmbedding.pdf}.  Note that the permutation cycles are equivalent for the right and left drawings.}\label{table:combinatorialEmbedding}
 \end{center} 
 \end{table}
 %The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
@@ -316,75 +223,7 @@ $$\begin{array}{|c|c|c|}\hline
 %One can ask if for any graph $G$, does there exists a drawing in which the crossing number is zero?
 %Without loss of generality, this is a type of crossing number minimization problem, i.e.
 %$$ \min_{\gamma \in \left\lbrace \Gamma_G \right\rbrace} cr(\gamma)$$
-Referencing table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
-
-
-
-%If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}. 
-
-
-
- 
-
-
-
-
-
-
-%Two planar drawings are equivalent if they determine the same circular orderings of the neighbor sets.
-%Every proper drawing can be augmented to an embedded plane graph 
-%by inserting new vertices at the edge crossings, and subdividing the edges that pass
-%through those vertices. So the equivalence of two drawings reduces to the equivalence of plane graphs.
-
-
-% A graph \textit{embedding} of $G = (V,E)$ is an injective mapping $\Pi: V \mapsto \bbR^2$.  
-% \begin{figure}[!htbp]
-% \begin{center}
-% \includegraphics[scale=.5]{graphics/PetersonGraphExample.pdf}
-% \caption{An embedding of the Peterson graph.}\label{fig:graph1-1}
-% \end{center} 
-% \end{figure} 
-% A graph embedding is said to
-
-
-% A \textit{graph} is an 
-% ordered pair $G = (V,E)$ comprising of a set of vertices, $V$, and a set of edges or 
-% lines, $E$.  Every edge $e \in E$, is an unordered pair of distinct vertices $u,v \in V$ (the edge represents their adjacency, $e = \{ u,v\}$). With this definition of a graph, there 
-% are 
-% no loops (self adjacent vertices, $\{v,v\}$) or multi-edges (several edges between the same pair of 
-% vertices).
-
-%   This requires an 
-% embedding into the plane or $\bbr^3$.  An \textit{embedding} of the 
-% graph $G = (V,E)$ is an injective mapping $\Pi : V \mapsto \bbR^{2}$ (see Figure 
-% \ref{fig:graph1-1}). 
-
-
-% \subsubsection{Edge Crossings}
-% We define \textit{plane embeddings} of a graph to be an embedding where the following degenerate 
-% configurations 
-% do not occur:
-% \begin{itemize}
-% \item[\rn{1}] the interiors of two or more edges intersect, or
-% \item[\rn{2}] an edge passes through a vertex
-% \end{itemize} 
-% \begin{figure}[H]
-% \begin{center}
-%   \begin{subfigure}[b]{0.49\textwidth}
-% 	  \includegraphics{graphics/crossingType2.pdf}
-% 	  \caption{The interior of the edges intersect.}
-% 	  \label{fig:ch1-linkages-1-2}
-%   \end{subfigure}
-%   \begin{subfigure}[b]{0.49\textwidth}
-% 	  \includegraphics{graphics/crossingType3.pdf}
-% 	  \caption{An edge passes through a vertex.}
-% 	  \label{fig:ch1-linkages-1-3}
-%   \end{subfigure}
-% \end{center} 
-% \caption{These figures exhibit the 4 types of edge crossings.}\label{fig:ch1-linkages-1}
-% \end{figure}
-% A graph is called \textit{planar} if it admits a plane embedding.  A \textit{plane graph} is a 
-% graph together with a plane embedding.
+Referencing Table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
 
 \subsection{Trees}
 %Some graphs can be classified by which properties they have.
@@ -502,12 +341,13 @@ Embeddings of ordered trees are combinatorially equivalent if for each node the 
 % different manner, with circle packings.
 % \newpage 
 \section{Linkages}
-\begin{figure}[!htbp]
- \begin{center}\label{fig:turkey}
-  \includegraphics{graphics/HumanTurkeyLinkage.pdf}
-  \caption{Here are skeleton drawings of a human and a turkey.  When animating skeletons, one tends to make sure that the lengths of the skeleton segments are kept the same length throught the animation.  Otherwise, the animation may depart from what is ideally understood of skeletal motions.}
- \end{center} 
-\end{figure}
+
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics{graphics/HumanTurkeyLinkage.pdf}
+\captionof{figure}{Here are skeleton drawings of a human and a turkey.  When animating skeletons, one tends to make sure that the lengths of the skeleton segments are kept the same length throught the animation.  Otherwise, the animation may depart from what is ideally understood of skeletal motions.}\label{fig:turkey}
+\end{center}]
+\end{minipage}
 
 When graph drawings model physical objects, other qualities about the graph can be contextualized in a geometric sense.  
 Distance, angular relationships and other geometric qualities may be relevant.
@@ -518,53 +358,7 @@ A \textit{length assignment} of a graph $G=(V,E)$ is a function $\ell:E \mapsto 
 If $\ell(e)$ is the length of an edge $e$, $\ell(e)$ must be strictly positive in a drawing, otherwise it may result in two distinct vertices with the same coordinates.
 Similar to combinatorial embeddings which is an equivalence class of embeddings of the same counter-clockwise order of vertices, we can also define an equivalence class of drawings with the same length assignment.
 A \textit{linkage} is a graph $G = (V,E)$ with a length assignment $\ell:E \mapsto \bbr^+$ (e.g., see Figure \ref{fig:turkey}).
-%Length assignments can be thought of as a metric where $\ell(u,v) = \ell(v,u)>0$.
-%Inser linkage here
-
-
-
-
-% \begin{figure}[!h]
-% \begin{center}
-% \includegraphics[scale=.75]{graphics/LockedConnellyLinkage.pdf}
-% \end{center} 
-% \caption{A linkage whose complete configuration space is discontinuous.  These two examples above 
-% are two configurations of the same linkage that cannot continuously transform into the other 
-% without edge crossing.}
-% \label{fig:configuration-4}
-% \end{figure}
-% A \textit{reconfiguration} of a linkage whose graph is $G=(V,E)$ and length assignment is $\ell$ is 
-% a continuous function $f: [0,1] \mapsto \bbr^{2 \cdot \vert V \vert}$ specifying a configuration of 
-% the linkage for every $t \in [0,1]$ where length assignment $\ell$ is preserved, edges do not cross 
-% and for every $\epsilon > 0$, there exists a $\delta > 0$ such that $\vert t_1 - t_2 \vert < 
-% \delta$ implies 
-% $$\left\vert f\left( t_1 \right) - f\left( t_2 \right) \right\vert < \epsilon$$
-
-%(fig 1) insert a table of a graph and define a length assigment 
-%(fig 2) insert a realization of (fig 1)
-%(fig 3) insert a second realization of (fig 1)
-
-
-
-%graph component of the linkage   the plane.  A linkage 
-%\textit{embedding} is $L : V \mapsto 
-%\bbR^{2}$.
-% A \textit{linkage} is an ordered pair $G = (V,E)$ comprising of a set $V$ of vertices or nodes 
-% together with a set $E$ of edges or lines. This definition is commonly used for graphs.  Mapping 
-% the linkage $G$ into the plane is said to be the \textit{embedding}, i.e. $L : V \mapsto 
-% \bbR^{2}$.  A length function correspond to a linkage, $l: E \mapsto \bbr^+$ gives a length to an 
-% edge in the linkage.  If We consider a \textit{realization} of a linkage is range of $L$, i.e. 
-% $L(V)$. If for every edge $(u,v) \in E$ such that $l\left( \left(u,v\right) \right) = \left\vert 
-% L(u) - L(v) \right\vert$ is true, then $L$ is said to be a \textit{proper embedding} of $G$.
-% \begin{figure}[h]
-% \begin{center}
-% \includegraphics[scale=1]{graphics/crossingEdgeLinkage.pdf}
-% \end{center} 
-% \caption{A linkage where edges cross however it does not contain loops or multiple edges between 
-% vertices.}
-% \label{fig:linkage-3}
-% \end{figure}
-\section{Polygonal Linkages}
+\section{Polygonal Linkages}\label{sec:hinge}
 A generalization of linkages is a polygonal linkage where edges of given lengths are replaced with rigid polygons.
 Formally, a \textit{polygonal linkage} is an ordered pair $\left(\PP,\HH \right)$ where $\PP$ is a finite set of polygons and $\HH$ is a finite set of hinges; a \textit{hinge} $h\in \HH$ corresponds to two or more points on the boundary of distinct polygons in $\PP$.  
 A \emph{realization of a polygonal linkage} is an interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).  
@@ -578,14 +372,14 @@ two hinge points can correspond to the same boundary point of a polygon.}
 \label{fig:linkage-1}
 \end{figure}
 A \textit{realization of a polygonal linkage with fixed orientation} is a realization in which each polygon is translated and rotated copy of a polygon in $\PP$; at each hinge the incident polygons are in a given counter-clockwise order (refer to Figure \ref{fig:orderedLinkages}).
-%the congruent copies of the polygons in $\PP$ is translated and rotated copy in $\PP$.
-% each copy allows for any combination of translations and rotated copies of polygons in $\PP$ where every hinge has a counter-clockwise order of incident polygons.  
-\begin{figure}[!htbp]\label{fig:orderedLinkages}
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[scale=1]{graphics/orderedLinkages.pdf}
-\end{center} 
-\caption{Two realizations of the same polygonal linkage with that differ in the counter-clockwise order of polygons around vertex $a$. }
-\end{figure}
+\includegraphics{graphics/orderedLinkages.pdf}
+\captionof{figure}{Two realizations of the same polygonal linkage with that differ in the counter-clockwise order of polygons around vertex $a$. }\label{fig:orderedLinkages}
+\end{center}]
+\end{minipage}
+
 Note that oriented polygonal linkage realizations do not allow for reflection transformations of polygons in $\PP$.
 
 These two realization types allow one to pose two different problems, the realizability problem for polygonal linkages and the realizability problem for polygonal linkages with fixed orientation:
@@ -625,12 +419,11 @@ Indeed this polygonal linkage cannot satisfy Problem \ref{problem:OrderedPolygon
 Without loss of generality, fix the placement of $C$.
 $A$, $B$, and $D$ have unique placement around triangle $C$.  
 In this placement $C$ and $D$ overlap.%have common intersecting interiors and thus a contradiction of the existence of a realization.  
-\begin{figure}[!htbp]\label{fig:collidingHingedPolygons}
-\begin{center}
+\begin{figure}[!htbp]\begin{center}
 \includegraphics[scale=1]{graphics/collidingHingedPolygons.pdf}
 \end{center} 
 \caption{This example shows yet another example where two realizations of the same polygonal linkage. 
- One realization where there is an intersection and another where there isn't an intersection.}
+ One realization where there is an intersection and another where there isn't an intersection.}\label{fig:collidingHingedPolygons}
 \end{figure}
 Figure \ref{fig:collidingHingedPolygons}, satisfies Problem \ref{problem:UnorderedPolygonal} but not Problem \ref{problem:OrderedPolygonal}.
  The far right is a realization but with polygon $B$ reflected.
@@ -772,40 +565,7 @@ This makes the Haberdasher problem as a type of polygonal linkage where the poly
 % $$\left\lbrace u  \cdot t + (1-t) \cdot v : t \in [0,1] \right\rbrace \in P'$$
 %  \item  Polygons can only intersect at hinge points.  No two polygons can intersect at 
 % their boundary or interior with the exception of possible a hinge point.  
-% \end{enumerate}% 1.1.3. Disk graphs and problem definitions
-
-% For the sake of simplicity, throughout this thesis we often refer to disks and their corre- sponding vertices synonymously. For example, we might simply say ’we create a disk D2 with radius r2 that touches disk D1’ instead of saying ’we create a vertex v2, a correspond- ing disk D2 with radius r2 and an edge between v2 and vertex v1 whose corresponding disk is D1’.
-% Let G = (V, E) be a graph. We say that G has a realization as a disk intersection (touching) graph, if there exist a set of disks V and a bijection from V to V such that G = (G,V) is a disk intersection (touching) graph. In this case, we say G realizes G. Let Dv ∈ V be the disk of G corresponding to vertex v for any v ∈ V . A radius assignment for G is a function r : V → R+ that assigns a positive real number to each vertex of G. If the radius of disk Dv ∈ V is equal to r(v) for every v ∈ V , then G is said to respect r. A seed assignment for G is a function σ : V → R2 that assigns a point in the plane to each vertex ofG.Ifσ(v)∈Dv foreveryv∈V,thenGissaidtorespectσ.LetΓbeacombinatorial embedding for G. If G is a disk touching graph and if the cyclic order of disks touched by Dv corresponds to the cyclic order of edges incident to the vertex v for any v ∈ V , then G is said to respect Γ.
-% We consider the following family of decision problems, in which the dots (...) are a place- holder for one, multiple or none of the enlisted variants.
-% (Unit/ρ-bounded) Disk Intersection/Touching Graph Recognition (with ...): The problem instance is a graph G = (V, E) and the question is whether it is possible to realize G as a (unit/ρ-bounded) disk intersection/touching graph (which respects ...).
-% • ... fixed Radii: ... a given radius assignment r for G.
-% • ... fixed Embedding: ... a given combinatorial embedding Γ for G. • ... fixed Seeds: ... a given seed assignment σ for G.
-% In particular, we consider the following problems:
-% • Unit Disk Touching Graph Recognition (UDT)
-% • Unit Disk Touching Graph Recognition with fixed Embedding (UDTE)
-% • ρ-bounded Disk Touching Graph Recognition (ρ-BDT)
-% • Disk Touching Graph Recognition with fixed Radii (DTR)
-% • Disk Touching Graph Recognition with fixed Radii and Embedding (DTRE)
-% • Disk Touching Graph Recognition with fixed Seeds (DTS)
-% • Unit Disk Touching Graph Recognition with fixed Seeds (UDTS)
-% • Unit Disk Touching Graph Recognition with fixed Seeds and Embedding (UDTSE)
-% 1.2. Related work
-% As mentioned in the beginning of this chapter, Koebe’s Theorem [Koe36] implies that the Disk Touching Graph Recognition problem can be solved in linear time. On the other hand, Hlinˇeny ́ and Kratochv ́ıl showed that the Disk Intersection Graph Recognition problem is NP-hard [HK01].
-% A result by Breu and Kirkpatrick states that the Unit Disk Intersection/Touching Graph Recognition problems are NP-hard [BK98], implying that the Disk Intersection/Touching Graph Recognition with fixed Radii problems are also N P -hard. There exists some heuris- tics for generating disk touching graphs with fixed radii [Dor96, Ino11] for the application of cartogram generation.
-% 6
-% Breu and Kirkpatrick generalized their results by showing that the ρ-bounded Disk Inter- section/Touching Graph Recognition problems are NP-hard for any fixed ρ ≥ 1 [BK96]. Alam et al. [AEG+14] argue that for any tree, for any cactus (which is a connected graph in which each edge is contained in at most one cycle), for any k-outerplanar graph with bounded maximum degree and k ∈ O(log n) and for any planar graph with bounded tree- depth there exists a realizing ρ-bounded disk touching graph where ρ is a polynomial in the number of vertices.
-% Atienza et al. show that the Disk Touching Graph Recognition with fixed Seeds problem is NP-hard [AdCC+12].
-
-
-
-
-
-
-
-
-\section{Disk Arrangements\label{sec:disk}}
-%Circle packing theorem: For every connected simple planar graph G there is a circle packing in the plane whose intersection graph is (isomorphic to) G.
-% A disk D is a region in the plane bounded by a circle. A disk can be uniquely described by its bounding circle’s radius r ∈ R+ and center c ∈ R2. A disk is called closed if it contains the points of its bounding circle and open otherwise. A disk intersection graph G = (G, V) consists of a graph G = (V,E), a set of closed disks V and a bijection from the set of vertices V to V such that two vertices of V are adjacent in G if and only if their corresponding disks in V intersect. A disk touching graph G = (G, V) is a disk intersection graph such that the interiors of the disks in V are pairwise disjoint. The centers of the disks in V together with straight-line segments that connect the centers of all pairs of touching disks induce a planar drawing of G. In a unit disk intersection (touching) graph all disks share one uniform radius. In a ρ-bounded disk intersection (touching) graph the radius of all disks is taken from the interval [1, ρ] for a value ρ ≥ 1. Note, that a 1-bounded disk intersection (touching) graph is a unit disk intersection (touching) graph.
+% \end{enumerate}\section{Disk Arrangements}\label{sec:disk}
 
  A \textit{disk arrangement} is a set of interior disjoint disks, $D$.  
  If for any pair of disks in $D$ intersect at a boundary point, they are said to be in contact (kissing).
@@ -828,26 +588,7 @@ The radii can be given by a weight function.
 Let $\omega: V \mapsto \bbR^+$ be the \textit{weight function}.  
 $\omega$ assigns a weight to each vertex in $V$.  
 Let $\Pi:V \mapsto \bbr^2$ be that planar mapping of vertices.
-%$D$ \textit{respects radii assignments} if for every $v \in V$ such that $b_V(v) = D_v$, $\omega(v)$ is the radius of $D_v$.    
-%$D$ \textit{respects center assignments} if for every $v \in V$, $\Pi(v)$ is the center of $D_v$.  
-%Note that if $\omega$ respects radii assignments, then it can be equivelently said that the linkage $(G,\ell)$ with length assignment $\ell$ also respects radii assignments.  
-%In this thesis, unless otherwise stated we assume that the contact graph associates to an $\omega$ and $\Pi$ mapping that respect radii and center assignments.
-%we may also interchange contact graph with linkage.
 
-
-
-% For the sake of simplicity, throughout this thesis we often refer to disks and their corre- sponding vertices synonymously. For example, we might simply say ’we create a disk D2 with radius r2 that touches disk D1’ instead of saying ’we create a vertex v2, a correspond- ing disk D2 with radius r2 and an edge between v2 and vertex v1 whose corresponding disk is D1’.
-% Let G = (V, E) be a graph. We say that G has a realization as a disk intersection (touching) graph, if there exist a set of disks V and a bijection from V to V such that G = (G,V) is a disk intersection (touching) graph. In this case, we say G realizes G. Let Dv ∈ V be the disk of G corresponding to vertex v for any v ∈ V . A radius assignment for G is a function r : V → R+ that assigns a positive real number to each vertex of G. If the radius of disk Dv ∈ V is equal to r(v) for every v ∈ V , then G is said to respect r. A seed assignment for G is a function σ : V → R2 that assigns a point in the plane to each vertex ofG.Ifσ(v)∈Dv foreveryv∈V,thenGissaidtorespectσ.LetΓbeacombinatorial embedding for G. If G is a disk touching graph and if the cyclic order of disks touched by Dv corresponds to the cyclic order of edges incident to the vertex v for any v ∈ V , then G is said to respect Γ.
-% %By Koebe's Theorem, every disk arrangement embedded in the plane has a contact graph.
-% A \textit{contact graph} represents vertices as interior disjoint disks and by representing edges as as points of intersections (contact), \textit{kissing points} between two disks.  
-% The graph corresponding to a given disk arrangement, $\DD$, is said to be the \textit{contact graph}. 
-% An ordered disk arrangement preseves the  cyclic order of neighborings disks. 
-% %A \it{disk arrangement} is a set, $\DD$, of pairwise interior-disjoint disks in the plane, 
-% %$\DD=\left\lbrace C_i \right\rbrace_{i = 1}^n $.
-
-
-%What is not obvious is when given a graph with positive weights, does there exist a planar drawing?
-%Some variants of these problems were known to be NP-Hard.
 For planar graphs with positive weighted vertices, we pose two realizability problems:
 \begin{prob}[Unordered Realizibility Problem for a Contact Graph]\label{problem:UnorderedContactGraph}
 Given a planar graph with positive weighted vertices, is it a contact graph of some disk arrangement where the radii equal the vertex weights?
@@ -868,10 +609,8 @@ Every path with arbitrary positive radii is realizable as a contact graph, place
 We show that not all binary trees are realizable, even with unit disks.% of unit radii.
 Consider the balanced binary trees of depth $i$ $\left\lbrace T_i \right\rbrace_{i=1}^\infty$ with unit weights on the vertices (see Figure \ref{fig:circlePacking-1}).
 These trees are not realizable for sufficiently large $i$.
-\begin{figure}[!htbp]\label{fig:circlePacking-1}
+\begin{figure}[!htbp]
 \begin{center}
-    %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-    %(or a blank line to force the subfigure onto a new line)
   \begin{subfigure}[b]{0.21\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/BinaryTree1.pdf}
 	  \caption{Binary tree $T_2$.}
@@ -892,29 +631,22 @@ These trees are not realizable for sufficiently large $i$.
 	  \caption{Binary tree $T_5$.}
 	  \label{fig:circlePacking1-4}
   \end{subfigure}
-  \caption{ We show the linkages $T_2$ through $T_5$ with distance 2 between adjacent vertices.  }
+  \caption{ We show the linkages $T_2$ through $T_5$ with distance 2 between adjacent vertices.  }\label{fig:circlePacking-1}
 \end{center} 
 \end{figure}
-%To show that as $i \rightarrow \infty$, the corresponding disk arrangement will not have a drawing.  
-%We construct the disk arrangement as follows: (1) place a disk of unit radius centered at origin; (2) for each disk continue to add two non-intersecting kissing disks of unit radius to it.  
-%To illustrate, see Figure \ref{fig:circlePacking-1}:
 Let $i$ be a positive integer and suppose that $T_i$ is a contact graph of unit disks.
 The balanced binary tree $T_i$ has $2^i -1$ vertices.
 The total area of the disks is $\left( 2^i -1 \right)^2 \cdot \pi$.
 We now derive an upper bound for this area.
-%Suppose the root of the disk arrangement is centered at origin.
 Suppose the disk corresponding to the root of the tree is centered at the origin.
 The centers of the disks at level $j$ are at a distance at most $2\cdot (j-1)$ away from the origin.
 The centers of all disks are at distance at most $2 \cdot (i -1)$ away from the origin.
 All unit disks are contained in a disk of radius $2i-1$ centered at the origin.
-The total area of the disks is at most $(2i-1)^2$.
-%Let the total area of the disks arrangement be the sum of the areas of the disks. 
+The total area of the disks is at most $(2i-1)^2$.  
 A upper bound of the total area of the disk arrangement is the area of the bounding box of the disks.
 
 \begin{figure}[!htpb]\label{fig:circlePacking-2}
 \begin{center}
-    %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-    %(or a blank line to force the subfigure onto a new line)
   \begin{subfigure}[b]{0.24\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/degree2arrangement.pdf}
 	  \caption{A disk arrangement with two layers of disks}
@@ -938,21 +670,13 @@ A upper bound of the total area of the disk arrangement is the area of the bound
 \end{center} 
 \caption{For $i=2,3,4,5$ the tree $T_i$ is a contact graph of unit disks.}
 \end{figure}
-% The first round has one unit disk.  
-% The next round, two unit radii disk are in contact with the first, i.e. Figure \ref{fig:circlePacking1-1}.
-% The subsequent rounds are shown in Figures \ref{fig:circlePacking1-2}, \ref{fig:circlePacking1-3}, and \ref{fig:circlePacking1-4}.  
-% For each round $i$ we are adding $2^{(i-1)}$ disks, each with an area of $\pi$.  
-% The area that the disk arrangement is bounded at round $i$ is a box of length $2\cdot (2\cdot (i-1)+1)$ totalling to an area of $(4\cdot i^2 - 4\cdot i + 1)$.  
-% Meanwhile the total area of the disk arrangement at $i$ is $\pi \cdot (2^i - 1)$.  The exponential growth rate of the disk packing will exceed its bounded area for sufficiently large $i$, i.e. pick $i \geq 6$.
 Figure \ref{fig:circlePacking-2} shows the first four non-trivial trees as a contact graph of unit disks.
 Every disk at level up to $i$ is contained in a disk of radius $2\cdot i - 1$ centered at the origin.
 The total area of the disk arrangement is $(2\cdot i -1)^2 \cdot \pi$. 
-When $i\geq 8$ we have a contradiciton.%the total area of the disk arrangement exceeds the total bounded area and thus we have a contradiction.
+When $i\geq 8$ we have a contradiciton.
 
-\begin{figure}[!htbp]\label{fig:circlePacking-3}
+\begin{figure}[!htbp]
 \begin{center}
-    %add desired spacing between images, e. g. ~, \quad, \qquad etc.
-    %(or a blank line to force the subfigure onto a new line)
   \begin{subfigure}[b]{.48\textwidth}
   \begin{center}
 	  \includegraphics[scale=.9]{graphics/OrderedDiskArrangementExample1.pdf}
@@ -967,7 +691,7 @@ When $i\geq 8$ we have a contradiciton.%the total area of the disk arrangement e
   \end{subfigure}
   \caption{Consider these two ordered disk arrangements where A and B are in the concentric rings of disks.  The large disks are in contact to A and B respectively.  
   If A and B are adjacent, then there is a restriction of how large the size of the disks can be that are attached to them as seen in on the left.  
-  Whereas if A and B are not adjacent in this disk arrangment as shown on the right, the size of the kissings disks could be arbitrarily large.}
+  Whereas if A and B are not adjacent in this disk arrangment as shown on the right, the size of the kissings disks could be arbitrarily large.}\label{fig:circlePacking-3}
 \end{center} 
 \end{figure}
 
@@ -975,12 +699,11 @@ There are instances where a planar graph with weights admits a realization but t
 Define $G$ as follows: start with a star centered at $C$ and with 6 leafs, $A_1$ through $A_6$; attach two leafs, $B_1$ and $B_2$, to $A_1$ and  $A_2$ respectively (see  Figure \ref{fig:circlePacking-3}).
 Let the weight of $C$ be $1+\epsilon$ for sufficiently small $\epsilon > 0$.
 The neighbors of $C$ have unit weight.
-The weights of the two leaves have weight $\frac{1}{\epsilon}$/
+The weights of the two leaves have weight $\frac{1}{\epsilon}$.  
 The right of Figure \ref{fig:circlePacking-3}) shows a realization where $A_1$ and $A_2$ are in opposite position of the counter-clockwise order around $C$.
 If $A_1$ and $A_2$ are required to be consecutive in the counter-clockwise order around $C$, there is no realization.
-%as epsilon goes to 0 the half planes approximates the disks and so the disks will intersect as well.  label everything, draw halff planes, epsilon and delta, 1/epsilon.
 
-Suppose there is a realization where $A_1, \ldots, A_6$ are in the counter-clockwise order around $C$ (see Figure \ref{{fig:DiskArrangement-4}}).
+Suppose there is a realization where $A_1, \ldots, A_6$ are in the counter-clockwise order around $C$ (see Figure \ref{fig:DiskArrangement-4}).
 If $\epsilon>0$ is sufficiently small, then the centers of of $A_1, \ldots, A_6$ are arbitrarily close to the vertices of a regular hexagon.
 Consider the common tangent lines between $A_1$ and $B_1$ and $A_2$ and $B_2$.
 The possible position of tangent line between $A_1$ and $B_1$ ranges from the common tangent line of $A_1$ and $A_6$ to the common tangent line of $A_1$ and $A_2$.
@@ -989,98 +712,17 @@ In any position, the common tangent lines between $A_1$ and $B_1$ and $A_2$ and 
 If $\frac{1}{\epsilon}$ is sufficiently large, then the disks $D_1$ and $D_2$ also intersect.
 This contradicts that there is a realization.
 
-\begin{minipage}{\linewidth}\begin{center}
+\begin{minipage}{\linewidth}
+\begin{center}
 \includegraphics[width=.4\columnwidth]{graphics/orderedPlaneIntersection.pdf}
 \end{center}
 \captionof{figure}{This example represents a disk arrangement and its contact graph.}
-%Figure shows a 5-cycle with a unique realization of a disk arrangement.
 \label{fig:DiskArrangement-4}
 \end{minipage}
 
 Figure \ref{fig:circlePacking-3} shows how an ordered contact graph may not be realizable.  
 On the left, it shows a limitation on the weights of the disks that are in contact with disks A and B. 
 On the right, the figure shows the order where A and B are on opposing ends of the ring of disks and can allow of arbitrary size of wieghted disks in contact with A and B.
-% Figure \ref{fig:orderedFaces.pdf} shows three polygons with a common hinge.
-% In the counter-clockwise order $(A,B,C)$, the polygonal linkage admits a realization whereas in the counter-clockwise order $(A,C,B)$, it does not admit a realization.
-% \subsection{Disk Packing Confinement Problem}
-
-% Given inputs of radii 
-% By adding constraints to the embeddings of disk arrangements, we can devise realizability problem 
-% by a volume argument.
-% \begin{enumerate}%1,2,3,4....
-% \item Round 1: Start with a disk of unit radius.
-% \item Round 2: Add two kissing disks, each of diameter 2, that do not intersect with any other 
-% disk (they 
-% may kiss other
-% disk).
-% \item Round 3 and Higher: For each new kissing disk added, add two more non-intersecting kissing 
-% disks of diameter 2 to it.
-% \end{enumerate} 
-
-
-% Figure (\ref{fig:circlePacking-1}) illustrates the iterative problem.  The problem with this is that 
-% the area in
-% which is necessary to contain this disk growing disk arrangement will exceed the area needed to 
-% contain it.
-
-
-
-
-
-%The corresponding intersection graph of a disk packing is a graph whose vertices are the disks and edges correspond to two disks that contact each other.
-% \section{Disk Arrangements}
-% It turns out the disk arrangements are an equivalent way to to represent plane graphs.  By 
-% representing vertices as interioir disjoint disks and by representing edges as as points of 
-% intersections (contact), \textit{kissing 
-% points} between two disks.  The graph corresponding to a given disk arrangement, $\DD$, is said to 
-% be the \textit{contact graph}. A \it{disk arrangement} is a set, $\DD$, of pairwise 
-% interior-disjoint disks in the plane, 
-% $\DD=\left\lbrace C_i \right\rbrace_{i = 1}^n $.
-% $\left\lbrace C_i \right\rbrace_{i = 1}^n $ such that for any circle $C \in \left\lbrace C_i 
-% \right\rbrace_{i = 1}^n$, $C$
-
-
-% %(fig 1) a disk arrangement
-% %(fig 2) an equivalent contact graph to (fig 1)
-% A classical result by Thurston and Koebe is that every disk arrangement embedded into the plane had 
-% a corresponding plane graph.
-% \begin{thm}[\ref{stephenson2005introduction}Disk Packing Theorem]\label{thm2-1}
-% For every graph $G$, there is a disk arrangement in the
-% plane whose contact graph is isomorphic to $G$.
-% \end{thm}
-
-% %add a paragraph with atoms of molecules are modeled with disks and balls of fixed radii. The 
-% %if two disks are in contact, then the  distance between their centers  = the sum of the radii
-% %conclude: disk arrangements are better models for representing atoms and molecules fixed distance 
-% % betweeen atoms
-% \begin{prop}
-%  For every linkage $L$, there is a disk arrangement in the
-% plane whose contact graph is isomorphic to $L$.
-% \end{prop}
-
-
-
-% \begin{enumerate}%1,2,3,4....
-% %\item Introduce the circle packing theorem.
-% \item Show the relation between polygonal linkages and disk arrangengements.
-% \end{enumerate} 
-% % \subsubsection{Ordered Disk Arrangement}
-% Suppose we're given a tree. By the disk packing theorem we can ascertain a sense of order for the 
-% isomorphic disk packing.  An \textit{ordered disk arrangement} is a rooted tree in which the 
-% counter-clockwise ordering of adjacent vertices.
-% % 
-
-
-% The embedding problems for trees and corresponding disk arrangements are as follows:
-% \begin{prob}[Unordered Realizibility Problem for the Tree]\label{problem:UnorderedContactGraph}
-% For a tree with positive weights for the verticies, it asks whether it is a contact graph of some 
-% disk arrangement where the radii are equal to the vertex weights.
-% \end{prob}
-
-% \begin{prob}[Ordered Realizibility Problem for the Tree]\label{problem:OrderedContactGraph}
-% For a tree with positive weights for the vertices, it asks whether its corresponding graph is the 
-% ordered contact graph of some disk arrangement where the radii equal the vertex weights.
-% \end{prob}
 \section{Configuration Spaces}
 \begin{quote}
 Just as one can compose colors or forms, so one can compose motions.
@@ -1588,7 +1230,7 @@ The algorithm would allow for an adversary to attack RSA \cite{menezes1996handbo
 
 
 
-\section{Satisfiability}
+\section{Satisfiability}\label{sec:logic}
 Let $x_1, \dots, x_n$ be boolean variables.  A boolean formula is a combination of conjunction, 
 disjunctions, and negations of the boolean variables $x_1,  \dots, x_n$.   
 A \textit{clause} is a disjunction of distinct literals.  
@@ -1754,9 +1396,6 @@ vertices in the \emph{hinge graph} are the polygons in $\PP$, and edges represen
 two polygons). Our main result is that realizability remains NP-hard when restricted to simply 
 connected structures.
  
- % \subsection{Problem Statement} 
-%write up thm 1, 2 (unoriented versions of the problem)
-%write up thm 3, 4 (oriented versions of the problem)
 \begin{thm}\label{thm:hinge2}
 It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized.
 \end{thm}
@@ -1778,15 +1417,13 @@ is the contact graph (resp., contact graph) of a disk arrangements with specifie
 \end{thm}
 
 The unoriented versions, where the underlying graph (hinge graph or contact graph) is a tree can 
-easily be handled with the logic engine method (Section~\ref{sec:logic}). We prove 
-Theorem~\ref{thm:hinge} for \emph{oriented} realizations with a reduction from {\sc Planar-3SAT} 
-(Section~\ref{sec:hinge}), and then reduce the realizability of ordered contact trees to the 
+easily be handled with the logic engine method (Section \ref{sec:logic}). We prove 
+Theorem \ref{thm:hinge} for \emph{oriented} realizations with a reduction from {\sc Planar-3SAT} 
+(Section \ref{sec:hinge}), and then reduce the realizability of ordered contact trees to the 
 oriented realization of polygonal linkages by simulating polygons with arrangements of disks 
-(Section~\ref{sec:disk}).
+(Section \ref{sec:disk}).
 
-
-% \subsection{Decidability of Problem} test
-% \subsection{Hexagonal Locked Configuration}\section{Related Work and Results}
+\section{Related Work and Results}
 Boris Klemz's Master's thesis ``Weighted Disk Contact Graph'' shows the Unit Disk Touching Graph Recognition problem is NP-Hard.  
 % In Chapter 2 we investigate recognition problems with uniform (and ρ-bounded) radii. In Section 2.1 we consider the Unit Disk Touching Graph Recognition (UDT) problem and strengthen the result of Breu and Kirkpatrick [BK98] by showing that the UDT problem is NP-hard even for outerplanar graphs. On the positive side, we provide a linear-time algorithm for deciding the UDT problem in caterpillars. In this section we also briefly consider ρ-bounded Disk Touching Graph Recognition and show that for spiders this problem can be solved in linear time in the Real RAM model. In Section 2.2 we extend our result from the previous section by showing that the Unit Disk Touching Graph Recognition with fixed Embedding (UDTE) problem is also NP-hard, even for outerplanar graphs.
 % In Chapter 3 we explore the more general scenario with fixed but not necessarily uniform radii. In Section 3.1 we consider the Disk Touching Graph Recognition with fixed Radii (DTR) problem and strengthen the result by Breu and Kirkpatrick [BK98] by showing that the DTR problem is NP-hard even for stars. We also show that for any cycle and a corresponding radius assignment there exists a realizing disk touching graph. In contrast, in Section 3.2 we devise a linear-time algorithm for deciding the Disk Touching Graph Recognition with fixed Radii and Embedding (DTRE) problem for stars in the Real RAM model.
@@ -1796,13 +1433,13 @@ It also improves the Breu and Kirkpatrick result on Disk Touching Graph Recognit
 The \textit{logic engine} is a planar, mechanical device that simulates an instance NAE3SAT problem. It was introduced in Bhatt et. al. \cite{BC87}.
 \subsection{Construction of the Logic Engine}
 
-\begin{figure}[!h]
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure1Scaled.pdf}
-\caption{A logic engine frame with veritical armatures and a horizontal shaft.}
+\includegraphics[width=.45\columnwidth]{graphics/LogicEngineFrameFigure1Scaled.pdf}
+\captionof{figure}{A logic engine frame with veritical armatures and a horizontal shaft.}
 \label{fig:LogicEngineFrameFigure1.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
 For a given a boolean formula, $\Phi$, in 3-CNF with $n$ variables and $m$ clauses, we construct a logic engine. The logic engine has a \textit{rigid frame} which houses the mechanical components of the the logic engine.  The rigid frame is the boundary of which the logic engine can operate within.  The \textit{shaft} is a horizontal line segment that is placed at mid-height of the rigid frame. 
 The \textit{armatures} are veritical line segments whose midpoints are on the shaft.  
@@ -1810,13 +1447,12 @@ Each armature has two orientations with respect to the shaft.
 There will be some flags on each armature that will be described later.
 The armatures each have length $2n$ units, the shaft has length $m$ units, and the frame has a height of $2n$ and width of $m$ units.
 
-
-\begin{figure}[!h]
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure1halfScaled.pdf}
-\caption{A logic engine that corresponds to a boolean formula in NAE3SAT form, $\Phi$.  The picture shows the outer rigid frame, the shaft, the armatures that correspond to the variables in $\Phi$, with oriented flags.}\label{fig:LogicEngineFrameFigure1halfScaled.pdf}
+\includegraphics[width=.33\columnwidth]{graphics/LogicEngineFrameFigure1halfScaled.pdf}
+\captionof{figure}{A logic engine that corresponds to a boolean formula in NAE3SAT form, $\Phi$.  The picture shows the outer rigid frame, the shaft, the armatures that correspond to the variables in $\Phi$, with oriented flags.}\label{fig:LogicEngineFrameFigure1halfScaled.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
   Each armature corresponds to a variable in $\Phi$. There are two literals for each variable, i.e. the literal $x_j$ and the negated literal 
  $\bar{x}_j$.    
@@ -1826,13 +1462,15 @@ The armatures each have length $2n$ units, the shaft has length $m$ units, and t
    If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
 
 Each flag has two orientations with respect to armature it is attached to.  Each flag has four potential positions, the flag can reflect left or right about the armature and the armature can reflect up or down about the shaft.
-\begin{figure}[!h]
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure2Scaled.pdf}
-\caption{A logic engine constructed from the boolean formula $\Phi = C_1 \cap C_2 \cap C_3$.}
+\includegraphics[width=.66\columnwidth]{graphics/LogicEngineFrameFigure2Scaled.pdf}
+\captionof{figure}{A logic engine constructed from the boolean formula $\Phi = C_1 \cap C_2 \cap C_3$.}
 \label{fig:LogicEngineFrameFigure2Scaled.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
+
 The \textit{flags} are equilateral triangles
 attached to the armatures.  The placement of the flags is dependent on the instance of the NAE3SAT 
 boolean formula. Each flag as two orientations. 
@@ -1840,19 +1478,17 @@ boolean formula. Each flag as two orientations.
 For the NP hardness reduction in Theorem \ref{thm:LogicEngineV3-2} we need to make sure that all parameters in the logic engine can be specified polynomially in terms of the size of the boolean formula. Given $\Phi$, the corresponding logic engine is constructed as follows: all components will be specified with a 
 quantity and coordinates defined as polynomials in $m$ and $n$.
 
-\begin{center}
-	\begin{table}[H]\label{LogicEngineV3PolynomialTable}
-		\begin{tabular}{|c|c|c|}
-			\hline
-			Component & Quantity &  Set Definition\\ \hline
-			Rigid Frame&1&$\set{(x,y)\in\bbr^2}{ \text{The boundary of }\left[ \frac{1}{2} , n + \frac{1}{2}\right] \times \left[ -m, m \right]}$\\ \hline
-			Shaft&1&$\set{(x,y) \in \bbr^2}{x \in \left[\frac{1}{2}, n + \frac{1}{2}\right] \text{ and } y=0 }$\\ \hline
-			Armatures & n & For the $j^\text{th}$ armature we have $\set{(x,y)\in\bbr^2}{x = j \text{ and } y \in [-m,m] }$\\ \hline
-			Flags&$2mn-3m$& if $\ell_{j,k}$ is flagged then the attached flag is a regular triangle with side length 1.\\ \hline
-		\end{tabular}
-	\caption{The quantity and coordinates of the logic engine components.}
-	\end{table}
-\end{center}
+\begin{table}\label{LogicEngineV3PolynomialTable}
+	\begin{tabular}[c]{|c|c|c|}
+		\hline
+		Component & Quantity &  Set Definition\\ \hline
+		Rigid Frame&1&$\set{(x,y)\in\bbr^2}{ \text{The boundary of }\left[ \frac{1}{2} , n + \frac{1}{2}\right] \times \left[ -m, m \right]}$\\ \hline
+		Shaft&1&$\set{(x,y) \in \bbr^2}{x \in \left[\frac{1}{2}, n + \frac{1}{2}\right] \text{ and } y=0 }$\\ \hline
+		Armatures & n & For the $j^\text{th}$ armature we have $\set{(x,y)\in\bbr^2}{x = j \text{ and } y \in [-m,m] }$\\ \hline
+		Flags&$2mn-3m$& if $\ell_{j,k}$ is flagged then the attached flag is a regular triangle with side length 1.\\ \hline
+	\end{tabular}
+\caption{The quantity and coordinates of the logic engine components.}
+\end{table}
 
 \subsection{The mechanics of the logic engine}
 In any of the following cases, a \textit{collision} of flags occurs:
@@ -1862,32 +1498,28 @@ In any of the following cases, a \textit{collision} of flags occurs:
 \item a flag from the leftmost armature $A_1$ points inwards of $A_1$.
 \end{enumerate}
 
-\begin{figure}[!htbp]
+
+ \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[scale=.5]{graphics/logicEngineCollisions.pdf}
-\caption{(a) Illustrates a adjacent flag collision at the same height, (b) and (c) illustrates a 
+\includegraphics[width=.5\columnwidth]{graphics/logicEngineCollisions.pdf}
+\captionof{figure}{(a) Illustrates a adjacent flag collision at the same height, (b) and (c) illustrates a 
 rigid frame collision.}\label{fig:logicEngineCollisions.pdf}
 \end{center}
-\end{figure}
-The logic engine representation corresponding to $\Phi$ is to be configured such that no 
-horizontally adjacent flags collide and flags do not collide with the rigid frame. 
-\begin{figure}[!htbp]
+\end{minipage}
+
+The logic engine representation corresponding to $\Phi$ is to be configured such that no horizontally adjacent flags collide and flags do not collide with the rigid frame. 
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/logicEngineValidConfigurations.pdf}
-\caption{The following configuration of adjacent flags 
+\includegraphics[width=.9\columnwidth]{graphics/logicEngineValidConfigurations.pdf}
+\captionof{figure}{The following configuration of adjacent flags 
 and flags that are adjacent to the rigid frame.}\label{fig:logicEngineValidConfigurations.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
 \begin{lem}\label{lem:logicEngine1}A row has a collision-free configuration if and only if it has 
 at least one unglagged armature. \end{lem}
 \begin{proof}
-% Suppose that the flag on armature $A_1$ is flagged.  If the flag is oriented left, then there 
-% is a flag-frame collision.  If the flag is oriented to the right and if $A_2$ is flagged, then 
-% $A_2$ must also be oriented to the right; otherwise will result in a flag-flag collision.  Now 
-% suppose the $i^\text{th}$ armature's flag is oriented to the right.  $A_{i+1}$ is also oriented to 
-% the right; otherwise will result in a flag-flag collision. By induction all flags will orient to 8187173855 135 500
-% the right up to $n$.  Thus the $n^\text{th}$ flag will will collide with the rigid frame.
 
 Suppose all armatures are flagged in a row.  The flag on armature $A_1$ must point to the 
 right otherwise we result in a rigid frame collision.  $A_2$ must point to the right otherwise 
@@ -1908,12 +1540,13 @@ collision-free configuration.
 \end{proof}
 
 A logic engine is said to be \textit{collision-free configurable} when every row has a collision-free configuration.
-\begin{figure}[!ht]
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure5Scaled.pdf}
-\caption{The logic engine from figure \ref{fig:LogicEngineFrameFigure2.pdf} whose armatures are rotated}\label{fig:LogicEngineFrameFigure5.pdf}
+\includegraphics[width=.33\columnwidth]{graphics/LogicEngineFrameFigure5.pdf}
+\captionof{figure}{The logic engine from Figure \ref{fig:LogicEngineFrameFigure2Scaled.pdf} whose armatures are rotated}\label{fig:LogicEngineFrameFigure5.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
 \subsubsection{The Relationship of the Logic Engine and NAE3SAT}
 
@@ -1963,20 +1596,21 @@ The shaft is broken into $n$ polygons.
 Each armature is broken into two parts, each part containing $m$ subcomponents.
 In figure \ref{fig:HingedLogicEngineSmall.pdf}, each flag becomes a rectangle.
 
-\begin{figure}[!htbp]
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/HingedLogicEngineSmall.pdf}
-\caption{A logic engine realized as a polygonal linkage.}\label{fig:HingedLogicEngineSmall.pdf}
+\includegraphics[width=.45\columnwidth]{graphics/HingedLogicEngineSmall.pdf}
+\captionof{figure}{A logic engine realized as a polygonal linkage.}\label{fig:HingedLogicEngineSmall.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
+
 \subsection{Construction of the Polygonal Linkage Logic Engine}
 Suppose we are given an boolean formula with $m$ clauses and $n$ variables in 3-CNF form, $\Phi$, we construct the polygonal linkage similarly to the logic engine.
 The corresponding polygonal linkage $P_\ell = (\PP,\HH)$ is detailed in Table \ref{tbl:hingedPolygonsv3-1a}.
 
-\begin{minipage}{\linewidth}
-\begin{table}[H]\label{tbl:hingedPolygonsv3-1a}
+% \begin{minipage}{\linewidth}
+\begin{table}
  	\begin{center}
-		\begin{tabular}{|l|c|c|c|}
+		\begin{tabular}[c]{|l|c|c|c|}
 		 \hline
 		 Component & Height & Width & Quantity\\ \hline
 		 Large Frame Subcomponent & $2\cdot m$ & $1$ & $2$\\ \hline
@@ -1984,11 +1618,10 @@ The corresponding polygonal linkage $P_\ell = (\PP,\HH)$ is detailed in Table \r
 		 Armature Subcomponent & $2$ & $1$ & $2\cdot m$\\ \hline
 		 Flag & $1$ & $1.5$ & $2mn-3m$\\\hline
 		\end{tabular}
-		\captionof{table}{The components of $\PP$ specified polynomially in terms of the size of the boolean formula $\Phi$.}
+		\captionof{table}{The components of $\PP$ specified polynomially in terms of the size of the boolean formula $\Phi$.}\label{tbl:hingedPolygonsv3-1a}
 	\end{center}
 \end{table}
-
-\end{minipage}
+% \end{minipage}
 
 The large frame subcomponents are hinged on the left most and right most shaft subcomponents. 
 Each adjacent shaft subcomponents are hinged and each shaft subcomponent has two orientations, a reflecion up and a reflection down about the shaft hinge points.  
@@ -1997,7 +1630,7 @@ By the two orientations of the shaft subcomponent, each armature subcomponent ha
 Each armature comprises of $m$ armature subcomponents that are hinged together; in total there are $2n$ armatures.  
 Each armature subcomponent has two orientations, a reflection left and a reflection right about the armature hinge points.  
 Label the armature subcomponents on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  
-Attach a rectangular flag specified in Table \ref{TBL:HingedPolygonsV3-1}, to some of these segments. 
+Attach a rectangular flag specified in Table \ref{tbl:hingedPolygonsv3-1a}, to some of these segments. 
 Each segment is either flagged one or zero flags.
 \begin{enumerate}
 	 \item If the literal $x_j$ is found in clause $C_k$, then $\ell_{j,k}$ is unflagged.
@@ -2006,12 +1639,12 @@ Each segment is either flagged one or zero flags.
 
 Each flag has two orientations with respect to armature it is attached to.  Each flag has four potential positions, the flag can reflect left or right about the armature and the armature can reflect up or down about the shaft.
 
-\begin{figure}[!htbp]
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/HingedLogicEngineSmallEnumerated.pdf}
-\caption{A polygonal linkage logic engine that corresponds to the boolean formula $\Phi = C_1 \cap C_2 \cap C_3$.}\label{fig:HingedLogicEngineSmallEnumerated.pdf}
+\includegraphics[width=.33\columnwidth]{graphics/HingedLogicEngineSmallEnumerated.pdf}
+\captionof{figure}{A polygonal linkage logic engine that corresponds to the boolean formula $\Phi = C_1 \cap C_2 \cap C_3$.}\label{fig:HingedLogicEngineSmallEnumerated.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
 \begin{thm}\label{thm:chp2-HingedPolygons-1}
  Given an instance of a $NAE3SAT$,  it is a ``yes'' instance if and only if the 
@@ -2040,21 +1673,7 @@ $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.  All fl
 corresponding to negated literals reside below the shaft and flags corresponding to non-negated 
 literals reside above the shaft.  All together we have that every clause has a true literal and a 
 false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
-\end{proof}\chapter{Realizability of Polygonal Linkages with Fixed Orientation\label{chapter:polygonalLinkage}}
-% On 10/1/2016 3:39 PM, clinton bowen wrote:
-% > 1)  Do I have some confusion in my text on P3SAT and what the values of n and m are that I want to resolve.  In chapter 1 I have: 
-% >
-% > "We define the \textit{associated graph} $A(\Phi)$ as follows: the vertices correspond to the variables and clauses in $\Phi$.  We place an edge in the graph if variable $x_i$ appears in clause $C_j$."  
-% >
-% > In chapter 1, if A(\Phi) = (V,E), |V| = # of variables + # of clauses and |E| = the quantity of "if variable $x_i$ appears in clause $C_j$" for all i and j.
-% >
-% > In chapter 3's introduction i show s(n,m) where n is the number of vertices and m is the number of edges of a graph; throughout the remainder of the chapter, I state something to the effect of 
-% > "Given an instance of P3SAT boolean formula Φ of n variables and m clauses with associated graph A(Φ)".  
-% >
-% > Effectively I would have s(n+m, f(Φ)) where f() is the function  "the quantity of "if variable $x_i$ appears in clause $C_j$" for all i and j", if I use the definition in chapter 1 literally.  
-% >
-% > Is there a nice way of resolving this confusion of n and m?
-% You are perfectly right. I would keep the meaning of n and m throughout the chapter. After stating planar 3SAT at the beginning of the chapter, add a remark that a planar bipartite graph on K>2 vertices has at most 2K-4 edges by Euler's theorem. (This is a classical result, that appears in all undergraduate textbooks on discrete math, as an easy exercise). When you define s(n,m), then define it as the size of the grid that can accommodate A(Phi). Them s(n,m) is still polynomial in n and m. 
+\end{proof}\chapter{Realizability of Polygonal Linkages with Fixed Orientation\label{chapter:polygonalLinkage}} 
 
 We begin the chapter with describing several gadgets that translate the associated graph $A(\Phi)$ of a P3SAT boolean formula into a hexagonal polygonal linkage.  
 These gadgets will be used together to form a special hexagonal linkage that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.  
@@ -2599,7 +2218,7 @@ where $J_h$ is defined in Equation \ref{eqn:Jh}.
 
 The width of a skinny rhombus in canonical position is $\frac{1}{100N}$.
 The obstacle hexagon has height of $ 2 N(n,m) \sqrt{3}$, and the flag is of height $\sqrt{3}$. 
-The height $H(n,m)$ (and $\ell$ in Figure \ref{fig:corridorNonCanonical.pdf}(a)) can be expressed as a sum of the heights of the corridors and obstacle polygons:
+The height $H(n,m)$ (and $\ell$ in Figure \ref{fig:dualSmallHexagonalGrid.pdf}(a)) can be expressed as a sum of the heights of the corridors and obstacle polygons:
 $$(u+1) 2 N \sqrt{3} + u \lr{\sqrt{3}+ \frac{1}{100N}}$$
 which reduces to:
 \begin{eqnarray*}
@@ -2627,7 +2246,7 @@ Figure \ref{fig:corridorNonCanonical2.pdf} $O_{i+1}$ is in a non-canonical posit
 \begin{itemize}[leftmargin=.75in, rightmargin=.75in]
 	\item[$\xi$:] the half length of the corridor,
 	\item[$\omega_i$:] the angle between the rhombus and central flag, 
-	\item[$\gamma_i$:] The angle formed between the horizontal plane that is $\sqrt{3}$ above $O_i$ and $O_{i+1}$ when rotated to the maximal possible extent before causing possible collision with other flags. 
+	\item[$\gamma_i$:] the angle formed between the horizontal plane that is $\sqrt{3}$ above $O_i$ and $O_{i+1}$ when rotated to the maximal possible extent before causing possible collision with other flags. 
 	\item[$\zeta_i$:]  is the length from the hinge point of $O_{i+1}$ and the rhombus to the point that vertical to corner of $O_i$ that is to the right over the central flag on the horizontal plane that is $\sqrt{3}$ above $O_i$.
 	\item[$\phi_i$:] is the angle formed between the central flag and $O_i$.
 \end{itemize}
@@ -3002,8 +2621,8 @@ Similiaryly, the Hausdorff distance of $U$ and $S_2(\delta)$ is at most $H\lr{S_
 \begin{lem}\label{lem:ch4IntroLemma}
 For every $\epsilon > 0$ and $x>0$, there exists an ordered weighted tree $T$ and regular hexagon $h$ of side length $x$ such that:
 \begin{enumerate}
-\item Every realization $\sigma$ of $T$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon in the sense that:
-$$H\lr{\sigma_i,h}\leq\epsilon$$
+\item Every realization $\sigma_i$ of $T$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon in the sense that:
+$$H\lr{h,\sigma}\leq\epsilon$$
 \item The number of nodes in $T$ and the weights are polynomial in $\epsilon$ and $x$, the weights $\frac{\epsilon}{10}$ and $\frac{\epsilon}{10} + \zeta$ are polynomial.
 \end{enumerate}
 \end{lem} 
@@ -3097,14 +2716,13 @@ This shows that each of the $i-k$ vertices on $p_{1,l}^-$, $p_{1,l}^+$, and leav
 By rotating all of the paths along $p_1$ by $\frac{2\pi}{3}$ and $\frac{4\pi}{3}$, we obtain the paths $p_3$ and $p_5$ respectively, completing the construction.
 
 In Figure \ref{fig:hexagonPetiolesLeafs9Layers.pdf}, we have a set of unit radii disks arranged in a manner that outlines the perfectly weighted snowflake description above.
-\textbf{Modification of $\sigma_1$.}
+
+\paragraph{Modification of $\sigma_1$.}
 We show that for any realization of the ordered tree $T$
  the placement of vertices is close to canonical position.  
 In order to show this, we show the components of a perturbed snowflake in arbitrary position  are close to canonical position.  
 The argument comprises of three parts: (1) Showing that the pertubation of the central disk and the six neighboring disks is small, (2) show that the displacement along the stems for all $S_i$ is small, and (3) show that the displacement along the petioles is small.  
-
 Given a instance of a perturbed snowflake with $v_0$ having weight $\epsilon + \zeta$ where $\epsilon > 0$, vertices neighboring $v_0$ each have a range of placement on the plane when realizaed as a disk arrangement. 
-Figure \ref{fig:modifiedContactGraph.pdf} shows a realization of $S_1$ and illustrates one such example of possible gaps, $\zeta$, that could be created between adjacent disks of $S_1$ in a perfect snowflake.
 
 \paragraph{Displacement on $\sigma_1$ is small.}
 Note that (1) the adjacent disks in a perfect snowflake cannot be adjacent in a given perturbed snowflake of $S_1$ and (2) $S_1 \subseteq S_i$ for any $i \in \bbN$ because every contact is encoded in the tree.  
@@ -3258,12 +2876,9 @@ There exists a unique path consisting of $j$ edges from $v_0$ to $v$.
 We can compute a bound of coordinate displacement $\psi_i$.  
 We want to establish a bound of coordinate displacement for every vertex in $T$.  
 We extablish a bound for the path from $v_0$ to $v$ by induction on $j$, the number of edges on the path from $v_0$ to $v$.  
-The base case is $v_0$ which the displacement is zero suppose $\psi_j$ is true.
-% A perturbed snowflake is a realization of some tree $T$.  
-% For the $\jth$ vertex along some path from $v_0$ to $v_j$ (see Figure \ref{fig:psiSegmentChange.pdf} for reference), we can compute the bound of coordinate displacement $\psi_i$ of the disk corresponding to $v_j$ using our inductive argument on the angular displacement above.  
-% Without loss of generality, to translate the $\jth$ coordinate displacement, we compute the radius of the ball of radius $\psi_i$ in which the $\jth$ center may lie. 
+The base case is $v_0$ which the displacement is zero suppose $\psi_j$ is true.  
 $$\psi_j = (2j-2) \lr{\frac{\epsilon}{10} + \zeta} \sin \chi$$
-Let $\zeta \leq \frac{\epsilon^2-\epsilon}{2}$.  
+Let $\zeta \leq \epsilon$.  
 Using the Maclaurin series of $\sin \chi$:
 $$
 \begin{array}{rcl}
@@ -3275,7 +2890,7 @@ $$
 $$
 
 $\phi_i$ bound is true for almost all vertices but the outermost leaves of the petioles with additional freedom of movement (see Figure \ref{fig:hexagonPetiolesLeafs9LayersRotatedOutward.pdf} for reference).  
-By choosing $\zeta = \frac{5\epsilon  \sqrt{3}}{(6i-29)}$, we have that $\zeta$ is polynomial in $x$ and $\epsilon$ since $i$ is polynomial in $x$ and $\epsilon$.
+By choosing $\zeta = \frac{5\epsilon  \sqrt{3}}{2(6i-29)}$, we have that $\zeta$ is polynomial in $x$ and $\epsilon$ since $i$ is polynomial in $x$ and $\epsilon$.
 \paragraph{Displacement on the petioles is small.}
 Note that the petioles have the same geometric structure as the stems; the exception is the number of leaves on each side of the petioles. 
 Since we've shown that the geometric shape in arbirary position is already close to canonical position for any $\epsilon>0$, the same argument applies here for the petioles.
@@ -3292,17 +2907,27 @@ We should note that the last leaves of the petioles have a freedom of motion (se
 \end{center}
 \end{minipage}
 
+Recall lemma \ref{lem:ch4IntroLemma} states:\newline
+For every $\epsilon > 0$ and $x>0$, there exists an ordered weighted tree $T$ and regular hexagon $h$ of side length $x$ such that:
+\begin{enumerate}
+\item Every realization $\sigma_i$ of $T$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon in the sense that:
+$$H\lr{h,\sigma_i}\leq\epsilon$$
+\item The number of nodes in $T$ and the weights are polynomial in $\epsilon$ and $x$, the weights $\frac{\epsilon}{10}$ and $\frac{\epsilon}{10} + \zeta$ are polynomial.
+\end{enumerate}
 We now begin the proof of Lemma \ref{lem:ch4IntroLemma}.
 
 \begin{proof}[Proof of Lemma \ref{lem:ch4IntroLemma}]
+
+
+
 Given $\epsilon > 0$ and $x>0$, we construct $T$ in the following manner: define $i$ and the perturbed weight of the central disk for $T$ as:
 $$
 \begin{array}{rcl}
-i &=& \ceil{\frac{4x}{\epsilon}}\\
+i &=& \ceil{\frac{10x}{\epsilon}}\\
 r &=& \frac{\epsilon}{10}.
 \end{array}
 $$
-For any $\sigma$, overlay the hexagon $h$ as the convex hull of the centers of the disks in the canonical arrangement (see Figure \ref{fig:hexagonOutlineLayerSmall.pdf} for reference).  
+For any $\sigma_i$, overlay the hexagon $h$ as the convex hull of the centers of the disks in the canonical arrangement $S_i$ (see Figure \ref{fig:hexagonOutlineLayerSmall.pdf} for reference).  
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -3311,26 +2936,39 @@ For any $\sigma$, overlay the hexagon $h$ as the convex hull of the centers of t
 \end{center}
 \end{minipage}
 
-
-With the exception of the last leaves of the petioles, the center of the $\jth$ disk can be found in a ball of $\psi_i$.  
-The bound of the Hausdorff distance is the distance of a vertex of the regular hexagon and a boundary point of a disk corresponding to some last leaf of a petiole and $\psi_i$:
+We use the triangle inequality to show that every realization $\sigma_i$ of $T$ as an ordered disk contact graph where the radii of the disks equal the vertex approximates the hexagon $h$ such that $H\lr{\sigma_i,h}\leq\epsilon$:
 $$\begin{array}{rcl}
-3 \frac{2}{xi} + \frac{6 \zeta}{5 \sqrt{3}}&=& \frac{3 \epsilon}{2}+ \frac{6 \frac{10\epsilon}{3i}}{5 \sqrt{3}}\\
-&&\frac{3 \epsilon}{2}+\frac{4 \epsilon^2 }{x \sqrt{3}}
+H(h, \sigma_i) &\leq& H(h, S_i) + H(S_i, \sigma_i)\\
+&=&\text{max} \left\lbrace d\lr{h,S_i}, d\lr{S_i,h} \right\rbrace + \text{max} \left\lbrace d\lr{\sigma_i,S_i}, d\lr{S_i,\sigma_i} \right\rbrace
 \end{array}
 $$
 
-By triangle inequality, the Hausdorff distance $H(h, \sigma_i) \leq H(h, S_i) + H(S_i, \sigma)$.  For $H(h,S_i)$, we can compute $d(h,S_i)=r\sin \frac{\pi}{6} - r$ and $d(S_i,h)= \frac{\epsilon}{10	}$.  
-For $H(S_i,\sigma_i)$ we can compute $d(S_i,\sigma_i)=\psi_i$ and $d(\sigma_i, S_i)=\psi_i + 3r$. 
-Thus the bound for the Hausdorff distance of the regular hexagon and any realization as an ordered disk contact graph where the radii of the disks equal the vertex weights is $$\frac{3 \epsilon}{2}+\frac{4 \epsilon^2 }{x \sqrt{3}}.$$
+\begin{minipage}{\linewidth}
+\begin{center}
+\includegraphics[width=.33\columnwidth]{graphics/dhsi.pdf}
+\captionof{figure}{An illustration of the center point in the hexagon $h$ that lies between three adjacent disks of $S_i$.  The distance $d\lr{h,S_i}$ is the length of the line segment from the center point to nearest point of either disk's boundary.}\label{fig:dhsi.pdf}
+\end{center}
+\end{minipage}
+
+The distance $d\lr{h,S_i} = \frac{\lr{2-\sqrt{3}}r}{\sqrt{3}}$ is from the center point in the hexagon $h$ that lies between three adjacent disks of $S_i$ to the nearest point of either disk's boundary (see Figure \ref{fig:dhsi.pdf}).  
+The distance $d\lr{S_i,h} = r$ is the distance from the furthest boundary point of any disk in $S_i$ that lies on the exterior of the hexagon $h$ (see the left illustration in Figure \ref{fig:hexagonPetiolesLeafs9LayersRotatedOutward.pdf}).  
+The distance $d\lr{S_i,\sigma_i} \leq \psi_i + 2r$  is the distance from the furthest point on the boundary of an outermost leaf in $\sigma_i$ to the nearest boundary point of $S_i$, a distance of at most $2r$, and the additional coordinate displacement $\psi_i$.  
+The distance $d\lr{\sigma_i,S_i}$ is simply the coordinate displacement $\psi_i$.  
+We can continue the inequality:
+$$\begin{array}{rcl}
+H(h,\sigma_i) &\leq&H(h, S_i) + H(S_i, \sigma_i)\\
+&=&\text{max} \left\lbrace d\lr{h,S_i}, d\lr{S_i,h} \right\rbrace + \text{max} \left\lbrace d\lr{\sigma_i,S_i}, d\lr{S_i,\sigma_i} \right\rbrace\\
+&\leq& \text{max} \left\lbrace \frac{\lr{2-\sqrt{3}}r}{\sqrt{3}}, r \right\rbrace + \text{max} \left\lbrace \psi_i, \psi_i + 2r\right\rbrace\\
+&\leq& 3r + \psi_i \\
+&=& 3 \frac{\epsilon}{10} + \frac{\zeta(6i-29)}{5 \sqrt{3}}\\
+&\leq&\frac{3\epsilon}{10} + \frac{5\epsilon  \sqrt{3}}{2(6i-29)}\frac{\lr{6i-29}}{5 \sqrt{3}}\\
+&\leq&\frac{8\epsilon}{10}\\
+&\leq&\epsilon
+\end{array}
+$$
 
 We now show that the number of nodes in $T$ is polynomial in $\epsilon$ and $x$.  
-The number of nodes in $T$ along an stem is at most $i=\ceil{\frac{x}{\epsilon}} \leq \frac{x+1}{\epsilon}$.  There are 6 stems.
-Every third node, call this node $k$, along the stem has two petioles, each petiole with $i-k$ nodes; otherwise, the node on the stem has two leaves.  
-Each node of a petiole has two leaves with the except of the first and last node of the petiole; the first and last node each have one leaf.   
-$$\frac{4i}{3}  + \sum_{\set{j \in \bbN}{j \leq i \text{ ; } j \in 3\bbZ}} 4(i - j) - 2$$
-The total number of nodes on $T$ is at most:
-$$6 \lr{\frac{x+1}{\epsilon} + \frac{4i}{3}   + \sum_{\set{j \in \bbN}{j \leq i \text{ ; } j \in 3\bbZ}} 4(i - j) - 2}.$$
+With $i = \ceil{\frac{10x}{\epsilon}}$, the longest path of nodes on a tree from $v_0$ is to the last leaf of any petiole.  This path contains $i$ edges.  The number of nodes in the diameter and including the last leaf of a petiole of $S_i$ corresponding to $T$ is $2(i+1)$.  By squaring the node count of the diameter, we have a generous upper bound of nodes in $T$, $4(i+1)^2$.  This upper bound is a polynomial in $x$ and $\epsilon$ since $i$ is defined as a polynomial in $x$ and $\epsilon$.
 
 \end{proof}
 
@@ -3338,11 +2976,11 @@ $$6 \lr{\frac{x+1}{\epsilon} + \frac{4i}{3}   + \sum_{\set{j \in \bbN}{j \leq i 
 
 \begin{proof}
 Given an instance of a P3SAT boolean formula, we can use the snowflake reduction of the modified auxiliary construction.  
-For any center of a disk in any realization the displacement of the center is in an open ball $b_{\zeta}(c)$ where $c$ is the position of the center in canonical position.  
-Using Lemma \ref{lem:ch4IntroLemma}, we can approximate any hexagon with a tree $T$.  
+Using Lemma \ref{lem:ch4IntroLemma}, we can approximate any hexagon of a given side length with a tree $T$.  
 In the modified auxiliary construction in Chapter 3, we had four types of hexagons with different side lengths and the skinny rhombus.  
 We can scale the weights (radii) of the corresponding ordered weighted disk contact graph corresponding to $T$ to the rigid frame, obstacle, flag, and half sized hexagons in a modified auxiliary contruction accordingly.  
-The rhombus can be approximated by a chain of disks.
+The rhombus can be approximated by a chain of disks.  
+The functionality of the gadgets in the modified auxiliary construction remain the same.
 
 By approximating the polygons in the modified auxiliary construction with the snowflake, we show that Theorem \ref{thm:disk} is a corollary by applying Lemma \ref{lem:ch4IntroLemma}.  
 \end{proof}

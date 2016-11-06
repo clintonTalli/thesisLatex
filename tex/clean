@@ -1,4 +1,4 @@
-#/usr/bin/bash
+#!/bin/bash
 rm cat.tex
 cd ../pdf
 rm *.aux

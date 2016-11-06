@@ -2,15 +2,11 @@
 A \textit{graph} is an ordered pair $G = (V,E)$ comprising of a set of vertices $V$ and a set of edges $E$.  
 An edge is a two element subset of $V$.
 Note that with this definition of an edge it is not possible to have one element subset of $V$ as an edge (sometimes referred to as a self-adjacent edge or loop).
-The \textit{degree} of a vertex $v$ is the number of edges that $v$ is an element of.
-% and is denoted as ``V choose two'', ${V \choose 2}$.
-% Each edge $e \in E$ is an unordered pair of vertices $\curlybraces{u,v} \in E$.  
+The \textit{degree} of a vertex $v$ is the number of edges that $v$ is an element of.   
 Vertices are said to be \textit{adjacent} if they form an edge in $E$.  
-\textit{Neighbors} of a vertex $v$ are the vertices adjecent to $v$.
-%Vertices that are adjacent to themselves are \textit{self-adjacent}, i.e. $u = v$ for $\curlybraces{u,v} \in E$.  
+\textit{Neighbors} of a vertex $v$ are the vertices adjecent to $v$.  
 Edges are said to be adjacent if they share a vertex.  
 
-%When an edge is a member of $E$ multiple times,  then we say that the graph is a \textit{multigraph}.   
 A \textit{simple graph} has no self-adjacent vertices.
 In this thesis every graph is a simple graph.
 Given a graph $G = (V,E)$, a set of vertices $S \subset V$ is \textit{independent} if no two vertices in $S$ are joined by an edge. 
@@ -18,21 +14,20 @@ A \textit{vertex cover} of a graph $G = (V,E)$  is a set of vertices $S \subset 
 If $G' = (V',E')$ is a graph such that $V' \subset V$ and $E' \subset E$, then $G'$ is a \textit{subgraph} of $G$.
 
 To formally show when two graphs are the same, we use the concept of graph isomorphism.
-%For graph equivalency, we need to define an isomorphism for graphs.  
 Two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $ are \textit{isomorphic} if there exists a bijective function $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$ if and only if $(f(u),f(v)) \in E_2$. 
 See an example in Table \ref{table:ch1-graph-1} and Figure \ref{fig:configuration-3}.
-%Given two graphs $G_1 =(V_1,E_1)$ and $G_2 = (V_2,E_2) $, a \textit{graph isomorphism} is a bijective function $f: V_1 \mapsto V_2$ such that for any two vertices $u,v \in V_1$, we have $\{u, v\} \in E_1$, if and only if $(f(u),f(v)) \in E_2$. 
-\begin{table}[!htbp]\label{table:ch1-graph-1}
+
+\begin{table}[!htbp]
 \begin{center}
-$$\begin{array}{|c|c|c|}\hline
+\begin{tabular}{|C|C|C|}\hline
 \text{Graph}&\text{Vertices}&\text{Edges}\\\hline
 G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
 \\\hline
 G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
 \\\hline
-\end{array} $$
+\end{tabular} 
 \caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
-= 3$, $f(d)=4$, $f(e)=5$.}
+= 3$, $f(d)=4$, $f(e)=5$.}\label{table:ch1-graph-1}
 \end{center} 
 \end{table}
 
@@ -78,9 +73,9 @@ Reflections reverse the counter-clockwise order around each vertex.
 
 Figure \ref{fig:combinatorialEmbedding.pdf} depicts two different drawings of the wheel graph $W_5$.%, one on the left and one on the right. 
 The drawings have the followings counterclockwise order of neighbors for each vertex:
-\begin{table}[!htbp]\label{table:combinatorialEmbedding}
+\begin{table}[!htbp]
 \begin{center}
-$$\begin{array}{|c|c|c|}\hline
+\begin{tabular}{|C|C|C|}\hline
 \text{Vertex}&\text{Left \& Middle Drawing}&\text{Right Drawing}\\\hline
 1&(2,5,4)& (4,5,2) 
 \\\hline
@@ -92,8 +87,8 @@ $$\begin{array}{|c|c|c|}\hline
 \\\hline
 5&(2,3,4,1)& (4,3,2,1) 
 \\\hline
-\end{array} $$
-\caption{A table showing the counter-clockwise circular ordering of neighbors for the left and right drawing in Figure \ref{fig:combinatorialEmbedding.pdf}.  Note that the permutation cycles are equivalent for the right and left drawings.}
+\end{tabular} 
+\caption{A table showing the counter-clockwise circular ordering of neighbors for the left and right drawing in Figure \ref{fig:combinatorialEmbedding.pdf}.  Note that the permutation cycles are equivalent for the right and left drawings.}\label{table:combinatorialEmbedding}
 \end{center} 
 \end{table}
 %The crossing number $cr\lr{\Gamma_G}$ of a drawing of $G$ is the number of crossings in the drawing of the graph $G$. 
@@ -101,75 +96,7 @@ $$\begin{array}{|c|c|c|}\hline
 %One can ask if for any graph $G$, does there exists a drawing in which the crossing number is zero?
 %Without loss of generality, this is a type of crossing number minimization problem, i.e.
 %$$ \min_{\gamma \in \left\lbrace \Gamma_G \right\rbrace} cr(\gamma)$$
-Referencing table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
-
-
-
-%If no two distinct edges intersect in the drawing, the drawing is said to be \textit{planar}. 
-
-
-
- 
-
-
-
-
-
-
-%Two planar drawings are equivalent if they determine the same circular orderings of the neighbor sets.
-%Every proper drawing can be augmented to an embedded plane graph 
-%by inserting new vertices at the edge crossings, and subdividing the edges that pass
-%through those vertices. So the equivalence of two drawings reduces to the equivalence of plane graphs.
-
-
-% A graph \textit{embedding} of $G = (V,E)$ is an injective mapping $\Pi: V \mapsto \bbR^2$.  
-% \begin{figure}[!htbp]
-% \begin{center}
-% \includegraphics[scale=.5]{graphics/PetersonGraphExample.pdf}
-% \caption{An embedding of the Peterson graph.}\label{fig:graph1-1}
-% \end{center} 
-% \end{figure} 
-% A graph embedding is said to
-
-
-% A \textit{graph} is an 
-% ordered pair $G = (V,E)$ comprising of a set of vertices, $V$, and a set of edges or 
-% lines, $E$.  Every edge $e \in E$, is an unordered pair of distinct vertices $u,v \in V$ (the edge represents their adjacency, $e = \{ u,v\}$). With this definition of a graph, there 
-% are 
-% no loops (self adjacent vertices, $\{v,v\}$) or multi-edges (several edges between the same pair of 
-% vertices).
-
-%   This requires an 
-% embedding into the plane or $\bbr^3$.  An \textit{embedding} of the 
-% graph $G = (V,E)$ is an injective mapping $\Pi : V \mapsto \bbR^{2}$ (see Figure 
-% \ref{fig:graph1-1}). 
-
-
-% \subsubsection{Edge Crossings}
-% We define \textit{plane embeddings} of a graph to be an embedding where the following degenerate 
-% configurations 
-% do not occur:
-% \begin{itemize}
-% \item[\rn{1}] the interiors of two or more edges intersect, or
-% \item[\rn{2}] an edge passes through a vertex
-% \end{itemize} 
-% \begin{figure}[H]
-% \begin{center}
-%   \begin{subfigure}[b]{0.49\textwidth}
-% 	  \includegraphics{graphics/crossingType2.pdf}
-% 	  \caption{The interior of the edges intersect.}
-% 	  \label{fig:ch1-linkages-1-2}
-%   \end{subfigure}
-%   \begin{subfigure}[b]{0.49\textwidth}
-% 	  \includegraphics{graphics/crossingType3.pdf}
-% 	  \caption{An edge passes through a vertex.}
-% 	  \label{fig:ch1-linkages-1-3}
-%   \end{subfigure}
-% \end{center} 
-% \caption{These figures exhibit the 4 types of edge crossings.}\label{fig:ch1-linkages-1}
-% \end{figure}
-% A graph is called \textit{planar} if it admits a plane embedding.  A \textit{plane graph} is a 
-% graph together with a plane embedding.
+Referencing Table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
 
 \subsection{Trees}
 %Some graphs can be classified by which properties they have.

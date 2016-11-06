@@ -1,18 +1,4 @@
-\chapter{Realizability of Polygonal Linkages with Fixed Orientation\label{chapter:polygonalLinkage}}
-% On 10/1/2016 3:39 PM, clinton bowen wrote:
-% > 1)  Do I have some confusion in my text on P3SAT and what the values of n and m are that I want to resolve.  In chapter 1 I have: 
-% >
-% > "We define the \textit{associated graph} $A(\Phi)$ as follows: the vertices correspond to the variables and clauses in $\Phi$.  We place an edge in the graph if variable $x_i$ appears in clause $C_j$."  
-% >
-% > In chapter 1, if A(\Phi) = (V,E), |V| = # of variables + # of clauses and |E| = the quantity of "if variable $x_i$ appears in clause $C_j$" for all i and j.
-% >
-% > In chapter 3's introduction i show s(n,m) where n is the number of vertices and m is the number of edges of a graph; throughout the remainder of the chapter, I state something to the effect of 
-% > "Given an instance of P3SAT boolean formula Φ of n variables and m clauses with associated graph A(Φ)".  
-% >
-% > Effectively I would have s(n+m, f(Φ)) where f() is the function  "the quantity of "if variable $x_i$ appears in clause $C_j$" for all i and j", if I use the definition in chapter 1 literally.  
-% >
-% > Is there a nice way of resolving this confusion of n and m?
-% You are perfectly right. I would keep the meaning of n and m throughout the chapter. After stating planar 3SAT at the beginning of the chapter, add a remark that a planar bipartite graph on K>2 vertices has at most 2K-4 edges by Euler's theorem. (This is a classical result, that appears in all undergraduate textbooks on discrete math, as an easy exercise). When you define s(n,m), then define it as the size of the grid that can accommodate A(Phi). Them s(n,m) is still polynomial in n and m. 
+\chapter{Realizability of Polygonal Linkages with Fixed Orientation\label{chapter:polygonalLinkage}} 
 
 We begin the chapter with describing several gadgets that translate the associated graph $A(\Phi)$ of a P3SAT boolean formula into a hexagonal polygonal linkage.  
 These gadgets will be used together to form a special hexagonal linkage that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.  

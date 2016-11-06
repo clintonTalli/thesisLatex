@@ -1,14 +1,13 @@
 \contentsline {chapter}{Signature page}{ii}
 \contentsline {chapter}{Abstract}{iv}
-\select@language {english}
 \contentsline {chapter}{\numberline {1}Realizability Problems for Weighted Trees}{1}
 \contentsline {section}{\numberline {1.1}Hausdorff Distance}{1}
 \contentsline {paragraph}{$\epsilon $-approximation}{1}
 \contentsline {section}{\numberline {1.2}Weighted Trees $T_i$}{2}
 \contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{3}
 \contentsline {subsection}{\numberline {1.2.1}Perturbed Weighted Trees $T$}{4}
+\contentsline {paragraph}{Modification of $\sigma _1$.}{5}
 \contentsline {paragraph}{Displacement on $\sigma _1$ is small.}{5}
 \contentsline {paragraph}{Displacement on the stems is small.}{6}
 \contentsline {paragraph}{Displacement on the petioles is small.}{9}
-\contentsline {paragraph}{Proof of Theorem \ref {thm:disk}}{11}
-\contentsfinish 
+\contentsline {paragraph}{Proof of Theorem \G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `thm:disk' on page 11 undefined}}{11}

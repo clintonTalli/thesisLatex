@@ -1,4 +1,4 @@
-#/usr/bin/bash
+#!/bin/bash
 pdflatex --output-directory ../pdf Thesis.tex
 cd ../pdf
 bash buildBiblio

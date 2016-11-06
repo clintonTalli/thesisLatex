@@ -1,4 +1,4 @@
-\section{Polygonal Linkages}
+\section{Polygonal Linkages}\label{sec:hinge}
 A generalization of linkages is a polygonal linkage where edges of given lengths are replaced with rigid polygons.
 Formally, a \textit{polygonal linkage} is an ordered pair $\left(\PP,\HH \right)$ where $\PP$ is a finite set of polygons and $\HH$ is a finite set of hinges; a \textit{hinge} $h\in \HH$ corresponds to two or more points on the boundary of distinct polygons in $\PP$.  
 A \emph{realization of a polygonal linkage} is an interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).  
@@ -12,14 +12,14 @@ two hinge points can correspond to the same boundary point of a polygon.}
 \label{fig:linkage-1}
 \end{figure}
 A \textit{realization of a polygonal linkage with fixed orientation} is a realization in which each polygon is translated and rotated copy of a polygon in $\PP$; at each hinge the incident polygons are in a given counter-clockwise order (refer to Figure \ref{fig:orderedLinkages}).
-%the congruent copies of the polygons in $\PP$ is translated and rotated copy in $\PP$.
-% each copy allows for any combination of translations and rotated copies of polygons in $\PP$ where every hinge has a counter-clockwise order of incident polygons.  
-\begin{figure}[!htbp]\label{fig:orderedLinkages}
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[scale=1]{graphics/orderedLinkages.pdf}
-\end{center} 
-\caption{Two realizations of the same polygonal linkage with that differ in the counter-clockwise order of polygons around vertex $a$. }
-\end{figure}
+\includegraphics{graphics/orderedLinkages.pdf}
+\captionof{figure}{Two realizations of the same polygonal linkage with that differ in the counter-clockwise order of polygons around vertex $a$. }\label{fig:orderedLinkages}
+\end{center}]
+\end{minipage}
+
 Note that oriented polygonal linkage realizations do not allow for reflection transformations of polygons in $\PP$.
 
 These two realization types allow one to pose two different problems, the realizability problem for polygonal linkages and the realizability problem for polygonal linkages with fixed orientation:
@@ -59,12 +59,11 @@ Indeed this polygonal linkage cannot satisfy Problem \ref{problem:OrderedPolygon
 Without loss of generality, fix the placement of $C$.
 $A$, $B$, and $D$ have unique placement around triangle $C$.  
 In this placement $C$ and $D$ overlap.%have common intersecting interiors and thus a contradiction of the existence of a realization.  
-\begin{figure}[!htbp]\label{fig:collidingHingedPolygons}
-\begin{center}
+\begin{figure}[!htbp]\begin{center}
 \includegraphics[scale=1]{graphics/collidingHingedPolygons.pdf}
 \end{center} 
 \caption{This example shows yet another example where two realizations of the same polygonal linkage. 
- One realization where there is an intersection and another where there isn't an intersection.}
+ One realization where there is an intersection and another where there isn't an intersection.}\label{fig:collidingHingedPolygons}
 \end{figure}
 Figure \ref{fig:collidingHingedPolygons}, satisfies Problem \ref{problem:UnorderedPolygonal} but not Problem \ref{problem:OrderedPolygonal}.
  The far right is a realization but with polygon $B$ reflected.

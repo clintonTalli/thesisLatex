@@ -1,6 +1,5 @@
 \contentsline {chapter}{Signature page}{ii}
 \contentsline {chapter}{Abstract}{iv}
-\select@language {english}
 \contentsline {chapter}{\numberline {1}Background}{1}
 \contentsline {section}{\numberline {1.1}Graphs}{1}
 \contentsline {subsection}{\numberline {1.1.1}Trees}{3}
@@ -19,4 +18,3 @@
 \contentsline {section}{\numberline {1.7}Satisfiability}{15}
 \contentsline {section}{\numberline {1.8}Contribution}{16}
 \contentsline {section}{\numberline {1.9}Related Work and Results}{16}
-\contentsfinish 

@@ -3,13 +3,13 @@
 The \textit{logic engine} is a planar, mechanical device that simulates an instance NAE3SAT problem. It was introduced in Bhatt et. al. \cite{BC87}.
 \subsection{Construction of the Logic Engine}
 
-\begin{figure}[!h]
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure1Scaled.pdf}
-\caption{A logic engine frame with veritical armatures and a horizontal shaft.}
+\includegraphics[width=.45\columnwidth]{graphics/LogicEngineFrameFigure1Scaled.pdf}
+\captionof{figure}{A logic engine frame with veritical armatures and a horizontal shaft.}
 \label{fig:LogicEngineFrameFigure1.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
 For a given a boolean formula, $\Phi$, in 3-CNF with $n$ variables and $m$ clauses, we construct a logic engine. The logic engine has a \textit{rigid frame} which houses the mechanical components of the the logic engine.  The rigid frame is the boundary of which the logic engine can operate within.  The \textit{shaft} is a horizontal line segment that is placed at mid-height of the rigid frame. 
 The \textit{armatures} are veritical line segments whose midpoints are on the shaft.  
@@ -17,13 +17,12 @@ Each armature has two orientations with respect to the shaft.
 There will be some flags on each armature that will be described later.
 The armatures each have length $2n$ units, the shaft has length $m$ units, and the frame has a height of $2n$ and width of $m$ units.
 
-
-\begin{figure}[!h]
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure1halfScaled.pdf}
-\caption{A logic engine that corresponds to a boolean formula in NAE3SAT form, $\Phi$.  The picture shows the outer rigid frame, the shaft, the armatures that correspond to the variables in $\Phi$, with oriented flags.}\label{fig:LogicEngineFrameFigure1halfScaled.pdf}
+\includegraphics[width=.33\columnwidth]{graphics/LogicEngineFrameFigure1halfScaled.pdf}
+\captionof{figure}{A logic engine that corresponds to a boolean formula in NAE3SAT form, $\Phi$.  The picture shows the outer rigid frame, the shaft, the armatures that correspond to the variables in $\Phi$, with oriented flags.}\label{fig:LogicEngineFrameFigure1halfScaled.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
   Each armature corresponds to a variable in $\Phi$. There are two literals for each variable, i.e. the literal $x_j$ and the negated literal 
  $\bar{x}_j$.    
@@ -33,13 +32,15 @@ The armatures each have length $2n$ units, the shaft has length $m$ units, and t
    If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
 
 Each flag has two orientations with respect to armature it is attached to.  Each flag has four potential positions, the flag can reflect left or right about the armature and the armature can reflect up or down about the shaft.
-\begin{figure}[!h]
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure2Scaled.pdf}
-\caption{A logic engine constructed from the boolean formula $\Phi = C_1 \cap C_2 \cap C_3$.}
+\includegraphics[width=.66\columnwidth]{graphics/LogicEngineFrameFigure2Scaled.pdf}
+\captionof{figure}{A logic engine constructed from the boolean formula $\Phi = C_1 \cap C_2 \cap C_3$.}
 \label{fig:LogicEngineFrameFigure2Scaled.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
+
 The \textit{flags} are equilateral triangles
 attached to the armatures.  The placement of the flags is dependent on the instance of the NAE3SAT 
 boolean formula. Each flag as two orientations. 
@@ -47,19 +48,17 @@ boolean formula. Each flag as two orientations.
 For the NP hardness reduction in Theorem \ref{thm:LogicEngineV3-2} we need to make sure that all parameters in the logic engine can be specified polynomially in terms of the size of the boolean formula. Given $\Phi$, the corresponding logic engine is constructed as follows: all components will be specified with a 
 quantity and coordinates defined as polynomials in $m$ and $n$.
 
-\begin{center}
-	\begin{table}[H]\label{LogicEngineV3PolynomialTable}
-		\begin{tabular}{|c|c|c|}
-			\hline
-			Component & Quantity &  Set Definition\\ \hline
-			Rigid Frame&1&$\set{(x,y)\in\bbr^2}{ \text{The boundary of }\left[ \frac{1}{2} , n + \frac{1}{2}\right] \times \left[ -m, m \right]}$\\ \hline
-			Shaft&1&$\set{(x,y) \in \bbr^2}{x \in \left[\frac{1}{2}, n + \frac{1}{2}\right] \text{ and } y=0 }$\\ \hline
-			Armatures & n & For the $j^\text{th}$ armature we have $\set{(x,y)\in\bbr^2}{x = j \text{ and } y \in [-m,m] }$\\ \hline
-			Flags&$2mn-3m$& if $\ell_{j,k}$ is flagged then the attached flag is a regular triangle with side length 1.\\ \hline
-		\end{tabular}
-	\caption{The quantity and coordinates of the logic engine components.}
-	\end{table}
-\end{center}
+\begin{table}\label{LogicEngineV3PolynomialTable}
+	\begin{tabular}[c]{|c|c|c|}
+		\hline
+		Component & Quantity &  Set Definition\\ \hline
+		Rigid Frame&1&$\set{(x,y)\in\bbr^2}{ \text{The boundary of }\left[ \frac{1}{2} , n + \frac{1}{2}\right] \times \left[ -m, m \right]}$\\ \hline
+		Shaft&1&$\set{(x,y) \in \bbr^2}{x \in \left[\frac{1}{2}, n + \frac{1}{2}\right] \text{ and } y=0 }$\\ \hline
+		Armatures & n & For the $j^\text{th}$ armature we have $\set{(x,y)\in\bbr^2}{x = j \text{ and } y \in [-m,m] }$\\ \hline
+		Flags&$2mn-3m$& if $\ell_{j,k}$ is flagged then the attached flag is a regular triangle with side length 1.\\ \hline
+	\end{tabular}
+\caption{The quantity and coordinates of the logic engine components.}
+\end{table}
 
 \subsection{The mechanics of the logic engine}
 In any of the following cases, a \textit{collision} of flags occurs:
@@ -69,32 +68,28 @@ In any of the following cases, a \textit{collision} of flags occurs:
 \item a flag from the leftmost armature $A_1$ points inwards of $A_1$.
 \end{enumerate}
 
-\begin{figure}[!htbp]
+
+ \begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics[scale=.5]{graphics/logicEngineCollisions.pdf}
-\caption{(a) Illustrates a adjacent flag collision at the same height, (b) and (c) illustrates a 
+\includegraphics[width=.5\columnwidth]{graphics/logicEngineCollisions.pdf}
+\captionof{figure}{(a) Illustrates a adjacent flag collision at the same height, (b) and (c) illustrates a 
 rigid frame collision.}\label{fig:logicEngineCollisions.pdf}
 \end{center}
-\end{figure}
-The logic engine representation corresponding to $\Phi$ is to be configured such that no 
-horizontally adjacent flags collide and flags do not collide with the rigid frame. 
-\begin{figure}[!htbp]
+\end{minipage}
+
+The logic engine representation corresponding to $\Phi$ is to be configured such that no horizontally adjacent flags collide and flags do not collide with the rigid frame. 
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/logicEngineValidConfigurations.pdf}
-\caption{The following configuration of adjacent flags 
+\includegraphics[width=.9\columnwidth]{graphics/logicEngineValidConfigurations.pdf}
+\captionof{figure}{The following configuration of adjacent flags 
 and flags that are adjacent to the rigid frame.}\label{fig:logicEngineValidConfigurations.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
 \begin{lem}\label{lem:logicEngine1}A row has a collision-free configuration if and only if it has 
 at least one unglagged armature. \end{lem}
 \begin{proof}
-% Suppose that the flag on armature $A_1$ is flagged.  If the flag is oriented left, then there 
-% is a flag-frame collision.  If the flag is oriented to the right and if $A_2$ is flagged, then 
-% $A_2$ must also be oriented to the right; otherwise will result in a flag-flag collision.  Now 
-% suppose the $i^\text{th}$ armature's flag is oriented to the right.  $A_{i+1}$ is also oriented to 
-% the right; otherwise will result in a flag-flag collision. By induction all flags will orient to 8187173855 135 500
-% the right up to $n$.  Thus the $n^\text{th}$ flag will will collide with the rigid frame.
 
 Suppose all armatures are flagged in a row.  The flag on armature $A_1$ must point to the 
 right otherwise we result in a rigid frame collision.  $A_2$ must point to the right otherwise 
@@ -115,12 +110,13 @@ collision-free configuration.
 \end{proof}
 
 A logic engine is said to be \textit{collision-free configurable} when every row has a collision-free configuration.
-\begin{figure}[!ht]
+
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/LogicEngineFrameFigure5Scaled.pdf}
-\caption{The logic engine from figure \ref{fig:LogicEngineFrameFigure2.pdf} whose armatures are rotated}\label{fig:LogicEngineFrameFigure5.pdf}
+\includegraphics[width=.33\columnwidth]{graphics/LogicEngineFrameFigure5.pdf}
+\captionof{figure}{The logic engine from Figure \ref{fig:LogicEngineFrameFigure2Scaled.pdf} whose armatures are rotated}\label{fig:LogicEngineFrameFigure5.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
 \subsubsection{The Relationship of the Logic Engine and NAE3SAT}
 

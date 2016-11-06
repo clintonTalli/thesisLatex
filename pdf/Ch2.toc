@@ -5,5 +5,5 @@
 \contentsline {subsection}{\numberline {1.1.1}Construction of the Logic Engine}{1}
 \contentsline {subsection}{\numberline {1.1.2}The mechanics of the logic engine}{3}
 \contentsline {subsubsection}{\numberline {1.1.2.1}The Relationship of the Logic Engine and NAE3SAT}{4}
-\contentsline {section}{\numberline {1.2}Logic Engines Represented as Polygonal Linkages}{6}
-\contentsline {subsection}{\numberline {1.2.1}Construction of the Polygonal Linkage Logic Engine}{6}
+\contentsline {section}{\numberline {1.2}Logic Engines Represented as Polygonal Linkages}{5}
+\contentsline {subsection}{\numberline {1.2.1}Construction of the Polygonal Linkage Logic Engine}{5}

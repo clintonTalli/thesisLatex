@@ -8,20 +8,21 @@ The shaft is broken into $n$ polygons.
 Each armature is broken into two parts, each part containing $m$ subcomponents.
 In figure \ref{fig:HingedLogicEngineSmall.pdf}, each flag becomes a rectangle.
 
-\begin{figure}[!htbp]
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/HingedLogicEngineSmall.pdf}
-\caption{A logic engine realized as a polygonal linkage.}\label{fig:HingedLogicEngineSmall.pdf}
+\includegraphics[width=.45\columnwidth]{graphics/HingedLogicEngineSmall.pdf}
+\captionof{figure}{A logic engine realized as a polygonal linkage.}\label{fig:HingedLogicEngineSmall.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
+
 \subsection{Construction of the Polygonal Linkage Logic Engine}
 Suppose we are given an boolean formula with $m$ clauses and $n$ variables in 3-CNF form, $\Phi$, we construct the polygonal linkage similarly to the logic engine.
 The corresponding polygonal linkage $P_\ell = (\PP,\HH)$ is detailed in Table \ref{tbl:hingedPolygonsv3-1a}.
 
-\begin{minipage}{\linewidth}
-\begin{table}[H]\label{tbl:hingedPolygonsv3-1a}
+% \begin{minipage}{\linewidth}
+\begin{table}
  	\begin{center}
-		\begin{tabular}{|l|c|c|c|}
+		\begin{tabular}[c]{|l|c|c|c|}
 		 \hline
 		 Component & Height & Width & Quantity\\ \hline
 		 Large Frame Subcomponent & $2\cdot m$ & $1$ & $2$\\ \hline
@@ -29,11 +30,10 @@ The corresponding polygonal linkage $P_\ell = (\PP,\HH)$ is detailed in Table \r
 		 Armature Subcomponent & $2$ & $1$ & $2\cdot m$\\ \hline
 		 Flag & $1$ & $1.5$ & $2mn-3m$\\\hline
 		\end{tabular}
-		\captionof{table}{The components of $\PP$ specified polynomially in terms of the size of the boolean formula $\Phi$.}
+		\captionof{table}{The components of $\PP$ specified polynomially in terms of the size of the boolean formula $\Phi$.}\label{tbl:hingedPolygonsv3-1a}
 	\end{center}
 \end{table}
-
-\end{minipage}
+% \end{minipage}
 
 The large frame subcomponents are hinged on the left most and right most shaft subcomponents. 
 Each adjacent shaft subcomponents are hinged and each shaft subcomponent has two orientations, a reflecion up and a reflection down about the shaft hinge points.  
@@ -42,7 +42,7 @@ By the two orientations of the shaft subcomponent, each armature subcomponent ha
 Each armature comprises of $m$ armature subcomponents that are hinged together; in total there are $2n$ armatures.  
 Each armature subcomponent has two orientations, a reflection left and a reflection right about the armature hinge points.  
 Label the armature subcomponents on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  
-Attach a rectangular flag specified in Table \ref{TBL:HingedPolygonsV3-1}, to some of these segments. 
+Attach a rectangular flag specified in Table \ref{tbl:hingedPolygonsv3-1a}, to some of these segments. 
 Each segment is either flagged one or zero flags.
 \begin{enumerate}
 	 \item If the literal $x_j$ is found in clause $C_k$, then $\ell_{j,k}$ is unflagged.
@@ -51,12 +51,12 @@ Each segment is either flagged one or zero flags.
 
 Each flag has two orientations with respect to armature it is attached to.  Each flag has four potential positions, the flag can reflect left or right about the armature and the armature can reflect up or down about the shaft.
 
-\begin{figure}[!htbp]
+\begin{minipage}{\linewidth}
 \begin{center}
-\includegraphics{graphics/HingedLogicEngineSmallEnumerated.pdf}
-\caption{A polygonal linkage logic engine that corresponds to the boolean formula $\Phi = C_1 \cap C_2 \cap C_3$.}\label{fig:HingedLogicEngineSmallEnumerated.pdf}
+\includegraphics[width=.33\columnwidth]{graphics/HingedLogicEngineSmallEnumerated.pdf}
+\captionof{figure}{A polygonal linkage logic engine that corresponds to the boolean formula $\Phi = C_1 \cap C_2 \cap C_3$.}\label{fig:HingedLogicEngineSmallEnumerated.pdf}
 \end{center}
-\end{figure}
+\end{minipage}
 
 \begin{thm}\label{thm:chp2-HingedPolygons-1}
  Given an instance of a $NAE3SAT$,  it is a ``yes'' instance if and only if the 
