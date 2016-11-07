@@ -3,46 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: cat.aux
 The style file: plain.bst
 Database file #1: WorkCited.bib
-Warning--empty journal in klemzthesis
-You've used 23 entries,
+You've used 37 entries,
             2118 wiz_defined-function locations,
-            642 strings with 6940 characters,
-and the built_in function-call counts, 7231 in all, are:
-= -- 706
-> -- 330
-< -- 2
-+ -- 134
-- -- 108
-* -- 485
-:= -- 1224
-add.period$ -- 68
-call.type$ -- 23
-change.case$ -- 116
+            740 strings with 9073 characters,
+and the built_in function-call counts, 12972 in all, are:
+= -- 1320
+> -- 559
+< -- 10
++ -- 225
+- -- 184
+* -- 865
+:= -- 2110
+add.period$ -- 113
+call.type$ -- 37
+change.case$ -- 196
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 274
-empty$ -- 580
-format.name$ -- 108
-if$ -- 1489
+cite$ -- 37
+duplicate$ -- 507
+empty$ -- 1017
+format.name$ -- 184
+if$ -- 2741
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 29
-newline$ -- 117
-num.names$ -- 46
-pop$ -- 137
+int.to.str$ -- 37
+missing$ -- 43
+newline$ -- 187
+num.names$ -- 74
+pop$ -- 209
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 166
 quote$ -- 0
-skip$ -- 183
+skip$ -- 374
 stack$ -- 0
-substring$ -- 461
-swap$ -- 39
-text.length$ -- 2
+substring$ -- 926
+swap$ -- 124
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 1
-while$ -- 75
-width$ -- 25
-write$ -- 243
-(There was 1 warning)
+type$ -- 134
+warning$ -- 0
+while$ -- 141
+width$ -- 39
+write$ -- 402

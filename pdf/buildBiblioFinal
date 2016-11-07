@@ -1,0 +1,4 @@
+#!/bin/bash
+if [ -e ClintonThesisFinal.aux ]; then
+bibtex ClintonThesisFinal
+fi

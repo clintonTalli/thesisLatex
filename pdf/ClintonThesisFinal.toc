@@ -26,12 +26,12 @@
 \contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{22}
 \contentsline {chapter}{\numberline {3}Realizability of Polygonal Linkages with Fixed Orientation}{24}
 \contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{25}
-\contentsline {section}{\numberline {3.1}Auxilary Construction}{26}
+\contentsline {section}{\numberline {3.1}Auxiliary Construction}{26}
 \contentsline {paragraph}{Variable Gadget.}{28}
 \contentsline {paragraph}{Clause Gadget.}{29}
 \contentsline {paragraph}{Transmitter Gadget.\newline }{29}
-\contentsline {section}{\numberline {3.2}Functionality of the Auxilary Construction and Gadgets}{30}
-\contentsline {section}{\numberline {3.3}Modified Auxilary Construction.}{34}
+\contentsline {section}{\numberline {3.2}Functionality of the Auxiliary Construction and Gadgets}{30}
+\contentsline {section}{\numberline {3.3}Modified Auxiliary Construction.}{34}
 \contentsline {paragraph}{Angular Rotation $\alpha $.}{37}
 \contentsline {paragraph}{Vertical Displacement $\delta $.}{39}
 \contentsline {paragraph}{\textit {A Refinement of the Angular Rotation Bound on $\alpha $}}{41}

@@ -11,20 +11,60 @@ Martin Aigner and G{\"u}nter~M Ziegler.
 \newblock Hilbert's third problem: decomposing polyhedra.
 \newblock {\em Proofs from the book}, pages 53--61, 2010.
 
+\bibitem{AKR+04}
+H.~Alt, C.~Knauer, G.~Rote, and S.~Whitesides.
+\newblock {On the complexity of the linkage reconfiguration problem in Towards
+  a Theory of Geometric Graphs}.
+\newblock {\em Contemporary Mathematics, AMS}, 342:1--14, 2004.
+
+\bibitem{BCD+09}
+B.~Ballinger, D.~Charlton, E.~D. Demaine, M.~L. Demaine, J.~Iacono, C.-H. Liu,
+  and S.-H. Poon.
+\newblock {Minimal locked trees}.
+\newblock {\em Proc. 11th WADS, LNCS 5664, Springer}, pages 61--73, 2009.
+
 \bibitem{BET+99}
 G.~Di Battista, P.~Eades, R.~Tamassia, and I.~G. Tollis.
 \newblock {\em {Graph Drawing: Algorithms for the Visualization of Graphs}}.
 \newblock Prentice Hall, 1999.
+
+\bibitem{BV96}
+G.~Di Battista and L.~Vismara.
+\newblock {Angles of planar triangular graphs}.
+\newblock {\em SIAM J. Discrete Math}, 9:349--359, 1996.
 
 \bibitem{BC87}
 Sandeep~N Bhatt and Stavros~S Cosmadakis.
 \newblock The complexity of minimizing wire lengths in vlsi layouts.
 \newblock {\em Information Processing Letters}, 25(4):263--267, 1987.
 
+\bibitem{BK95}
+H.~Breu and D.~G. Kirkpatrick.
+\newblock {On the complexity of recognizing intersection and touching graphs of
+  discs}.
+\newblock {\em Proc. Sympos. Graph Drawing, LNCS 1027, Springer}, pages 88--98,
+  1995.
+
 \bibitem{BK98}
 H.~Breu and D.~G. Kirkpatrick.
 \newblock {Unit disk graph recognition is NP-hard}.
 \newblock {\em Comput. Geom}, 9:3--24, 1998.
+
+\bibitem{CDR07}
+S.~Cabello, E.~D. Demaine, and G.~Rote.
+\newblock {Planar embeddings of graphs with specified edge lengths}.
+\newblock {\em J. Graph Alg. Appl}, 11:259--276, 2007.
+
+\bibitem{CdG+07}
+J.-S. Cheong, A.~F. van~der Stappen, K.~Goldberg, M.~H. Overmars, and E.~Rimon.
+\newblock {Immobilizing hinged polygons}.
+\newblock {\em Int. J. Comput. Geom. Appl}, 17:45--70, 2007.
+
+\bibitem{CD-ch9}
+R.~Connelly and E.~D. Demaine.
+\newblock {Geometry and topology of polygonal linkages, ch. 9}.
+\newblock {\em Handbook of Discrete and Computational Geometry 2nd ed CRC},
+  pages 197--218, 2004.
 
 \bibitem{CDD+10}
 R.~Connelly, E.~D. Demaine, M.~L. Demaine, S.~P. Fekete, S.~Langerman, J.~S.~B.
@@ -42,10 +82,35 @@ P.~Eades and N.~C. Wormald.
 \newblock {Fixed edge-length graph drawing is NP-hard}.
 \newblock {\em Discrete Applied Mathematics}, 28:111--134, 1990.
 
+\bibitem{EW96}
+Peter Eades and Sue Whitesides.
+\newblock The realization problem for euclidean minimum spanning trees is
+  np-hard.
+\newblock {\em Algorithmica}, 16(1):60--82, 1996.
+
+\bibitem{FHW97}
+S.~P. Fekete, M.~E. Houle, and S.~Whitesides.
+\newblock {The wobbly logic engine: Proving hardness of non-rigid geometric
+  graph representation problems}.
+\newblock {\em Proc. 5th Sympos. Graph Drawing, LNCS 1353, Springer}, pages
+  272--283, 1997.
+
 \bibitem{NAE3SATisNPhard}
 Michael~R Garey and David~S Johnson.
 \newblock {\em Computers and Intractibility}.
 \newblock WH Freeman and company New York, 1979.
+
+\bibitem{Hli97}
+P.~Hlin\v{e}n{\'y}.
+\newblock {Touching graphs of unit balls}.
+\newblock {\em Proc. 5th Sympos. Graph Drawing, LNCS 1353, Springer}, pages
+  350--358, 1997.
+
+\bibitem{HK01}
+P.~Hlin\v{e}n{\'y} and J.~Kratochv{\'i}l.
+\newblock {Representing graphs by disks and balls (a survey of
+  recognition-complexity results)}.
+\newblock {\em Discrete Mathematics}, 229:101--124, 2001.
 
 \bibitem{jonsson2003public}
 J~Jonsson and B~Kaliski.
@@ -58,10 +123,11 @@ Richard~M Karp.
 \newblock {\em Reducibility among combinatorial problems}.
 \newblock Springer, 1972.
 
-\bibitem{klemzthesis}
-Boris Klemz.
-\newblock Weighted disk contact graph.
-\newblock 2014.
+\bibitem{KNR15}
+Boris Klemz, Martin N{\"o}llenburg, and Roman Prutkin.
+\newblock Recognizing weighted disk contact graphs.
+\newblock In {\em International Symposium on Graph Drawing and Network
+  Visualization}, pages 433--446. Springer, 2015.
 
 \bibitem{koebe1936kontaktprobleme}
 Paul Koebe.
@@ -88,11 +154,22 @@ Alfred~J Menezes, Paul~C Van~Oorschot, and Scott~A Vanstone.
 \newblock {\em Handbook of applied cryptography}.
 \newblock CRC press, 1996.
 
+\bibitem{Rei79}
+J.~H. Reif.
+\newblock {Complexity of the mover's problem and generalizations}.
+\newblock In {\em {Proc. 20th FoCS}}, pages 421--427. IEEE, 1979.
+
 \bibitem{rivest1978method}
 Ronald~L Rivest, Adi Shamir, and Len Adleman.
 \newblock A method for obtaining digital signatures and public-key
   cryptosystems.
 \newblock {\em Communications of the ACM}, 21(2):120--126, 1978.
+
+\bibitem{Sch13}
+Marcus Schaefer.
+\newblock Realizability of graphs and linkages.
+\newblock In {\em Thirty Essays on Geometric Graph Theory}, pages 461--482.
+  Springer, 2013.
 
 \bibitem{skiena2009algorithm}
 S.S. Skiena.
@@ -114,6 +191,11 @@ R~Tamassia and IG~Tollis.
 \newblock Efficient embedding of planar graphs in linear time.
 \newblock In {\em Proc. IEEE Int. Symp. on Circuits and Systems}, pages
   495--498, 1987.
+
+\bibitem{W33}
+Hassler Whitney.
+\newblock Congruent graphs and the connectivity of graphs.
+\newblock {\em American Journal of Mathematics}, 54(1):150--168, 1932.
 
 \bibitem{10.23073621846}
 E.~C. Zeeman.

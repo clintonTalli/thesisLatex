@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  6 NOV 2016 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  7 NOV 2016 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -358,10 +358,10 @@ File: graphics/LogicEngineFrameFigure1Scaled.pdf Graphic file (type pdf)
 
 <use graphics/LogicEngineFrameFigure1Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure1Scaled.pdf used on inp
-ut line 8.
+ut line 10.
 (pdftex.def)             Requested size: 195.12767pt x 236.58978pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 6--13
+Overfull \hbox (15.0pt too wide) in paragraph at lines 8--15
 []$[]$ 
  []
 
@@ -371,10 +371,10 @@ pt>
 File: graphics/LogicEngineFrameFigure1halfScaled.pdf Graphic file (type pdf)
  <use graphics/LogicEngineFrameFigure1halfScaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure1halfScaled.pdf used on
- input line 22.
+ input line 24.
 (pdftex.def)             Requested size: 143.09538pt x 166.64124pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 20--26
+Overfull \hbox (15.0pt too wide) in paragraph at lines 22--28
 []$[]$ 
  []
 
@@ -386,15 +386,15 @@ File: graphics/LogicEngineFrameFigure2Scaled.pdf Graphic file (type pdf)
 
 <use graphics/LogicEngineFrameFigure2Scaled.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure2Scaled.pdf used on inp
-ut line 38.
+ut line 40.
 (pdftex.def)             Requested size: 286.19078pt x 161.54282pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 36--43
+Overfull \hbox (15.0pt too wide) in paragraph at lines 38--45
 []$[]$ 
  []
 
 
-Overfull \hbox (8.48578pt too wide) in paragraph at lines 52--60
+Overfull \hbox (8.48578pt too wide) in paragraph at lines 54--62
 [][] 
  []
 
@@ -405,10 +405,10 @@ File: graphics/logicEngineCollisions.pdf Graphic file (type pdf)
 
 <use graphics/logicEngineCollisions.pdf>
 Package pdftex.def Info: graphics/logicEngineCollisions.pdf used on input line 
-74.
+76.
 (pdftex.def)             Requested size: 216.81pt x 172.78372pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 72--79
+Overfull \hbox (15.0pt too wide) in paragraph at lines 74--81
 []$[]$ 
  []
 
@@ -417,10 +417,10 @@ File: graphics/logicEngineValidConfigurations.pdf Graphic file (type pdf)
 
 <use graphics/logicEngineValidConfigurations.pdf>
 Package pdftex.def Info: graphics/logicEngineValidConfigurations.pdf used on in
-put line 84.
+put line 86.
 (pdftex.def)             Requested size: 390.25534pt x 123.57777pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 82--89
+Overfull \hbox (15.0pt too wide) in paragraph at lines 84--91
 []$[]$ 
  []
 
@@ -431,21 +431,21 @@ File: graphics/LogicEngineFrameFigure5.pdf Graphic file (type pdf)
 
 <use graphics/LogicEngineFrameFigure5.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure5.pdf used on input lin
-e 116.
+e 118.
 (pdftex.def)             Requested size: 143.09538pt x 195.30998pt.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 114--120
+Overfull \hbox (15.0pt too wide) in paragraph at lines 116--122
 []$[]$ 
  []
 
 [4 <./graphics/LogicEngineFrameFigure5.pdf>]
 
-Package caption Warning: \label without proper \caption on input line 51.
+Package caption Warning: \label without proper \caption on input line 53.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `LogicEngineV3PolynomialTable' on page 5 undefined on 
-input line 156.
+input line 158.
 
 ) (./ch2/HingedPolygonsV3.tex
 <graphics/HingedLogicEngineSmall.pdf, id=102, 296.04602pt x 193.789pt>
