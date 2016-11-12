@@ -1,0 +1,4 @@
+#!/bin/bash
+pdflatex --output-directory ../../pdf powerpoint.tex
+pdflatex --output-directory ../../pdf powerpoint.tex
+pdflatex --output-directory ../../pdf powerpoint.tex

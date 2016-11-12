@@ -14,6 +14,7 @@
 \usepackage{enumerate}
 \usepackage{enumitem}
 \usepackage{array}   % for \newcolumntype macro
+% \usepackage{refcheck}
 \newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
 \newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
 \newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
@@ -41,7 +42,7 @@
 \newcommand{\RR}{\mathbb{R}} %  set of real numbers
 \newcommand{\SH}{\mathbb{S}} %  set of unit vectors
 \newcommand{\HH}{{\mathcal{H}}} %  Calligraphic H
-% \renewcommand{\PP}{{\mathcal{P}}} %  Calligraphic P
+\renewcommand{\PP}{{\mathcal{P}}} %  Calligraphic P
 \newcommand{\DD}{{\mathcal{D}}} %  Calligraphic D
 \newcommand{\QQ}{{\mathcal{Q}}} %  Calligraphic D
 \newcommand{\FF}{{\mathcal{F}}} %  Calligraphic D
@@ -100,7 +101,7 @@ X_2\right)^{-1}
 %%%%Spacing commands %%%%%
 
 %%%%Margins%%%%%% - Clinton Bowen
-\setlength{\topmargin}{-.5in} 
+\setlength{\topmargin}{0.0in} 
 \setlength{\textheight}{9.0in}
 \setlength{\oddsidemargin}{0.5in} 
 \setlength{\evensidemargin}{0.0in}
@@ -109,14 +110,32 @@ X_2\right)^{-1}
 %%The parameters below are described pictorally on this webpage.  Tinker with the settins as needed.
 %%%%Margins%%%%%% - Clinton Bowen
 \author{Clinton Bowen}
-\title{Protein Folding: Planar Configuration Spaces of Disc Arrangements and
+\title{Protein Folding: Planar Configuration Spaces of Disk Arrangements and
 Hinged Polygons}
-\date{April 1, 2014}
+\date{December 5, 2016}
 \makeindex
 %CSUNthesis SETTINGS
-\submitted{August}{2014}
+\submitted{December}{2016}
 \committee{Dr. Csaba T\'oth}{Dr. Silvia Fernandez}{Dr. John Dye}
-\abstract{ }
+\abstract{
+This thesis addresses the computational complexity of two geometric
+problems, motivated by applications in protein folding. In both
+problems, we are given $n$ geometric objects together with a local
+combinatorics (neighborhood relations specified by a contact graph or a
+hinge graph), and ask whether these objects have a nonoverlapping
+placement in Euclidean plane that \emph{realizes} the given combinatorial
+structure. In the first problem, the geometric objects are simple
+polygons and their local structure is specified by flexible hinges
+attached to the boundaries of two or more polygons. In the second
+problem, the geometric objects are circular disks and their local
+structure is characterized by pairs of disks that must be in contact. It
+was previously known that the realizability of these geometric
+structures is NP-hard when their contact graph contains cycles (e.g.,
+tiling or disk packing). We prove that these problems remain NP-hard
+when the contact graph is a tree. We give polynomial-time reductions
+from known NP-hard problems: Planar 3-SAT (P3SAT) and Not-All-Equal
+3-SAT (NAE3SAT).
+}
 \begin{document}\chapter{Background}
 
 We consider four decision problems surrounding graph theory and geometry. 
@@ -166,7 +185,7 @@ G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),
 \label{fig:configuration-3}
 \end{figure}
 
-To visualize a graph, $G$, we create a drawing $\Gamma$, of $G$.  
+To visualize a graph, $G$, we create a drawing $\Pi$, of $G$.  
 The \textit{drawing} of a graph $G=(V,E)$ is an injective mapping $\Pi : V \mapsto \bbR^{2}$ which maps vertices to distinct points in the plane and for each edge $\curlybraces{u,v} \in E$, a continuous, injective mapping $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$, $c_{u,v}(1) = \Pi(v)$, and the curve $c_{u,v}$ does not pass through any other vertex in $V$.
 In this thesis, we will work with straight line drawings and orthogonal drawings.
 Straight line drawings have mappings $c_{u,v}$ that are straight line segments.
@@ -199,7 +218,9 @@ An orientation preserving rigid transformation (i.e., rotation and translation) 
 Reflections reverse the counter-clockwise order around each vertex.
 
 Figure \ref{fig:combinatorialEmbedding.pdf} depicts two different drawings of the wheel graph $W_5$.  
-The drawings have the followings counterclockwise order of neighbors for each vertex:
+The drawings have the counterclockwise order of neighbors for each vertex shown in Table \ref{table:combinatorialEmbedding}.  
+Referencing Table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
+
 \begin{table}[!htbp]
 \begin{center}
 \begin{tabular}{|C|C|C|}\hline
@@ -219,9 +240,6 @@ The drawings have the followings counterclockwise order of neighbors for each ve
 \end{center} 
 \end{table}
 
-
-Referencing Table \ref{table:combinatorialEmbedding} and Figure \ref{fig:combinatorialEmbedding.pdf}, we realize that the two drawings of $W_5$ are equivalent.  
-
 \subsection{Trees}
 A \textit{path} is a sequence of vertices in which every two consecutive vertices are connected by an edge.   
 \noindent%
@@ -232,7 +250,7 @@ A \textit{path} is a sequence of vertices in which every two consecutive vertice
 (2,7,9,6,1,0,5,8,3).}\label{fig:PetersonGraphWithPath}
 \end{center}
 \end{minipage}
-A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \dots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$ (see Figure \ref{fig:PetersonGraphWithPath}).  
+A \textit{simple cycle} of a graph is a sequence, $(v_1, v_2, \ldots, v_{t-1},v_t)$, of distinct vertices such that every two consecutive vertices are connected by an edge,  and the last vertex, $v_t$, connects to $v_1$ (see Figure \ref{fig:PetersonGraphWithPath}).  
 A graph is \textit{connected} if for any two vertices, there exists a path between the two points.
 A \textit{tree} is a graph that has no simple cycles and is connected (see Figure \ref{fig:ch1-graph-2}).
 Every tree is planar.
@@ -255,7 +273,7 @@ vertices.}\label{fig:ch1-graph-6}
 \end{center}
 \end{minipage}
 
-Embeddings of ordered trees are combinatorially equivalent if for each node the counter-clockwise ordering of adjacent nodes are the same. 
+\textit{Embeddings} of ordered trees are combinatorially equivalent if for each node the counter-clockwise ordering of adjacent nodes are the same. 
 
 \section{Linkages}
 
@@ -274,7 +292,7 @@ This motivates the following definition.
 A \textit{length assignment} of a graph $G=(V,E)$ is a function $\ell:E \mapsto \bbr^+$. 
 If $\ell(e)$ is the length of an edge $e$, $\ell(e)$ must be strictly positive in a drawing, otherwise it may result in two distinct vertices with the same coordinates.
 Similar to combinatorial embeddings which is an equivalence class of embeddings of the same counter-clockwise order of vertices, we can also define an equivalence class of drawings with the same length assignment.
-A \textit{linkage} is a graph $G = (V,E)$ with a length assignment $\ell:E \mapsto \bbr^+$ (e.g., see Figure \ref{fig:turkey}).
+A \textit{linkage} is a graph $G = (V,E)$ with a length assignment $\ell:E \mapsto \bbr^+$ (e.g. see Figure \ref{fig:turkey}).
 \section{Polygonal Linkages}\label{sec:hinge}
 A generalization of linkages is a polygonal linkage where edges of given lengths are replaced with rigid polygons.
 Formally, a \textit{polygonal linkage} is an ordered pair $\left(\PP,\HH \right)$ where $\PP$ is a finite set of polygons and $\HH$ is a finite set of hinges; a \textit{hinge} $h\in \HH$ corresponds to two or more points on the boundary of distinct polygons in $\PP$.  
@@ -288,7 +306,7 @@ three polygons.  Note that hinge points correspond to two distinct polygons.(b) 
 two hinge points can correspond to the same boundary point of a polygon.}
 \label{fig:linkage-1}
 \end{figure}
-A \textit{realization of a polygonal linkage with fixed orientation} is a realization in which each polygon is translated and rotated copy of a polygon in $\PP$; at each hinge the incident polygons are in a given counter-clockwise order (refer to Figure \ref{fig:orderedLinkages}).
+A \textit{realization of a polygonal linkage with counter-clockwise orientation} is a realization in which each polygon is translated and rotated copy of a polygon in $\PP$; at each hinge the incident polygons are in a given counter-clockwise order (refer to Figure \ref{fig:orderedLinkages}).
 
 \begin{minipage}{\linewidth}
 \begin{center}
@@ -299,13 +317,13 @@ A \textit{realization of a polygonal linkage with fixed orientation} is a realiz
 
 Note that oriented polygonal linkage realizations do not allow for reflection transformations of polygons in $\PP$.
 
-These two realization types allow one to pose two different problems, the realizability problem for polygonal linkages and the realizability problem for polygonal linkages with fixed orientation:
+These two realization types allow one to pose two different problems, the realizability problem for polygonal linkages and the realizability problem for polygonal linkages with counter-clockwise orientation:
 \begin{prob}[Realizibility Problem for Polygonal Linkages]\label{problem:UnorderedPolygonal}
 
 Given a polygonal linkage, does it have a realization?
 \end{prob}
-\begin{prob}[ Realizibility Problem for Polygonal Linkages with Fixed Orientation]\label{problem:OrderedPolygonal}
-Given a polygonal linkage with fixed orientation, does it have a realization?
+\begin{prob}[ Realizibility Problem for Polygonal Linkages with Counter-Clockwise Orientation]\label{problem:OrderedPolygonal}
+Given a polygonal linkage with counter-clockwise orientation, does it have a realization?
 \end{prob}
 Not every polygonal linkage has a realization.
 \begin{figure}[!htbp]
@@ -325,8 +343,8 @@ The polygonal linkage of Figure \ref{fig:problem1} would overlap itself and does
 
 There are polygonal linkages that admit realizations but every realization requires rotation.
 Figure \ref{fig:collidingHingedPolygons} show the congruent copies of the polygons $A$, $B$, $C$, and $D$ in two different configurations, the far right is a realization, the middle fails to be a realization because of the interiors of $B$ and $D$ intersecting and the left showing the polygons in $\PP$.  
-In fact, this polygonal linkage cannot admit a realization with fixed orientation.
-Indeed this polygonal linkage cannot satisfy Problem \ref{problem:OrderedPolygonal}, suppose there is a realization with fixed orientation.  
+In fact, this polygonal linkage cannot admit a realization with counter-clockwise orientation.
+Indeed this polygonal linkage cannot satisfy Problem \ref{problem:OrderedPolygonal}, suppose there is a realization with counter-clockwise orientation.  
 Without loss of generality, fix the placement of $C$.
 $A$, $B$, and $D$ have unique placement around triangle $C$.  
 In this placement $C$ and $D$ overlap.
@@ -423,7 +441,7 @@ Koebe's theorem states that for every planar graph $G$, there exists a planar di
 This motivates the question of whether a planar graph $G$ is a contact graph of a disk arrangement with given radii.
 The radii can be given by a weight function.
 Let $\omega: V \mapsto \bbR^+$ be the \textit{weight function}.  
-$\omega$ assigns a weight to each vertex in $V$.  
+The mapping $\omega$ assigns a weight to each vertex in $V$.  
 Let $\Pi:V \mapsto \bbr^2$ be that planar mapping of vertices.
 
 For planar graphs with positive weighted vertices, we pose two realizability problems:
@@ -482,7 +500,7 @@ All unit disks are contained in a disk of radius $2i-1$ centered at the origin.
 The total area of the disks is at most $(2i-1)^2$.  
 A upper bound of the total area of the disk arrangement is the area of the bounding box of the disks.
 
-\begin{figure}[!htpb]\label{fig:circlePacking-2}
+\begin{figure}[!htpb]
 \begin{center}
   \begin{subfigure}[b]{0.24\textwidth}
 	  \includegraphics[width=\textwidth]{graphics/degree2arrangement.pdf}
@@ -505,7 +523,7 @@ A upper bound of the total area of the disk arrangement is the area of the bound
 	  \label{fig:circlePacking2-4}
   \end{subfigure}
 \end{center} 
-\caption{For $i=2,3,4,5$ the tree $T_i$ is a contact graph of unit disks.}
+\caption{For $i=2,3,4,5$ the tree $T_i$ is a contact graph of unit disks.}\label{fig:circlePacking-2}
 \end{figure}
 Figure \ref{fig:circlePacking-2} shows the first four non-trivial trees as a contact graph of unit disks.
 Every disk at level up to $i$ is contained in a disk of radius $2\cdot i - 1$ centered at the origin.
@@ -563,8 +581,10 @@ On the right, the figure shows the order where A and B are on opposing ends of t
 \section{Configuration Spaces}
 \begin{quote}
 Just as one can compose colors or forms, so one can compose motions.
-\end{quote}
+
 {\raggedright{}Alexander Calder, 1933}
+\end{quote}
+
 
 Recall Figure \ref{fig:HingedHaberdasher} illustrating the hinged dissection that formed a square and triangle and several drawings of the hinged dissections that simulate the motion of moving the polygons around the hinge points to form each shape.  The set of all drawings in that motion represents the \textit{configuration space} for that polygonal linkage.  In this section we will formally describe the configuration space for each object we've drawn thus far.
 
@@ -573,7 +593,7 @@ Recall that for a graph drawing we have an injective mapping $\Pi : V \mapsto \b
 The mapping $\Pi$ uniquely determines each edge.
 An edge $\curlybraces{u,v} \in E$, is mapped to a straight line segment, $c_{u,v}:[0,1]\mapsto \bbR^2$ such that $c_{u,v}(0) = \Pi(u)$ and $c_{u,v}(1) = \Pi(v)$, and does not pass through other vertices.   
 Let $\DD_G$ be the set of all drawings of the graph $G$.  
-By labelling the vertices of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a mapping from $\mu: \DD_G \mapsto \bbR^{2\vert V \vert}$ where the coordinates of $\Pi(v_k)$ are the $(2k)^\text{th}$ and $(2k+1)^\text{st}$ coordinates in $\bbR^{2\vert V \vert}$.  
+By labelling the vertices of $G$, e.g. $v_1, v_2, \ldots, v_k, \ldots, v_{n}$, we can create a mapping from $\mu: \DD_G \mapsto \bbR^{2\vert V \vert}$ where the coordinates of $\Pi(v_k)$ are the $(2k)^\text{th}$ and $(2k+1)^\text{st}$ coordinates in $\bbR^{2\vert V \vert}$.  
 $\mu(\Pi)$ is a configuration.
 The configuration space is the set of $\mu(\Pi)$ for all drawings $\Pi$.  
 
@@ -586,7 +606,7 @@ First let's define the space of realizations for a corresponding linkage, i.e.:
 $$P_{(G,\ell)} = \set{\Pi\in \DD_G }{\forall \{u,v\} \in E\text{, }\ell\left( \{u,v\} \right) = \left\vert \Pi(u) - \Pi(v) \right\vert}$$
 With respect to $P_{(G,\ell)}$, we can establish a configuration space that allows one to study problems of motion.  
 For each vertex of $G$, the drawing of the vertex lies in the plane, i.e. $\Pi(v) \in \bbR^2$.  
-By enumerating each vertex of $G$, e.g. $v_1, v_2, \dots, v_k, \dots, v_{n}$, we can create a mapping from $\mu: P_{(G,\ell)} \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{st}$ coordinates in $\bbR^{2\vert V \vert}$.  
+By enumerating each vertex of $G$, e.g. $v_1, v_2, \ldots, v_k, \ldots, v_{n}$, we can create a mapping from $\mu: P_{(G,\ell)} \mapsto \bbR^{2\vert V \vert}$ where the corresponding coordinates of $\Pi(v_k)$ are in the $(2k)^\text{th}$ and $(2k+1)^{st}$ coordinates in $\bbR^{2\vert V \vert}$.  
 The configuration space is $\mu\lr{P_{(G,\ell)}}$.  
 
 Using standard definitions from real analysis, we can begin to pose problems about linkages with respect to a corresponding configuration space.  
@@ -615,7 +635,6 @@ First consider the set of all realizations for the polygonal linkage $\left(\PP,
 $\mu:P \mapsto \bbR^{3m}$ where $m$ is the number of polygons in $\PP$ is the configuration space function and the configuration space is the set $\mu(P)$. 
 
  \subsection{Configuration Spaces of Disk Arrangements}
-rewrite where theta is not needed.  disks are symmetric and rotation does not help.
 The placement of a polygon is described by an isometry of Euclidean plane.
 An isometry is a composition of a translation, a rotation, and a possible reflection.
 As such, the isometry can be described as three parameters: $\lr{a,b,\theta}$ where $(a,b)$ is a translation vector; if $\theta \geq 0$, it describes a counter-clockwise rotation by $\theta$ and if $\theta < 0$, it described a reflection in the x-axis followed by a counter-clockwise rotation $\theta$.
@@ -659,7 +678,7 @@ Devising an efficient algorithm for a given problem is often a difficult task.
 The growth rate of running times are typically compared up to constant vectors.
 Let $f$ and $g$ be defined on some subset of $\bbR$.  
 $f(x) = O\left(g(x)\right)$ if and only if there exists a constant $M$ and $x_0$ such that $$\left\vert g(x)\right\vert \leq M \left\vert f(x) \right\vert$$
-for all $x \geq x_0$
+for all $x \geq x_0$.
 
 \subsection{Complexity Classes}
 Problems can be categorized by their running times.
@@ -675,7 +694,7 @@ This property is independent of whether it can be solved efficiently.
 $B$ is said to be an \textit{efficient certifier} for a problem $X$  if the following properties hold:
 \begin{itemize}
 \item[(i)] $B$ is a polynomial-time algorithm that takes two inputs $s$ and $t$.
-\item[(ii)] There exists a polynomial function $p$ such that for every string $s$, we have $s \in X$ if and only if there exists a string $t$ such that $\vert t \vert \leq p\left( \vert s \vert \right)$ and $B(s,t) = \text{'yes'}$.
+\item[(ii)] There exists a polynomial function $p$ such that for every string $s$, we have $s \in X$ if and only if there exists a string $t$ such that $\vert t \vert \leq p\left( \vert s \vert \right)$ and $B(s,t) = \text{`yes'}$.
 \end{itemize}
 
 The class of problems which have an efficient certifier is said to be the \textit{non-deterministic polynomial time} class, $\NP$. 
@@ -746,10 +765,10 @@ The algorithm would allow for an adversary to attack RSA \cite{menezes1996handbo
 
 
 \section{Satisfiability}\label{sec:logic}
-Let $x_1, \dots, x_n$ be Boolean variables.  A Boolean formula is a combination of conjunction, 
-disjunctions, and negations of the Boolean variables $x_1,  \dots, x_n$.   
+Let $x_1, \ldots, x_n$ be Boolean variables.  A Boolean formula is a combination of conjunction, 
+disjunctions, and negations of the Boolean variables $x_1,  \ldots, x_n$.   
 A \textit{clause} is a disjunction of distinct literals.  
-A \textit{literal} is a variable or a negated variable, $x_i$ or $\bar{x}_i$, for $i = 1,\dots,n$. 
+A \textit{literal} is a variable or a negated variable, $x_i$ or $\bar{x}_i$, for $i = 1,\ldots,n$. 
 A Boolean formula is \textit{satisfiable} if one can assign true or false value to each variable so that the formula is true. 
 It is known that every Boolean formula can be rewritten in \textit{conjunctive normal form} (CNF), a conjunction of clauses, via DeMorgan's law and distributive law.   
 Furthermore, it is also known that every Boolean formula can be written in CNF such that each clause has exactly three literals. 
@@ -795,25 +814,36 @@ true and a false literal?
 \end{prob}
 
 Problems \ref{prob:Satisfiability-1}---\ref{prob:Satisfiability-2} are known to be NP-hard and are often used to show other problems are NP-hard as well \cite{lichtenstein1982planar,karp1972reducibility}.
-%draw a picture for this one.
-
-
 
 \section{Contribution}
+% \abstract{
+% This thesis addresses the computational complexity of two geometric
+% problems, motivated by applications in protein folding. In both
+% problems, we are given $n$ geometric objects together with a local
+% combinatorics (neighborhood relations specified by a contact graph or a
+% hinge graph), and ask whether these objects have a nonoverlapping
+% placement in Euclidean plane that \emph{realizes} the given combinatorial
+% structure. In the first problem, the geometric objects are simple
+% polygons and their local structure is specified by flexible hinges
+% attached to the boundaries of two or more polygons. In the second
+% problem, the geometric objects are circular disks and their local
+% structure is characterized by pairs of disks that must be in contact. It
+% was previously known that the realizability of these geometric
+% structures is NP-hard when their contact graph contains cycles (e.g.,
+% tiling or disk packing). We prove that these problems remain NP-hard
+% when the contact graph is a treed. We give polynomial-time reductions
+% from known NP-hard problems: Planar 3-SAT (P3SAT) and Not-All-Equal
+% 3-SAT (NAE3SAT).
+% }
 The \emph{realizability} problem for a polygonal linkage asks whether a given polygonal linkage has 
-a realization (resp., orientated realization). For a weighted planar (resp., plane) graph,, it asks 
-whether the graph is
-the contact graph (resp., ordered contact graph) of some disk arrangement with specified radii. 
-These problems, in general, are known to be NP-hard. Specifically, it is NP-hard to decide whether a 
-given planar (or plane) graph can be embedded in $\RR^2$ with given edge lengths~\cite{CDD+10,EW90}. 
-Since an edge of given length can be modeled by a suitably long and skinny rhombus, the 
-realizability of polygonal linkages is also NP-hard. The recognition of the contact graphs of unit 
-disks in the plane (a.k.a. coin graphs) is NP-hard~\cite{BK98}, and so the realizability of weighted 
-graphs as contact graphs of disks is also NP-hard. However, previous reductions crucially rely on 
-configurations with high genus: the planar graphs in~\cite{CDD+10,EW90} and the coin graphs 
-in~\cite{BK98} have many cycles.
+a realization (resp., orientated realization). 
+For a weighted planar graph, it asks whether the graph is the ordered contact graph of some disk arrangement with specified radii. 
+These problems, in general, are known to be NP-hard. 
+Specifically, it is NP-hard to decide whether a given planar (or plane) graph can be embedded in $\RR^2$ with given edge lengths~\cite{CDD+10,EW90}. 
+Since an edge of given length can be modeled by a suitably long and skinny rhombus, the realizability of polygonal linkages is also NP-hard. The recognition of the contact graphs of unit disks in the plane (a.k.a. coin graphs) is NP-hard~\cite{BK98}, and so the realizability of weighted graphs as contact graphs of disks is also NP-hard.  
+However, previous reductions crucially rely on configurations with high genus: the planar graphs in~\cite{CDD+10,EW90} and the coin graphs in~\cite{BK98} have many cycles.
 
-In this thesis, we consider the above four realizability problems when the union of the polygons 
+In this thesis, we consider three realizability problems when the union of the polygons 
 (resp., disks) in the desired configuration is simply connected (i.e., contractible). That is, the 
 contact graph of the disks is a tree, or the ``hinge graph'' of the polygonal linkage is a tree (the 
 vertices in the \emph{hinge graph} are the polygons in $\PP$, and edges represent a hinge between 
@@ -821,28 +851,22 @@ two polygons). Our main result is that realizability remains NP-hard when restri
 connected structures.
  
 \begin{thm}\label{thm:hinge2}
-It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized.
+It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized.
 \end{thm}
 \begin{thm}\label{thm:hinge3}
-It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with fixed orientation.
+It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized with counter-clockwise orientation.
 \end{thm}
+
 Our proof for Theorem \ref{thm:hinge3} is a reduction from {\sc Planar-3-SAT} (P3SAT): decide whether a given Boolean formula in 3-CNF with a planar associated graph is satisfiable. 
 Our proof for Theorem \ref{thm:hinge2} is a reduction from {\sc Not-All-Equal-3-SAT} (NAE3SAT): decide whether a given Boolean formula in 3-CNF  is it satisfiable so that each clause contains a true and a false literal?
 
-
-\begin{thm}\label{thm:hinge}
-It is NP-Hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized 
-(both with and without orientation).
-\end{thm}
-
 \begin{thm}\label{thm:disk}
-It is NP-Hard to decide whether a given tree (resp., plane tree) with positive vertex weights
-is the contact graph (resp., contact graph) of a disk arrangements with specified radii.
+It is NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.
 \end{thm}
 
 The unoriented versions, where the underlying graph (hinge graph or contact graph) is a tree can 
 easily be handled with the logic engine method (Section \ref{sec:logic}). We prove 
-Theorem \ref{thm:hinge} for \emph{oriented} realizations with a reduction from {\sc Planar-3SAT} 
+Theorem \ref{thm:hinge3} for \emph{oriented} realizations with a reduction from {\sc Planar-3SAT} 
 (Section \ref{sec:hinge}), and then reduce the realizability of ordered contact trees to the 
 oriented realization of polygonal linkages by simulating polygons with disk arrangements
 (Chapter \ref{chp:disk}).
@@ -850,10 +874,9 @@ oriented realization of polygonal linkages by simulating polygons with disk arra
 \section{Related Work and Results}
 Previous research has established NP-hardness in several easy cases, but realizability for simply connected structures remained open. Polygonal linkages (or body-and-joint frameworks) are a generalization of classical linkages (bar-and-joint frameworks) in rigidity theory. A linkage is a graph $G=(V,E)$ with given edge lengths~\cite{CD-ch9}. A realization of a linkage is a (crossing-free) straight-line embedding of $G$ in the plane. Based on ideas developed by Bhatt and Cosmadakis~\cite{BC87}, who proved that the realizability of linkages is NP-complete on the integer grid, the \emph{logic engine} method~\cite{BET+99,EW96,FHW97,HK01} has become a standard tool for proving NP-hardness in graph drawing. The logic engine is a graph composed of rigid 2-connected components, where two possible realizations of a 2-connected component encode a binary variable.
 
-However, the logic engine method is \textbf{not} applicable to problems with fixed embedding or orientation, where the circular order of the neighbors of each vertex is part of the input. Cabello et al.~\cite{CDR07,EW90} used a significantly more elaborate reduction to show that the realizability of 3-connected linkages (where the orientation is unique by Whitney's theorem~\cite{W33}) is NP-hard. This problem is efficiently decidable, though, for near-triangulation~\cite{CDR07,BV96}.
+However, the logic engine method is \textit{not} applicable to problems with fixed embedding or orientation, where the circular order of the neighbors of each vertex is part of the input. Cabello et al.~\cite{CDR07,EW90} used a significantly more elaborate reduction to show that the realizability of 3-connected linkages (where the orientation is unique by Whitney's theorem~\cite{W33}) is NP-hard. This problem is efficiently decidable, though, for near-triangulation~\cite{CDR07,BV96}.
 
-Note that every \emph{tree} linkage can be realized in $\RR^2$ with almost collinear edges. According to the celebrated \emph{Carpenter's Rule Theorem}~\cite{CDR03,Str05}, every realization of a path (or a cycle) linkage can be continuously moved (without self-intersection) to any other realization. In other words, the realization space of such a linkage is always connected. However, there are trees of maximum degree 3 with as few as 8 edges whose realization space is disconnected~\cite{BCD+09}; and deciding whether the realization space of a tree linkage is connected is PSPACE-complete~\cite{AKR+04}.
-(Earlier, Reif~\cite{Rei79} showed that it is PSPACE-complete to decide whether a polygonal linkage can be moved from one realization to another among polygonal obstacles in $\RR^3$.)
+Note that every \emph{tree} linkage can be realized in $\RR^2$ with almost collinear edges. According to the celebrated \emph{Carpenter's Rule Theorem}~\cite{CDR03,Str05}, every realization of a path (or a cycle) linkage can be continuously moved (without self-intersection) to any other realization. In other words, the realization space of such a linkage is always connected. However, there are trees of maximum degree 3 with as few as 8 edges whose realization space is disconnected~\cite{BCD+09}; and deciding whether the realization space of a tree linkage is connected is PSPACE-complete~\cite{AKR+04} (Earlier, Reif~\cite{Rei79} showed that it is PSPACE-complete to decide whether a polygonal linkage can be moved from one realization to another among polygonal obstacles in $\RR^3$.).  
 Cheong et al.~\cite{CdG+07} consider the ``inverse'' problems of introducing the minimum number of point obstacles to reduce the configuration space of a polygonal linkage to a unique realization.
 
 Connelly et al.~\cite{CDD+10} showed that the Carpenter's Rule Theorem generalizes to certain polygonal linkages obtained by replacing the edges of a path linkage with special polygons (called \emph{slender adornments}). Our Theorem~\ref{thm:hinge2} indicates that if we are allowed to replace the edges of a linkage with arbitrary convex polygons, then deciding whether the realization space is empty or not is already NP-hard.
@@ -894,7 +917,7 @@ The armatures each have length $2n$ units, the shaft has length $m$ units, and t
   Each armature corresponds to a variable in $\Phi$. There are two literals for each variable, i.e. the literal $x_j$ and the negated literal 
  $\bar{x}_j$.    
  To describe the flagging arrangement, first partition each armature into $2m$ units, vertical line segments. Label the segments on the $j^\text{th}$ armature starting from the shaft by $\ell_{j,1},\ldots,\ell_{j,n}$ on one side and  $\bar{\ell}_{j,1},\ldots,\bar{\ell}_{j,n}$ on the other side of the shaft.  
- Attach regular triangles, called \textit{flags}, to some of these segments. 
+ Attach regular triangles called \textit{flags} to some of these segments. 
  Each segment is either flagged one or zero flags, i.e. \textit{flagged} or \textit{unflagged}. If the literal $x_j$ is found in clause $C_k$, then $\ell_{j,k}$ is unflagged.
    If the literal $\bar{x}_j$ is found in clause $C_k$, then $\bar{l}_{j,k}$ is unflagged.
 
@@ -928,7 +951,7 @@ quantity and coordinates defined as polynomials in $m$ and $n$.
 \end{table}
 
 \subsection{The mechanics of the logic engine}
-In any of the following cases, a \textit{collision} of flags occurs:
+In any of the following cases, a \textit{collision} of flags occurs if:
 \begin{enumerate}
 \item flags in the same row on adjacent armatures point toward each other.
 \item a flag from the rightmost armature $A_n$ points towards the outer rigid frame.
@@ -1020,7 +1043,7 @@ false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
 Deciding whether a logic engine is collision-free configurable is NP-Hard.
 \end{thm}
 \begin{proof}
-In table \ref{LogicEngineV3PolynomialTable}, we defined the components of the logic engine in terms of polynomials in $m$ and $n$. 
+In Table \ref{LogicEngineV3PolynomialTable}, we defined the components of the logic engine in terms of polynomials in $m$ and $n$. 
 If there were a polynomial time algorithm that decides whether a given logic engine is collision-free configurable, then by Theorem \ref{thm:LogicEngineV3-1} we would have a polynomial time algorithm to decide whether an instance of the NAE3SAT is a 'yes' instance.  
 Since NAE3SAT is NP-Hard \cite{NAE3SATisNPhard}, there is no such algorithm unless $P = NP$.
 \end{proof}\section{Logic Engines Represented as Polygonal Linkages}   
@@ -1111,22 +1134,22 @@ corresponding to negated literals reside below the shaft and flags corresponding
 literals reside above the shaft.  All together we have that every clause has a true literal and a 
 false literal.  Thus, we have a 'yes' instance of the $NAE3SAT$.
 \end{proof}
-\chapter{Realizability of Polygonal Linkages with Fixed Orientation\label{chapter:polygonalLinkage}} 
+\chapter{Realizability of Polygonal Linkages with Counter-Clockwise Orientation\label{chapter:polygonalLinkage}} 
 
 We begin the chapter with describing several gadgets that translate the associated graph $A(\Phi)$ of a P3SAT Boolean formula into a hexagonal polygonal linkage.  
 These gadgets will be used together to form a special hexagonal linkage that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.  
 Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, 
 Together the gadgets will form what is called the auxiliary construction.
-A hexagonal polygonal linkage and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge2}: \textit{it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.}
+A hexagonal polygonal linkage and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge3}: it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized with counter-clockwise orientation.
 
 Our proof is a reduction from P3SAT.
-Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$ of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
+Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$ of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with counter-clockwise orientation. 
 
 
 We construct a polygonal linkage in two main steps: first, we construct an auxiliary structure where some of the polygons have fixed position in the plane (called \emph{obstacles}), while other polygons are flexible, and each flexible polygon is hinged to an obstacle. 
 Second, we modify the auxiliary construction into a polygonal linkage by allowing the obstacles to move freely, and by adding new polygons and hinges as well as an exterior \emph{frame} that holds the obstacle polygons in place.
 All polygons in our constructions are regular hexagons or long, skinny rhombi.
-In Chapter \ref{chp:disk} we can ``simulate'' these shapes with disk arrangements to show related results.
+In Chapter \ref{chp:disk} we ``simulate'' these shapes with disk arrangements to show related results.
 
 Storer, Tamassia, and Tollis \cite{storer1984minimal,tamassia1987efficient} showed that if $G=(V,E)$ is planar where $\vlr{V}=n$ and $\vlr{E} = m$, it can be embedded into a $\vert V \vert \times \vert V \vert$ integer grid where vertices are grid points and an edge are a sequence of alternating horizontal and vertical line segments and bounding total number of bends in an embedding by a bend polynomial $S(n,m)=2.4 \vert V\vert + 4$.  
 Now suppose we're given a 3-CNF Boolean formula, $\Phi$, with $i$ variables and $j$ clauses, the associated graph $A(\Phi)$ has $i+j$ vertices.  
@@ -1317,7 +1340,7 @@ If unit hexagons enter the junction from all three corridors (i.e., all three li
 \begin{minipage}{\linewidth}
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{graphics/fig-clause-hex}
-\captionof{figure}{(a-b) A clause gadget $(x_i\vee x_j\vee x_k)$ i\
+\captionof{figure}{(a-b) A clause gadget $(x_i\vee x_j\vee x_k)$ is
     realizable when at least one of the literals is {\sc True}.
     (c) The clause gadget cannot be realized when all three literals are {\sc False}.}\label{fig:clause}
 \end{center}
@@ -1334,7 +1357,7 @@ Right: the schematic layout of the variable, clause, and transmitter gadgets in 
 \end{minipage}
 
 In the associated planar 3-SAT graph $A(\Phi)$, every variable vertex has an cyclic order of edges.
-Suppose we have a variable vertex $x_i$ with counter-clockwise cyclic order of edges $\left(\left\lbrace x_i,C_1\right\rbrace\right.$, $\left\lbrace x_i,C_2\right\rbrace$, $\dots$, $\left.\left\lbrace x_i,C_k\right\rbrace\right) $.  
+Suppose we have a variable vertex $x_i$ with counter-clockwise cyclic order of edges $\left(\left\lbrace x_i,C_1\right\rbrace\right.$, $\left\lbrace x_i,C_2\right\rbrace$, $\ldots$, $\left.\left\lbrace x_i,C_k\right\rbrace\right) $.  
 Assign distinct junctions of the variable cycle of $x_i$ to the edges $\left\lbrace x_i,C_j\right\rbrace$ in the same cyclic order (refer to Figure \ref{fig:assoc2} for an example).
 
 \begin{minipage}{\linewidth}
@@ -1379,7 +1402,9 @@ Throughout this section we assume that the polygonal linkage is realizable, i.e.
 The first observations about the functionality of the auxiliary construction are about the flags.  
 For $t$ flags in a corridor, the following holds:
 \begin{observation}\label{obs:corridor}
+
 \begin{itemize}
+
 \item[(1)] If the leftmost flag is in state R, then all $t$ flags are in state R, and the rightmost flag enters the junction on the right of the corridor.
 \item[(2)] Similarly, if the rightmost flag is in state L, then all $t$ flags are in state L, and the leftmost flag enters the junction on the left of the corridor.
 \end{itemize}
@@ -1429,7 +1454,7 @@ Then we have the following lemma:
 \begin{lem}\label{lem:aux-2}
 If variable $x_i = T$, then all flags in the upper half of the variable gadget are in state $R$ and all flags in the lower half of the variable are in state $L$; if variable $x_i = L$, then all flags in the upper half of the variable gadget are in state $L$ and all flags in the lower half of the variable gadget are in state $R$.    
 \end{lem}
-This lemma servers to show that the truth or falsity of a variable is consistent throughout the gadget.
+This lemma serves to show that the truth or falsity of a variable is consistent throughout the gadget.
 \begin{proof}
 Suppose we have two adjacent corridors $k_i$ and $k_{i+1}$ sharing junction $J_i$ and without loss of generality, $k_i$ is the left most corridor.
 Observation \ref{obs:junction} implies that there can only be one hexagon entering $J_i$ from either $k_i$ or $k_{i+1}$. If the hexagon that enters $J_i$ is from corridor $k_i$, then this hexagon has state $R$ and all flags in corridor $k_i$ are in state $R$ by Observation \ref{obs:corridor}. 
@@ -1438,7 +1463,7 @@ All flags in corridor $k_{i+1}$ are in state $R$ by Observation \ref{obs:corrido
 
 The argument is similar if the hexagon entering $J_i$ is from corridor $k_{i+1}$ and all flags in both corridors $k_i$ and $k_{i+1}$ have state $L$.
 
-Because variable gadgets form a simple cycle of corridors and junctions $\lr{k_1, J_1, k_2, J_2, \dots, k_n, J_n}$ and the argument above, all flags about a variable gadget have the same state.
+Because variable gadgets form a simple cycle of corridors and junctions $\lr{k_1, J_1, k_2, J_2, \ldots, k_n, J_n}$ and the argument above, all flags about a variable gadget have the same state.
 \end{proof}
 
 Suppose there is an edge $\left\lbrace x_i, C_j \right\rbrace$ in the graph $A(\Phi)$:
@@ -1521,7 +1546,7 @@ If every clause has some true literal, then the corresponding 3-CNF Boolean form
 \end{proof}
 \section{Modified Auxiliary Construction.}
 
-Recall that in Theorem \ref{thm:hinge2} we want to show that it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with counter-clockwise orientation.
+Recall that in Theorem \ref{thm:hinge3} we want to show that it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with counter-clockwise orientation.
 We modify the auxiliary construction allowing all polygons to move freely, and by adding extra polygons and hinges so that the hinge graph becomes a \emph{tree}, and the size of the construction remains polynomial. 
 The auxiliary construction is based on a polynomial sized area of the hexagonal grid, using obstacle hexagons of side lengths $N(n,m)$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. 
 We modify it in five steps as follows:
@@ -1961,7 +1986,7 @@ Each clause is realizable and so for every clause, there exists one true literal
 If every clause has some true literal, then the corresponding 3-CNF Boolean formula is satisfiable.
 \end{proof}
 
-At the beginning of this chapter, we stated Theorem \ref{thm:hinge2}: It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with counter-clockwise orientation.  
+At the beginning of this chapter, we stated Theorem \ref{thm:hinge3}: It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with counter-clockwise orientation.  
 We know the P3SAT is NP-hard \cite{lichtenstein1982planar} and by Lemma \ref{lem:lePieceDuResistance}, we can conclude that deciding whether modified auxiliary construction (a tree) of a given P3SAT Boolean formula is NP-Hard.
 
 \chapter{Realizability Problems for Weighted Trees}\label{chp:disk}
@@ -1989,7 +2014,7 @@ From this, it is possible to calculate the Hausdorff distance between $X$ and $Y
 \end{minipage}
 
 \paragraph{$\epsilon$-approximation}
-The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most epsilon.  
+The weighted graph, $G$, is an \textit{$\epsilon$-approximation} of a polygon $P$ if the Hausdorff distance between every realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at most $\epsilon$.  
 A weighted graph $G$ is said to be a \textit{$\BigOh{f(x)}$-approximation} of a polygon P if there is a positive constant $M$ such that for all sufficiently large values of $x$ the Hausdorff distance between every realization such realization of $G$ as a contact graph of disks and a congruent copy of $P$ is at $M \cdot \vert f(x)\vert$. 
 A weighted graph $G$ is said to be a \textit{stable} if it has the property that for every two such realizations of $G$, the distance between the centers of the corresponding disks is at most $\epsilon$ after a suitable rigid transformation.
 
@@ -2022,7 +2047,7 @@ In this section we describe a particular family of unit weight trees and corresp
 The disks of a snowflake have weight $r$.  
 For $i \in \bbN$, the construction of the snowflake tree, $T_i$, is as follows:
 \begin{itemize}
-\item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\dots$, $p_6$.  
+\item Let $v_0$ be a vertex that has six paths attached to it: $p_1$, $p_2$, $\ldots$, $p_6$.  
 Each path has $i$ vertices. 
 These paths are called \textit{stems}.
 \item In botany, the stalk that attaches to a stem of a plant is called a \textit{petiole}; petioles usually have leaves attached to their ends.  
@@ -2077,16 +2102,16 @@ For $S_i$, there are $i$ vertices on each path.
 
 We define the six paths from origin as follows:      
 \begin{eqnarray*}
-p_1 &=& \set{r\cdot\lr{1,0}}{r = 1,2,\dots, i}\\
-p_2 &=& \set{r\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{r = 1,2,\dots, i}\\
-p_3 &=& \set{r\lr{-\frac{1}{2},\frac{\sqrt{3}}{2}}}{r = 1,2,\dots, i}\\
-p_4 &=& \set{r \cdot \lr{-1,0}}{r = 1,2,\dots, i}\\
-p_5 &=& \set{r \cdot \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}}{r = 1,2,\dots, i}\\
-p_6 &=& \set{r \cdot \lr{\frac{1}{2}, -\frac{\sqrt{3}}{2}}}{r = 1,2,\dots, i}
+p_1 &=& \set{r\cdot\lr{1,0}}{r = 1,2,\ldots, i}\\
+p_2 &=& \set{r\cdot\lr{\frac{1}{2},\frac{\sqrt{3}}{2}}}{r = 1,2,\ldots, i}\\
+p_3 &=& \set{r\lr{-\frac{1}{2},\frac{\sqrt{3}}{2}}}{r = 1,2,\ldots, i}\\
+p_4 &=& \set{r \cdot \lr{-1,0}}{r = 1,2,\ldots, i}\\
+p_5 &=& \set{r \cdot \lr{-\frac{1}{2},-\frac{\sqrt{3}}{2}}}{r = 1,2,\ldots, i}\\
+p_6 &=& \set{r \cdot \lr{\frac{1}{2}, -\frac{\sqrt{3}}{2}}}{r = 1,2,\ldots, i}
 \end{eqnarray*}
 For $S_i$ there exists $i$ vertices on each path.  We shall denote the $\ith$ vertex on the $\jth$ path as $v_{j,i}$.  
 For each path defined above, the paths are defined as a set of vectors, $\vec{v} = r \cdot \vec{p}$  for some $r \in \bbN$ and $\vec{p} \in \bbR^2$.  
-By setting $a = 1,2,\dots, i$, we obtain points that are contained in $V$.  
+By setting $a = 1,2,\ldots, i$, we obtain points that are contained in $V$.  
 For $j = 1$, $3$, $5$ and $\ell = 3 b \leq i$ where $b \in \bbN$,  there exists two paths attached to each vertex $v_{j,\ell}$.  
 % We borrow the term \textit{petiole} from botany to describe the two paths attached to $v_{j,l}$.  
 % In botany, the stalk that attaches to a stem of a plant is called a petiole; petioles usually have leaves attached to their ends.  
@@ -2351,18 +2376,19 @@ H(h,\sigma_i) &\leq&H(h, S_i) + H(S_i, \sigma_i)\\
 &=& 3 \frac{\epsilon}{10} + \frac{\zeta(6i-29)}{5 \sqrt{3}}\\
 &\leq&\frac{3\epsilon}{10} + \frac{5\epsilon  \sqrt{3}}{2(6i-29)}\frac{\lr{6i-29}}{5 \sqrt{3}}\\
 &\leq&\frac{8\epsilon}{10}\\
-&\leq&\epsilon
+&<&\epsilon
 \end{array}
 $$
 
 We now show that the number of nodes in $T$ is polynomial in $\epsilon$ and $x$.  
 With $i = \ceil{\frac{10x}{\epsilon}}$, the longest path of nodes on a tree from $v_0$ is to the last leaf of any petiole.  This path contains $i$ edges.  The number of nodes in the diameter and including the last leaf of a petiole of $S_i$ corresponding to $T$ is $2(i+1)$.  By squaring the node count of the diameter, we have a generous upper bound of nodes in $T$, $4(i+1)^2$.  This upper bound is a polynomial in $x$ and $\epsilon$ since $i$ is defined as a polynomial in $x$ and $\epsilon$.
-
 \end{proof}
 
-\paragraph{Proof of Theorem \ref{thm:disk}}
+\begin{proof}[Proof of Theorem \ref{thm:disk}]
+We constructed a hinged polygonal linkage that is realizable if and only if the P3SAT Boolean formula is satisbiable.  
+The polygons were regular hexagons, a scaled rhombus, and a tiny rectangle (see Figures \ref{fig:VariableJunctionTransmitterSelection.pdf}, \ref{fig:someRangeSkinny.pdf}, and \ref{fig:clause} respectively).  
+The polygons can be approximated: hexagons with snowflakes, a hinge as a single disk, the rhombus and rectangle can both be approximated by a chain of disks.
 
-\begin{proof}
 Given an instance of a P3SAT Boolean formula, we can use the snowflake reduction of the modified auxiliary construction.  
 Using Lemma \ref{lem:ch4IntroLemma}, we can approximate any hexagon of a given side length with a tree $T$.  
 In the modified auxiliary construction in Chapter 3, we had four types of hexagons with different side lengths and the skinny rhombus.  
@@ -2370,7 +2396,7 @@ We can scale the weights (radii) of the corresponding ordered weighted disk cont
 The rhombus can be approximated by a chain of disks.  
 The functionality of the gadgets in the modified auxiliary construction remain the same.
 
-By approximating the polygons in the modified auxiliary construction with the snowflake, we show that Theorem \ref{thm:disk} is a corollary by applying Lemma \ref{lem:ch4IntroLemma}.  
+By approximating the polygons in the modified auxiliary construction with the snowflake, Theorem \ref{thm:disk} is a corollary of Theorem \ref{thm:hinge2} by applying Lemma \ref{lem:ch4IntroLemma}.  For any instance of a P3SAT Boolean formula, there exists a weighted tree with prescribed radii that is realizable if and only if the formula is realizable.
 \end{proof}
 
 \bibliographystyle{plain}

@@ -125,7 +125,7 @@ Boris Klemz, Martin N{\"o}llenburg, and Roman Prutkin.
   Visualization}, pages 433--446. Springer, 2015.
 
 \bibitem{koebe1936kontaktprobleme}
-Paul Koebe.
+P.~Koebe.
 \newblock {\em Kontaktprobleme der konformen Abbildung}.
 \newblock Hirzel, 1936.
 
@@ -135,7 +135,7 @@ Casimir Kuratowski.
 \newblock {\em Fundamenta mathematicae}, 1(15):271--283, 1930.
 
 \bibitem{lenstra1993number}
-Arjen~K Lenstra, Hendrik~W Lenstra~Jr, Mark~S Manasse, and John~M Pollard.
+A.~K Lenstra, H.~W Lenstra~Jr, M.~S Manasse, and J.~M Pollard.
 \newblock {\em The number field sieve}.
 \newblock Springer, 1993.
 
@@ -145,7 +145,7 @@ David Lichtenstein.
 \newblock {\em SIAM journal on computing}, 11(2):329--343, 1982.
 
 \bibitem{menezes1996handbook}
-Alfred~J Menezes, Paul~C Van~Oorschot, and Scott~A Vanstone.
+A.~J. Menezes, P.~Van~Oorschot, and S.~Vanstone.
 \newblock {\em Handbook of applied cryptography}.
 \newblock CRC press, 1996.
 
