@@ -1,21 +1,69 @@
 \documentclass{beamer}
 \usetheme{Madrid}
 \usecolortheme{crane}
-% default
-% albatross
-% beaver
-% beetle
-% crane
-% dolphin
-% dove
-% fly
-% lily
-% orchid
-% rose
-% seagull
-% seahorse
-% whale
-% wolverine
+\usepackage{animate}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{complexity}
+\usepackage{caption}
+% \usepackage{subcaption}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{array}   % for \newcolumntype macro
+% \usepackage{refcheck}
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
+\newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
+% %%%theoerms, etc%%%%
+% \theoremstyle{plain}% default
+% \newtheorem{thm}{Theorem}
+% \newtheorem{prop}{Proposition}
+% \newtheorem{pf}{Proof}
+% \newtheorem{lem}{Lemma}
+% \theoremstyle{definition}
+% \newtheorem{definition}{Definition}
+% \newtheorem{example}{Example}
+% \theoremstyle{remark}
+% \newtheorem{rmk}{Remark}
+% \newtheorem{case}{Case}
+% \newtheorem{prob}{Problem}
+% \newtheorem{observation}{Observation}
+
+%%%%%%%%custom commands
+\newcommand{\ith}{i^\text{th}}
+\newcommand{\jth}{j^\text{th}}
+\newcommand{\kth}{k^\text{th}}
+\newcommand{\NN}{\mathbb{N}} %  set of natural numbers
+\newcommand{\ZZ}{\mathbb{Z}} %  set of integer number
+\newcommand{\RR}{\mathbb{R}} %  set of real numbers
+\newcommand{\SH}{\mathbb{S}} %  set of unit vectors
+\newcommand{\HH}{{\mathcal{H}}} %  Calligraphic H
+\renewcommand{\PP}{{\mathcal{P}}} %  Calligraphic P
+\newcommand{\DD}{{\mathcal{D}}} %  Calligraphic D
+\newcommand{\QQ}{{\mathcal{Q}}} %  Calligraphic D
+\newcommand{\FF}{{\mathcal{F}}} %  Calligraphic D
+\newcommand{\bbH}{{\mathbb{H}}}
+\newcommand{\bbR}{{\mathbb{R}}}
+\newcommand{\bbP}{{\mathbb{P}}}
+\newcommand{\bbZ}{{\mathbb{Z}}}
+\newcommand{\bbC}{{\mathbb{C}}}
+\newcommand{\bbQ}{{\mathbb{Q}}}
+\newcommand{\bbA}{{\mathbb{A}}}
+\newcommand{\bbF}{{\mathbb{F}}}
+\newcommand{\bbh}{{\mathbb{H}}}
+\newcommand{\bbr}{{\mathbb{R}}}
+\newcommand{\bbp}{{\mathbb{P}}}
+\newcommand{\bbz}{{\mathbb{Z}}}
+\newcommand{\bbc}{{\mathbb{C}}}
+\newcommand{\bbq}{{\mathbb{Q}}}
+\newcommand{\bba}{{\mathbb{A}}}
+\newcommand{\bbf}{{\mathbb{F}}}
+\newcommand{\bbn}{{\mathbb{N}}}
+\newcommand{\bbN}{{\mathbb{N}}}
+
 \title[Protein Folding]
 {Protein Folding}
 \subtitle{Planar Configuration Spaces of Disk Arrangements and
@@ -44,16 +92,39 @@ Hinged Polygons}
     \begin{columns}[c] % the "c" option specifies center vertical alignment
     \column{.5\textwidth} % column designated by a command
      \begin{itemize}
-     	\item Proteins in an organism fold into a specific geometric pattern (sometimes referred as its \textit{native state})
-     	\item  Geometric patterns can determine a protein's function and behavior. 
+     	\item[*] Proteins in an organism fold into a specific geometric pattern (sometimes referred as its \textit{native state}).
+     	\item[*]  Geometric patterns can determine a protein's function and behavior. 
      \end{itemize}
     \column{.5\textwidth}
-     Contents split \\ into two lines
+	     \begin{minipage}{\linewidth}
+			\begin{center}
+			\includegraphics[width=.66\columnwidth]{graphics/5FH3.png}
+			\captionof{figure}{
+The structure of rat cytosolic PEPCK variant E89A in complex with oxalic acid and GTP \cite{Rats}.}
+			\end{center}
+		\end{minipage}
     \end{columns}
   \end{frame}
+
   \begin{frame}
     \frametitle{Hinged Dissections}
-    %Content goes here
+     \begin{columns}[c] 
+    \column{.5\textwidth}
+     \begin{itemize}
+     	\item[*] asdf
+     	\item[*] asdfasd
+     \end{itemize}
+    \column{.5\textwidth}
+    \begin{minipage}{\linewidth}
+			\begin{center}
+			% \transduration<0-107>{0}
+			\animategraphics[loop,controls,width=\linewidth]{12}{graphics/hingedanimation-}{0}{107}
+			% \multiinclude[<+->][format=png, graphics={width=.66\textwidth}]{graphics/hingedanimation}
+			% \includegraphics[width=.66\columnwidth]{graphics/hingedanimation}
+			\captionof{figure}{blah}
+			\end{center}
+		\end{minipage}
+    \end{columns}
   \end{frame}
 \section{Problem}
 % \begin{thm}\label{thm:hinge2}
@@ -69,8 +140,24 @@ Hinged Polygons}
 % \end{thm}
    \begin{frame}
     \frametitle{Problem}
-    %Content goes here
-  \end{frame}
+%     This thesis addresses the computational complexity of two geometric
+% problems, motivated by applications in protein folding. In both
+% problems, we are given $n$ geometric objects together with a local
+% combinatorics (neighborhood relations specified by a contact graph or a
+% hinge graph), and ask whether these objects have a nonoverlapping
+% placement in Euclidean plane that \emph{realizes} the given combinatorial
+% structure. In the first problem, the geometric objects are simple
+% polygons and their local structure is specified by flexible hinges
+% attached to the boundaries of two or more polygons. In the second
+% problem, the geometric objects are circular disks and their local
+% structure is characterized by pairs of disks that must be in contact. It
+% was previously known that the realizability of these geometric
+% structures is NP-hard when their contact graph contains cycles (e.g.,
+% tiling or disk packing). We prove that these problems remain NP-hard
+% when the contact graph is a tree. We give polynomial-time reductions
+% from known NP-hard problems: Planar 3-SAT (P3SAT) and Not-All-Equal
+% 3-SAT (NAE3SAT).
+    \end{frame}
   \begin{frame}
     \frametitle{Problem 1}
     %Content goes here
