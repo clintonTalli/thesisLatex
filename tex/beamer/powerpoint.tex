@@ -19,7 +19,7 @@
 \newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
 % %%%theoerms, etc%%%%
 % \theoremstyle{plain}% default
-% \newtheorem{thm}{Theorem}
+\newtheorem{thm}{Theorem}
 % \newtheorem{prop}{Proposition}
 % \newtheorem{pf}{Proof}
 % \newtheorem{lem}{Lemma}
@@ -157,29 +157,85 @@ The structure of rat cytosolic PEPCK variant E89A in complex with oxalic acid an
 % when the contact graph is a tree. We give polynomial-time reductions
 % from known NP-hard problems: Planar 3-SAT (P3SAT) and Not-All-Equal
 % 3-SAT (NAE3SAT).
+Consider three realizability problems when the union of the polygons 
+(resp., disks) in the desired configuration is simply connected (i.e., contractible). That is, the 
+contact graph of the disks is a tree, or the ``hinge graph'' of the polygonal linkage is a tree (the 
+vertices in the \emph{hinge graph} are the polygons in $\PP$, and edges represent a hinge between 
+two polygons). Our main result is that realizability remains NP-hard when restricted to simply 
+connected structures.
     \end{frame}
+
   \begin{frame}
     \frametitle{Problem 1}
-    %Content goes here
+    \begin{thm}\label{thm:hinge2}
+	It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized.
+	\end{thm}
   \end{frame}
+
   \begin{frame}
     \frametitle{Problem 2}
     \framesubtitle{A bit more information about this}
-    %More content goes here
+    \begin{thm}\label{thm:hinge3}
+It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized with counter-clockwise orientation.
+\end{thm}
   \end{frame}
   \begin{frame}
     \frametitle{Problem 3}
     \framesubtitle{A bit more information about this}
-    %More content goes here
+    \begin{thm}\label{thm:disk}
+It is NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.
+\end{thm}
+
+
+
   \end{frame}
 \section{Preliminary Information}
   \begin{frame}
     \frametitle{Graphs and Drawings}
-    %Content goes here
+     \begin{columns}[c] 
+    \column{.5\textwidth}
+     \begin{table}[!htbp]
+	\begin{center}
+	\begin{tabular}{|C|C|C|}\hline
+	\text{Graph}&\text{Vertices}&\text{Edges}\\\hline
+	G_1&\left\lbrace a,b,c,d,e \right\rbrace & \left\lbrace (a,b),(b,c),(c,d),(d,e),(e,a) \right\rbrace 
+	\\\hline
+	G_2&\left\lbrace 1,2,3,4,5 \right\rbrace & \left\lbrace (1,2),(2,3),(3,4),(4,5),(5,1) \right\rbrace 
+	\\\hline
+	\end{tabular} 
+	\caption{Two graphs that are isomorphic with the alphabetical isomorphism $f(a)=1$, $f(b)=2$, $f(c) 
+	= 3$, $f(d)=4$, $f(e)=5$.}\label{table:ch1-graph-1}
+	\end{center} 
+	\end{table}
+    \column{.5\textwidth}
+    \begin{figure}[!htbp]
+	\begin{center}
+	\includegraphics[scale=1]{graphics/graphIsomorphismExample.pdf}
+	\end{center} 
+	\caption{This figure depicts the graph isomorphism shown in Table \ref{table:ch1-graph-1} between $V_1$ and $V_2$.}
+	\label{fig:configuration-3}
+	\end{figure}
+    \end{columns}
   \end{frame}
+
   \begin{frame}
     \frametitle{Boolean Formulas}
-    %Content goes here
+    
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{.5\textwidth} % column designated by a command
+     \begin{itemize}
+     	\item[*] Figure \ref{fig:assoc} is associated to a family of Boolean formulas.  
+		One such associated Boolean formula is:
+		$$(x_1 \lor x_3 \lor \lnot x_5) \land (\lnot x_1 \lor \lnot x_2 \lor x_3) \land (\lnot x_3 \lor x_4 \lor \lnot x_5) \land (x_2 \lor x_4 \lor \lnot x_5) \land ( \lnot x_1 \lor x_2 \lor x_5)$$
+	 \end{itemize}
+		    \column{.5\textwidth}
+			     \begin{figure}[htbp]
+			\centering
+			\includegraphics[width=0.7\columnwidth]{graphics/fig-assoc-hex}
+			\caption{Left: the associated graph $A(\Phi)$ for a Boolean formula $\Phi$.
+		Right: the schematic layout of the variable, clause, and transmitter gadgets in the auxiliary construction showing in Section \ref{sec:auxiliaryConstruction}}
+			\label{fig:assoc}
+		\end{figure} 
   \end{frame}
   \begin{frame}
     \frametitle{Modified Auxialry Construction}
@@ -194,22 +250,82 @@ The structure of rat cytosolic PEPCK variant E89A in complex with oxalic acid an
   \begin{frame}
     \frametitle{Transmission Gadget}
     \framesubtitle{A bit more information about this}
-    %More content goes here
+      Protein folding is the process in which a protein chain acquires its 3-dimensional structure.
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{.5\textwidth} % column designated by a command
+     \begin{itemize}
+     	\item[*] Proteins in an organism fold into a specific geometric pattern (sometimes referred as its \textit{native state}).
+     	\item[*]  Geometric patterns can determine a protein's function and behavior. 
+     \end{itemize}
+    \column{.5\textwidth}
+	     \begin{minipage}{\linewidth}
+		\begin{center}
+		\includegraphics[width=0.80\columnwidth]{graphics/VariableJunctionTransmitterSelection2.pdf}
+		\captionof{figure}{These two figures depict an example of placing a transmitter gadget corresponding to edge $\left\lbrace x_i, C_j \right\rbrace$.}
+		\label{fig:VariableJunctionTransmitterSelection.pdf}
+		\end{center}
+		\end{minipage} 
+    \end{columns}
   \end{frame}
   \begin{frame}
     \frametitle{Clause Gadget}
     \framesubtitle{A bit more information about this}
-    %More content goes here
+      Protein folding is the process in which a protein chain acquires its 3-dimensional structure.
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{.5\textwidth} % column designated by a command
+     \begin{itemize}
+     	\item[*] Proteins in an organism fold into a specific geometric pattern (sometimes referred as its \textit{native state}).
+     	\item[*]  Geometric patterns can determine a protein's function and behavior. 
+     \end{itemize}
+    \column{.5\textwidth}
+	     \begin{minipage}{\linewidth}
+			\begin{center}
+			\includegraphics[width=0.7\columnwidth]{graphics/fig-clause-hex}
+			\captionof{figure}{(a-b) A clause gadget $(x_i\vee x_j\vee x_k)$ is
+			    realizable when at least one of the literals is {\sc True}.
+			    (c) The clause gadget cannot be realized when all three literals are {\sc False}.}\label{fig:clause}
+			\end{center}
+		\end{minipage}
+    \end{columns}
   \end{frame}
   \begin{frame}
     \frametitle{Variable Gadget}
     \framesubtitle{A bit more information about this}
-    %More content goes here
+      Protein folding is the process in which a protein chain acquires its 3-dimensional structure.
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{.5\textwidth} % column designated by a command
+     \begin{itemize}
+     	\item[*] Proteins in an organism fold into a specific geometric pattern (sometimes referred as its \textit{native state}).
+     	\item[*]  Geometric patterns can determine a protein's function and behavior. 
+     \end{itemize}
+    \column{.5\textwidth}
+	     \begin{minipage}{\linewidth}
+		\begin{center}
+		\includegraphics[width=0.45\columnwidth]{graphics/VariableGadgetSmall.pdf}
+		\captionof{figure}{This depicts a variable gadget with $x_1 = T$.  Carefully note that the flags around $x_1$ are in the state $R$. Corridors adjacent to two obstacles of a variable in the honeycomb do not have $t$ flags; these corridors simply have the flags at the junctions.}\label{fig:VariableGadgetSmall.pdf}
+		\end{center}
+		\end{minipage}
+    \end{columns}
   \end{frame}
   \begin{frame}
     \frametitle{Other Gadgets}
     \framesubtitle{A bit more information about this}
-    %More content goes here
+      Protein folding is the process in which a protein chain acquires its 3-dimensional structure.
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{.5\textwidth} % column designated by a command
+     \begin{itemize}
+     	\item[*] Proteins in an organism fold into a specific geometric pattern (sometimes referred as its \textit{native state}).
+     	\item[*]  Geometric patterns can determine a protein's function and behavior. 
+     \end{itemize}
+    \column{.5\textwidth}
+	     \begin{minipage}{\linewidth}
+			\begin{center}
+			\includegraphics[width=.66\columnwidth]{graphics/5FH3.png}
+			\captionof{figure}{
+The structure of rat cytosolic PEPCK variant E89A in complex with oxalic acid and GTP \cite{Rats}.}
+			\end{center}
+		\end{minipage}
+    \end{columns}
   \end{frame}
 \section{Proof of Problem 2}
  \frame{ blah blah}
