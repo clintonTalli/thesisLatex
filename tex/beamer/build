@@ -2,3 +2,7 @@
 pdflatex --output-directory ../../pdf powerpoint.tex
 pdflatex --output-directory ../../pdf powerpoint.tex
 pdflatex --output-directory ../../pdf powerpoint.tex
+
+pdflatex --output-directory ../../pdf thesisDefense.tex
+pdflatex --output-directory ../../pdf thesisDefense.tex
+pdflatex --output-directory ../../pdf thesisDefense.tex

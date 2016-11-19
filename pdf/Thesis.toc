@@ -6,17 +6,18 @@
 \contentsline {section}{\numberline {1.2}Linkages}{4}
 \contentsline {section}{\numberline {1.3}Polygonal Linkages}{4}
 \contentsline {subsection}{\numberline {1.3.1}Geometric Dissections}{6}
-\contentsline {section}{\numberline {1.4}Configuration Spaces}{11}
-\contentsline {subsection}{\numberline {1.4.1}Configuration Spaces of Graph Drawings}{11}
-\contentsline {subsection}{\numberline {1.4.2}Configuration Spaces of Linkages}{11}
-\contentsline {subsection}{\numberline {1.4.3}Configuration Spaces of Polygonal Linkages}{11}
-\contentsline {subsection}{\numberline {1.4.4}Configuration Spaces of Disk Arrangements}{12}
-\contentsline {section}{\numberline {1.5}Algorithm Complexity}{13}
-\contentsline {subsection}{\numberline {1.5.1}Complexity Classes}{13}
-\contentsline {subsection}{\numberline {1.5.2}RSA Cryptosystem}{14}
-\contentsline {section}{\numberline {1.6}Satisfiability}{15}
-\contentsline {section}{\numberline {1.7}Contribution}{16}
-\contentsline {section}{\numberline {1.8}Related Work and Results}{16}
+\contentsline {section}{\numberline {1.4}Disk Arrangements}{8}
+\contentsline {section}{\numberline {1.5}Configuration Spaces}{11}
+\contentsline {subsection}{\numberline {1.5.1}Configuration Spaces of Graph Drawings}{11}
+\contentsline {subsection}{\numberline {1.5.2}Configuration Spaces of Linkages}{11}
+\contentsline {subsection}{\numberline {1.5.3}Configuration Spaces of Polygonal Linkages}{11}
+\contentsline {subsection}{\numberline {1.5.4}Configuration Spaces of Disk Arrangements}{12}
+\contentsline {section}{\numberline {1.6}Algorithm Complexity}{13}
+\contentsline {subsection}{\numberline {1.6.1}Complexity Classes}{13}
+\contentsline {subsection}{\numberline {1.6.2}RSA Cryptosystem}{14}
+\contentsline {section}{\numberline {1.7}Satisfiability}{15}
+\contentsline {section}{\numberline {1.8}Contribution}{16}
+\contentsline {section}{\numberline {1.9}Related Work and Results}{16}
 \contentsline {chapter}{\numberline {2}Decision Problems for Hinged Polygons and Disks}{18}
 \contentsline {section}{\numberline {2.1}The Logic Engine}{18}
 \contentsline {subsection}{\numberline {2.1.1}Construction of the Logic Engine}{18}
@@ -24,14 +25,14 @@
 \contentsline {subsubsection}{\numberline {2.1.2.1}The Relationship of the Logic Engine and NAE3SAT}{21}
 \contentsline {section}{\numberline {2.2}Logic Engines Represented as Polygonal Linkages}{22}
 \contentsline {subsection}{\numberline {2.2.1}Construction of the Polygonal Linkage Logic Engine}{22}
-\contentsline {chapter}{\numberline {3}Realizability of Polygonal Linkages with Counter-Clockwise Orientation}{24}
+\contentsline {chapter}{\numberline {3}Realizability of Polygonal Linkages with Fixed Orientation}{24}
 \contentsline {paragraph}{Modifying the Associated Graph of a P3SAT.}{25}
-\contentsline {section}{\numberline {3.1}Auxiliary Construction}{26}
+\contentsline {section}{\numberline {3.1}Auxilary Construction}{26}
 \contentsline {paragraph}{Variable Gadget.}{28}
 \contentsline {paragraph}{Clause Gadget.}{29}
 \contentsline {paragraph}{Transmitter Gadget.\newline }{29}
-\contentsline {section}{\numberline {3.2}Functionality of the Auxiliary Construction and Gadgets}{30}
-\contentsline {section}{\numberline {3.3}Modified Auxiliary Construction.}{34}
+\contentsline {section}{\numberline {3.2}Functionality of the Auxilary Construction and Gadgets}{30}
+\contentsline {section}{\numberline {3.3}Modified Auxilary Construction.}{34}
 \contentsline {paragraph}{Angular Rotation $\alpha $.}{37}
 \contentsline {paragraph}{Vertical Displacement $\delta $.}{39}
 \contentsline {paragraph}{\textit {A Refinement of the Angular Rotation Bound on $\alpha $}}{41}
@@ -45,8 +46,9 @@
 \contentsline {paragraph}{$\epsilon $-approximation}{47}
 \contentsline {section}{\numberline {4.2}Weighted Trees $T_i$}{48}
 \contentsline {paragraph}{Perfectly Weighted Snowflake Tree.}{49}
-\contentsline {paragraph}{Modification of $\sigma _1$.}{50}
-\contentsline {paragraph}{Displacement on $\sigma _1$ is small.}{50}
+\contentsline {subsection}{\numberline {4.2.1}Perturbed Weighted Trees $T$}{50}
+\contentsline {paragraph}{Modification of $\sigma _1$.}{51}
+\contentsline {paragraph}{Displacement on $\sigma _1$ is small.}{51}
 \contentsline {paragraph}{Displacement on the stems is small.}{52}
-\contentsline {paragraph}{Displacement on the petioles is small.}{54}
-\contentsline {chapter}{Bibliography}{57}
+\contentsline {paragraph}{Displacement on the petioles is small.}{55}
+\contentsline {paragraph}{Proof of Theorem 4\hbox {}}{57}
