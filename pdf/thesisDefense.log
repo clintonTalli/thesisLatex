@@ -1,0 +1,3234 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.18)  22 NOV 2016 13:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**thesisDefense.tex
+(./thesisDefense.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasercs.sty
+Package: beamerbasercs 2015/03/08 (rcs-revision 368aa9ba9d38)
+)
+Document Class: beamer 2015/01/05 3.36 A class for typesetting presentations (r
+cs-revision 8a39122e1f63)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
+Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
+\beamer@tempbox=\box26
+\beamer@tempcount=\count79
+\c@beamerpauses=\count80
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
+Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
+\beamer@slideinframe=\count81
+\beamer@minimum=\count82
+)
+\beamer@commentbox=\box27
+\beamer@modecount=\count83
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+\headheight=\dimen102
+\headdp=\dimen103
+\footheight=\dimen104
+\sidebarheight=\dimen105
+\beamer@tempdim=\dimen106
+\beamer@finalheight=\dimen107
+\beamer@animht=\dimen108
+\beamer@animdp=\dimen109
+\beamer@animwd=\dimen110
+\beamer@leftmargin=\dimen111
+\beamer@rightmargin=\dimen112
+\beamer@leftsidebar=\dimen113
+\beamer@rightsidebar=\dimen114
+\beamer@boxsize=\dimen115
+\beamer@vboxoffset=\dimen116
+\beamer@descdefault=\dimen117
+\beamer@descriptionwidth=\dimen118
+\beamer@lastskip=\skip41
+\beamer@areabox=\box28
+\beamer@animcurrent=\box29
+\beamer@animshowbox=\box30
+\beamer@sectionbox=\box31
+\beamer@logobox=\box32
+\beamer@linebox=\box33
+\beamer@sectioncount=\count84
+\beamer@subsubsectionmax=\count85
+\beamer@subsectionmax=\count86
+\beamer@sectionmax=\count87
+\beamer@totalheads=\count88
+\beamer@headcounter=\count89
+\beamer@partstartpage=\count90
+\beamer@sectionstartpage=\count91
+\beamer@subsectionstartpage=\count92
+\beamer@animationtempa=\count93
+\beamer@animationtempb=\count94
+\beamer@xpos=\count95
+\beamer@ypos=\count96
+\beamer@showpartnumber=\count97
+\beamer@currentsubsection=\count98
+\beamer@coveringdepth=\count99
+\beamer@sectionadjust=\count100
+\beamer@tocsectionnumber=\count101
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+\beamer@paperwidth=\skip42
+\beamer@paperheight=\skip43
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count102
+\Gm@cntv=\count103
+\c@Gm@tempcnt=\count104
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks16
+\pgfutil@tempdima=\dimen129
+\pgfutil@tempdimb=\dimen130
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box34
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks19
+))
+\pgf@x=\dimen131
+\pgf@y=\dimen132
+\pgf@xa=\dimen133
+\pgf@ya=\dimen134
+\pgf@xb=\dimen135
+\pgf@yb=\dimen136
+\pgf@xc=\dimen137
+\pgf@yc=\dimen138
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count106
+\c@pgf@countb=\count107
+\c@pgf@countc=\count108
+\c@pgf@countd=\count109
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count110
+\pgfsyssoftpath@bigbuffer@items=\count111
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen139
+\pgfmath@count=\count112
+\pgfmath@box=\box35
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count113
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen140
+\pgf@picmaxx=\dimen141
+\pgf@picminy=\dimen142
+\pgf@picmaxy=\dimen143
+\pgf@pathminx=\dimen144
+\pgf@pathmaxx=\dimen145
+\pgf@pathminy=\dimen146
+\pgf@pathmaxy=\dimen147
+\pgf@xx=\dimen148
+\pgf@xy=\dimen149
+\pgf@yx=\dimen150
+\pgf@yy=\dimen151
+\pgf@zx=\dimen152
+\pgf@zy=\dimen153
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen154
+\pgf@path@lasty=\dimen155
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen156
+\pgf@shorten@start@additional=\dimen157
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box36
+\pgf@hbox=\box37
+\pgf@layerbox@main=\box38
+\pgf@picture@serial@count=\count114
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen158
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen159
+\pgf@pt@y=\dimen160
+\pgf@pt@temp=\dimen161
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen162
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen163
+\pgf@sys@shading@range@num=\count115
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box39
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count116
+\XC@countmixins=\count117
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen164
+\Hy@linkcounter=\count118
+\Hy@pagecounter=\count119
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count120
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4319.
+Package hyperref Info: Option `implicit' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count121
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen165
+\Fld@menulength=\count122
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count123
+
+
+Package hyperref Message: Stopped early.
+
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
+Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty
+Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+Package: beamerbasefont 2015/01/05  (rcs-revision b4b4bee242e2)
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks26
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+Package: sansmathaccent 2013/03/28
+
+(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
+Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemisc.sty
+Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty
+Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+Package: beamerbaseoverlay 2013/12/25  (rcs-revision f6bd5e3805da)
+\beamer@argscount=\count126
+\beamer@lastskipcover=\skip44
+\beamer@trivlistdepth=\count127
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetitle.sty
+Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
+\c@lecture=\count128
+\c@part=\count129
+\c@section=\count130
+\c@subsection=\count131
+\c@subsubsection=\count132
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+Package: beamerbaseframe 2014/02/20  (rcs-revision 4b8ceeeff434)
+\beamer@framebox=\box40
+\beamer@frametitlebox=\box41
+\beamer@zoombox=\box42
+\beamer@zoomcount=\count133
+\beamer@zoomframecount=\count134
+\beamer@frametextheight=\dimen168
+\c@subsectionslide=\count135
+\beamer@frametopskip=\skip45
+\beamer@framebottomskip=\skip46
+\beamer@frametopskipautobreak=\skip47
+\beamer@framebottomskipautobreak=\skip48
+\beamer@envbody=\toks27
+\framewidth=\dimen169
+\c@framenumber=\count136
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+Package: beamerbaseverbatim 2015/01/05  (rcs-revision 431510bb5890)
+\beamer@verbatimfileout=\write4
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
+Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
+\beamer@splitbox=\box43
+\beamer@autobreakcount=\count137
+\beamer@autobreaklastheight=\dimen170
+\beamer@frametitletoks=\toks28
+\beamer@framesubtitletoks=\toks29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
+\beamer@footins=\box44
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecolor.sty
+Package: beamerbasecolor 2015/02/21  (rcs-revision d944b04ee2d5)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
+\beamer@frameboxcopy=\box45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetoc.sty
+Package: beamerbasetoc 2015/03/08  (rcs-revision 7270298bbaae)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
+Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
+\beamer@sbttoks=\toks30
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
+Package: beamerbaseauxtemplates 2014/06/30  (rcs-revision 580088513a67)
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
+Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
+\bmb@box=\box46
+\bmb@colorbox=\box47
+\bmb@boxshadow=\box48
+\bmb@boxshadowball=\box49
+\bmb@boxshadowballlarge=\box50
+\bmb@temp=\dimen171
+\bmb@dima=\dimen172
+\bmb@dimb=\dimen173
+\bmb@prevheight=\dimen174
+)
+\beamer@blockheadheight=\dimen175
+))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
+Package: beamerbaselocalstructure 2014/09/10  (rcs-revision 393f6dcff371)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks31
+)
+\c@figure=\count138
+\c@table=\count139
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+Package: beamerbasenavigation 2015/02/27  (rcs-revision 923f4bf87efa)
+\beamer@section@min@dim=\dimen176
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
+Package: beamerbasetheorems 2010/06/06  (rcs-revision 7e7cc5e53e9d)
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen177
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen178
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count140
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count141
+\leftroot@=\count142
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count143
+\DOTSCASE@=\count144
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen179
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count145
+\c@MaxMatrixCols=\count146
+\dotsspace@=\muskip11
+\c@parentequation=\count147
+\dspbrk@lvl=\count148
+\tag@help=\toks33
+\row@=\count149
+\column@=\count150
+\maxfields@=\count151
+\andhelp@=\toks34
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
+\@envbody=\toks35
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks37
+\thm@bodyfont=\toks38
+\thm@headfont=\toks39
+\thm@notefont=\toks40
+\thm@headpunct=\toks41
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks42
+)
+\c@theorem=\count152
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasethemes.sty
+Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemedefault
+.sty
+Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemedefa
+ult.sty
+Package: beamerfontthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemede
+fault.sty
+Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemede
+fault.sty
+Package: beamerinnerthemedefault 2014/06/30  (rcs-revision 580088513a67)
+\beamer@dima=\dimen186
+\beamer@dimb=\dimen187
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemede
+fault.sty
+Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeMadrid.
+sty
+Package: beamerthemeMadrid 2010/06/17  (rcs-revision d02a7cf4d8ae)
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewh
+ale.sty
+Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemeor
+chid.sty
+Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemero
+unded.sty
+Package: beamerinnerthemerounded 2010/06/17  (rcs-revision d02a7cf4d8ae)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemein
+folines.sty
+Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemecr
+ane.sty
+Package: beamercolorthemecrane 2010/06/17  (rcs-revision d02a7cf4d8ae)
+) (/usr/share/texlive/texmf-dist/tex/latex/animate/animate.sty
+Package: animate 2016/03/15 PDF animations from files and inline graphics
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2008/08/11 v1.3 Detect class options draft and final (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count153
+\calc@Bcount=\count154
+\calc@Adimen=\dimen188
+\calc@Bdimen=\dimen189
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count155
+\calc@Cskip=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/atenddvi.sty
+Package: atenddvi 2007/04/17 v1.1 At end DVI hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count156
+Package zref Info: New property: abspage on input line 62.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-lastpage.sty
+Package: zref-lastpage 2012/04/04 v2.24 Module lastpage for zref (HO)
+Package zref Info: New property list: LastPage on input line 55.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/animate/animfp.sty
+Package: animfp 2009/07/23 fixed point addition for animate.sty
+\afp@xs=\count157
+\afp@xia=\count158
+\afp@xib=\count159
+\afp@xfa=\count160
+\afp@xfb=\count161
+\afp@rega=\count162
+\afp@regb=\count163
+\afp@regs=\count164
+)
+(/usr/share/texlive/texmf-dist/tex/latex/media9/pdfbase.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/01/19 v6377 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
+L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
+L3 Module: l3str 2016/01/03 v6357 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/01/05 v6366 L3 Integers
+\c_max_int=\count165
+\l_tmpa_int=\count166
+\l_tmpb_int=\count167
+\g_tmpa_int=\count168
+\g_tmpb_int=\count169
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count170
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2015/09/28 v6113 L3 Messages
+L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
+\l_iow_line_count_int=\count171
+\l__iow_target_count_int=\count172
+\l__iow_current_line_int=\count173
+\l__iow_current_word_int=\count174
+\l__iow_current_indentation_int=\count175
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen190
+\c_max_dim=\dimen191
+\l_tmpa_dim=\dimen192
+\l_tmpb_dim=\dimen193
+\g_tmpa_dim=\dimen194
+\g_tmpb_dim=\dimen195
+\c_zero_skip=\skip60
+\c_max_skip=\skip61
+\l_tmpa_skip=\skip62
+\l_tmpb_skip=\skip63
+\g_tmpa_skip=\skip64
+\g_tmpb_skip=\skip65
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count176
+\l_keys_choice_int=\count177
+L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
+\c__fp_leading_shift_int=\count178
+\c__fp_middle_shift_int=\count179
+\c__fp_trailing_shift_int=\count180
+\c__fp_big_leading_shift_int=\count181
+\c__fp_big_middle_shift_int=\count182
+\c__fp_big_trailing_shift_int=\count183
+\c__fp_Bigg_leading_shift_int=\count184
+\c__fp_Bigg_middle_shift_int=\count185
+\c__fp_Bigg_trailing_shift_int=\count186
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box53
+\l_tmpa_box=\box54
+\l_tmpb_box=\box55
+\g_tmpa_box=\box56
+\g_tmpb_box=\box57
+L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
+\l__coffin_internal_box=\box58
+\l__coffin_internal_dim=\dimen196
+\l__coffin_offset_x_dim=\dimen197
+\l__coffin_offset_y_dim=\dimen198
+\l__coffin_x_dim=\dimen199
+\l__coffin_y_dim=\dimen256
+\l__coffin_x_prime_dim=\dimen257
+\l__coffin_y_prime_dim=\dimen258
+\c_empty_coffin=\box59
+\l__coffin_aligned_coffin=\box60
+\l__coffin_aligned_internal_coffin=\box61
+\l_tmpa_coffin=\box62
+\l_tmpb_coffin=\box63
+\l__coffin_display_coffin=\box64
+\l__coffin_display_coord_coffin=\box65
+\l__coffin_display_pole_coffin=\box66
+\l__coffin_display_offset_dim=\dimen259
+\l__coffin_display_x_dim=\dimen260
+\l__coffin_display_y_dim=\dimen261
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen262
+\l__box_bottom_dim=\dimen263
+\l__box_left_dim=\dimen264
+\l__box_right_dim=\dimen265
+\l__box_top_new_dim=\dimen266
+\l__box_bottom_new_dim=\dimen267
+\l__box_left_new_dim=\dimen268
+\l__box_right_new_dim=\dimen269
+\l__box_internal_box=\box67
+\l__coffin_bounding_shift_dim=\dimen270
+\l__coffin_left_corner_dim=\dimen271
+\l__coffin_right_corner_dim=\dimen272
+\l__coffin_bottom_corner_dim=\dimen273
+\l__coffin_top_corner_dim=\dimen274
+\l__coffin_scaled_total_height_dim=\dimen275
+\l__coffin_scaled_width_dim=\dimen276
+L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count187
+))
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
+Package: l3regex 2016/01/19 v6377 L3 Experimental regular expressions
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
+Package: l3tl-build 2016/01/19 v6377 L3 Experimental token list construction
+\l__tl_build_start_index_int=\count188
+\l__tl_build_index_int=\count189
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
+Package: l3tl-analysis 2015/11/09 v6244 L3 Experimental token lists analysis
+\l__tl_analysis_normal_int=\count190
+\l__tl_analysis_index_int=\count191
+\l__tl_analysis_nesting_int=\count192
+\l__tl_analysis_type_int=\count193
+) (/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
+Package: l3flag 2016/01/19 v6377 L3 Experimental flags
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
+Package: l3str-convert 2015/09/26 v6106 L3 Experimental string encoding convers
+ions
+\l__str_internal_int=\count194
+\c__str_replacement_char_int=\count195
+)
+\l__regex_internal_a_int=\count196
+\l__regex_internal_b_int=\count197
+\l__regex_internal_c_int=\count198
+\l__regex_balance_int=\count199
+\l__regex_group_level_int=\count266
+\l__regex_mode_int=\count267
+\l__regex_catcodes_int=\count268
+\l__regex_default_catcodes_int=\count269
+\c__regex_catcode_D_int=\count270
+\c__regex_catcode_S_int=\count271
+\c__regex_catcode_L_int=\count272
+\c__regex_catcode_O_int=\count273
+\c__regex_catcode_A_int=\count274
+\c__regex_all_catcodes_int=\count275
+\l__regex_show_lines_int=\count276
+\l__regex_min_state_int=\count277
+\l__regex_max_state_int=\count278
+\l__regex_left_state_int=\count279
+\l__regex_right_state_int=\count280
+\l__regex_capturing_group_int=\count281
+\l__regex_min_pos_int=\count282
+\l__regex_max_pos_int=\count283
+\l__regex_current_pos_int=\count284
+\l__regex_start_pos_int=\count285
+\l__regex_success_pos_int=\count286
+\l__regex_current_char_int=\count287
+\l__regex_current_catcode_int=\count288
+\l__regex_last_char_int=\count289
+\l__regex_case_changed_char_int=\count290
+\l__regex_current_state_int=\count291
+\l__regex_step_int=\count292
+\l__regex_min_active_int=\count293
+\l__regex_max_active_int=\count294
+\l__regex_replacement_csnames_int=\count295
+\l__regex_match_count_int=\count296
+\l__regex_submatch_int=\count297
+\l__regex_zeroth_submatch_int=\count298
+) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
+)
+Package: pdfbase 2016/03/11 v0.7 driver independent access to low-level PDF fea
+tures
+\g_pbs_oc_int=\count299
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2016/03/11 v0.6 support package for ocgx2.sty
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count300
+\scratchdimen=\dimen277
+\scratchbox=\box68
+\nofMPsegments=\count301
+\nofMParguments=\count302
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen278
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
+\everyMPtoPDFconversion=\toks44
+)
+\@anim@box=\box69
+\@anim@measbox=\box70
+\@anim@tmpdima=\dimen279
+\@anim@tmpdimb=\dimen280
+\@anim@num=\count306
+\@anim@curframe=\count307
+\@anim@curframe@zb=\count308
+\@anim@resizeflags=\count309
+\@anim@skipfram=\count310
+\@anim@mulframecnt=\count311
+\@anim@@tmlnfile=\read2
+\@anim@tmpcnt=\count312
+\c@@anim@ltxcnt=\count313
+\@anim@curlayer=\count314
+\@anim@lineno=\count315
+\@anim@curfield=\count316
+\@anim@@resizeflags=\count317
+) (/usr/share/texlive/texmf-dist/tex/latex/complexity/complexity.sty
+Package: complexity 11/24/06  v0.77
+
+  +----------------------------------------------+
+    complexity LaTeX package 
+    version: 
+    author: Chris Bourke (cbourke@cse.unl.edu) 
+  +----------------------------------------------+
+(/usr/share/texlive/texmf-dist/tex/latex/complexity/mycomplexity.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen281
+\captionmargin@=\dimen282
+\captionwidth=\dimen283
+\caption@tempdima=\dimen284
+\caption@indent=\dimen285
+\caption@parindent=\dimen286
+\caption@hangindent=\dimen287
+)
+\c@ContinuedFloat=\count318
+Package caption Info: beamer document class.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip66
+\enit@outerparindent=\dimen288
+\enit@toks=\toks45
+\enit@inbox=\box71
+\enitdp@description=\count319
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen289
+\extrarowheight=\dimen290
+\NC@list=\toks46
+\extratabsurround=\skip67
+\backup@length=\skip68
+)
+\c@thm=\count320
+
+(../../pdf/thesisDefense.aux)
+\openout1 = `thesisDefense.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=342.2953pt
+* \textheight=244.6939pt
+* \oddsidemargin=-61.31996pt
+* \evensidemargin=-61.31996pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box72
+Package hyperref Info: Link coloring OFF on input line 77.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count321
+)
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
+LaTeX Info: Redefining \nameref on input line 77.
+
+(../../pdf/thesisDefense.out) (../../pdf/thesisDefense.out)
+\@outlinefile=\write5
+\openout5 = `thesisDefense.out'.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 77.
+\symnumbers=\mathgroup6
+\sympureletters=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 77.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 77.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 7
+7.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
+77.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
+ut line 77.
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
+ic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bib
+liography-dictionary/translator-bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-env
+ironment-dictionary/translator-environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-mon
+ths-dictionary/translator-months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-num
+bers-dictionary/translator-numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-the
+orem-dictionary/translator-theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+LaTeX Info: Redefining \includegraphics on input line 77.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+(../../pdf/thesisDefense.nav)
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 78.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+<graphics/7ballLocked.pdf, id=52, 386.84525pt x 354.57266pt>
+File: graphics/7ballLocked.pdf Graphic file (type pdf)
+
+<use graphics/7ballLocked.pdf>
+Package pdftex.def Info: graphics/7ballLocked.pdf used on input line 95.
+(pdftex.def)             Requested size: 154.03183pt x 141.1773pt.
+ [2
+
+ <./graphics/7ballLocked.pdf>]
+<graphics/7hexLocked.pdf, id=83, 205.62221pt x 214.16312pt>
+File: graphics/7hexLocked.pdf Graphic file (type pdf)
+
+<use graphics/7hexLocked.pdf>
+Package pdftex.def Info: graphics/7hexLocked.pdf used on input line 111.
+(pdftex.def)             Requested size: 154.03183pt x 160.43893pt.
+ [3
+
+ <./graphics/7hexLocked.pdf>]
+<graphics/ActiveChannel.pdf, id=114, 648.77379pt x 237.70808pt>
+File: graphics/ActiveChannel.pdf Graphic file (type pdf)
+
+<use graphics/ActiveChannel.pdf>
+Package pdftex.def Info: graphics/ActiveChannel.pdf used on input line 127.
+(pdftex.def)             Requested size: 154.03183pt x 56.43448pt.
+ [4
+
+ <./graphics/ActiveChannel.pdf>]
+<graphics/AnatomyOfPerturbedSpine.pdf, id=151, 3196.79329pt x 959.20357pt>
+File: graphics/AnatomyOfPerturbedSpine.pdf Graphic file (type pdf)
+
+<use graphics/AnatomyOfPerturbedSpine.pdf>
+Package pdftex.def Info: graphics/AnatomyOfPerturbedSpine.pdf used on input lin
+e 143.
+(pdftex.def)             Requested size: 154.03183pt x 46.20663pt.
+ [5
+
+ <./graphics/AnatomyOfPerturbedSpine.pdf>] <graphics/AngularDisplacement.pdf, i
+d=182, 193.9245pt x 48.74611pt>
+File: graphics/AngularDisplacement.pdf Graphic file (type pdf)
+
+<use graphics/AngularDisplacement.pdf>
+Package pdftex.def Info: graphics/AngularDisplacement.pdf used on input line 15
+9.
+(pdftex.def)             Requested size: 154.03183pt x 38.71875pt.
+ [6
+
+ <./graphics/AngularDisplacement.pdf>] <graphics/betaOmegaFigure.pdf, id=223, 7
+51.93924pt x 309.3156pt>
+File: graphics/betaOmegaFigure.pdf Graphic file (type pdf)
+
+<use graphics/betaOmegaFigure.pdf>
+Package pdftex.def Info: graphics/betaOmegaFigure.pdf used on input line 175.
+(pdftex.def)             Requested size: 154.03183pt x 63.3629pt.
+ [7
+
+ <./graphics/betaOmegaFigure.pdf>]
+<graphics/bigHexagonalGrid.pdf, id=262, 3264.78731pt x 2827.54366pt>
+File: graphics/bigHexagonalGrid.pdf Graphic file (type pdf)
+
+<use graphics/bigHexagonalGrid.pdf>
+Package pdftex.def Info: graphics/bigHexagonalGrid.pdf used on input line 191.
+(pdftex.def)             Requested size: 154.03183pt x 133.36053pt.
+ [8
+
+ <./graphics/bigHexagonalGrid.pdf>]
+<graphics/BinaryTree1.pdf, id=293, 69.25874pt x 5.01875pt>
+File: graphics/BinaryTree1.pdf Graphic file (type pdf)
+
+<use graphics/BinaryTree1.pdf>
+Package pdftex.def Info: graphics/BinaryTree1.pdf used on input line 207.
+(pdftex.def)             Requested size: 154.03183pt x 11.16301pt.
+ [9
+
+ <./graphics/BinaryTree1.pdf>]
+<graphics/BinaryTree2.pdf, id=324, 69.25874pt x 69.25874pt>
+File: graphics/BinaryTree2.pdf Graphic file (type pdf)
+
+<use graphics/BinaryTree2.pdf>
+Package pdftex.def Info: graphics/BinaryTree2.pdf used on input line 223.
+(pdftex.def)             Requested size: 154.03183pt x 154.04999pt.
+ [10
+
+ <./graphics/BinaryTree2.pdf>]
+<graphics/BinaryTree3.pdf, id=355, 114.68848pt x 114.68848pt>
+File: graphics/BinaryTree3.pdf Graphic file (type pdf)
+
+<use graphics/BinaryTree3.pdf>
+Package pdftex.def Info: graphics/BinaryTree3.pdf used on input line 239.
+(pdftex.def)             Requested size: 154.03183pt x 154.03174pt.
+ [11
+
+ <./graphics/BinaryTree3.pdf>]
+<graphics/BinaryTree4.pdf, id=387, 114.68848pt x 114.68848pt>
+File: graphics/BinaryTree4.pdf Graphic file (type pdf)
+
+<use graphics/BinaryTree4.pdf>
+Package pdftex.def Info: graphics/BinaryTree4.pdf used on input line 255.
+(pdftex.def)             Requested size: 154.03183pt x 154.03174pt.
+ [12
+
+ <./graphics/BinaryTree4.pdf>]
+<graphics/block3c.pdf, id=418, 493.845pt x 446.66875pt>
+File: graphics/block3c.pdf Graphic file (type pdf)
+
+<use graphics/block3c.pdf>
+Package pdftex.def Info: graphics/block3c.pdf used on input line 271.
+(pdftex.def)             Requested size: 154.03183pt x 139.311pt.
+ [13
+
+ <./graphics/block3c.pdf, page is rotated 270 degrees>] <graphics/BottomOfJ.pdf
+, id=452, 1608.21825pt x 752.57161pt>
+File: graphics/BottomOfJ.pdf Graphic file (type pdf)
+
+<use graphics/BottomOfJ.pdf>
+Package pdftex.def Info: graphics/BottomOfJ.pdf used on input line 287.
+(pdftex.def)             Requested size: 154.03183pt x 72.0692pt.
+ [14
+
+ <./graphics/BottomOfJ.pdf>]
+<graphics/ch4Paralellogram.pdf, id=490, 810.32736pt x 286.81151pt>
+File: graphics/ch4Paralellogram.pdf Graphic file (type pdf)
+
+<use graphics/ch4Paralellogram.pdf>
+Package pdftex.def Info: graphics/ch4Paralellogram.pdf used on input line 303.
+(pdftex.def)             Requested size: 154.03183pt x 54.51663pt.
+ [15
+
+ <./graphics/ch4Paralellogram.pdf>]
+<graphics/circlePackingEdgeRepressentingKissingPoints.pdf, id=553, 386.84625pt 
+x 352.75288pt>
+File: graphics/circlePackingEdgeRepressentingKissingPoints.pdf Graphic file (ty
+pe pdf)
+ <use graphics/circlePackingEdgeRepressentingKissingPoints.pdf>
+Package pdftex.def Info: graphics/circlePackingEdgeRepressentingKissingPoints.p
+df used on input line 319.
+(pdftex.def)             Requested size: 154.03183pt x 140.45274pt.
+
+[16
+
+ <./graphics/circlePackingEdgeRepressentingKissingPoints.pdf>]
+<graphics/circlePackingTheoremExample.pdf, id=584, 336.82536pt x 233.37589pt>
+File: graphics/circlePackingTheoremExample.pdf Graphic file (type pdf)
+
+<use graphics/circlePackingTheoremExample.pdf>
+Package pdftex.def Info: graphics/circlePackingTheoremExample.pdf used on input
+ line 335.
+(pdftex.def)             Requested size: 154.03183pt x 106.72746pt.
+ [17
+
+ <./graphics/circlePackingTheoremExample.pdf>]
+<graphics/circumscribedHexagon.pdf, id=616, 129.88524pt x 129.88524pt>
+File: graphics/circumscribedHexagon.pdf Graphic file (type pdf)
+
+<use graphics/circumscribedHexagon.pdf>
+Package pdftex.def Info: graphics/circumscribedHexagon.pdf used on input line 3
+51.
+(pdftex.def)             Requested size: 154.03183pt x 154.04213pt.
+ [18
+
+ <./graphics/circumscribedHexagon.pdf>] <graphics/collidingHingedPolygons.pdf, 
+id=651, 451.557pt x 94.60344pt>
+File: graphics/collidingHingedPolygons.pdf Graphic file (type pdf)
+
+<use graphics/collidingHingedPolygons.pdf>
+Package pdftex.def Info: graphics/collidingHingedPolygons.pdf used on input lin
+e 367.
+(pdftex.def)             Requested size: 154.03183pt x 32.27011pt.
+ [19
+
+ <./graphics/collidingHingedPolygons.pdf>]
+<graphics/combinatorialEmbedding.pdf, id=685, 233.88379pt x 93.10785pt>
+File: graphics/combinatorialEmbedding.pdf Graphic file (type pdf)
+
+<use graphics/combinatorialEmbedding.pdf>
+Package pdftex.def Info: graphics/combinatorialEmbedding.pdf used on input line
+ 383.
+(pdftex.def)             Requested size: 154.03183pt x 61.32065pt.
+ [20
+
+ <./graphics/combinatorialEmbedding.pdf>] <graphics/corridorNonCanonical.pdf, i
+d=718, 316.25153pt x 109.39871pt>
+File: graphics/corridorNonCanonical.pdf Graphic file (type pdf)
+
+<use graphics/corridorNonCanonical.pdf>
+Package pdftex.def Info: graphics/corridorNonCanonical.pdf used on input line 3
+99.
+(pdftex.def)             Requested size: 154.03183pt x 53.28198pt.
+ [21
+
+ <./graphics/corridorNonCanonical.pdf>] <graphics/corridorNonCanonical2.pdf, id
+=785, 337.49088pt x 115.88293pt>
+File: graphics/corridorNonCanonical2.pdf Graphic file (type pdf)
+
+<use graphics/corridorNonCanonical2.pdf>
+Package pdftex.def Info: graphics/corridorNonCanonical2.pdf used on input line 
+415.
+(pdftex.def)             Requested size: 154.03183pt x 52.88948pt.
+ [22
+
+ <./graphics/corridorNonCanonical2.pdf>] <graphics/crossingEdgeLinkage.pdf, id=
+836, 417.96149pt x 161.0015pt>
+File: graphics/crossingEdgeLinkage.pdf Graphic file (type pdf)
+
+<use graphics/crossingEdgeLinkage.pdf>
+Package pdftex.def Info: graphics/crossingEdgeLinkage.pdf used on input line 43
+1.
+(pdftex.def)             Requested size: 154.03183pt x 59.33377pt.
+ [23
+
+ <./graphics/crossingEdgeLinkage.pdf>] <graphics/crossingType2.pdf, id=868, 149
+.4644pt x 133.90024pt>
+File: graphics/crossingType2.pdf Graphic file (type pdf)
+
+<use graphics/crossingType2.pdf>
+Package pdftex.def Info: graphics/crossingType2.pdf used on input line 447.
+(pdftex.def)             Requested size: 154.03183pt x 138.0005pt.
+ [24
+
+ <./graphics/crossingType2.pdf>]
+<graphics/crossingType3.pdf, id=901, 143.48204pt x 133.90024pt>
+File: graphics/crossingType3.pdf Graphic file (type pdf)
+
+<use graphics/crossingType3.pdf>
+Package pdftex.def Info: graphics/crossingType3.pdf used on input line 463.
+(pdftex.def)             Requested size: 154.03183pt x 143.7581pt.
+ [25
+
+ <./graphics/crossingType3.pdf>]
+<graphics/CrossSection.pdf, id=935, 675.95535pt x 1207.49115pt>
+File: graphics/CrossSection.pdf Graphic file (type pdf)
+
+<use graphics/CrossSection.pdf>
+Package pdftex.def Info: graphics/CrossSection.pdf used on input line 479.
+(pdftex.def)             Requested size: 154.03183pt x 275.13765pt.
+
+Overfull \vbox (72.06706pt too high) detected at line 479
+ []
+
+[26
+
+ <./graphics/CrossSection.pdf>]
+<graphics/CrossSectionArea.pdf, id=966, 77.58987pt x 137.06207pt>
+File: graphics/CrossSectionArea.pdf Graphic file (type pdf)
+
+<use graphics/CrossSectionArea.pdf>
+Package pdftex.def Info: graphics/CrossSectionArea.pdf used on input line 495.
+(pdftex.def)             Requested size: 154.03183pt x 272.13661pt.
+
+Overfull \vbox (69.06602pt too high) detected at line 495
+ []
+
+[27
+
+ <./graphics/CrossSectionArea.pdf>]
+<graphics/D1.pdf, id=998, 129.03307pt x 117.63348pt>
+File: graphics/D1.pdf Graphic file (type pdf)
+ <use graphics/D1.pdf>
+Package pdftex.def Info: graphics/D1.pdf used on input line 511.
+(pdftex.def)             Requested size: 154.03183pt x 140.42352pt.
+
+[28
+
+ <./graphics/D1.pdf>]
+<graphics/degree2arrangement.pdf, id=1031, 97.76526pt x 33.52626pt>
+File: graphics/degree2arrangement.pdf Graphic file (type pdf)
+
+<use graphics/degree2arrangement.pdf>
+Package pdftex.def Info: graphics/degree2arrangement.pdf used on input line 527
+.
+(pdftex.def)             Requested size: 154.03183pt x 52.82918pt.
+ [29
+
+ <./graphics/degree2arrangement.pdf>]
+<graphics/degree3arrangement.pdf, id=1064, 97.76526pt x 97.76526pt>
+File: graphics/degree3arrangement.pdf Graphic file (type pdf)
+
+<use graphics/degree3arrangement.pdf>
+Package pdftex.def Info: graphics/degree3arrangement.pdf used on input line 543
+.
+(pdftex.def)             Requested size: 154.03183pt x 154.05415pt.
+ [30
+
+ <./graphics/degree3arrangement.pdf>]
+<graphics/degree4arrangement.pdf, id=1098, 162.00525pt x 162.00525pt>
+File: graphics/degree4arrangement.pdf Graphic file (type pdf)
+
+<use graphics/degree4arrangement.pdf>
+Package pdftex.def Info: graphics/degree4arrangement.pdf used on input line 559
+.
+(pdftex.def)             Requested size: 154.03183pt x 154.03511pt.
+ [31
+
+ <./graphics/degree4arrangement.pdf>]
+<graphics/degree5arrangement.pdf, id=1132, 226.24524pt x 226.24524pt>
+File: graphics/degree5arrangement.pdf Graphic file (type pdf)
+
+<use graphics/degree5arrangement.pdf>
+Package pdftex.def Info: graphics/degree5arrangement.pdf used on input line 575
+.
+(pdftex.def)             Requested size: 154.03183pt x 154.03804pt.
+ [32
+
+ <./graphics/degree5arrangement.pdf>]
+<graphics/deltaAlphaHorizontalDisplacement.pdf, id=1165, 231.33426pt x 141.4986
+4pt>
+File: graphics/deltaAlphaHorizontalDisplacement.pdf Graphic file (type pdf)
+ <use graphics/deltaAlphaHorizontalDisplacement.pdf>
+Package pdftex.def Info: graphics/deltaAlphaHorizontalDisplacement.pdf used on 
+input line 591.
+(pdftex.def)             Requested size: 154.03183pt x 94.21631pt.
+ [33
+
+ <./graphics/deltaAlphaHorizontalDisplacement.pdf>]
+<graphics/dhsi.pdf, id=1240, 148.21974pt x 158.76112pt>
+File: graphics/dhsi.pdf Graphic file (type pdf)
+
+<use graphics/dhsi.pdf>
+Package pdftex.def Info: graphics/dhsi.pdf used on input line 607.
+(pdftex.def)             Requested size: 154.03183pt x 164.98654pt.
+ [34
+
+ <./graphics/dhsi.pdf>]
+<graphics/DiskPackingReconfiguration.pdf, id=1271, 322.6454pt x 202.1432pt>
+File: graphics/DiskPackingReconfiguration.pdf Graphic file (type pdf)
+
+<use graphics/DiskPackingReconfiguration.pdf>
+Package pdftex.def Info: graphics/DiskPackingReconfiguration.pdf used on input 
+line 623.
+(pdftex.def)             Requested size: 154.03183pt x 96.50327pt.
+ [35
+
+ <./graphics/DiskPackingReconfiguration.pdf>]
+<graphics/diskPackingTheoremExample.pdf, id=1304, 284.38043pt x 101.58252pt>
+File: graphics/diskPackingTheoremExample.pdf Graphic file (type pdf)
+
+<use graphics/diskPackingTheoremExample.pdf>
+Package pdftex.def Info: graphics/diskPackingTheoremExample.pdf used on input l
+ine 639.
+(pdftex.def)             Requested size: 154.03183pt x 55.02113pt.
+ [36
+
+ <./graphics/diskPackingTheoremExample.pdf>] <graphics/dragonBallz.pdf, id=1338
+, 1122.49367pt x 451.08525pt>
+File: graphics/dragonBallz.pdf Graphic file (type pdf)
+
+<use graphics/dragonBallz.pdf>
+Package pdftex.def Info: graphics/dragonBallz.pdf used on input line 655.
+(pdftex.def)             Requested size: 154.03183pt x 61.89879pt.
+ [37
+
+ <./graphics/dragonBallz.pdf>]
+<graphics/dualBigHexagonalGrid.pdf, id=1370, 6848.24513pt x 2829.82219pt>
+File: graphics/dualBigHexagonalGrid.pdf Graphic file (type pdf)
+
+<use graphics/dualBigHexagonalGrid.pdf>
+Package pdftex.def Info: graphics/dualBigHexagonalGrid.pdf used on input line 6
+71.
+(pdftex.def)             Requested size: 154.03183pt x 63.64665pt.
+ [38
+
+ <./graphics/dualBigHexagonalGrid.pdf>] <graphics/dualSmallHexagonalGrid.pdf, i
+d=1401, 527.5409pt x 233.5927pt>
+File: graphics/dualSmallHexagonalGrid.pdf Graphic file (type pdf)
+
+<use graphics/dualSmallHexagonalGrid.pdf>
+Package pdftex.def Info: graphics/dualSmallHexagonalGrid.pdf used on input line
+ 687.
+(pdftex.def)             Requested size: 154.03183pt x 68.2035pt.
+ [39
+
+ <./graphics/dualSmallHexagonalGrid.pdf>] <graphics/epsilonCenter.pdf, id=1441,
+ 142.79146pt x 129.45866pt>
+File: graphics/epsilonCenter.pdf Graphic file (type pdf)
+
+<use graphics/epsilonCenter.pdf>
+Package pdftex.def Info: graphics/epsilonCenter.pdf used on input line 703.
+(pdftex.def)             Requested size: 154.03183pt x 139.6572pt.
+ [40
+
+ <./graphics/epsilonCenter.pdf>]
+<graphics/epsilonCenterWithHexagon.pdf, id=1477, 142.79146pt x 129.45866pt>
+File: graphics/epsilonCenterWithHexagon.pdf Graphic file (type pdf)
+
+<use graphics/epsilonCenterWithHexagon.pdf>
+Package pdftex.def Info: graphics/epsilonCenterWithHexagon.pdf used on input li
+ne 719.
+(pdftex.def)             Requested size: 154.03183pt x 139.6572pt.
+ [41
+
+ <./graphics/epsilonCenterWithHexagon.pdf>]
+<graphics/equivalentWheelEmbedding.pdf, id=1512, 385.84149pt x 193.12149pt>
+File: graphics/equivalentWheelEmbedding.pdf Graphic file (type pdf)
+
+<use graphics/equivalentWheelEmbedding.pdf>
+Package pdftex.def Info: graphics/equivalentWheelEmbedding.pdf used on input li
+ne 735.
+(pdftex.def)             Requested size: 154.03183pt x 77.09694pt.
+ [42
+
+ <./graphics/equivalentWheelEmbedding.pdf>]
+<graphics/FalseVariableNonNegatedLiteralTransmitter.pdf, id=1545, 321.87253pt x
+ 323.94524pt>
+File: graphics/FalseVariableNonNegatedLiteralTransmitter.pdf Graphic file (type
+ pdf)
+ <use graphics/FalseVariableNonNegatedLiteralTransmitter.pdf>
+Package pdftex.def Info: graphics/FalseVariableNonNegatedLiteralTransmitter.pdf
+ used on input line 751.
+(pdftex.def)             Requested size: 154.03183pt x 155.0273pt.
+
+[43
+
+ <./graphics/FalseVariableNonNegatedLiteralTransmitter.pdf>]
+<graphics/fig-assoc-hex.pdf, id=1581, 328.38896pt x 99.16548pt>
+File: graphics/fig-assoc-hex.pdf Graphic file (type pdf)
+
+<use graphics/fig-assoc-hex.pdf>
+Package pdftex.def Info: graphics/fig-assoc-hex.pdf used on input line 767.
+(pdftex.def)             Requested size: 154.03183pt x 46.51547pt.
+ [44
+
+ <./graphics/fig-assoc-hex.pdf>]
+<graphics/fig-assoc.pdf, id=1616, 329.83226pt x 99.36221pt>
+File: graphics/fig-assoc.pdf Graphic file (type pdf)
+
+<use graphics/fig-assoc.pdf>
+Package pdftex.def Info: graphics/fig-assoc.pdf used on input line 783.
+(pdftex.def)             Requested size: 154.03183pt x 46.40155pt.
+ [45
+
+ <./graphics/fig-assoc.pdf>]
+<graphics/fig-chains.pdf, id=1651, 557.19196pt x 118.57098pt>
+File: graphics/fig-chains.pdf Graphic file (type pdf)
+
+<use graphics/fig-chains.pdf>
+Package pdftex.def Info: graphics/fig-chains.pdf used on input line 799.
+(pdftex.def)             Requested size: 154.03183pt x 32.77809pt.
+ [46
+
+ <./graphics/fig-chains.pdf>]
+<graphics/fig-clause-hex.pdf, id=1689, 388.96014pt x 101.64073pt>
+File: graphics/fig-clause-hex.pdf Graphic file (type pdf)
+
+<use graphics/fig-clause-hex.pdf>
+Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 815.
+(pdftex.def)             Requested size: 154.03183pt x 40.25078pt.
+ [47
+
+ <./graphics/fig-clause-hex.pdf>]
+<graphics/fig-clause.pdf, id=1729, 583.84726pt x 114.13039pt>
+File: graphics/fig-clause.pdf Graphic file (type pdf)
+
+<use graphics/fig-clause.pdf>
+Package pdftex.def Info: graphics/fig-clause.pdf used on input line 831.
+(pdftex.def)             Requested size: 154.03183pt x 30.10857pt.
+ [48
+
+ <./graphics/fig-clause.pdf>]
+<graphics/fig-frame-hex.pdf, id=1768, 477.26376pt x 197.06023pt>
+File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
+
+<use graphics/fig-frame-hex.pdf>
+Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 847.
+(pdftex.def)             Requested size: 154.03183pt x 63.59879pt.
+ [49
+
+ <./graphics/fig-frame-hex.pdf>]
+<graphics/fig-frame.pdf, id=1816, 420.25336pt x 198.1804pt>
+File: graphics/fig-frame.pdf Graphic file (type pdf)
+
+<use graphics/fig-frame.pdf>
+Package pdftex.def Info: graphics/fig-frame.pdf used on input line 863.
+(pdftex.def)             Requested size: 154.03183pt x 72.63612pt.
+ [50
+
+ <./graphics/fig-frame.pdf>]
+<graphics/fig-hexagon.pdf, id=1859, 377.57661pt x 143.36761pt>
+File: graphics/fig-hexagon.pdf Graphic file (type pdf)
+
+<use graphics/fig-hexagon.pdf>
+Package pdftex.def Info: graphics/fig-hexagon.pdf used on input line 879.
+(pdftex.def)             Requested size: 154.03183pt x 58.48795pt.
+ [51
+
+ <./graphics/fig-hexagon.pdf>]
+<graphics/fig-logic.pdf, id=1903, 507.13084pt x 173.32254pt>
+File: graphics/fig-logic.pdf Graphic file (type pdf)
+
+<use graphics/fig-logic.pdf>
+Package pdftex.def Info: graphics/fig-logic.pdf used on input line 895.
+(pdftex.def)             Requested size: 154.03183pt x 52.64246pt.
+ [52
+
+ <./graphics/fig-logic.pdf>]
+
+LaTeX Warning: File `graphics/fig-transmitter-hex copy.pdf' not found on input 
+line 911.
+
+<graphics/fig-transmitter-hex copy.pdf, id=1940, 385.1429pt x 100.51854pt>
+File: graphics/fig-transmitter-hex copy.pdf Graphic file (type pdf)
+
+<use graphics/fig-transmitter-hex copy.pdf>
+Package pdftex.def Info: graphics/fig-transmitter-hex copy.pdf used on input li
+ne 911.
+(pdftex.def)             Requested size: 154.03183pt x 40.20056pt.
+ [53
+
+ <./graphics/fig-transmitter-hex copy.pdf>]
+<graphics/fig-transmitter-hex.pdf, id=1980, 385.1429pt x 100.51854pt>
+File: graphics/fig-transmitter-hex.pdf Graphic file (type pdf)
+
+<use graphics/fig-transmitter-hex.pdf>
+Package pdftex.def Info: graphics/fig-transmitter-hex.pdf used on input line 92
+7.
+(pdftex.def)             Requested size: 154.03183pt x 40.20056pt.
+ [54
+
+ <./graphics/fig-transmitter-hex.pdf>] <graphics/fig-transmitter.pdf, id=2021, 
+531.0762pt x 146.98112pt>
+File: graphics/fig-transmitter.pdf Graphic file (type pdf)
+
+<use graphics/fig-transmitter.pdf>
+Package pdftex.def Info: graphics/fig-transmitter.pdf used on input line 943.
+(pdftex.def)             Requested size: 154.03183pt x 42.63016pt.
+ [55
+
+ <./graphics/fig-transmitter.pdf>]
+<graphics/fig-triangles.pdf, id=2059, 491.99608pt x 102.56718pt>
+File: graphics/fig-triangles.pdf Graphic file (type pdf)
+
+<use graphics/fig-triangles.pdf>
+Package pdftex.def Info: graphics/fig-triangles.pdf used on input line 959.
+(pdftex.def)             Requested size: 154.03183pt x 32.11163pt.
+ [56
+
+ <./graphics/fig-triangles.pdf>]
+<graphics/fig-ushape.pdf, id=2092, 476.63461pt x 116.79434pt>
+File: graphics/fig-ushape.pdf Graphic file (type pdf)
+
+<use graphics/fig-ushape.pdf>
+Package pdftex.def Info: graphics/fig-ushape.pdf used on input line 975.
+(pdftex.def)             Requested size: 154.03183pt x 37.74385pt.
+ [57
+
+ <./graphics/fig-ushape.pdf>]
+<graphics/fig-variable-hex+.pdf, id=2130, 515.06215pt x 110.3061pt>
+File: graphics/fig-variable-hex+.pdf Graphic file (type pdf)
+
+<use graphics/fig-variable-hex+.pdf>
+Package pdftex.def Info: graphics/fig-variable-hex+.pdf used on input line 991.
+
+(pdftex.def)             Requested size: 154.03183pt x 32.98772pt.
+ [58
+
+ <./graphics/fig-variable-hex+.pdf>]
+<graphics/fig-variable.pdf, id=2169, 477.36243pt x 131.62875pt>
+File: graphics/fig-variable.pdf Graphic file (type pdf)
+
+<use graphics/fig-variable.pdf>
+Package pdftex.def Info: graphics/fig-variable.pdf used on input line 1007.
+(pdftex.def)             Requested size: 154.03183pt x 42.47153pt.
+ [59
+
+ <./graphics/fig-variable.pdf>]
+<graphics/fig1+.pdf, id=2208, 514.07758pt x 144.56912pt>
+File: graphics/fig1+.pdf Graphic file (type pdf)
+
+<use graphics/fig1+.pdf>
+Package pdftex.def Info: graphics/fig1+.pdf used on input line 1023.
+(pdftex.def)             Requested size: 154.03183pt x 43.31592pt.
+ [60
+
+ <./graphics/fig1+.pdf>]
+<graphics/fig1.pdf, id=2244, 510.29495pt x 144.56912pt>
+File: graphics/fig1.pdf Graphic file (type pdf)
+
+<use graphics/fig1.pdf>
+Package pdftex.def Info: graphics/fig1.pdf used on input line 1039.
+(pdftex.def)             Requested size: 154.03183pt x 43.63799pt.
+ [61
+
+ <./graphics/fig1.pdf>]
+<graphics/FlagWithRhombus.pdf, id=2282, 170.95871pt x 161.52345pt>
+File: graphics/FlagWithRhombus.pdf Graphic file (type pdf)
+
+<use graphics/FlagWithRhombus.pdf>
+Package pdftex.def Info: graphics/FlagWithRhombus.pdf used on input line 1055.
+(pdftex.def)             Requested size: 154.03183pt x 145.53488pt.
+ [62
+
+ <./graphics/FlagWithRhombus.pdf>]
+<graphics/FlexibleHexagons.pdf, id=2313, 272.63959pt x 156.12328pt>
+File: graphics/FlexibleHexagons.pdf Graphic file (type pdf)
+
+<use graphics/FlexibleHexagons.pdf>
+Package pdftex.def Info: graphics/FlexibleHexagons.pdf used on input line 1071.
+
+(pdftex.def)             Requested size: 154.03183pt x 88.20741pt.
+ [63
+
+ <./graphics/FlexibleHexagons.pdf>]
+<graphics/FrameObstacleHexagonCloseUp.pdf, id=2347, 772.08452pt x 3789.5177pt>
+File: graphics/FrameObstacleHexagonCloseUp.pdf Graphic file (type pdf)
+
+<use graphics/FrameObstacleHexagonCloseUp.pdf>
+Package pdftex.def Info: graphics/FrameObstacleHexagonCloseUp.pdf used on input
+ line 1087.
+(pdftex.def)             Requested size: 154.03183pt x 755.98196pt.
+
+Overfull \vbox (552.91138pt too high) detected at line 1087
+ []
+
+[64
+
+ <./graphics/FrameObstacleHexagonCloseUp.pdf>]
+<graphics/freeJointPinnedJoint.pdf, id=2379, 141.27179pt x 65.57599pt>
+File: graphics/freeJointPinnedJoint.pdf Graphic file (type pdf)
+
+<use graphics/freeJointPinnedJoint.pdf>
+Package pdftex.def Info: graphics/freeJointPinnedJoint.pdf used on input line 1
+103.
+(pdftex.def)             Requested size: 154.03183pt x 71.50139pt.
+ [65
+
+ <./graphics/freeJointPinnedJoint.pdf>]
+<graphics/GeometricDissectionBusschop.pdf, id=2410, 276.21796pt x 112.4722pt>
+File: graphics/GeometricDissectionBusschop.pdf Graphic file (type pdf)
+
+<use graphics/GeometricDissectionBusschop.pdf>
+Package pdftex.def Info: graphics/GeometricDissectionBusschop.pdf used on input
+ line 1119.
+(pdftex.def)             Requested size: 154.03183pt x 62.7214pt.
+ [66
+
+ <./graphics/GeometricDissectionBusschop.pdf>]
+<graphics/graphIsomorphismExample.pdf, id=2441, 278.06987pt x 87.81107pt>
+File: graphics/graphIsomorphismExample.pdf Graphic file (type pdf)
+
+<use graphics/graphIsomorphismExample.pdf>
+Package pdftex.def Info: graphics/graphIsomorphismExample.pdf used on input lin
+e 1135.
+(pdftex.def)             Requested size: 154.03183pt x 48.6419pt.
+ [67
+
+ <./graphics/graphIsomorphismExample.pdf>] <graphics/HaberdasherProblem.pdf, id
+=2476, 265.8201pt x 132.09651pt>
+File: graphics/HaberdasherProblem.pdf Graphic file (type pdf)
+
+<use graphics/HaberdasherProblem.pdf>
+Package pdftex.def Info: graphics/HaberdasherProblem.pdf used on input line 115
+1.
+(pdftex.def)             Requested size: 154.03183pt x 76.54547pt.
+ [68
+
+ <./graphics/HaberdasherProblem.pdf>]
+<graphics/HalfSizeHexagon.pdf, id=2509, 247.78572pt x 147.04938pt>
+File: graphics/HalfSizeHexagon.pdf Graphic file (type pdf)
+
+<use graphics/HalfSizeHexagon.pdf>
+Package pdftex.def Info: graphics/HalfSizeHexagon.pdf used on input line 1167.
+(pdftex.def)             Requested size: 154.03183pt x 91.41199pt.
+ [69
+
+ <./graphics/HalfSizeHexagon.pdf>]
+<graphics/HausdorffDistanceExample1.pdf, id=2540, 291.58937pt x 208.65755pt>
+File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
+
+<use graphics/HausdorffDistanceExample1.pdf>
+Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
+ine 1183.
+(pdftex.def)             Requested size: 154.03183pt x 110.22499pt.
+ [70
+
+ <./graphics/HausdorffDistanceExample1.pdf>]
+<graphics/HausdorffDistanceExample1Small.pdf, id=2575, 211.07558pt x 155.55617p
+t>
+File: graphics/HausdorffDistanceExample1Small.pdf Graphic file (type pdf)
+ <use graphics/HausdorffDistanceExample1Small.pdf>
+Package pdftex.def Info: graphics/HausdorffDistanceExample1Small.pdf used on in
+put line 1199.
+(pdftex.def)             Requested size: 154.03183pt x 113.5218pt.
+ [71
+
+ <./graphics/HausdorffDistanceExample1Small.pdf>]
+<graphics/hexagonalConstructionOfJSmall.pdf, id=2611, 647.15776pt x 213.23665pt
+>
+File: graphics/hexagonalConstructionOfJSmall.pdf Graphic file (type pdf)
+ <use graphics/hexagonalConstructionOfJSmall.pdf>
+Package pdftex.def Info: graphics/hexagonalConstructionOfJSmall.pdf used on inp
+ut line 1215.
+(pdftex.def)             Requested size: 154.03183pt x 50.7516pt.
+ [72
+
+ <./graphics/hexagonalConstructionOfJSmall.pdf>]
+<graphics/hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf, id=2660, 647.15
+776pt x 213.23665pt>
+File: graphics/hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf Graphic fil
+e (type pdf)
+
+<use graphics/hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf>
+Package pdftex.def Info: graphics/hexagonalConstructionOfJSmallWithoutHalfHexag
+ons.pdf used on input line 1231.
+(pdftex.def)             Requested size: 154.03183pt x 50.7516pt.
+ [73
+
+ <./graphics/hexagonalConstructionOfJSmallWithoutHalfHexagons.pdf>]
+<graphics/HexagonalGridRho.pdf, id=2711, 651.81519pt x 262.88213pt>
+File: graphics/HexagonalGridRho.pdf Graphic file (type pdf)
+
+<use graphics/HexagonalGridRho.pdf>
+Package pdftex.def Info: graphics/HexagonalGridRho.pdf used on input line 1247.
+
+(pdftex.def)             Requested size: 154.03183pt x 62.12227pt.
+ [74
+
+ <./graphics/HexagonalGridRho.pdf>]
+<graphics/hexagonInChannel.pdf, id=2766, 193.12149pt x 66.95012pt>
+File: graphics/hexagonInChannel.pdf Graphic file (type pdf)
+
+<use graphics/hexagonInChannel.pdf>
+Package pdftex.def Info: graphics/hexagonInChannel.pdf used on input line 1263.
+
+(pdftex.def)             Requested size: 154.03183pt x 53.40181pt.
+ [75
+
+ <./graphics/hexagonInChannel.pdf>]
+<graphics/hexagonInChannelWithPinnedJointLeft.pdf, id=2797, 193.12149pt x 66.95
+012pt>
+File: graphics/hexagonInChannelWithPinnedJointLeft.pdf Graphic file (type pdf)
+ <use graphics/hexagonInChannelWithPinnedJointLeft.pdf>
+Package pdftex.def Info: graphics/hexagonInChannelWithPinnedJointLeft.pdf used 
+on input line 1279.
+(pdftex.def)             Requested size: 154.03183pt x 53.40181pt.
+ [76
+
+ <./graphics/hexagonInChannelWithPinnedJointLeft.pdf>]
+<graphics/hexagonInChannelWithPinnedJointRight.pdf, id=2829, 193.12149pt x 66.9
+5314pt>
+File: graphics/hexagonInChannelWithPinnedJointRight.pdf Graphic file (type pdf)
+
+ <use graphics/hexagonInChannelWithPinnedJointRight.pdf>
+Package pdftex.def Info: graphics/hexagonInChannelWithPinnedJointRight.pdf used
+ on input line 1295.
+(pdftex.def)             Requested size: 154.03183pt x 53.4042pt.
+ [77
+
+ <./graphics/hexagonInChannelWithPinnedJointRight.pdf>]
+<graphics/hexagonNonCanonical.pdf, id=2860, 189.37952pt x 182.95753pt>
+File: graphics/hexagonNonCanonical.pdf Graphic file (type pdf)
+
+<use graphics/hexagonNonCanonical.pdf>
+Package pdftex.def Info: graphics/hexagonNonCanonical.pdf used on input line 13
+11.
+(pdftex.def)             Requested size: 154.03183pt x 148.80896pt.
+ [78
+
+ <./graphics/hexagonNonCanonical.pdf>] <graphics/hexagonNonCanonical2.pdf, id=2
+908, 189.37952pt x 182.95753pt>
+File: graphics/hexagonNonCanonical2.pdf Graphic file (type pdf)
+
+<use graphics/hexagonNonCanonical2.pdf>
+Package pdftex.def Info: graphics/hexagonNonCanonical2.pdf used on input line 1
+327.
+(pdftex.def)             Requested size: 154.03183pt x 148.80896pt.
+ [79
+
+ <./graphics/hexagonNonCanonical2.pdf>] <graphics/hexagonNonCanonical3.pdf, id=
+2950, 228.7988pt x 182.95753pt>
+File: graphics/hexagonNonCanonical3.pdf Graphic file (type pdf)
+
+<use graphics/hexagonNonCanonical3.pdf>
+Package pdftex.def Info: graphics/hexagonNonCanonical3.pdf used on input line 1
+343.
+(pdftex.def)             Requested size: 154.03183pt x 123.16995pt.
+ [80
+
+ <./graphics/hexagonNonCanonical3.pdf>] <graphics/hexagonNonCanonical4.pdf, id=
+2993, 194.12524pt x 194.12524pt>
+File: graphics/hexagonNonCanonical4.pdf Graphic file (type pdf)
+
+<use graphics/hexagonNonCanonical4.pdf>
+Package pdftex.def Info: graphics/hexagonNonCanonical4.pdf used on input line 1
+359.
+(pdftex.def)             Requested size: 154.03183pt x 154.04149pt.
+ [81
+
+ <./graphics/hexagonNonCanonical4.pdf>] <graphics/hexagonOutline5Layer.pdf, id=
+3034, 708.04527pt x 621.9837pt>
+File: graphics/hexagonOutline5Layer.pdf Graphic file (type pdf)
+
+<use graphics/hexagonOutline5Layer.pdf>
+Package pdftex.def Info: graphics/hexagonOutline5Layer.pdf used on input line 1
+375.
+(pdftex.def)             Requested size: 154.03183pt x 135.30882pt.
+ [82
+
+ <./graphics/hexagonOutline5Layer.pdf>]
+<graphics/hexagonOutline5LayerSmall.pdf, id=3065, 204.32335pt x 179.61102pt>
+File: graphics/hexagonOutline5LayerSmall.pdf Graphic file (type pdf)
+
+<use graphics/hexagonOutline5LayerSmall.pdf>
+Package pdftex.def Info: graphics/hexagonOutline5LayerSmall.pdf used on input l
+ine 1391.
+(pdftex.def)             Requested size: 154.03183pt x 135.40678pt.
+ [83
+
+ <./graphics/hexagonOutline5LayerSmall.pdf>]
+<graphics/hexagonOutlineLayerSmall.pdf, id=3096, 204.32335pt x 192.29843pt>
+File: graphics/hexagonOutlineLayerSmall.pdf Graphic file (type pdf)
+
+<use graphics/hexagonOutlineLayerSmall.pdf>
+Package pdftex.def Info: graphics/hexagonOutlineLayerSmall.pdf used on input li
+ne 1407.
+(pdftex.def)             Requested size: 154.03183pt x 144.97168pt.
+ [84
+
+ <./graphics/hexagonOutlineLayerSmall.pdf>]
+<graphics/hexagonPetiolesLeafs9Layers.pdf, id=3136, 388.79253pt x 339.79948pt>
+File: graphics/hexagonPetiolesLeafs9Layers.pdf Graphic file (type pdf)
+
+<use graphics/hexagonPetiolesLeafs9Layers.pdf>
+Package pdftex.def Info: graphics/hexagonPetiolesLeafs9Layers.pdf used on input
+ line 1423.
+(pdftex.def)             Requested size: 154.03183pt x 134.62115pt.
+ [85
+
+ <./graphics/hexagonPetiolesLeafs9Layers.pdf>]
+<graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf, id=3169, 878.25111pt x
+ 376.69734pt>
+File: graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf Graphic file (type
+ pdf)
+ <use graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf>
+Package pdftex.def Info: graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf
+ used on input line 1439.
+(pdftex.def)             Requested size: 154.03183pt x 66.06671pt.
+
+[86
+
+ <./graphics/hexagonPetiolesLeafs9LayersRotatedOutward.pdf>]
+<graphics/HingedDissection.pdf, id=3200, 405.81612pt x 116.67189pt>
+File: graphics/HingedDissection.pdf Graphic file (type pdf)
+
+<use graphics/HingedDissection.pdf>
+Package pdftex.def Info: graphics/HingedDissection.pdf used on input line 1455.
+
+(pdftex.def)             Requested size: 154.03183pt x 44.28415pt.
+ [87
+
+ <./graphics/HingedDissection.pdf>]
+<graphics/HingedHaberdasher.pdf, id=3231, 478.2165pt x 118.96725pt>
+File: graphics/HingedHaberdasher.pdf Graphic file (type pdf)
+
+<use graphics/HingedHaberdasher.pdf>
+Package pdftex.def Info: graphics/HingedHaberdasher.pdf used on input line 1471
+.
+(pdftex.def)             Requested size: 154.03183pt x 38.31898pt.
+ [88
+
+ <./graphics/HingedHaberdasher.pdf>]
+<graphics/HingedLogicEngineBig.pdf, id=3283, 1285.20152pt x 835.52153pt>
+File: graphics/HingedLogicEngineBig.pdf Graphic file (type pdf)
+
+<use graphics/HingedLogicEngineBig.pdf>
+Package pdftex.def Info: graphics/HingedLogicEngineBig.pdf used on input line 1
+487.
+(pdftex.def)             Requested size: 154.03183pt x 100.13077pt.
+ [89
+
+ <./graphics/HingedLogicEngineBig.pdf>] <graphics/HingedLogicEngineSmall.pdf, i
+d=3314, 296.04602pt x 193.789pt>
+File: graphics/HingedLogicEngineSmall.pdf Graphic file (type pdf)
+
+<use graphics/HingedLogicEngineSmall.pdf>
+Package pdftex.def Info: graphics/HingedLogicEngineSmall.pdf used on input line
+ 1503.
+(pdftex.def)             Requested size: 154.03183pt x 100.82999pt.
+ [90
+
+ <./graphics/HingedLogicEngineSmall.pdf>]
+<graphics/HingedLogicEngineSmallEnumerated.pdf, id=3345, 428.06926pt x 207.1198
+pt>
+File: graphics/HingedLogicEngineSmallEnumerated.pdf Graphic file (type pdf)
+ <use graphics/HingedLogicEngineSmallEnumerated.pdf>
+Package pdftex.def Info: graphics/HingedLogicEngineSmallEnumerated.pdf used on 
+input line 1519.
+(pdftex.def)             Requested size: 154.03183pt x 74.52829pt.
+ [91
+
+ <./graphics/HingedLogicEngineSmallEnumerated.pdf>]
+<graphics/HingedTriangleSquare.pdf, id=3390, 465.506pt x 102.33151pt>
+File: graphics/HingedTriangleSquare.pdf Graphic file (type pdf)
+
+<use graphics/HingedTriangleSquare.pdf>
+Package pdftex.def Info: graphics/HingedTriangleSquare.pdf used on input line 1
+535.
+(pdftex.def)             Requested size: 154.03183pt x 33.86005pt.
+ [92
+
+ <./graphics/HingedTriangleSquare.pdf>]
+<graphics/hingeOnThreeDistinctPolygons.pdf, id=3463, 297.0608pt x 129.93243pt>
+File: graphics/hingeOnThreeDistinctPolygons.pdf Graphic file (type pdf)
+
+<use graphics/hingeOnThreeDistinctPolygons.pdf>
+Package pdftex.def Info: graphics/hingeOnThreeDistinctPolygons.pdf used on inpu
+t line 1551.
+(pdftex.def)             Requested size: 154.03183pt x 67.37491pt.
+ [93
+
+ <./graphics/hingeOnThreeDistinctPolygons.pdf>]
+<graphics/honeycomb.pdf, id=3496, 195.70114pt x 197.05621pt>
+File: graphics/honeycomb.pdf Graphic file (type pdf)
+
+<use graphics/honeycomb.pdf>
+Package pdftex.def Info: graphics/honeycomb.pdf used on input line 1567.
+(pdftex.def)             Requested size: 154.03183pt x 155.1074pt.
+ [94
+
+ <./graphics/honeycomb.pdf>]
+<graphics/HoneyCombAssociatedGraphSideBySide.pdf, id=3528, 1178.1616pt x 590.34
+554pt>
+File: graphics/HoneyCombAssociatedGraphSideBySide.pdf Graphic file (type pdf)
+ <use graphics/HoneyCombAssociatedGraphSideBySide.pdf>
+Package pdftex.def Info: graphics/HoneyCombAssociatedGraphSideBySide.pdf used o
+n input line 1583.
+(pdftex.def)             Requested size: 154.03183pt x 77.18pt.
+ [95
+
+ <./graphics/HoneyCombAssociatedGraphSideBySide.pdf>]
+<graphics/HoneyCombAssociatedGraphSmall.pdf, id=3568, 605.97394pt x 337.95761pt
+>
+File: graphics/HoneyCombAssociatedGraphSmall.pdf Graphic file (type pdf)
+ <use graphics/HoneyCombAssociatedGraphSmall.pdf>
+Package pdftex.def Info: graphics/HoneyCombAssociatedGraphSmall.pdf used on inp
+ut line 1599.
+(pdftex.def)             Requested size: 154.03183pt x 85.90215pt.
+ [96
+
+ <./graphics/HoneyCombAssociatedGraphSmall.pdf>]
+<graphics/HoneycombFlixible.pdf, id=3605, 1188.79129pt x 1067.37773pt>
+File: graphics/HoneycombFlixible.pdf Graphic file (type pdf)
+
+<use graphics/HoneycombFlixible.pdf>
+Package pdftex.def Info: graphics/HoneycombFlixible.pdf used on input line 1615
+.
+(pdftex.def)             Requested size: 154.03183pt x 138.29166pt.
+ [97
+
+ <./graphics/HoneycombFlixible.pdf>]
+<graphics/honeycombSatSmall.pdf, id=3641, 448.71642pt x 243.59004pt>
+File: graphics/honeycombSatSmall.pdf Graphic file (type pdf)
+
+<use graphics/honeycombSatSmall.pdf>
+Package pdftex.def Info: graphics/honeycombSatSmall.pdf used on input line 1631
+.
+(pdftex.def)             Requested size: 154.03183pt x 83.61864pt.
+ [98
+
+ <./graphics/honeycombSatSmall.pdf>]
+<graphics/HorizontalArgument.pdf, id=3685, 1205.293pt x 1039.38312pt>
+File: graphics/HorizontalArgument.pdf Graphic file (type pdf)
+
+<use graphics/HorizontalArgument.pdf>
+Package pdftex.def Info: graphics/HorizontalArgument.pdf used on input line 164
+7.
+(pdftex.def)             Requested size: 154.03183pt x 132.82489pt.
+ [99
+
+ <./graphics/HorizontalArgument.pdf>]
+<graphics/HorizontalArgument2.pdf, id=3719, 305.36082pt x 195.129pt>
+File: graphics/HorizontalArgument2.pdf Graphic file (type pdf)
+
+<use graphics/HorizontalArgument2.pdf>
+Package pdftex.def Info: graphics/HorizontalArgument2.pdf used on input line 16
+63.
+(pdftex.def)             Requested size: 154.03183pt x 98.4277pt.
+ [100
+
+ <./graphics/HorizontalArgument2.pdf>] <graphics/HorizontalArgumentRho.pdf, id=
+3754, 287.69482pt x 249.21104pt>
+File: graphics/HorizontalArgumentRho.pdf Graphic file (type pdf)
+
+<use graphics/HorizontalArgumentRho.pdf>
+Package pdftex.def Info: graphics/HorizontalArgumentRho.pdf used on input line 
+1679.
+(pdftex.def)             Requested size: 154.03183pt x 133.42735pt.
+ [101
+
+ <./graphics/HorizontalArgumentRho.pdf>]
+<graphics/HorizontalCorridorArgument.pdf, id=3788, 827.15022pt x 187.1291pt>
+File: graphics/HorizontalCorridorArgument.pdf Graphic file (type pdf)
+
+<use graphics/HorizontalCorridorArgument.pdf>
+Package pdftex.def Info: graphics/HorizontalCorridorArgument.pdf used on input 
+line 1695.
+(pdftex.def)             Requested size: 154.03183pt x 34.84676pt.
+ [102
+
+ <./graphics/HorizontalCorridorArgument.pdf>]
+<graphics/horizontalHeightCorridor.pdf, id=3846, 390.60931pt x 187.81166pt>
+File: graphics/horizontalHeightCorridor.pdf Graphic file (type pdf)
+
+<use graphics/horizontalHeightCorridor.pdf>
+Package pdftex.def Info: graphics/horizontalHeightCorridor.pdf used on input li
+ne 1711.
+(pdftex.def)             Requested size: 154.03183pt x 74.06299pt.
+ [103
+
+ <./graphics/horizontalHeightCorridor.pdf>]
+<graphics/HorizontalJunctionArgument.pdf, id=3898, 238.40065pt x 130.31686pt>
+File: graphics/HorizontalJunctionArgument.pdf Graphic file (type pdf)
+
+<use graphics/HorizontalJunctionArgument.pdf>
+Package pdftex.def Info: graphics/HorizontalJunctionArgument.pdf used on input 
+line 1727.
+(pdftex.def)             Requested size: 154.03183pt x 84.19987pt.
+ [104
+
+ <./graphics/HorizontalJunctionArgument.pdf>]
+<graphics/HumanTurkeyLinkage.pdf, id=3944, 255.56679pt x 151.56123pt>
+File: graphics/HumanTurkeyLinkage.pdf Graphic file (type pdf)
+
+<use graphics/HumanTurkeyLinkage.pdf>
+Package pdftex.def Info: graphics/HumanTurkeyLinkage.pdf used on input line 174
+3.
+(pdftex.def)             Requested size: 154.03183pt x 91.34677pt.
+ [105
+
+ <./graphics/HumanTurkeyLinkage.pdf>] <graphics/InsertFigure.pdf, id=3976, 199.
+33171pt x 33.26027pt>
+File: graphics/InsertFigure.pdf Graphic file (type pdf)
+
+<use graphics/InsertFigure.pdf>
+Package pdftex.def Info: graphics/InsertFigure.pdf used on input line 1759.
+(pdftex.def)             Requested size: 154.03183pt x 25.70183pt.
+ [106
+
+ <./graphics/InsertFigure.pdf>]
+<graphics/kuratowskiExamples.pdf, id=4009, 312.7645pt x 116.54541pt>
+File: graphics/kuratowskiExamples.pdf Graphic file (type pdf)
+
+<use graphics/kuratowskiExamples.pdf>
+Package pdftex.def Info: graphics/kuratowskiExamples.pdf used on input line 177
+5.
+(pdftex.def)             Requested size: 154.03183pt x 57.39761pt.
+ [107
+
+ <./graphics/kuratowskiExamples.pdf>] <graphics/LeftSwitchBetweenTwoPolygons.pd
+f, id=4046, 89.2143pt x 192.92075pt>
+File: graphics/LeftSwitchBetweenTwoPolygons.pdf Graphic file (type pdf)
+
+<use graphics/LeftSwitchBetweenTwoPolygons.pdf>
+Package pdftex.def Info: graphics/LeftSwitchBetweenTwoPolygons.pdf used on inpu
+t line 1791.
+(pdftex.def)             Requested size: 154.03183pt x 333.1242pt.
+
+Overfull \vbox (130.05362pt too high) detected at line 1791
+ []
+
+[108
+
+ <./graphics/LeftSwitchBetweenTwoPolygons.pdf>]
+<graphics/lemmaHingedPolygon2.pdf, id=4077, 1382.56528pt x 306.92667pt>
+File: graphics/lemmaHingedPolygon2.pdf Graphic file (type pdf)
+
+<use graphics/lemmaHingedPolygon2.pdf>
+Package pdftex.def Info: graphics/lemmaHingedPolygon2.pdf used on input line 18
+07.
+(pdftex.def)             Requested size: 154.03183pt x 34.1929pt.
+ [109
+
+ <./graphics/lemmaHingedPolygon2.pdf>] <graphics/LineSegmentDelta.pdf, id=4130,
+ 390.45876pt x 50.16742pt>
+File: graphics/LineSegmentDelta.pdf Graphic file (type pdf)
+
+<use graphics/LineSegmentDelta.pdf>
+Package pdftex.def Info: graphics/LineSegmentDelta.pdf used on input line 1823.
+
+(pdftex.def)             Requested size: 154.03183pt x 19.79025pt.
+ [110
+
+ <./graphics/LineSegmentDelta.pdf>]
+<graphics/linkageillustration.pdf, id=4161, 193.12149pt x 110.57813pt>
+File: graphics/linkageillustration.pdf Graphic file (type pdf)
+
+<use graphics/linkageillustration.pdf>
+Package pdftex.def Info: graphics/linkageillustration.pdf used on input line 18
+39.
+(pdftex.def)             Requested size: 154.03183pt x 88.20108pt.
+ [111
+
+ <./graphics/linkageillustration.pdf>]
+<graphics/LinkageWithTwoLengthAssignments.pdf, id=4194, 566.66074pt x 92.89908p
+t>
+File: graphics/LinkageWithTwoLengthAssignments.pdf Graphic file (type pdf)
+ <use graphics/LinkageWithTwoLengthAssignments.pdf>
+Package pdftex.def Info: graphics/LinkageWithTwoLengthAssignments.pdf used on i
+nput line 1855.
+(pdftex.def)             Requested size: 154.03183pt x 25.25175pt.
+ [112
+
+ <./graphics/LinkageWithTwoLengthAssignments.pdf>]
+<graphics/LockedConnellyLinkage.pdf, id=4234, 535.49683pt x 233.31265pt>
+File: graphics/LockedConnellyLinkage.pdf Graphic file (type pdf)
+
+<use graphics/LockedConnellyLinkage.pdf>
+Package pdftex.def Info: graphics/LockedConnellyLinkage.pdf used on input line 
+1871.
+(pdftex.def)             Requested size: 154.03183pt x 67.11067pt.
+ [113
+
+ <./graphics/LockedConnellyLinkage.pdf>] <graphics/lockingShape.pdf, id=4265, 8
+0.6764pt x 56.23509pt>
+File: graphics/lockingShape.pdf Graphic file (type pdf)
+
+<use graphics/lockingShape.pdf>
+Package pdftex.def Info: graphics/lockingShape.pdf used on input line 1887.
+(pdftex.def)             Requested size: 154.03183pt x 107.37204pt.
+ [114
+
+ <./graphics/lockingShape.pdf>]
+<graphics/logicengine.pdf, id=4296, 484.52618pt x 387.4475pt>
+File: graphics/logicengine.pdf Graphic file (type pdf)
+
+<use graphics/logicengine.pdf>
+Package pdftex.def Info: graphics/logicengine.pdf used on input line 1903.
+(pdftex.def)             Requested size: 154.03183pt x 123.16988pt.
+ [115
+
+ <./graphics/logicengine.pdf>]
+<graphics/logicEngineCollisions.pdf, id=4331, 323.27173pt x 257.62349pt>
+File: graphics/logicEngineCollisions.pdf Graphic file (type pdf)
+
+<use graphics/logicEngineCollisions.pdf>
+Package pdftex.def Info: graphics/logicEngineCollisions.pdf used on input line 
+1919.
+(pdftex.def)             Requested size: 154.03183pt x 122.75372pt.
+ [116
+
+ <./graphics/logicEngineCollisions.pdf>]
+<graphics/logicEngineCollisionsSmall.pdf, id=4368, 529.43695pt x 176.74733pt>
+File: graphics/logicEngineCollisionsSmall.pdf Graphic file (type pdf)
+
+<use graphics/logicEngineCollisionsSmall.pdf>
+Package pdftex.def Info: graphics/logicEngineCollisionsSmall.pdf used on input 
+line 1935.
+(pdftex.def)             Requested size: 154.03183pt x 51.4226pt.
+ [117
+
+ <./graphics/logicEngineCollisionsSmall.pdf>]
+<graphics/logicengineFlags.pdf, id=4405, 756.78737pt x 740.7675pt>
+File: graphics/logicengineFlags.pdf Graphic file (type pdf)
+
+<use graphics/logicengineFlags.pdf>
+Package pdftex.def Info: graphics/logicengineFlags.pdf used on input line 1951.
+
+(pdftex.def)             Requested size: 154.03183pt x 150.7619pt.
+ [118
+
+ <./graphics/logicengineFlags.pdf>]
+<graphics/LogicEngineFrame.pdf, id=4445, 387.4475pt x 515.12451pt>
+File: graphics/LogicEngineFrame.pdf Graphic file (type pdf)
+
+<use graphics/LogicEngineFrame.pdf>
+Package pdftex.def Info: graphics/LogicEngineFrame.pdf used on input line 1967.
+
+(pdftex.def)             Requested size: 154.03183pt x 204.78853pt.
+
+Overfull \vbox (1.71794pt too high) detected at line 1967
+ []
+
+[119
+
+ <./graphics/LogicEngineFrame.pdf>]
+<graphics/LogicEngineFrameFigure1.pdf, id=4478, 451.6875pt x 548.0475pt>
+File: graphics/LogicEngineFrameFigure1.pdf Graphic file (type pdf)
+
+<use graphics/LogicEngineFrameFigure1.pdf>
+Package pdftex.def Info: graphics/LogicEngineFrameFigure1.pdf used on input lin
+e 1983.
+(pdftex.def)             Requested size: 154.03183pt x 186.89397pt.
+ [120
+
+ <./graphics/LogicEngineFrameFigure1.pdf>]
+<graphics/LogicEngineFrameFigure1halfScaled.pdf, id=4511, 153.45331pt x 178.687
+58pt>
+File: graphics/LogicEngineFrameFigure1halfScaled.pdf Graphic file (type pdf)
+ <use graphics/LogicEngineFrameFigure1halfScaled.pdf>
+Package pdftex.def Info: graphics/LogicEngineFrameFigure1halfScaled.pdf used on
+ input line 1999.
+(pdftex.def)             Requested size: 154.03183pt x 179.37694pt.
+ [121
+
+ <./graphics/LogicEngineFrameFigure1halfScaled.pdf>]
+<graphics/LogicEngineFrameFigure1Scaled.pdf, id=4543, 233.38191pt x 282.96716pt
+>
+File: graphics/LogicEngineFrameFigure1Scaled.pdf Graphic file (type pdf)
+ <use graphics/LogicEngineFrameFigure1Scaled.pdf>
+Package pdftex.def Info: graphics/LogicEngineFrameFigure1Scaled.pdf used on inp
+ut line 2015.
+(pdftex.def)             Requested size: 154.03183pt x 186.7589pt.
+ [122
+
+ <./graphics/LogicEngineFrameFigure1Scaled.pdf>]
+<graphics/LogicEngineFrameFigure2.pdf, id=4577, 1013.38597pt x 563.70598pt>
+File: graphics/LogicEngineFrameFigure2.pdf Graphic file (type pdf)
+
+<use graphics/LogicEngineFrameFigure2.pdf>
+Package pdftex.def Info: graphics/LogicEngineFrameFigure2.pdf used on input lin
+e 2031.
+(pdftex.def)             Requested size: 154.03183pt x 85.67903pt.
+ [123
+
+ <./graphics/LogicEngineFrameFigure2.pdf>]
+<graphics/LogicEngineFrameFigure2Scaled.pdf, id=4614, 252.44313pt x 142.49236pt
+>
+File: graphics/LogicEngineFrameFigure2Scaled.pdf Graphic file (type pdf)
+ <use graphics/LogicEngineFrameFigure2Scaled.pdf>
+Package pdftex.def Info: graphics/LogicEngineFrameFigure2Scaled.pdf used on inp
+ut line 2047.
+(pdftex.def)             Requested size: 154.03183pt x 86.94412pt.
+ [124
+
+ <./graphics/LogicEngineFrameFigure2Scaled.pdf>]
+<graphics/LogicEngineFrameFigure5.pdf, id=4653, 597.23125pt x 845.1575pt>
+File: graphics/LogicEngineFrameFigure5.pdf Graphic file (type pdf)
+
+<use graphics/LogicEngineFrameFigure5.pdf>
+Package pdftex.def Info: graphics/LogicEngineFrameFigure5.pdf used on input lin
+e 2063.
+(pdftex.def)             Requested size: 154.03183pt x 217.96901pt.
+
+Overfull \vbox (14.89842pt too high) detected at line 2063
+ []
+
+[125
+
+ <./graphics/LogicEngineFrameFigure5.pdf>]
+<graphics/LogicEngineFrameFigure5Scaled.pdf, id=4685, 2967.46141pt x 3038.79994
+pt>
+File: graphics/LogicEngineFrameFigure5Scaled.pdf Graphic file (type pdf)
+ <use graphics/LogicEngineFrameFigure5Scaled.pdf>
+Package pdftex.def Info: graphics/LogicEngineFrameFigure5Scaled.pdf used on inp
+ut line 2079.
+(pdftex.def)             Requested size: 154.03183pt x 157.69856pt.
+ [126
+
+ <./graphics/LogicEngineFrameFigure5Scaled.pdf>]
+<graphics/logicEngineValidConfigurations.pdf, id=4716, 308.6983pt x 97.74919pt>
+File: graphics/logicEngineValidConfigurations.pdf Graphic file (type pdf)
+<use graphics/logicEngineValidConfigurations.pdf>
+Package pdftex.def Info: graphics/logicEngineValidConfigurations.pdf used on in
+put line 2095.
+(pdftex.def)             Requested size: 154.03183pt x 48.77454pt.
+ [127
+
+ <./graphics/logicEngineValidConfigurations.pdf>]
+<graphics/maximalHorizontalDisplacement.pdf, id=4756, 1033.26027pt x 269.25594p
+t>
+File: graphics/maximalHorizontalDisplacement.pdf Graphic file (type pdf)
+ <use graphics/maximalHorizontalDisplacement.pdf>
+Package pdftex.def Info: graphics/maximalHorizontalDisplacement.pdf used on inp
+ut line 2111.
+(pdftex.def)             Requested size: 154.03183pt x 40.13602pt.
+ [128
+
+ <./graphics/maximalHorizontalDisplacement.pdf>]
+<graphics/modifiedAuxilaryConstructionAsTree.pdf, id=4794, 637.32103pt x 253.89
+856pt>
+File: graphics/modifiedAuxilaryConstructionAsTree.pdf Graphic file (type pdf)
+ <use graphics/modifiedAuxilaryConstructionAsTree.pdf>
+Package pdftex.def Info: graphics/modifiedAuxilaryConstructionAsTree.pdf used o
+n input line 2127.
+(pdftex.def)             Requested size: 154.03183pt x 61.36305pt.
+ [129
+
+ <./graphics/modifiedAuxilaryConstructionAsTree.pdf>]
+<graphics/modifiedContactGraph.pdf, id=4834, 217.35605pt x 187.2074pt>
+File: graphics/modifiedContactGraph.pdf Graphic file (type pdf)
+
+<use graphics/modifiedContactGraph.pdf>
+Package pdftex.def Info: graphics/modifiedContactGraph.pdf used on input line 2
+143.
+(pdftex.def)             Requested size: 154.03183pt x 132.67252pt.
+ [130
+
+ <./graphics/modifiedContactGraph.pdf>] <graphics/NonCanonicalPosition.pdf, id=
+4880, 200.45892pt x 199.22429pt>
+File: graphics/NonCanonicalPosition.pdf Graphic file (type pdf)
+
+<use graphics/NonCanonicalPosition.pdf>
+Package pdftex.def Info: graphics/NonCanonicalPosition.pdf used on input line 2
+159.
+(pdftex.def)             Requested size: 154.03183pt x 153.08702pt.
+ [131
+
+ <./graphics/NonCanonicalPosition.pdf>] <graphics/OctagonSquare.pdf, id=4912, 4
+66.21352pt x 139.09055pt>
+File: graphics/OctagonSquare.pdf Graphic file (type pdf)
+
+<use graphics/OctagonSquare.pdf>
+Package pdftex.def Info: graphics/OctagonSquare.pdf used on input line 2175.
+(pdftex.def)             Requested size: 154.03183pt x 45.95306pt.
+ [132
+
+ <./graphics/OctagonSquare.pdf>]
+<graphics/omegaAtPiOver2.pdf, id=4961, 331.71931pt x 331.71931pt>
+File: graphics/omegaAtPiOver2.pdf Graphic file (type pdf)
+
+<use graphics/omegaAtPiOver2.pdf>
+Package pdftex.def Info: graphics/omegaAtPiOver2.pdf used on input line 2191.
+(pdftex.def)             Requested size: 154.03183pt x 154.0353pt.
+ [133
+
+ <./graphics/omegaAtPiOver2.pdf>]
+<graphics/OrderedDiskArrangementExample1.pdf, id=4999, 123.93301pt x 190.29092p
+t>
+File: graphics/OrderedDiskArrangementExample1.pdf Graphic file (type pdf)
+ <use graphics/OrderedDiskArrangementExample1.pdf>
+Package pdftex.def Info: graphics/OrderedDiskArrangementExample1.pdf used on in
+put line 2207.
+(pdftex.def)             Requested size: 154.03183pt x 236.52449pt.
+
+Overfull \vbox (33.4539pt too high) detected at line 2207
+ []
+
+[134
+
+ <./graphics/OrderedDiskArrangementExample1.pdf>]
+<graphics/OrderedDiskArrangementExample2.pdf, id=5033, 123.2605pt x 132.46489pt
+>
+File: graphics/OrderedDiskArrangementExample2.pdf Graphic file (type pdf)
+ <use graphics/OrderedDiskArrangementExample2.pdf>
+Package pdftex.def Info: graphics/OrderedDiskArrangementExample2.pdf used on in
+put line 2223.
+(pdftex.def)             Requested size: 154.03183pt x 165.54633pt.
+ [135
+
+ <./graphics/OrderedDiskArrangementExample2.pdf>]
+<graphics/orderedFaces.pdf, id=5066, 205.15646pt x 86.25023pt>
+File: graphics/orderedFaces.pdf Graphic file (type pdf)
+
+<use graphics/orderedFaces.pdf>
+Package pdftex.def Info: graphics/orderedFaces.pdf used on input line 2239.
+(pdftex.def)             Requested size: 154.03183pt x 64.7612pt.
+ [136
+
+ <./graphics/orderedFaces.pdf>]
+<graphics/orderedLinkages.pdf, id=5101, 315.16145pt x 100.14615pt>
+File: graphics/orderedLinkages.pdf Graphic file (type pdf)
+
+<use graphics/orderedLinkages.pdf>
+Package pdftex.def Info: graphics/orderedLinkages.pdf used on input line 2255.
+(pdftex.def)             Requested size: 154.03183pt x 48.94519pt.
+ [137
+
+ <./graphics/orderedLinkages.pdf>]
+<graphics/orderedPlaneIntersection.pdf, id=5137, 219.7008pt x 222.57153pt>
+File: graphics/orderedPlaneIntersection.pdf Graphic file (type pdf)
+
+<use graphics/orderedPlaneIntersection.pdf>
+Package pdftex.def Info: graphics/orderedPlaneIntersection.pdf used on input li
+ne 2271.
+(pdftex.def)             Requested size: 154.03183pt x 156.05031pt.
+ [138
+
+ <./graphics/orderedPlaneIntersection.pdf>]
+<graphics/OrderedTreesExample.pdf, id=5174, 392.7483pt x 135.69997pt>
+File: graphics/OrderedTreesExample.pdf Graphic file (type pdf)
+
+<use graphics/OrderedTreesExample.pdf>
+Package pdftex.def Info: graphics/OrderedTreesExample.pdf used on input line 22
+87.
+(pdftex.def)             Requested size: 154.03183pt x 53.22093pt.
+ [139
+
+ <./graphics/OrderedTreesExample.pdf>] <graphics/part1ch4.pdf, id=5214, 151.287
+2pt x 133.49875pt>
+File: graphics/part1ch4.pdf Graphic file (type pdf)
+
+<use graphics/part1ch4.pdf>
+Package pdftex.def Info: graphics/part1ch4.pdf used on input line 2303.
+(pdftex.def)             Requested size: 154.03183pt x 135.92448pt.
+ [140
+
+ <./graphics/part1ch4.pdf>]
+<graphics/PerturbedContactGraphAnatomy.pdf, id=5271, 452.4403pt x 230.63164pt>
+File: graphics/PerturbedContactGraphAnatomy.pdf Graphic file (type pdf)
+
+<use graphics/PerturbedContactGraphAnatomy.pdf>
+Package pdftex.def Info: graphics/PerturbedContactGraphAnatomy.pdf used on inpu
+t line 2319.
+(pdftex.def)             Requested size: 154.03183pt x 78.51576pt.
+ [141
+
+ <./graphics/PerturbedContactGraphAnatomy.pdf>]
+<graphics/PerturbedSpine.pdf, id=5305, 226.24524pt x 176.91295pt>
+File: graphics/PerturbedSpine.pdf Graphic file (type pdf)
+
+<use graphics/PerturbedSpine.pdf>
+Package pdftex.def Info: graphics/PerturbedSpine.pdf used on input line 2335.
+(pdftex.def)             Requested size: 154.03183pt x 120.45038pt.
+ [142
+
+ <./graphics/PerturbedSpine.pdf>]
+<graphics/PerturbedVertebrae.pdf, id=5342, 239.34016pt x 179.00174pt>
+File: graphics/PerturbedVertebrae.pdf Graphic file (type pdf)
+
+<use graphics/PerturbedVertebrae.pdf>
+Package pdftex.def Info: graphics/PerturbedVertebrae.pdf used on input line 235
+1.
+(pdftex.def)             Requested size: 154.03183pt x 115.2053pt.
+ [143
+
+ <./graphics/PerturbedVertebrae.pdf>] <graphics/PetersonGraphAgain.pdf, id=5380
+, 264.31548pt x 247.36617pt>
+File: graphics/PetersonGraphAgain.pdf Graphic file (type pdf)
+
+<use graphics/PetersonGraphAgain.pdf>
+Package pdftex.def Info: graphics/PetersonGraphAgain.pdf used on input line 236
+7.
+(pdftex.def)             Requested size: 154.03183pt x 144.15565pt.
+ [144
+
+ <./graphics/PetersonGraphAgain.pdf>] <graphics/PetersonGraphBasic.pdf, id=5413
+, 264.31548pt x 247.36617pt>
+File: graphics/PetersonGraphBasic.pdf Graphic file (type pdf)
+
+<use graphics/PetersonGraphBasic.pdf>
+Package pdftex.def Info: graphics/PetersonGraphBasic.pdf used on input line 238
+3.
+(pdftex.def)             Requested size: 154.03183pt x 144.15565pt.
+ [145
+
+ <./graphics/PetersonGraphBasic.pdf>] <graphics/PetersonGraphExample.pdf, id=54
+47, 507.04863pt x 229.00356pt>
+File: graphics/PetersonGraphExample.pdf Graphic file (type pdf)
+
+<use graphics/PetersonGraphExample.pdf>
+Package pdftex.def Info: graphics/PetersonGraphExample.pdf used on input line 2
+399.
+(pdftex.def)             Requested size: 154.03183pt x 69.56468pt.
+ [146
+
+ <./graphics/PetersonGraphExample.pdf>] <graphics/PetersonGraphWithPath.pdf, id
+=5487, 299.7348pt x 121.21887pt>
+File: graphics/PetersonGraphWithPath.pdf Graphic file (type pdf)
+
+<use graphics/PetersonGraphWithPath.pdf>
+Package pdftex.def Info: graphics/PetersonGraphWithPath.pdf used on input line 
+2415.
+(pdftex.def)             Requested size: 154.03183pt x 62.29616pt.
+ [147
+
+ <./graphics/PetersonGraphWithPath.pdf>] <graphics/Petiole.pdf, id=5520, 161.00
+15pt x 135.92783pt>
+File: graphics/Petiole.pdf Graphic file (type pdf)
+
+<use graphics/Petiole.pdf>
+Package pdftex.def Info: graphics/Petiole.pdf used on input line 2431.
+(pdftex.def)             Requested size: 154.03183pt x 130.04327pt.
+ [148
+
+ <./graphics/Petiole.pdf>]
+<graphics/phiFigure.pdf, id=5583, 643.49411pt x 215.13374pt>
+File: graphics/phiFigure.pdf Graphic file (type pdf)
+
+<use graphics/phiFigure.pdf>
+Package pdftex.def Info: graphics/phiFigure.pdf used on input line 2447.
+(pdftex.def)             Requested size: 154.03183pt x 51.49527pt.
+ [149
+
+ <./graphics/phiFigure.pdf>]
+<graphics/PolygonalLinkageExamples.pdf, id=5621, 225.2415pt x 128.8815pt>
+File: graphics/PolygonalLinkageExamples.pdf Graphic file (type pdf)
+
+<use graphics/PolygonalLinkageExamples.pdf>
+Package pdftex.def Info: graphics/PolygonalLinkageExamples.pdf used on input li
+ne 2463.
+(pdftex.def)             Requested size: 154.03183pt x 88.13776pt.
+ [150
+
+ <./graphics/PolygonalLinkageExamples.pdf>]
+<graphics/PolygonalLinkageWithConfigurationSpace.pdf, id=5654, 308.53065pt x 34
+4.08249pt>
+File: graphics/PolygonalLinkageWithConfigurationSpace.pdf Graphic file (type pd
+f)
+ <use graphics/PolygonalLinkageWithConfigurationSpace.pdf>
+Package pdftex.def Info: graphics/PolygonalLinkageWithConfigurationSpace.pdf us
+ed on input line 2479.
+(pdftex.def)             Requested size: 154.03183pt x 171.78354pt.
+ [151
+
+ <./graphics/PolygonalLinkageWithConfigurationSpace.pdf>]
+<graphics/Problem1.pdf, id=5686, 233.03532pt x 50.01184pt>
+File: graphics/Problem1.pdf Graphic file (type pdf)
+
+<use graphics/Problem1.pdf>
+Package pdftex.def Info: graphics/Problem1.pdf used on input line 2495.
+(pdftex.def)             Requested size: 154.03183pt x 33.05673pt.
+ [152
+
+ <./graphics/Problem1.pdf>]
+<graphics/psiSegmentChange.pdf, id=5719, 418.96524pt x 110.79391pt>
+File: graphics/psiSegmentChange.pdf Graphic file (type pdf)
+
+<use graphics/psiSegmentChange.pdf>
+Package pdftex.def Info: graphics/psiSegmentChange.pdf used on input line 2511.
+
+(pdftex.def)             Requested size: 154.03183pt x 40.73274pt.
+ [153
+
+ <./graphics/psiSegmentChange.pdf>]
+<graphics/randomLinkage.pdf, id=5767, 304.92018pt x 202.55074pt>
+File: graphics/randomLinkage.pdf Graphic file (type pdf)
+
+<use graphics/randomLinkage.pdf>
+Package pdftex.def Info: graphics/randomLinkage.pdf used on input line 2527.
+(pdftex.def)             Requested size: 154.03183pt x 102.32285pt.
+ [154
+
+ <./graphics/randomLinkage.pdf>]
+<graphics/RandomTree.pdf, id=5798, 110.23926pt x 110.23886pt>
+File: graphics/RandomTree.pdf Graphic file (type pdf)
+
+<use graphics/RandomTree.pdf>
+Package pdftex.def Info: graphics/RandomTree.pdf used on input line 2543.
+(pdftex.def)             Requested size: 154.03183pt x 154.0373pt.
+ [155
+
+ <./graphics/RandomTree.pdf>]
+<graphics/rangeOfMotionSkinnyRhombus.pdf, id=5829, 485.82504pt x 140.0432pt>
+File: graphics/rangeOfMotionSkinnyRhombus.pdf Graphic file (type pdf)
+
+<use graphics/rangeOfMotionSkinnyRhombus.pdf>
+Package pdftex.def Info: graphics/rangeOfMotionSkinnyRhombus.pdf used on input 
+line 2559.
+(pdftex.def)             Requested size: 154.03183pt x 44.40018pt.
+ [156
+
+ <./graphics/rangeOfMotionSkinnyRhombus.pdf>]
+<graphics/RectangularContactGraph.pdf, id=5873, 258.46562pt x 367.28217pt>
+File: graphics/RectangularContactGraph.pdf Graphic file (type pdf)
+
+<use graphics/RectangularContactGraph.pdf>
+Package pdftex.def Info: graphics/RectangularContactGraph.pdf used on input lin
+e 2575.
+(pdftex.def)             Requested size: 154.03183pt x 218.88585pt.
+
+Overfull \vbox (15.81526pt too high) detected at line 2575
+ []
+
+[157
+
+ <./graphics/RectangularContactGraph.pdf>]
+<graphics/RightSwitchBetweenTwoPolygons.pdf, id=5905, 89.2143pt x 192.92075pt>
+File: graphics/RightSwitchBetweenTwoPolygons.pdf Graphic file (type pdf)
+
+<use graphics/RightSwitchBetweenTwoPolygons.pdf>
+Package pdftex.def Info: graphics/RightSwitchBetweenTwoPolygons.pdf used on inp
+ut line 2591.
+(pdftex.def)             Requested size: 154.03183pt x 333.1242pt.
+
+Overfull \vbox (130.05362pt too high) detected at line 2591
+ []
+
+[158
+
+ <./graphics/RightSwitchBetweenTwoPolygons.pdf>]
+<graphics/ScalingForCorridors.pdf, id=5936, 405.97672pt x 224.7095pt>
+File: graphics/ScalingForCorridors.pdf Graphic file (type pdf)
+
+<use graphics/ScalingForCorridors.pdf>
+Package pdftex.def Info: graphics/ScalingForCorridors.pdf used on input line 26
+07.
+(pdftex.def)             Requested size: 154.03183pt x 85.25677pt.
+ [159
+
+ <./graphics/ScalingForCorridors.pdf>] <graphics/shapeInChannel.pdf, id=5971, 3
+30.37929pt x 240.67215pt>
+File: graphics/shapeInChannel.pdf Graphic file (type pdf)
+
+<use graphics/shapeInChannel.pdf>
+Package pdftex.def Info: graphics/shapeInChannel.pdf used on input line 2623.
+(pdftex.def)             Requested size: 154.03183pt x 112.20885pt.
+ [160
+
+ <./graphics/shapeInChannel.pdf>]
+<graphics/smallHexagonalGridWithEll.pdf, id=6002, 226.21513pt x 196.87552pt>
+File: graphics/smallHexagonalGridWithEll.pdf Graphic file (type pdf)
+
+<use graphics/smallHexagonalGridWithEll.pdf>
+Package pdftex.def Info: graphics/smallHexagonalGridWithEll.pdf used on input l
+ine 2639.
+(pdftex.def)             Requested size: 154.03183pt x 134.05983pt.
+ [161
+
+ <./graphics/smallHexagonalGridWithEll.pdf>]
+<graphics/smallHexagonalGridWithTwoLines.pdf, id=6042, 225.02066pt x 195.84166p
+t>
+File: graphics/smallHexagonalGridWithTwoLines.pdf Graphic file (type pdf)
+ <use graphics/smallHexagonalGridWithTwoLines.pdf>
+Package pdftex.def Info: graphics/smallHexagonalGridWithTwoLines.pdf used on in
+put line 2655.
+(pdftex.def)             Requested size: 154.03183pt x 134.05807pt.
+ [162
+
+ <./graphics/smallHexagonalGridWithTwoLines.pdf>]
+<graphics/snowflakeOutline2Layer.pdf, id=6080, 417.96149pt x 446.64868pt>
+File: graphics/snowflakeOutline2Layer.pdf Graphic file (type pdf)
+
+<use graphics/snowflakeOutline2Layer.pdf>
+Package pdftex.def Info: graphics/snowflakeOutline2Layer.pdf used on input line
+ 2671.
+(pdftex.def)             Requested size: 154.03183pt x 164.60315pt.
+ [163
+
+ <./graphics/snowflakeOutline2Layer.pdf>]
+<graphics/snowflakeOutline5Layer.pdf, id=6118, 708.04527pt x 621.9837pt>
+File: graphics/snowflakeOutline5Layer.pdf Graphic file (type pdf)
+
+<use graphics/snowflakeOutline5Layer.pdf>
+Package pdftex.def Info: graphics/snowflakeOutline5Layer.pdf used on input line
+ 2687.
+(pdftex.def)             Requested size: 154.03183pt x 135.30882pt.
+ [164
+
+ <./graphics/snowflakeOutline5Layer.pdf>]
+<graphics/snowflakeOutline5LayerModified.pdf, id=6149, 964.00153pt x 1113.07849
+pt>
+File: graphics/snowflakeOutline5LayerModified.pdf Graphic file (type pdf)
+ <use graphics/snowflakeOutline5LayerModified.pdf>
+Package pdftex.def Info: graphics/snowflakeOutline5LayerModified.pdf used on in
+put line 2703.
+(pdftex.def)             Requested size: 154.03183pt x 177.84143pt.
+ [165
+
+ <./graphics/snowflakeOutline5LayerModified.pdf>]
+<graphics/snowflakeOutline5LayerSmall.pdf, id=6180, 189.76897pt x 166.8333pt>
+File: graphics/snowflakeOutline5LayerSmall.pdf Graphic file (type pdf)
+
+<use graphics/snowflakeOutline5LayerSmall.pdf>
+Package pdftex.def Info: graphics/snowflakeOutline5LayerSmall.pdf used on input
+ line 2719.
+(pdftex.def)             Requested size: 154.03183pt x 135.41678pt.
+ [166
+
+ <./graphics/snowflakeOutline5LayerSmall.pdf>]
+<graphics/snowflakeOutline5LayerSmallNoCircles.pdf, id=6212, 178.91844pt x 206.
+54164pt>
+File: graphics/snowflakeOutline5LayerSmallNoCircles.pdf Graphic file (type pdf)
+
+ <use graphics/snowflakeOutline5LayerSmallNoCircles.pdf>
+Package pdftex.def Info: graphics/snowflakeOutline5LayerSmallNoCircles.pdf used
+ on input line 2735.
+(pdftex.def)             Requested size: 154.03183pt x 177.82404pt.
+ [167
+
+ <./graphics/snowflakeOutline5LayerSmallNoCircles.pdf>]
+<graphics/snowflakePerturbedAngularGrid.pdf, id=6243, 257.3615pt x 176.05475pt>
+File: graphics/snowflakePerturbedAngularGrid.pdf Graphic file (type pdf)
+<use graphics/snowflakePerturbedAngularGrid.pdf>
+Package pdftex.def Info: graphics/snowflakePerturbedAngularGrid.pdf used on inp
+ut line 2751.
+(pdftex.def)             Requested size: 154.03183pt x 105.3677pt.
+ [168
+
+ <./graphics/snowflakePerturbedAngularGrid.pdf>]
+<graphics/someRangeSkinny.pdf, id=6280, 715.39267pt x 188.07263pt>
+File: graphics/someRangeSkinny.pdf Graphic file (type pdf)
+
+<use graphics/someRangeSkinny.pdf>
+Package pdftex.def Info: graphics/someRangeSkinny.pdf used on input line 2767.
+(pdftex.def)             Requested size: 154.03183pt x 40.49222pt.
+ [169
+
+ <./graphics/someRangeSkinny.pdf>]
+<graphics/switchTerminalFinalized1.pdf, id=6328, 248.75536pt x 287.17589pt>
+File: graphics/switchTerminalFinalized1.pdf Graphic file (type pdf)
+
+<use graphics/switchTerminalFinalized1.pdf>
+Package pdftex.def Info: graphics/switchTerminalFinalized1.pdf used on input li
+ne 2783.
+(pdftex.def)             Requested size: 154.03183pt x 177.82372pt.
+ [170
+
+ <./graphics/switchTerminalFinalized1.pdf>]
+<graphics/switchTerminalFinalized2.pdf, id=6359, 248.75536pt x 287.17589pt>
+File: graphics/switchTerminalFinalized2.pdf Graphic file (type pdf)
+
+<use graphics/switchTerminalFinalized2.pdf>
+Package pdftex.def Info: graphics/switchTerminalFinalized2.pdf used on input li
+ne 2799.
+(pdftex.def)             Requested size: 154.03183pt x 177.82372pt.
+ [171
+
+ <./graphics/switchTerminalFinalized2.pdf>]
+<graphics/switchTerminalFinalized3.pdf, id=6390, 248.75536pt x 287.17589pt>
+File: graphics/switchTerminalFinalized3.pdf Graphic file (type pdf)
+
+<use graphics/switchTerminalFinalized3.pdf>
+Package pdftex.def Info: graphics/switchTerminalFinalized3.pdf used on input li
+ne 2815.
+(pdftex.def)             Requested size: 154.03183pt x 177.82372pt.
+ [172
+
+ <./graphics/switchTerminalFinalized3.pdf>] <graphics/tangentalpha.pdf, id=6421
+, 725.07889pt x 106.45772pt>
+File: graphics/tangentalpha.pdf Graphic file (type pdf)
+
+<use graphics/tangentalpha.pdf>
+Package pdftex.def Info: graphics/tangentalpha.pdf used on input line 2831.
+(pdftex.def)             Requested size: 154.03183pt x 22.61505pt.
+ [173
+
+ <./graphics/tangentalpha.pdf>]
+<graphics/TheOmegaFigure.pdf, id=6474, 195.13904pt x 151.91757pt>
+File: graphics/TheOmegaFigure.pdf Graphic file (type pdf)
+
+<use graphics/TheOmegaFigure.pdf>
+Package pdftex.def Info: graphics/TheOmegaFigure.pdf used on input line 2847.
+(pdftex.def)             Requested size: 154.03183pt x 119.92314pt.
+ [174
+
+ <./graphics/TheOmegaFigure.pdf>]
+<graphics/tiltedObstaclesInFrame.pdf, id=6533, 184.51936pt x 161.31267pt>
+File: graphics/tiltedObstaclesInFrame.pdf Graphic file (type pdf)
+
+<use graphics/tiltedObstaclesInFrame.pdf>
+Package pdftex.def Info: graphics/tiltedObstaclesInFrame.pdf used on input line
+ 2863.
+(pdftex.def)             Requested size: 154.03183pt x 134.65988pt.
+ [175
+
+ <./graphics/tiltedObstaclesInFrame.pdf>]
+<graphics/TransmitterDrawingTranslation.pdf, id=6568, 462.85924pt x 164.19342pt
+>
+File: graphics/TransmitterDrawingTranslation.pdf Graphic file (type pdf)
+ <use graphics/TransmitterDrawingTranslation.pdf>
+Package pdftex.def Info: graphics/TransmitterDrawingTranslation.pdf used on inp
+ut line 2879.
+(pdftex.def)             Requested size: 154.03183pt x 54.64247pt.
+ [176
+
+ <./graphics/TransmitterDrawingTranslation.pdf>]
+<graphics/TransmitterGadgetSmall.pdf, id=6617, 156.52478pt x 187.62094pt>
+File: graphics/TransmitterGadgetSmall.pdf Graphic file (type pdf)
+
+<use graphics/TransmitterGadgetSmall.pdf>
+Package pdftex.def Info: graphics/TransmitterGadgetSmall.pdf used on input line
+ 2895.
+(pdftex.def)             Requested size: 154.03183pt x 184.64023pt.
+ [177
+
+ <./graphics/TransmitterGadgetSmall.pdf>]
+<graphics/transmitterjunction.pdf, id=6655, 551.29762pt x 114.67844pt>
+File: graphics/transmitterjunction.pdf Graphic file (type pdf)
+
+<use graphics/transmitterjunction.pdf>
+Package pdftex.def Info: graphics/transmitterjunction.pdf used on input line 29
+11.
+(pdftex.def)             Requested size: 154.03183pt x 32.04149pt.
+ [178
+
+ <./graphics/transmitterjunction.pdf>] <graphics/TreeCh4.pdf, id=6689, 117.4387
+5pt x 101.37875pt>
+File: graphics/TreeCh4.pdf Graphic file (type pdf)
+
+<use graphics/TreeCh4.pdf>
+Package pdftex.def Info: graphics/TreeCh4.pdf used on input line 2927.
+(pdftex.def)             Requested size: 154.03183pt x 132.968pt.
+ [179
+
+ <./graphics/TreeCh4.pdf>]
+<graphics/TriangluarDissection.pdf, id=6720, 351.19444pt x 99.71614pt>
+File: graphics/TriangluarDissection.pdf Graphic file (type pdf)
+
+<use graphics/TriangluarDissection.pdf>
+Package pdftex.def Info: graphics/TriangluarDissection.pdf used on input line 2
+943.
+(pdftex.def)             Requested size: 154.03183pt x 43.73524pt.
+ [180
+
+ <./graphics/TriangluarDissection.pdf>] <graphics/TrueVariableGadget.pdf, id=67
+78, 1090.46397pt x 370.86555pt>
+File: graphics/TrueVariableGadget.pdf Graphic file (type pdf)
+
+<use graphics/TrueVariableGadget.pdf>
+Package pdftex.def Info: graphics/TrueVariableGadget.pdf used on input line 295
+9.
+(pdftex.def)             Requested size: 154.03183pt x 52.38484pt.
+ [181
+
+ <./graphics/TrueVariableGadget.pdf>]
+<graphics/TrueVariableNegatedLiteralTransmitter.pdf, id=6813, 541.86443pt x 444
+.27982pt>
+File: graphics/TrueVariableNegatedLiteralTransmitter.pdf Graphic file (type pdf
+)
+ <use graphics/TrueVariableNegatedLiteralTransmitter.pdf>
+Package pdftex.def Info: graphics/TrueVariableNegatedLiteralTransmitter.pdf use
+d on input line 2975.
+(pdftex.def)             Requested size: 154.03183pt x 126.28888pt.
+ [182
+
+ <./graphics/TrueVariableNegatedLiteralTransmitter.pdf>]
+<graphics/twoEmbeddingsOfSameLinkage.pdf, id=6847, 339.39998pt x 169.65584pt>
+File: graphics/twoEmbeddingsOfSameLinkage.pdf Graphic file (type pdf)
+
+<use graphics/twoEmbeddingsOfSameLinkage.pdf>
+Package pdftex.def Info: graphics/twoEmbeddingsOfSameLinkage.pdf used on input 
+line 2991.
+(pdftex.def)             Requested size: 154.03183pt x 76.99677pt.
+ [183
+
+ <./graphics/twoEmbeddingsOfSameLinkage.pdf>]
+<graphics/VariableFalseTransmitterClause.pdf, id=6881, 463.63213pt x 465.72293p
+t>
+File: graphics/VariableFalseTransmitterClause.pdf Graphic file (type pdf)
+ <use graphics/VariableFalseTransmitterClause.pdf>
+Package pdftex.def Info: graphics/VariableFalseTransmitterClause.pdf used on in
+put line 3007.
+(pdftex.def)             Requested size: 154.03183pt x 154.72656pt.
+ [184
+
+ <./graphics/VariableFalseTransmitterClause.pdf>]
+<graphics/VariableGadget.pdf, id=6915, 267.47931pt x 167.46565pt>
+File: graphics/VariableGadget.pdf Graphic file (type pdf)
+
+<use graphics/VariableGadget.pdf>
+Package pdftex.def Info: graphics/VariableGadget.pdf used on input line 3023.
+(pdftex.def)             Requested size: 154.03183pt x 96.4402pt.
+ [185
+
+ <./graphics/VariableGadget.pdf>]
+<graphics/VariableGadgetSmall.pdf, id=6952, 200.75pt x 151.91757pt>
+File: graphics/VariableGadgetSmall.pdf Graphic file (type pdf)
+
+<use graphics/VariableGadgetSmall.pdf>
+Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 30
+39.
+(pdftex.def)             Requested size: 154.03183pt x 116.57121pt.
+ [186
+
+ <./graphics/VariableGadgetSmall.pdf>] <graphics/VariableGadgetTruthness.pdf, i
+d=6989, 1090.46397pt x 370.86555pt>
+File: graphics/VariableGadgetTruthness.pdf Graphic file (type pdf)
+
+<use graphics/VariableGadgetTruthness.pdf>
+Package pdftex.def Info: graphics/VariableGadgetTruthness.pdf used on input lin
+e 3055.
+(pdftex.def)             Requested size: 154.03183pt x 52.38484pt.
+ [187
+
+ <./graphics/VariableGadgetTruthness.pdf>]
+<graphics/VariableGadgetTruthnessZoom.pdf, id=7028, 964.13202pt x 979.64995pt>
+File: graphics/VariableGadgetTruthnessZoom.pdf Graphic file (type pdf)
+
+<use graphics/VariableGadgetTruthnessZoom.pdf>
+Package pdftex.def Info: graphics/VariableGadgetTruthnessZoom.pdf used on input
+ line 3071.
+(pdftex.def)             Requested size: 154.03183pt x 156.50801pt.
+ [188
+
+ <./graphics/VariableGadgetTruthnessZoom.pdf>]
+<graphics/VariableJunctionTransmitterSelection.pdf, id=7065, 964.13202pt x 979.
+64995pt>
+File: graphics/VariableJunctionTransmitterSelection.pdf Graphic file (type pdf)
+
+ <use graphics/VariableJunctionTransmitterSelection.pdf>
+Package pdftex.def Info: graphics/VariableJunctionTransmitterSelection.pdf used
+ on input line 3087.
+(pdftex.def)             Requested size: 154.03183pt x 156.50801pt.
+ [189
+
+ <./graphics/VariableJunctionTransmitterSelection.pdf>]
+<graphics/VariableJunctionTransmitterSelection2.pdf, id=7102, 964.13202pt x 465
+.72995pt>
+File: graphics/VariableJunctionTransmitterSelection2.pdf Graphic file (type pdf
+)
+ <use graphics/VariableJunctionTransmitterSelection2.pdf>
+Package pdftex.def Info: graphics/VariableJunctionTransmitterSelection2.pdf use
+d on input line 3103.
+(pdftex.def)             Requested size: 154.03183pt x 74.4046pt.
+ [190
+
+ <./graphics/VariableJunctionTransmitterSelection2.pdf>]
+<graphics/VariablesExample.pdf, id=7140, 329.6315pt x 42.1294pt>
+File: graphics/VariablesExample.pdf Graphic file (type pdf)
+
+<use graphics/VariablesExample.pdf>
+Package pdftex.def Info: graphics/VariablesExample.pdf used on input line 3119.
+
+(pdftex.def)             Requested size: 154.03183pt x 19.68639pt.
+ [191
+
+ <./graphics/VariablesExample.pdf>]
+<graphics/VariableTrueTransmitterClause.pdf, id=7171, 463.62912pt x 465.72395pt
+>
+File: graphics/VariableTrueTransmitterClause.pdf Graphic file (type pdf)
+ <use graphics/VariableTrueTransmitterClause.pdf>
+Package pdftex.def Info: graphics/VariableTrueTransmitterClause.pdf used on inp
+ut line 3135.
+(pdftex.def)             Requested size: 154.03183pt x 154.7269pt.
+ [192
+
+ <./graphics/VariableTrueTransmitterClause.pdf>]
+<graphics/Vertebrae.pdf, id=7205, 161.0015pt x 64.6415pt>
+File: graphics/Vertebrae.pdf Graphic file (type pdf)
+
+<use graphics/Vertebrae.pdf>
+Package pdftex.def Info: graphics/Vertebrae.pdf used on input line 3151.
+(pdftex.def)             Requested size: 154.03183pt x 61.84303pt.
+ [193
+
+ <./graphics/Vertebrae.pdf>]
+<graphics/verticalDisplacementArgument.pdf, id=7247, 210.13507pt x 182.03008pt>
+File: graphics/verticalDisplacementArgument.pdf Graphic file (type pdf)
+<use graphics/verticalDisplacementArgument.pdf>
+Package pdftex.def Info: graphics/verticalDisplacementArgument.pdf used on inpu
+t line 3167.
+(pdftex.def)             Requested size: 154.03183pt x 133.43634pt.
+ [194
+
+ <./graphics/verticalDisplacementArgument.pdf>]
+<graphics/WrapAround.pdf, id=7292, 140.93954pt x 140.93954pt>
+File: graphics/WrapAround.pdf Graphic file (type pdf)
+
+<use graphics/WrapAround.pdf>
+Package pdftex.def Info: graphics/WrapAround.pdf used on input line 3183.
+(pdftex.def)             Requested size: 154.03183pt x 154.03178pt.
+Package atenddvi Info: Last page = 195.
+ [195
+
+ <./graphics/WrapAround.pdf>]
+\tf@nav=\write6
+\openout6 = `thesisDefense.nav'.
+
+\tf@toc=\write7
+\openout7 = `thesisDefense.toc'.
+
+\tf@snm=\write8
+\openout8 = `thesisDefense.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3186.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 3186.
+
+(../../pdf/thesisDefense.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3186.
+
+Package rerunfilecheck Info: File `thesisDefense.out' has not changed.
+(rerunfilecheck)             Checksum: <no file>.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3186.
+ ) 
+Here is how much of TeX's memory you used:
+ 29035 strings out of 493029
+ 571054 string characters out of 6136234
+ 589288 words of memory out of 5000000
+ 31305 multiletter control sequences out of 15000+600000
+ 10695 words of font info for 39 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,16n,55p,10416b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/latxfont/lasy10.pfb>
+Output written on ../../pdf/thesisDefense.pdf (195 pages, 1952204 bytes).
+PDF statistics:
+ 7489 PDF objects out of 8907 (max. 8388607)
+ 6519 compressed objects within 66 object streams
+ 585 named destinations out of 1000 (max. 500000)
+ 1031 words of extra memory for PDF output out of 10000 (max. 10000000)
+

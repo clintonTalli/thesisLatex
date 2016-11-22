@@ -1,9 +1,15 @@
-\beamer@slide {thm:hinge2}{5}
-\beamer@slide {thm:hinge3}{6}
-\beamer@slide {thm:disk}{7}
-\beamer@slide {table:ch1-graph-1}{8}
-\beamer@slide {fig:configuration-3}{8}
-\beamer@slide {fig:assoc}{9}
-\beamer@slide {fig:VariableJunctionTransmitterSelection.pdf}{12}
-\beamer@slide {fig:clause}{13}
-\beamer@slide {fig:VariableGadgetSmall.pdf}{14}
+\beamer@slide {gfx:hingeOnThreeDistinctPolygons.pdf}{2}
+\beamer@slide {gfx:HingedLogicEngineSmallEnumerated.pdf}{5}
+\beamer@slide {gfx:fig-assoc-hex.pdf}{6}
+\beamer@slide {gfx:honeycomb.pdf}{7}
+\beamer@slide {gfx:FalseVariableNonNegatedLiteralTransmitter.pdf}{8}
+\beamer@slide {gfx:fig-variable-hex+.pdf}{9}
+\beamer@slide {gfx:fig-clause-hex.pdf}{10}
+\beamer@slide {gfx:fig-transmitter-hex copy.pdf}{11}
+\beamer@slide {gfx:fig1+.pdf}{12}
+\beamer@slide {gfx:fig-frame-hex.pdf}{13}
+\beamer@slide {gfx:hexagonPetiolesLeafs9Layers.pdf}{14}
+\beamer@slide {gfx:honeycomb.pdf}{15}
+\beamer@slide {gfx:HoneyCombAssociatedGraphSmall.pdf}{16}
+\beamer@slide {gfx:VariableGadgetSmall.pdf}{17}
+\beamer@slide {gfx:VariableGadgetTruthness.pdf}{18}
