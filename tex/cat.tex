@@ -1697,7 +1697,7 @@ We begin the chapter with describing several gadgets that translate the associat
 These gadgets will be used together to form a special hexagonal linkage that behaves in a similar nature to the logic engine that encoded a NAE3SAT instance of Chapter \ref{chapter:logicEngine} but instead encodes a Planar 3-SAT and its associated graph.  
 Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, 
 Together the gadgets will form what is called the auxilary construction.
-A hexagonal polygonal linkage and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge2}: \textit{it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with counter-clockwise orientation.}
+A hexagonal polygonal linkage and several gadgets enclosed in a frame (a frame that is conceptually similar to the frame found in a logic engine) would then be used to prove Theorem \ref{thm:hinge2}: \textit{it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textbf{tree} can be realized with fixed orientation.}
 
 Our proof is a reduction from P3SAT.
 Given an instance $\Phi$ of P3SAT with $n$ variables and $m$ clauses and its associated graph $A(\Phi)$, we construct a simply connected polygonal linkage $(\PP,H)$ of polynomial size in $n$ and $m$, such that $\Phi$ is satisfiable if and only if $(\PP,H)$ admits a realization with fixed orientation. 
@@ -2133,7 +2133,7 @@ If every clause has some true literal, then the corresponding 3-CNF boolean form
 \end{proof}
 \section{Modified Auxilary Construction.}
 
-Recall that in Theorem \ref{thm:hinge2} we want to show that it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with counter-clockwise orientation.
+Recall that in Theorem \ref{thm:hinge2} we want to show that it is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with fixed orientation.
 We modify the auxiliary construction allowing all polygons to move freely, and by adding extra polygons and hinges so that the hinge graph becomes a \emph{tree}, and the size of the construction remains polynomial. 
 The auxiliary construction is based on a polynomial sized area of the hexagonal grid, using obstacle hexagons of side lengths $N(n,m)$, unit hexagons (of side length 1), and small hexagons of side length $\frac{1}{3}$. 
 We modify it in five steps as follows:
@@ -2590,7 +2590,7 @@ Each clause is realizable and so for every clause, there exists one true literal
 If every clause has some true literal, then the corresponding 3-CNF boolean formula is satisfiable.
 \end{proof}
 
-At the beginning of this chapter, we stated Theorem \ref{thm:hinge2}: It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with counter-clockwise orientation.  
+At the beginning of this chapter, we stated Theorem \ref{thm:hinge2}: It is strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a tree can be realized with fixed orientation.  
 We know the P3SAT is NP-hard \cite{lichtenstein1982planar} and by Lemma \ref{lem:lePieceDuResistance}, we can conclude that deciding whether modified auxiliary construction (a tree) of a given P3SAT Boolean formula is NP-Hard.
 
 \chapter{Realizability Problems for Weighted Trees}\label{chp:disk}
