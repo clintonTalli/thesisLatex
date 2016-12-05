@@ -20,7 +20,7 @@
 % %%%theoerms, etc%%%%
 \newtheorem{thm}{Theorem}
 \newtheorem{prob}{Problem}
-
+\newtheorem{lem}{Lemma}
 %%%%%%%%custom commands
 \newcommand{\ith}{i^\text{th}}
 \newcommand{\jth}{j^\text{th}}
@@ -52,6 +52,8 @@
 \newcommand{\bbf}{{\mathbb{F}}}
 \newcommand{\bbn}{{\mathbb{N}}}
 \newcommand{\bbN}{{\mathbb{N}}}
+\newcommand{\lr}[1]{\left( #1 \right)}
+
 
 \title[Planar Configuration Spaces]{Planar Configuration Spaces }
 \subtitle{of Disk Arrangements and Hinged Polygons}
@@ -65,7 +67,16 @@
 \subject{Mathematics}
 \begin{document}
 \frame{\titlepage}
-
+\begin{frame}
+\begin{itemize}
+    \item[*] Motivations Slides
+    \item[*] Related Work
+    \item[*] Contribution
+    \item[*] Logic Engine + Problem 1
+    \item[*] Modified Auxiliary Construction + Problem 3
+    \item[*] Conclusion
+\end{itemize}
+\end{frame}
 \begin{frame}\frametitle{Motivation: Hinged Dissection}
     \begin{columns}[c]
     \column{.5\textwidth}
@@ -76,8 +87,9 @@
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/hingeOnThreeDistinctPolygons.pdf}
-            \captionof{figure}{A collection of polygons with hinges.}\label{gfx:hingeOnThreeDistinctPolygons.pdf}
+            \includegraphics[width=.9\textwidth]{graphics/hingeOnThreeDistinctPolygons.pdf}\label{gfx:hingeOnThreeDistinctPolygons.pdf}\vspace{.25in}
+            \includegraphics[scale=1]{graphics/Problem1.pdf}
+            \label{fig:problem1}
             \end{center}
         \end{minipage}
     \end{columns}
@@ -94,7 +106,6 @@
   \begin{minipage}{\linewidth}
     \begin{center}
     \animategraphics[loop,controls,width=\linewidth]{12}{graphics/hingedanimation-}{0}{107}
-    \captionof{figure}{blah}
     \end{center}
   \end{minipage}
   \end{columns}
@@ -112,23 +123,100 @@
    \end{itemize}
   \column{.5\textwidth}
      \begin{minipage}{\linewidth}
-    \begin{center}
-    \includegraphics[width=.66\columnwidth]{graphics/5FH3.png}
-    \captionof{figure}{
-The structure of rat cytosolic PEPCK variant E89A in complex with oxalic acid and GTP \cite{Rats}.}
-    \end{center}
+        \begin{center}
+        \includegraphics[width=\linewidth]{graphics/collidingHingedPolygons.pdf}
+        \end{center} 
   \end{minipage}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Contribution}
-     \begin{itemize}
-    \item It is strongly NP-hard to decide whether a polygonal linkage whose inge graph is a \textit{tree} can be realized.
-    \item It is strongly NP-hard to decide whether a polygonal linkage whose inge graph is a \textit{tree} can be realized with fixed orientation.
-    \item It is NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with pecified radii.
-    \end{itemize}
+\begin{frame}
+\frametitle{Deciding Realizability of Polygonal Linkages}
+\begin{prob}
+What is the complexity of deciding whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized?
+\end{prob}
+\begin{columns}[c] % the "c" option specifies center vertical alignment
+  \column{.5\textwidth} % column designated by a command
+   \begin{itemize}
+    \item Bhatt and Cosmadakis showed realizability of linkages is NP-Complete.
+   \end{itemize}
+  \column{.5\textwidth}
+    \begin{minipage}{\linewidth}
+        \begin{center}
+            \includegraphics[width=\linewidth]{graphics/collidingHingedPolygons.pdf}
+        \end{center} 
+    \end{minipage}
+  \end{columns}
 \end{frame}
-\begin{frame} \frametitle{Logic Engine Realized as Hinged Polygons.pdf}
+
+\begin{frame}
+\frametitle{Deciding Realizability of Polygonal Linkages}
+\begin{prob}
+What is the complexity of deciding whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized with \textit{fixed orientation}?
+\end{prob}
+\begin{columns}[c] % the "c" option specifies center vertical alignment
+  \column{.5\textwidth} % column designated by a command
+   \begin{itemize}
+    \item Bhatt and Cosmadakis showed realizability of linkages is NP-Complete.
+    \item Here we have two realizations of a polygonal linkage with two different counter-clockwise order (C,B,A) and (B,C,A) respectively.  
+   \end{itemize}
+  \column{.5\textwidth}
+    \begin{minipage}{\linewidth}
+        \begin{center}
+\includegraphics[width=\linewidth]{graphics/orderedFaces.pdf}
+\end{center}
+    \end{minipage}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Deciding Realizability of Polygonal Linkages}
+\begin{prob}
+What is the complexity of deciding whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii?
+\end{prob}
+\begin{columns}[c] % the "c" option specifies center vertical alignment
+  \column{.5\textwidth} % column designated by a command
+   \begin{itemize}
+    \item Breu and Kirkpatrick proved that it is NP-Hard to decide whether a graph G is the contact graph of unit disks in the plane, i.e., recognizing coin graphs is NP-Hard
+   \end{itemize}
+  \column{.5\textwidth}
+    \begin{minipage}{\linewidth}
+        \begin{center}
+        \includegraphics[width=\linewidth]{graphics/diskArrangementExample.png}
+        \end{center}
+    \end{minipage}
+  \end{columns}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Contributions}
+     \begin{thm}
+     It is strongly NP-Hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized.
+     \end{thm}
+
+    \begin{thm}It is strongly NP-Hard to diskecide whether a polygonal linkage whose inge graph is a \textit{tree} can be realized with fixed orientation.\end{thm}
+    \begin{thm}It is NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with pecified radii.\end{thm}
+\end{frame}
+
+\begin{frame} \frametitle{The Logic Engine}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+        \begin{minipage}{\linewidth}
+            \begin{center}
+            \includegraphics[width=.9\textwidth]{graphics/LogicEngineFrame.pdf}
+            \end{center}
+        \end{minipage}
+    \column{.5\textwidth}
+        \begin{minipage}{\linewidth}
+            \begin{center}
+            \includegraphics[width=.9\textwidth]{graphics/LogicEngineFrameFigure2.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
+\begin{frame} \frametitle{Logic Engine Realized as Hinged Polygons}
     \begin{columns}[c]
     \column{.5\textwidth}
         \begin{itemize}
@@ -138,7 +226,6 @@ The structure of rat cytosolic PEPCK variant E89A in complex with oxalic acid an
         \begin{minipage}{\linewidth}
             \begin{center}
             \includegraphics[width=.9\textwidth]{graphics/HingedLogicEngineSmallEnumerated.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:HingedLogicEngineSmallEnumerated.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
@@ -183,22 +270,18 @@ The structure of rat cytosolic PEPCK variant E89A in complex with oxalic acid an
     \begin{columns}[c]
     \column{.5\textwidth}
         \begin{itemize}
-            \item[*] Define the \textit{associated graph} $A(\Phi)$ as follows: the vertices correspond to the variables and clauses in $\Phi$.   
-We place an edge in the graph if variable $x_i$ appears in clause $C_j$.
-            \item[*] Given a Boolean formula $\Phi$ in 3-CNF such that its associated graph is planar, decide whether it 
+            \item[*] Given a Boolean formula $\Phi$ in 3-CNF such that its associated graph is $A(\Phi)$, decide whether it 
 is satisfiable is a \textit{3-SAT problem}.
         \end{itemize}
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/fig-assoc-hex.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:fig-assoc-hex.pdf}
+            \includegraphics[width=.9\textwidth]{graphics/fig-assoc-hex2.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
 \end{frame}
-
-\begin{frame} \frametitle{honeycomb.pdf}
+\begin{frame} \frametitle{Modified Auxiliary Construction}
     \begin{columns}[c]
     \column{.5\textwidth}
         \begin{itemize}
@@ -210,8 +293,26 @@ is satisfiable is a \textit{3-SAT problem}.
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/honeycomb.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:honeycomb.pdf}
+            \includegraphics[width=.66\textwidth]{graphics/honeycomb.pdf}
+            % \includegraphics[width=.66\textwidth]{graphics/fig-assoc-hex1.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+\begin{frame} \frametitle{Modified Auxiliary Construction}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+        \begin{itemize}
+            \item[*] Define the \textit{associated graph} $A(\Phi)$ as follows: the vertices correspond to the variables and clauses in $\Phi$.   
+We place an edge in the graph if variable $x_i$ appears in clause $C_j$.
+            \item[*] Given a Boolean formula $\Phi$ in 3-CNF such that its associated graph is planar, decide whether it 
+is satisfiable is a \textit{3-SAT problem}.
+        \end{itemize}
+    \column{.5\textwidth}
+        \begin{minipage}{\linewidth}
+            \begin{center}
+            % \includegraphics[width=.66\textwidth]{graphics/honeycomb.pdf}
+            \includegraphics[width=.66\textwidth]{graphics/fig-assoc-hex1.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
@@ -226,10 +327,8 @@ is satisfiable is a \textit{3-SAT problem}.
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/FalseVariableNonNegatedLiteralTransmitter.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:FalseVariableNonNegatedLiteralTransmitter.pdf}
-            \includegraphics[width=.9\textwidth]{graphics/VariableGadgetTruthness.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:VariableGadgetTruthness.pdf}
+            \includegraphics[width=.53\textwidth]{graphics/FalseVariableNonNegatedLiteralTransmitter.pdf}\label{gfx:FalseVariableNonNegatedLiteralTransmitter.pdf}
+            \includegraphics[width=.9\textwidth]{graphics/VariableGadgetTruthness.pdf}\label{gfx:VariableGadgetTruthness.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
@@ -256,16 +355,27 @@ is satisfiable is a \textit{3-SAT problem}.
     \begin{columns}[c]
     \column{.5\textwidth}
         \begin{itemize}
-            \item[*] Variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$, which has been embedded as a cycle in the hexagonal tiling, with corridors and junctions. 
-In each junction along this cycle, attach a small hexagon in the common boundary of the two corridors in the cycle. 
+            \item[*] Variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$. 
         \end{itemize}
     \column{.5\textwidth}
                     \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/VariableGadgetSmall.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:VariableGadgetSmall.pdf}
+            \includegraphics[width=.53\textwidth]{graphics/VariableGadgetSmall.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
+\begin{frame} \frametitle{Variable Gadget}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+        \begin{itemize}
+            \item[*] Variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$. 
+        \end{itemize}
+    \column{.5\textwidth}
+                    \begin{minipage}{\linewidth}
+            \begin{center}
             \includegraphics[width=.9\textwidth]{graphics/fig-variable-hex+.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:fig-variable-hex+.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
@@ -275,13 +385,12 @@ In each junction along this cycle, attach a small hexagon in the common boundary
     \begin{columns}[c]
     \column{.5\textwidth}
         \begin{itemize}
-            \item[*] The {\it clause gadget} lies at a junction adjacent to three transmitter gadgets (see Fig.~\ref{fig:clause} and Section \ref{transmitterGadget}).  At such a junction, we attach a unit line segment to an arbitrary vertex of the junction, and a small hexagon of side length $\frac{1}{3}$ to the other end of the segment. 
+            \item[*] The {\it clause gadget} lies at a junction adjacent to three transmitter gadgets.x
         \end{itemize}
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/fig-clause-hex.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:fig-clause-hex.pdf}
+            \includegraphics[width=.9\textwidth]{graphics/fig-clause-hex.pdf}\label{gfx:fig-clause-hex.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
@@ -297,8 +406,23 @@ In each junction along this cycle, attach a small hexagon in the common boundary
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/fig2+.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:fig1+.pdf}
+            \includegraphics[width=.9\textwidth]{graphics/fig1++.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Motivation: Weighted Trees and Disk Arrangements}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+        \begin{itemize}
+            \item[*] Is it strongly NP-hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized? 
+            \item[*] Is it NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii?
+        \end{itemize}
+    \column{.5\textwidth}
+        \begin{minipage}{\linewidth}
+            \begin{center}
+            \includegraphics[width=.9\textwidth]{graphics/fig3++.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
@@ -314,8 +438,43 @@ In each junction along this cycle, attach a small hexagon in the common boundary
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/fig-frame-hex.pdf}
-            \captionof{figure}{Caption Text}\label{gfx:fig-frame-hex.pdf}
+            \includegraphics[width=.9\textwidth]{graphics/fig-frame-hex.pdf}\label{gfx:fig-frame-hex.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
+
+\begin{frame} \frametitle{Approximation of Hexagon with a Disk Arrangement: Hausdorff Distance}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+            \begin{itemize}
+            \item[*] An illustrative example of $d(X,Y)$ and $d(Y,X)$ where $X$ is the inner curve, and $Y$ is the outer curve.
+            \end{itemize}  
+    \column{.5 \textwidth}
+        \begin{minipage}{\linewidth}
+        \begin{center}
+        \includegraphics[width=.9\columnwidth]{graphics/HausdorffDistanceExample1.pdf}
+        \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
+\begin{frame} \frametitle{Approximation of Hexagon with a Disk Arrangement}
+    \begin{columns}[c]
+    \column{.6\textwidth}
+        \begin{lem}
+            For every $\epsilon > 0$ and $x>0$, there exists an ordered weighted tree $T$ and regular hexagon $h$ of side length $x$ such that:
+            \begin{itemize}
+            \item[*] Every realization $\sigma_i$ of $T$ as an ordered disk contact graph where the radii of the disks equal the vertex weights, approximates the hexagon in the sense that:
+            $$H\lr{h,\sigma}\leq\epsilon$$
+            \item[*] The number of nodes in $T$ and the weights are polynomial in $\epsilon$ and $x$, the weights $\frac{\epsilon}{10}$ and $\frac{\epsilon}{10} + \zeta$ are polynomial.
+            \end{itemize}
+        \end{lem}   
+    \column{.4\textwidth}
+        \begin{minipage}{\linewidth}
+            \begin{center}
+            \includegraphics[width=.66\textwidth]{graphics/hexagonPetiolesLeafs9Layers.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
@@ -331,13 +490,20 @@ In each junction along this cycle, attach a small hexagon in the common boundary
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/hexagonPetiolesLeafs9Layers.pdf}
-            \captionof{figure}{A tree overlayed with a disk arrangement}\label{gfx:hexagonPetiolesLeafs9Layers.pdf}
+            \includegraphics[width=.9\textwidth]{graphics/hexagonPetiolesLeafs9Layers.pdf}\label{gfx:hexagonPetiolesLeafs9Layers.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
 \end{frame}
+\begin{frame}\frametitle{Conclusion}
 
+\end{frame}
+
+\begin{frame}
+\begin{center}
+Thank You!
+\end{center}
+\end{frame}
 % \begin{frame} \frametitle{honeycomb.pdf}
 %     \begin{columns}[c]
 %     \column{.5\textwidth}
