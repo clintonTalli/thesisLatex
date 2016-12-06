@@ -5,19 +5,19 @@
 %% The original source files were:
 %%
 %% CSUNthesis.dtx  (with options: `class')
-%% 
+%%
 %% Copyright (C) 2004 by Jeff Wiegley, Ph.D.
-%% 
+%%
 %% This file may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either
 %% version 1.2 or this license of (at your option) any
 %% later version. The latest version of this license is in:
-%% 
+%%
 %%    http://www.latex-project.org/lppl.txt
-%% 
+%%
 %% and version 1.2 or later is part of all distributions of
 %% LaTeX version 1999/12/01 or later.
-%% 
+%%
 %%% The todo list:
 %%% Tips and tricks
 %%% spacing ties ~
@@ -388,7 +388,7 @@ jeffw@csun.edu}
   \fi
 }
 
-\newcommand{\committee}[3]{
+\newcommand{\committee}[4]{
   \ifx\undefined\@memberA
   \newcommand{\@memberA}{#2}
   \else
@@ -398,6 +398,11 @@ jeffw@csun.edu}
   \newcommand{\@memberB}{#3}
   \else
   \renewcommand{\@memberB}{#3}
+  \fi
+  \ifx\undefined\@memberC
+  \newcommand{\@memberC}{#4}
+  \else
+  \renewcommand{\@memberC}{#4}
   \fi
   \ifx\undefined\@memberChair
   \newcommand{\@memberChair}{#1}
@@ -764,6 +769,13 @@ By
       \makebox[3in]{\hrulefill}\makebox[0.5in]{}
       \makebox[1.5in]{\hrulefill}\\
       \makebox[3in][l]{\@memberB}\makebox[0.5in]{}
+      \makebox[1.5in][l]{Date}
+
+      \vspace{.375in}
+
+      \makebox[3in]{\hrulefill}\makebox[0.5in]{}
+      \makebox[1.5in]{\hrulefill}\\
+      \makebox[3in][l]{\@memberC}\makebox[0.5in]{}
       \makebox[1.5in][l]{Date}
 
       \vspace{.375in}

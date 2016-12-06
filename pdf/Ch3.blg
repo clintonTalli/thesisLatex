@@ -1,46 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Ch3.aux
-The style file: plain.bst
-Database file #1: WorkCited.bib
-You've used 3 entries,
-            2118 wiz_defined-function locations,
-            519 strings with 4369 characters,
-and the built_in function-call counts, 1065 in all, are:
-= -- 111
-> -- 27
-< -- 1
-+ -- 11
-- -- 8
-* -- 70
-:= -- 168
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 13
+I found no \citation commands---while reading file Ch3.aux
+I found no \bibdata command---while reading file Ch3.aux
+I found no \bibstyle command---while reading file Ch3.aux
+You've used 0 entries,
+            0 wiz_defined-function locations,
+            83 strings with 480 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 45
-empty$ -- 96
-format.name$ -- 8
-if$ -- 229
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 12
-preamble$ -- 1
-purify$ -- 10
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
+purify$ -- 0
 quote$ -- 0
-skip$ -- 35
+skip$ -- 0
 stack$ -- 0
-substring$ -- 97
-swap$ -- 13
-text.length$ -- 1
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 0
 warning$ -- 0
-while$ -- 13
-width$ -- 4
-write$ -- 35
+while$ -- 0
+width$ -- 0
+write$ -- 0
+(There were 3 error messages)

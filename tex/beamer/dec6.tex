@@ -67,59 +67,6 @@
 \subject{Mathematics}
 \begin{document}
 \frame{\titlepage}
-\begin{frame}\frametitle{Motivation: Deciding Realizability of Polygonal Linkages}
-	\begin{prob}
-	Decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized?
-	\end{prob}
-	\begin{columns}[c] % the "c" option specifies center vertical alignment
-  \column{.5\textwidth}% column designated by a command
-   \begin{itemize}
-            \item[*]  A polygonal linkage is an ordered pair $\left(\PP,\HH \right)$ where $\PP$ is a finite set of polygons and $\HH$ is a finite set of hinges.
-            \item[*]  A \textit{hinge} $h\in \HH$ corresponds to two or more points on the boundary of distinct polygons in $\PP$. 
-    \end{itemize}
-  \column{.5\textwidth}
-	\begin{minipage}{\linewidth}
-        \begin{center}
-            \includegraphics[width=\linewidth]{graphics/fig3++.pdf}
-        \end{center} 
-    \end{minipage}
-    \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Motivation: Polygonal Linkages}
-    \begin{columns}[c]
-    \column{.5\textwidth}
-        \begin{itemize}
-        	\item[*] The figure on the top shows a realizable polygonal linkage.
-        	\item[*] The firgure on the bottom shows a polygonal linkage that is not realizable.
-    	\end{itemize}
-    \column{.5\textwidth}
-        \begin{minipage}{\linewidth}
-            \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/hingeOnThreeDistinctPolygons.pdf}\vspace{.25in}
-            \includegraphics[scale=1]{graphics/Problem1.pdf}
-            \end{center}
-        \end{minipage}
-    \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Motivation: Hinged Dissection}
-    \begin{columns}[c]
-    \column{.5\textwidth}
-        \begin{itemize}
-            \item[*] \textit{Haberdasher Problem}: Can a square and an equilateral triangle of the same area have a common dissection into four pieces?
-            \item[*]  \textit{Hilbert's Third Problem}: given any two polyhedra of equal volume, is it always possible to cut the first into finitely many polyhedral pieces which can be reassembled to yield the second?  
-        \end{itemize}
-  \column{.5\textwidth}
-  \begin{minipage}{\linewidth}
-    \begin{center}
-    \animategraphics[loop,controls,width=\linewidth]{12}{graphics/hingedanimation-}{0}{107}
-    \end{center}
-  \end{minipage}
-  \end{columns}
-    \footnotetext{Source: Wikipedia}
-\end{frame}
-
 \begin{frame}
   \frametitle{Motivation: Protein Folding}
   Protein folding is the process in which a protein chain acquires its 3-dimensional structure.
@@ -139,12 +86,70 @@
   \footnotetext{Source: rcsb.org}
 \end{frame}
 
+\begin{frame}\frametitle{Motivation: Hinged Dissection}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+        \begin{itemize}
+            \item[*] \textit{Haberdasher Problem}: Can a square and an equilateral triangle of the same area have a common dissection into four pieces?
+            \item[*]  \textit{Hilbert's Third Problem}: given any two polyhedra of equal volume, is it always possible to cut the first into finitely many polyhedral pieces which can be reassembled to yield the second?  
+        \end{itemize}
+  \column{.5\textwidth}
+  \begin{minipage}{\linewidth}
+    \begin{center}
+    \animategraphics[loop,controls,width=\linewidth]{12}{graphics/hingedanimation-}{0}{107}
+    \end{center}
+  \end{minipage}
+  \end{columns}
+    \footnotetext{Source: Wikipedia}
+\end{frame}
+
+
+\begin{frame}\frametitle{Deciding Realizability of Polygonal Linkages}
+	\begin{prob}
+	Decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized.
+	\end{prob}
+	\begin{columns}[c] % the "c" option specifies center vertical alignment
+  \column{.5\textwidth}% column designated by a command
+   \begin{itemize}
+            \item[*]  A polygonal linkage is an ordered pair $\left(\PP,\HH \right)$ where $\PP$ is a finite set of polygons and $\HH$ is a finite set of hinges.
+            \item[*]  A \textit{hinge} $h\in \HH$ corresponds to two or more points on the boundary of distinct polygons in $\PP$. 
+    \end{itemize}
+  \column{.5\textwidth}
+  \begin{minipage}{\linewidth}
+            \begin{center}
+            \includegraphics[width=.9\textwidth]{graphics/fig1++.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Polygonal Linkages}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+        \begin{itemize}
+        	\item[*] The figure on the top shows a realizable polygonal linkage.
+        	\item[*] The firgure on the bottom shows a polygonal linkage that is not realizable.
+    	\end{itemize}
+    \column{.5\textwidth}
+        \begin{minipage}{\linewidth}
+            \begin{center}
+            \includegraphics[width=.9\textwidth]{graphics/hingeOnThreeDistinctPolygons.pdf}\vspace{.25in}
+            \includegraphics[scale=1]{graphics/Problem1.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
+
+
+
+
 
 
 \begin{frame}
-\frametitle{Motivation: Deciding Realizability of Polygonal Linkages}
+\frametitle{Deciding Realizability of Polygonal Linkages}
 \begin{prob}
-Decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized with \textit{fixed orientation}?
+Decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized with \textit{fixed orientation}.
 \end{prob}
 \begin{columns}[c] 
   \column{.5\textwidth} 
@@ -161,11 +166,20 @@ Decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be r
 \end{frame}
 
 \begin{frame}
-\frametitle{Motivation: Weighted Trees and Disk Arrangements}
+\frametitle{Weighted Trees and Disk Arrangements}
 \begin{prob}
-Decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii?
+Decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.
 \end{prob}
-\begin{columns}[c] % the "c" option specifies center vertical alignment
+\begin{minipage}{\linewidth}
+        \begin{center}
+            \includegraphics[width=\linewidth]{graphics/fig3++.pdf}
+        \end{center} 
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}\frametitle{Weighted Trees and Disk Arrangements}
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
   \column{.5\textwidth} % column designated by a command
    \begin{itemize}
     \item[*] Consider the balanced binary trees of depth $i$ $\left\lbrace T_i \right\rbrace_{i=1}^\infty$ with unit vertex weight.
@@ -178,22 +192,6 @@ Decide whether a given ordered tree with positive vertex weights is the contact 
         \end{center}
     \end{minipage}
   \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Problem: Weighted Trees and Disk Arrangements}
-    \begin{columns}[c]
-    \column{.5\textwidth}
-        \begin{itemize}
-            \item[*] Is it NP-hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized? 
-            \item[*] Is it NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii?
-        \end{itemize}
-    \column{.5\textwidth}
-        \begin{minipage}{\linewidth}
-            \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/fig1++.pdf}
-            \end{center}
-        \end{minipage}
-    \end{columns}
 \end{frame}
 
 % \begin{frame}\frametitle{Motivation: Weighted Trees and Disk Arrangements}
@@ -213,7 +211,7 @@ Decide whether a given ordered tree with positive vertex weights is the contact 
 
 \begin{itemize}
 	\item[*] Bhatt and Cosmadakis showed that deciding whether a polygonal linkage whose hinge graph is a \textit{graph} is NP-Hard.
-	\item[*] Breu and Kirkpatrick showed that deciding whether a given ordered tree with unit vertex weights is the contact graph of a disk arrangements with specified radii.
+	\item[*] Breu and Kirkpatrick showed that deciding whether a given graph with unit vertex weights is the contact graph of a disk arrangements with specified radii.
 \end{itemize}
     % \begin{columns}[c]
     % \column{.5\textwidth}
@@ -283,12 +281,20 @@ Decide whether a given ordered tree with positive vertex weights is the contact 
 %         \end{itemize}
 %     \end{columns}
 % \end{frame}
-
+\begin{frame}\frametitle{Contributions}
+     \begin{thm}
+     It is NP-Hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized.
+     \end{thm}
+    \begin{thm} It is NP-Hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized with fixed orientation.
+    \end{thm}
+    \begin{thm} It is NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.
+    \end{thm}
+\end{frame}
 \begin{frame} \frametitle{Planar 3SAT}
     \begin{columns}[c]
     \column{.5\textwidth}
         \begin{itemize}
-            \item[*] Given a Boolean formula $\Phi$ in 3-CNF such that the associated graph is $A(\Phi)$, decide whether it 
+            \item[*] Given a Boolean formula $\Phi$ in 3-CNF such that the associated graph is planar, decide whether it 
 is satisfiable is the \textit{3-SAT problem}.
         \end{itemize}
     \column{.5\textwidth}
@@ -312,11 +318,13 @@ is satisfiable is a \textit{3-SAT problem}.
         \begin{minipage}{\linewidth}
             \begin{center}
             \includegraphics[width=.66\textwidth]{graphics/honeycomb.pdf}
-            % \includegraphics[width=.66\textwidth]{graphics/fig-assoc-hex1.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
 \end{frame}
+
+
+
 \begin{frame} \frametitle{Modified Auxiliary Construction}
     \begin{columns}[c]
     \column{.5\textwidth}
@@ -329,12 +337,41 @@ is satisfiable is a \textit{3-SAT problem}.
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
             \begin{center}
-            % \includegraphics[width=.66\textwidth]{graphics/honeycomb.pdf}
             \includegraphics[width=.66\textwidth]{graphics/fig-assoc-hex1.pdf}
             \end{center}
         \end{minipage}
     \end{columns}
 \end{frame}
+\begin{frame} \frametitle{Variable Gadget}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+        \begin{itemize}
+            \item[*] Variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$. 
+        \end{itemize}
+    \column{.5\textwidth}
+                    \begin{minipage}{\linewidth}
+            \begin{center}
+            \includegraphics[width=.6\textwidth]{graphics/fig-variable-hex++.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
+\begin{frame} \frametitle{Variable Gadget}
+    \begin{columns}[c]
+    \column{.5\textwidth}
+        \begin{itemize}
+            \item[*] Variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$. 
+        \end{itemize}
+    \column{.5\textwidth}
+                    \begin{minipage}{\linewidth}
+            \begin{center}
+            \includegraphics[width=.9\textwidth]{graphics/VariableGadgetSmall-Beamer.pdf}
+            \end{center}
+        \end{minipage}
+    \end{columns}
+\end{frame}
+
 
 \begin{frame} \frametitle{Transmitter Gadget}
     \begin{columns}[c]
@@ -357,41 +394,13 @@ is satisfiable is a \textit{3-SAT problem}.
     \end{columns}
 \end{frame}
 
-\begin{frame} \frametitle{Variable Gadget}
-    \begin{columns}[c]
-    \column{.5\textwidth}
-        \begin{itemize}
-            \item[*] Variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$. 
-        \end{itemize}
-    \column{.5\textwidth}
-                    \begin{minipage}{\linewidth}
-            \begin{center}
-            \includegraphics[width=.9\textwidth]{graphics/VariableGadgetSmall-Beamer.pdf}
-            \end{center}
-        \end{minipage}
-    \end{columns}
-\end{frame}
 
-\begin{frame} \frametitle{Variable Gadget}
-    \begin{columns}[c]
-    \column{.5\textwidth}
-        \begin{itemize}
-            \item[*] Variable $x_i$ corresponds to a cycle in the associated graph $\tilde{A}(\Phi)$. 
-        \end{itemize}
-    \column{.5\textwidth}
-                    \begin{minipage}{\linewidth}
-            \begin{center}
-            \includegraphics[width=.6\textwidth]{graphics/fig-variable-hex++.pdf}
-            \end{center}
-        \end{minipage}
-    \end{columns}
-\end{frame}
 
 \begin{frame} \frametitle{Clause Junction Gadget}
     \begin{columns}[c]
     \column{.5\textwidth}
         \begin{itemize}
-            \item[*] The {\it clause gadget} lies at a junction adjacent to three transmitter gadgets.x
+            \item[*] The {\it clause gadget} lies at a junction adjacent to three transmitter gadgets.
         \end{itemize}
     \column{.5\textwidth}
         \begin{minipage}{\linewidth}
@@ -402,7 +411,7 @@ is satisfiable is a \textit{3-SAT problem}.
     \end{columns}
 \end{frame}
 
-\begin{frame} \frametitle{Modified Auxiliary Gadget}
+\begin{frame} \frametitle{Modified Auxiliary Construction}
     \begin{columns}[c]
     \column{.5\textwidth}
         \begin{itemize}
@@ -415,6 +424,15 @@ is satisfiable is a \textit{3-SAT problem}.
             \end{center}
         \end{minipage}
     \end{columns}
+\end{frame}
+\begin{frame}\frametitle{Contributions}
+     \begin{thm}
+     It is NP-Hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized.
+     \end{thm}
+    \begin{thm} It is NP-Hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized with fixed orientation.
+    \end{thm}
+    \begin{thm} It is NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with specified radii.
+    \end{thm}
 \end{frame}
 \begin{frame} \frametitle{Approximation of Hexagon with a Disk Arrangement: Hausdorff Distance}
     \begin{columns}[c]
@@ -468,9 +486,9 @@ is satisfiable is a \textit{3-SAT problem}.
 \end{frame}
 \begin{frame}\frametitle{Conclusion}
 \begin{thm}
-     It is strongly NP-Hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized.
+     It is NP-Hard to decide whether a polygonal linkage whose hinge graph is a \textit{tree} can be realized.
      \end{thm}
-    \begin{thm}It is strongly NP-Hard to diskecide whether a polygonal linkage whose inge graph is a \textit{tree} can be realized with fixed orientation.\end{thm}
+    \begin{thm}It is NP-Hard to diskecide whether a polygonal linkage whose inge graph is a \textit{tree} can be realized with fixed orientation.\end{thm}
     \begin{thm}It is NP-Hard to decide whether a given ordered tree with positive vertex weights is the contact graph of a disk arrangements with pecified radii.\end{thm}
 \end{frame}
 

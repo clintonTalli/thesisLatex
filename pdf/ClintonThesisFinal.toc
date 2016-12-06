@@ -49,3 +49,4 @@
 \contentsline {paragraph}{Displacement on $\sigma _1$ is small.}{50}
 \contentsline {paragraph}{Displacement on the stems is small.}{52}
 \contentsline {paragraph}{Displacement on the petioles is small.}{54}
+\contentsline {chapter}{Bibliography}{57}
