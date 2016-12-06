@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  5 DEC 2016 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.11.10)  6 DEC 2016 09:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**powerpoint.tex
-(./powerpoint.tex
+**dec6.tex
+(./dec6.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/beamer.cls
@@ -864,8 +864,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \c@prob=\count187
 \c@lem=\count188
 
-(../../pdf/powerpoint.aux)
-\openout1 = `powerpoint.aux'.
+(../../pdf/dec6.aux)
+\openout1 = `dec6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
@@ -947,9 +947,9 @@ LaTeX Info: Redefining \ref on input line 68.
 LaTeX Info: Redefining \pageref on input line 68.
 LaTeX Info: Redefining \nameref on input line 68.
 
-(../../pdf/powerpoint.out) (../../pdf/powerpoint.out)
+(../../pdf/dec6.out) (../../pdf/dec6.out)
 \@outlinefile=\write5
-\openout5 = `powerpoint.out'.
+\openout5 = `dec6.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 68.
@@ -1043,7 +1043,7 @@ Package caption Warning: \caption will not be redefined since it's already
 See the caption package documentation for explanation.
 
 Package caption Info: End \AtBeginDocument code.
-(../../pdf/powerpoint.nav)
+(../../pdf/dec6.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 69.
@@ -1051,41 +1051,48 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
 
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 96.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 96.
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 96.
+line 87.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) <graphics/hingeOnThreeDistinctPolygons.pdf, id=78, 297.0608pt x 129.93243pt>
+) <graphics/fig3++.pdf, id=54, 258.41241pt x 145.57185pt>
+File: graphics/fig3++.pdf Graphic file (type pdf)
+
+<use graphics/fig3++.pdf>
+Package pdftex.def Info: graphics/fig3++.pdf used on input line 87.
+(pdftex.def)             Requested size: 171.14764pt x 96.4131pt.
+ [2
+
+ <./graphics/fig3++.pdf>]
+<graphics/hingeOnThreeDistinctPolygons.pdf, id=115, 297.0608pt x 129.93243pt>
 File: graphics/hingeOnThreeDistinctPolygons.pdf Graphic file (type pdf)
 
 <use graphics/hingeOnThreeDistinctPolygons.pdf>
 Package pdftex.def Info: graphics/hingeOnThreeDistinctPolygons.pdf used on inpu
-t line 96.
+t line 104.
 (pdftex.def)             Requested size: 154.03183pt x 67.37491pt.
 
-<graphics/Problem1.pdf, id=79, 233.03532pt x 50.01184pt>
+<graphics/Problem1.pdf, id=116, 233.03532pt x 50.01184pt>
 File: graphics/Problem1.pdf Graphic file (type pdf)
 
 <use graphics/Problem1.pdf>
-Package pdftex.def Info: graphics/Problem1.pdf used on input line 96.
+Package pdftex.def Info: graphics/Problem1.pdf used on input line 104.
 (pdftex.def)             Requested size: 233.03474pt x 50.0117pt.
 
-Overfull \hbox (61.8871pt too wide) in paragraph at lines 96--96
- [][][][] 
+Overfull \hbox (61.8871pt too wide) in paragraph at lines 104--104
+ [] 
  []
 
 [3
@@ -1142,252 +1149,227 @@ danimation-103.png> <./graphics/hingedanimation-104.png> <./graphics/hingedanim
 ation-105.png> <./graphics/hingedanimation-106.png> <./graphics/hingedanimation
 -107.png> [4
 
-]
-<graphics/collidingHingedPolygons.pdf, id=826, 451.557pt x 94.60344pt>
-File: graphics/collidingHingedPolygons.pdf Graphic file (type pdf)
+] <graphics/5HHB.png, id=861, 330.23375pt x 294.09875pt>
+File: graphics/5HHB.png Graphic file (type png)
 
-<use graphics/collidingHingedPolygons.pdf>
-Package pdftex.def Info: graphics/collidingHingedPolygons.pdf used on input lin
-e 131.
-(pdftex.def)             Requested size: 171.14764pt x 35.85583pt.
+<use graphics/5HHB.png>
+Package pdftex.def Info: graphics/5HHB.png used on input line 140.
+(pdftex.def)             Requested size: 171.14764pt x 152.42513pt.
  [5
 
- <./graphics/collidingHingedPolygons.pdf>]
-File: graphics/collidingHingedPolygons.pdf Graphic file (type pdf)
- <use graphics/collidingHingedPolygons.pdf>
-Package pdftex.def Info: graphics/collidingHingedPolygons.pdf used on input lin
-e 150.
-(pdftex.def)             Requested size: 171.14764pt x 35.85583pt.
- [6
-
-]
-<graphics/orderedFaces.pdf, id=888, 205.15646pt x 86.25023pt>
+ <./graphics/5HHB.png>]
+<graphics/orderedFaces.pdf, id=890, 205.15646pt x 86.25023pt>
 File: graphics/orderedFaces.pdf Graphic file (type pdf)
 
 <use graphics/orderedFaces.pdf>
-Package pdftex.def Info: graphics/orderedFaces.pdf used on input line 170.
+Package pdftex.def Info: graphics/orderedFaces.pdf used on input line 161.
 (pdftex.def)             Requested size: 171.14764pt x 71.95747pt.
- [7
+ [6
 
  <./graphics/orderedFaces.pdf>]
-<graphics/diskArrangementExample.png, id=926, 1072.005pt x 265.99374pt>
+<graphics/diskArrangementExample.png, id=929, 1072.005pt x 265.99374pt>
 File: graphics/diskArrangementExample.png Graphic file (type png)
 
 <use graphics/diskArrangementExample.png>
 Package pdftex.def Info: graphics/diskArrangementExample.png used on input line
- 189.
+ 181.
 (pdftex.def)             Requested size: 171.14764pt x 42.46245pt.
+ [7
+
+ <./graphics/diskArrangementExample.png>] <graphics/fig1++.pdf, id=960, 245.719
+pt x 145.57286pt>
+File: graphics/fig1++.pdf Graphic file (type pdf)
+
+<use graphics/fig1++.pdf>
+Package pdftex.def Info: graphics/fig1++.pdf used on input line 197.
+(pdftex.def)             Requested size: 154.03183pt x 91.25824pt.
  [8
 
- <./graphics/diskArrangementExample.png>] [9
+ <./graphics/fig1++.pdf>] [9
 
-] <graphics/LogicEngineFrame.pdf, id=981, 387.4475pt x 515.12451pt>
+] [10
+
+]
+<graphics/LogicEngineFrame.pdf, id=1065, 387.4475pt x 515.12451pt>
 File: graphics/LogicEngineFrame.pdf Graphic file (type pdf)
 
 <use graphics/LogicEngineFrame.pdf>
-Package pdftex.def Info: graphics/LogicEngineFrame.pdf used on input line 217.
+Package pdftex.def Info: graphics/LogicEngineFrame.pdf used on input line 255.
 (pdftex.def)             Requested size: 154.03183pt x 204.78853pt.
 
-<graphics/LogicEngineFrameFigure2.pdf, id=982, 1013.38597pt x 563.70598pt>
+<graphics/LogicEngineFrameFigure2.pdf, id=1066, 1013.38597pt x 563.70598pt>
 File: graphics/LogicEngineFrameFigure2.pdf Graphic file (type pdf)
 
 <use graphics/LogicEngineFrameFigure2.pdf>
 Package pdftex.def Info: graphics/LogicEngineFrameFigure2.pdf used on input lin
-e 217.
+e 255.
 (pdftex.def)             Requested size: 154.03183pt x 85.67903pt.
- [10
+ [11
 
  <./graphics/LogicEngineFrame.pdf> <./graphics/LogicEngineFrameFigure2.pdf>]
-<graphics/HingedLogicEngineSmallEnumerated.pdf, id=1028, 428.06926pt x 207.1198
+<graphics/HingedLogicEngineSmallEnumerated.pdf, id=1111, 428.06926pt x 207.1198
 pt>
 File: graphics/HingedLogicEngineSmallEnumerated.pdf Graphic file (type pdf)
  <use graphics/HingedLogicEngineSmallEnumerated.pdf>
 Package pdftex.def Info: graphics/HingedLogicEngineSmallEnumerated.pdf used on 
-input line 232.
+input line 270.
 (pdftex.def)             Requested size: 154.03183pt x 74.52829pt.
- [11
+ [12
 
  <./graphics/HingedLogicEngineSmallEnumerated.pdf>]
-
-LaTeX Warning: Citation `BK98' on page 12 undefined on input line 267.
-
-
-LaTeX Warning: Citation `BET+99' on page 12 undefined on input line 267.
-
-[12
-
-] <graphics/fig-assoc-hex2.pdf, id=1100, 168.58694pt x 100.16924pt>
+<graphics/fig-assoc-hex2.pdf, id=1155, 168.58694pt x 133.31506pt>
 File: graphics/fig-assoc-hex2.pdf Graphic file (type pdf)
 
 <use graphics/fig-assoc-hex2.pdf>
-Package pdftex.def Info: graphics/fig-assoc-hex2.pdf used on input line 283.
-(pdftex.def)             Requested size: 154.03183pt x 91.52554pt.
+Package pdftex.def Info: graphics/fig-assoc-hex2.pdf used on input line 301.
+(pdftex.def)             Requested size: 154.03183pt x 121.8112pt.
  [13
 
  <./graphics/fig-assoc-hex2.pdf>]
-<graphics/honeycomb.pdf, id=1151, 195.70114pt x 197.05621pt>
+<graphics/honeycomb.pdf, id=1215, 195.70114pt x 197.05621pt>
 File: graphics/honeycomb.pdf Graphic file (type pdf)
 
 <use graphics/honeycomb.pdf>
-Package pdftex.def Info: graphics/honeycomb.pdf used on input line 301.
+Package pdftex.def Info: graphics/honeycomb.pdf used on input line 319.
 (pdftex.def)             Requested size: 112.95807pt x 113.74242pt.
  [14
 
  <./graphics/honeycomb.pdf>]
-<graphics/fig-assoc-hex1.pdf, id=1182, 130.95424pt x 93.92389pt>
+<graphics/fig-assoc-hex1.pdf, id=1245, 130.95424pt x 93.92389pt>
 File: graphics/fig-assoc-hex1.pdf Graphic file (type pdf)
 
 <use graphics/fig-assoc-hex1.pdf>
-Package pdftex.def Info: graphics/fig-assoc-hex1.pdf used on input line 319.
+Package pdftex.def Info: graphics/fig-assoc-hex1.pdf used on input line 337.
 (pdftex.def)             Requested size: 112.95807pt x 81.01659pt.
  [15
 
  <./graphics/fig-assoc-hex1.pdf>]
-<graphics/FalseVariableNonNegatedLiteralTransmitter.pdf, id=1231, 321.87253pt x
- 323.94524pt>
-File: graphics/FalseVariableNonNegatedLiteralTransmitter.pdf Graphic file (type
- pdf)
- <use graphics/FalseVariableNonNegatedLiteralTransmitter.pdf>
-Package pdftex.def Info: graphics/FalseVariableNonNegatedLiteralTransmitter.pdf
- used on input line 335.
-(pdftex.def)             Requested size: 90.70804pt x 91.29225pt.
+<graphics/FalseVariableNonNegatedLiteralTransmitter-Beamer.pdf, id=1294, 611.80
+573pt x 323.94524pt>
+File: graphics/FalseVariableNonNegatedLiteralTransmitter-Beamer.pdf Graphic fil
+e (type pdf)
 
-<graphics/VariableGadgetTruthness.pdf, id=1232, 1090.46397pt x 370.86555pt>
+<use graphics/FalseVariableNonNegatedLiteralTransmitter-Beamer.pdf>
+Package pdftex.def Info: graphics/FalseVariableNonNegatedLiteralTransmitter-Bea
+mer.pdf used on input line 358.
+(pdftex.def)             Requested size: 128.36073pt x 67.96625pt.
+
+<graphics/VariableGadgetTruthness.pdf, id=1295, 1090.46397pt x 370.86555pt>
 File: graphics/VariableGadgetTruthness.pdf Graphic file (type pdf)
 
 <use graphics/VariableGadgetTruthness.pdf>
 Package pdftex.def Info: graphics/VariableGadgetTruthness.pdf used on input lin
-e 335.
+e 358.
 (pdftex.def)             Requested size: 154.03183pt x 52.38484pt.
  [16
 
- <./graphics/FalseVariableNonNegatedLiteralTransmitter.pdf> <./graphics/Variabl
-eGadgetTruthness.pdf>]
-<graphics/VariableGadgetSmall.pdf, id=1279, 200.75pt x 151.91757pt>
-File: graphics/VariableGadgetSmall.pdf Graphic file (type pdf)
+ <./graphics/FalseVariableNonNegatedLiteralTransmitter-Beamer.pdf> <./graphics/
+VariableGadgetTruthness.pdf>]
+<graphics/VariableGadgetSmall-Beamer.pdf, id=1362, 544.27339pt x 186.38634pt>
+File: graphics/VariableGadgetSmall-Beamer.pdf Graphic file (type pdf)
 
-<use graphics/VariableGadgetSmall.pdf>
-Package pdftex.def Info: graphics/VariableGadgetSmall.pdf used on input line 36
-7.
-(pdftex.def)             Requested size: 90.70804pt x 68.64507pt.
+<use graphics/VariableGadgetSmall-Beamer.pdf>
+Package pdftex.def Info: graphics/VariableGadgetSmall-Beamer.pdf used on input 
+line 373.
+(pdftex.def)             Requested size: 154.03183pt x 52.74808pt.
  [17
 
- <./graphics/VariableGadgetSmall.pdf>] <graphics/fig-variable-hex+.pdf, id=1315
-, 515.06215pt x 110.3061pt>
-File: graphics/fig-variable-hex+.pdf Graphic file (type pdf)
+ <./graphics/VariableGadgetSmall-Beamer.pdf>]
+<graphics/fig-variable-hex++.pdf, id=1422, 167.68819pt x 344.76405pt>
+File: graphics/fig-variable-hex++.pdf Graphic file (type pdf)
 
-<use graphics/fig-variable-hex+.pdf>
-Package pdftex.def Info: graphics/fig-variable-hex+.pdf used on input line 382.
-
-(pdftex.def)             Requested size: 154.03183pt x 32.98772pt.
+<use graphics/fig-variable-hex++.pdf>
+Package pdftex.def Info: graphics/fig-variable-hex++.pdf used on input line 388
+.
+(pdftex.def)             Requested size: 102.68962pt x 211.12642pt.
  [18
 
- <./graphics/fig-variable-hex+.pdf>]
-<graphics/fig-clause-hex.pdf, id=1355, 388.96014pt x 101.64073pt>
-File: graphics/fig-clause-hex.pdf Graphic file (type pdf)
+ <./graphics/fig-variable-hex++.pdf>]
+<graphics/fig-clause-hex-Beamer.pdf, id=1481, 388.96014pt x 252.43208pt>
+File: graphics/fig-clause-hex-Beamer.pdf Graphic file (type pdf)
 
-<use graphics/fig-clause-hex.pdf>
-Package pdftex.def Info: graphics/fig-clause-hex.pdf used on input line 397.
-(pdftex.def)             Requested size: 154.03183pt x 40.25078pt.
+<use graphics/fig-clause-hex-Beamer.pdf>
+Package pdftex.def Info: graphics/fig-clause-hex-Beamer.pdf used on input line 
+403.
+(pdftex.def)             Requested size: 154.03183pt x 99.96571pt.
  [19
 
- <./graphics/fig-clause-hex.pdf>]
-<graphics/fig1++.pdf, id=1397, 245.719pt x 145.57286pt>
-File: graphics/fig1++.pdf Graphic file (type pdf)
-
-<use graphics/fig1++.pdf>
-Package pdftex.def Info: graphics/fig1++.pdf used on input line 413.
-(pdftex.def)             Requested size: 154.03183pt x 91.25824pt.
- [20
-
- <./graphics/fig1++.pdf>]
-<graphics/fig3++.pdf, id=1449, 258.41241pt x 145.57185pt>
-File: graphics/fig3++.pdf Graphic file (type pdf)
-
-<use graphics/fig3++.pdf>
-Package pdftex.def Info: graphics/fig3++.pdf used on input line 429.
-(pdftex.def)             Requested size: 154.03183pt x 86.77068pt.
- [21
-
- <./graphics/fig3++.pdf>]
-<graphics/fig-frame-hex.pdf, id=1506, 477.26376pt x 197.06023pt>
+ <./graphics/fig-clause-hex-Beamer.pdf>] <graphics/fig-frame-hex.pdf, id=1554, 
+477.26376pt x 197.06023pt>
 File: graphics/fig-frame-hex.pdf Graphic file (type pdf)
 
 <use graphics/fig-frame-hex.pdf>
-Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 445.
+Package pdftex.def Info: graphics/fig-frame-hex.pdf used on input line 418.
 (pdftex.def)             Requested size: 154.03183pt x 63.59879pt.
- [22
+ [20
 
  <./graphics/fig-frame-hex.pdf>]
-<graphics/HausdorffDistanceExample1.pdf, id=1553, 291.58937pt x 208.65755pt>
+<graphics/HausdorffDistanceExample1.pdf, id=1602, 291.58937pt x 208.65755pt>
 File: graphics/HausdorffDistanceExample1.pdf Graphic file (type pdf)
 
 <use graphics/HausdorffDistanceExample1.pdf>
 Package pdftex.def Info: graphics/HausdorffDistanceExample1.pdf used on input l
-ine 461.
+ine 432.
 (pdftex.def)             Requested size: 154.03183pt x 110.22499pt.
- [23
+ [21
 
  <./graphics/HausdorffDistanceExample1.pdf>]
-<graphics/hexagonPetiolesLeafs9Layers.pdf, id=1589, 388.79253pt x 339.79948pt>
+<graphics/hexagonPetiolesLeafs9Layers.pdf, id=1639, 388.79253pt x 339.79948pt>
 File: graphics/hexagonPetiolesLeafs9Layers.pdf Graphic file (type pdf)
 
 <use graphics/hexagonPetiolesLeafs9Layers.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9Layers.pdf used on input
- line 481.
+ line 452.
 (pdftex.def)             Requested size: 90.36507pt x 78.97662pt.
- [24
+ [22
 
  <./graphics/hexagonPetiolesLeafs9Layers.pdf>]
 File: graphics/hexagonPetiolesLeafs9Layers.pdf Graphic file (type pdf)
  <use graphics/hexagonPetiolesLeafs9Layers.pdf>
 Package pdftex.def Info: graphics/hexagonPetiolesLeafs9Layers.pdf used on input
- line 497.
+ line 468.
 (pdftex.def)             Requested size: 154.03183pt x 134.62115pt.
- [25
+ [23
 
-] [26
+] [24
 
 ]
-Package atenddvi Info: Last page = 27.
+Package atenddvi Info: Last page = 25.
 
-[27
+[25
 
 ]
 \tf@nav=\write6
-\openout6 = `powerpoint.nav'.
+\openout6 = `dec6.nav'.
 
 \tf@toc=\write7
-\openout7 = `powerpoint.toc'.
+\openout7 = `dec6.toc'.
 
 \tf@snm=\write8
-\openout8 = `powerpoint.snm'.
+\openout8 = `dec6.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 541.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 541.
- (../../pdf/powerpoint.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 541.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 541.
-Package rerunfilecheck Info: File `powerpoint.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 482.
+ (../../pdf/dec6.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
+Package rerunfilecheck Info: File `dec6.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 541.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
  ) 
 Here is how much of TeX's memory you used:
- 20199 strings out of 493089
- 378512 string characters out of 6134841
- 459149 words of memory out of 5000000
- 23040 multiletter control sequences out of 15000+600000
- 11347 words of font info for 41 fonts, out of 8000000 for 9000
+ 20221 strings out of 493089
+ 378861 string characters out of 6134841
+ 459119 words of memory out of 5000000
+ 23064 multiletter control sequences out of 15000+600000
+ 14046 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,63p,407b,808s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,63p,401b,808s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
@@ -1399,14 +1381,15 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ../../pdf/powerpoint.pdf (27 pages, 1174770 bytes).
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on ../../pdf/dec6.pdf (25 pages, 1525861 bytes).
 PDF statistics:
- 1752 PDF objects out of 2073 (max. 8388607)
- 1115 compressed objects within 12 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 1802 PDF objects out of 2073 (max. 8388607)
+ 1084 compressed objects within 11 object streams
+ 54 named destinations out of 1000 (max. 500000)
  2070 words of extra memory for PDF output out of 10000 (max. 10000000)
 

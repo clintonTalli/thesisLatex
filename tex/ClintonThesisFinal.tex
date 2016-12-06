@@ -298,6 +298,8 @@ A \textit{linkage} is a graph $G = (V,E)$ with a length assignment $\ell:E \maps
 A generalization of linkages is a polygonal linkage where edges of given lengths are replaced with rigid polygons.
 Formally, a \textit{polygonal linkage} is an ordered pair $\left(\PP,\HH \right)$ where $\PP$ is a finite set of polygons and $\HH$ is a finite set of hinges; a \textit{hinge} $h\in \HH$ corresponds to two or more points on the boundary of distinct polygons in $\PP$.  
 A \emph{realization of a polygonal linkage} is an interior-disjoint placement of congruent copies of the polygons in $\PP$ such that the copies of a hinge are mapped to the same point (e.g., Figure \ref{fig:linkage-1}).  
+A \textit{hinge graph} is a bipartite graph where one partite set is the set of polygons $\PP$ and the other partite set is the set of hinges $\HH$.  
+There is exists an edge between a polygon and a hinge if the hinge lies on the boundary of the polygon.
 \begin{figure}[!htbp]
 \begin{center}
 \includegraphics[scale=1]{graphics/hingeOnThreeDistinctPolygons.pdf}
@@ -462,7 +464,7 @@ The contradiction shows that no realization is possible.
 Note that with the wheel graph $W_7$ is realizable as a contact graph of unit disks.
 
 Every path with arbitrary positive radii is realizable as a contact graph, place the vertices on a line.
-We show that not all binary trees are realizable, even with unit disks.% of unit radii.
+We show that not all binary trees are realizable, even with unit disks.  % of unit radii.
 Consider the balanced binary trees of depth $i$ $\left\lbrace T_i \right\rbrace_{i=1}^\infty$ with unit weights on the vertices (see Figure \ref{fig:circlePacking-1}).
 These trees are not realizable for sufficiently large $i$.
 \begin{figure}[!htbp]
